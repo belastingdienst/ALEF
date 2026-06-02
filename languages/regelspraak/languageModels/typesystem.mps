@@ -13612,7 +13612,7 @@
     <node concept="3clFbS" id="37kJSNtHZWX" role="18ibNy">
       <node concept="3cpWs8" id="1GlRy79h6Xh" role="3cqZAp">
         <node concept="3cpWsn" id="1GlRy79h6Xk" role="3cpWs9">
-          <property role="TrG5h" value="i" />
+          <property role="TrG5h" value="highwatermark" />
           <node concept="10Oyi0" id="1GlRy79h6Xf" role="1tU5fm" />
           <node concept="3cmrfG" id="1GlRy79h6Zw" role="33vP2m">
             <property role="3cmrfH" value="-1" />
@@ -13622,6 +13622,7 @@
       <node concept="3cpWs8" id="50ewnNtY9yF" role="3cqZAp">
         <node concept="3cpWsn" id="50ewnNtY9yG" role="3cpWs9">
           <property role="TrG5h" value="done" />
+          <property role="3TUv4t" value="true" />
           <node concept="2hMVRd" id="50ewnNtY9yB" role="1tU5fm">
             <node concept="3Tqbb2" id="50ewnNtY9yE" role="2hN53Y">
               <ref role="ehGHo" to="m234:1ibElXOm0gN" resolve="Variabele" />
@@ -13640,34 +13641,18 @@
         <node concept="2GrKxI" id="37kJSNtHZX4" role="2Gsz3X">
           <property role="TrG5h" value="varRef" />
         </node>
-        <node concept="2OqwBi" id="37kJSNtI0Cc" role="2GsD0m">
-          <node concept="2OqwBi" id="37kJSNtI098" role="2Oq$k0">
-            <node concept="1YBJjd" id="37kJSNtHZXz" role="2Oq$k0">
-              <ref role="1YBMHb" node="37kJSNtHZWZ" resolve="actieIndienVoorwaarde" />
-            </node>
-            <node concept="3TrEf2" id="37kJSNtI0oR" role="2OqNvi">
-              <ref role="3Tt5mk" to="m234:1ibElXOmXRs" resolve="conditie" />
-            </node>
-          </node>
-          <node concept="2Rf3mk" id="37kJSNtI18P" role="2OqNvi">
-            <node concept="1xMEDy" id="37kJSNtI18R" role="1xVPHs">
-              <node concept="chp4Y" id="37kJSNtI19K" role="ri$Ld">
-                <ref role="cht4Q" to="m234:1ibElXOm0yO" resolve="VariabeleRef" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbS" id="37kJSNtHZX6" role="2LFqv$">
           <node concept="3clFbJ" id="50ewnNtZdN2" role="3cqZAp">
             <node concept="3clFbS" id="50ewnNtZdN4" role="3clFbx">
               <node concept="3cpWs8" id="1GlRy79hmF9" role="3cqZAp">
                 <node concept="3cpWsn" id="1GlRy79hmFa" role="3cpWs9">
-                  <property role="TrG5h" value="r" />
+                  <property role="TrG5h" value="current" />
+                  <property role="3TUv4t" value="true" />
                   <node concept="10Oyi0" id="1GlRy79hm$M" role="1tU5fm" />
                   <node concept="2OqwBi" id="1GlRy79hmFb" role="33vP2m">
                     <node concept="2OqwBi" id="1GlRy79hmFc" role="2Oq$k0">
                       <node concept="1YBJjd" id="1GlRy79hmFd" role="2Oq$k0">
-                        <ref role="1YBMHb" node="37kJSNtHZWZ" resolve="actieIndienVoorwaarde" />
+                        <ref role="1YBMHb" node="37kJSNtHZWZ" resolve="node" />
                       </node>
                       <node concept="3Tsc0h" id="1GlRy79hmFe" role="2OqNvi">
                         <ref role="3TtcxE" to="m234:1ibElXOmXRx" resolve="var" />
@@ -13689,32 +13674,31 @@
               <node concept="3clFbJ" id="37kJSNtI1hY" role="3cqZAp">
                 <node concept="3eOVzh" id="1GlRy79hnKB" role="3clFbw">
                   <node concept="37vLTw" id="1GlRy79hmFj" role="3uHU7B">
-                    <ref role="3cqZAo" node="1GlRy79hmFa" resolve="r" />
+                    <ref role="3cqZAo" node="1GlRy79hmFa" resolve="current" />
                   </node>
                   <node concept="37vLTw" id="1GlRy79hnv6" role="3uHU7w">
-                    <ref role="3cqZAo" node="1GlRy79h6Xk" resolve="i" />
+                    <ref role="3cqZAo" node="1GlRy79h6Xk" resolve="highwatermark" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="37kJSNtI1i0" role="3clFbx">
                   <node concept="2MkqsV" id="37kJSNtI3Is" role="3cqZAp">
                     <node concept="Xl_RD" id="37kJSNtI3IC" role="2MkJ7o">
-                      <property role="Xl_RC" value="De volgorde van variabele in voorwaarde match niet met volgorde van de variabelen" />
+                      <property role="Xl_RC" value="De volgorde van variabelen in de voorwaarde komt niet overeen met de volgorde van de variabelen" />
                     </node>
                     <node concept="2GrUjf" id="1GlRy79hobi" role="1urrMF">
                       <ref role="2Gs0qQ" node="37kJSNtHZX4" resolve="varRef" />
                     </node>
                   </node>
-                  <node concept="3clFbH" id="37kJSNvP9H0" role="3cqZAp" />
                 </node>
                 <node concept="9aQIb" id="1GlRy79hpoW" role="9aQIa">
                   <node concept="3clFbS" id="1GlRy79hpoX" role="9aQI4">
                     <node concept="3clFbF" id="1GlRy79hoq6" role="3cqZAp">
                       <node concept="37vLTI" id="1GlRy79hpfw" role="3clFbG">
                         <node concept="37vLTw" id="1GlRy79hpfF" role="37vLTx">
-                          <ref role="3cqZAo" node="1GlRy79hmFa" resolve="r" />
+                          <ref role="3cqZAo" node="1GlRy79hmFa" resolve="current" />
                         </node>
                         <node concept="37vLTw" id="1GlRy79hoq4" role="37vLTJ">
-                          <ref role="3cqZAo" node="1GlRy79h6Xk" resolve="i" />
+                          <ref role="3cqZAo" node="1GlRy79h6Xk" resolve="highwatermark" />
                         </node>
                       </node>
                     </node>
@@ -13758,10 +13742,29 @@
             </node>
           </node>
         </node>
+        <node concept="2OqwBi" id="37Z4cU5K56" role="2GsD0m">
+          <node concept="2YIFZM" id="37Z4cU5GDL" role="2Oq$k0">
+            <ref role="37wK5l" to="u5to:6QvIJQSsa3T" resolve="orderedDescendants" />
+            <ref role="1Pybhc" to="u5to:5S3WlLdXQO6" resolve="OnderwerpProvider" />
+            <node concept="2OqwBi" id="37Z4cU5GSI" role="37wK5m">
+              <node concept="1YBJjd" id="37Z4cU5GED" role="2Oq$k0">
+                <ref role="1YBMHb" node="37kJSNtHZWZ" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="37Z4cU5J3l" role="2OqNvi">
+                <ref role="3Tt5mk" to="m234:1ibElXOmXRs" resolve="conditie" />
+              </node>
+            </node>
+          </node>
+          <node concept="v3k3i" id="37Z4cU5LwJ" role="2OqNvi">
+            <node concept="chp4Y" id="37Z4cU5MhD" role="v3oSu">
+              <ref role="cht4Q" to="m234:1ibElXOm0yO" resolve="VariabeleRef" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1YaCAy" id="37kJSNtHZWZ" role="1YuTPh">
-      <property role="TrG5h" value="actieIndienVoorwaarde" />
+      <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="m234:$infi2sFM8" resolve="ActieIndienVoorwaarde" />
     </node>
   </node>
