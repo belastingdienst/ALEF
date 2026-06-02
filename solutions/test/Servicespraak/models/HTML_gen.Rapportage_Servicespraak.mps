@@ -26,7 +26,6 @@
     <import index="283h" ref="r:bb497f5e-0bd0-4b72-9fa8-479a519755cb(mapping.afrondingConversie.ServiceConfiguratie)" />
     <import index="4v0j" ref="r:b753ad83-dc5c-4a0e-b418-1be50ccae16b(mapping.KeyValuePairType)" />
     <import index="lcv" ref="r:244087d7-ecb1-43b8-b889-d46f14e5691f(xsd.Restricties)" />
-    <import index="e6yo" ref="r:da84aa7c-d4be-4eaa-ba0e-a729cbfcd53f(DubbeleXsdTypes)" />
     <import index="gs1n" ref="r:cc89ebc4-c984-4cbd-a55e-6c35a6a79db7(serviceEnBerichtTypesInAparteModellen.Gegevens)" />
     <import index="1xrf" ref="r:28479096-9cb4-4048-84b7-42dd247ef928(serviceEnBerichtTypesInAparteModellen.Berichten)" />
     <import index="uygq" ref="r:6aa2ae27-4209-406a-be10-b8a41a607c13(DubbeleElementNaam)" />
