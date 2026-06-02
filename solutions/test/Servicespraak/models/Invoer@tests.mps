@@ -24,7 +24,6 @@
     <import index="o24a" ref="r:8d96a913-ea84-465e-987d-694675e74cb1(mapping.DataTypeZonderEenheid)" />
     <import index="a4xb" ref="r:1cffb004-5bd8-4919-8917-4ac7470107b5(berichttype.KVEnSamengesteldVeld)" />
     <import index="93yo" ref="r:68b13fff-e947-4e21-bdf2-464c338ec0c2(servicespraak.typesystem)" />
-    <import index="e6yo" ref="r:da84aa7c-d4be-4eaa-ba0e-a729cbfcd53f(DubbeleXsdTypes)" />
     <import index="et6" ref="r:0dd4a099-6070-4030-bb92-e46e6a0f813d(mapping.Boolean)" />
     <import index="uygq" ref="r:6aa2ae27-4209-406a-be10-b8a41a607c13(DubbeleElementNaam)" />
     <import index="r02f" ref="r:66cd26ef-420f-4d69-a8c8-a2b83dc3a229(testspraak.behavior)" />
@@ -195,9 +194,6 @@
       <concept id="5696347358893285502" name="regelspraak.structure.ISelectie" flags="ngI" index="137dR0">
         <child id="6774523643279660910" name="selector" index="eaaoM" />
         <child id="9009487889885775372" name="object" index="pQQuc" />
-      </concept>
-      <concept id="5308348422954264413" name="regelspraak.structure.RegelsetRef" flags="ng" index="17AEQp">
-        <reference id="5308348422954265446" name="set" index="17AE6y" />
       </concept>
       <concept id="1480463129960505090" name="regelspraak.structure.RegelVersie" flags="ng" index="1wO7pt">
         <child id="1480463129960505094" name="statement" index="1wO7pp" />
@@ -403,9 +399,6 @@
       </concept>
     </language>
     <language id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak">
-      <concept id="7010317595069378443" name="servicespraak.structure.MappedEnumTypeRef" flags="ng" index="21z$$Y">
-        <reference id="7010317595069378444" name="datatype" index="21z$$T" />
-      </concept>
       <concept id="3470082797177568556" name="servicespraak.structure.PredefinedBerichtDataType" flags="ng" index="2R$z7">
         <property id="3470082797177593129" name="predef" index="2RIz2" />
       </concept>
@@ -421,7 +414,6 @@
         <property id="8879350159213016767" name="projectnaam" index="2R2JXj" />
         <property id="235016714107005849" name="serviceNamespace" index="3jS_BH" />
         <property id="2657656834115692067" name="xsdNamespace" index="1CIKbG" />
-        <child id="7010317595068611080" name="mapping" index="21XpMX" />
         <child id="2486720710064795935" name="entrypoints" index="2xxADg" />
       </concept>
       <concept id="2486720710064725693" name="servicespraak.structure.Entrypoint" flags="ng" index="2xwknM">
@@ -434,7 +426,6 @@
         <property id="8267513940666745543" name="xmlBerichtType" index="1bH1VB" />
         <property id="3136425091197698285" name="acroniem" index="3EWdbH" />
         <reference id="2486720710073441044" name="startFlow" index="2x2$1r" />
-        <child id="489580120366705953" name="regelgroep" index="2dhVIB" />
         <child id="2486720710071270541" name="uitvoer" index="2xTiv2" />
         <child id="2486720710071270540" name="invoer" index="2xTiv3" />
       </concept>
@@ -2342,51 +2333,6 @@
                 <ref role="3xOPvv" node="6LExl5LhOoO" resolve="t3" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1lH9Xt" id="nuM8_OBbNN">
-    <property role="3DII0k" value="2hh8MJdVwqX/command" />
-    <property role="TrG5h" value="DubbeleXsdTypes" />
-    <node concept="1qefOq" id="nuM8_OBbNO" role="1SKRRt">
-      <node concept="2kTx5H" id="nuM8_OBbNS" role="1qenE9">
-        <property role="TrG5h" value="ALEF4326" />
-        <property role="2R2JXj" value="ems" />
-        <property role="2R2JWx" value="ems" />
-        <property role="3jS_BH" value="http://example.org" />
-        <node concept="21z$$Y" id="nuM8_OBbOX" role="21XpMX">
-          <ref role="21z$$T" to="e6yo:6PkAWilO5Bg" resolve="Testen" />
-        </node>
-        <node concept="7CXmI" id="nuM8_OBbPe" role="lGtFl">
-          <node concept="1TM$A" id="nuM8_OBbPf" role="7EUXB">
-            <node concept="2PYRI3" id="nuM8_OBbPx" role="3lydEf">
-              <ref role="39XzEq" to="93yo:ZY2AZiBAhs" />
-            </node>
-          </node>
-        </node>
-        <node concept="2xwknM" id="692EwaiMMZr" role="2xxADg">
-          <property role="TrG5h" value="DecisionService" />
-          <property role="3EWdbH" value="rsalef4326" />
-          <property role="2xx$AK" value="false" />
-          <property role="2xUFmC" value="jaar" />
-          <property role="2xUFKs" value="false" />
-          <property role="1bH1VB" value="Message" />
-          <property role="2xUFKJ" value="Request" />
-          <property role="2xUFKI" value="Response" />
-          <node concept="KB4bO" id="6PkAWilO5Bq" role="2xTiv3">
-            <property role="TrG5h" value="bericht" />
-            <property role="h6B3z" value="1" />
-            <ref role="KGglo" to="e6yo:6PkAWilO5Bk" resolve="Bericht__invoer" />
-          </node>
-          <node concept="KBdxu" id="6PkAWilO5Bp" role="2xTiv2">
-            <property role="TrG5h" value="bericht" />
-            <property role="h6B3z" value="1" />
-            <ref role="KGglo" to="q9b1:6Kuwjen0IRs" resolve="Bericht__uitvoer" />
-          </node>
-          <node concept="17AEQp" id="4xKWB0uLFE" role="2dhVIB">
-            <ref role="17AE6y" to="e6yo:6PkAWilO5B3" resolve="Regels" />
           </node>
         </node>
       </node>
