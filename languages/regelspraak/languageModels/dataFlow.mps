@@ -396,11 +396,21 @@
             </node>
           </node>
         </node>
-        <node concept="3AgYrR" id="4lD$O_1nocX" role="3cqZAp">
-          <node concept="2OqwBi" id="4lD$O_1noW2" role="3Ah4Yx">
+        <node concept="2Gpval" id="1QoQagEusVM" role="3cqZAp">
+          <node concept="2GrKxI" id="1QoQagEusVO" role="2Gsz3X">
+            <property role="TrG5h" value="rgcv" />
+          </node>
+          <node concept="3clFbS" id="1QoQagEusVS" role="2LFqv$">
+            <node concept="3AgYrR" id="4lD$O_1nocX" role="3cqZAp">
+              <node concept="2GrUjf" id="1QoQagEutxG" role="3Ah4Yx">
+                <ref role="2Gs0qQ" node="1QoQagEusVO" resolve="rgcv" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4lD$O_1noW2" role="2GsD0m">
             <node concept="3__QtB" id="4lD$O_1noW3" role="2Oq$k0" />
             <node concept="2qgKlT" id="4lD$O_1noW4" role="2OqNvi">
-              <ref role="37wK5l" to="u5to:3PgQ0IQPhYo" resolve="regelgroepConditieVersie" />
+              <ref role="37wK5l" to="u5to:3PgQ0IQPhYo" resolve="regelgroepConditieVersies" />
             </node>
           </node>
         </node>
