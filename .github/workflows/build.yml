@@ -45,5 +45,39 @@ jobs:
         name: test-report
         path: build/test-report/**
         retention-days: 2
+    - uses: actions/upload-artifact@v7
+      id: artifact-upload-alef-windows
+      if: ${{ success() && github.event_name == 'pull_request' }}
+      with:
+        name: 'ALEF Windows'
+        path: build/artifacts/alef-distribution/alef-windows.zip
+        retention-days: 2
+    - uses: actions/upload-artifact@v7
+      id: artifact-upload-alef-linux
+      if: ${{ success() && github.event_name == 'pull_request' }}
+      with:
+        name: 'ALEF Linux'
+        path: build/artifacts/alef-distribution/alef-linux.tar.gz
+        retention-days: 2
+    - uses: actions/upload-artifact@v7
+      id: artifact-upload-alef-macos
+      if: ${{ success() && github.event_name == 'pull_request' }}
+      with:
+        name: 'ALEF macOS'
+        path: build/artifacts/alef-distribution/alef-MacOSaarch64.zip
+        retention-days: 2
+    - name: Add artifact comment on PR
+      if: ${{ success() && github.event_name == 'pull_request' }}
+      run: |
+           comment=$(cat << EOM
+           ALEF distributions (artifacts are deleted in 2 days):
+           * [Windows](${{ steps.artifact-upload-alef-windows.outputs.artifact-url }})
+           * [Linux](${{ steps.artifact-upload-alef-linux.outputs.artifact-url }})
+           * [macOS](${{ steps.artifact-upload-alef-macos.outputs.artifact-url }})
+           EOM
+           )
+           gh pr comment ${{ github.event.number }} --body "$comment"
+      env:
+        GITHUB_TOKEN: ${{ github.TOKEN }}
     - name: Clean-up
       run: rm -rf build
