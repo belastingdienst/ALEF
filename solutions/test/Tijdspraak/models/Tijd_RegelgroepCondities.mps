@@ -19,6 +19,7 @@
       <concept id="8986236170911451467" name="gegevensspraak.tijd.structure.LiteralMetPeriode" flags="ng" index="3eh0X$">
         <child id="8986236170911451744" name="waarde" index="3eh0Lf" />
         <child id="3415641504541937426" name="van" index="3haOjb" />
+        <child id="3415641504541937430" name="tot" index="3haOjf" />
       </concept>
       <concept id="1951710250232179585" name="gegevensspraak.tijd.structure.Tijdsdimensie" flags="ng" index="3ixzmw" />
       <concept id="603682492959493821" name="gegevensspraak.tijd.structure.Tijdgranulariteit" flags="ng" index="1HAryU">
@@ -35,6 +36,10 @@
     <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
       <concept id="6747529342263111880" name="regelspraak.structure.RolOfKenmerkCheck" flags="ng" index="28IzFB">
         <reference id="6747529342263116998" name="rolOfKenmerk" index="28I$VD" />
+      </concept>
+      <concept id="6747529342263124657" name="regelspraak.structure.Vergelijking" flags="ng" index="28IAyu">
+        <property id="6747529342263127133" name="operator" index="28IApM" />
+        <child id="6747529342263128125" name="rechts" index="28IBCi" />
       </concept>
       <concept id="653687101152476296" name="regelspraak.structure.ActieIndienVoorwaarde" flags="ng" index="2boe1W">
         <child id="1480463129960504793" name="actie" index="1wO7i6" />
@@ -312,7 +317,52 @@
         </node>
       </node>
       <node concept="SR_un" id="3PgQ0IWkVuY" role="SOHve">
-        <node concept="2ljwA5" id="3PgQ0IWkVv0" role="SO4NW" />
+        <node concept="2ljwA5" id="3PgQ0IWkVv0" role="SO4NW">
+          <node concept="2ljiaL" id="4Xfb5mqy4PL" role="2ljwA7">
+            <property role="2ljiaO" value="2020" />
+          </node>
+        </node>
+        <node concept="2z5Mdt" id="4Xfb5mqy8XI" role="SR_um">
+          <node concept="3_mHL5" id="4Xfb5mqy8XJ" role="2z5D6P">
+            <node concept="c2t0s" id="4Xfb5mqy9st" role="eaaoM">
+              <ref role="Qu8KH" node="3PgQ0IWkSry" resolve="inkomen" />
+            </node>
+            <node concept="3yS1BT" id="4Xfb5mqy9ss" role="pQQuc">
+              <ref role="3yS1Ki" node="3PgQ0IWkVva" resolve="huurder" />
+            </node>
+          </node>
+          <node concept="dpBbG" id="4Xfb5mqyadS" role="2z5HcU">
+            <node concept="1HAryX" id="4Xfb5mqyaIv" role="1uZqZG">
+              <node concept="1HAryU" id="4Xfb5mqyaIu" role="1HArz7">
+                <property role="1HArza" value="1" />
+                <ref role="2vrkle" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
+              </node>
+            </node>
+            <node concept="28IAyu" id="4Xfb5mqybqx" role="XD3Rr">
+              <property role="28IApM" value="5brrC35IcX$/GT" />
+              <node concept="1EQTEq" id="4Xfb5mqybXq" role="28IBCi">
+                <property role="3e6Tb2" value="1000" />
+                <node concept="PwxsY" id="4Xfb5mqydyQ" role="1jdwn1">
+                  <node concept="Pwxi7" id="4Xfb5mqydyR" role="Pwxi2">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+                  </node>
+                  <node concept="Pwxi7" id="4Xfb5mqyudL" role="PICIJ">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="SR_un" id="4Xfb5mqy5KW" role="SOHve">
+        <node concept="2ljwA5" id="4Xfb5mqy5KX" role="SO4NW">
+          <node concept="2ljiaL" id="4Xfb5mqy6ia" role="2ljwA6">
+            <property role="2ljiaO" value="2021" />
+          </node>
+        </node>
         <node concept="2z5Mdt" id="3PgQ0IWl0lt" role="SR_um">
           <node concept="3yS1BT" id="3PgQ0IWl0lu" role="2z5D6P">
             <ref role="3yS1Ki" node="3PgQ0IWkVva" resolve="huurder" />
@@ -397,7 +447,7 @@
     <node concept="1uxNW$" id="2ycYXNgkOGd" role="1HSqhF" />
   </node>
   <node concept="1rXTK1" id="3PgQ0IYBn8t">
-    <property role="TrG5h" value="testhuurtoeslag" />
+    <property role="TrG5h" value="testhuurtoeslag2020" />
     <node concept="210ffa" id="3PgQ0IYBn8Z" role="10_$IM">
       <property role="TrG5h" value="001" />
       <node concept="4OhPC" id="2ycYXNfZJbk" role="4Ohaa">
@@ -418,6 +468,36 @@
                 <property role="2ljiaM" value="15" />
                 <property role="2ljiaN" value="1" />
                 <property role="2ljiaO" value="2002" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3_ceKt" id="4Xfb5mqyn3m" role="4OhPJ">
+          <ref role="3_ceKs" node="3PgQ0IWkSry" resolve="inkomen" />
+          <node concept="iJZ9l" id="4Xfb5mqyn57" role="3_ceKu">
+            <node concept="3eh0X$" id="4Xfb5mqyn58" role="3eh0KJ">
+              <node concept="1EQTEq" id="4Xfb5mqyn55" role="3eh0Lf">
+                <property role="3e6Tb2" value="4000" />
+                <node concept="PwxsY" id="4Xfb5mqynjE" role="1jdwn1">
+                  <node concept="Pwxi7" id="4Xfb5mqynjF" role="Pwxi2">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+                  </node>
+                  <node concept="Pwxi7" id="4Xfb5mqynNc" role="PICIJ">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyn4Q" role="3haOjb">
+                <property role="2ljiaM" value="1" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2019" />
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyn56" role="3haOjf">
+                <property role="2ljiaM" value="1" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2022" />
               </node>
             </node>
           </node>
@@ -480,6 +560,128 @@
       <property role="2ljiaM" value="1" />
     </node>
     <node concept="vfxHe" id="5zPRswiFFAn" role="vfxHU">
+      <ref role="vfxH2" node="3PgQ0IWkVuR" resolve="huurtoeslag" />
+    </node>
+  </node>
+  <node concept="1rXTK1" id="4Xfb5mqyq47">
+    <property role="TrG5h" value="testhuurtoeslag2017" />
+    <node concept="210ffa" id="4Xfb5mqyq48" role="10_$IM">
+      <property role="TrG5h" value="001" />
+      <node concept="4OhPC" id="4Xfb5mqyq49" role="4Ohaa">
+        <property role="TrG5h" value="h" />
+        <ref role="4OhPH" node="3PgQ0IWkT46" resolve="huis" />
+      </node>
+      <node concept="4OhPC" id="4Xfb5mqyq4a" role="4Ohaa">
+        <property role="TrG5h" value="p" />
+        <ref role="4OhPH" node="3PgQ0IWkSoV" resolve="persoon" />
+        <node concept="3_ceKt" id="4Xfb5mqyq4b" role="4OhPJ">
+          <ref role="3_ceKs" node="3PgQ0IWkSpi" resolve="meerderjarig" />
+          <node concept="iJZ9l" id="4Xfb5mqyq4c" role="3_ceKu">
+            <node concept="3eh0X$" id="4Xfb5mqyq4d" role="3eh0KJ">
+              <node concept="2Jx4MH" id="4Xfb5mqyq4e" role="3eh0Lf">
+                <property role="2Jx4MO" value="true" />
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyq4f" role="3haOjb">
+                <property role="2ljiaM" value="15" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2002" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3_ceKt" id="4Xfb5mqyq4g" role="4OhPJ">
+          <ref role="3_ceKs" node="3PgQ0IWkSry" resolve="inkomen" />
+          <node concept="iJZ9l" id="4Xfb5mqyq4h" role="3_ceKu">
+            <node concept="3eh0X$" id="4Xfb5mqyq4i" role="3eh0KJ">
+              <node concept="1EQTEq" id="4Xfb5mqyq4j" role="3eh0Lf">
+                <property role="3e6Tb2" value="4000" />
+                <node concept="PwxsY" id="4Xfb5mqyq4k" role="1jdwn1">
+                  <node concept="Pwxi7" id="4Xfb5mqyq4l" role="Pwxi2">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+                  </node>
+                  <node concept="Pwxi7" id="4Xfb5mqyq4m" role="PICIJ">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyq4n" role="3haOjb">
+                <property role="2ljiaM" value="1" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2019" />
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyq4o" role="3haOjf">
+                <property role="2ljiaM" value="1" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2022" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3_ceKt" id="4Xfb5mqyq4p" role="4OhPJ">
+          <ref role="3_ceKs" node="3PgQ0IWkTQT" resolve="huurhuis" />
+          <node concept="4PMua" id="4Xfb5mqyq4q" role="3_ceKu">
+            <node concept="4PMub" id="4Xfb5mqyq4r" role="4PMue">
+              <ref role="4PMuN" node="4Xfb5mqyq49" resolve="h" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="4Xfb5mqyq4s" role="4Ohb1">
+        <ref role="4Oh8G" node="3PgQ0IWkSoV" resolve="persoon" />
+        <ref role="3teO_M" node="4Xfb5mqyq4a" resolve="p" />
+        <node concept="3mzBic" id="4Xfb5mqyq4t" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="3PgQ0IWkUGe" resolve="huurtoeslag" />
+          <node concept="iJZ9l" id="4Xfb5mqyq4u" role="3mzBi6">
+            <node concept="3eh0X$" id="4Xfb5mqyq4v" role="3eh0KJ">
+              <node concept="1EQTEq" id="4Xfb5mqyq4w" role="3eh0Lf">
+                <property role="3e6Tb2" value="800" />
+                <node concept="PwxsY" id="4Xfb5mqyq4x" role="1jdwn1">
+                  <node concept="Pwxi7" id="4Xfb5mqyq4y" role="Pwxi2">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+                  </node>
+                  <node concept="Pwxi7" id="4Xfb5mqyq4z" role="PICIJ">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyq4$" role="3haOjb">
+                <property role="2ljiaM" value="1" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2019" />
+              </node>
+              <node concept="2ljiaL" id="4Xfb5mqyxlx" role="3haOjf">
+                <property role="2ljiaM" value="1" />
+                <property role="2ljiaN" value="1" />
+                <property role="2ljiaO" value="2022" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ljwA5" id="4Xfb5mqyq4_" role="3Na4y7">
+      <node concept="2ljiaL" id="4Xfb5mqyq4A" role="2ljwA6">
+        <property role="2ljiaO" value="2017" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaM" value="1" />
+      </node>
+      <node concept="2ljiaL" id="4Xfb5mqyq4B" role="2ljwA7">
+        <property role="2ljiaO" value="2017" />
+        <property role="2ljiaN" value="12" />
+        <property role="2ljiaM" value="31" />
+      </node>
+    </node>
+    <node concept="2ljiaL" id="4Xfb5mqyq4C" role="1lUMLE">
+      <property role="2ljiaO" value="2017" />
+      <property role="2ljiaN" value="7" />
+      <property role="2ljiaM" value="1" />
+    </node>
+    <node concept="vfxHe" id="4Xfb5mqyq4D" role="vfxHU">
       <ref role="vfxH2" node="3PgQ0IWkVuR" resolve="huurtoeslag" />
     </node>
   </node>
