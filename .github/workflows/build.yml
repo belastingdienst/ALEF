@@ -1,6 +1,11 @@
 name: Build
 run-name: Build '${{ github.ref_name }}'
 on: [push, pull_request]
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+  GIT_COMMIT: ${{ github.sha }}
+  GIT_URL: ${{ github.repositoryUrl }}
+  BUILD_NUMBER: ${{ github.run_number }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,6 +22,8 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
+    - name: Set version
+      run: bash scripts/set-version.sh ci
     - name: Build with Maven
       run: xvfb-run -- mvn -B package
     - name: Upload logs
@@ -51,6 +58,7 @@ jobs:
       with:
         name: 'ALEF Windows'
         path: build/artifacts/alef-distribution/alef-windows.zip
+        archive: false
         retention-days: 2
     - uses: actions/upload-artifact@v7
       id: artifact-upload-alef-linux
@@ -58,6 +66,7 @@ jobs:
       with:
         name: 'ALEF Linux'
         path: build/artifacts/alef-distribution/alef-linux.tar.gz
+        archive: false
         retention-days: 2
     - uses: actions/upload-artifact@v7
       id: artifact-upload-alef-macos
@@ -65,6 +74,7 @@ jobs:
       with:
         name: 'ALEF macOS'
         path: build/artifacts/alef-distribution/alef-MacOSaarch64.zip
+        archive: false
         retention-days: 2
     - name: Add artifact comment on PR
       if: ${{ success() && github.event_name == 'pull_request' }}
