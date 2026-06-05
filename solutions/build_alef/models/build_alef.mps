@@ -15360,16 +15360,6 @@
         </node>
       </node>
     </node>
-    <node concept="2kB4xC" id="5h_PUxE08K9" role="1l3spd">
-      <property role="TrG5h" value="FOLDER_NAME" />
-      <node concept="aVJcg" id="5h_PUxE08Mg" role="aVJcv">
-        <node concept="NbPM2" id="5h_PUxE08Mf" role="aVJcq">
-          <node concept="3Mxwew" id="5h_PUxE08Me" role="3MwsjC">
-            <property role="3MwjfP" value="unknown-platform" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2kB4xC" id="3Djj9GDehNK" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="3Djj9GDehNL" role="aVJcv">
