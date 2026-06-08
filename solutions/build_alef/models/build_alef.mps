@@ -9603,6 +9603,9 @@
         <node concept="3LEDTy" id="23TMVG5PR$Q" role="3LEDUa">
           <ref role="3LEDTV" node="23TMVG5PMSW" resolve="modelNaarJson" />
         </node>
+        <node concept="3LEDTy" id="1H1Oc_JGsmK" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
+        </node>
       </node>
       <node concept="3LEwk6" id="1AGpiHw9d8K" role="2G$12L">
         <property role="BnDLt" value="true" />
