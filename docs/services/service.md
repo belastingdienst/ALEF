@@ -98,7 +98,7 @@ In een invoerbericht kan een veld worden opgenomen dat een code bevat die is opg
     * Als bij een invoerkenmerkveld een verstekwaarde is opgegeven, dan is dit veld optioneel. Als er geen verstekwaarde is opgegeven, dan is het veld verplicht.
     * Uitvoerkenmerkvelden zijn altijd verplicht (best practice is om geen kenmerken in de uitvoer op te nemen, maar boolean-attributen).
 * **Afleiding kenmerk uit tekstveld**  
-Op basis van de inhoud van een tekstveld in een invoerbericht kan een kenmerk worden toegekend. 
+Op basis van de inhoud van een tekstveld in een invoerbericht kan een kenmerk worden toegekend. Dit kan ook op basis van een reguliere expressie. Daarnaast is het mogelijk om het kenmerk afhankelijk te maken van de aanwezigheid van een veld in een gespecifeerde lijst.
 
 ![Kenmerk toekennen uit een tekstveld](../img/ALEF220_ServiceEntrypointKenmerk.png)
 

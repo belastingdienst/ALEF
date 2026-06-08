@@ -149,6 +149,12 @@
           <property role="2V$B1Q" value="merlinBaseExt" />
         </node>
       </node>
+      <node concept="2Qf6Nf" id="5gex7I44ri8" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="5gex7I44ria" role="2Qf6Ng">
+          <property role="2V$B1T" value="daafa647-f1f7-4b0b-b096-69cd7c8408c0" />
+          <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.regexp" />
+        </node>
+      </node>
       <node concept="2Qf6Nf" id="1hOTGal__Kc" role="2Qf7GQ">
         <node concept="2V$Bhx" id="1hOTGal__Kd" role="2Qf6Ng">
           <property role="2V$B1T" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c" />
