@@ -317,6 +317,9 @@
       <concept id="4200278814374492272" name="translator.structure.TranslatorField" flags="ig" index="3qapGz">
         <child id="4200278814377207765" name="translator" index="3qLKi6" />
       </concept>
+      <concept id="4200278814377170358" name="translator.structure.TranslatorRef" flags="ng" index="3qLFr_">
+        <reference id="4200278814377170359" name="translator" index="3qLFr$" />
+      </concept>
       <concept id="4200278814377207774" name="translator.structure.NestedTranslator" flags="ig" index="3qLKid">
         <reference id="6061541770080895228" name="superTranslator" index="28KUNz" />
       </concept>
@@ -21640,6 +21643,16 @@
     <property role="TrG5h" value="ServiceTestNaarTestSet" />
     <node concept="3Tm1VV" id="2O3a96NE7y3" role="1B3o_S" />
     <node concept="21FBqJ" id="38V4ljrBadp" role="jymVt" />
+    <node concept="3qapGz" id="5mefrZPhmiP" role="jymVt">
+      <property role="TrG5h" value="gegevensNaarFeiten" />
+      <node concept="3uibUv" id="5mefrZPhmiQ" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3qLFr_" id="5gex7I90aAK" role="3qLKi6">
+        <ref role="3qLFr$" to="xfzg:3QSpQ_NzxoS" resolve="GegevensNaarFeiten" />
+      </node>
+    </node>
+    <node concept="21FBqJ" id="3QSpQ_Oi7rG" role="jymVt" />
     <node concept="Wx3nA" id="36eq17SN1Hi" role="jymVt">
       <property role="TrG5h" value="ctx" />
       <node concept="3Tm6S6" id="36eq17SN1Hk" role="1B3o_S" />
@@ -26955,19 +26968,18 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="67etOnSM0W4" role="3clFbw">
-                    <node concept="2GrUjf" id="67etOnSN52u" role="2Oq$k0">
+                  <node concept="21Gwf3" id="3QSpQ_OiH$i" role="3clFbw">
+                    <ref role="3qchXZ" node="5mefrZPhmiP" resolve="gegevensNaarFeiten" />
+                    <ref role="37wK5l" to="xfzg:3QSpQ_NzxoU" resolve="mapping_nodeTekstspecifiekVelddeel" />
+                    <node concept="2GrUjf" id="3QSpQ_OiOHp" role="37wK5m">
                       <ref role="2Gs0qQ" node="67etOnSKN0Q" resolve="velddeel" />
                     </node>
-                    <node concept="2qgKlT" id="67etOnSM0W6" role="2OqNvi">
-                      <ref role="37wK5l" to="txb8:1vTrU7pXHYP" resolve="evalueer" />
-                      <node concept="2OqwBi" id="67etOnSM0W7" role="37wK5m">
-                        <node concept="37vLTw" id="67etOnSM0W8" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4psh_r60XQ" resolve="elementairTestBerichtVeld" />
-                        </node>
-                        <node concept="3TrcHB" id="67etOnSM0W9" role="2OqNvi">
-                          <ref role="3TsBF5" to="6ldf:7CG9sYRRZNi" resolve="waarde" />
-                        </node>
+                    <node concept="2OqwBi" id="67etOnSM0W7" role="37wK5m">
+                      <node concept="37vLTw" id="67etOnSM0W8" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4psh_r60XQ" resolve="elementairTestBerichtVeld" />
+                      </node>
+                      <node concept="3TrcHB" id="67etOnSM0W9" role="2OqNvi">
+                        <ref role="3TsBF5" to="6ldf:7CG9sYRRZNi" resolve="waarde" />
                       </node>
                     </node>
                   </node>

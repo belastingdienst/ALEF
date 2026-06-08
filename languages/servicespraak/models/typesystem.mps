@@ -9488,7 +9488,7 @@
   </node>
   <node concept="18kY7G" id="46IdknLmNX2">
     <property role="TrG5h" value="check_TekstspecifiekVelddeel" />
-    <property role="3GE5qa" value="berichttype" />
+    <property role="3GE5qa" value="berichttype.invoer" />
     <node concept="3clFbS" id="46IdknLmNX3" role="18ibNy">
       <node concept="3clFbJ" id="46IdknLmO$r" role="3cqZAp">
         <node concept="22lmx$" id="4wLcqElgiEw" role="3clFbw">

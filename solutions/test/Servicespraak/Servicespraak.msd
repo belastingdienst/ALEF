@@ -18,6 +18,7 @@
     <dependency reexport="false">51f8c68a-90ac-4dbf-b58a-c9e9db784c81(xml.schema)</dependency>
     <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
     <dependency reexport="false">d8af31be-1847-4d5b-8686-78e232d4e0f8(servicespraak)</dependency>
+    <dependency reexport="false">fc8ef9c4-06fb-45d6-9045-6f23372c27b1(csvImporter)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3:beslistabelspraak" version="2" />
@@ -26,6 +27,7 @@
     <language slang="l:9a244687-dfa9-4fe1-be0a-b7a1c754e930:buildAlefProject" version="0" />
     <language slang="l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node" version="0" />
     <language slang="l:09c04f52-88c5-4bd6-a481-cabab9f61ff5:contexts" version="0" />
+    <language slang="l:fc8ef9c4-06fb-45d6-9045-6f23372c27b1:csvImporter" version="0" />
     <language slang="l:471364db-8078-4933-b2ef-88232bfa34fc:gegevensspraak" version="19" />
     <language slang="l:c40e126b-a0e9-42bb-b903-9b5fd0b050d2:gegevensspraak.tijd" version="4" />
     <language slang="l:a4bbe181-88ec-4b30-b7d3-db0b30b5c709:interpreter.debug" version="0" />
@@ -33,6 +35,7 @@
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
+    <language slang="l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp" version="0" />
     <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="1" />
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
     <language slang="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" version="8" />
@@ -90,6 +93,7 @@
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)" version="0" />
     <module reference="e9756da9-d229-455c-ab9e-e4bf1fa8bd36(converter)" version="0" />
+    <module reference="fc8ef9c4-06fb-45d6-9045-6f23372c27b1(csvImporter)" version="0" />
     <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="5" />
     <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
     <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />

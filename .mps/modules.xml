@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/bronspraak/bronspraak.mpl" folder="alef.spraken" />
       <modulePath path="$PROJECT_DIR$/languages/contexts/contexts.mpl" folder="alef.spraken" />
       <modulePath path="$PROJECT_DIR$/languages/contextsToHtml/contextsToHtml.mpl" folder="alef.generator.html" />
+      <modulePath path="$PROJECT_DIR$/languages/csvImporter/csvImporter.mpl" folder="platform" />
       <modulePath path="$PROJECT_DIR$/languages/functionalView/functionalView.mpl" folder="platform" />
       <modulePath path="$PROJECT_DIR$/languages/gegevensspraak.tijd/gegevensspraak.tijd.mpl" folder="alef.spraken.tijd" />
       <modulePath path="$PROJECT_DIR$/languages/genAlefAddOnPlugin/genAlefAddOnPlugin.mpl" folder="alef.ide" />

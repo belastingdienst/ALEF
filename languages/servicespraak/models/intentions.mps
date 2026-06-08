@@ -16,11 +16,8 @@
     <import index="3ic2" ref="r:1be64251-a392-4bb4-8ecb-06d30a9277a4(gegevensspraak.structure)" />
     <import index="txb8" ref="r:6d537c47-71e0-4074-bdff-6df0d77b3827(servicespraak.behavior)" />
     <import index="8qxk" ref="r:3dddb2c7-b2ba-4381-896a-2e702ca1fb6e(jetbrains.mps.lang.dataFlow.framework)" />
-    <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
-    <import index="jwpy" ref="r:c0a1951e-ae53-4a58-911d-ce823dfaf0a2(besturingspraak.structure)" />
     <import index="m234" ref="r:dab861ec-284c-4992-a98c-1e3b9c9dd555(regelspraak.structure)" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1748,10 +1745,10 @@
         <node concept="3cpWs6" id="5OyVlT$wjNU" role="3cqZAp">
           <node concept="3K4zz7" id="5OyVlT$wjNV" role="3cqZAk">
             <node concept="Xl_RD" id="5OyVlT$wjNW" role="3K4E3e">
-              <property role="Xl_RC" value="Verwijder attribuut" />
+              <property role="Xl_RC" value="Verwijder Attribuut" />
             </node>
             <node concept="Xl_RD" id="5OyVlT$wjNX" role="3K4GZi">
-              <property role="Xl_RC" value="Voeg attribuut toe" />
+              <property role="Xl_RC" value="Voeg Attribuut Toe" />
             </node>
             <node concept="2OqwBi" id="5OyVlT$wjNY" role="3K4Cdx">
               <node concept="2Sf5sV" id="5OyVlT$wjNZ" role="2Oq$k0" />
@@ -1819,7 +1816,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7sgrdr8277M">
-    <property role="3GE5qa" value="berichttype" />
+    <property role="3GE5qa" value="berichttype.invoer" />
     <property role="TrG5h" value="ToggleHoofdlettergevoelig" />
     <ref role="2ZfgGC" to="ku5w:7vidyuNs5T1" resolve="TekstspecifiekVelddeel" />
     <node concept="2S6ZIM" id="7sgrdr8277N" role="2ZfVej">
@@ -1827,10 +1824,10 @@
         <node concept="3cpWs6" id="7sgrdr82aCO" role="3cqZAp">
           <node concept="3K4zz7" id="7sgrdr82aCP" role="3cqZAk">
             <node concept="Xl_RD" id="7sgrdr82aCQ" role="3K4E3e">
-              <property role="Xl_RC" value="Maak velddeel hoofdletterongevoelig" />
+              <property role="Xl_RC" value="Maak Velddeel Hoofdletterongevoelig" />
             </node>
             <node concept="Xl_RD" id="7sgrdr82aCR" role="3K4GZi">
-              <property role="Xl_RC" value="Maak velddeel hoofdlettergevoelig" />
+              <property role="Xl_RC" value="Maak Velddeel Hoofdlettergevoelig" />
             </node>
             <node concept="2OqwBi" id="7sgrdr82aCS" role="3K4Cdx">
               <node concept="2Sf5sV" id="7sgrdr82aCT" role="2Oq$k0" />

@@ -13,6 +13,7 @@
     <import index="dse8" ref="r:bbb1f8ef-a8a5-48ec-918c-331fca20e41c(interpreter.debug.structure)" />
     <import index="4slc" ref="r:eb302fb9-cf89-4fbc-90a9-b2886bf05a4d(rapporten.structure)" />
     <import index="f6cw" ref="r:57bbe3fc-bd7c-495c-b829-0fc2a7cfe592(bronspraak.structure)" />
+    <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="rzok" ref="r:a8fb563d-47c7-4600-a897-619c6d2de4c5(contexts.structure)" implicit="true" />
     <import index="jwpy" ref="r:c0a1951e-ae53-4a58-911d-ce823dfaf0a2(besturingspraak.structure)" implicit="true" />
@@ -1336,7 +1337,7 @@
   </node>
   <node concept="25R3W" id="192FwRXabV2">
     <property role="3F6X1D" value="1315805416250719938" />
-    <property role="3GE5qa" value="berichttype" />
+    <property role="3GE5qa" value="berichttype.invoer" />
     <property role="TrG5h" value="substringType" />
     <ref role="1H5jkz" node="192FwRXabV3" resolve="bevat" />
     <node concept="25R33" id="192FwRXabV3" role="25R1y">
@@ -1354,10 +1355,20 @@
       <property role="TrG5h" value="eindigtOp" />
       <property role="1L1pqM" value="eindigt op" />
     </node>
+    <node concept="25R33" id="6OISXMFYsS3" role="25R1y">
+      <property role="3tVfz5" value="7867476135980420611" />
+      <property role="TrG5h" value="voldoet" />
+      <property role="1L1pqM" value="voldoet aan" />
+    </node>
+    <node concept="25R33" id="6OISXMHQQUM" role="25R1y">
+      <property role="3tVfz5" value="7867476136011984562" />
+      <property role="TrG5h" value="komtVoorIn" />
+      <property role="1L1pqM" value="voorkomt in" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7vidyuNs5T1">
     <property role="TrG5h" value="TekstspecifiekVelddeel" />
-    <property role="3GE5qa" value="berichttype" />
+    <property role="3GE5qa" value="berichttype.invoer" />
     <property role="34LRSv" value="deel van tekst-specifiek veld" />
     <property role="EcuMT" value="8634022979764772417" />
     <node concept="1TJgyj" id="192FwRWFKmi" role="1TKVEi">
@@ -1365,6 +1376,11 @@
       <property role="20kJfa" value="kenmerk" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ic2:$infi2t7IM" resolve="Kenmerk" />
+    </node>
+    <node concept="1TJgyj" id="6OISXMHQR$y" role="1TKVEi">
+      <property role="IQ2ns" value="7867476136011987234" />
+      <property role="20kJfa" value="lijst" />
+      <ref role="20lvS9" node="6OISXMHQR$s" resolve="Lijst" />
     </node>
     <node concept="1TJgyi" id="192FwRWFKmt" role="1TKVEl">
       <property role="IQ2nx" value="1315805416242742685" />
@@ -1389,6 +1405,12 @@
     </node>
     <node concept="PrWs8" id="5HvJt3oLnSM" role="PzmwI">
       <ref role="PrY4T" to="m234:1qb136ire2h" resolve="ConditieActie" />
+    </node>
+    <node concept="1TJgyj" id="6OISXMFYxby" role="1TKVEi">
+      <property role="IQ2ns" value="7867476135980438242" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="regexp" />
+      <ref role="20lvS9" to="tpfo:h5OC6VX" resolve="Regexp" />
     </node>
   </node>
   <node concept="1TIwiD" id="7vidyuNrWhh">
@@ -1562,6 +1584,41 @@
     </node>
     <node concept="PrWs8" id="6lR0svjHAuC" role="PzmwI">
       <ref role="PrY4T" to="3ic2:2k62pTb3lQI" resolve="Typed" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6OISXMHQR$s">
+    <property role="EcuMT" value="7867476136011987228" />
+    <property role="TrG5h" value="Lijst" />
+    <property role="34LRSv" value="lijst" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="berichttype.invoer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6OISXMHQR$v" role="1TKVEi">
+      <property role="IQ2ns" value="7867476136011987231" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sublijsten" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6OISXMHQR$s" resolve="Lijst" />
+    </node>
+    <node concept="1TJgyj" id="6OISXMHQR$u" role="1TKVEi">
+      <property role="IQ2ns" value="7867476136011987230" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="elementen" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6OISXMHQR$t" resolve="LijstElement" />
+    </node>
+    <node concept="PrWs8" id="6OISXMHQSYI" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6OISXMHQR$t">
+    <property role="EcuMT" value="7867476136011987229" />
+    <property role="TrG5h" value="LijstElement" />
+    <property role="3GE5qa" value="berichttype.invoer" />
+    <property role="34LRSv" value="element van lijst" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6OISXMHX5CC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

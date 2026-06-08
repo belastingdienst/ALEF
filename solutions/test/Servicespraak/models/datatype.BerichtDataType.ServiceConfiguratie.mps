@@ -92,6 +92,15 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp">
+      <concept id="1174482753837" name="jetbrains.mps.baseLanguage.regexp.structure.StringLiteralRegexp" flags="ng" index="1OC9wW">
+        <property id="1174482761807" name="text" index="1OCb_u" />
+      </concept>
+      <concept id="1174482808826" name="jetbrains.mps.baseLanguage.regexp.structure.StarRegexp" flags="ng" index="1OCmVF" />
+      <concept id="1174485235885" name="jetbrains.mps.baseLanguage.regexp.structure.UnaryRegexp" flags="ng" index="1OLBAW">
+        <child id="1174485243418" name="regexp" index="1OLDsb" />
+      </concept>
+    </language>
     <language id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak">
       <concept id="7010317595069378443" name="servicespraak.structure.MappedEnumTypeRef" flags="ng" index="21z$$Y">
         <reference id="7010317595069378444" name="datatype" index="21z$$T" />
@@ -171,11 +180,18 @@
       <concept id="1633367035337312056" name="servicespraak.structure.VeldMetGaten" flags="ng" index="ZHYmi">
         <child id="1633367035338829356" name="velddelen" index="ZBGM6" />
       </concept>
+      <concept id="7867476136011987228" name="servicespraak.structure.Lijst" flags="ng" index="30XpF0">
+        <child id="7867476136011987230" name="elementen" index="30XpF2" />
+        <child id="7867476136011987231" name="sublijsten" index="30XpF3" />
+      </concept>
+      <concept id="7867476136011987229" name="servicespraak.structure.LijstElement" flags="ng" index="30XpF1" />
       <concept id="8634022979764772417" name="servicespraak.structure.TekstspecifiekVelddeel" flags="ng" index="34CAxA">
         <property id="8579476959875468272" name="hoofdlettergevoelig" index="2Z5IsA" />
         <property id="1315805416242801389" name="targetString" index="3IVkjw" />
         <property id="1315805416242742685" name="substringType" index="3IVqIg" />
+        <reference id="7867476136011987234" name="lijst" index="30XpFY" />
         <reference id="1315805416242742674" name="kenmerk" index="3IVqIv" />
+        <child id="7867476135980438242" name="regexp" index="36Pf4Y" />
       </concept>
       <concept id="8634022979764733009" name="servicespraak.structure.TekstSpecifiekInvoerVeld" flags="ng" index="34Jv9Q">
         <property id="6711187384404342743" name="heeftAttribuut" index="TCxE9" />
@@ -552,6 +568,15 @@
         <property role="2Z5IsA" value="true" />
         <ref role="3IVqIv" to="s1a9:4$i$7y4dtkI" resolve="kenmerk_bez" />
       </node>
+      <node concept="34CAxA" id="6NPlQnDrAsO" role="3aJjHw">
+        <property role="3IVqIg" value="6OISXMFYsS3/voldoet" />
+        <ref role="3IVqIv" to="s1a9:4$i$7y4dtkI" resolve="kenmerk_bez" />
+        <node concept="1OCmVF" id="3B_Tm9mauFo" role="36Pf4Y">
+          <node concept="1OC9wW" id="3B_Tm9mawDQ" role="1OLDsb">
+            <property role="1OCb_u" value="dd" />
+          </node>
+        </node>
+      </node>
       <node concept="34CAxA" id="6hfb5ZuO5Yy" role="3aJjHw">
         <property role="3IVkjw" value="niet bijvoeglijk" />
         <property role="3iLdo0" value="true" />
@@ -560,6 +585,11 @@
       <node concept="34CAxA" id="7sgrdr6fPtB" role="3aJjHw">
         <property role="3IVkjw" value="iets anders" />
         <ref role="3IVqIv" to="s1a9:4$i$7y35gAZ" resolve="kenmerk_bijv" />
+      </node>
+      <node concept="34CAxA" id="6NPlQnDrSGJ" role="3aJjHw">
+        <property role="3IVqIg" value="6OISXMHQQUM/komtVoorIn" />
+        <ref role="3IVqIv" to="s1a9:4$i$7y35gAZ" resolve="kenmerk_bijv" />
+        <ref role="30XpFY" node="6NPlQnDruK0" resolve="deelverzameling" />
       </node>
       <node concept="34CAxA" id="6hfb5ZuO5YF" role="3aJjHw">
         <property role="3IVkjw" value="zelfstandig" />
@@ -5153,6 +5183,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="30XpF0" id="6NPlQnDruhD">
+    <property role="TrG5h" value="verzameling" />
+    <node concept="30XpF0" id="6NPlQnDrvev" role="30XpF3">
+      <property role="TrG5h" value="lege deelverzameling" />
+    </node>
+    <node concept="30XpF0" id="6NPlQnDruK0" role="30XpF3">
+      <property role="TrG5h" value="deelverzameling" />
+      <node concept="30XpF1" id="6NPlQnDruQ5" role="30XpF2">
+        <property role="TrG5h" value="c" />
+      </node>
+      <node concept="30XpF1" id="6NPlQnDruRB" role="30XpF2">
+        <property role="TrG5h" value="d" />
+      </node>
+      <node concept="30XpF0" id="6NPlQnDruZf" role="30XpF3">
+        <property role="TrG5h" value="deeldeelverzameling" />
+        <node concept="30XpF1" id="6NPlQnDrv6Q" role="30XpF2">
+          <property role="TrG5h" value="e" />
+        </node>
+        <node concept="30XpF1" id="6NPlQnDrv6S" role="30XpF2">
+          <property role="TrG5h" value="f" />
+        </node>
+        <node concept="30XpF1" id="6NPlQnDrvbs" role="30XpF2">
+          <property role="TrG5h" value="g" />
+        </node>
+      </node>
+    </node>
+    <node concept="30XpF1" id="6NPlQnDruDU" role="30XpF2">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="30XpF1" id="6NPlQnDruIu" role="30XpF2">
+      <property role="TrG5h" value="b" />
     </node>
   </node>
 </model>
