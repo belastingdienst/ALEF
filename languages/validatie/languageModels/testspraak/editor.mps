@@ -12623,17 +12623,17 @@
       <node concept="1hAIg9" id="6ryHSYHnbOp" role="1hA7z_">
         <node concept="3clFbS" id="6ryHSYHnbOq" role="2VODD2">
           <node concept="3clFbJ" id="1MzgQWn1XFg" role="3cqZAp">
+            <node concept="3clFbS" id="1MzgQWn1XFi" role="3clFbx">
+              <node concept="3cpWs6" id="1MzgQWn1YHa" role="3cqZAp" />
+            </node>
             <node concept="2OqwBi" id="1MzgQWn1Y2F" role="3clFbw">
               <node concept="0IXxy" id="1MzgQWn1XFB" role="2Oq$k0" />
               <node concept="2xy62i" id="1MzgQWn1YFR" role="2OqNvi">
                 <node concept="1Q80Hx" id="6ryHSYKfvGC" role="2xHN3q" />
                 <node concept="2TlHUq" id="6ryHSYKfDd$" role="3a7HXU">
-                  <ref role="2TlMyj" node="6ryHSYMzy9p" resolve="verwachtFoutmeldingCell" />
+                  <ref role="2TlMyj" node="3_ssUaSIU4m" resolve="verwachtFoutmeldingCell" />
                 </node>
               </node>
-            </node>
-            <node concept="3clFbS" id="1MzgQWn1XFi" role="3clFbx">
-              <node concept="3cpWs6" id="1MzgQWn1YHa" role="3cqZAp" />
             </node>
           </node>
           <node concept="3clFbF" id="6ryHSYHncMf" role="3cqZAp">
@@ -12659,41 +12659,74 @@
   <node concept="24kQdi" id="1nozgH297Nw">
     <ref role="1XX52x" to="6ldf:1nozgH295jf" resolve="VerwachtFoutAttribute" />
     <node concept="3EZMnI" id="bDWa$ja8hU" role="2wV5jI">
-      <node concept="3EZMnI" id="6ryHSYMzy9f" role="3EZMnx">
-        <node concept="l2Vlx" id="6ryHSYMzy9g" role="2iSdaV" />
-        <node concept="3F0ifn" id="6ryHSYMzy9h" role="3EZMnx">
-          <property role="3F0ifm" value="Verwacht foutmelding" />
-          <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-        </node>
-        <node concept="3F0ifn" id="6ryHSYMzy9i" role="3EZMnx">
-          <property role="3F0ifm" value="^" />
-          <ref role="1k5W1q" to="zkaa:1qfSAxbwUaB" resolve="Commentaar" />
-          <node concept="11LMrY" id="6ryHSYMzy9j" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+      <node concept="2iRkQZ" id="5wgt3spSm3f" role="2iSdaV" />
+      <node concept="3EZMnI" id="3_ssUaSIRzL" role="3EZMnx">
+        <ref role="1ERwB7" node="6ryHSYHn9ON" resolve="Actions_VerwachtFoutAttribute" />
+        <node concept="l2Vlx" id="3_ssUaSIRzM" role="2iSdaV" />
+        <node concept="1QoScp" id="3_ssUaNSCb8" role="3EZMnx">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="3_ssUaNSCbb" role="3e4ffs">
+            <node concept="3clFbS" id="3_ssUaNSCbd" role="2VODD2">
+              <node concept="3clFbF" id="3_ssUaNSHw2" role="3cqZAp">
+                <node concept="3y3z36" id="3_ssUaNSJBW" role="3clFbG">
+                  <node concept="10Nm6u" id="3_ssUaNSJUm" role="3uHU7w" />
+                  <node concept="2OqwBi" id="3_ssUaNSHMS" role="3uHU7B">
+                    <node concept="pncrf" id="3_ssUaNSHw1" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3_ssUaNSIyk" role="2OqNvi">
+                      <ref role="3TsBF5" to="6ldf:1nozgH297sA" resolve="regex" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3EZMnI" id="3_ssUaNSK9m" role="1QoS34">
+            <node concept="3F0ifn" id="3_ssUaNSK9o" role="3EZMnx">
+              <property role="3F0ifm" value="Verwacht foutmelding" />
+              <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
+            </node>
+            <node concept="l2Vlx" id="3_ssUaNSK9n" role="2iSdaV" />
+            <node concept="3F0ifn" id="3_ssUaNSK9p" role="3EZMnx">
+              <property role="3F0ifm" value="^" />
+              <ref role="1k5W1q" to="zkaa:1qfSAxbwUaB" resolve="Commentaar" />
+              <node concept="11LMrY" id="3_ssUaNSK9q" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="3F0A7n" id="3_ssUaNSK9r" role="3EZMnx">
+              <property role="1O74Pk" value="true" />
+              <ref role="1NtTu8" to="6ldf:1nozgH297sA" resolve="regex" />
+              <ref role="1k5W1q" to="mbb7:44Jn6rIF6$Z" resolve="TekstLiteral" />
+              <node concept="VechU" id="3_ssUaNSK9s" role="3F10Kt">
+                <property role="Vb096" value="fLwANPn/red" />
+              </node>
+            </node>
+            <node concept="3F0ifn" id="3_ssUaNSK9t" role="3EZMnx">
+              <property role="3F0ifm" value="$" />
+              <ref role="1k5W1q" to="zkaa:1qfSAxbwUaB" resolve="Commentaar" />
+              <node concept="11L4FC" id="3_ssUaNSK9u" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="lj46D" id="3_ssUaNSK9v" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3EZMnI" id="3_ssUaNSKal" role="1QoVPY">
+            <node concept="l2Vlx" id="3_ssUaNSKam" role="2iSdaV" />
+            <node concept="3F0ifn" id="3_ssUaNSKan" role="3EZMnx">
+              <property role="3F0ifm" value="Verwacht dat de test faalt." />
+              <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
+            </node>
+            <node concept="lj46D" id="3_ssUaNSKao" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
         </node>
-        <node concept="3F0A7n" id="6ryHSYMzy9k" role="3EZMnx">
-          <ref role="1NtTu8" to="6ldf:1nozgH297sA" resolve="regex" />
-          <ref role="1k5W1q" to="mbb7:44Jn6rIF6$Z" resolve="TekstLiteral" />
-          <node concept="VechU" id="7cfU9ZO5bRV" role="3F10Kt">
-            <property role="Vb096" value="fLwANPn/red" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="6ryHSYMzy9l" role="3EZMnx">
-          <property role="3F0ifm" value="$" />
-          <ref role="1k5W1q" to="zkaa:1qfSAxbwUaB" resolve="Commentaar" />
-          <node concept="11L4FC" id="6ryHSYMzy9m" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="lj46D" id="6ryHSYMzy9o" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2SqB2G" id="6ryHSYMzy9p" role="2SqHTX">
+        <node concept="2SqB2G" id="3_ssUaSIU4m" role="2SqHTX">
           <property role="TrG5h" value="verwachtFoutmeldingCell" />
         </node>
       </node>
-      <node concept="2iRkQZ" id="5wgt3spSm3f" role="2iSdaV" />
       <node concept="2SsqMj" id="bDWa$ja8hY" role="3EZMnx" />
     </node>
   </node>
@@ -12763,26 +12796,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="1G5kKGuxXEU">
-    <ref role="1XX52x" to="6ldf:1G5kKGuxVHh" resolve="VerwachtRoodAttribute" />
-    <node concept="3EZMnI" id="1G5kKGuxXEV" role="2wV5jI">
-      <node concept="3EZMnI" id="1G5kKGuxXEW" role="3EZMnx">
-        <node concept="l2Vlx" id="1G5kKGuxXEX" role="2iSdaV" />
-        <node concept="3F0ifn" id="1G5kKGuxXEY" role="3EZMnx">
-          <property role="3F0ifm" value="Verwacht dat de test faalt." />
-          <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-        </node>
-        <node concept="lj46D" id="1G5kKGuxXF4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2SqB2G" id="1G5kKGuxXF5" role="2SqHTX">
-          <property role="TrG5h" value="verwachtFoutmeldingCell" />
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="1G5kKGuxXF6" role="2iSdaV" />
-      <node concept="2SsqMj" id="1G5kKGuxXF7" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="6lgtmEcfNAY">

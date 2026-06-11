@@ -63,7 +63,6 @@
         <reference id="6527873696160724967" name="type" index="4OhPH" />
         <child id="6527873696160724965" name="eigenschappen" index="4OhPJ" />
       </concept>
-      <concept id="1947053721129565009" name="testspraak.structure.VerwachtRoodAttribute" flags="ng" index="5wIxq" />
       <concept id="7760345304267117455" name="testspraak.structure.IAbstractTest" flags="ngI" index="10x1HZ">
         <child id="6527873696160724992" name="situatie" index="4Ohaa" />
         <child id="6527873696160725067" name="resultaat" index="4Ohb1" />
@@ -73,6 +72,7 @@
         <reference id="7760345304268221756" name="eigenschap" index="10Xmnc" />
         <child id="6363260678693757785" name="waarde" index="3mzBi6" />
       </concept>
+      <concept id="1574163149259822287" name="testspraak.structure.VerwachtFoutAttribute" flags="ng" index="1nZdB4" />
       <concept id="8931076255651336840" name="testspraak.structure.TestSet" flags="ng" index="1rXTK1">
         <child id="7037334947758586275" name="teTesten" index="vfxHU" />
         <child id="7760345304265917250" name="testGevallen" index="10_$IM" />
@@ -131,7 +131,7 @@
     </language>
   </registry>
   <node concept="2bv6Cm" id="1G5kKGqeavh">
-    <property role="TrG5h" value="ALEF462" />
+    <property role="TrG5h" value="ALEFS462" />
     <node concept="2bvS6$" id="1G5kKGqeavi" role="2bv6Cn">
       <property role="TrG5h" value="O" />
       <node concept="2bv6ZS" id="1G5kKGs69BJ" role="2bv01j">
@@ -147,7 +147,7 @@
     <node concept="1uxNW$" id="1G5kKGu27qS" role="2bv6Cn" />
   </node>
   <node concept="2bQVlO" id="1G5kKGqeavM">
-    <property role="TrG5h" value="ALEF462" />
+    <property role="TrG5h" value="ALEFS462" />
     <node concept="1HSql3" id="1G5kKGs69AV" role="1HSqhF">
       <property role="TrG5h" value="Doe iets" />
       <node concept="1wO7pt" id="1G5kKGs69AX" role="kiesI">
@@ -172,7 +172,7 @@
     <node concept="1uxNW$" id="1G5kKGqescU" role="1HSqhF" />
   </node>
   <node concept="1rXTK1" id="1G5kKGqeaxs">
-    <property role="TrG5h" value="ALEF462" />
+    <property role="TrG5h" value="ALEFS462" />
     <node concept="2ljwA5" id="1G5kKGqeaxt" role="3Na4y7">
       <node concept="2ljiaL" id="1G5kKGqeaxB" role="2ljwA6">
         <property role="2ljiaO" value="2024" />
@@ -192,7 +192,7 @@
     </node>
     <node concept="3WogBB" id="4xKWB0uLV2" role="vfxHU">
       <node concept="17AEQp" id="4xKWB0uLV1" role="3WoufU">
-        <ref role="17AE6y" node="1G5kKGqeavM" resolve="ALEF462" />
+        <ref role="17AE6y" node="1G5kKGqeavM" resolve="ALEFS462" />
       </node>
     </node>
     <node concept="210ffa" id="1G5kKGqeaxw" role="10_$IM">
@@ -256,7 +256,7 @@
         <property role="TrG5h" value="o" />
         <ref role="4OhPH" node="1G5kKGqes9Y" resolve="K" />
       </node>
-      <node concept="5wIxq" id="1G5kKGuAqpe" role="lGtFl" />
+      <node concept="1nZdB4" id="3_ssUaRzeFP" role="lGtFl" />
     </node>
     <node concept="210ffa" id="1G5kKGu27n$" role="10_$IM">
       <property role="TrG5h" value="Kenmerk fout voorspeld" />
@@ -267,7 +267,7 @@
         <property role="TrG5h" value="o" />
         <ref role="4OhPH" node="1G5kKGqeavi" resolve="O" />
       </node>
-      <node concept="5wIxq" id="7cfU9ZMX4_p" role="lGtFl" />
+      <node concept="1nZdB4" id="3_ssUaRzeFZ" role="lGtFl" />
     </node>
     <node concept="210ffa" id="1G5kKGtutVc" role="10_$IM">
       <property role="TrG5h" value="Zonder kenmerk" />

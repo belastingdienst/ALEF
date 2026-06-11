@@ -24,7 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/generators/html/tijd/serviceNaarHtml.tijd/serviceNaarHtml.tijd.mpl" folder="alef.generator.html.tijd" />
       <modulePath path="$PROJECT_DIR$/languages/generators/html/tijd/testenNaarHtml.tijd/testenNaarHtml.tijd.mpl" folder="alef.generator.html.tijd" />
       <modulePath path="$PROJECT_DIR$/languages/generators/html/vrijspraakNaarHtml/vrijspraakNaarHtml.mpl" folder="alef.generator.html" />
-      <modulePath path="$PROJECT_DIR$/languages/generators/servicetestNaarXml/servicetestNaarXml.mpl" folder="alef.generator" />
+      <modulePath path="$PROJECT_DIR$/languages/generators/servicetestNaarXml/servicetestNaarXml.mpl" folder="alef.generator.servicetest" />
       <modulePath path="$PROJECT_DIR$/languages/generators/testNaarUnittest/testNaarUnittest.mpl" folder="alef.generator" />
       <modulePath path="$PROJECT_DIR$/languages/graphview/graphview.mpl" folder="alef.ide" />
       <modulePath path="$PROJECT_DIR$/languages/html/html.mpl" folder="platform" />

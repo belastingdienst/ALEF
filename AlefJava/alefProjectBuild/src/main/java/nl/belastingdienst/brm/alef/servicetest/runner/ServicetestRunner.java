@@ -16,7 +16,8 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class ServicetestRunner {
-    public static final String SOAP_TEST = "SOAP Test ";
+    public static final String SOAP_TEST = "SOAP test ";
+    public static final String REST_TEST = "REST test ";
     private final String serviceUrl;
     private final String authentication;
     private final ObjectMapper mapper;
@@ -84,9 +85,9 @@ public class ServicetestRunner {
     private int runRestTestSet(Path testSetPath, ServiceTestSet testSet, ServiceTest test, int failures) {
         final TestResult result = runRestTest(testSetPath, test, testSet);
         if (result.isSuccess()) {
-            logger.log(Level.INFO, () -> SOAP_TEST + test.getName() + " (" + testSet.getTestSet() + ") SUCCESS%n");
+            logger.log(Level.INFO, () -> REST_TEST + test.getName() + " (" + testSet.getTestSet() + ") SUCCESS%n");
         } else {
-            logger.log(Level.INFO, () -> SOAP_TEST + test.getName() + " (" +  testSet.getTestSet() +") FAILED%n");
+            logger.log(Level.INFO, () -> REST_TEST + test.getName() + " (" +  testSet.getTestSet() +") FAILED%n");
             logger.log(Level.INFO, result.getMessage());
             logger.log(Level.INFO, "");
             failures++;

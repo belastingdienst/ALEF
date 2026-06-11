@@ -14,6 +14,7 @@ import static nl.belastingdienst.brm.alef.servicetest_runtime.compare_xml.XmlUti
 
 public class MeldingSet {
     private       String              name;
+    private       boolean             expectedToFail;
     private final Predicate<Melding>  filter;
     private final Document            actDoc;
     private final Document            expDoc;
@@ -48,7 +49,7 @@ public class MeldingSet {
     }
 
     public boolean isOk() {
-        return meldingen.stream().allMatch(m -> m.getMeldingType().isOk());
+        return meldingen.stream().allMatch(m -> m.getMeldingType().isOk()) ^ expectedToFail;
     }
 
     public List<String> getActXml() {
@@ -195,12 +196,12 @@ public class MeldingSet {
 
     public void extractMetaInfo(Document doc) {
         metaInfo.putAll(XmlUtils.extractMetaInfo(doc));
-
         String serviceName = metaInfo.get("service");
         String conceptName = metaInfo.get("concept");
         String caseName    = metaInfo.get("name");
+        expectedToFail = metaInfo.containsKey("expectedErrors");
         if (conceptName != null && serviceName != null && caseName != null) {
-            name     = caseName;
+            name = caseName;
         }
         XmlUtils.onlyMatchingKeys(metaInfo, "^error[0-9]+$")
                 .values()

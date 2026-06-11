@@ -10,7 +10,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="65239ca4-9057-41f8-999d-97fa1a60b298" name="besturingspraak" version="2" />
     <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
-    <use id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak" version="17" />
+    <use id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak" version="18" />
   </languages>
   <imports>
     <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" />

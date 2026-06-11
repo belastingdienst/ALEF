@@ -74,7 +74,11 @@ public class TestRunner {
             final StringBuilder message = new StringBuilder();
             message.append("Response difference with expected:\n");
             for (IDifference difference : differences) {
-                message.append("  * ").append(difference.toString()).append("\n");
+                final String what = difference.toString();
+                if ("Missing \"__expected_to_fail__\"".equals(what)) {
+                    return TestResult.success();
+                }
+                message.append("  * ").append(what).append("\n");
             }
             message.append("\n");
             message.append("Expected: \n").append(JsonUtil.format(expectedJson)).append("\n");

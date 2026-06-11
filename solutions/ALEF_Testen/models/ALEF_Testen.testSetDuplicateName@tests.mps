@@ -123,6 +123,7 @@
         <reference id="7760345304268221756" name="eigenschap" index="10Xmnc" />
         <child id="6363260678693757785" name="waarde" index="3mzBi6" />
       </concept>
+      <concept id="1574163149259822287" name="testspraak.structure.VerwachtFoutAttribute" flags="ng" index="1nZdB4" />
       <concept id="8931076255651336840" name="testspraak.structure.TestSet" flags="ng" index="1rXTK1">
         <child id="7037334947758586275" name="teTesten" index="vfxHU" />
         <child id="7760345304265917250" name="testGevallen" index="10_$IM" />
@@ -690,6 +691,7 @@
               </node>
             </node>
           </node>
+          <node concept="1nZdB4" id="3_ssUaSxavy" role="lGtFl" />
         </node>
         <node concept="210ffa" id="7cfU9ZNs6o7" role="10_$IM">
           <property role="TrG5h" value="toekenning overbodig" />
@@ -760,6 +762,7 @@
               </node>
             </node>
           </node>
+          <node concept="1nZdB4" id="3_ssUaSxawR" role="lGtFl" />
         </node>
         <node concept="2dTAK3" id="1G5kKGqeaxA" role="2dTRZp">
           <property role="TrG5h" value="issue" />

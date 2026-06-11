@@ -22,6 +22,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="kv4l" ref="r:333ffe06-45a6-4a2f-9f2c-e32da362f291(interpreter.debug.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1924,6 +1925,26 @@
                 <node concept="1iwH7S" id="6sIogtUUHRP" role="2Oq$k0" />
                 <node concept="1psM6Z" id="6sIogtUUIcj" role="2OqNvi">
                   <ref role="1psM6Y" node="2PIdMfhOdci" resolve="service" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="MFePr" id="3_ssUaTMVSx" role="MEKKP">
+            <property role="ObZi_" value="__expected_to_fail__" />
+            <node concept="nLfeD" id="3_ssUaTNOfo" role="MFez3">
+              <property role="nLIAH" value="1" />
+            </node>
+            <node concept="1W57fq" id="3_ssUaTMXsH" role="lGtFl">
+              <node concept="3IZrLx" id="3_ssUaTMXsI" role="3IZSJc">
+                <node concept="3clFbS" id="3_ssUaTMXsJ" role="2VODD2">
+                  <node concept="3clFbF" id="3_ssUaTMXyC" role="3cqZAp">
+                    <node concept="2OqwBi" id="3_ssUaTMY8u" role="3clFbG">
+                      <node concept="30H73N" id="3_ssUaTMXyB" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="3_ssUaTN99l" role="2OqNvi">
+                        <ref role="37wK5l" to="kv4l:7cfU9ZMLKxZ" resolve="verwachtRood" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

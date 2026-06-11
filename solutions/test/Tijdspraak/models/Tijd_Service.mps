@@ -168,6 +168,7 @@
       <concept id="8803452945675845067" name="testspraak.structure.ComplexTestBerichtVeld" flags="ng" index="3dWXw4">
         <child id="6438506741833356934" name="subs" index="27HnP2" />
       </concept>
+      <concept id="1574163149259822287" name="testspraak.structure.VerwachtFoutAttribute" flags="ng" index="1nZdB4" />
       <concept id="6404605531307053492" name="testspraak.structure.TestUitvoerBericht" flags="ng" index="1GVEHS">
         <property id="6404605531307070318" name="resultaatcode" index="1GVIAy" />
         <property id="6404605531307070481" name="resultaatmelding" index="1GVIVt" />
@@ -1526,6 +1527,202 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3dMsQu" id="3_ssUaTJl2O" role="3dMzYz">
+      <property role="TrG5h" value="incomplete prediction (ALEFS-1082 #3)" />
+      <node concept="3dW_9m" id="3_ssUaTJl2P" role="3dLJhy">
+        <property role="3dWN8O" value="2023" />
+        <node concept="3dWXw4" id="3_ssUaTJl2Q" role="3dWWrB">
+          <ref role="3dWXzV" node="5dBd1KFtEyX" resolve="parameters" />
+          <node concept="27HnP5" id="3_ssUaTJl2R" role="27HnP2">
+            <node concept="1FUTx5" id="3_ssUaTJl2S" role="27HnPe">
+              <ref role="3dWXzV" node="5dBd1KFtEzw" resolve="percentage" />
+              <node concept="1VphKG" id="3_ssUaTJl2T" role="1VphNg">
+                <property role="1OCaDo" value="4.5" />
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCa" value="2022-01-01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3dWXw4" id="3_ssUaTJl2U" role="3dWWrB">
+          <ref role="3dWXzV" node="5dBd1KFtEyY" resolve="b" />
+          <node concept="27HnP5" id="3_ssUaTJl2V" role="27HnP2">
+            <node concept="1FUTx5" id="3_ssUaTJl2W" role="27HnPe">
+              <ref role="3dWXzV" node="7rXEx6vENAO" resolve="domeinInvoer" />
+              <node concept="1VphKG" id="3_ssUaTJl2X" role="1VphNg">
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCb" value="2023-01-01" />
+                <property role="1OCaDo" value="100" />
+              </node>
+              <node concept="1VphKG" id="3_ssUaTJl2Y" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCa" value="2024-02-01" />
+                <property role="3qbmCb" value="2" />
+                <property role="1OCaDo" value="0" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl2Z" role="27HnPe">
+              <ref role="3dWXzV" node="128EeGQS9dt" resolve="enumInvoer" />
+              <node concept="1VphKG" id="3_ssUaTJl30" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2000-01-01" />
+                <property role="3qbmCb" value="2001-01-01" />
+                <property role="1OCaDo" value="enum1" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl31" role="27HnPe">
+              <ref role="3dWXzV" node="5dBd1KFtEzy" resolve="numeriek-Invoer" />
+              <node concept="1VphKG" id="3_ssUaTJl32" role="1VphNg">
+                <property role="1OCaDo" value="13" />
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCa" value="2025-01-01" />
+                <property role="3qbmCb" value="2025-02-01" />
+                <property role="3qbmCd" value="true" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl33" role="27HnPe">
+              <ref role="3dWXzV" node="3kkTUFZpH00" resolve="kenmerkInvoer" />
+              <node concept="1VphKG" id="3_ssUaTJl34" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCa" value="2023-05-17" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCb" value="2023-07-01" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl35" role="27HnPe">
+              <ref role="3dWXzV" node="3kkTUFZpH01" resolve="kenmerk2Invoer" />
+              <node concept="1VphKG" id="3_ssUaTJl36" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCb" value="2024-02-01" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl37" role="27HnPe">
+              <ref role="3dWXzV" node="3f7RDaWpoP1" resolve="numeriekJaarInvoer" />
+              <node concept="1VphKG" id="3_ssUaTJl38" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCb" value="2025-01-01" />
+                <property role="1OCaDo" value="24" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl39" role="27HnPe">
+              <ref role="3dWXzV" node="3f7RDaWpp3q" resolve="numeriekJaar2Invoer" />
+              <node concept="1VphKG" id="3_ssUaTJl3a" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCb" value="2025-01-01" />
+                <property role="1OCaDo" value="25" />
+              </node>
+            </node>
+            <node concept="1FUTx5" id="3_ssUaTJl3b" role="27HnPe">
+              <ref role="3dWXzV" node="756Mi9IA1hW" resolve="tijdInvoer" />
+              <node concept="1VphKG" id="3_ssUaTJl3c" role="1VphNg">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCb" value="2025-01-01" />
+                <property role="1OCaDo" value="2020-01-01T11:00:00.000" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="3_ssUaTJl3d" role="1GVd_u">
+        <property role="1GVIAy" value="1" />
+        <property role="1GVIVt" value="SERVICE_OK" />
+        <node concept="1GVH25" id="3_ssUaTJl3e" role="1GVH3P">
+          <ref role="1GVH3K" node="5dBd1KFtEyW" resolve="b" />
+          <node concept="27HnPa" id="3_ssUaTJl3f" role="27HnPl">
+            <node concept="3qbmFK" id="3_ssUaTJl3g" role="27HnPh">
+              <ref role="1GVH3K" node="5dBd1KFtEzu" resolve="domeinUitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3h" role="3qbmCe">
+                <property role="3qbmCb" value="2023-01-01" />
+                <property role="3qbmCd" value="true" />
+                <property role="1AKbBd" value="100" />
+              </node>
+              <node concept="3qbmFL" id="3_ssUaTJl3i" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCa" value="2024-02-01" />
+                <property role="3qbmCb" value="2023-06-01" />
+                <property role="1AKbBd" value="0" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3j" role="27HnPh">
+              <ref role="1GVH3K" node="128EeGQS9Bz" resolve="enumUitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3k" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2000-01-01" />
+                <property role="3qbmCb" value="2001-01-01" />
+                <property role="1AKbBd" value="enum1" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3l" role="27HnPh">
+              <ref role="1GVH3K" node="7rXEx6vENEM" resolve="numeriek-Uitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3m" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2025-01-01" />
+                <property role="3qbmCb" value="2025-02-01" />
+                <property role="1AKbBd" value="13" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3n" role="27HnPh">
+              <ref role="1GVH3K" node="7rXEx6vEPz9" resolve="parameterUitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3o" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCa" value="2022-01-01" />
+                <property role="1AKbBd" value="4.5" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3p" role="27HnPh">
+              <ref role="1GVH3K" node="3kkTUFZpH03" resolve="kenmerkUitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3q" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2023-05-17" />
+                <property role="3qbmCb" value="2023-07-01" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3r" role="27HnPh">
+              <ref role="1GVH3K" node="3kkTUFZpH04" resolve="kenmerk2Uitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3s" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCb" value="2024-02-01" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3v" role="27HnPh">
+              <ref role="1GVH3K" node="3f7RDaWppuQ" resolve="numeriekJaar2Uitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3w" role="3qbmCe">
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCb" value="2025-01-01" />
+                <property role="1AKbBd" value="25" />
+              </node>
+            </node>
+            <node concept="3qbmFK" id="3_ssUaTJl3x" role="27HnPh">
+              <ref role="1GVH3K" node="756Mi9IAl9m" resolve="tijdUitvoer" />
+              <node concept="3qbmFL" id="3_ssUaTJl3y" role="3qbmCe">
+                <property role="1AKbBd" value="2020-01-01T11:00:00" />
+                <property role="3qbmCa" value="2024-01-01" />
+                <property role="3qbmCc" value="true" />
+                <property role="3qbmCd" value="true" />
+                <property role="3qbmCb" value="2025-01-01" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1nZdB4" id="3_ssUaTLjRz" role="lGtFl" />
     </node>
     <node concept="3dMsQu" id="cUCbVUA5bG" role="3dMzYz">
       <property role="TrG5h" value="invoer geen kenmerken (alefs-209)" />
