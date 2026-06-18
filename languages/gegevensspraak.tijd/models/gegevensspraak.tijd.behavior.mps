@@ -9245,7 +9245,7 @@
               </node>
               <node concept="21noJN" id="7HdA5NYbyKv" role="2OqNvi">
                 <node concept="21nZrQ" id="7HdA5NYbyKw" role="21noJM">
-                  <ref role="21nZrZ" to="3ic2:4WetKT2PyUx" resolve="PUNT" />
+                  <ref role="21nZrZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
                 </node>
               </node>
             </node>

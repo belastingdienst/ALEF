@@ -13806,6 +13806,19 @@
                     <node concept="2pJPEk" id="5E38BX7dCvu" role="1P9ThW">
                       <node concept="2pJPED" id="5E38BX7dCvv" role="2pJPEn">
                         <ref role="2pJxaS" to="m234:35fGtDXbw$6" resolve="DatumMetJaarMaandDagEnTijd" />
+                        <node concept="2pJxcG" id="1JL9VH7$08u" role="2pJxcM">
+                          <ref role="2pJxcJ" to="m234:1q0zb1Wd3g2" resolve="granulariteit" />
+                          <node concept="WxPPo" id="1JL9VH7$0w3" role="28ntcv">
+                            <node concept="2OqwBi" id="1JL9VH7$10Q" role="WxPPp">
+                              <node concept="1XH99k" id="1JL9VH7$0w1" role="2Oq$k0">
+                                <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                              </node>
+                              <node concept="2ViDtV" id="1JL9VH7$1mp" role="2OqNvi">
+                                <ref role="2ViDtZ" to="3ic2:4WetKT2PyUv" resolve="SECONDE" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="2pIpSj" id="5E38BX7dCvw" role="2pJxcM">
                           <ref role="2pIpSl" to="m234:2pWEaT0RsOS" resolve="jaar" />
                           <node concept="36biLy" id="5E38BX7dCvx" role="28nt2d">
@@ -13845,12 +13858,6 @@
                         <node concept="2pIpSj" id="5E38BX7dCvH" role="2pJxcM">
                           <ref role="2pIpSl" to="m234:35fGtDXbw$l" resolve="seconde" />
                           <node concept="2pJPED" id="5E38BX7dCvI" role="28nt2d">
-                            <ref role="2pJxaS" to="3ic2:7WC_ArdYrFj" resolve="Expressie" />
-                          </node>
-                        </node>
-                        <node concept="2pIpSj" id="5E38BX7dCvJ" role="2pJxcM">
-                          <ref role="2pIpSl" to="m234:35fGtDXbw$q" resolve="milliseconde" />
-                          <node concept="2pJPED" id="5E38BX7dCvK" role="28nt2d">
                             <ref role="2pJxaS" to="3ic2:7WC_ArdYrFj" resolve="Expressie" />
                           </node>
                         </node>

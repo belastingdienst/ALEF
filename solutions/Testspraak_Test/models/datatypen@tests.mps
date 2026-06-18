@@ -6,7 +6,7 @@
     <use id="bef79dc4-9060-4318-a10a-46eb2fa0f3b1" name="translator" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="08d6f877-03cc-45d3-b03c-d6f786266853" name="bronspraak" version="1" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="22" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
   </languages>
   <imports>
@@ -193,6 +193,7 @@
     </language>
     <language id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak">
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
@@ -368,7 +369,7 @@
                 <property role="2JBhWF" value="13" />
                 <property role="2JBhWc" value="13" />
                 <property role="2JBhWl" value="13" />
-                <property role="2JBhWr" value="1" />
+                <property role="2isrjt" value="001" />
               </node>
             </node>
             <node concept="3mzBic" id="Bur0r0aEBC" role="4Ohbj">
@@ -742,6 +743,7 @@
                 <property role="2JBhWF" value="13" />
                 <property role="2JBhWc" value="13" />
                 <property role="2JBhWl" value="13" />
+                <property role="2isrjt" value="001000000" />
                 <property role="2JBhWr" value="1" />
               </node>
             </node>

@@ -65,6 +65,7 @@
     </language>
     <language id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak">
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
@@ -137,7 +138,7 @@
     <property role="2XOHcw" value="${alef.home}" />
   </node>
   <node concept="LiM7Y" id="7WsROR9XVt0">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_dag_2_milliseconde" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_dag_2_tijdstip" />
     <node concept="3clFbS" id="7WsROR9XVt3" role="LjaKd">
       <node concept="1MFPAf" id="32IB1r5XTXt" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -146,7 +147,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="6_zqHPmKWnU" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -173,6 +174,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
+        <property role="2isrjt" value="0" />
         <property role="2JBhWr" value="0" />
       </node>
     </node>
@@ -243,7 +245,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcqKz">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_milliseconde_2_seconde" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_tijdstip_2_seconde" />
     <node concept="3clFbS" id="7UgZnGtcqK$" role="LjaKd">
       <node concept="1MFPAf" id="7UgZnGtcqK_" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -287,7 +289,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcv5m">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_milliseconde_2_minuut" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_tijdstip_2_minuut" />
     <node concept="3clFbS" id="7UgZnGtcv5n" role="LjaKd">
       <node concept="1MFPAf" id="7UgZnGtcv5o" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -330,7 +332,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcv73">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_milliseconde_2_uur" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_tijdstip_2_uur" />
     <node concept="3clFbS" id="7UgZnGtcv74" role="LjaKd">
       <node concept="1MFPAf" id="7UgZnGtcv75" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -372,7 +374,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcv9N">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_seconde_2_milliseconde" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_seconde_2_tijdstip" />
     <node concept="3clFbS" id="7UgZnGtcv9O" role="LjaKd">
       <node concept="1MFPAf" id="7UgZnGtcv9P" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -381,7 +383,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="7UgZnGtcv9S" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -411,6 +413,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
+        <property role="2isrjt" value="0" />
         <property role="2JBhWr" value="0" />
       </node>
     </node>
@@ -498,7 +501,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcxV3">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_minuut_2_milliseconde" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_minuut_2_tijdstip" />
     <node concept="3clFbS" id="7UgZnGtcxV4" role="LjaKd">
       <node concept="1MFPAf" id="7UgZnGtcxV5" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -507,7 +510,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="7UgZnGtcxV8" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -536,6 +539,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
+        <property role="2isrjt" value="0" />
         <property role="2JBhWr" value="0" />
       </node>
     </node>
@@ -622,7 +626,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcz_1">
-    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_uur_2_milliseconde" />
+    <property role="TrG5h" value="DatumTijd_Set_Granulariteit_uur_2_tijdstip" />
     <node concept="3clFbS" id="7UgZnGtcz_2" role="LjaKd">
       <node concept="1MFPAf" id="7UgZnGtcz_3" role="3cqZAp">
         <ref role="1MFYO6" to="jp3k:6yhilWPsE32" resolve="VeranderGranulariteit" />
@@ -631,7 +635,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="7UgZnGtcz_6" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -659,6 +663,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
+        <property role="2isrjt" value="0" />
         <property role="2JBhWr" value="0" />
       </node>
     </node>

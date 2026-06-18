@@ -6655,7 +6655,7 @@
     </node>
   </node>
   <node concept="1rXTK1" id="2b3Vt4mh5cx">
-    <property role="TrG5h" value="Test voor milliseconden in datumtijd" />
+    <property role="TrG5h" value="Test voor milliseconden in tijdstip" />
     <node concept="210ffa" id="2b3Vt4mh5gP" role="10_$IM">
       <property role="TrG5h" value="001" />
       <node concept="4OhPC" id="2b3Vt4mh5gQ" role="4Ohaa">
@@ -6768,7 +6768,7 @@
     <node concept="3WogBB" id="4xKWB0uLHW" role="vfxHU">
       <property role="TrG5h" value="Flow met milliseconden" />
       <node concept="17AEQp" id="4xKWB0uLHV" role="3WoufU">
-        <ref role="17AE6y" to="yr4e:2b3Vt4mh35K" resolve="Regels met millisecondes in datumtijd" />
+        <ref role="17AE6y" to="yr4e:2b3Vt4mh35K" resolve="Regels met millisecondes in tijdstip" />
       </node>
     </node>
   </node>

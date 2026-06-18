@@ -31,12 +31,12 @@ public class DateUtil {
             .toFormatter();
 
     public static final String ISO8601_DATEFORMAT_PATTERN = "uuuu-MM-dd";
-    private static final String ISO8601_TIMESTAMPFORMAT_PATTERN = "uuuu-MM-dd'T'HH:mm:ss.SSSXXX";
+    private static final String ISO8601_TIMESTAMPFORMAT_PATTERN = "uuuu-MM-dd'T'HH:mm:ss.SSSSSSSSSXXX";
 
     private static final String YEARFORMAT_PATTERN = "uuuu";
     private static final String MONTHFORMAT_PATTERN = "MM-uuuu";
     private static final String DATEFORMAT_PATTERN = "dd-MM-uuuu";
-    private static final String TIMESTAMPFORMAT_PATTERN = "dd-MM-uuuu HH:mm:ss.SSS";
+    private static final String TIMESTAMPFORMAT_PATTERN = "dd-MM-uuuu HH:mm:ss.SSSSSSSSS";
 
     private static final DateTimeFormatter ALEF_YEARFORMAT = DateTimeFormatter.ofPattern(YEARFORMAT_PATTERN);
     private static final DateTimeFormatter ALEF_MONTHFORMAT = DateTimeFormatter.ofPattern(MONTHFORMAT_PATTERN);
@@ -77,7 +77,7 @@ public class DateUtil {
         return switch (granularity) {
             case YEAR -> dt.format(YEAR_FORMATTER);
             case MONTH -> dt.format(MONTH_FORMATTER);
-            case MILLI_SECOND -> dt.format(DATETIME_FORMATTER);
+            case POINT_IN_TIME -> dt.format(DATETIME_FORMATTER);
             default -> dt.format(DATE_FORMATTER);
         };
     }

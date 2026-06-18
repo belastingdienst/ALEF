@@ -5896,7 +5896,7 @@
                     <ref role="37wK5l" to="nhsg:~Time.lift5(nl.belastingdienst.alef_runtime.functions.Function5)" resolve="lift5" />
                     <ref role="1Pybhc" to="nhsg:~Time" resolve="Time" />
                     <node concept="37Ijox" id="1S26AWeEgBn" role="37wK5m">
-                      <ref role="37Ijqf" to="2vij:~Util.localDateTimeMetJaarEnVerstekwaardenVoorMaandEnDag(nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational)" resolve="localDateTimeMetJaarEnVerstekwaardenVoorMaandEnDag" />
+                      <ref role="37Ijqf" to="2vij:~Util.localDateTimeOfYearWithDefaultForMonthAndDay(nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational,nl.belastingdienst.alef_runtime.BigRational)" resolve="localDateTimeOfYearWithDefaultForMonthAndDay" />
                       <node concept="2FaPjH" id="1S26AWeEgBo" role="wWaWy">
                         <node concept="3uibUv" id="1S26AWeEgBp" role="2FaQuo">
                           <ref role="3uigEE" to="2vij:~Util" resolve="Util" />

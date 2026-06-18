@@ -124,7 +124,6 @@
       <concept id="1690542669507072391" name="regelspraak.structure.VermenigvuldigExpressie" flags="ng" index="3aUx8u" />
       <concept id="1690542669507072390" name="regelspraak.structure.PlusExpressie" flags="ng" index="3aUx8v" />
       <concept id="3553254182979766534" name="regelspraak.structure.DatumMetJaarMaandDagEnTijd" flags="ng" index="1corzs">
-        <child id="3553254182979766554" name="milliseconde" index="1corz0" />
         <child id="3553254182979766545" name="minuut" index="1corzb" />
         <child id="3553254182979766549" name="seconde" index="1corzf" />
         <child id="3553254182979766537" name="uur" index="1corzj" />
@@ -1459,11 +1458,11 @@
     </node>
   </node>
   <node concept="LiM7Y" id="4A7zDgy1LS4">
-    <property role="TrG5h" value="Waarde_milliseconde_uit" />
+    <property role="TrG5h" value="Waarde_nanoseconde_uit" />
     <property role="3YCmrE" value="Hier wordt een Gelijkstelling gebruikt als parent voor de &quot;Waarde&quot; editor" />
     <node concept="3clFbS" id="4A7zDgy1LS5" role="LjaKd">
       <node concept="2TK7Tu" id="4A7zDgy1LS6" role="3cqZAp">
-        <property role="2TTd_B" value="milliseconde uit" />
+        <property role="2TTd_B" value="nanoseconde uit" />
       </node>
     </node>
     <node concept="1qefOq" id="4A7zDgy1LS7" role="25YQCW">
@@ -1559,14 +1558,13 @@
           <node concept="c2t0s" id="4A7zDgy1M42" role="eaaoM" />
           <node concept="3_kdyS" id="4A7zDgy1M43" role="pQQuc" />
         </node>
-        <node concept="1corzs" id="4A7zDgy1M5p" role="2bokzm">
-          <node concept="2MOiMP" id="4A7zDgy1M5t" role="1ACmmm" />
-          <node concept="2MOiMP" id="4A7zDgy1M5u" role="1ACmmk" />
-          <node concept="2MOiMP" id="4A7zDgy1M5v" role="1ACmmj" />
-          <node concept="2MOiMP" id="4A7zDgy1M5w" role="1corzj" />
-          <node concept="2MOiMP" id="4A7zDgy1M5x" role="1corzb" />
-          <node concept="2MOiMP" id="4A7zDgy1M5y" role="1corzf" />
-          <node concept="2MOiMP" id="4A7zDgy1M5z" role="1corz0" />
+        <node concept="1corzs" id="7U0FZcHtwjY" role="2bokzm">
+          <node concept="2MOiMP" id="7U0FZcHtwjZ" role="1corzj" />
+          <node concept="2MOiMP" id="7U0FZcHtwk0" role="1corzb" />
+          <node concept="2MOiMP" id="7U0FZcHtwk1" role="1corzf" />
+          <node concept="2MOiMP" id="7U0FZcHtwk2" role="1ACmmm" />
+          <node concept="2MOiMP" id="7U0FZcHtwk3" role="1ACmmk" />
+          <node concept="2MOiMP" id="7U0FZcHtwk4" role="1ACmmj" />
         </node>
       </node>
     </node>

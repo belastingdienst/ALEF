@@ -434,6 +434,9 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
@@ -56045,7 +56048,7 @@
           <node concept="2OqwBi" id="35fGtDX2u7t" role="3clFbw">
             <node concept="359W_D" id="35fGtDX2tqB" role="2Oq$k0">
               <ref role="359W_E" to="m234:35fGtDXbw$6" resolve="DatumMetJaarMaandDagEnTijd" />
-              <ref role="359W_F" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+              <ref role="359W_F" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
             </node>
             <node concept="liA8E" id="35fGtDX2uAx" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
@@ -56183,7 +56186,7 @@
           <node concept="2OqwBi" id="3nonhM2_Qiu" role="JncvB">
             <node concept="13iPFW" id="3nonhM2_Qiv" role="2Oq$k0" />
             <node concept="3TrEf2" id="3nonhM2_Qiw" role="2OqNvi">
-              <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+              <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
             </node>
           </node>
           <node concept="3clFbS" id="3nonhM2_Qix" role="Jncv$">
@@ -56224,7 +56227,7 @@
             </node>
             <node concept="tyxLq" id="29wZyCSgDQ3" role="2OqNvi">
               <node concept="21nZrQ" id="29wZyCSgDQF" role="tz02z">
-                <ref role="21nZrZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUv" resolve="SECONDE" />
               </node>
             </node>
           </node>
@@ -56375,7 +56378,7 @@
             <node concept="2OqwBi" id="7OIMGSGTLCR" role="3uHU7B">
               <node concept="13iPFW" id="7OIMGSGTLi3" role="2Oq$k0" />
               <node concept="2qgKlT" id="7OIMGSGTM7a" role="2OqNvi">
-                <ref role="37wK5l" node="3DkB2tlmqBg" resolve="heeftMilliseconde" />
+                <ref role="37wK5l" node="2DcxiJSddx4" resolve="isTijdstip" />
               </node>
             </node>
             <node concept="3fqX7Q" id="7OIMGSGTKm8" role="3uHU7w">
@@ -56383,7 +56386,7 @@
                 <node concept="2OqwBi" id="7OIMGSGTKma" role="2Oq$k0">
                   <node concept="13iPFW" id="7OIMGSGTKmb" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7OIMGSGTKmc" role="2OqNvi">
-                    <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+                    <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
                   </node>
                 </node>
                 <node concept="1mIQ4w" id="7OIMGSGTKmd" role="2OqNvi">
@@ -56400,12 +56403,12 @@
                 <ref role="37wK5l" node="4n$FhAwtnI$" resolve="verplaatsExpressieNaarVariabele" />
                 <ref role="1Pybhc" node="4n$FhAwtnHP" resolve="VerplaatsExpressieNaarVariabele" />
                 <node concept="Xl_RD" id="7OIMGSGTKmi" role="37wK5m">
-                  <property role="Xl_RC" value="MS" />
+                  <property role="Xl_RC" value="NS" />
                 </node>
                 <node concept="2OqwBi" id="7OIMGSGTKmj" role="37wK5m">
                   <node concept="13iPFW" id="7OIMGSGTKmk" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7OIMGSGTKml" role="2OqNvi">
-                    <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+                    <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
                   </node>
                 </node>
               </node>
@@ -56413,6 +56416,24 @@
           </node>
         </node>
         <node concept="3clFbH" id="7OIMGSGTDqS" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="2DcxiJSddx4" role="13h7CS">
+      <property role="TrG5h" value="isTijdstip" />
+      <node concept="3Tm1VV" id="2DcxiJSddx5" role="1B3o_S" />
+      <node concept="10P_77" id="2DcxiJSddx6" role="3clF45" />
+      <node concept="3clFbS" id="2DcxiJSddx7" role="3clF47">
+        <node concept="3cpWs6" id="2DcxiJSddx8" role="3cqZAp">
+          <node concept="3y3z36" id="2$1HanhZWTk" role="3cqZAk">
+            <node concept="10Nm6u" id="2$1HanhZWXJ" role="3uHU7w" />
+            <node concept="2OqwBi" id="2$1HanhZVRF" role="3uHU7B">
+              <node concept="13iPFW" id="2$1HanhZVAq" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2DcxiJSdfnk" role="2OqNvi">
+                <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="3DkB2tlmqBg" role="13h7CS">
@@ -56431,6 +56452,14 @@
             <node concept="3x8VRR" id="1q0zb1WdW97" role="2OqNvi" />
           </node>
         </node>
+      </node>
+      <node concept="P$JXv" id="2DcxiJSde$W" role="lGtFl">
+        <node concept="TZ5HI" id="2DcxiJSde$X" role="3nqlJM">
+          <node concept="TZ5HA" id="2DcxiJSde$Y" role="3HnX3l" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2DcxiJSde$Z" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="13i0hz" id="3DkB2tlmuuz" role="13h7CS">
@@ -56925,7 +56954,7 @@
                   <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
                 </node>
                 <node concept="2ViDtV" id="1IPDgOs0nB9" role="2OqNvi">
-                  <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+                  <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
                 </node>
               </node>
             </node>

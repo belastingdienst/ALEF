@@ -86,40 +86,40 @@ public final class Util {
         return function.apply(a, b);
     }
 
-    public static LocalDateTime plusDuur(LocalDateTime date, BigRational duur, TimeGranularity granularity) {
+    public static LocalDateTime plusDuration(LocalDateTime date, BigRational duration, TimeGranularity granularity) {
         if (date == null) return null;
-        if (duur == null) return date;
-        return new Timespan(duur.longValue(), granularity).add(date);
+        if (duration == null) return date;
+        return new Timespan(duration.longValue(), granularity).add(date);
     }
 
-    public static Timespan plusDuurLeeg(Timespan d1, Timespan d2) {
+    public static Timespan plusDurationEmpty(Timespan d1, Timespan d2) {
         if (d1 == null) return d2;
         if (d2 == null) return d1;
         return d2.add(d1);
     }
 
-    public static LocalDateTime minDuur(LocalDateTime date, BigRational duur, TimeGranularity granularity) {
+    public static LocalDateTime minusDuration(LocalDateTime date, BigRational duration, TimeGranularity granularity) {
         if (date == null) return null;
-        if (duur == null) return date;
-        return new Timespan(duur.longValue(), granularity).subtractFrom(date);
+        if (duration == null) return date;
+        return new Timespan(duration.longValue(), granularity).subtractFrom(date);
     }
 
-    public static LocalDate datumMetJaarMaandEnDag(BigRational jaar, BigRational maand, BigRational dag) {
-        if (hasNulls(jaar, maand, dag)) return null;
-        return LocalDate.of(jaar.intValue(), maand.intValue(), dag.intValue());
+    public static LocalDate dateOfYearMonthAndDay(BigRational year, BigRational month, BigRational day) {
+        if (hasNulls(year, month, day)) return null;
+        return LocalDate.of(year.intValue(), month.intValue(), day.intValue());
     }
-    public static LocalDateTime datetimeMetJaarMaandDagenTijd(BigRational jaar, BigRational maand, BigRational dag, BigRational uur, BigRational minuut, BigRational seconde, BigRational milliseconde){
-        if (hasNulls(jaar ,maand ,dag , uur, minuut, seconde, milliseconde)) return null;
-        return LocalDateTime.of(jaar.intValue(), maand.intValue(), dag.intValue(), uur.intValue(), minuut.intValue(),seconde.intValue(), milliseconde.multiply(1_000_000).intValue());
-    }
-
-    public static LocalDateTime dateTimeMetJaarMaandEnDag(BigRational jaar, BigRational maand, BigRational dag) {
-        if (hasNulls(jaar, maand, dag)) return null;
-        return LocalDateTime.of(jaar.intValue(), maand.intValue(), dag.intValue(),0,0);
+    public static LocalDateTime datetimeOfYearMonthDayAndTime(BigRational year, BigRational month, BigRational day, BigRational hour, BigRational minute, BigRational second, BigRational fractionalSecond){
+        if (hasNulls(year ,month ,day , hour, minute, second, fractionalSecond)) return null;
+        return LocalDateTime.of(year.intValue(), month.intValue(), day.intValue(), hour.intValue(), minute.intValue(),second.intValue(), fractionalSecond.intValue());
     }
 
-    public static LocalDateTime localDateTimeMetJaarEnVerstekwaardenVoorMaandEnDag(BigRational jaar, BigRational maand, BigRational dag, BigRational verstekMaand, BigRational verstekDag) {
-        return datumMetJaarEnVerstekwaardenVoorMaandEnDag(jaar, maand, dag, verstekMaand, verstekDag).atStartOfDay();
+    public static LocalDateTime datetimeOfYearMonthAndDay(BigRational year, BigRational month, BigRational day) {
+        if (hasNulls(year, month, day)) return null;
+        return LocalDateTime.of(year.intValue(), month.intValue(), day.intValue(),0,0);
+    }
+
+    public static LocalDateTime localDateTimeOfYearWithDefaultForMonthAndDay(BigRational year, BigRational month, BigRational day, BigRational defaultMonth, BigRational defaultDay) {
+        return dateOfYearWithDefaultForMonthAndDay(year, month, day, defaultMonth, defaultDay).atStartOfDay();
     }
 
     private static BigRational emptyIsZero(BigRational x) {
@@ -127,34 +127,34 @@ public final class Util {
     }
 
     private static void assertUnequal(BigRational actual, BigRational invalid, String msg) {
-        if (Objects.equals(actual, invalid)) throw new DatumMetJaarEnVerstekwaardenVoorMaandEnDagException(msg);
+        if (Objects.equals(actual, invalid)) throw new DateOfYearWithDefaultForMonthAndDayException(msg);
     }
 
-    public static LocalDate datumMetJaarEnVerstekwaardenVoorMaandEnDag(BigRational jaar, BigRational maand, BigRational dag, BigRational verstekMaand, BigRational verstekDag) {
+    public static LocalDate dateOfYearWithDefaultForMonthAndDay(BigRational year, BigRational month, BigRational day, BigRational defaultMonth, BigRational defaultDay) {
         BigRational saveMaand = BigRational.ZERO;
         BigRational saveDag = BigRational.ZERO;
-        assertUnequal(jaar, null, "jaar mag niet leeg zijn");
+        assertUnequal(year, null, "jaar mag niet leeg zijn");
         try {
-            verstekMaand = emptyIsZero(verstekMaand);
-            verstekDag = emptyIsZero(verstekDag);
-            if (maand == null || maand.equals(BigRational.ZERO)) {
-                saveMaand = emptyIsZero(maand);
-                maand = verstekMaand;
-                assertUnequal(maand, BigRational.ZERO,"maand en verstekMaand mogen niet beide leeg of 0 zijn");
+            defaultMonth = emptyIsZero(defaultMonth);
+            defaultDay = emptyIsZero(defaultDay);
+            if (month == null || month.equals(BigRational.ZERO)) {
+                saveMaand = emptyIsZero(month);
+                month = defaultMonth;
+                assertUnequal(month, BigRational.ZERO,"maand en verstekMaand mogen niet beide leeg of 0 zijn");
             }
-            if (dag == null || dag.equals(BigRational.ZERO)) {
-                saveDag = emptyIsZero(dag);
-                dag = verstekDag;
-                assertUnequal(dag, BigRational.ZERO,"dag en verstekDag mogen niet beide leeg of 0 zijn");
+            if (day == null || day.equals(BigRational.ZERO)) {
+                saveDag = emptyIsZero(day);
+                day = defaultDay;
+                assertUnequal(day, BigRational.ZERO,"dag en verstekDag mogen niet beide leeg of 0 zijn");
             }
-            return LocalDate.of(jaar.intValue(), maand.intValue(), dag.intValue());
+            return LocalDate.of(year.intValue(), month.intValue(), day.intValue());
         } catch (Exception e) {
             // Ignore the exception e because we replace it with an informative Dutch message.
-            throw new DatumMetJaarEnVerstekwaardenVoorMaandEnDagException(String.format("Er kan geen geldige datum bepaald worden aan de hand van datum met jaar en verstekwaarden voor maand en dag(%d,%d,%d,%d,%d)", jaar.intValue(), saveMaand.intValue(), saveDag.intValue(), verstekMaand.intValue(), verstekDag.intValue()));
+            throw new DateOfYearWithDefaultForMonthAndDayException(String.format("Er kan geen geldige datum bepaald worden aan de hand van datum met jaar en verstekwaarden voor maand en dag(%d,%d,%d,%d,%d)", year.intValue(), saveMaand.intValue(), saveDag.intValue(), defaultMonth.intValue(), defaultDay.intValue()));
         }
     }
 
-    public static BigRational[] matchRegExNaarBigRationals(String s, String regex, int length) {
+    public static BigRational[] matchRegExToBigRationals(String s, String regex, int length) {
         BigRational[] bigRationals = new BigRational[length];
         if (s != null) {
             Matcher m = Pattern.compile(regex).matcher(s);
@@ -174,51 +174,51 @@ public final class Util {
         return new BigRational[0];
     }
 
-    public static BigRational maandUit(TemporalAccessor d) {
+    public static BigRational monthFrom(TemporalAccessor d) {
         if (d == null) return null;
         return BigRational.valueOf(d.get(ChronoField.MONTH_OF_YEAR));
     }
 
-    public static BigRational jaarUit(TemporalAccessor d) {
+    public static BigRational yearFrom(TemporalAccessor d) {
         if (d == null) return null;
         return BigRational.valueOf(d.get(ChronoField.YEAR));
     }
 
-    public static BigRational dagUit(TemporalAccessor d) {
+    public static BigRational dayFrom(TemporalAccessor d) {
         if (hasNulls(d)) return null;
         return BigRational.valueOf(d.get(ChronoField.DAY_OF_MONTH));
     }
 
-    public static BigRational uurUit(TemporalAccessor d){
+    public static BigRational hourFrom(TemporalAccessor d){
         if (hasNulls(d)) return null;
         return BigRational.valueOf(d.get(ChronoField.CLOCK_HOUR_OF_DAY));
     }
-    public static BigRational minuutUit(TemporalAccessor d){
+    public static BigRational minuteFrom(TemporalAccessor d){
         if (hasNulls(d)) return null;
         return BigRational.valueOf(d.get(ChronoField.MINUTE_OF_HOUR));
     }
-    public static BigRational secondeUit(TemporalAccessor d){
+    public static BigRational secondFrom(TemporalAccessor d){
         if (hasNulls(d)) return null;
         return BigRational.valueOf(d.get(ChronoField.SECOND_OF_MINUTE));
     }
-    public static BigRational millisecondeUit(TemporalAccessor d){
+    public static BigRational fractionalSecondFrom(TemporalAccessor d){
         if (hasNulls(d)) return null;
-        return BigRational.valueOf(d.get(ChronoField.MILLI_OF_SECOND));
+        return BigRational.valueOf(d.get(ChronoField.NANO_OF_SECOND));
     }
 
-    public static BigRational absoluteWaardeVan(BigRational b) {
+    public static BigRational absoluteValueOf(BigRational b) {
         if (b == null) return null;
         return b.abs();
     }
 
-    public static boolean gelijk(Object o1, Object o2) {
+    public static boolean isEqual(Object o1, Object o2) {
         if (o1 == null && o2 == null) return true;
         if (o1 == null || o2 == null) return false;
         return o1.equals(o2);
     }
 
-    public static boolean ongelijk(Object o1, Object o2) {
-        return !gelijk(o1, o2);
+    public static boolean isNotEqual(Object o1, Object o2) {
+        return !isEqual(o1, o2);
     }
 
     /*
@@ -241,58 +241,58 @@ public final class Util {
         return o2;
     }
 
-    public static String naarAlefTekst(BigRational o) {
-        return TekstUtil.naarAlefTekst(o);
+    public static String toAlefText(BigRational o) {
+        return TekstUtil.toAlefText(o);
     }
 
-    public static String naarAlefTekst(Timespan o) {
-        return TekstUtil.naarAlefTekst(o);
+    public static String toAlefText(Timespan o) {
+        return TekstUtil.toAlefText(o);
     }
 
-    public static String naarAlefTekst(Boolean o) {
-        return TekstUtil.naarAlefTekst(o);
+    public static String toAlefText(Boolean o) {
+        return TekstUtil.toAlefText(o);
     }
 
-    public static String naarAlefTekst(LocalDate o) {
-        return TekstUtil.naarAlefTekst(o);
+    public static String toAlefText(LocalDate o) {
+        return TekstUtil.toAlefText(o);
     }
 
-    public static String naarAlefTekst(String o) {
-        return TekstUtil.naarAlefTekst(o);
+    public static String toAlefText(String o) {
+        return TekstUtil.toAlefText(o);
     }
 
-    public static String naarAlefTekstOpMilliSeconden(LocalDateTime o) {
+    public static String toAlefTextInFractionalSeconds(LocalDateTime o) {
         if (o == null) return "";
-        return TekstUtil.naarAlefTekstOpMilliseconden(o);
+        return TekstUtil.toAlefTextInFractionalSeconds(o);
     }
 
-    public static String naarAlefTekstOpDag(LocalDate o) {
+    public static String toAlefTextInDays(LocalDate o) {
         if (o == null) return "";
-        return TekstUtil.naarAlefTekstOpDag(o);
+        return TekstUtil.toAlefTextInDays(o);
     }
 
-    public static String naarAlefTekstOpMaand(LocalDate o) {
+    public static String toAlefTextInMonths(LocalDate o) {
         if (o == null) return "";
-        return TekstUtil.naarAlefTekstOpMaand(o);
+        return TekstUtil.toAlefTextInMonths(o);
     }
 
-    public static String naarAlefTekstOpJaar(Integer o) {
+    public static String toAlefTextInYears(Integer o) {
         if (o == null) return "";
-        return TekstUtil.naarAlefTekstOpJaar(o);
+        return TekstUtil.toAlefTextInYears(o);
     }
 
-    public static String naarAlefTekstOpJaar(Long o) {
+    public static String toAlefTextInYears(Long o) {
         if (o == null) return "";
-        return TekstUtil.naarAlefTekstOpJaar(o.intValue());
+        return TekstUtil.toAlefTextInYears(o.intValue());
     }
 
-    public static String naarAlefTekstOpJaar(LocalDate o) {
+    public static String toAlefTextInYears(LocalDate o) {
         if (o == null) return "";
-        return TekstUtil.naarAlefTekstOpJaar(o);
+        return TekstUtil.toAlefTextInYears(o);
     }
 
-    public static class DatumMetJaarEnVerstekwaardenVoorMaandEnDagException extends RuntimeException {
-        private DatumMetJaarEnVerstekwaardenVoorMaandEnDagException(String message) {
+    public static class DateOfYearWithDefaultForMonthAndDayException extends RuntimeException {
+        private DateOfYearWithDefaultForMonthAndDayException(String message) {
             super(message);
         }
     }

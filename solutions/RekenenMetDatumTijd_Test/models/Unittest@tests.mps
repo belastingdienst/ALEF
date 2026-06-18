@@ -690,7 +690,7 @@
               <node concept="3vwNmj" id="6kTI1NOhJKi" role="3cqZAp">
                 <node concept="2ZW3vV" id="6kTI1NOhLdf" role="3vwVQn">
                   <node concept="3uibUv" id="6kTI1NOhLiX" role="2ZW6by">
-                    <ref role="3uigEE" to="2vij:~Util$DatumMetJaarEnVerstekwaardenVoorMaandEnDagException" resolve="Util.DatumMetJaarEnVerstekwaardenVoorMaandEnDagException" />
+                    <ref role="3uigEE" to="2vij:~Util$DateOfYearWithDefaultForMonthAndDayException" resolve="Util.DateOfYearWithDefaultForMonthAndDayException" />
                   </node>
                   <node concept="2OqwBi" id="6kTI1NOhMix" role="2ZW6bz">
                     <node concept="37vLTw" id="6kTI1NOhJLd" role="2Oq$k0">
@@ -738,7 +738,7 @@
               <node concept="3vwNmj" id="6kTI1NOhN5i" role="3cqZAp">
                 <node concept="2ZW3vV" id="6kTI1NOhOjm" role="3vwVQn">
                   <node concept="3uibUv" id="6kTI1NOhOnP" role="2ZW6by">
-                    <ref role="3uigEE" to="2vij:~Util$DatumMetJaarEnVerstekwaardenVoorMaandEnDagException" resolve="Util.DatumMetJaarEnVerstekwaardenVoorMaandEnDagException" />
+                    <ref role="3uigEE" to="2vij:~Util$DateOfYearWithDefaultForMonthAndDayException" resolve="Util.DateOfYearWithDefaultForMonthAndDayException" />
                   </node>
                   <node concept="2OqwBi" id="6kTI1NOhNmZ" role="2ZW6bz">
                     <node concept="37vLTw" id="6kTI1NOhN6z" role="2Oq$k0">

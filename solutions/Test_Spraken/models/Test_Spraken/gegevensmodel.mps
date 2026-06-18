@@ -2143,7 +2143,7 @@
     <node concept="1uxNW$" id="5QGe9ffVA9" role="2bv6Cn" />
   </node>
   <node concept="2bv6Cm" id="2b3Vt4mh2GM">
-    <property role="TrG5h" value="Periode met tijd in milliseconde" />
+    <property role="TrG5h" value="Periode met tijdstip" />
     <node concept="2bvS6$" id="2b3Vt4mh2IW" role="2bv6Cn">
       <property role="TrG5h" value="Periode" />
       <node concept="2bv6ZS" id="2b3Vt4mh2KA" role="2bv01j">

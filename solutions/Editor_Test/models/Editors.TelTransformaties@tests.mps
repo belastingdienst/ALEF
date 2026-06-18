@@ -3597,7 +3597,7 @@
                   </node>
                   <node concept="2n63Yl" id="16RCj1owBZv" role="3cqZAp">
                     <node concept="Xl_RD" id="16RCj1owD5f" role="2n6tg2">
-                      <property role="Xl_RC" value="milliseconde uit" />
+                      <property role="Xl_RC" value="nanoseconde uit" />
                     </node>
                   </node>
                   <node concept="2n63Yl" id="5hQoe0k8Hug" role="3cqZAp">

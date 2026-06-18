@@ -1235,7 +1235,7 @@
         <ref role="KGglo" node="2b3Vt4mhUEF" resolve="Periodes_spUitvoer" />
       </node>
       <node concept="17AEQp" id="4xKWB0uLHU" role="2dhVIB">
-        <ref role="17AE6y" to="yr4e:2b3Vt4mh35K" resolve="Regels met millisecondes in datumtijd" />
+        <ref role="17AE6y" to="yr4e:2b3Vt4mh35K" resolve="Regels met millisecondes in tijdstip" />
       </node>
     </node>
   </node>

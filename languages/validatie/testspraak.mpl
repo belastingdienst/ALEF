@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="testspraak" uuid="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" languageVersion="22" moduleVersion="15">
+<language namespace="testspraak" uuid="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" languageVersion="23" moduleVersion="15">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />

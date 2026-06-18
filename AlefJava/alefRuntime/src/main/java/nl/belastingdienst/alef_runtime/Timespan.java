@@ -112,6 +112,7 @@ public class Timespan implements Comparable<Timespan>, Calculable<Timespan> {
             case MINUTE -> ChronoUnit.MINUTES;
             case SECOND -> ChronoUnit.SECONDS;
             case MILLI_SECOND -> ChronoUnit.MILLIS;
+            case POINT_IN_TIME -> ChronoUnit.NANOS;
             default -> throw new IllegalArgumentException(granularity + " is geen valide granulariteit voor een tijdsduur");
         };
     }

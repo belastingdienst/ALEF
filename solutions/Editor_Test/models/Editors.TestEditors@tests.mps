@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="22" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
   </languages>
   <imports>
     <import index="8x8p" ref="r:4f06f137-8875-46b2-95c8-a75b81fd2b97(Editor_Test.definities)" />
@@ -119,6 +119,7 @@
       <concept id="6527873696160320768" name="gegevensspraak.structure.ObjectListLiteral" flags="ng" index="4PMua" />
       <concept id="653687101152474184" name="gegevensspraak.structure.Waarde" flags="ng" index="2boeyW" />
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
@@ -905,6 +906,7 @@
                 <property role="2JBhWF" value="0" />
                 <property role="2JBhWc" value="0" />
                 <property role="2JBhWl" value="0" />
+                <property role="2isrjt" value="0" />
                 <property role="2JBhWr" value="0" />
               </node>
             </node>

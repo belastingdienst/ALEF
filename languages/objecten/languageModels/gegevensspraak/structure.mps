@@ -49,6 +49,7 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -483,10 +484,16 @@
       <property role="IQ2nx" value="4697074533531796339" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="2$1HamVs01S" role="1TKVEl">
+      <property role="IQ2nx" value="2954841454439039096" />
+      <property role="TrG5h" value="fractioneleSeconde" />
+      <ref role="AX2Wp" node="2$1Han04amd" resolve="FractioneleSecondeType" />
+    </node>
     <node concept="1TJgyi" id="44Jn6rIG$dX" role="1TKVEl">
       <property role="TrG5h" value="milliseconde" />
       <property role="IQ2nx" value="4697074533531796349" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="2$1HamVs01R" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="4WetKT2Pzpq" role="1TKVEl">
       <property role="TrG5h" value="granulariteit" />
@@ -879,15 +886,15 @@
     <node concept="PrWs8" id="eGWxnM6LRH" role="PzmwI">
       <ref role="PrY4T" to="f6cw:4iVB5Q1RPKo" resolve="ICanHaveBron" />
     </node>
+    <node concept="PrWs8" id="1azGauang9G" role="PzmwI">
+      <ref role="PrY4T" node="1GlRy79$FUd" resolve="IKanDimensiesHebben" />
+    </node>
     <node concept="1TJgyj" id="3hFLKbdQMRe" role="1TKVEi">
       <property role="IQ2ns" value="3777331527337848270" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="lezingen" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3hFLKbdQJ0C" resolve="Lezing" />
-    </node>
-    <node concept="PrWs8" id="1azGauang9G" role="PzmwI">
-      <ref role="PrY4T" node="1GlRy79$FUd" resolve="IKanDimensiesHebben" />
     </node>
   </node>
   <node concept="1TIwiD" id="4KQiE3qx$2O">
@@ -1126,15 +1133,18 @@
       <property role="1L1pqM" value="seconde" />
       <property role="3tVfz5" value="5917060184181247393" />
     </node>
+    <node concept="25R33" id="4WetKT2PyUx" role="25R1y">
+      <property role="TrG5h" value="TIJDSTIP" />
+      <property role="1L1pqM" value="tijdstip" />
+      <property role="3tVfz5" value="3122098214252894641" />
+    </node>
     <node concept="25R33" id="4WetKT2PyUw" role="25R1y">
       <property role="TrG5h" value="MILLISECONDE" />
       <property role="1L1pqM" value="milliseconde" />
       <property role="3tVfz5" value="5917060184181247401" />
-    </node>
-    <node concept="25R33" id="4WetKT2PyUx" role="25R1y">
-      <property role="TrG5h" value="PUNT" />
-      <property role="1L1pqM" value="punt" />
-      <property role="3tVfz5" value="3122098214252894641" />
+      <node concept="t5JxF" id="2$1HamVshYW" role="lGtFl">
+        <property role="t5JxN" value="wordt uitsluitend nog ondersteund voor de bijbehorende Tijdseenheid, gebruik voor datumtijd de granulariteit TIJDSTIP" />
+      </node>
     </node>
   </node>
   <node concept="25R3W" id="4WetKT2PyUB">
@@ -2083,6 +2093,12 @@
       <property role="TrG5h" value="vvt" />
       <property role="1L1pqM" value="voltooid verledentijd" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="2$1Han04amd">
+    <property role="3F6X1D" value="2954841454516675981" />
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="FractioneleSecondeType" />
+    <property role="FLfZY" value="([0-9]{1,9})?" />
   </node>
 </model>
 

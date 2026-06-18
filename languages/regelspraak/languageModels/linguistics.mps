@@ -5846,13 +5846,13 @@
         <node concept="23GdfO" id="MBxV8WsVZ7" role="23E8Z2" />
       </node>
       <node concept="23Fm0F" id="MBxV8WsW0J" role="23GdfP">
-        <ref role="2xS9Ik" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+        <ref role="2xS9Ik" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
         <node concept="23GdfO" id="MBxV8WsW0K" role="23E8Zc">
           <node concept="2xS9Ii" id="1xcssIAtJOJ" role="23GdfP">
             <property role="23G6sU" value="en" />
           </node>
           <node concept="2xS9Ii" id="1xcssIAtJOQ" role="23GdfP">
-            <property role="23G6sU" value="milliseconde:" />
+            <property role="23G6sU" value="nanoseconde" />
           </node>
         </node>
         <node concept="23GdfO" id="MBxV8WsW0L" role="23E8Z2" />

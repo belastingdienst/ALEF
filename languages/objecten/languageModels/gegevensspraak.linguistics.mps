@@ -766,7 +766,7 @@
               <property role="2DMUbD" value="true" />
             </node>
             <node concept="2aZLUQ" id="57tKuzHUer1" role="23GdfP">
-              <ref role="2aZL_9" node="57tKuzHUb1$" resolve="milliseconde000" />
+              <ref role="2aZL_9" node="57tKuzHUb1$" resolve="fractsecondeSSSSSSSSS" />
             </node>
           </node>
           <node concept="23mlFo" id="57tKuzGFMYh" role="23J4uA">
@@ -886,7 +886,7 @@
       </node>
     </node>
     <node concept="1dEjS6" id="57tKuzHUb1$" role="1dCV2V">
-      <property role="TrG5h" value="milliseconde000" />
+      <property role="TrG5h" value="fractsecondeSSSSSSSSS" />
       <node concept="1dEi69" id="57tKuzHUb1_" role="1dEhro">
         <node concept="3clFbS" id="57tKuzHUb1A" role="2VODD2">
           <node concept="3clFbF" id="2dDYc398vOl" role="3cqZAp">
@@ -894,12 +894,12 @@
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
               <node concept="Xl_RD" id="57tKuzIxb3Y" role="37wK5m">
-                <property role="Xl_RC" value="%03d" />
+                <property role="Xl_RC" value="%s" />
               </node>
               <node concept="2OqwBi" id="57tKuzIxb3Z" role="37wK5m">
                 <node concept="1dEiK4" id="57tKuzIxb40" role="2Oq$k0" />
                 <node concept="3TrcHB" id="57tKuzIxbvt" role="2OqNvi">
-                  <ref role="3TsBF5" to="3ic2:44Jn6rIG$dX" resolve="milliseconde" />
+                  <ref role="3TsBF5" to="3ic2:2$1HamVs01S" resolve="fractioneleSeconde" />
                 </node>
               </node>
             </node>
@@ -1565,8 +1565,8 @@
       <ref role="2oHhyl" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
     </node>
     <node concept="2oHgup" id="4foijzrww2X" role="2oHhQ2">
-      <property role="2oHhkI" value="punten" />
-      <ref role="2oHhyl" to="3ic2:4WetKT2PyUx" resolve="PUNT" />
+      <property role="2oHhkI" value="tijdstippen" />
+      <ref role="2oHhyl" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
     </node>
   </node>
 </model>

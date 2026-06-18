@@ -27433,7 +27433,7 @@
           <node concept="3clFbS" id="6o3$ToDoOqO" role="2VODD2">
             <node concept="3clFbF" id="1q0zb1WdwmP" role="3cqZAp">
               <node concept="2YIFZM" id="1q0zb1WdwsA" role="3clFbG">
-                <ref role="37wK5l" to="8l26:2hQyku2tPFg" resolve="kleinerOfGelijkAanSeconde" />
+                <ref role="37wK5l" to="8l26:2hQyku2tPFg" resolve="kleinerofGelijkAanSeconde" />
                 <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
                 <node concept="2OqwBi" id="1q0zb1WdwLo" role="37wK5m">
                   <node concept="pncrf" id="1q0zb1WdwsC" role="2Oq$k0" />
@@ -27448,21 +27448,18 @@
       </node>
       <node concept="3EZMnI" id="6o3$ToDoUFh" role="3EZMnx">
         <node concept="2iRfu4" id="6o3$ToDoUFi" role="2iSdaV" />
-        <node concept="3F0ifn" id="35fGtDX2pFj" role="3EZMnx">
-          <property role="3F0ifm" value=" en milliseconde:" />
-          <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-          <node concept="11L4FC" id="6o3$ToExeX3" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
+        <node concept="3F0ifn" id="2DcxiJSd0UG" role="3EZMnx">
+          <property role="3F0ifm" value=" en nanoseconde" />
+          <ref role="1k5W1q" to="2i4n:7MZNd$UeFXk" resolve="VasteTekst" />
         </node>
         <node concept="3F1sOY" id="35fGtDX2pFT" role="3EZMnx">
-          <ref role="1NtTu8" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+          <ref role="1NtTu8" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
         </node>
         <node concept="pkWqt" id="6o3$ToDoVqh" role="pqm2j">
           <node concept="3clFbS" id="6o3$ToDoVqi" role="2VODD2">
             <node concept="3clFbF" id="6o3$ToDoVxL" role="3cqZAp">
               <node concept="2YIFZM" id="1q0zb1WdylM" role="3clFbG">
-                <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="gelijkAanMilliseconde" />
+                <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="kleinerDanSeconde" />
                 <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
                 <node concept="2OqwBi" id="1q0zb1WdyI$" role="37wK5m">
                   <node concept="pncrf" id="1q0zb1WdypO" role="2Oq$k0" />
@@ -27555,24 +27552,48 @@
         <node concept="16NL0t" id="1IPDgOs0zeu" role="upBLP">
           <node concept="uGdhv" id="1IPDgOs0zhp" role="16NL0q">
             <node concept="3clFbS" id="1IPDgOs0zhr" role="2VODD2">
+              <node concept="3cpWs8" id="hvp6lzeSko" role="3cqZAp">
+                <node concept="3cpWsn" id="hvp6lzeSkp" role="3cpWs9">
+                  <property role="TrG5h" value="gran" />
+                  <node concept="17QB3L" id="hvp6lzeVrU" role="1tU5fm" />
+                  <node concept="3K4zz7" id="hvp6lzeTCS" role="33vP2m">
+                    <node concept="Xl_RD" id="hvp6lzeTIQ" role="3K4E3e">
+                      <property role="Xl_RC" value="nanoseconde" />
+                    </node>
+                    <node concept="2OqwBi" id="hvp6lzeVLv" role="3K4GZi">
+                      <node concept="2ZBlsa" id="hvp6lzeTUJ" role="2Oq$k0" />
+                      <node concept="1XCIdh" id="hvp6lC7ye_" role="2OqNvi" />
+                    </node>
+                    <node concept="2YIFZM" id="hvp6lzeT1I" role="3K4Cdx">
+                      <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="kleinerDanSeconde" />
+                      <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
+                      <node concept="2ZBlsa" id="hvp6lzeTbS" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="1IPDgOs0$Vz" role="3cqZAp">
                 <node concept="3K4zz7" id="1IPDgOs0_xy" role="3clFbG">
                   <node concept="3cpWs3" id="1IPDgOs0_N0" role="3K4E3e">
                     <node concept="Xl_RD" id="1IPDgOs0_Ph" role="3uHU7w">
                       <property role="Xl_RC" value=" uit datum en tijd" />
                     </node>
-                    <node concept="2ZBlsa" id="1IPDgOs0_zL" role="3uHU7B" />
+                    <node concept="37vLTw" id="hvp6lzeSks" role="3uHU7B">
+                      <ref role="3cqZAo" node="hvp6lzeSkp" resolve="gran" />
+                    </node>
                   </node>
                   <node concept="3cpWs3" id="1IPDgOs0Aqa" role="3K4GZi">
                     <node concept="Xl_RD" id="1IPDgOs0AsD" role="3uHU7w">
                       <property role="Xl_RC" value=" uit datum" />
                     </node>
-                    <node concept="2ZBlsa" id="1IPDgOs0A09" role="3uHU7B" />
+                    <node concept="37vLTw" id="hvp6lzeSkt" role="3uHU7B">
+                      <ref role="3cqZAo" node="hvp6lzeSkp" resolve="gran" />
+                    </node>
                   </node>
                   <node concept="2YIFZM" id="1IPDgOs0$Ym" role="3K4Cdx">
                     <ref role="37wK5l" to="8l26:tALIpLX4nJ" resolve="isDatumEnTijd" />
                     <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
-                    <node concept="2ZBlsa" id="1IPDgOs0_4H" role="37wK5m" />
+                    <node concept="2ZBlsa" id="hvp6lzeWR4" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -27605,12 +27626,34 @@
         <node concept="16NfWO" id="1IPDgOs0z75" role="upBLP">
           <node concept="uGdhv" id="1IPDgOs0AA_" role="16NeZM">
             <node concept="3clFbS" id="1IPDgOs0AAB" role="2VODD2">
+              <node concept="3cpWs8" id="hvp6lzeXgv" role="3cqZAp">
+                <node concept="3cpWsn" id="hvp6lzeXgy" role="3cpWs9">
+                  <property role="TrG5h" value="gran" />
+                  <node concept="17QB3L" id="hvp6lzeXgz" role="1tU5fm" />
+                  <node concept="3K4zz7" id="hvp6lzeXg$" role="33vP2m">
+                    <node concept="Xl_RD" id="hvp6lzeXg_" role="3K4E3e">
+                      <property role="Xl_RC" value="nanoseconde" />
+                    </node>
+                    <node concept="2OqwBi" id="hvp6lzeXgA" role="3K4GZi">
+                      <node concept="2ZBlsa" id="hvp6lzeXgB" role="2Oq$k0" />
+                      <node concept="1XCIdh" id="hvp6lC7xHF" role="2OqNvi" />
+                    </node>
+                    <node concept="2YIFZM" id="hvp6lzeXgD" role="3K4Cdx">
+                      <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="kleinerDanSeconde" />
+                      <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
+                      <node concept="2ZBlsa" id="hvp6lzeXgE" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="1IPDgOs0AGT" role="3cqZAp">
                 <node concept="3cpWs3" id="1IPDgOs0AI_" role="3clFbG">
                   <node concept="Xl_RD" id="1IPDgOs0AJi" role="3uHU7w">
                     <property role="Xl_RC" value=" uit" />
                   </node>
-                  <node concept="2ZBlsa" id="1IPDgOs0AGS" role="3uHU7B" />
+                  <node concept="37vLTw" id="hvp6lzeXK8" role="3uHU7B">
+                    <ref role="3cqZAo" node="hvp6lzeXgy" resolve="gran" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -27678,9 +27721,39 @@
           </node>
         </node>
       </node>
-      <node concept="3F0A7n" id="1IPDgOs0AW0" role="3EZMnx">
-        <ref role="1NtTu8" to="m234:1IPDgOrZNHT" resolve="granulariteit" />
-        <node concept="VPxyj" id="1aK6OUzat_x" role="3F10Kt" />
+      <node concept="1HlG4h" id="hvp6lC7rOo" role="3EZMnx">
+        <node concept="1HfYo3" id="hvp6lC7rOq" role="1HlULh">
+          <node concept="3TQlhw" id="hvp6lC7rOs" role="1Hhtcw">
+            <node concept="3clFbS" id="hvp6lC7rOu" role="2VODD2">
+              <node concept="3cpWs6" id="hvp6lC7s21" role="3cqZAp">
+                <node concept="3K4zz7" id="hvp6lC7teT" role="3cqZAk">
+                  <node concept="Xl_RD" id="hvp6lC7teY" role="3K4E3e">
+                    <property role="Xl_RC" value="nanoseconde" />
+                  </node>
+                  <node concept="2OqwBi" id="hvp6lC7vUV" role="3K4GZi">
+                    <node concept="2OqwBi" id="hvp6lC7uSE" role="2Oq$k0">
+                      <node concept="pncrf" id="hvp6lC7tf0" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="hvp6lC7vlb" role="2OqNvi">
+                        <ref role="3TsBF5" to="m234:1IPDgOrZNHT" resolve="granulariteit" />
+                      </node>
+                    </node>
+                    <node concept="1XCIdh" id="hvp6lC7wn6" role="2OqNvi" />
+                  </node>
+                  <node concept="2YIFZM" id="hvp6lC7s6z" role="3K4Cdx">
+                    <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="kleinerDanSeconde" />
+                    <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
+                    <node concept="2OqwBi" id="hvp6lC7sx9" role="37wK5m">
+                      <node concept="pncrf" id="hvp6lC7s6_" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="hvp6lC7sSg" role="2OqNvi">
+                        <ref role="3TsBF5" to="m234:1IPDgOrZNHT" resolve="granulariteit" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="1IPDgOs0AWg" role="3EZMnx">
         <property role="3F0ifm" value="uit" />

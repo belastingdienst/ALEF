@@ -1,8 +1,8 @@
 package nl.belastingdienst.alef_runtime;
 
 public enum TimeGranularity {
-    POINT("punt", "punten", 0, false),
-    MILLI_SECOND("milliseconde", "millisecondes", 1, false),
+    POINT_IN_TIME("tijdstip", "tijdstippen", 1, false),
+    MILLI_SECOND("milliseconde", "millisecondes", 1000000 * TimeGranularity.POINT_IN_TIME.getDurationFactor(), false),
     SECOND("seconde", "secondes", 1000 * TimeGranularity.MILLI_SECOND.getDurationFactor(), false),
     MINUTE("minuut", "minuten", TimeGranularity.SECOND.getDurationFactor() * 60, false),
     HOUR("uur", "uren", TimeGranularity.MINUTE.getDurationFactor() * 60, false),
@@ -56,8 +56,6 @@ public enum TimeGranularity {
     }
 
     public static boolean canCompare(TimeGranularity a, TimeGranularity b) {
-        if(a==POINT || b==POINT)
-            return false;
         return a.relative == b.relative;
     }
 

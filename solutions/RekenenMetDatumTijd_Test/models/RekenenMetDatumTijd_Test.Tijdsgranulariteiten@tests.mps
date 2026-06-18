@@ -793,7 +793,7 @@
         <node concept="2boe1X" id="hISI8GVAIC" role="1wO7i6">
           <node concept="3_mHL5" id="hISI8GVAID" role="2bokzF">
             <node concept="c2t0s" id="hISI8GVALZ" role="eaaoM">
-              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Milliseconde" />
+              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Tijdstip" />
             </node>
             <node concept="3_kdyS" id="hISI8GVAIF" role="pQQuc">
               <ref role="Qu8KH" node="hISI8GkYmy" resolve="GranulariteitenType" />
@@ -821,7 +821,7 @@
         <node concept="2boe1X" id="hISI8GVAJB" role="1wO7i6">
           <node concept="3_mHL5" id="hISI8GVAJC" role="2bokzF">
             <node concept="c2t0s" id="hISI8GVAMa" role="eaaoM">
-              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Milliseconde" />
+              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Tijdstip" />
             </node>
             <node concept="3_kdyS" id="hISI8GVAJE" role="pQQuc">
               <ref role="Qu8KH" node="hISI8GkYmy" resolve="GranulariteitenType" />
@@ -848,7 +848,7 @@
         <node concept="2boe1X" id="hISI8GVAJT" role="1wO7i6">
           <node concept="3_mHL5" id="hISI8GVAJU" role="2bokzF">
             <node concept="c2t0s" id="hISI8GVAMh" role="eaaoM">
-              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Milliseconde" />
+              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Tijdstip" />
             </node>
             <node concept="3_kdyS" id="hISI8GVAJW" role="pQQuc">
               <ref role="Qu8KH" node="hISI8GkYmy" resolve="GranulariteitenType" />
@@ -874,7 +874,7 @@
         <node concept="2boe1X" id="hISI8GVAMp" role="1wO7i6">
           <node concept="3_mHL5" id="hISI8GVAMq" role="2bokzF">
             <node concept="c2t0s" id="hISI8GVAMr" role="eaaoM">
-              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Milliseconde" />
+              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Tijdstip" />
             </node>
             <node concept="3_kdyS" id="hISI8GVAMs" role="pQQuc">
               <ref role="Qu8KH" node="hISI8GkYmy" resolve="GranulariteitenType" />
@@ -899,7 +899,7 @@
         <node concept="2boe1X" id="hISI8GVAN7" role="1wO7i6">
           <node concept="3_mHL5" id="hISI8GVAN8" role="2bokzF">
             <node concept="c2t0s" id="hISI8GVAN9" role="eaaoM">
-              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Milliseconde" />
+              <ref role="Qu8KH" node="hISI8GkYoZ" resolve="Tijdstip" />
             </node>
             <node concept="3_kdyS" id="hISI8GVANa" role="pQQuc">
               <ref role="Qu8KH" node="hISI8GkYmy" resolve="GranulariteitenType" />
@@ -1122,7 +1122,7 @@
           </node>
           <node concept="3mzBic" id="3wdbeatRDUn" role="4Ohbj">
             <property role="V2jGk" value="-1" />
-            <ref role="10Xmnc" node="hISI8GkYoZ" resolve="Milliseconde" />
+            <ref role="10Xmnc" node="hISI8GkYoZ" resolve="Tijdstip" />
             <node concept="2ljiaL" id="3wdbeatREcc" role="3mzBi6">
               <property role="2ljiaM" value="1" />
               <property role="2ljiaN" value="1" />
@@ -1246,7 +1246,7 @@
             </node>
           </node>
           <node concept="3_ceKt" id="3wdbeatNrYj" role="4OhPJ">
-            <ref role="3_ceKs" node="hISI8GkYoZ" resolve="Milliseconde" />
+            <ref role="3_ceKs" node="hISI8GkYoZ" resolve="Tijdstip" />
             <node concept="2ljiaL" id="3wdbeatNsev" role="3_ceKu">
               <property role="2ljiaM" value="1" />
               <property role="2ljiaN" value="1" />
@@ -1322,7 +1322,7 @@
                 </node>
                 <node concept="3dWX$1" id="4VhN3sfCdVE" role="27HnPe">
                   <property role="3dWX$t" value="2020-1-01T00:00:00.000" />
-                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoermillisecondes" />
+                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoertijdstip" />
                   <node concept="7CXmI" id="1UpN4x_1PJv" role="lGtFl">
                     <node concept="1TM$A" id="1UpN4x_1PJw" role="7EUXB">
                       <node concept="2PYRI3" id="62XJb$gRWwL" role="3lydEf">
@@ -1368,7 +1368,7 @@
                 </node>
                 <node concept="1GVH3N" id="4VhN3sfCdVJ" role="27HnPh">
                   <property role="1GVH2a" value="2020-01-01T000:00:00" />
-                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoermillisecondes" />
+                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoertijdstip" />
                   <node concept="7CXmI" id="1UpN4x_1WuL" role="lGtFl">
                     <node concept="1TM$A" id="1UpN4x_1WuM" role="7EUXB">
                       <node concept="2PYRI3" id="62XJb$gRXsI" role="3lydEf">
@@ -1378,7 +1378,7 @@
                   </node>
                 </node>
                 <node concept="3qbmFK" id="3Y9QgeYoxw" role="27HnPh">
-                  <ref role="1GVH3K" to="nj81:756Mi9JMrxU" resolve="uitvoermillisecondesta" />
+                  <ref role="1GVH3K" to="nj81:756Mi9JMrxU" resolve="uitvoertijdstipta" />
                   <node concept="3qbmFL" id="3Y9QgeYoxx" role="3qbmCe">
                     <property role="3qbmCc" value="true" />
                     <property role="3qbmCd" value="true" />
@@ -1418,7 +1418,7 @@
                 </node>
                 <node concept="3dWX$1" id="1UpN4x_1X39" role="27HnPe">
                   <property role="3dWX$t" value="2020-01-01T00:01:00" />
-                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoermillisecondes" />
+                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoertijdstip" />
                   <node concept="7CXmI" id="1UpN4x_1ZSj" role="lGtFl">
                     <node concept="7OXhh" id="1UpN4x_21Cv" role="7EUXB">
                       <property role="GvXf4" value="true" />
@@ -1462,7 +1462,7 @@
                 </node>
                 <node concept="1GVH3N" id="1UpN4x_1X3e" role="27HnPh">
                   <property role="1GVH2a" value="2020-01-01T00:00:01.000" />
-                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoermillisecondes" />
+                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoertijdstip" />
                   <node concept="7CXmI" id="1UpN4x_24SV" role="lGtFl">
                     <node concept="7OXhh" id="1UpN4x_298R" role="7EUXB">
                       <property role="GvXf4" value="true" />
@@ -1470,13 +1470,13 @@
                   </node>
                 </node>
                 <node concept="3qbmFK" id="3Y9QgeYz_d" role="27HnPh">
-                  <ref role="1GVH3K" to="nj81:756Mi9JMrxU" resolve="uitvoermillisecondesta" />
+                  <ref role="1GVH3K" to="nj81:756Mi9JMrxU" resolve="uitvoertijdstipta" />
                   <node concept="3qbmFL" id="3Y9QgeYz_e" role="3qbmCe">
                     <property role="3qbmCc" value="true" />
                     <property role="3qbmCd" value="true" />
                     <property role="3qbmCa" value="2000-01-01" />
                     <property role="3qbmCb" value="2000-02-01" />
-                    <property role="1AKbBd" value="2020-01-01T00:00:00.000" />
+                    <property role="1AKbBd" value="2020-01-01T00:00:00.000000000" />
                     <node concept="7CXmI" id="3Y9QgeYBx6" role="lGtFl">
                       <node concept="7OXhh" id="3Y9QgeYCb2" role="7EUXB">
                         <property role="GvXf4" value="true" />
@@ -1508,7 +1508,7 @@
                 </node>
                 <node concept="3dWX$1" id="1UpN4x_25_K" role="27HnPe">
                   <property role="3dWX$t" value="2020-01-01T00:0:00.001" />
-                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoermillisecondes" />
+                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoertijdstip" />
                   <node concept="7CXmI" id="1UpN4x_25_L" role="lGtFl">
                     <node concept="1TM$A" id="1UpN4x_2azS" role="7EUXB">
                       <node concept="2PYRI3" id="62XJb$gRZ0A" role="3lydEf">
@@ -1536,8 +1536,8 @@
                   </node>
                 </node>
                 <node concept="1GVH3N" id="1UpN4x_25_U" role="27HnPh">
-                  <property role="1GVH2a" value="2020-01-01T00:00:00.0000" />
-                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoermillisecondes" />
+                  <property role="1GVH2a" value="2020-01-01T00:00:00.0000000000" />
+                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoertijdstip" />
                   <node concept="7CXmI" id="1UpN4x_25_V" role="lGtFl">
                     <node concept="1TM$A" id="1UpN4x_25_W" role="7EUXB">
                       <node concept="2PYRI3" id="62XJb$gRZCx" role="3lydEf">
@@ -1568,7 +1568,7 @@
                 </node>
                 <node concept="3dWX$1" id="1lvGUYPKxDi" role="27HnPe">
                   <property role="3dWX$t" value="2020-01-01T00:00:00.001+10:00" />
-                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoermillisecondes" />
+                  <ref role="3dWXzV" to="nj81:52_8$K6NeV9" resolve="invoertijdstip" />
                   <node concept="7CXmI" id="1lvGUYPKxDj" role="lGtFl">
                     <node concept="7OXhh" id="1lvGUYPK$2$" role="7EUXB">
                       <property role="GvXf4" value="true" />
@@ -1594,8 +1594,8 @@
                   </node>
                 </node>
                 <node concept="1GVH3N" id="1lvGUYPKxDt" role="27HnPh">
-                  <property role="1GVH2a" value="2020-01-01T00:00:00.0000" />
-                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoermillisecondes" />
+                  <property role="1GVH2a" value="2020-01-01T00:00:00.0000000000" />
+                  <ref role="1GVH3K" to="nj81:52_8$K6Ntu5" resolve="uitvoertijdstip" />
                   <node concept="7CXmI" id="1lvGUYPKxDu" role="lGtFl">
                     <node concept="1TM$A" id="1lvGUYPKxDv" role="7EUXB">
                       <node concept="2PYRI3" id="62XJb$gS0gn" role="3lydEf">
@@ -1641,7 +1641,8 @@
         </node>
       </node>
       <node concept="2bv6ZS" id="hISI8GkYoZ" role="2bv01j">
-        <property role="TrG5h" value="Milliseconde" />
+        <property role="TrG5h" value="Tijdstip" />
+        <property role="16Ztxt" value="true" />
         <node concept="1EDDdA" id="hISI8GkYpb" role="1EDDcc">
           <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
         </node>

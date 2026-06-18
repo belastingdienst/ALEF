@@ -6432,7 +6432,7 @@
   </node>
   <node concept="2bQVlO" id="2b3Vt4mh35K">
     <property role="3GE5qa" value=" regels (met spaties er voor en er na) " />
-    <property role="TrG5h" value="Regels met millisecondes in datumtijd" />
+    <property role="TrG5h" value="Regels met millisecondes in tijdstip" />
     <node concept="1HSql3" id="2b3Vt4mh372" role="1HSqhF">
       <property role="TrG5h" value="geldige periode" />
       <node concept="1wO7pt" id="2b3Vt4mh373" role="kiesI">

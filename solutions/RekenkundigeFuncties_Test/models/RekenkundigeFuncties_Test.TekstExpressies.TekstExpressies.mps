@@ -2805,7 +2805,7 @@
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="5rkkVSkuQsW" resolve="Tekst + DatumTijd resultaat" />
           <node concept="2JwNib" id="5rkkVSkwtiZ" role="3mzBi6">
-            <property role="2JwNin" value="De datumTijdAttr is  01-11-1969 13:53:54.000" />
+            <property role="2JwNin" value="De datumTijdAttr is  01-11-1969 13:53:54.000000000" />
           </node>
         </node>
         <node concept="3mzBic" id="1$ZlY0bFgCA" role="4Ohbj">

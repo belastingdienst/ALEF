@@ -14164,6 +14164,9 @@
                 </node>
                 <node concept="3clFbS" id="1ziZit5FcbF" role="3clFbx">
                   <node concept="2MkqsV" id="1ziZit5Fdqr" role="3cqZAp">
+                    <node concept="Xl_RD" id="1ziZit5FdqB" role="2MkJ7o">
+                      <property role="Xl_RC" value="Argument van een BegrensdeExpressie kan alleen een numerieke expressie zijn." />
+                    </node>
                     <node concept="2OqwBi" id="1ziZit5FeAt" role="1urrMF">
                       <node concept="1YBJjd" id="1ziZit5FeqT" role="2Oq$k0">
                         <ref role="1YBMHb" node="1Ninh$bS$$R" resolve="begrensdeExpressie" />
@@ -14171,9 +14174,6 @@
                       <node concept="3TrEf2" id="1ziZit5FfEj" role="2OqNvi">
                         <ref role="3Tt5mk" to="m234:5UNDr9_CfvG" resolve="argument" />
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="1ziZit5FdqB" role="2MkJ7o">
-                      <property role="Xl_RC" value="Argument van een BegrensdeExpressie kan alleen een numerieke expressie zijn." />
                     </node>
                   </node>
                 </node>
@@ -16353,7 +16353,7 @@
           </node>
         </node>
         <node concept="2YIFZM" id="1q0zb1We_6O" role="3clFbw">
-          <ref role="37wK5l" to="8l26:2hQyku2tPFg" resolve="kleinerOfGelijkAanSeconde" />
+          <ref role="37wK5l" to="8l26:2hQyku2tPFg" resolve="kleinerofGelijkAanSeconde" />
           <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
           <node concept="2OqwBi" id="1q0zb1We_u2" role="37wK5m">
             <node concept="1YBJjd" id="1q0zb1We_9w" role="2Oq$k0">
@@ -16369,7 +16369,7 @@
         <node concept="3clFbS" id="1IPDgOpCwR0" role="3clFbx">
           <node concept="3cpWs8" id="1IPDgOpC$EC" role="3cqZAp">
             <node concept="3cpWsn" id="1IPDgOpC$ED" role="3cpWs9">
-              <property role="TrG5h" value="millisecondeType" />
+              <property role="TrG5h" value="nanosecondeType" />
               <node concept="3Tqbb2" id="1IPDgOpC$EE" role="1tU5fm">
                 <ref role="ehGHo" to="3ic2:58tBIcSIKPu" resolve="NumeriekType" />
               </node>
@@ -16384,7 +16384,7 @@
                       <ref role="1YBMHb" node="35fGtDX_Dot" resolve="datumMetJaarMaandDagEnTijd" />
                     </node>
                     <node concept="3TrEf2" id="1IPDgOpC$EK" role="2OqNvi">
-                      <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+                      <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1IPDgOpC$EL" role="2OqNvi">
@@ -16398,14 +16398,14 @@
             <node concept="3clFbS" id="1IPDgOpC$EN" role="3clFbx">
               <node concept="2MkqsV" id="35fGtDX_JEl" role="3cqZAp">
                 <node concept="Xl_RD" id="35fGtDX_JEm" role="2MkJ7o">
-                  <property role="Xl_RC" value="Milliseconde moet een numerieke waarde zijn" />
+                  <property role="Xl_RC" value="Nanoseconde moet een numerieke waarde zijn" />
                 </node>
                 <node concept="2OqwBi" id="35fGtDX_Ku1" role="1urrMF">
                   <node concept="1YBJjd" id="35fGtDX_Ku2" role="2Oq$k0">
                     <ref role="1YBMHb" node="35fGtDX_Dot" resolve="datumMetJaarMaandDagEnTijd" />
                   </node>
                   <node concept="3TrEf2" id="35fGtDX_Ku3" role="2OqNvi">
-                    <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+                    <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
                   </node>
                 </node>
               </node>
@@ -16413,7 +16413,7 @@
             <node concept="3clFbC" id="1IPDgOpC$EO" role="3clFbw">
               <node concept="10Nm6u" id="1IPDgOpC$EP" role="3uHU7w" />
               <node concept="37vLTw" id="1IPDgOpC$EQ" role="3uHU7B">
-                <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="millisecondeType" />
+                <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="nanosecondeType" />
               </node>
             </node>
             <node concept="3eNFk2" id="1IPDgOpC$ER" role="3eNLev">
@@ -16423,7 +16423,7 @@
                 </node>
                 <node concept="2OqwBi" id="1IPDgOpC$EU" role="3uHU7B">
                   <node concept="37vLTw" id="1IPDgOpC$EV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="millisecondeType" />
+                    <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="nanosecondeType" />
                   </node>
                   <node concept="3TrcHB" id="1IPDgOpC$EW" role="2OqNvi">
                     <ref role="3TsBF5" to="3ic2:2ONNSf1O5qe" resolve="decimalen" />
@@ -16433,14 +16433,14 @@
               <node concept="3clFbS" id="1IPDgOpC$EX" role="3eOfB_">
                 <node concept="2MkqsV" id="35fGtDX_JEI" role="3cqZAp">
                   <node concept="Xl_RD" id="35fGtDX_JEJ" role="2MkJ7o">
-                    <property role="Xl_RC" value="Milliseconde moet een geheel getal zijn" />
+                    <property role="Xl_RC" value="Nanoseconde moet een geheel getal zijn" />
                   </node>
                   <node concept="2OqwBi" id="35fGtDX_KIY" role="1urrMF">
                     <node concept="1YBJjd" id="35fGtDX_KIZ" role="2Oq$k0">
                       <ref role="1YBMHb" node="35fGtDX_Dot" resolve="datumMetJaarMaandDagEnTijd" />
                     </node>
                     <node concept="3TrEf2" id="35fGtDX_KJ0" role="2OqNvi">
-                      <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+                      <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
                     </node>
                   </node>
                 </node>
@@ -16471,7 +16471,7 @@
                     <node concept="2Iv5rx" id="1WARDYApk1q" role="2OqNvi" />
                   </node>
                   <node concept="Xl_RD" id="1WARDYApk1r" role="3uHU7B">
-                    <property role="Xl_RC" value="Milliseconde kan alleen bepaald worden uit een gegeven met eenheid " />
+                    <property role="Xl_RC" value="Nanoseconde kan alleen bepaald worden uit een gegeven met eenheid " />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="1WARDYApk1s" role="1urrMF">
@@ -16479,7 +16479,7 @@
                     <ref role="1YBMHb" node="35fGtDX_Dot" resolve="datumMetJaarMaandDagEnTijd" />
                   </node>
                   <node concept="3TrEf2" id="1WARDYApk1u" role="2OqNvi">
-                    <ref role="3Tt5mk" to="m234:35fGtDXbw$q" resolve="milliseconde" />
+                    <ref role="3Tt5mk" to="m234:2DcxiJSd0tZ" resolve="nanoseconde" />
                   </node>
                 </node>
               </node>
@@ -16488,7 +16488,7 @@
               <node concept="2OqwBi" id="1WARDYApk1w" role="3uHU7B">
                 <node concept="2OqwBi" id="1WARDYApk1x" role="2Oq$k0">
                   <node concept="37vLTw" id="1WARDYApk1y" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="millisecondeType" />
+                    <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="nanosecondeType" />
                   </node>
                   <node concept="3TrEf2" id="1WARDYApk1z" role="2OqNvi">
                     <ref role="3Tt5mk" to="3ic2:1zgUAOHmXIe" resolve="eenheid" />
@@ -16512,7 +16512,7 @@
                   <node concept="2OqwBi" id="1WARDYApk1F" role="2Oq$k0">
                     <node concept="2OqwBi" id="1WARDYApk1G" role="2Oq$k0">
                       <node concept="37vLTw" id="1WARDYApk1H" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="millisecondeType" />
+                        <ref role="3cqZAo" node="1IPDgOpC$ED" resolve="nanosecondeType" />
                       </node>
                       <node concept="3TrEf2" id="1WARDYApk1I" role="2OqNvi">
                         <ref role="3Tt5mk" to="3ic2:1zgUAOHmXIe" resolve="eenheid" />
@@ -16528,7 +16528,7 @@
           </node>
         </node>
         <node concept="2YIFZM" id="1q0zb1WeCTv" role="3clFbw">
-          <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="gelijkAanMilliseconde" />
+          <ref role="37wK5l" to="8l26:2hQyku2tQXa" resolve="kleinerDanSeconde" />
           <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
           <node concept="2OqwBi" id="1q0zb1WeDdd" role="37wK5m">
             <node concept="1YBJjd" id="1q0zb1WeCX1" role="2Oq$k0">

@@ -99,6 +99,7 @@
       <concept id="1690542669507072391" name="regelspraak.structure.VermenigvuldigExpressie" flags="ng" index="3aUx8u" />
       <concept id="1690542669507072390" name="regelspraak.structure.PlusExpressie" flags="ng" index="3aUx8v" />
       <concept id="3553254182979766534" name="regelspraak.structure.DatumMetJaarMaandDagEnTijd" flags="ng" index="1corzs">
+        <property id="1621450555479307266" name="granulariteit" index="1EHbyM" />
         <child id="3553254182979766554" name="milliseconde" index="1corz0" />
         <child id="3553254182979766545" name="minuut" index="1corzb" />
         <child id="3553254182979766549" name="seconde" index="1corzf" />
@@ -530,20 +531,20 @@
           <node concept="c2t0s" id="5cJt2cJymsz" role="eaaoM" />
           <node concept="3_kdyS" id="5cJt2cJyms$" role="pQQuc" />
         </node>
-        <node concept="1corzs" id="5cJt2cJyS6W" role="2bokzm">
-          <node concept="1EQTEq" id="5cJt2cJymsA" role="1ACmmm">
+        <node concept="1corzs" id="22cBt1VSaqz" role="2bokzm">
+          <property role="1EHbyM" value="58tBIcSIKQx/SECONDE" />
+          <node concept="1EQTEq" id="22cBt1VSaps" role="1ACmmm">
             <property role="3e6Tb2" value="2020" />
           </node>
-          <node concept="1EQTEq" id="5cJt2cJymsB" role="1ACmmk">
+          <node concept="1EQTEq" id="22cBt1VSapI" role="1ACmmk">
             <property role="3e6Tb2" value="1" />
           </node>
-          <node concept="1EQTEq" id="5cJt2cJymsC" role="1ACmmj">
+          <node concept="1EQTEq" id="22cBt1VSaq6" role="1ACmmj">
             <property role="3e6Tb2" value="1" />
           </node>
-          <node concept="2MOiMP" id="5cJt2cJyS6X" role="1corzj" />
-          <node concept="2MOiMP" id="5cJt2cJyS6Y" role="1corzb" />
-          <node concept="2MOiMP" id="5cJt2cJyS6Z" role="1corzf" />
-          <node concept="2MOiMP" id="5cJt2cJyS70" role="1corz0" />
+          <node concept="2MOiMP" id="22cBt1VSaq$" role="1corzj" />
+          <node concept="2MOiMP" id="22cBt1VSaq_" role="1corzb" />
+          <node concept="2MOiMP" id="22cBt1VSaqA" role="1corzf" />
         </node>
       </node>
     </node>
@@ -650,9 +651,6 @@
           <node concept="1EQTEq" id="5cJt2cJz4Rs" role="1corzf">
             <property role="3e6Tb2" value="1" />
           </node>
-          <node concept="1EQTEq" id="5cJt2cJz4Tc" role="1corz0">
-            <property role="3e6Tb2" value="1" />
-          </node>
           <node concept="1EQTEq" id="5cJt2cJz4Mc" role="1ACmmm">
             <property role="3e6Tb2" value="2020" />
           </node>
@@ -668,6 +666,9 @@
             <property role="p6zMq" value="26" />
             <property role="p6zMs" value="26" />
             <property role="LIFWd" value="Constant_v8owc_a0" />
+          </node>
+          <node concept="1EQTEq" id="5cJt2cJz4Tc" role="1corz0">
+            <property role="3e6Tb2" value="1" />
           </node>
         </node>
       </node>
@@ -719,9 +720,6 @@
                 <node concept="1EQTEq" id="5cJt2cJz7PY" role="1corzf">
                   <property role="3e6Tb2" value="1" />
                 </node>
-                <node concept="1EQTEq" id="5cJt2cJz7Rr" role="1corz0">
-                  <property role="3e6Tb2" value="1" />
-                </node>
                 <node concept="1EQTEq" id="5cJt2cJz7FN" role="1ACmmm">
                   <property role="3e6Tb2" value="2020" />
                 </node>
@@ -737,6 +735,9 @@
                   <property role="p6zMq" value="17" />
                   <property role="p6zMs" value="17" />
                   <property role="LIFWd" value="Constant_v8owc_a0" />
+                </node>
+                <node concept="1EQTEq" id="5cJt2cJz7Rr" role="1corz0">
+                  <property role="3e6Tb2" value="1" />
                 </node>
               </node>
             </node>
@@ -770,9 +771,6 @@
                 <node concept="1wOU7F" id="1wkouQfiMKs" role="1corzf">
                   <ref role="1wOU7E" node="1wkouQfiMKt" />
                 </node>
-                <node concept="1wOU7F" id="1wkouQfiMKH" role="1corz0">
-                  <ref role="1wOU7E" node="1wkouQfiMKI" />
-                </node>
                 <node concept="1wOU7F" id="1wkouQfiMJ7" role="1ACmmm">
                   <ref role="1wOU7E" node="1wkouQfiMJ8" />
                 </node>
@@ -781,6 +779,9 @@
                 </node>
                 <node concept="1wOU7F" id="1wkouQfiMJD" role="1ACmmj">
                   <ref role="1wOU7E" node="1wkouQfiMJE" />
+                </node>
+                <node concept="1wOU7F" id="1wkouQfiMKH" role="1corz0">
+                  <ref role="1wOU7E" node="1wkouQfiMKI" />
                 </node>
               </node>
             </node>
@@ -974,7 +975,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcDHL">
-    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Milliseconde_2_Minuut" />
+    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Tijdstip_2_Minuut" />
     <node concept="1qefOq" id="7UgZnGtcDHM" role="25YQCW">
       <node concept="1HSql3" id="2PBJkZ20dRS" role="1qenE9">
         <property role="TrG5h" value="regeltje" />
@@ -995,9 +996,6 @@
                 <node concept="1wOU7F" id="2PBJkZ20eqJ" role="1corzf">
                   <ref role="1wOU7E" node="2PBJkZ20eqK" resolve="S" />
                 </node>
-                <node concept="1wOU7F" id="2PBJkZ20eqZ" role="1corz0">
-                  <ref role="1wOU7E" node="2PBJkZ20er0" resolve="MS" />
-                </node>
                 <node concept="1wOU7F" id="2PBJkZ20epv" role="1ACmmm">
                   <ref role="1wOU7E" node="2PBJkZ20epw" resolve="J" />
                 </node>
@@ -1013,6 +1011,9 @@
                   <property role="p6zMq" value="9" />
                   <property role="p6zMs" value="9" />
                   <property role="LIFWd" value="Constant_v8owc_a0" />
+                </node>
+                <node concept="1wOU7F" id="2PBJkZ20eqZ" role="1corz0">
+                  <ref role="1wOU7E" node="2PBJkZ20er0" resolve="NS" />
                 </node>
               </node>
             </node>
@@ -1059,7 +1060,7 @@
               </node>
             </node>
             <node concept="1wOUPG" id="2PBJkZ20er0" role="1wO7iY">
-              <property role="TrG5h" value="MS" />
+              <property role="TrG5h" value="NS" />
               <property role="2n7kvO" value="true" />
               <node concept="1EQTEq" id="2PBJkZ20ejD" role="1wOUU$">
                 <property role="3e6Tb2" value="1" />
@@ -1161,7 +1162,7 @@
               </node>
             </node>
             <node concept="1wOUPG" id="2PBJkZ20eRS" role="1wO7iY">
-              <property role="TrG5h" value="MS" />
+              <property role="TrG5h" value="NS" />
               <property role="2n7kvO" value="true" />
               <node concept="1EQTEq" id="2PBJkZ20eRT" role="1wOUU$">
                 <property role="3e6Tb2" value="1" />
@@ -1537,7 +1538,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcF3k">
-    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Seconde_2_Milliseconde" />
+    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Seconde_2_Tijdstip" />
     <node concept="1qefOq" id="7UgZnGtcF3l" role="25YQCW">
       <node concept="1HSql3" id="2PBJkZ20hB9" role="1qenE9">
         <property role="TrG5h" value="regeltje" />
@@ -1631,7 +1632,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="7UgZnGtcF3T" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -1887,7 +1888,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcG$M">
-    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Minuut_2_Milliseconde" />
+    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Minuut_2_Tijdstip" />
     <node concept="1qefOq" id="7UgZnGtcG$N" role="25YQCW">
       <node concept="1HSql3" id="2PBJkZ20jiB" role="1qenE9">
         <property role="TrG5h" value="regeltje" />
@@ -1971,7 +1972,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="7UgZnGtcG_n" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -2222,7 +2223,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcGAV">
-    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Uur_2_Milliseconde" />
+    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Uur_2_Tijdstip" />
     <node concept="1qefOq" id="7UgZnGtcGAW" role="25YQCW">
       <node concept="1HSql3" id="2PBJkZ20ld$" role="1qenE9">
         <property role="TrG5h" value="regeltje" />
@@ -2296,7 +2297,7 @@
             <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
           </node>
           <node concept="2ViDtV" id="7UgZnGtcGBw" role="2OqNvi">
-            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+            <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
           </node>
         </node>
       </node>
@@ -2518,7 +2519,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcIh6">
-    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Milliseconde_2_Seconde" />
+    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Tijdstip_2_Seconde" />
     <node concept="1qefOq" id="7UgZnGtcIh7" role="25YQCW">
       <node concept="1HSql3" id="2PBJkZ20mOK" role="1qenE9">
         <property role="TrG5h" value="regeltje" />
@@ -2539,9 +2540,6 @@
                 <node concept="1wOU7F" id="2PBJkZ20ndb" role="1corzf">
                   <ref role="1wOU7E" node="2PBJkZ20ndc" resolve="S" />
                 </node>
-                <node concept="1wOU7F" id="2PBJkZ20ndr" role="1corz0">
-                  <ref role="1wOU7E" node="2PBJkZ20nds" resolve="MS" />
-                </node>
                 <node concept="1wOU7F" id="2PBJkZ20nbV" role="1ACmmm">
                   <ref role="1wOU7E" node="2PBJkZ20nbW" resolve="J" />
                 </node>
@@ -2557,6 +2555,9 @@
                   <property role="p6zMq" value="16" />
                   <property role="p6zMs" value="16" />
                   <property role="LIFWd" value="Constant_v8owc_a0" />
+                </node>
+                <node concept="1wOU7F" id="2PBJkZ20ndr" role="1corz0">
+                  <ref role="1wOU7E" node="2PBJkZ20nds" resolve="NS" />
                 </node>
               </node>
             </node>
@@ -2603,7 +2604,7 @@
               </node>
             </node>
             <node concept="1wOUPG" id="2PBJkZ20nds" role="1wO7iY">
-              <property role="TrG5h" value="MS" />
+              <property role="TrG5h" value="NS" />
               <property role="2n7kvO" value="true" />
               <node concept="1EQTEq" id="2PBJkZ20n65" role="1wOUU$">
                 <property role="3e6Tb2" value="1" />
@@ -2708,7 +2709,7 @@
               </node>
             </node>
             <node concept="1wOUPG" id="2PBJkZ20nlY" role="1wO7iY">
-              <property role="TrG5h" value="MS" />
+              <property role="TrG5h" value="NS" />
               <property role="2n7kvO" value="true" />
               <node concept="1EQTEq" id="2PBJkZ20nlZ" role="1wOUU$">
                 <property role="3e6Tb2" value="1" />
@@ -2721,7 +2722,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="7UgZnGtcIib">
-    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Milliseconde_2_Uur" />
+    <property role="TrG5h" value="DatumMetJaarMaandEnDagEnTijd_VeranderGranulariteit_Tijdstip_2_Uur" />
     <node concept="1qefOq" id="7UgZnGtcIic" role="25YQCW">
       <node concept="1HSql3" id="2PBJkZ20nIz" role="1qenE9">
         <property role="TrG5h" value="regeltje" />
@@ -2759,7 +2760,7 @@
                   <ref role="1wOU7E" node="2PBJkZ20or_" resolve="S" />
                 </node>
                 <node concept="1wOU7F" id="2PBJkZ20orO" role="1corz0">
-                  <ref role="1wOU7E" node="2PBJkZ20orP" resolve="MS" />
+                  <ref role="1wOU7E" node="2PBJkZ20orP" resolve="NS" />
                 </node>
               </node>
             </node>
@@ -2806,7 +2807,7 @@
               </node>
             </node>
             <node concept="1wOUPG" id="2PBJkZ20orP" role="1wO7iY">
-              <property role="TrG5h" value="MS" />
+              <property role="TrG5h" value="NS" />
               <property role="2n7kvO" value="true" />
               <node concept="1EQTEq" id="2PBJkZ20omL" role="1wOUU$">
                 <property role="3e6Tb2" value="1" />
@@ -2905,7 +2906,7 @@
               </node>
             </node>
             <node concept="1wOUPG" id="2PBJkZ20oCd" role="1wO7iY">
-              <property role="TrG5h" value="MS" />
+              <property role="TrG5h" value="NS" />
               <property role="2n7kvO" value="true" />
               <node concept="1EQTEq" id="2PBJkZ20o$c" role="1wOUU$">
                 <property role="3e6Tb2" value="1" />

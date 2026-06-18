@@ -401,6 +401,9 @@
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1201,46 +1204,18 @@
               <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
               <node concept="3zFVjK" id="dortWW6INB" role="3zH0cK">
                 <node concept="3clFbS" id="dortWW6INC" role="2VODD2">
-                  <node concept="3SKdUt" id="dortWW6LE$" role="3cqZAp">
-                    <node concept="1PaTwC" id="dortWW6LE_" role="1aUNEU">
-                      <node concept="3oM_SD" id="dortWW6LEA" role="1PaTwD">
-                        <property role="3oM_SC" value="is" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LFl" role="1PaTwD">
-                        <property role="3oM_SC" value="in" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LFp" role="1PaTwD">
-                        <property role="3oM_SC" value="nano" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6NyE" role="1PaTwD">
-                        <property role="3oM_SC" value="seconden" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LGe" role="1PaTwD">
-                        <property role="3oM_SC" value="dus" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LGw" role="1PaTwD">
-                        <property role="3oM_SC" value="onze" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LGZ" role="1PaTwD">
-                        <property role="3oM_SC" value="milli" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LHF" role="1PaTwD">
-                        <property role="3oM_SC" value="maal" />
-                      </node>
-                      <node concept="3oM_SD" id="dortWW6LI0" role="1PaTwD">
-                        <property role="3oM_SC" value="10^6" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="dortWW6ITO" role="3cqZAp">
-                    <node concept="17qRlL" id="dortWW6MUr" role="3clFbG">
-                      <node concept="3cmrfG" id="dortWW6N6Q" role="3uHU7w">
-                        <property role="3cmrfH" value="1000000" />
+                    <node concept="2OqwBi" id="4SUgeorC0rS" role="3clFbG">
+                      <node concept="35c_gC" id="4SUgeorBZxt" role="2Oq$k0">
+                        <ref role="35c_gD" to="3ic2:4K62$zpiMzT" resolve="DatumTijdLiteral" />
                       </node>
-                      <node concept="2OqwBi" id="dortWW6Jf_" role="3uHU7B">
-                        <node concept="30H73N" id="dortWW6ITN" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="dortWW6JGQ" role="2OqNvi">
-                          <ref role="3TsBF5" to="3ic2:44Jn6rIG$dX" resolve="milliseconde" />
+                      <node concept="2qgKlT" id="4SUgeorC0MF" role="2OqNvi">
+                        <ref role="37wK5l" to="8l26:2$1HanhZc8u" resolve="getFracs" />
+                        <node concept="2OqwBi" id="4SUgeorC1F1" role="37wK5m">
+                          <node concept="30H73N" id="4SUgeorC16z" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="4SUgeorC2i5" role="2OqNvi">
+                            <ref role="3TsBF5" to="3ic2:2$1HamVs01S" resolve="fractioneleSeconde" />
+                          </node>
                         </node>
                       </node>
                     </node>
