@@ -7,7 +7,7 @@
 	<parent>
         <groupId>nl.belastingdienst.brm.alef</groupId>
         <artifactId>alef</artifactId>
-		<version>14.5.0</version>
+		<version>0.0.0</version>
         <relativePath>./pom.xml</relativePath>
     </parent>
 
@@ -435,12 +435,17 @@
 						<configuration>
 							<skip>${alef.install-deps}</skip>
 							<environmentVariables>
-								<BUILD_NUMBER>${jenkins.buildnumber}</BUILD_NUMBER>
 								<MPS_HOME>${mps.home}</MPS_HOME>
 								<ALEF_HOME>.</ALEF_HOME>
 								<MPS_JDK>${java.home}</MPS_JDK>
 								<PROJECT_VERSION>${project.version}</PROJECT_VERSION>
 								<NO_ARTIFACTS_CLEAN>${env.NO_ARTIFACTS_CLEAN}</NO_ARTIFACTS_CLEAN>
+								<BRANCH_NAME>${env.BRANCH_NAME}</BRANCH_NAME>
+								<VERSION_NUMBER>${env.VERSION_NUMBER}</VERSION_NUMBER>
+								<VERSION_NUMBER_MAJOR>${env.VERSION_NUMBER_MAJOR}</VERSION_NUMBER_MAJOR>
+								<VERSION_NUMBER_MINOR>${env.VERSION_NUMBER_MINOR}</VERSION_NUMBER_MINOR>
+								<VERSION_NUMBER_BUGFIXNR>${env.VERSION_NUMBER_BUGFIXNR}</VERSION_NUMBER_BUGFIXNR>
+								<BUILD_NUMBER>${env.BUILD_NUMBER}</BUILD_NUMBER>
 							</environmentVariables>
 							<executable>bash</executable>
 							<arguments>

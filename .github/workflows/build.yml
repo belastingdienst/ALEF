@@ -28,7 +28,7 @@ jobs:
     - name: Set-up Zensical
       run: pip install zensical
     - name: Set version
-      run: bash scripts/set-version.sh ci
+      run: bash scripts/set-version.sh "${BRANCH_NAME}"
     - name: Build with Maven
       run: xvfb-run -- mvn -B package
     - name: Upload logs

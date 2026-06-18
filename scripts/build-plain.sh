@@ -2,7 +2,21 @@
 set -o errexit
 set -o nounset
 
-. ./scripts/version.sh
+if [ -z "${GIT_COMMIT:-}" ]; then # for local builds
+	if git diff-index --quiet HEAD --; then
+		export GIT_COMMIT=$(git rev-parse HEAD)
+	else
+		export GIT_COMMIT="UNKNOWN-$(git rev-parse HEAD)"
+	fi
+fi
+[ -z "${BUILD_NUMBER:-}" ] && export BUILD_NUMBER=0
+[ -z "${GIT_URL:-}" ] && export GIT_URL=""
+[ -z "${JOB_NAME:-}" ] && export JOB_NAME=""
+export MPS_VERSION="$(cat versionMPS.txt)"
+
+. ./scripts/check-env.sh
+export JAVA_VERSION=$($MPS_JAVA_EXEC -version 2>&1 | head -n 1 | awk -F '"' '{print $2}')
+export MPS_BUILD_NUMBER=$(sed 's/\([0-9]*[.][0-9]\)[0-9]*/\1/' "${MPS_HOME}/build.txt")
 
 echo "[ALEF] Build all"
 echo
