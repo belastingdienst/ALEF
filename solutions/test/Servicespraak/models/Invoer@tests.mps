@@ -5,7 +5,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="22" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="65239ca4-9057-41f8-999d-97fa1a60b298" name="besturingspraak" version="2" />
@@ -321,12 +321,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5" />
@@ -582,7 +582,7 @@
                 <property role="2JBhWF" value="13" />
                 <property role="2JBhWc" value="13" />
                 <property role="2JBhWl" value="13" />
-                <property role="2JBhWr" value="1" />
+                <property role="2isrjt" value="001" />
               </node>
             </node>
             <node concept="3mzBic" id="Bur0r0aEBC" role="4Ohbj">

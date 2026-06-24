@@ -127,12 +127,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -818,7 +818,7 @@
             <property role="2JBhWF" value="13" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -868,7 +868,7 @@
             <property role="2JBhWF" value="13" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -915,7 +915,7 @@
         <property role="TrG5h" value="v2" />
         <property role="2n7kvO" value="true" />
         <node concept="1EDDdA" id="HCeLeOiMFQ" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="HCeLeOiMur" role="2bv01j">
@@ -989,7 +989,7 @@
         <property role="2n7kvO" value="true" />
         <node concept="1EHTXS" id="64mv_d6$olk" role="1EDDcc">
           <node concept="1EDDdA" id="64mv_d6$oll" role="1EHZVt">
-            <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+            <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
           </node>
           <node concept="1EHZm$" id="64mv_d6$orz" role="1EHZmy">
             <ref role="1EHZmB" node="64mv_d6$nUW" resolve="dim" />

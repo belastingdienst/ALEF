@@ -108,12 +108,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -170,13 +170,13 @@
       <node concept="2bv6ZS" id="2WqscnMNV9u" role="2bv01j">
         <property role="TrG5h" value="datum1" />
         <node concept="1EDDdA" id="2WqscnMNVmo" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="2WqscnMNVrD" role="2bv01j">
         <property role="TrG5h" value="datum2" />
         <node concept="1EDDdA" id="2WqscnMNVD_" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="hFiMIsu8dd" role="2bv01j">
@@ -611,7 +611,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="2WqscnMOgkn" role="4OhPJ">
@@ -623,7 +623,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -736,7 +736,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="svlIDYsbvL" role="4OhPJ">
@@ -748,7 +748,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -848,7 +848,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="svlIDYsbGy" role="4OhPJ">
@@ -860,7 +860,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -960,7 +960,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="6Xh1zQD9_p4" role="4OhPJ">
@@ -972,7 +972,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -1008,7 +1008,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="1" />
+            <property role="2isrjt" value="001" />
           </node>
         </node>
         <node concept="3_ceKt" id="2gFRGd8ZPmf" role="4OhPJ">
@@ -1020,7 +1020,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -1056,7 +1056,7 @@
             <property role="2JBhWF" value="12" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="4m7$2sRnfmb" role="4OhPJ">
@@ -1068,7 +1068,7 @@
             <property role="2JBhWF" value="12" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -1104,7 +1104,7 @@
             <property role="2JBhWF" value="12" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="2TSHEg77h9O" role="4OhPJ">
@@ -1116,7 +1116,7 @@
             <property role="2JBhWF" value="11" />
             <property role="2JBhWc" value="59" />
             <property role="2JBhWl" value="59" />
-            <property role="2JBhWr" value="999" />
+            <property role="2isrjt" value="999" />
           </node>
         </node>
       </node>
@@ -1152,7 +1152,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="4m7$2sRngbx" role="4OhPJ">
@@ -1164,7 +1164,7 @@
             <property role="2JBhWF" value="1" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>
@@ -1200,7 +1200,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="2TSHEg77fM_" role="4OhPJ">
@@ -1212,7 +1212,7 @@
             <property role="2JBhWF" value="1" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
       </node>

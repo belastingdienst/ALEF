@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="22" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
     <use id="c40e126b-a0e9-42bb-b903-9b5fd0b050d2" name="gegevensspraak.tijd" version="4" />
     <use id="299845ab-8a41-470d-b76f-9736f9b49925" name="regelspraak.tijd" version="7" />
     <use id="75b1dcc9-4d65-4537-bd22-03b6cf247f5f" name="testspraak.tijd" version="0" />
@@ -199,12 +199,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="1788186806698835690" name="gegevensspraak.structure.EenheidMacht" flags="ng" index="Pwxi7">
@@ -266,7 +266,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
             <node concept="7CXmI" id="hISI8GkYqf" role="lGtFl">
               <node concept="1TM$A" id="hISI8GkYqg" role="7EUXB">
                 <node concept="2PYRI3" id="5rBvemgwQtM" role="3lydEf">
@@ -404,7 +404,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
             <node concept="7CXmI" id="hISI8GVAjf" role="lGtFl">
               <node concept="1TM$A" id="hISI8GVAjg" role="7EUXB">
                 <node concept="2PYRI3" id="5rBvemgwRqu" role="3lydEf">
@@ -540,7 +540,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
             <node concept="7CXmI" id="hISI8GVAkW" role="lGtFl">
               <node concept="1TM$A" id="hISI8GVAkX" role="7EUXB">
                 <node concept="2PYRI3" id="5rBvemgwS7Z" role="3lydEf">
@@ -674,7 +674,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
             <node concept="7CXmI" id="hISI8GVAF_" role="lGtFl">
               <node concept="1TM$A" id="hISI8GVAHp" role="7EUXB">
                 <node concept="2PYRI3" id="5rBvemgwSAl" role="3lydEf">
@@ -806,7 +806,7 @@
             <property role="2JBhWF" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWl" value="0" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
             <node concept="7CXmI" id="hISI8GVAIH" role="lGtFl">
               <node concept="7OXhh" id="hISI8GVAII" role="7EUXB">
                 <property role="GvXf4" value="true" />
@@ -985,7 +985,7 @@
               <property role="2JBhWF" value="0" />
               <property role="2JBhWc" value="0" />
               <property role="2JBhWl" value="0" />
-              <property role="2JBhWr" value="0" />
+              <property role="2isrjt" value="0" />
             </node>
             <node concept="7CXmI" id="7bT4pAeMb5y" role="lGtFl">
               <node concept="1TM$A" id="7bT4pAeMb5z" role="7EUXB">
@@ -1110,7 +1110,7 @@
               <property role="2JBhWF" value="0" />
               <property role="2JBhWc" value="0" />
               <property role="2JBhWl" value="0" />
-              <property role="2JBhWr" value="0" />
+              <property role="2isrjt" value="0" />
               <node concept="7CXmI" id="hISI8GWjs1" role="lGtFl">
                 <node concept="1TM$A" id="hISI8GWjs2" role="7EUXB">
                   <node concept="2PYRI3" id="hISI8GWjs3" role="3lydEf">
@@ -1149,7 +1149,7 @@
                   <property role="2JBhWF" value="0" />
                   <property role="2JBhWc" value="0" />
                   <property role="2JBhWl" value="0" />
-                  <property role="2JBhWr" value="0" />
+                  <property role="2isrjt" value="0" />
                 </node>
                 <node concept="2ljiaL" id="3wdbeatRGdE" role="3haOjb">
                   <property role="2ljiaM" value="1" />
@@ -1235,7 +1235,7 @@
               <property role="2JBhWF" value="0" />
               <property role="2JBhWc" value="0" />
               <property role="2JBhWl" value="0" />
-              <property role="2JBhWr" value="0" />
+              <property role="2isrjt" value="0" />
               <node concept="7CXmI" id="3wdbeatNrrQ" role="lGtFl">
                 <node concept="1TM$A" id="3wdbeatNrrR" role="7EUXB">
                   <node concept="2PYRI3" id="7SIbhOgRShv" role="3lydEf">
@@ -1644,7 +1644,7 @@
         <property role="TrG5h" value="Tijdstip" />
         <property role="16Ztxt" value="true" />
         <node concept="1EDDdA" id="hISI8GkYpb" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="hISI8GWjU7" role="2bv01j">

@@ -47,10 +47,10 @@
         <reference id="5308348422954265446" name="set" index="17AE6y" />
       </concept>
       <concept id="3553254182979766534" name="regelspraak.structure.DatumMetJaarMaandDagEnTijd" flags="ng" index="1corzs">
-        <child id="3553254182979766554" name="milliseconde" index="1corz0" />
         <child id="3553254182979766545" name="minuut" index="1corzb" />
         <child id="3553254182979766549" name="seconde" index="1corzf" />
         <child id="3553254182979766537" name="uur" index="1corzj" />
+        <child id="3047957471717230463" name="nanoseconde" index="3iu89k" />
       </concept>
       <concept id="1480463129960505090" name="regelspraak.structure.RegelVersie" flags="ng" index="1wO7pt">
         <child id="1480463129960505094" name="statement" index="1wO7pp" />
@@ -132,7 +132,6 @@
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -260,7 +259,7 @@
               <node concept="1wOU7F" id="70BxqmYqT1s" role="1corzb">
                 <ref role="1wOU7E" node="70BxqmYqT1n" resolve="MIN" />
               </node>
-              <node concept="1wOU7F" id="70BxqmYqT1C" role="1corz0">
+              <node concept="1wOU7F" id="70BxqmYqT1C" role="3iu89k">
                 <ref role="1wOU7E" node="70BxqmYqT1z" resolve="NS" />
               </node>
             </node>
@@ -396,7 +395,7 @@
               <node concept="1wOU7F" id="6V40LFnVhDY" role="1ACmmj">
                 <ref role="1wOU7E" node="6V40LFnVhEa" resolve="D" />
               </node>
-              <node concept="1wOU7F" id="6V40LFnVhDV" role="1corz0">
+              <node concept="1wOU7F" id="6V40LFnVhDV" role="3iu89k">
                 <ref role="1wOU7E" node="6V40LFnVhEm" resolve="NS" />
               </node>
             </node>
@@ -404,7 +403,7 @@
           <node concept="2z5Mdt" id="6V40LFnVhDZ" role="1wO7i3">
             <node concept="28IvMi" id="6V40LFnVhE0" role="2z5HcU" />
             <node concept="3zJvcN" id="6V40LFnVjoc" role="2z5D6P">
-              <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+              <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
               <node concept="3_mHL5" id="6V40LFnVhE1" role="3zJoBm">
                 <node concept="c2t0s" id="6V40LFnVhE2" role="eaaoM">
                   <ref role="Qu8KH" node="1cG0WyQKir7" resolve="invoerDatumtijd" />
@@ -479,7 +478,7 @@
             <property role="TrG5h" value="NS" />
             <property role="2n7kvO" value="true" />
             <node concept="3zJvcN" id="6V40LFnVhEn" role="1wOUU$">
-              <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+              <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
               <node concept="3yS1BT" id="6V40LFnVhEo" role="3zJoBm">
                 <ref role="3yS1Ki" node="6V40LFnVhE2" resolve="invoerDatumtijd" />
               </node>
@@ -530,7 +529,7 @@
               </node>
             </node>
             <node concept="3zJvcN" id="6V40LFnVjI2" role="2z5D6P">
-              <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+              <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
               <node concept="3_mHL5" id="6V40LFnVhM5" role="3zJoBm">
                 <node concept="c2t0s" id="6V40LFnVhM6" role="eaaoM">
                   <ref role="Qu8KH" node="1cG0WyQKir7" resolve="invoerDatumtijd" />
@@ -859,7 +858,7 @@
       <node concept="2bv6ZS" id="MBxV8SG9r0" role="2bv01j">
         <property role="TrG5h" value="uitvoerNanosecondes" />
         <node concept="1EDDdA" id="MBxV8SG9r1" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="6V40LFnVlzc" role="2bv01j">
@@ -891,7 +890,7 @@
         <property role="16Ztxt" value="false" />
         <property role="TrG5h" value="invoerDatumtijd" />
         <node concept="1EDDdA" id="1cG0WyQKirx" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="MBxV8SG9su" role="2bv01j">
@@ -1166,7 +1165,7 @@
             <property role="2JBhWF" value="12" />
             <property role="2JBhWc" value="34" />
             <property role="2JBhWl" value="56" />
-            <property role="2JBhWr" value="789" />
+            <property role="2isrjt" value="789" />
           </node>
         </node>
       </node>
@@ -1182,7 +1181,7 @@
             <property role="2JBhWF" value="12" />
             <property role="2JBhWc" value="34" />
             <property role="2JBhWl" value="56" />
-            <property role="2JBhWr" value="789" />
+            <property role="2isrjt" value="789" />
           </node>
         </node>
       </node>

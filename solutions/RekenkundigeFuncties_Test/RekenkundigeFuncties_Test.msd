@@ -66,7 +66,7 @@
     <language slang="l:dd4c0bf2-9ffb-4d92-ab71-559516bb542f:servicetestNaarXml" version="0" />
     <language slang="l:6494aba8-a154-4ad7-9bae-973ee96ec409:servicetestNaarXml.tijd" version="0" />
     <language slang="l:f1fde5ac-c94f-4400-a54e-227925768f25:testNaarUnittest" version="0" />
-    <language slang="l:8bc962c0-cb3c-49f0-aa03-23c3bc0304b0:testspraak" version="22" />
+    <language slang="l:8bc962c0-cb3c-49f0-aa03-23c3bc0304b0:testspraak" version="23" />
     <language slang="l:75b1dcc9-4d65-4537-bd22-03b6cf247f5f:testspraak.tijd" version="0" />
     <language slang="l:bef79dc4-9060-4318-a10a-46eb2fa0f3b1:translator" version="1" />
     <language slang="l:643ee156-beaa-484d-abfc-2a8879c50ed2:unittestspraak" version="0" />

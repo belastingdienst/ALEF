@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="22" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="bef79dc4-9060-4318-a10a-46eb2fa0f3b1" name="translator" version="1" />
@@ -351,12 +351,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -3895,7 +3895,7 @@
           <property role="2JBhWF" value="0" />
           <property role="2JBhWc" value="0" />
           <property role="2JBhWl" value="0" />
-          <property role="2JBhWr" value="0" />
+          <property role="2isrjt" value="0" />
           <node concept="7CXmI" id="24eY1T4qlfa" role="lGtFl">
             <node concept="7OXhh" id="24eY1T4qlfg" role="7EUXB">
               <property role="GvXf4" value="true" />
@@ -3914,7 +3914,7 @@
           <property role="2JBhWF" value="0" />
           <property role="2JBhWc" value="0" />
           <property role="2JBhWl" value="0" />
-          <property role="2JBhWr" value="0" />
+          <property role="2isrjt" value="0" />
           <node concept="7CXmI" id="24eY1T4qlfo" role="lGtFl">
             <node concept="7OXhh" id="24eY1T4qlfu" role="7EUXB">
               <property role="GvXf4" value="true" />
@@ -3933,7 +3933,7 @@
           <property role="2JBhWF" value="0" />
           <property role="2JBhWc" value="0" />
           <property role="2JBhWl" value="0" />
-          <property role="2JBhWr" value="0" />
+          <property role="2isrjt" value="0" />
           <node concept="7CXmI" id="24eY1T4qlfA" role="lGtFl">
             <node concept="7OXhh" id="24eY1T4qlfG" role="7EUXB">
               <property role="GvXf4" value="true" />
@@ -4010,7 +4010,7 @@
     </node>
     <node concept="1qefOq" id="24eY1T6GfCX" role="1SKRRt">
       <node concept="3zJvcN" id="24eY1T6GfCY" role="1qenE9">
-        <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+        <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
         <node concept="2ljiaL" id="24eY1T6GfCZ" role="3zJoBm">
           <property role="2ljiaM" value="1" />
           <property role="2ljiaN" value="1" />
@@ -4082,7 +4082,7 @@
     </node>
     <node concept="1qefOq" id="24eY1T6GfDV" role="1SKRRt">
       <node concept="3zJvcN" id="24eY1T6GfDW" role="1qenE9">
-        <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+        <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
         <node concept="2ljiaL" id="24eY1T6GfDX" role="3zJoBm">
           <property role="2ljiaM" value="1" />
           <property role="2ljiaN" value="1" />
@@ -4100,7 +4100,7 @@
     </node>
     <node concept="1qefOq" id="24eY1T6GfEy" role="1SKRRt">
       <node concept="3zJvcN" id="24eY1T6GfEz" role="1qenE9">
-        <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+        <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
         <node concept="2ljiaL" id="24eY1T6GfE$" role="3zJoBm">
           <property role="2ljiaM" value="1" />
           <property role="2ljiaN" value="1" />
@@ -4119,7 +4119,7 @@
     </node>
     <node concept="1qefOq" id="24eY1T6GfES" role="1SKRRt">
       <node concept="3zJvcN" id="24eY1T6GfET" role="1qenE9">
-        <property role="0iDTO" value="58tBIcSIKQD/MILLISECONDE" />
+        <property role="0iDTO" value="2HjUWz6rdAL/TIJDSTIP" />
         <node concept="2ljiaL" id="24eY1T6GfEU" role="3zJoBm">
           <property role="2ljiaM" value="1" />
           <property role="2ljiaN" value="1" />

@@ -71,7 +71,6 @@
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="1788186806698835690" name="gegevensspraak.structure.EenheidMacht" flags="ng" index="Pwxi7">
@@ -175,7 +174,6 @@
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
         <property role="2isrjt" value="0" />
-        <property role="2JBhWr" value="0" />
       </node>
     </node>
   </node>
@@ -267,7 +265,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
-        <property role="2JBhWr" value="0" />
+        <property role="2isrjt" value="0" />
         <node concept="LIFWc" id="7UgZnGtcqKF" role="lGtFl">
           <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
@@ -311,7 +309,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
-        <property role="2JBhWr" value="0" />
+        <property role="2isrjt" value="0" />
         <node concept="LIFWc" id="7UgZnGtcv5u" role="lGtFl">
           <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
@@ -354,7 +352,7 @@
         <property role="2JBhWF" value="0" />
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
-        <property role="2JBhWr" value="0" />
+        <property role="2isrjt" value="0" />
         <node concept="LIFWc" id="7UgZnGtcv7b" role="lGtFl">
           <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
@@ -414,7 +412,6 @@
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
         <property role="2isrjt" value="0" />
-        <property role="2JBhWr" value="0" />
       </node>
     </node>
   </node>
@@ -540,7 +537,6 @@
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
         <property role="2isrjt" value="0" />
-        <property role="2JBhWr" value="0" />
       </node>
     </node>
   </node>
@@ -664,7 +660,6 @@
         <property role="2JBhWc" value="0" />
         <property role="2JBhWl" value="0" />
         <property role="2isrjt" value="0" />
-        <property role="2JBhWr" value="0" />
       </node>
     </node>
   </node>

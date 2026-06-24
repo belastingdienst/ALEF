@@ -199,7 +199,6 @@
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -743,8 +742,7 @@
                 <property role="2JBhWF" value="13" />
                 <property role="2JBhWc" value="13" />
                 <property role="2JBhWl" value="13" />
-                <property role="2isrjt" value="001000000" />
-                <property role="2JBhWr" value="1" />
+                <property role="2isrjt" value="001" />
               </node>
             </node>
             <node concept="3_ceKt" id="5psGi9nuZZL" role="4OhPJ">

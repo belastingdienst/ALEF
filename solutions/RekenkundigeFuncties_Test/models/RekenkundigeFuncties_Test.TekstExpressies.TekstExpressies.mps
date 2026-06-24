@@ -152,12 +152,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -339,7 +339,7 @@
       <node concept="2bv6ZS" id="_fVTt5CsX2" role="2bv01j">
         <property role="TrG5h" value="DatumTijdAttr" />
         <node concept="1EDDdA" id="5rkkVSkuI9x" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="1$ZlY0bFbK4" role="2bv01j">
@@ -661,7 +661,7 @@
                   <property role="2JBhWF" value="1" />
                   <property role="2JBhWc" value="59" />
                   <property role="2JBhWl" value="59" />
-                  <property role="2JBhWr" value="999" />
+                  <property role="2isrjt" value="999" />
                 </node>
               </node>
               <node concept="ymhcM" id="Jl5d7arkIF" role="2x5sjf">
@@ -1783,7 +1783,7 @@
                   <property role="2JBhWF" value="9" />
                   <property role="2JBhWc" value="1" />
                   <property role="2JBhWl" value="59" />
-                  <property role="2JBhWr" value="999" />
+                  <property role="2isrjt" value="999" />
                 </node>
               </node>
             </node>
@@ -2877,7 +2877,7 @@
             <property role="2JBhWF" value="13" />
             <property role="2JBhWc" value="53" />
             <property role="2JBhWl" value="54" />
-            <property role="2JBhWr" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
         </node>
         <node concept="3_ceKt" id="1$ZlY0bFft_" role="4OhPJ">

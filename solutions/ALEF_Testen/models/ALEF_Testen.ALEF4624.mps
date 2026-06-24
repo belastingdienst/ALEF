@@ -117,12 +117,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -232,7 +232,7 @@
         <property role="TrG5h" value="zonuren datum ms" />
         <node concept="1EHTXS" id="3sbrVdbLNr5" role="1EDDcc">
           <node concept="1EDDdA" id="3sbrVdbLNr6" role="1EHZVt">
-            <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+            <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
           </node>
           <node concept="1EHZm$" id="3sbrVdbLNr7" role="1EHZmy">
             <ref role="1EHZmB" node="3sbrVdbLNjp" resolve="seizoen" />
@@ -890,10 +890,10 @@
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="1" />
             <property role="2ljiaO" value="2000" />
-            <property role="2JBhWr" value="0" />
             <property role="2JBhWl" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWF" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
           <node concept="1EHZmx" id="3sbrVdbM$Ty" role="1Eu5hh">
             <ref role="1EHZmw" node="3sbrVdbLNjq" resolve="Winter" />
@@ -905,10 +905,10 @@
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="1" />
             <property role="2ljiaO" value="2000" />
-            <property role="2JBhWr" value="0" />
             <property role="2JBhWl" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWF" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
           <node concept="1EHZmx" id="3sbrVdbM$T_" role="1Eu5hh">
             <ref role="1EHZmw" node="3sbrVdbLNjE" resolve="Lente" />
@@ -920,10 +920,10 @@
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="1" />
             <property role="2ljiaO" value="2000" />
-            <property role="2JBhWr" value="0" />
             <property role="2JBhWl" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWF" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
           <node concept="1EHZmx" id="3sbrVdbM$TC" role="1Eu5hh">
             <ref role="1EHZmw" node="3sbrVdbLNjH" resolve="Zomer" />
@@ -935,10 +935,10 @@
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="1" />
             <property role="2ljiaO" value="2000" />
-            <property role="2JBhWr" value="0" />
             <property role="2JBhWl" value="0" />
             <property role="2JBhWc" value="0" />
             <property role="2JBhWF" value="0" />
+            <property role="2isrjt" value="0" />
           </node>
           <node concept="1EHZmx" id="3sbrVdbM$TF" role="1Eu5hh">
             <ref role="1EHZmw" node="3sbrVdbLNjL" resolve="Herst" />

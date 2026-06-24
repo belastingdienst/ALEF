@@ -65,12 +65,12 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5" />
@@ -95,7 +95,7 @@
       <node concept="2bv6ZS" id="yiSfuaSrOF" role="2bv01j">
         <property role="TrG5h" value="tijd" />
         <node concept="1EDDdA" id="yiSfuaSrPP" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="ZY2AZkMzBm" role="2bv01j">
@@ -161,7 +161,7 @@
                 <property role="2JBhWF" value="12" />
                 <property role="2JBhWc" value="34" />
                 <property role="2JBhWl" value="56" />
-                <property role="2JBhWr" value="0" />
+                <property role="2isrjt" value="0" />
               </node>
             </node>
           </node>

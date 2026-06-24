@@ -203,7 +203,6 @@
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
         <property id="4697074533531796330" name="minuut" index="2JBhWc" />
         <property id="4697074533531796339" name="seconde" index="2JBhWl" />
-        <property id="4697074533531796349" name="milliseconde" index="2JBhWr" />
         <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
@@ -337,7 +336,7 @@
       <node concept="2bv6ZS" id="52_8$K6NcO$" role="2bv01j">
         <property role="TrG5h" value="invoerTijdstip" />
         <node concept="1EDDdA" id="52_8$K6NdFD" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="2C8qYozp_58" role="2bv01j">
@@ -361,7 +360,7 @@
       <node concept="2bv6ZS" id="2hQykuhJ4BQ" role="2bv01j">
         <property role="TrG5h" value="uitvoerTijdstipTA" />
         <node concept="1EDDdA" id="2hQykuhJ4GU" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
           <node concept="3ixzmw" id="2hQykuhJ4Hs" role="3ix_3D">
             <node concept="1HAryX" id="2hQykuhJ4PR" role="1uZqZG">
               <node concept="1HAryU" id="2hQykuhJ4PQ" role="1HArz7">
@@ -375,7 +374,7 @@
       <node concept="2bv6ZS" id="1AHqDf_7Sdm" role="2bv01j">
         <property role="TrG5h" value="uitvoerTijdstip" />
         <node concept="1EDDdA" id="1AHqDf_7V_S" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
         </node>
       </node>
       <node concept="2bv6ZS" id="jd54wKChHI" role="2bv01j">
@@ -812,7 +811,7 @@
                 <property role="2JBhWF" value="10" />
                 <property role="2JBhWc" value="24" />
                 <property role="2JBhWl" value="0" />
-                <property role="2JBhWr" value="0" />
+                <property role="2isrjt" value="0" />
               </node>
               <node concept="2ljiaL" id="7IHxuVoNVg$" role="3haOjb">
                 <property role="2ljiaM" value="1" />
@@ -1473,7 +1472,7 @@
     </node>
     <node concept="3AW6rv" id="7MYXgAf1joB" role="21XpMX">
       <node concept="1EDDdA" id="7MYXgAf1jpg" role="3AW66m">
-        <property role="1EDDdh" value="58tBIcSIKQD/MILLISECONDE" />
+        <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
       </node>
       <node concept="2R$z7" id="7MYXgAf1joY" role="2KWIQ6">
         <property role="2RIz2" value="30CduGMXEu3/dateTime" />
