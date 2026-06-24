@@ -27,7 +27,7 @@
 		<junitAssert.version>4.13.2</junitAssert.version>
 		<jetty.version>12.0.33</jetty.version>
 		<jackson-annotations.version>2.21</jackson-annotations.version>
-		<jackson-databind.version>2.21.2</jackson-databind.version>
+		<jackson-databind.version>2.21.4</jackson-databind.version>
 		<slf4jSimple.version>2.0.17</slf4jSimple.version>
 		<jakartaXmlWsApi.version>4.0.3</jakartaXmlWsApi.version>
 		<jakartaXmlSoapApi.version>3.0.2</jakartaXmlSoapApi.version>
