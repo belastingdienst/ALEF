@@ -1,0 +1,91 @@
+site_name: ALEF handleiding
+repo_name: belastingdienst/ALEF
+repo_url: https://github.com/belastingdienst/ALEF
+edit_uri: blob/main/docs
+site_dir: build/docs
+
+theme:
+  name: material
+  language: nl
+  locale: nl
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: white
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+
+plugins:
+  - offline
+
+nav:
+  - Home: index.md
+  - 'Quick start': quick-start.md
+  - IDE:
+    - Toetscombinaties: 'ide/toetscombinaties.md'
+
+  - Gegevens:
+    - Objectmodel: 'gegevens/objectmodel.md'
+    - Objecttypen: 'gegevens/objecttype.md'
+    - Feittype: 'gegevens/feittype.md'
+    - Domein: 'gegevens/domein.md'
+    - Dimensies: 'gegevens/dimensies.md'
+    - 'Data type': 'gegevens/datatype.md'
+    - Dagsoort: 'gegevens/dagsoort.md'
+    - Eenheidssysteem: 'gegevens/eenheidssysteem.md'
+    - Parameter: 'gegevens/parameter.md'
+
+  - Regels:
+    - RegelSpraak: 'regels/RegelSpraak.md'
+    - Acties:
+      - Acties: 'regels/Acties.md'
+      - Consistentieregel: 'regels/Actie_Consistentieregel.md'
+      - Dagsoortdefinitie: 'regels/Actie_Dagsoortdefinitie.md'
+      - Feitcreatie: 'regels/Actie_Feitcreatie.md'
+      - Gelijkstelling: 'regels/Actie_Gelijkstelling.md'
+      - Initialisatie: 'regels/Actie_Initialisatie.md'
+      - Kenmerktoekenning: 'regels/Actie_Kenmerktoekenning.md'
+      - Objectcreatie: 'regels/Actie_Objectcreatie.md'
+      - Verdeling: 'regels/Actie_Verdeling.md'
+    - Expressies:
+      - Expressies: 'regels/Expressies.md'
+      - 'Datum-tijd': 'regels/Expressies_Datum.md'
+
+  - Testen:
+    - Testen: 'testen/Testen.md'
+    - Testset: 'testen/Testset.md'
+    - Servicetestset: 'testen/ServiceTestset.md'
+    - Testdekking: 'testen/Testdekking.md'
+    - 'Testen flows': 'testen/TestenFlows.md'
+
+  - Besturing:
+    - Regelgroepbundel: 'besturing/regelgroepbundel.md'
+    - 'Flow (deprecated)': 'besturing/flow.md'
+
+  - Services:
+    - Services: 'services/service.md'
+
+  - 'Installeren & updaten': 
+    - Windows: 'installeren/Windows.md'
+    - macOS: 'installeren/macOS.md'
+    - Linux: 'installeren/Linux.md'
+    - Update: 'installeren/update.md'

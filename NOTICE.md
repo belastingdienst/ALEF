@@ -16,11 +16,12 @@ This software incorporates material from the following third parties:
 | Apache Batik               | https://xmlgraphics.apache.org/batik/                                    | Apache License 2.0               |
 | Apache POI                 | https://poi.apache.org/                                                  | Apache License 2.0               |
 | Jakarta EE Platform        | https://projects.eclipse.org/projects/ee4j.jakartaee-platform/developer/ | Eclipse Public License 2.0       |
-| Eclipse Jetty              | https://jetty.org/                                                       | Eclipse Public License 2.0               |
+| Eclipse Jetty              | https://jetty.org/                                                       | Eclipse Public License 2.0       |
 | Jersey                     | https://github.com/eclipse-ee4j/jersey/                                  | Eclipse Public License 2.0       |
 | JUnit                      | https://junit.org/                                                       | Eclipse Public License 2.0       |
 | Eclipse Metro              | https://projects.eclipse.org/projects/ee4j.metro/                        | Eclipse Distribution License 1.0 |
 | SLF4J                      | https://www.slf4j.org                                                    | MIT                              |
+| Zensical                   | https://www.zensical.org/                                                | MIT                              |
 
 | alef icon names based on intellij icon(s) with Apache 2.0 license |
 |-------------------------------------------------------------------|

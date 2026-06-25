@@ -42,6 +42,8 @@ runBuild() {
   return 0
 }
 
+. ./scripts/build-docs.sh
+
 runBuild plugins/build-extensions/build_build_extensions.xml clean generate assemble
 runBuild plugins/build-extensions/build-extensions-mpsplugin.xml clean generate assemble
 runBuild plugins/build-extensions/build-extensions-tests.xml clean generate assemble build test

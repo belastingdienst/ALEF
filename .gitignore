@@ -88,3 +88,4 @@ AlefJava/alefRuntime/.jqwik-database
 
 !AlefJava/testReport/src/test/resources/TEST-*.xml
 
+/docs/site

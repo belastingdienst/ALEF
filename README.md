@@ -15,6 +15,7 @@ Make sure you have the following dependencies installed on your system:
 
 * OpenJDK 17 or newer.
 * Maven.
+* Zensical (optional), this is for the documentation
 
 To build a ALEF Studio run `mvn -U package` when this is successful in the `build/artifacts/alef-distribution`
 you wil find a distribution for Windows, Linux and MacOS to use.
@@ -31,6 +32,12 @@ you wil find a distribution for Windows, Linux and MacOS to use.
 5. Add to Settings > Appearance & Behavior > Path Variables
    * `alef.home` the location where [README.md](README.md) file is located.
 6. Run Build > Rebuild Project to build ALEF.
+
+## Documentation
+
+To build the documentation make sure you installed Python 3.x and Zensical (`pip install zensical`)
+
+Build the documentation run: `sh scripts/build-docs.sh`
 
 ## Security
 

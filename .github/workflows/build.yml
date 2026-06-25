@@ -22,6 +22,11 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+    - name: Set-up Zensical
+      run: pip install zensical
     - name: Set version
       run: bash scripts/set-version.sh ci
     - name: Build with Maven
