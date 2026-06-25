@@ -153,6 +153,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/alef.menus/alef.menus.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/alef.mps.plugins/alef.mps.plugins.msd" folder="alef.ide" />
       <modulePath path="$PROJECT_DIR$/solutions/alef.runtime/alef.runtime.msd" folder="alef" />
+      <modulePath path="$PROJECT_DIR$/solutions/alef.template/alef.template.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/alef.tools/alef.tools.msd" folder="alef.util" />
       <modulePath path="$PROJECT_DIR$/solutions/alefProjectBuilding/alefProjectBuilding.msd" folder="alef" />
       <modulePath path="$PROJECT_DIR$/solutions/build_alef/build_alef.msd" folder="build" />

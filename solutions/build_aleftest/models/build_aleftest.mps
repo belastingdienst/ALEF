@@ -377,14 +377,19 @@
             <ref role="3bR37D" to="kwfd:50VLgx6Dl$7" resolve="linguistics.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2dzfQPkVLhK" role="3bR37C">
-          <node concept="3bR9La" id="2dzfQPkVLhL" role="1SiIV1">
-            <ref role="3bR37D" node="7WsRORaCSml" resolve="Editor_Test" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7b8wBHUoRO9" role="3bR37C">
           <node concept="3bR9La" id="7b8wBHUoROa" role="1SiIV1">
             <ref role="3bR37D" to="wu98:6FPs1MPyWla" resolve="nodeUpdater" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_7wzaEwrmi" role="3bR37C">
+          <node concept="3bR9La" id="6_7wzaEwrmj" role="1SiIV1">
+            <ref role="3bR37D" to="wu98:5bL3Bhg6sAx" resolve="alef.template" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="59gbDEaXBs8" role="3bR37C">
+          <node concept="3bR9La" id="59gbDEaXBs9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
           </node>
         </node>
       </node>
