@@ -6,6 +6,7 @@ junitvmwatcher*.properties
 TEST-*.xml
 junit*.properties
 *.history
+/*.log
 
 # -----------------------------------------------------------
 # MPS:
