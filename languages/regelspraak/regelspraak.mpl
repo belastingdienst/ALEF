@@ -28,7 +28,6 @@
     <dependency reexport="false">c31f3da0-0042-4ad5-b4fc-2622762fa0fe(linguistics.runtime)</dependency>
     <dependency reexport="false">67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)</dependency>
     <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
-    <dependency reexport="false">3687aae2-6660-4f63-9485-f13f557f67a9(csv)</dependency>
     <dependency reexport="false">f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</dependency>
     <dependency reexport="false">caef3229-d6fe-4ba8-b3e3-cf13cc4a9119(strings)</dependency>
     <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
@@ -215,7 +214,6 @@
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">c31f3da0-0042-4ad5-b4fc-2622762fa0fe(linguistics.runtime)</dependency>
-    <dependency reexport="false">3687aae2-6660-4f63-9485-f13f557f67a9(csv)</dependency>
     <dependency reexport="false">8270cb09-651a-458a-9f4e-86e3e4423c92(standaardFuncties)</dependency>
     <dependency reexport="false">8fbde41a-1e4d-4a35-b4ee-694c9b61c7ca(projecthygiene.runtime)</dependency>
     <dependency reexport="false">2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)</dependency>

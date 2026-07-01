@@ -159,7 +159,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/build_alef/build_alef.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/build_aleftest/build_aleftest.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/build_build/build_build.msd" folder="build" />
-      <modulePath path="$PROJECT_DIR$/solutions/csv/csv.msd" folder="alef.util" />
       <modulePath path="$PROJECT_DIR$/solutions/editorUtils/editorUtils.msd" folder="alef.util" />
       <modulePath path="$PROJECT_DIR$/solutions/editorcells/editorcells.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/generatorUtils/generatorUtils.msd" folder="platform" />
