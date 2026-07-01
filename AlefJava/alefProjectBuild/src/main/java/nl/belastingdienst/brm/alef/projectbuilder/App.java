@@ -106,9 +106,10 @@ public final class App {
     }
 
     private static void optionallyBuild(ProjectBuild projectBuild) throws Failed {
-        if (tasks.contains("build") || tasks.contains("test") || tasks.isEmpty()) {
-            showPhase("Build");
-            if (!projectBuild.build(workingDir, tasks.contains("test"))) {
+        final boolean test = tasks.isEmpty() || tasks.contains("test");
+        if (tasks.contains("build") || test) {
+            showPhase("Build" + (test ? " with test" : ""));
+            if (!projectBuild.build(workingDir, test)) {
                 throw new Failed(EXIT_BUILD_FAILED);
             }
         }

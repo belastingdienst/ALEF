@@ -12,7 +12,6 @@ import java.util.stream.Stream;
 public class ProjectBuild {
     private static final Logger logger = Logger.getLogger(ProjectBuild.class.getName());
     private static final String GENERATE = "generate";
-    private static final String ASSEMBLE = "assemble";
     private static final String BUILD = "build";
 
     private final Path mpsHome;
@@ -62,7 +61,7 @@ public class ProjectBuild {
     public boolean build(final Path workingDir, final boolean test) {
         final Path bootstrapBuild = workingDir.resolve(Path.of("build_build.xml"));
         if (Files.exists(bootstrapBuild)) {
-            if (runAnt(bootstrapBuild, workingDir, GENERATE, ASSEMBLE)) {
+            if (runAnt(bootstrapBuild, workingDir, GENERATE, BUILD)) {
                 try {
                     return buildAll(workingDir, test, bootstrapBuild);
                 } catch (IOException e) {
@@ -90,9 +89,9 @@ public class ProjectBuild {
             if (!buildFile.toFile().getAbsolutePath().equals(bootstrapBuild.toFile().getAbsolutePath())) {
                 final boolean antResult;
                 if (test) {
-                    antResult = runAnt(buildFile, workingDir, GENERATE, ASSEMBLE, "test");
+                    antResult = runAnt(buildFile, workingDir, GENERATE, BUILD, "test");
                 } else {
-                    antResult = runAnt(buildFile, workingDir, GENERATE, ASSEMBLE);
+                    antResult = runAnt(buildFile, workingDir, GENERATE, BUILD);
                 }
                 if (!antResult) {
                     return false;
@@ -117,7 +116,6 @@ public class ProjectBuild {
         "-Dalef.home=" + mpsHome.toAbsolutePath(),
         "org.apache.tools.ant.Main",
         "-f", antFile.toFile().getAbsolutePath(),
-                GENERATE, ASSEMBLE, "test"
         };
         final String[] args = new String[defaultArgs.length + targets.length];
         System.arraycopy(defaultArgs, 0, args, 0, defaultArgs.length);

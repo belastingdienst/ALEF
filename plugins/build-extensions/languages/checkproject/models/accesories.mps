@@ -56,7 +56,7 @@
   <node concept="yghi3" id="M$nU4nqb48">
     <property role="TrG5h" value="check-after-generation" />
     <node concept="3bMsLL" id="qvTX5VzslK" role="yghi5">
-      <ref role="3bMsLK" to="arit:450ejGzgRPq" resolve="assemble" />
+      <ref role="3bMsLK" to="arit:6l_Qx579h0X" resolve="build" />
       <node concept="2VaxJe" id="qvTX5VzslO" role="3bNaKb">
         <ref role="2VaxJf" node="M$nU4nqboF" resolve="checkproject" />
       </node>
