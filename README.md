@@ -35,9 +35,11 @@ you wil find a distribution for Windows, Linux and MacOS to use.
 
 ## Documentation
 
-To build the documentation make sure you installed Python 3.x and Zensical (`pip install zensical`)
+To build the documentation:
+1. Make sure you installed Python 3.x and Zensical (`pip install zensical`)
+2. Run: `sh scripts/build-docs.sh`
 
-Build the documentation run: `sh scripts/build-docs.sh`
+After building the documentation is available in `build/docs`
 
 ## Security
 

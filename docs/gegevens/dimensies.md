@@ -1,6 +1,6 @@
 # Dimensies
 
-Bij attributen waarvoor in verschillende situaties verschillende waarden gelden, kunnen dimensies worden gespecificeerd. Hiermee wordt voorkomen dat in het gegevensmodel heel veelaparte attributen moeten worden opgenomen.
+Bij attributen waarvoor in verschillende situaties verschillende waarden gelden, kunnen dimensies worden gespecificeerd. Hiermee wordt voorkomen dat in het gegevensmodel heel veel aparte attributen moeten worden opgenomen.
 
 ## Voorbeeld: 
 

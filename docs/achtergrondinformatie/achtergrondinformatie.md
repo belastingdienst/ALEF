@@ -4,7 +4,7 @@ Bij het uitvoerbaar maken van wetten en beleid door computersystemen zijn er de 
 
 * Bewerkelijke wetgeving en uitvoering
 * Wijzingen doorvoeren kost veel tijd
-* Kennis die verstopt zit in applicaties
+* Kennis is verstopt in applicaties
 * Afhankelijkheid van verouderde technologie
 * Kennis is kunde is schaars
 
@@ -35,11 +35,13 @@ Met behulp van de methode Wetsanalyse wordt de wet geanalyseerd en geannoteerd. 
 
 ### Stap 2 - specificeren en testen: Regelspraak
 
-Met behulp van ALEF wordt het resultaat van de analyse omgezet in Regelspraak. Regelspraak is een Controlled natural language (CNF). De taal lijkt erg op het Nederlands, maar is beperkt zodat het precies genoeg is zodat het door een computer kan worden uitgevoerd. Bovendien is Regelspraak goed te begrijpen door juristen, waar computercode dat vaak niet is.
+Met behulp van ALEF wordt het resultaat van de analyse omgezet in Regelspraak. Hierbij  is het mogelijk verwijzingen op te nemen naar het stuk van de wet waar de regel uit is afgeleid. 
 
-Binnen ALEF is het mogelijk verwijzingen op te nemen naar het stuk van de wet waar de regel uit is afgeleid.
+Regelspraak is een Controlled natural language (CNL). De taal lijkt erg op het Nederlands, maar is dusdanig beperkt dat het precies genoeg is om te kunnen laten uitvoeren door een computer. Bovendien is Regelspraak goed te begrijpen door juristen, waar computercode dat vaak niet is.
 
-In ALEF kunnen testen worden toegevoegd om te controleren of de regels doen wat ze moeten doen. Deze testen zijn erg handig om in de toekomst regels te kunnen worden aanpassen en snel te kunnen verifieren dat de aanpassing geen ongewenste effecten heeft.
+
+
+In ALEF kunnen testen worden toegevoegd om te controleren of de regels doen wat ze moeten doen. Deze testen zijn erg handig om in geval van toekomstige aanpassingen snel te kunnen verifiëren dat er geen ongewenste effecten optreden.
 
 ### Stap 3 - transformeren: Beslisservice
 
