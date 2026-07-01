@@ -2,6 +2,12 @@
 
 Deze quick start handleiding helpt om een ALEF service te maken.
 
+> **Tip**:  
+> In het `New Project` venster (te openen via `File` > `New` > `Project ...`) kan gekozen worden voor ALEF-project.
+>
+> Door `voeg voorbeeld toe` aan te zetten wordt er een voorbeeldproject gemaakt.  
+> ![Nieuw project dialoog](img/new-alef-project.png)
+
 ## Precondities
 
 ALEF dient geinstalleerd te zijn. Zie de installatie instructie voor:
