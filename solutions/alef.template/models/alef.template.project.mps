@@ -470,7 +470,9 @@
       </concept>
     </language>
     <language id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak">
-      <concept id="653687101152590770" name="gegevensspraak.structure.Kenmerk" flags="ng" index="2bpyt6" />
+      <concept id="653687101152590770" name="gegevensspraak.structure.Kenmerk" flags="ng" index="2bpyt6">
+        <property id="6987110246007511376" name="bijvoeglijk" index="2VcyFJ" />
+      </concept>
       <concept id="653687101152179938" name="gegevensspraak.structure.ObjectModel" flags="ng" index="2bv6Cm">
         <child id="653687101152179939" name="elem" index="2bv6Cn" unordered="true" />
       </concept>
@@ -4254,6 +4256,7 @@
                       </node>
                       <node concept="2bpyt6" id="1gnkTfzN13W" role="2bv01j">
                         <property role="TrG5h" value="volwassen" />
+                        <property role="2VcyFJ" value="true" />
                       </node>
                     </node>
                     <node concept="1uxNW$" id="1gnkTfzN13X" role="2bv6Cn" />

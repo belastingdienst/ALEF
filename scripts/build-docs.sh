@@ -9,7 +9,6 @@ then
     echo " 1) Install Python 3.x"
     echo " 2) pip install zensical"
     echo ""
-    exit 0
+else
+    zensical build
 fi
-
-zensical build
