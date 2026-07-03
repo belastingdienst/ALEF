@@ -18,6 +18,11 @@ export MPS_VERSION="$(cat versionMPS.txt)"
 export JAVA_VERSION=$($MPS_JAVA_EXEC -version 2>&1 | head -n 1 | awk -F '"' '{print $2}')
 export MPS_BUILD_NUMBER=$(sed 's/\([0-9]*[.][0-9]\)[0-9]*/\1/' "${MPS_HOME}/build.txt")
 
+IFS=. read VERSION_NUMBER_MAJOR VERSION_NUMBER_MINOR VERSION_NUMBER_BUGFIXNR <<<"$(cat version.txt)"
+export VERSION_NUMBER_MAJOR
+export VERSION_NUMBER_MINOR
+export VERSION_NUMBER_BUGFIXNR
+
 echo "[ALEF] Build all"
 echo
 
