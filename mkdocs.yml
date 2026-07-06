@@ -69,6 +69,7 @@ nav:
     - Expressies:
       - Expressies: 'regels/Expressies.md'
       - 'Datum-tijd': 'regels/Expressies_Datum.md'
+    - Beslistabel: 'regels/Beslistabel.md'
 
   - Testen:
     - Testen: 'testen/Testen.md'
