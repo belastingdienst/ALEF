@@ -1,6 +1,6 @@
 # Feittypen
 
-Feittypen specificeren de relaties tussen objecttypen. 
+Feittypen specificeren de relaties tussen [objecttypen](objecttype.md). 
 Die relatie wordt gespecificeerd met behulp van rollen. 
 
 ![Een feittype relatie tussen een vlucht en een naturlijk persoon](../img/ALEF200_Feittype.png)

@@ -6,7 +6,7 @@ De dagen van de week (zaterdag, zondag etc.) zijn in ALEF standaard beschikbaar.
 
 Een dagsoort wordt gedefinieerd in regels met de actie [DagsoortDefinitie](../regels/Actie_Dagsoortdefinitie.md).
 
-Een dagsoort kan worden gebruikt als eenheid en worden toegevoegd aan datatypes bij attributen en parameters. In plaats van met standaard tijdseenheden kan dan gerekend worden met een tijdsduur op basis van de specifieke dagsoort. 
+Een dagsoort kan worden gebruikt als [eenheid](eenheidssysteem.md) en worden toegevoegd aan [datatypes](datatype.md) bij attributen en [parameters](parameter.md). In plaats van met standaard tijdseenheden kan dan gerekend worden met een tijdsduur op basis van de specifieke dagsoort. 
 
 ![Dagsoort als eenheid bij een parameterdefinitie](../img/ALEF200_DagsoortAlsEenheid.png)
 

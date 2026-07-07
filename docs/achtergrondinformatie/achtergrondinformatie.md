@@ -6,7 +6,7 @@ Bij het uitvoerbaar maken van wetten en beleid door computersystemen zijn er de 
 * Wijzingen doorvoeren kost veel tijd
 * Kennis is verstopt in applicaties
 * Afhankelijkheid van verouderde technologie
-* Kennis is kunde is schaars
+* Kennis en kunde is schaars
 
 Voorbeeld van een stuk wettekst uit de [Wet inkomstenbelasting 2001 Artikel 5.2](https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=5&afdeling=5.1&artikel=5.2&z=2007-01-01&g=2007-01-01)
 

@@ -4,4 +4,4 @@ De Gelijkstelling is een actie waarbij voor een attribuut van een bepaald object
 
 ![Gelijkstelling](../img/ALEF200_Gelijkstelling.png)
 
-Achter "specificeer waarde of expressie" kan worden gekozen uit een groot aantal expressies waarmee de gewenste formulering van de regel verder kan worden opgebouwd.
+Achter "specificeer waarde of expressie" kan worden gekozen uit een groot aantal [expressies](Expressies.md) waarmee de gewenste formulering van de regel verder kan worden opgebouwd.

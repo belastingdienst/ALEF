@@ -11,6 +11,6 @@ Een ALEF project is opgebouwd uit:
 * [RegelSpraak regels](regels/RegelSpraak.md)
 * [Objectmodel](gegevens/objectmodel.md)
 * [Regelgroepbundels](besturing/regelgroepbundel.md)
-* [services](services/service.md)
-* [testen](testen/Testen.md)
+* [Services](services/service.md)
+* [Testen](testen/Testen.md)
 

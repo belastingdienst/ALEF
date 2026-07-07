@@ -2,10 +2,10 @@
 
 Bij objecttypen worden gespecificeerd:
 
-* Attributen met [datatype](datatype.md) (en eventueel eenheid en/of dimensies)
+* Attributen met [datatype](datatype.md) (en eventueel met een [eenheid](eenheidssysteem.md) en/of een [dimensies](dimensies.md))
 * Kenmerken
 
-Een object heeft een kenmerk als het object aan bepaalde voorwaarden voldoet. Deze specificatie wordt vastgelegd in regels van het regeltype "Kenmerktoekenning".
+Een object heeft een kenmerk als het object aan bepaalde voorwaarden voldoet. Deze specificatie wordt vastgelegd in regels van het regeltype [Kenmerktoekenning](../regels/Actie_Kenmerktoekenning.md).
 Het gebruik van kenmerken draagt bij aan de leesbaarheid van regels en voorkomt het veelvuldig opnemen van dezelfde voorwaarden in regels.
 
  ![Objecttype](../img/ALEF200_Objecttype.png)

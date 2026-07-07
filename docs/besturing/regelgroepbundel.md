@@ -1,4 +1,4 @@
 # Regelgroepbundel
 
-Een regelgroepbundel is een verzameling van regelgroepen die van toepassing zijn in een test of service.
+Een regelgroepbundel is een samenhangende verzameling regelgroepen voor gebruik in een [service](../services/service.md) of om de scope van een [test](..testen/Testen.md) af te bakenen.
 

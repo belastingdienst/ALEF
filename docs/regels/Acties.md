@@ -1,6 +1,6 @@
 # Acties
 
-Dit zijn uitdrukkingen waarmee de actie in het resultaatdeel wordt geformuleerd.
+Dit zijn uitdrukkingen waarmee de actie in het [resultaatdeel](OpbouwRegelSpraakRegel.md) wordt geformuleerd.
 
 In onderstaande regel is de actie 'moet berekend worden als' (Gelijkstelling). In het actiedeel staat een numerieke [expressie](../regels/Expressies.md) 'belasting op basis van afstand plus belasting op basis van reisduur'.
 

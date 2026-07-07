@@ -1,6 +1,6 @@
 ## Voorwaardendeel regel
 
-Dit is het deel van de regel waarin de voorwaarden staan waaraan moet worden voldaan om de actie in het resultaatdeel uit te voeren. 
+Dit is het deel van de regel waarin de voorwaarden staan waaraan moet worden voldaan om de [actie](Acties.md) in het resultaatdeel uit te voeren. 
 
 Er is een aantal verschillende manieren om een voorwaardendeel te construeren:
 
@@ -36,7 +36,7 @@ Voorbeeld met voorwaarden aan rol 'reis' in onderwerp van een regel:
 Let op: Omdat het objectttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
 
 ### Rol aan voorwaarde voldoet   
-Optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan een rol worden ��n of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
+Optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan een rol worden één of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
 
 ![Voorwaardendeel met voorwaarden aan rol passagier](img/Voorwaarden_Rol.png)
 
