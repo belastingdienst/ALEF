@@ -2707,6 +2707,22 @@
     <property role="TrG5h" value="check_BtExpressieCase" />
     <property role="3GE5qa" value="hierarchisch" />
     <node concept="3clFbS" id="KOe0LPuCk3" role="18ibNy">
+      <node concept="3cpWs8" id="3jvfoafMWQU" role="3cqZAp">
+        <node concept="3cpWsn" id="3jvfoafMWQV" role="3cpWs9">
+          <property role="TrG5h" value="expr" />
+          <node concept="3Tqbb2" id="3jvfoafMWJN" role="1tU5fm">
+            <ref role="ehGHo" to="3ic2:7WC_ArdYrFj" resolve="Expressie" />
+          </node>
+          <node concept="2OqwBi" id="3jvfoafMWQW" role="33vP2m">
+            <node concept="1YBJjd" id="3jvfoafMWQX" role="2Oq$k0">
+              <ref role="1YBMHb" node="KOe0LPuCk5" resolve="exprCase" />
+            </node>
+            <node concept="3TrEf2" id="3jvfoafMWQY" role="2OqNvi">
+              <ref role="3Tt5mk" to="vuki:42_2FftMOqy" resolve="expr" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="Jncv_" id="KOe0LPuCok" role="3cqZAp">
         <ref role="JncvD" to="m234:5Q$2yZl7AaL" resolve="Vergelijking" />
         <node concept="2OqwBi" id="KOe0LPuDKT" role="JncvB">
@@ -2742,13 +2758,8 @@
               <node concept="37vLTw" id="KOe0LPuFfJ" role="37wK5m">
                 <ref role="3cqZAo" node="KOe0LPuETP" resolve="links" />
               </node>
-              <node concept="2OqwBi" id="KOe0LPuFB7" role="37wK5m">
-                <node concept="1YBJjd" id="KOe0LPuFhm" role="2Oq$k0">
-                  <ref role="1YBMHb" node="KOe0LPuCk5" resolve="exprCase" />
-                </node>
-                <node concept="3TrEf2" id="KOe0LPuGKh" role="2OqNvi">
-                  <ref role="3Tt5mk" to="vuki:42_2FftMOqy" resolve="expr" />
-                </node>
+              <node concept="37vLTw" id="3jvfoafMWR0" role="37wK5m">
+                <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
               </node>
             </node>
           </node>
@@ -2756,6 +2767,84 @@
         <node concept="JncvC" id="KOe0LPuCon" role="JncvA">
           <property role="TrG5h" value="verg" />
           <node concept="2jxLKc" id="KOe0LPuCoo" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3jvfoafMMML" role="3cqZAp">
+        <node concept="3clFbS" id="3jvfoafMMMN" role="3clFbx">
+          <node concept="2MkqsV" id="3jvfoafMXa2" role="3cqZAp">
+            <node concept="Xl_RD" id="3jvfoafMXae" role="2MkJ7o">
+              <property role="Xl_RC" value="Tabelwaarden mogen alleen literals zijn" />
+            </node>
+            <node concept="37vLTw" id="3jvfoafMXBq" role="1urrMF">
+              <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
+            </node>
+          </node>
+        </node>
+        <node concept="22lmx$" id="3jvfoafMUkZ" role="3clFbw">
+          <node concept="2OqwBi" id="3jvfoafMVME" role="3uHU7w">
+            <node concept="37vLTw" id="3jvfoafMWR1" role="2Oq$k0">
+              <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
+            </node>
+            <node concept="1mIQ4w" id="3jvfoafMW$E" role="2OqNvi">
+              <node concept="chp4Y" id="3jvfoafMWFB" role="cj9EA">
+                <ref role="cht4Q" to="3ic2:F9LMDzXcpQ" resolve="Rekenjaar" />
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="3jvfoafMS0Z" role="3uHU7B">
+            <node concept="1eOMI4" id="2$IzJshiVuG" role="3uHU7B">
+              <node concept="1Wc70l" id="2$IzJshjqPQ" role="1eOMHV">
+                <node concept="3fqX7Q" id="2$IzJshjrh7" role="3uHU7w">
+                  <node concept="2OqwBi" id="2$IzJshjrRi" role="3fr31v">
+                    <node concept="37vLTw" id="2$IzJshjrq6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
+                    </node>
+                    <node concept="1mIQ4w" id="2$IzJshjstO" role="2OqNvi">
+                      <node concept="chp4Y" id="2$IzJshjsVq" role="cj9EA">
+                        <ref role="cht4Q" to="3ic2:6VNEZIM8XF" resolve="Concatenatie" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Wc70l" id="2$IzJshiW3K" role="3uHU7B">
+                  <node concept="3fqX7Q" id="3jvfoafMR$N" role="3uHU7B">
+                    <node concept="2OqwBi" id="3jvfoafMR$P" role="3fr31v">
+                      <node concept="37vLTw" id="3jvfoafMWQZ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
+                      </node>
+                      <node concept="1mIQ4w" id="3jvfoafMR$T" role="2OqNvi">
+                        <node concept="chp4Y" id="3jvfoafMR$U" role="cj9EA">
+                          <ref role="cht4Q" to="3ic2:2xpqNdemRyM" resolve="Literal" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="2$IzJshiWy5" role="3uHU7w">
+                    <node concept="2OqwBi" id="2$IzJshiWXe" role="3fr31v">
+                      <node concept="37vLTw" id="2$IzJshiWzJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
+                      </node>
+                      <node concept="1mIQ4w" id="2$IzJshiXE1" role="2OqNvi">
+                        <node concept="chp4Y" id="2$IzJshiXTv" role="cj9EA">
+                          <ref role="cht4Q" to="vuki:42_2FfxIuEl" resolve="BtBegrenzing" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3jvfoafMTwu" role="3uHU7w">
+              <node concept="37vLTw" id="3jvfoafMWR2" role="2Oq$k0">
+                <ref role="3cqZAo" node="3jvfoafMWQV" resolve="expr" />
+              </node>
+              <node concept="1mIQ4w" id="3jvfoafMU5M" role="2OqNvi">
+                <node concept="chp4Y" id="3jvfoafMUce" role="cj9EA">
+                  <ref role="cht4Q" to="3ic2:$xJouxhC10" resolve="Rekendatum" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
