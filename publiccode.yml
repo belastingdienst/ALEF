@@ -2,7 +2,6 @@ publiccodeYmlVersion: "0.7"
 
 name: Agile Law Execution Factory (ALEF)
 url: https://github.com/belastingdienst/ALEF.git
-landingURL: https://wendbarewetsuitvoering.pleio.nl
 softwareType: standalone/desktop
 
 platforms:
