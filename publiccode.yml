@@ -1,0 +1,60 @@
+publiccodeYmlVersion: "0.7"
+
+name: Agile Law Execution Factory (ALEF)
+url: https://github.com/belastingdienst/ALEF.git
+landingURL: https://wendbarewetsuitvoering.pleio.nl
+softwareType: standalone/desktop
+
+platforms:
+  - windows
+  - linux
+  - mac
+
+categories:
+  - it-development
+  - regulations-and-directives
+
+developmentStatus: stable
+
+description:
+  en:
+    shortDescription: >-
+      ALEF enables non-programmers to write executable business rules for
+      Dutch law in Regelspraak.
+
+    longDescription: |
+      The Agile Law Execution Factory (ALEF) is developed by the Dutch Tax
+      Administration (Dutch: Belastingdienst) to enable non-programmers to
+      write business rules for Dutch law in the language Regelspraak, which
+      is still comprehensible to law experts and at the same time precise
+      enough to be executed by a computer. ALEF is a JetBrains MPS based
+      Studio that is distributed as a desktop application for Windows,
+      Linux and macOS.
+
+    features:
+      - Regelspraak business rule editor
+      - Business rule execution engine
+      - Code generation
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Dutch Tax Administration (Belastingdienst)
+
+intendedAudience:
+  countries:
+    - NL
+  scope:
+    - government
+
+localisation:
+  availableLanguages:
+    - nl
+  localisationReady: false
+
+maintenance:
+  type: internal
+
+  contacts:
+    - name: Bureau Open Source Software
+      email: bureauopensourcesoftware@belastingdienst.nl
+      affiliation: Belastingdienst
