@@ -12,6 +12,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">d28b4f08-f42a-4193-8438-2a62b7d4ea25(org.apache.batik)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -21,6 +22,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="d28b4f08-f42a-4193-8438-2a62b7d4ea25(org.apache.batik)" version="0" />
     <module reference="aab365d9-3d86-4f24-a6b8-49242f9416fc(splashScreenGenerator)" version="0" />
   </dependencyVersions>
 </solution>

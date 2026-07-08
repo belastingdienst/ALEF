@@ -305,6 +305,22 @@
 							</artifactItems>
 						</configuration>
 					</execution>
+					<execution>
+						<id>copy-batik-dependencies</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<includeGroupIds>xml-apis, org.apache.xmlgraphics</includeGroupIds>
+							<includeArtifactIds>xml-apis,xml-apis-ext,xmlgraphics-commons</includeArtifactIds>
+							<outputDirectory>${project.basedir}/solutions/org.apache.batik/lib</outputDirectory>
+							<stripVersion>true</stripVersion>
+							<overWriteReleases>true</overWriteReleases>
+							<overWriteSnapshots>true</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
 
 					<!-- copy Apache POI to the expected location -->
 					<execution>
