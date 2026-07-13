@@ -89,6 +89,7 @@
         <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="804014de-e593-4efc-b1b2-c667769358b9(linguistics)" version="0" />
+        <module reference="275c6f39-896d-4050-9470-394cb099be3b(merlinGegevens.generator)" version="0" />
         <module reference="13731ebd-deed-4e18-ae27-d3a9fba25b55(merlinGenesis)" version="0" />
         <module reference="f3787979-1e96-4e85-b350-d15575a3333a(merlinTests.generator)" version="0" />
         <module reference="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" version="0" />

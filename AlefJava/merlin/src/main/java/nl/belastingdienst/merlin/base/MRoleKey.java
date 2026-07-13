@@ -40,4 +40,19 @@ public class MRoleKey extends MBaseKey{
     public MRoleKey getOpposite(MUniverse universe) {
        return getFactType(universe).getOpposite(this);
     }
+
+    public MObject getSingle(MObject object) {
+        if (object == null) { return null; }
+        return object.getRoleOneRelation(this);
+    }
+
+    public MElementList<MObject> getMany(MObject object) {
+        if (object == null) { return MElementList.empty(); }
+        return object.getRoleNRelations(this);
+    }
+
+    public boolean isMember(MObject object) {
+        if (object == null) return false;
+        return object.isRole(this);
+    }
 }

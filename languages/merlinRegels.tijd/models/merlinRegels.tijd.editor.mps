@@ -10,7 +10,7 @@
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="gkwp" ref="r:8f41b6de-dcf0-4566-be25-6d5a59d6263b(merlinRegels.tijd.structure)" implicit="true" />
-    <import index="yyf0" ref="r:a5c2f1df-c30c-419f-91cf-40430017b8bf(merlinRegels.tijd.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -80,9 +80,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -90,8 +87,10 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
     </language>
     <language id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips">
       <concept id="1285659875393567816" name="jetbrains.mps.lang.editor.tooltips.structure.CellModel_Tooltip" flags="ng" index="1v6uyg">
@@ -132,8 +131,8 @@
                 <node concept="3clFbF" id="5wHM1oJGB77" role="3cqZAp">
                   <node concept="2OqwBi" id="5wHM1oJHCi1" role="3clFbG">
                     <node concept="pncrf" id="5wHM1oJHBX9" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5wHM1oJHCRX" role="2OqNvi">
-                      <ref role="37wK5l" to="yyf0:5wHM1oJH5Y9" resolve="name" />
+                    <node concept="3TrcHB" id="5SmyBZxa7GX" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>
@@ -154,8 +153,8 @@
               <node concept="3clFbF" id="5wHM1oJGLkJ" role="3cqZAp">
                 <node concept="2OqwBi" id="5wHM1oJHD_y" role="3clFbG">
                   <node concept="pncrf" id="5wHM1oJHDe$" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="5wHM1oJHEmi" role="2OqNvi">
-                    <ref role="37wK5l" to="yyf0:5wHM1oJH5Y9" resolve="name" />
+                  <node concept="3TrcHB" id="5SmyBZxa5Xv" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>

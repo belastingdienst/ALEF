@@ -6840,6 +6840,11 @@
               <ref role="3bR37D" node="4wvGeDpkGRx" resolve="servicespraak" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1dZ4qF2QIbf" role="3bR37C">
+            <node concept="3bR9La" id="1dZ4qF2QIbe" role="1SiIV1">
+              <ref role="3bR37D" node="8evFPJZJPB" resolve="merlinGegevens.generator" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="14V3DKVjPaK" role="3bR37C">
           <node concept="Rbm2T" id="14V3DKVjPaL" role="1SiIV1">
@@ -8040,11 +8045,6 @@
         <node concept="1SiIV0" id="453tEjWJrwp" role="3bR37C">
           <node concept="3bR9La" id="453tEjWJrwq" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7Ny_ZN0dxPR" role="3bR37C">
-          <node concept="3bR9La" id="7Ny_ZN0dxPS" role="1SiIV1">
-            <ref role="3bR37D" node="5Ce3XPoWcRI" resolve="merlinRegels" />
           </node>
         </node>
         <node concept="1SiIV0" id="48GkATklMDz" role="3bR37C">

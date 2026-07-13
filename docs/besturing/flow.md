@@ -5,4 +5,4 @@
 
 Met behulp van een niet-decelaratieve flow kan worden gestuurd welke regelgroepen worden uitgevoerd.
 
-**N.B.[Regelgroepbundels](regelgroepbiundel.md) zullen de plaats innemen van flows**
+**N.B.[Regelgroepbundels](regelgroepbundel.md) zullen de plaats innemen van flows**
