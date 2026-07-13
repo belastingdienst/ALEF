@@ -4015,6 +4015,14 @@
                 <node concept="3clFbJ" id="18hLipw3nWr" role="3cqZAp">
                   <node concept="3clFbS" id="18hLipw3nWt" role="3clFbx">
                     <node concept="3clFbF" id="1lnZffAjWn" role="3cqZAp">
+                      <node concept="15s5l7" id="1dZ4qEVFIsn" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: BigRational is not a subtype of ITimed&lt;Valid&gt;&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5875805516898273487,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4660288602099522921,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3216938209399927487]&quot;;" />
+                        <property role="huDt6" value="Error: BigRational is not a subtype of ITimed&lt;Valid&gt;" />
+                      </node>
+                      <node concept="15s5l7" id="1dZ4qEVFC$Q" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: ITimed&lt;Valid&gt; is not a subtype of BigRational&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5875805516898273487,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4660288602099522921,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3216938209399927516]&quot;;" />
+                        <property role="huDt6" value="Error: ITimed&lt;Valid&gt; is not a subtype of BigRational" />
+                      </node>
                       <node concept="2OqwBi" id="1lnZffAjWp" role="3clFbG">
                         <node concept="2OqwBi" id="1lnZffAjWq" role="2Oq$k0">
                           <node concept="37vLTw" id="1lnZffAjWr" role="2Oq$k0">
@@ -4429,6 +4437,10 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="15s5l7" id="1dZ4qEVFNnv" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                        <property role="huDt6" value="all typesystem messages" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3y3z36" id="18hLipw2T2p" role="3clFbw">
@@ -4639,6 +4651,10 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="15s5l7" id="1dZ4qEVFV0e" role="lGtFl">
+                    <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                    <property role="huDt6" value="all typesystem messages" />
                   </node>
                 </node>
                 <node concept="3cpWs8" id="1FC7$RQoiaS" role="3cqZAp">
@@ -5115,6 +5131,10 @@
                 </node>
               </node>
               <node concept="raruj" id="3S7ul9UNPpA" role="lGtFl" />
+              <node concept="15s5l7" id="1dZ4qEVZ2Pq" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                <property role="huDt6" value="all typesystem messages" />
+              </node>
             </node>
             <node concept="3clFbH" id="3S7ul9UNPpB" role="3cqZAp" />
             <node concept="3cpWs6" id="3S7ul9UNPpC" role="3cqZAp">
