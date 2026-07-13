@@ -3553,6 +3553,60 @@
         </node>
       </node>
     </node>
+    <node concept="210ffa" id="5BeK0G9e8cf" role="10_$IM">
+      <property role="TrG5h" value="002" />
+      <node concept="4Oh8J" id="5BeK0G9e8cg" role="4Ohb1">
+        <ref role="4Oh8G" node="3S9J0cDRGmV" resolve="vrachtauto" />
+        <ref role="3teO_M" node="5BeK0G9e8cl" resolve="lkw" />
+        <node concept="3mzBic" id="5BeK0G9e8ch" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="3S9J0cDRGGA" resolve="belasting" />
+          <node concept="1EQTEq" id="5BeK0G9e8ci" role="3mzBi6">
+            <property role="3e6Tb2" value="214,45" />
+            <node concept="PwxsY" id="5BeK0G9e8cj" role="1jdwn1">
+              <node concept="Pwxi7" id="5BeK0G9e8ck" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="5BeK0G9e8cl" role="4Ohaa">
+        <property role="TrG5h" value="lkw" />
+        <ref role="4OhPH" node="3S9J0cDRGmV" resolve="vrachtauto" />
+        <node concept="3_ceKt" id="5BeK0G9e8cm" role="4OhPJ">
+          <ref role="3_ceKs" node="3S9J0cDRGqQ" resolve="aantal assen" />
+          <node concept="1EQTEq" id="5BeK0G9e8cn" role="3_ceKu">
+            <property role="3e6Tb2" value="2" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="5BeK0G9e8co" role="4OhPJ">
+          <ref role="3_ceKs" node="3S9J0cDRGpH" resolve="koppelinrichting" />
+          <node concept="2Jx4MH" id="5BeK0G9e8cp" role="3_ceKu">
+            <property role="2Jx4MO" value="true" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="5BeK0G9e8cq" role="4OhPJ">
+          <ref role="3_ceKs" node="3S9J0cDRGrT" resolve="luchtvering" />
+          <node concept="2Jx4MH" id="5BeK0G9e8cr" role="3_ceKu">
+            <property role="2Jx4MO" value="true" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="5BeK0G9e8cs" role="4OhPJ">
+          <ref role="3_ceKs" node="3S9J0cDRGnh" resolve="toegestane maximum massa" />
+          <node concept="1EQTEq" id="5BeK0G9e8ct" role="3_ceKu">
+            <property role="3e6Tb2" value="38000" />
+            <node concept="PwxsY" id="5BeK0G9e8cu" role="1jdwn1">
+              <node concept="Pwxi7" id="5BeK0G9e8cv" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="3S9J0cDRGoi" resolve="kilogram" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2ljwA5" id="91VjOS8ZH7" role="3Na4y7">
       <node concept="2ljiaL" id="91VjOS8ZH8" role="2ljwA6">
         <property role="2ljiaO" value="2025" />
