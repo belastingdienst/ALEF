@@ -6192,7 +6192,7 @@
                 <node concept="liA8E" id="91VjOMlA2u" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="3VsKOn" id="91VjOMlA2v" role="37wK5m">
-                    <ref role="3VsUkX" to="qrag:AmPWPT18J_" resolve="BtHierarchicalDesugarer" />
+                    <ref role="3VsUkX" to="qrag:7wE_vwchcUE" resolve="BtHierarchicalDesugarer" />
                   </node>
                 </node>
                 <node concept="2JrnkZ" id="91VjOMlA2w" role="2Oq$k0">
@@ -6233,7 +6233,7 @@
                 <node concept="liA8E" id="91VjOM76Ol" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
                   <node concept="3VsKOn" id="91VjOM76Om" role="37wK5m">
-                    <ref role="3VsUkX" to="qrag:AmPWPT18J_" resolve="BtHierarchicalDesugarer" />
+                    <ref role="3VsUkX" to="qrag:7wE_vwchcUE" resolve="BtHierarchicalDesugarer" />
                   </node>
                 </node>
                 <node concept="2JrnkZ" id="91VjOM76On" role="2Oq$k0">
@@ -6257,12 +6257,12 @@
                   <node concept="2ShNRf" id="91VjOM7l$1" role="2Oq$k0">
                     <node concept="1pGfFk" id="91VjOM7l$2" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="qrag:AmPWPT18KV" resolve="BtHierarchicalDesugarer" />
+                      <ref role="37wK5l" to="qrag:7wE_vwchcUN" resolve="BtHierarchicalDesugarer" />
                       <node concept="13iPFW" id="91VjOM7l$3" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="liA8E" id="91VjOM7l$4" role="2OqNvi">
-                    <ref role="37wK5l" to="qrag:1hAAHZX5Y37" resolve="desugar" />
+                    <ref role="37wK5l" to="qrag:7wE_vwchcV_" resolve="desugar" />
                   </node>
                 </node>
               </node>
@@ -6281,7 +6281,7 @@
                 <node concept="liA8E" id="91VjOM7wrd" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
                   <node concept="3VsKOn" id="91VjOM7xmw" role="37wK5m">
-                    <ref role="3VsUkX" to="qrag:AmPWPT18J_" resolve="BtHierarchicalDesugarer" />
+                    <ref role="3VsUkX" to="qrag:7wE_vwchcUE" resolve="BtHierarchicalDesugarer" />
                   </node>
                   <node concept="37vLTw" id="91VjOM7yvO" role="37wK5m">
                     <ref role="3cqZAo" node="91VjOM76Oi" resolve="regels" />
@@ -6320,7 +6320,7 @@
             <node concept="liA8E" id="91VjOM72Ib" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
               <node concept="3VsKOn" id="91VjOM7376" role="37wK5m">
-                <ref role="3VsUkX" to="qrag:AmPWPT18J_" resolve="BtHierarchicalDesugarer" />
+                <ref role="3VsUkX" to="qrag:6GK5Pk23yp$" resolve="BeslistabelDesugaring" />
               </node>
               <node concept="10Nm6u" id="91VjOM73ct" role="37wK5m" />
             </node>
@@ -7200,19 +7200,40 @@
       <node concept="3Tm6S6" id="91VjOM7Uhr" role="1B3o_S" />
       <node concept="3cqZAl" id="91VjOM7Uhs" role="3clF45" />
       <node concept="3clFbS" id="91VjOM7Uh9" role="3clF47">
-        <node concept="3clFbF" id="91VjOM7Uha" role="3cqZAp">
-          <node concept="2OqwBi" id="91VjOM7Uhb" role="3clFbG">
-            <node concept="liA8E" id="91VjOM7Uhc" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener)" resolve="removeChangeListener" />
-              <node concept="Xjq3P" id="91VjOM7Uhd" role="37wK5m" />
+        <node concept="3cpWs8" id="NEOKNkLc2O" role="3cqZAp">
+          <node concept="3cpWsn" id="NEOKNkLc2P" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="NEOKNkLby8" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
-            <node concept="2JrnkZ" id="91VjOM7Uhe" role="2Oq$k0">
-              <node concept="2OqwBi" id="91VjOM7Uhf" role="2JrQYb">
-                <node concept="37vLTw" id="91VjOM7Uhg" role="2Oq$k0">
+            <node concept="2JrnkZ" id="NEOKNkLc2Q" role="33vP2m">
+              <node concept="2OqwBi" id="NEOKNkLc2R" role="2JrQYb">
+                <node concept="37vLTw" id="NEOKNkLc2S" role="2Oq$k0">
                   <ref role="3cqZAo" node="91VjOM1FMf" resolve="bt" />
                 </node>
-                <node concept="I4A8Y" id="91VjOM7Uhh" role="2OqNvi" />
+                <node concept="I4A8Y" id="NEOKNkLc2T" role="2OqNvi" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="NEOKNkLcvH" role="3cqZAp">
+          <node concept="3clFbS" id="NEOKNkLcvJ" role="3clFbx">
+            <node concept="3clFbF" id="91VjOM7Uha" role="3cqZAp">
+              <node concept="2OqwBi" id="91VjOM7Uhb" role="3clFbG">
+                <node concept="liA8E" id="91VjOM7Uhc" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener)" resolve="removeChangeListener" />
+                  <node concept="Xjq3P" id="91VjOM7Uhd" role="37wK5m" />
+                </node>
+                <node concept="37vLTw" id="NEOKNkLc2U" role="2Oq$k0">
+                  <ref role="3cqZAo" node="NEOKNkLc2P" resolve="model" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="NEOKNkLdiS" role="3clFbw">
+            <node concept="10Nm6u" id="NEOKNkLdHx" role="3uHU7w" />
+            <node concept="37vLTw" id="NEOKNkLcZb" role="3uHU7B">
+              <ref role="3cqZAo" node="NEOKNkLc2P" resolve="model" />
             </node>
           </node>
         </node>

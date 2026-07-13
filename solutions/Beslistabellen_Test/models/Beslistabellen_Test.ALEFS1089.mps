@@ -36,6 +36,7 @@
         <child id="993564824856119364" name="expr" index="2z5D6P" />
         <child id="993564824856103627" name="predicaat" index="2z5HcU" />
       </concept>
+      <concept id="2800963173588713245" name="regelspraak.structure.Leeg" flags="ng" index="2CqVCR" />
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
       </concept>
@@ -226,73 +227,44 @@
               </node>
             </node>
             <node concept="2tr$Kz" id="6VDmRZLMBtv" role="2bokzm">
-              <node concept="2yxQTu" id="5Qs5eefzHJt" role="2e_RKx">
-                <node concept="1EQTEq" id="5Qs5eefzHJu" role="2fepRR">
+              <node concept="2yxQTu" id="3I9pGOiJo02" role="2e_RKx">
+                <node concept="1EQTEq" id="3I9pGOiJo03" role="2fepRR">
                   <property role="3e6Tb2" value="0" />
                 </node>
-                <node concept="2tr$KC" id="5Qs5eefzHJv" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHJw" role="2tr$KI">
+                <node concept="2tr$KC" id="3I9pGOiJo04" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOiJo05" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZMmvEp" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan onwaar" />
                   </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHJx" role="2tr$KI">
-                    <ref role="2tr$KG" node="6VDmRZMdGU2" resolve="numerieke waarde is gelijk aan 6 of meer" />
-                  </node>
-                </node>
-                <node concept="2tr$KC" id="5Qs5eefzHJy" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHJz" role="2tr$KI">
-                    <ref role="2tr$KG" node="6VDmRZMp4l8" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan waar" />
-                  </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHJ$" role="2tr$KI">
-                    <ref role="2tr$KG" node="6VDmRZMdGU2" resolve="numerieke waarde is gelijk aan 6 of meer" />
-                  </node>
-                </node>
-                <node concept="2tr$KC" id="5Qs5eefzHJ_" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHJA" role="2tr$KI">
-                    <ref role="2tr$KG" node="6VDmRZLP9mA" resolve="boolean 1 is gelijk aan waar" />
-                  </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHJB" role="2tr$KI">
-                    <ref role="2tr$KG" node="6VDmRZMdGU2" resolve="numerieke waarde is gelijk aan 6 of meer" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2yxQTu" id="5Qs5eefzHG_" role="2e_RKx">
-                <node concept="1EQTEq" id="5Qs5eefzHGA" role="2fepRR">
-                  <property role="3e6Tb2" value="0" />
-                </node>
-                <node concept="2tr$KC" id="5Qs5eefzHGB" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHGC" role="2tr$KI">
-                    <ref role="2tr$KG" node="6VDmRZMmvEp" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan onwaar" />
-                  </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHGD" role="2tr$KI">
+                  <node concept="2tr$KH" id="3I9pGOiJo06" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZLV5QV" resolve="numerieke waarde is gelijk aan minder dan 4" />
                   </node>
                 </node>
-                <node concept="2tr$KC" id="5Qs5eefzHGE" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHGF" role="2tr$KI">
+                <node concept="2tr$KC" id="3I9pGOi$fCM" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOi$fCN" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZMp4l8" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan waar" />
                   </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHGG" role="2tr$KI">
+                  <node concept="2tr$KH" id="3I9pGOi$fCO" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZLV5QV" resolve="numerieke waarde is gelijk aan minder dan 4" />
                   </node>
                 </node>
-                <node concept="2tr$KC" id="5Qs5eefzHGH" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHGI" role="2tr$KI">
+                <node concept="2tr$KC" id="3I9pGOi$fCP" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOi$fCQ" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZLP9mA" resolve="boolean 1 is gelijk aan waar" />
                   </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHGJ" role="2tr$KI">
+                  <node concept="2tr$KH" id="3I9pGOi$fCR" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZLV5QV" resolve="numerieke waarde is gelijk aan minder dan 4" />
                   </node>
                 </node>
               </node>
-              <node concept="2yxQTu" id="5Qs5eefzHDv" role="2e_RKx">
-                <node concept="1EQTEq" id="5Qs5eefzIAL" role="2fepRR">
+              <node concept="2yxQTu" id="3I9pGOiJnYV" role="2e_RKx">
+                <node concept="1EQTEq" id="3I9pGOiJnYW" role="2fepRR">
                   <property role="3e6Tb2" value="0" />
                 </node>
-                <node concept="2tr$KC" id="5Qs5eefzHDx" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHDy" role="2tr$KI">
+                <node concept="2tr$KC" id="3I9pGOiJnYX" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOiJnYY" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZMmvEp" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan onwaar" />
                   </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHDz" role="2tr$KI">
+                  <node concept="2tr$KH" id="3I9pGOiJnYZ" role="2tr$KI">
                     <ref role="2tr$KG" node="5Qs5eefzHDp" resolve="numerieke waarde is gelijk aan van 4 tot 6" />
                   </node>
                 </node>
@@ -310,16 +282,45 @@
                   </node>
                 </node>
               </node>
-              <node concept="2yxQTu" id="5Qs5eefzHFG" role="2e_RKx">
-                <node concept="1EQTEq" id="5Qs5eefzIY8" role="2fepRR">
+              <node concept="2yxQTu" id="3I9pGOi$fGv" role="2e_RKx">
+                <node concept="1EQTEq" id="3I9pGOi$fGw" role="2fepRR">
                   <property role="3e6Tb2" value="0" />
                 </node>
-                <node concept="2tr$KC" id="5Qs5eefzHFI" role="2yxQTs">
-                  <node concept="2tr$KH" id="5Qs5eefzHFJ" role="2tr$KI">
+                <node concept="2tr$KC" id="3I9pGOi$fGx" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOi$fGy" role="2tr$KI">
                     <ref role="2tr$KG" node="6VDmRZLP9mA" resolve="boolean 1 is gelijk aan waar" />
                   </node>
-                  <node concept="2tr$KH" id="5Qs5eefzHFK" role="2tr$KI">
+                  <node concept="2tr$KH" id="3I9pGOi$fGz" role="2tr$KI">
                     <ref role="2tr$KG" node="5Qs5eefzHDp" resolve="numerieke waarde is gelijk aan van 4 tot 6" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yxQTu" id="3I9pGOiJnXS" role="2e_RKx">
+                <node concept="1EQTEq" id="3I9pGOiJnXT" role="2fepRR">
+                  <property role="3e6Tb2" value="0" />
+                </node>
+                <node concept="2tr$KC" id="3I9pGOiJnXU" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOiJnXV" role="2tr$KI">
+                    <ref role="2tr$KG" node="6VDmRZMmvEp" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan onwaar" />
+                  </node>
+                  <node concept="2tr$KH" id="3I9pGOiJnXW" role="2tr$KI">
+                    <ref role="2tr$KG" node="6VDmRZMdGU2" resolve="numerieke waarde is gelijk aan 6 of meer" />
+                  </node>
+                </node>
+                <node concept="2tr$KC" id="3I9pGOi$fEE" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOi$fEF" role="2tr$KI">
+                    <ref role="2tr$KG" node="6VDmRZMp4l8" resolve="boolean 1 is gelijk aan onwaar en boolean 2 is gelijk aan waar" />
+                  </node>
+                  <node concept="2tr$KH" id="3I9pGOi$fEG" role="2tr$KI">
+                    <ref role="2tr$KG" node="6VDmRZMdGU2" resolve="numerieke waarde is gelijk aan 6 of meer" />
+                  </node>
+                </node>
+                <node concept="2tr$KC" id="3I9pGOi$fEH" role="2yxQTs">
+                  <node concept="2tr$KH" id="3I9pGOi$fEI" role="2tr$KI">
+                    <ref role="2tr$KG" node="6VDmRZLP9mA" resolve="boolean 1 is gelijk aan waar" />
+                  </node>
+                  <node concept="2tr$KH" id="3I9pGOi$fEJ" role="2tr$KI">
+                    <ref role="2tr$KG" node="6VDmRZMdGU2" resolve="numerieke waarde is gelijk aan 6 of meer" />
                   </node>
                 </node>
               </node>
@@ -831,6 +832,32 @@
           <node concept="1EQTEq" id="2$IzJshksSe" role="3mzBi6">
             <property role="3e6Tb2" value="0" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="5BeK0GahiB4" role="10_$IM">
+      <property role="TrG5h" value="leeg" />
+      <node concept="4OhPC" id="5BeK0GahiBg" role="4Ohaa">
+        <property role="TrG5h" value="a" />
+        <ref role="4OhPH" node="6VDmRZLrOyx" resolve="object" />
+        <node concept="3_ceKt" id="5BeK0GahjKI" role="4OhPJ">
+          <ref role="3_ceKs" node="6VDmRZLuf96" resolve="boolean 1" />
+          <node concept="2Jx4MH" id="5BeK0GahjLi" role="3_ceKu" />
+        </node>
+        <node concept="3_ceKt" id="5BeK0GahiIw" role="4OhPJ">
+          <ref role="3_ceKs" node="6VDmRZLw7Nr" resolve="numerieke waarde" />
+          <node concept="1EQTEq" id="5BeK0GahiSD" role="3_ceKu">
+            <property role="3e6Tb2" value="7" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="5BeK0GahiB5" role="4Ohb1">
+        <ref role="4Oh8G" node="6VDmRZLrOyx" resolve="object" />
+        <ref role="3teO_M" node="5BeK0GahiBg" resolve="a" />
+        <node concept="3mzBic" id="5BeK0GahiFQ" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6VDmRZLxlTQ" resolve="resultaat" />
+          <node concept="2CqVCR" id="5BeK0GahiIo" role="3mzBi6" />
         </node>
       </node>
     </node>
