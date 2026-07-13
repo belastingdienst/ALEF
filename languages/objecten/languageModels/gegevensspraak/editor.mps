@@ -183,6 +183,9 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
+      <concept id="4323500428136740385" name="jetbrains.mps.lang.editor.structure.CellIdReferenceSelector" flags="ng" index="2TlHUq">
+        <reference id="4323500428136742952" name="id" index="2TlMyj" />
+      </concept>
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
@@ -4354,6 +4357,9 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1ERwB7" node="7qFFlTOAudX" resolve="VangDeleteEnInsertAfInFeitType" />
           <ref role="1k5W1q" node="5f6KCl_bqe2" resolve="NatuurlijkeTaal" />
+          <node concept="2SqB2G" id="seu$vPDnn" role="2SqHTX">
+            <property role="TrG5h" value="Feittype_Name" />
+          </node>
         </node>
         <node concept="l2Vlx" id="1ztYGlUXmFx" role="2iSdaV" />
         <node concept="3EZMnI" id="TgdQV2HmNT" role="3EZMnx">
@@ -4411,6 +4417,20 @@
                     </node>
                     <node concept="liA8E" id="TgdQV2HmOo" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~List.clear()" resolve="clear" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="seu$vKJRl" role="3cqZAp">
+                  <node concept="2OqwBi" id="seu$vKK9Q" role="3clFbG">
+                    <node concept="pncrf" id="seu$vKJRk" role="2Oq$k0" />
+                    <node concept="1OKiuA" id="seu$vKLhB" role="2OqNvi">
+                      <node concept="1Q80Hx" id="seu$vKLiG" role="lBI5i" />
+                      <node concept="2TlHUq" id="seu$vKLtz" role="lGT1i">
+                        <ref role="2TlMyj" node="seu$vPDnn" resolve="Feittype_Name" />
+                      </node>
+                      <node concept="3cmrfG" id="seu$vTW7S" role="3dN3m$">
+                        <property role="3cmrfH" value="-1" />
+                      </node>
                     </node>
                   </node>
                 </node>
