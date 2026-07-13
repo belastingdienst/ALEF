@@ -72,16 +72,8 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
-        <child id="1081256993305" name="classType" index="2ZW6by" />
-        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -232,9 +224,6 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
-        <child id="1207055552304" name="warningText" index="a7wSD" />
-      </concept>
       <concept id="2329696648445392942" name="jetbrains.mps.lang.typesystem.structure.CheckingRuleReference" flags="ng" index="dlsrG">
         <reference id="2329696648445392943" name="declaration" index="dlsrH" />
       </concept>
@@ -305,7 +294,6 @@
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -2693,132 +2681,6 @@
     <node concept="1YaCAy" id="7PMFhtzxop6" role="1YuTPh">
       <property role="TrG5h" value="tijdlijnRef" />
       <ref role="1YaFvo" to="lxx5:3SYd9_wA51L" resolve="TijdlijnRef" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="715cMfu8qmd">
-    <property role="TrG5h" value="check_TijdsafhankelijkFeitType" />
-    <node concept="3clFbS" id="715cMfu8qme" role="18ibNy">
-      <node concept="3clFbJ" id="715cMfu8uz4" role="3cqZAp">
-        <node concept="3clFbS" id="715cMfu8uz6" role="3clFbx">
-          <node concept="3clFbJ" id="715cMfua2Jl" role="3cqZAp">
-            <node concept="3clFbS" id="715cMfua2Jn" role="3clFbx">
-              <node concept="3cpWs8" id="715cMfua5I4" role="3cqZAp">
-                <node concept="3cpWsn" id="715cMfua5I5" role="3cpWs9">
-                  <property role="TrG5h" value="gsm" />
-                  <node concept="3uibUv" id="715cMfua5I6" role="1tU5fm">
-                    <ref role="3uigEE" to="g3l6:~GeneratableSModel" resolve="GeneratableSModel" />
-                  </node>
-                  <node concept="10QFUN" id="715cMfua7cz" role="33vP2m">
-                    <node concept="3uibUv" id="715cMfua7jD" role="10QFUM">
-                      <ref role="3uigEE" to="g3l6:~GeneratableSModel" resolve="GeneratableSModel" />
-                    </node>
-                    <node concept="2OqwBi" id="715cMfua6rK" role="10QFUP">
-                      <node concept="1YBJjd" id="715cMfua6aG" role="2Oq$k0">
-                        <ref role="1YBMHb" node="715cMfu8qom" resolve="feitType" />
-                      </node>
-                      <node concept="I4A8Y" id="715cMfua76b" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbJ" id="715cMfua7Qn" role="3cqZAp">
-                <node concept="3clFbS" id="715cMfua7Qp" role="3clFbx">
-                  <node concept="2MkqsV" id="715cMfua9Im" role="3cqZAp">
-                    <node concept="2OqwBi" id="715cMfuaagi" role="1urrMF">
-                      <node concept="2OqwBi" id="715cMfua9NL" role="2Oq$k0">
-                        <node concept="2OqwBi" id="715cMfua9NM" role="2Oq$k0">
-                          <node concept="1YBJjd" id="715cMfua9NN" role="2Oq$k0">
-                            <ref role="1YBMHb" node="715cMfu8qom" resolve="feitType" />
-                          </node>
-                          <node concept="3Tsc0h" id="715cMfua9NO" role="2OqNvi">
-                            <ref role="3TtcxE" to="3ic2:1GlRy79$SV8" resolve="dimensies" />
-                          </node>
-                        </node>
-                        <node concept="v3k3i" id="715cMfua9NP" role="2OqNvi">
-                          <node concept="chp4Y" id="715cMfua9NQ" role="v3oSu">
-                            <ref role="cht4Q" to="lxx5:1GlRy79$YI1" resolve="Tijdsdimensie" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="1uHKPH" id="715cMfuab6R" role="2OqNvi" />
-                    </node>
-                    <node concept="Xl_RD" id="715cMfuabe$" role="2MkJ7o">
-                      <property role="Xl_RC" value="Geen generator support, Zet model op 'Do Not Generate'" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="4AlcLAxd4kz" role="3cqZAp" />
-                </node>
-                <node concept="3fqX7Q" id="715cMfua9Ek" role="3clFbw">
-                  <node concept="2OqwBi" id="715cMfua9Em" role="3fr31v">
-                    <node concept="37vLTw" id="715cMfua9En" role="2Oq$k0">
-                      <ref role="3cqZAo" node="715cMfua5I5" resolve="gsm" />
-                    </node>
-                    <node concept="liA8E" id="715cMfua9Eo" role="2OqNvi">
-                      <ref role="37wK5l" to="g3l6:~GeneratableSModel.isDoNotGenerate()" resolve="isDoNotGenerate" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2ZW3vV" id="715cMfua46L" role="3clFbw">
-              <node concept="3uibUv" id="715cMfua4g3" role="2ZW6by">
-                <ref role="3uigEE" to="g3l6:~GeneratableSModel" resolve="GeneratableSModel" />
-              </node>
-              <node concept="2OqwBi" id="715cMfua3eu" role="2ZW6bz">
-                <node concept="1YBJjd" id="715cMfua2Xu" role="2Oq$k0">
-                  <ref role="1YBMHb" node="715cMfu8qom" resolve="feitType" />
-                </node>
-                <node concept="I4A8Y" id="715cMfua3MU" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-          <node concept="a7r0C" id="715cMfu8wSa" role="3cqZAp">
-            <node concept="Xl_RD" id="715cMfu8Eed" role="a7wSD">
-              <property role="Xl_RC" value="Voorproef-functionaliteit : Geen generator support" />
-            </node>
-            <node concept="2OqwBi" id="715cMfu8DIY" role="1urrMF">
-              <node concept="2OqwBi" id="715cMfu8zzG" role="2Oq$k0">
-                <node concept="2OqwBi" id="715cMfu8xdy" role="2Oq$k0">
-                  <node concept="1YBJjd" id="715cMfu8wY_" role="2Oq$k0">
-                    <ref role="1YBMHb" node="715cMfu8qom" resolve="feitType" />
-                  </node>
-                  <node concept="3Tsc0h" id="715cMfu8xNj" role="2OqNvi">
-                    <ref role="3TtcxE" to="3ic2:1GlRy79$SV8" resolve="dimensies" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="715cMfu8DhX" role="2OqNvi">
-                  <node concept="chp4Y" id="715cMfu8Duc" role="v3oSu">
-                    <ref role="cht4Q" to="lxx5:1GlRy79$YI1" resolve="Tijdsdimensie" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1uHKPH" id="715cMfu8E9U" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="78k2JWEPWqA" role="3clFbw">
-          <node concept="2OqwBi" id="78k2JWEPWqB" role="2Oq$k0">
-            <node concept="2OqwBi" id="78k2JWEPWqC" role="2Oq$k0">
-              <node concept="1YBJjd" id="715cMfu8uM2" role="2Oq$k0">
-                <ref role="1YBMHb" node="715cMfu8qom" resolve="feitType" />
-              </node>
-              <node concept="3Tsc0h" id="78k2JWEPWqE" role="2OqNvi">
-                <ref role="3TtcxE" to="3ic2:1GlRy79$SV8" resolve="dimensies" />
-              </node>
-            </node>
-            <node concept="v3k3i" id="78k2JWEPWqF" role="2OqNvi">
-              <node concept="chp4Y" id="78k2JWEPWqG" role="v3oSu">
-                <ref role="cht4Q" to="lxx5:1GlRy79$YI1" resolve="Tijdsdimensie" />
-              </node>
-            </node>
-          </node>
-          <node concept="3GX2aA" id="715cMfu8wPB" role="2OqNvi" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="715cMfu8qom" role="1YuTPh">
-      <property role="TrG5h" value="feitType" />
-      <ref role="1YaFvo" to="3ic2:4KQiE3qx$2F" resolve="FeitType" />
     </node>
   </node>
 </model>

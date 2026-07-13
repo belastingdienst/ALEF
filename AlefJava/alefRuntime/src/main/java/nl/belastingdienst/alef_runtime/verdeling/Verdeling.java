@@ -18,20 +18,32 @@ public class Verdeling<V, O> {
     public Verdeling (int decimalen) {
         this.decimalen = decimalen;
     }
+
     public List<Map.Entry<O, BigRational>> ontvangenVan(V verdeler) {
         return transacties.stream()
                 .filter(t -> t.verdeler.equals(verdeler))
                 .map(t -> new AbstractMap.SimpleEntry<>(t.ontvanger, t.verdeeld))
                 .collect(Collectors.toUnmodifiableList());
     }
+
     public BigRational verdeeldVan(V verdeler) {
         if (transacties.isEmpty()) { return BigRational.ZERO; }
-       return transacties.stream().filter(t -> t.verdeler.equals(verdeler)).map(t -> t.verdeeld).reduce(BigRational.ADD_OPERATOR).orElse(BigRational.ZERO);
+       return transacties.stream()
+                         .filter(t -> t.verdeler.equals(verdeler))
+                         .map(t -> t.verdeeld)
+                         .reduce(BigRational.ADD_OPERATOR)
+                         .orElse(BigRational.ZERO);
     }
+
     public BigRational ontvangenOp(O ontvanger) {
         if (transacties.isEmpty()) { return BigRational.ZERO; }
-        return transacties.stream().filter(t -> t.ontvanger.equals(ontvanger)).map(t -> t.verdeeld).reduce(BigRational.ADD_OPERATOR).orElse(BigRational.ZERO);
+        return transacties.stream()
+                          .filter(t -> t.ontvanger.equals(ontvanger))
+                          .map(t -> t.verdeeld)
+                          .reduce(BigRational.ADD_OPERATOR)
+                          .orElse(BigRational.ZERO);
     }
+
     public void verdeel(List<V> verdelers, List<List<O>> ontvangers) {
         for(V verdeler : verdelers) {
             for(List<O> groep : ontvangers) {
@@ -51,28 +63,38 @@ public class Verdeling<V, O> {
             }
         }
     }
+
     private BigRational ontvangRuimte(O ontvanger, BigRational verdeelRuimte) {
         BigRational max = this.maxAanspraak.apply(ontvanger);
         return max == null ? verdeelRuimte : max.subtract(ontvangenOp(ontvanger));
     }
+
     private BigRational verdeelRuimte(V verdeler) {
         BigRational t = teVerdelen.apply(verdeler);
         return t == null ? BigRational.ZERO : t.subtract(verdeeldVan(verdeler));
     }
+
     private BigRational weegSom(List<O> groep){
-        BigRational weegsom = groep.stream().map(o -> ratoDeel.apply(o)).reduce(BigRational.ADD_OPERATOR).orElse(BigRational.ZERO);
+        BigRational weegsom = groep.stream()
+                                   .map(o -> ratoDeel.apply(o))
+                                   .reduce(BigRational.ADD_OPERATOR)
+                                   .orElse(BigRational.ZERO);
         return weegsom.compareTo(BigRational.ZERO) == 0 ? BigRational.ONE : weegsom;
     }
+
     public void setTeVerdelen(Function<V, BigRational> f) {
         this.teVerdelen = f;
     }
+
     public void setMaxAanspraak(Function<O, BigRational> f) {
-        if(maxAanspraak==null) throw new RuntimeException("Aanspraak mag niet leeg zijn");
+        if (maxAanspraak == null) throw new RuntimeException("Aanspraak mag niet leeg zijn");
         this.maxAanspraak = f;
     }
+
     public void setRatoDeel(Function<O, BigRational> f) {
         this.ratoDeel = f;
     }
+
     record Transactie<S, T>(S verdeler, T ontvanger, BigRational verdeeld) {
         Transactie(S verdeler, T ontvanger, BigRational verdeeld) {
             this.verdeler = Objects.requireNonNull(verdeler);
