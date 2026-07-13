@@ -427,7 +427,6 @@
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -5082,48 +5081,19 @@
       <node concept="3clFbS" id="333w2JStuEh" role="2VODD2">
         <node concept="2Gpval" id="333w2JSutN7" role="3cqZAp">
           <node concept="2GrKxI" id="333w2JSutN9" role="2Gsz3X">
-            <property role="TrG5h" value="selectie" />
+            <property role="TrG5h" value="aiv" />
           </node>
           <node concept="3clFbS" id="333w2JSutNd" role="2LFqv$">
-            <node concept="3cpWs8" id="333w2JSuw1z" role="3cqZAp">
-              <node concept="3cpWsn" id="333w2JSuw1$" role="3cpWs9">
-                <property role="TrG5h" value="vervanging" />
-                <node concept="3Tqbb2" id="333w2JSv3ss" role="1tU5fm">
-                  <ref role="ehGHo" to="m234:6Cw8uHx$_hB" resolve="Onderwerp" />
+            <node concept="3clFbF" id="7I2GI8tdnzS" role="3cqZAp">
+              <node concept="2OqwBi" id="7I2GI8tdqM3" role="3clFbG">
+                <node concept="35c_gC" id="7I2GI8tdnzQ" role="2Oq$k0">
+                  <ref role="35c_gD" to="m234:SQYpBFr2ns" resolve="Selectie" />
                 </node>
-                <node concept="2OqwBi" id="333w2JSuXZI" role="33vP2m">
-                  <node concept="2OqwBi" id="333w2JSuw1_" role="2Oq$k0">
-                    <node concept="2GrUjf" id="333w2JSuw1A" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="333w2JSutN9" resolve="selectie" />
-                    </node>
-                    <node concept="2qgKlT" id="333w2JSuw1B" role="2OqNvi">
-                      <ref role="37wK5l" to="u5to:333w2JStBwH" resolve="kanVervangenWordenDoor" />
-                    </node>
+                <node concept="2qgKlT" id="7I2GI8tdrRj" role="2OqNvi">
+                  <ref role="37wK5l" to="u5to:7I2GI8pz4tE" resolve="vervangSelectiesDoorOnderwerpRefs" />
+                  <node concept="2GrUjf" id="7I2GI8tdsx$" role="37wK5m">
+                    <ref role="2Gs0qQ" node="333w2JSutN9" resolve="aiv" />
                   </node>
-                  <node concept="1uHKPH" id="333w2JSv0Rs" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="333w2JSuwbw" role="3cqZAp">
-              <node concept="3clFbS" id="333w2JSuwby" role="3clFbx">
-                <node concept="3clFbF" id="333w2JSuNuH" role="3cqZAp">
-                  <node concept="2OqwBi" id="333w2JSuNMX" role="3clFbG">
-                    <node concept="2GrUjf" id="333w2JSuNuF" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="333w2JSutN9" resolve="selectie" />
-                    </node>
-                    <node concept="2qgKlT" id="333w2JSuPxV" role="2OqNvi">
-                      <ref role="37wK5l" to="u5to:333w2JSuEkz" resolve="vervangDoorOnderwerpRef" />
-                      <node concept="37vLTw" id="333w2JSuPyu" role="37wK5m">
-                        <ref role="3cqZAo" node="333w2JSuw1$" resolve="vervanging" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3y3z36" id="333w2JSv1Cg" role="3clFbw">
-                <node concept="10Nm6u" id="333w2JSv3hW" role="3uHU7w" />
-                <node concept="37vLTw" id="333w2JSuwcC" role="3uHU7B">
-                  <ref role="3cqZAo" node="333w2JSuw1$" resolve="vervanging" />
                 </node>
               </node>
             </node>
@@ -5133,7 +5103,7 @@
             <node concept="2Rf3mk" id="333w2JStzzK" role="2OqNvi">
               <node concept="1xMEDy" id="333w2JStzzM" role="1xVPHs">
                 <node concept="chp4Y" id="333w2JStz_p" role="ri$Ld">
-                  <ref role="cht4Q" to="m234:SQYpBFr2ns" resolve="Selectie" />
+                  <ref role="cht4Q" to="m234:$infi2sFM8" resolve="ActieIndienVoorwaarde" />
                 </node>
               </node>
             </node>

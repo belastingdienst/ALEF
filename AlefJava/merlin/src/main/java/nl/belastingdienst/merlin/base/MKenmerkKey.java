@@ -4,11 +4,11 @@ import nl.belastingdienst.merlin.lazy.MLazyValidityProperty;
 
 public class MKenmerkKey<T> extends MPropertyKey<T> {
 
-    public MKenmerkKey() {
-        super();
+    public MKenmerkKey(String name) {
+        super(name);
     }
-    public MKenmerkKey(boolean timed) {
-        super(timed);
+    public MKenmerkKey(String name, boolean timed) {
+        super(name, timed);
     }
     @Override
     public boolean isRol() {
