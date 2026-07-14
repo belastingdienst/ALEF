@@ -240,7 +240,7 @@
       </node>
       <node concept="2iUeEo" id="3rjKD6FjUVW" role="2iVFfd">
         <property role="2iUeEt" value="Dutch Tax Administration" />
-        <property role="2iUeEu" value="http://www.belastingdienst.nl" />
+        <property role="2iUeEu" value="https://github.com/belastingdienst/ALEF" />
       </node>
     </node>
     <node concept="2G$12M" id="6yFcoM_Y2Mj" role="3989C9">

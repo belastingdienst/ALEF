@@ -252,7 +252,7 @@
       </node>
       <node concept="2iUeEo" id="4uw0IUfkt0n" role="2iVFfd">
         <property role="2iUeEt" value="Belastingdienst" />
-        <property role="2iUeEu" value="http://www.belastingdienst.nl" />
+        <property role="2iUeEu" value="https://github.com/belastingdienst/ALEF" />
       </node>
     </node>
     <node concept="m$_wf" id="1izTxFAOy2K" role="3989C9">
@@ -288,8 +288,8 @@
         <ref role="m$f5T" node="1izTxFAOy2J" resolve="hygiene.group" />
       </node>
       <node concept="2iUeEo" id="1l0GUNHr2JZ" role="2iVFfd">
-        <property role="2iUeEt" value="Belastingdienst.nl" />
-        <property role="2iUeEu" value="www.belastingdienst.nl" />
+        <property role="2iUeEt" value="Belastingdienst" />
+        <property role="2iUeEu" value="https://github.com/belastingdienst/ALEF" />
       </node>
     </node>
     <node concept="2G$12M" id="1izTxFAOy2J" role="3989C9">

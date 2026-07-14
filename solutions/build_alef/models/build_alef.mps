@@ -2335,7 +2335,7 @@
       </node>
       <node concept="2iUeEo" id="4wvGeDpljYe" role="2iVFfd">
         <property role="2iUeEt" value="Belastingdienst" />
-        <property role="2iUeEu" value="http://www.belastingdienst.nl" />
+        <property role="2iUeEu" value="https://github.com/belastingdienst/ALEF" />
       </node>
       <node concept="m$_yC" id="6kfdUeGoPDZ" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
@@ -15324,7 +15324,7 @@
         </node>
         <node concept="3_J27D" id="4DBOmSdg5E9" role="IuM$c">
           <node concept="3Mxwew" id="4DBOmSdg5Gi" role="3MwsjC">
-            <property role="3MwjfP" value="https://www.belastingdienst.nl/" />
+            <property role="3MwjfP" value="https://github.com/belastingdienst/ALEF" />
           </node>
         </node>
       </node>

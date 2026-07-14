@@ -293,8 +293,8 @@
         </node>
       </node>
       <node concept="2iUeEo" id="5E76oQaZdnv" role="2iVFfd">
-        <property role="2iUeEt" value="Belastingdienst - MDSE" />
-        <property role="2iUeEu" value="https://www.belastingdienst.nl/" />
+        <property role="2iUeEt" value="Belastingdienst" />
+        <property role="2iUeEu" value="https://github.com/belastingdienst/ALEF" />
       </node>
       <node concept="m$f5U" id="50VLgx6Dl$l" role="m$_yh">
         <ref role="m$f5T" node="50VLgx6Dl$f" resolve="linguistics.group" />
