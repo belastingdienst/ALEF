@@ -1243,6 +1243,11 @@
         <property role="t5JxN" value="Naam van de SOAP operatie" />
       </node>
     </node>
+    <node concept="1TJgyi" id="6ZO_mEeOZ$H" role="1TKVEl">
+      <property role="IQ2nx" value="8067237117422729517" />
+      <property role="TrG5h" value="soapAction" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="2a2AOY31dbZ" role="1TKVEl">
       <property role="IQ2nx" value="2486720710064788223" />
       <property role="TrG5h" value="gebruikConsistentieVlag" />

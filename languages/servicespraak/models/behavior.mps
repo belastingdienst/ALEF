@@ -4626,7 +4626,8 @@
     </node>
     <node concept="13i0hz" id="46kstDDM5y" role="13h7CS">
       <property role="TrG5h" value="validUrl" />
-      <node concept="3Tm6S6" id="46kstDE0pM" role="1B3o_S" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="6ZO_mEeRq9C" role="1B3o_S" />
       <node concept="10P_77" id="46kstDDUnh" role="3clF45" />
       <node concept="3clFbS" id="46kstDDM5_" role="3clF47">
         <node concept="3cpWs6" id="46kstDDUUJ" role="3cqZAp">
@@ -24359,58 +24360,16 @@
       <node concept="3Tm1VV" id="2VFntP6eva" role="1B3o_S" />
       <node concept="17QB3L" id="2VFntP6evb" role="3clF45" />
       <node concept="3clFbS" id="2VFntP6evc" role="3clF47">
-        <node concept="3cpWs8" id="2VFntP6irt" role="3cqZAp">
-          <node concept="3cpWsn" id="2VFntP6iru" role="3cpWs9">
-            <property role="TrG5h" value="service" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3Tqbb2" id="2VFntP6irv" role="1tU5fm">
-              <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
-            </node>
-            <node concept="2OqwBi" id="2VFntP6irw" role="33vP2m">
-              <node concept="13iPFW" id="2VFntP6irx" role="2Oq$k0" />
-              <node concept="2qgKlT" id="2VFntP6iry" role="2OqNvi">
-                <ref role="37wK5l" node="2a2AOY7ibut" resolve="service" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="rqW0lb3p9D" role="3cqZAp">
-          <node concept="2YIFZM" id="rqW0lb3pfA" role="3clFbG">
-            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
-            <node concept="Xl_RD" id="rqW0lb3pfD" role="37wK5m">
-              <property role="Xl_RC" value="http://servicespecifications.belastingdienst.nl/bouwblokken/brm/%s/%s/%s/%s%s" />
-            </node>
-            <node concept="2OqwBi" id="rqW0lb3qA8" role="37wK5m">
-              <node concept="3TrcHB" id="rqW0lb3rfJ" role="2OqNvi">
-                <ref role="3TsBF5" to="ku5w:7GTMuNccNqZ" resolve="projectnaam" />
-              </node>
-              <node concept="37vLTw" id="2VFntP6jsN" role="2Oq$k0">
-                <ref role="3cqZAo" node="2VFntP6iru" resolve="service" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="rqW0lb3srA" role="37wK5m">
-              <node concept="37vLTw" id="2VFntP6jAO" role="2Oq$k0">
-                <ref role="3cqZAo" node="2VFntP6iru" resolve="service" />
-              </node>
-              <node concept="3TrcHB" id="rqW0lb3t5u" role="2OqNvi">
-                <ref role="3TsBF5" to="ku5w:7GTMuNccNrd" resolve="componentnaam" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2VFntP647Y" role="37wK5m">
-              <node concept="13iPFW" id="2VFntP6khZ" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2VFntP66um" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="rqW0lb3ubo" role="37wK5m">
-              <node concept="13iPFW" id="2VFntP6kq5" role="2Oq$k0" />
-              <node concept="3TrcHB" id="rqW0lb3ue3" role="2OqNvi">
-                <ref role="3TsBF5" to="ku5w:2a2AOY31cRd" resolve="soapOperatie" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="1a$WeWokYZr" role="37wK5m">
+        <node concept="3cpWs6" id="1x$jW6Ptqe7" role="3cqZAp">
+          <node concept="3cpWs3" id="1x$jW6PtTTd" role="3cqZAk">
+            <node concept="37vLTw" id="1x$jW6PtU69" role="3uHU7w">
               <ref role="3cqZAo" node="1a$WeWokYbW" resolve="action" />
+            </node>
+            <node concept="2OqwBi" id="1x$jW6PtShl" role="3uHU7B">
+              <node concept="13iPFW" id="1x$jW6PtRVI" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1x$jW6PtT2F" role="2OqNvi">
+                <ref role="3TsBF5" to="ku5w:6ZO_mEeOZ$H" resolve="soapAction" />
+              </node>
             </node>
           </node>
         </node>
@@ -24593,6 +24552,29 @@
         <property role="TrG5h" value="soapOperatieNaam" />
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="33wzGeX0GUA" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6ZO_mEeRcU8" role="13h7CS">
+      <property role="TrG5h" value="validSOAPAction" />
+      <node concept="3Tm1VV" id="6ZO_mEeRcU9" role="1B3o_S" />
+      <node concept="10P_77" id="6ZO_mEeRcUa" role="3clF45" />
+      <node concept="3clFbS" id="6ZO_mEeRcUb" role="3clF47">
+        <node concept="3cpWs6" id="6ZO_mEeRAPv" role="3cqZAp">
+          <node concept="2OqwBi" id="6ZO_mEeRBwv" role="3cqZAk">
+            <node concept="35c_gC" id="6ZO_mEeRB0B" role="2Oq$k0">
+              <ref role="35c_gD" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+            </node>
+            <node concept="2qgKlT" id="6ZO_mEeRC47" role="2OqNvi">
+              <ref role="37wK5l" node="46kstDDM5y" resolve="validUrl" />
+              <node concept="2OqwBi" id="6ZO_mEeRCc8" role="37wK5m">
+                <node concept="13iPFW" id="6ZO_mEeRCc9" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6ZO_mEeRCca" role="2OqNvi">
+                  <ref role="3TsBF5" to="ku5w:6ZO_mEeOZ$H" resolve="soapAction" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="servicespraak" uuid="d8af31be-1847-4d5b-8686-78e232d4e0f8" languageVersion="18" moduleVersion="0">
+<language namespace="servicespraak" uuid="d8af31be-1847-4d5b-8686-78e232d4e0f8" languageVersion="19" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

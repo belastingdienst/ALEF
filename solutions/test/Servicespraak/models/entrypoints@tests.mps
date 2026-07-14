@@ -21,6 +21,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
+      </concept>
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -52,8 +55,17 @@
       </concept>
     </language>
     <language id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak">
-      <concept id="653687101152157008" name="gegevensspraak.structure.ObjectType" flags="ng" index="2bvS6$" />
+      <concept id="653687101152179938" name="gegevensspraak.structure.ObjectModel" flags="ng" index="2bv6Cm">
+        <child id="653687101152179939" name="elem" index="2bv6Cn" unordered="true" />
+      </concept>
+      <concept id="653687101152178956" name="gegevensspraak.structure.Attribuut" flags="ng" index="2bv6ZS">
+        <child id="5917060184181247471" name="type" index="1EDDcc" />
+      </concept>
+      <concept id="653687101152157008" name="gegevensspraak.structure.ObjectType" flags="ng" index="2bvS6$">
+        <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
+      </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5" />
+      <concept id="8878823228840241647" name="gegevensspraak.structure.TekstType" flags="ng" index="THod0" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -64,6 +76,11 @@
       </concept>
     </language>
     <language id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak">
+      <concept id="1482961590271922253" name="servicespraak.structure.BerichtType" flags="ng" index="2785BS">
+        <reference id="2657656834086768020" name="object" index="1Ig6_r" />
+        <child id="1482961590271922261" name="veld" index="2785Bw" />
+      </concept>
+      <concept id="1482961590271922254" name="servicespraak.structure.Invoerberichtmapping" flags="ng" index="2785BV" />
       <concept id="2142746120988295507" name="servicespraak.structure.Service" flags="ng" index="2kTx5H">
         <property id="8879350159213016781" name="componentnaam" index="2R2JWx" />
         <property id="8879350159213016767" name="projectnaam" index="2R2JXj" />
@@ -77,9 +94,20 @@
         <property id="2486720710071297889" name="xmlBerichtUitType" index="2xUFKI" />
         <property id="2486720710071297888" name="xmlBerichtInType" index="2xUFKJ" />
         <property id="8267513940666745543" name="xmlBerichtType" index="1bH1VB" />
+        <property id="8067237117422729517" name="soapAction" index="3x9QL7" />
         <property id="3136425091197698285" name="acroniem" index="3EWdbH" />
         <reference id="2486720710073441044" name="startFlow" index="2x2$1r" />
         <child id="489580120366705953" name="regelgroep" index="2dhVIB" />
+        <child id="2486720710071270540" name="invoer" index="2xTiv3" />
+      </concept>
+      <concept id="8880636053084576132" name="servicespraak.structure.ComplexInvoerBerichtVeld" flags="ng" index="KB4bO" />
+      <concept id="8880636053083348511" name="servicespraak.structure.ComplexBerichtVeld" flags="ng" index="KGglJ">
+        <property id="8614874206088486545" name="maxOccurs" index="h6B3z" />
+        <reference id="8880636053083348520" name="sub" index="KGglo" />
+      </concept>
+      <concept id="2657656834081800124" name="servicespraak.structure.DirectInvoerAttribuut" flags="ng" index="1IH5HN" />
+      <concept id="2657656834082458620" name="servicespraak.structure.DirectAttribuut" flags="ng" index="1IJyWN">
+        <reference id="2657656834082458621" name="attr" index="1IJyWM" />
       </concept>
     </language>
     <language id="65239ca4-9057-41f8-999d-97fa1a60b298" name="besturingspraak">
@@ -428,6 +456,90 @@
             <node concept="1TM$A" id="3L9PVd$aFaj" role="7EUXB">
               <node concept="2PYRI3" id="3L9PVd$aFa$" role="3lydEf">
                 <ref role="39XzEq" to="93yo:5kgm8JvC5x" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6ZO_mEeSpmp">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="SoapAction" />
+    <node concept="1qefOq" id="4NqdksDVWYS" role="1SKRRt">
+      <node concept="2bv6Cm" id="4NqdksDVWYV" role="1qenE9">
+        <property role="TrG5h" value="Objectmodel" />
+        <node concept="2bvS6$" id="4NqdksDVWZ0" role="2bv6Cn">
+          <property role="TrG5h" value="Object" />
+          <node concept="2bv6ZS" id="4NqdksDVWZa" role="2bv01j">
+            <property role="TrG5h" value="naam" />
+            <node concept="THod0" id="4NqdksDVWZk" role="1EDDcc" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="4NqdksDVWYW" role="2bv6Cn" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="1x$jW6P7Ts7" role="1SKRRt">
+      <node concept="2bQVlO" id="1x$jW6P7Ts9" role="1qenE9">
+        <property role="TrG5h" value="Leeg" />
+        <node concept="1uxNW$" id="1x$jW6P7Tsa" role="1HSqhF" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="4NqdksDVWYO" role="1SKRRt">
+      <node concept="2785BV" id="4NqdksDVWYR" role="1qenE9">
+        <property role="TrG5h" value="InvoerBericht" />
+        <ref role="1Ig6_r" node="4NqdksDVWZ0" resolve="Object" />
+        <node concept="1IH5HN" id="4NqdksDVWZq" role="2785Bw">
+          <ref role="1IJyWM" node="4NqdksDVWZa" resolve="naam" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6ZO_mEeSpmq" role="1SKRRt">
+      <node concept="2kTx5H" id="6ZO_mEeSpms" role="1qenE9">
+        <property role="TrG5h" value="Example" />
+        <property role="2R2JXj" value="exp" />
+        <property role="2R2JWx" value="exp" />
+        <property role="3jS_BH" value="https://service.example.org" />
+        <node concept="2xwknM" id="1x$jW6P7Ts6" role="2xxADg">
+          <property role="1bH1VB" value="ValidMessage" />
+          <property role="2xUFKJ" value="ValidRequest" />
+          <property role="2xUFKI" value="ValidResponse" />
+          <property role="2xUFmC" value="rekenjaar" />
+          <property role="TrG5h" value="ValidSOAPAction" />
+          <property role="3x9QL7" value="https://valid.example.org/action" />
+          <node concept="KB4bO" id="4NqdksDVWYJ" role="2xTiv3">
+            <property role="TrG5h" value="bericht" />
+            <property role="h6B3z" value="1" />
+            <ref role="KGglo" node="4NqdksDVWYR" resolve="InvoerBericht" />
+          </node>
+          <node concept="17AEQp" id="1x$jW6P7Tsb" role="2dhVIB">
+            <ref role="17AE6y" node="1x$jW6P7Ts9" resolve="Leeg" />
+          </node>
+          <node concept="7CXmI" id="1x$jW6Pmusp" role="lGtFl">
+            <node concept="7OXhh" id="1x$jW6Pmusq" role="7EUXB">
+              <property role="GvXf4" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="2xwknM" id="1x$jW6Pmusr" role="2xxADg">
+          <property role="1bH1VB" value="InvalidMessage" />
+          <property role="2xUFKJ" value="InvalidRequest" />
+          <property role="2xUFKI" value="InvalidResponse" />
+          <property role="2xUFmC" value="rekenjaar" />
+          <property role="TrG5h" value="InvalidSOAPAction" />
+          <property role="3x9QL7" value="invalid://invalid.example.org/action" />
+          <node concept="KB4bO" id="4NqdksDVX0u" role="2xTiv3">
+            <property role="TrG5h" value="bericht" />
+            <property role="h6B3z" value="1" />
+            <ref role="KGglo" node="4NqdksDVWYR" resolve="InvoerBericht" />
+          </node>
+          <node concept="17AEQp" id="1x$jW6Pmuss" role="2dhVIB">
+            <ref role="17AE6y" node="1x$jW6P7Ts9" resolve="Leeg" />
+          </node>
+          <node concept="7CXmI" id="1x$jW6Pmust" role="lGtFl">
+            <node concept="1TM$A" id="1x$jW6Pmusv" role="7EUXB">
+              <node concept="2PYRI3" id="1x$jW6Pmusx" role="3lydEf">
+                <ref role="39XzEq" to="93yo:6ZO_mEeRY$4" />
               </node>
             </node>
           </node>
