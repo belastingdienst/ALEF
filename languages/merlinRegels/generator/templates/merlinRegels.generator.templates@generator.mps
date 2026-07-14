@@ -7,6 +7,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="f21369f7-7e7f-4a03-a372-565160d29d2b" name="merlinBaseExt" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -424,6 +425,18 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1217960179967" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowErrorMessage" flags="nn" index="2k5nB$" />
@@ -32019,40 +32032,37 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5d$hJ9nJYY5" role="jymVt" />
     <node concept="3clFb_" id="2MqNUYy_6ps" role="jymVt">
       <property role="TrG5h" value="initUniverseDelegatees" />
       <node concept="3clFbS" id="2MqNUYy_6pv" role="3clF47">
         <node concept="3clFbJ" id="2MqNUYz9qOH" role="3cqZAp">
           <node concept="3clFbS" id="2MqNUYz9qOJ" role="3clFbx">
-            <node concept="3clFbF" id="2MqNUYy_XWm" role="3cqZAp">
-              <node concept="15s5l7" id="2MqNUYzkc38" role="lGtFl">
-                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: MUniverse is not a subtype of ObjectType&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5875805516898273487,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/2062135263152102048]&quot;;" />
-                <property role="huDt6" value="Error: MUniverse is not a subtype of ObjectType" />
-              </node>
-              <node concept="2OqwBi" id="2MqNUYyAon6" role="3clFbG">
-                <node concept="37vLTw" id="2MqNUYy_XWl" role="2Oq$k0">
+            <node concept="3clFbF" id="27zx0ZRDvyx" role="3cqZAp">
+              <node concept="2OqwBi" id="27zx0ZRDMsI" role="3clFbG">
+                <node concept="37vLTw" id="27zx0ZRDvyv" role="2Oq$k0">
                   <ref role="3cqZAo" node="3eg52aH3D7L" resolve="universe" />
                 </node>
-                <node concept="liA8E" id="2MqNUYyCwqF" role="2OqNvi">
+                <node concept="liA8E" id="27zx0ZRE6RR" role="2OqNvi">
                   <ref role="37wK5l" to="jyki:~MUniverse.addDelegateeRule(nl.belastingdienst.merlin.base.MDelegateeRule)" resolve="addDelegateeRule" />
-                  <node concept="2ShNRf" id="2MqNUYyQzKd" role="37wK5m">
-                    <node concept="1pGfFk" id="2MqNUYyR4Gp" role="2ShVmc">
+                  <node concept="2ShNRf" id="27zx0ZREq5g" role="37wK5m">
+                    <node concept="1pGfFk" id="27zx0ZREKVH" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" node="70SaLe5nW3z" resolve="RegelGroep.Regelversie" />
-                      <node concept="37vLTw" id="2MqNUYyR$91" role="37wK5m">
+                      <ref role="37wK5l" node="5d$hJ9nKlIQ" resolve="RegelgroepContext.DummyDelegateeRule" />
+                      <node concept="37vLTw" id="27zx0ZRF9cJ" role="37wK5m">
                         <ref role="3cqZAo" node="3eg52aH3D7L" resolve="universe" />
                       </node>
-                      <node concept="1ZhdrF" id="2MqNUYz6d2D" role="lGtFl">
+                      <node concept="1ZhdrF" id="5d$hJ9nMtDf" role="lGtFl">
                         <property role="2qtEX8" value="baseMethodDeclaration" />
                         <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
-                        <node concept="3$xsQk" id="2MqNUYz6d2E" role="3$ytzL">
-                          <node concept="3clFbS" id="2MqNUYz6d2F" role="2VODD2">
-                            <node concept="3clFbF" id="5kMFiDr$oSH" role="3cqZAp">
-                              <node concept="2OqwBi" id="5kMFiDr$oSI" role="3clFbG">
-                                <node concept="1iwH7S" id="5kMFiDr$oSJ" role="2Oq$k0" />
-                                <node concept="1iwH70" id="5kMFiDr$oSK" role="2OqNvi">
+                        <node concept="3$xsQk" id="5d$hJ9nMtDg" role="3$ytzL">
+                          <node concept="3clFbS" id="5d$hJ9nMtDh" role="2VODD2">
+                            <node concept="3clFbF" id="5d$hJ9nMIwW" role="3cqZAp">
+                              <node concept="2OqwBi" id="27zx0ZRL3VO" role="3clFbG">
+                                <node concept="1iwH7S" id="27zx0ZRL3VP" role="2Oq$k0" />
+                                <node concept="1iwH70" id="27zx0ZRL3VQ" role="2OqNvi">
                                   <ref role="1iwH77" node="70SaLe5nE4B" resolve="m_regelversie_constructor" />
-                                  <node concept="30H73N" id="5kMFiDr$oSM" role="1iwH7V" />
+                                  <node concept="30H73N" id="27zx0ZRL3VR" role="1iwH7V" />
                                 </node>
                               </node>
                             </node>
@@ -32455,6 +32465,69 @@
       </node>
       <node concept="2AHcQZ" id="tXBILitll4" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="27zx0ZRIDrM" role="jymVt" />
+    <node concept="312cEu" id="5d$hJ9nKlIN" role="jymVt">
+      <property role="TrG5h" value="DummyDelegateeRule" />
+      <node concept="3Tm1VV" id="5d$hJ9nKlIO" role="1B3o_S" />
+      <node concept="3uibUv" id="5d$hJ9nKlIP" role="1zkMxy">
+        <ref role="3uigEE" to="jyki:~MDelegateeRule" resolve="MDelegateeRule" />
+      </node>
+      <node concept="3clFbW" id="5d$hJ9nKlIQ" role="jymVt">
+        <property role="TrG5h" value="MDelegateeRule" />
+        <node concept="3cqZAl" id="5d$hJ9nKlIR" role="3clF45" />
+        <node concept="3Tm1VV" id="5d$hJ9nKlIS" role="1B3o_S" />
+        <node concept="37vLTG" id="5d$hJ9nKlIT" role="3clF46">
+          <property role="TrG5h" value="universe" />
+          <node concept="3uibUv" id="5d$hJ9nKlIU" role="1tU5fm">
+            <ref role="3uigEE" to="jyki:~MUniverse" resolve="MUniverse" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5d$hJ9nKlIV" role="3clF47">
+          <node concept="XkiVB" id="5d$hJ9nKlIW" role="3cqZAp">
+            <ref role="37wK5l" to="jyki:~MDelegateeRule.&lt;init&gt;(nl.belastingdienst.merlin.base.MUniverse)" resolve="MDelegateeRule" />
+            <node concept="37vLTw" id="5d$hJ9nKlIX" role="37wK5m">
+              <ref role="3cqZAo" node="5d$hJ9nKlIT" resolve="universe" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="5d$hJ9nKlIY" role="jymVt" />
+      <node concept="3clFb_" id="5d$hJ9nKlIZ" role="jymVt">
+        <property role="TrG5h" value="execute" />
+        <node concept="3Tm1VV" id="5d$hJ9nKlJ0" role="1B3o_S" />
+        <node concept="3cqZAl" id="5d$hJ9nKlJ1" role="3clF45" />
+        <node concept="3clFbS" id="5d$hJ9nKlJ2" role="3clF47" />
+        <node concept="2AHcQZ" id="5d$hJ9nKlJ3" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="5d$hJ9nKlJ4" role="jymVt" />
+      <node concept="3clFb_" id="5d$hJ9nKlJ5" role="jymVt">
+        <property role="TrG5h" value="initValidityPeriod" />
+        <node concept="3Tm1VV" id="5d$hJ9nKlJ6" role="1B3o_S" />
+        <node concept="3cqZAl" id="5d$hJ9nKlJ7" role="3clF45" />
+        <node concept="3clFbS" id="5d$hJ9nKlJ8" role="3clF47" />
+        <node concept="2AHcQZ" id="5d$hJ9nKlJ9" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="1W57fq" id="5d$hJ9nKL1a" role="lGtFl">
+        <node concept="3IZrLx" id="5d$hJ9nKL1b" role="3IZSJc">
+          <node concept="3clFbS" id="5d$hJ9nKL1c" role="2VODD2">
+            <node concept="3clFbF" id="5d$hJ9nKLmO" role="3cqZAp">
+              <node concept="3clFbT" id="5d$hJ9nKLmN" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UR2Jj" id="5d$hJ9nKlJa" role="lGtFl">
+        <node concept="TZ5HA" id="5d$hJ9nKlJb" role="TZ5H$">
+          <node concept="1dT_AC" id="5d$hJ9nKlJc" role="1dT_Ay">
+            <property role="1dT_AB" value="Dummy implementation to keep the MPS typechecker happy." />
+          </node>
+        </node>
       </node>
     </node>
   </node>
