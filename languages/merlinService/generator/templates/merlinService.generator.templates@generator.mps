@@ -21459,6 +21459,7 @@
             <node concept="3cpWs8" id="7Q62q1GC1ly" role="3cqZAp">
               <node concept="3cpWsn" id="7Q62q1GC1lz" role="3cpWs9">
                 <property role="TrG5h" value="onderwerp" />
+                <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="533$emjj8JC" role="1tU5fm">
                   <ref role="3uigEE" to="jyki:~MObject" resolve="MObject" />
                 </node>
@@ -21948,55 +21949,6 @@
               </node>
               <node concept="37vLTw" id="4HsIWKbOnwu" role="1DdaDG">
                 <ref role="3cqZAo" node="2anHkv4M0bv" resolve="loggers" />
-              </node>
-            </node>
-          </node>
-          <node concept="1ps_y7" id="6RoaLN_r5dm" role="lGtFl">
-            <node concept="1ps_xZ" id="6RoaLN_r5dn" role="1ps_xO">
-              <property role="TrG5h" value="onderwerp" />
-              <node concept="2jfdEK" id="6RoaLN_r5do" role="1ps_xN">
-                <node concept="3clFbS" id="6RoaLN_r5dp" role="2VODD2">
-                  <node concept="3cpWs8" id="6RoaLN_dvNl" role="3cqZAp">
-                    <node concept="3cpWsn" id="6RoaLN_dvNm" role="3cpWs9">
-                      <property role="TrG5h" value="t" />
-                      <node concept="3Tqbb2" id="6RoaLN_dvNn" role="1tU5fm">
-                        <ref role="ehGHo" to="3ic2:$infi2rtPg" resolve="ObjectType" />
-                      </node>
-                      <node concept="2OqwBi" id="rblCq3fF$X" role="33vP2m">
-                        <node concept="30H73N" id="rblCq3fBcA" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="rblCq3fMnz" role="2OqNvi">
-                          <ref role="37wK5l" to="txb8:76ic8nBJn84" resolve="mapsToObjectType" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="6RoaLN_YPCK" role="3cqZAp">
-                    <node concept="3clFbS" id="6RoaLN_YPCM" role="3clFbx">
-                      <node concept="3clFbF" id="6RoaLN_WFIe" role="3cqZAp">
-                        <node concept="2OqwBi" id="6RoaLN_WFIf" role="3clFbG">
-                          <node concept="1iwH7S" id="6RoaLN_WFIg" role="2Oq$k0" />
-                          <node concept="2k5nB$" id="6RoaLN_WFIh" role="2OqNvi">
-                            <node concept="Xl_RD" id="6RoaLN_WFIi" role="2k5Stb">
-                              <property role="Xl_RC" value="Objecttype kan niet bepaald worden a.d.h.v. invoer of flow" />
-                            </node>
-                            <node concept="30H73N" id="6RoaLN_WFIj" role="2k6f33" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbC" id="6RoaLN_YZ_I" role="3clFbw">
-                      <node concept="10Nm6u" id="6RoaLN_Z5X7" role="3uHU7w" />
-                      <node concept="37vLTw" id="6RoaLN_YV65" role="3uHU7B">
-                        <ref role="3cqZAo" node="6RoaLN_dvNm" resolve="t" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="6RoaLN_dwju" role="3cqZAp">
-                    <node concept="37vLTw" id="6RoaLN_dwrV" role="3cqZAk">
-                      <ref role="3cqZAo" node="6RoaLN_dvNm" resolve="t" />
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
           </node>
