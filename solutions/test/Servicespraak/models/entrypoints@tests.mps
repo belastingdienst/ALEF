@@ -36,7 +36,16 @@
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
     </language>
+    <language id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts">
+      <concept id="4485080112264973245" name="contexts.structure.Witruimte" flags="ng" index="1uxNW$" />
+    </language>
     <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
+      <concept id="653687101158189440" name="regelspraak.structure.Regelgroep" flags="ng" index="2bQVlO">
+        <child id="9154144551704439187" name="inhoud" index="1HSqhF" />
+      </concept>
+      <concept id="5308348422954264413" name="regelspraak.structure.RegelsetRef" flags="ng" index="17AEQp">
+        <reference id="5308348422954265446" name="set" index="17AE6y" />
+      </concept>
       <concept id="1024280404748017953" name="regelspraak.structure.UnivOnderwerp" flags="ng" index="3_kdyS" />
       <concept id="1024280404748429508" name="regelspraak.structure.Onderwerp" flags="ngI" index="3_mD5t">
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
@@ -59,6 +68,7 @@
         <property id="8879350159213016781" name="componentnaam" index="2R2JWx" />
         <property id="8879350159213016767" name="projectnaam" index="2R2JXj" />
         <property id="235016714107005849" name="serviceNamespace" index="3jS_BH" />
+        <property id="2657656834115692059" name="serviceAcroniem" index="1CIKbk" />
         <child id="2486720710064795935" name="entrypoints" index="2xxADg" />
       </concept>
       <concept id="2486720710064725693" name="servicespraak.structure.Entrypoint" flags="ng" index="2xwknM">
@@ -69,6 +79,7 @@
         <property id="8267513940666745543" name="xmlBerichtType" index="1bH1VB" />
         <property id="3136425091197698285" name="acroniem" index="3EWdbH" />
         <reference id="2486720710073441044" name="startFlow" index="2x2$1r" />
+        <child id="489580120366705953" name="regelgroep" index="2dhVIB" />
       </concept>
     </language>
     <language id="65239ca4-9057-41f8-999d-97fa1a60b298" name="besturingspraak">
@@ -326,6 +337,38 @@
             <node concept="1TM$A" id="6RoaLNA2NNl" role="7EUXB">
               <node concept="2PYRI3" id="6RoaLNA2NNm" role="3lydEf">
                 <ref role="39XzEq" to="93yo:6RoaLNA0AQA" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="4UYgXtX9ahI" role="1SKRRt">
+      <node concept="2bQVlO" id="4UYgXtX4Br0" role="1qenE9">
+        <property role="TrG5h" value="Empty" />
+        <node concept="1uxNW$" id="4UYgXtX4Br1" role="1HSqhF" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="4UYgXtX9ahG" role="1SKRRt">
+      <node concept="2kTx5H" id="4UYgXtX4BqX" role="1qenE9">
+        <property role="TrG5h" value="EntrypointWithoutInputOrFlow" />
+        <property role="2R2JXj" value="i47" />
+        <property role="2R2JWx" value="test" />
+        <property role="1CIKbk" value="issue47" />
+        <property role="3jS_BH" value="https://.47.example.org" />
+        <node concept="2xwknM" id="4UYgXtX4BqY" role="2xxADg">
+          <property role="1bH1VB" value="Message" />
+          <property role="2xUFKJ" value="Request" />
+          <property role="2xUFKI" value="Response" />
+          <property role="2xUFmC" value="rekenjaar" />
+          <property role="TrG5h" value="noInput" />
+          <node concept="17AEQp" id="4UYgXtX9ahK" role="2dhVIB">
+            <ref role="17AE6y" node="4UYgXtX4Br0" resolve="Empty" />
+          </node>
+          <node concept="7CXmI" id="4UYgXtX9ahL" role="lGtFl">
+            <node concept="1TM$A" id="4UYgXtX9ahM" role="7EUXB">
+              <node concept="2PYRI3" id="3KMP7S1t5N_" role="3lydEf">
+                <ref role="39XzEq" to="93yo:4UYgXtXstHH" />
               </node>
             </node>
           </node>
