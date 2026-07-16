@@ -36,6 +36,7 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -48,6 +49,7 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -73,6 +75,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -147,6 +152,15 @@
   </registry>
   <node concept="312cEu" id="15q2X2JfRkx">
     <property role="TrG5h" value="PomUtils" />
+    <node concept="Wx3nA" id="27zx100GOF4" role="jymVt">
+      <property role="TrG5h" value="DISALLOW_DOCTYPE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="27zx100H22p" role="1tU5fm" />
+      <node concept="Xl_RD" id="27zx100GOF6" role="33vP2m">
+        <property role="Xl_RC" value="http://apache.org/xml/features/disallow-doctype-decl" />
+      </node>
+      <node concept="3Tm6S6" id="27zx100GOF7" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="5Qq9WE7gb97" role="jymVt" />
     <node concept="2YIFZL" id="5Qq9WE7geUO" role="jymVt">
       <property role="TrG5h" value="getPomFile" />
@@ -330,6 +344,35 @@
                 <node concept="2YIFZM" id="NfRRTTGHSp" role="33vP2m">
                   <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance()" resolve="newInstance" />
                   <ref role="1Pybhc" to="vpqd:~DocumentBuilderFactory" resolve="DocumentBuilderFactory" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5A$uEIv76fy" role="3cqZAp">
+              <node concept="2OqwBi" id="5A$uEIv76fz" role="3clFbG">
+                <node concept="37vLTw" id="5A$uEIv76f$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="NfRRTTGHSn" resolve="documentBuilderFactory" />
+                </node>
+                <node concept="liA8E" id="5A$uEIv76f_" role="2OqNvi">
+                  <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.setNamespaceAware(boolean)" resolve="setNamespaceAware" />
+                  <node concept="3clFbT" id="5A$uEIv76fA" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="27zx100GpHk" role="3cqZAp">
+              <node concept="2OqwBi" id="27zx100GDJn" role="3clFbG">
+                <node concept="37vLTw" id="27zx100G$Pl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="NfRRTTGHSn" resolve="documentBuilderFactory" />
+                </node>
+                <node concept="liA8E" id="27zx100GDJo" role="2OqNvi">
+                  <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.setFeature(java.lang.String,boolean)" resolve="setFeature" />
+                  <node concept="37vLTw" id="27zx101bibM" role="37wK5m">
+                    <ref role="3cqZAo" node="27zx100GOF4" resolve="DISALLOW_DOCTYPE" />
+                  </node>
+                  <node concept="3clFbT" id="27zx100GDJv" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -15,6 +15,8 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="bef79dc4-9060-4318-a10a-46eb2fa0f3b1" name="translator" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -87,8 +89,8 @@
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
-    <import index="mk90" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" implicit="true" />
-    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
+    <import index="mk90" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -8631,7 +8633,16 @@
   <node concept="312cEu" id="1Uc5WZucEUQ">
     <property role="TrG5h" value="ServiceTestImport" />
     <property role="3GE5qa" value="ImportXMLAlsServiceTest" />
-    <node concept="2tJIrI" id="1Uc5WZucEVC" role="jymVt" />
+    <node concept="Wx3nA" id="27zx100GOF4" role="jymVt">
+      <property role="TrG5h" value="DISALLOW_DOCTYPE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="27zx100H22p" role="1tU5fm" />
+      <node concept="Xl_RD" id="27zx100GOF6" role="33vP2m">
+        <property role="Xl_RC" value="http://apache.org/xml/features/disallow-doctype-decl" />
+      </node>
+      <node concept="3Tm6S6" id="27zx100GOF7" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="27zx100HPn_" role="jymVt" />
     <node concept="2YIFZL" id="1Uc5WZucEVD" role="jymVt">
       <property role="TrG5h" value="getDocAndValidate" />
       <node concept="3clFbS" id="1Uc5WZucEVE" role="3clF47">
@@ -8911,6 +8922,22 @@
                     <node concept="37vLTw" id="1Uc5WZucEWG" role="37wK5m">
                       <ref role="3cqZAo" node="1Uc5WZucEWy" resolve="xsdFactory" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="27zx100HKAX" role="3cqZAp">
+              <node concept="2OqwBi" id="27zx100HN1Y" role="3clFbG">
+                <node concept="37vLTw" id="27zx100HMzA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1Uc5WZucEWC" resolve="sb" />
+                </node>
+                <node concept="liA8E" id="27zx100HN1Z" role="2OqNvi">
+                  <ref role="37wK5l" to="qq98:~SAXBuilder.setFeature(java.lang.String,boolean)" resolve="setFeature" />
+                  <node concept="37vLTw" id="27zx100HVKU" role="37wK5m">
+                    <ref role="3cqZAo" node="27zx100GOF4" resolve="DISALLOW_DOCTYPE" />
+                  </node>
+                  <node concept="3clFbT" id="27zx100HXdl" role="37wK5m">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>

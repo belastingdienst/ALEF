@@ -7762,6 +7762,15 @@
   </node>
   <node concept="312cEu" id="3$2FopMT4yc">
     <property role="TrG5h" value="MerlinServiceTestSet" />
+    <node concept="Wx3nA" id="27zx100GOF4" role="jymVt">
+      <property role="TrG5h" value="DISALLOW_DOCTYPE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="27zx100H22p" role="1tU5fm" />
+      <node concept="Xl_RD" id="27zx100GOF6" role="33vP2m">
+        <property role="Xl_RC" value="http://apache.org/xml/features/disallow-doctype-decl" />
+      </node>
+      <node concept="3Tm6S6" id="27zx100GOF7" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="3IpLaSx9dPf" role="jymVt">
       <property role="TrG5h" value="warServer" />
       <node concept="3uibUv" id="3IpLaSx9dPi" role="1tU5fm">
@@ -9455,6 +9464,22 @@
             <node concept="liA8E" id="5A$uEIv76f_" role="2OqNvi">
               <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.setNamespaceAware(boolean)" resolve="setNamespaceAware" />
               <node concept="3clFbT" id="5A$uEIv76fA" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="27zx100GpHk" role="3cqZAp">
+          <node concept="2OqwBi" id="27zx100GDJn" role="3clFbG">
+            <node concept="37vLTw" id="27zx100G$Pl" role="2Oq$k0">
+              <ref role="3cqZAo" node="5A$uEIv76fv" resolve="docBuilderFactory" />
+            </node>
+            <node concept="liA8E" id="27zx100GDJo" role="2OqNvi">
+              <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.setFeature(java.lang.String,boolean)" resolve="setFeature" />
+              <node concept="37vLTw" id="27zx100GDJp" role="37wK5m">
+                <ref role="3cqZAo" node="27zx100GOF4" resolve="DISALLOW_DOCTYPE" />
+              </node>
+              <node concept="3clFbT" id="27zx100GDJv" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
             </node>
