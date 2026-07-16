@@ -2,7 +2,7 @@
 <model ref="r:40350cf3-d859-4f3f-acb8-1dcbb1c6b838(Beslistabellen_Test.ALEFS623)">
   <persistence version="9" />
   <languages>
-    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
+    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
     <use id="7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3" name="beslistabelspraak" version="2" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts" version="0" />

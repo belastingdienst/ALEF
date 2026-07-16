@@ -52,9 +52,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="993564824856099500" name="regelspraak.structure.EnkeleVoorwaarde" flags="ng" index="2z5Mdt">
         <child id="993564824856119364" name="expr" index="2z5D6P" />
@@ -96,6 +95,10 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
     </language>
     <language id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak">
@@ -504,22 +507,6 @@
       <node concept="1wO7pt" id="78zfOeRhKsT" role="kiesI">
         <node concept="2boe1W" id="78zfOeRhKsU" role="1wO7pp">
           <node concept="2u49r7" id="78zfOeRhKt9" role="1wO7i6">
-            <node concept="3_mHL5" id="78zfOeRhKtb" role="2u49r4">
-              <node concept="c2t0s" id="78zfOeRhKt_" role="eaaoM">
-                <ref role="Qu8KH" node="78zfOeRhKbK" resolve="hoeveelheid water" />
-              </node>
-              <node concept="3_kdyS" id="78zfOeRhKt$" role="pQQuc">
-                <ref role="Qu8KH" node="415WKBW6nWK" resolve="boom" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="78zfOeRhKtd" role="2u49r2">
-              <node concept="c2t0s" id="78zfOeRhKAd" role="eaaoM">
-                <ref role="Qu8KH" node="78zfOeRhKyG" resolve="hoeveelheid water voor de stam" />
-              </node>
-              <node concept="3yS1BT" id="78zfOeRhKAc" role="pQQuc">
-                <ref role="3yS1Ki" node="78zfOeRhKt$" resolve="boom" />
-              </node>
-            </node>
             <node concept="2u49r1" id="78zfOeRhKtf" role="2u49r3">
               <node concept="3_mHL5" id="78zfOeRhKth" role="3CIERg">
                 <node concept="c2t0s" id="78zfOeRhKvt" role="eaaoM">
@@ -530,11 +517,29 @@
                     <ref role="Qu8KH" node="415WKBW6oAz" resolve="blad" />
                   </node>
                   <node concept="3yS1BT" id="78zfOeRhKvs" role="pQQuc">
-                    <ref role="3yS1Ki" node="78zfOeRhKt$" resolve="boom" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4xY" resolve="boom" />
                   </node>
                 </node>
               </node>
               <node concept="23ogZD" id="78zfOeRhKtj" role="23ogZ$" />
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4y2" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4xW" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4xX" role="eaaoM">
+                  <ref role="Qu8KH" node="78zfOeRhKbK" resolve="hoeveelheid water" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4xY" role="pQQuc">
+                  <ref role="Qu8KH" node="415WKBW6nWK" resolve="boom" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4xZ" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4y0" role="eaaoM">
+                  <ref role="Qu8KH" node="78zfOeRhKyG" resolve="hoeveelheid water voor de stam" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4y3" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4xY" resolve="boom" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

@@ -32,9 +32,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="993564824856099500" name="regelspraak.structure.EnkeleVoorwaarde" flags="ng" index="2z5Mdt">
         <child id="993564824856119364" name="expr" index="2z5D6P" />
@@ -58,6 +57,10 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
     </language>
     <language id="08d6f877-03cc-45d3-b03c-d6f786266853" name="bronspraak">
@@ -239,22 +242,6 @@
       <node concept="1wO7pt" id="7ueOe0X7B_1" role="kiesI">
         <node concept="2boe1W" id="7ueOe0X7B_2" role="1wO7pp">
           <node concept="2u49r7" id="7ueOe0X7B_3" role="1wO7i6">
-            <node concept="3_mHL5" id="7ueOe0X7B_4" role="2u49r4">
-              <node concept="c2t0s" id="7breL4JJIxp" role="eaaoM">
-                <ref role="Qu8KH" node="nl2u3kiWAf" resolve="te verdelen bedrag" />
-              </node>
-              <node concept="3_kdyS" id="4weXTpt9DLZ" role="pQQuc">
-                <ref role="Qu8KH" node="5Dz0cAr3yLl" resolve="bundel" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="7ueOe0X7B_9" role="2u49r2">
-              <node concept="c2t0s" id="7breL4JJFxP" role="eaaoM">
-                <ref role="Qu8KH" node="46MSZP86__a" resolve="onverdeeld bedrag" />
-              </node>
-              <node concept="3yS1BT" id="7ueOe0X7B_b" role="pQQuc">
-                <ref role="3yS1Ki" node="4weXTpt9DLZ" resolve="bundel" />
-              </node>
-            </node>
             <node concept="2u49r1" id="7ueOe0X7B_c" role="2u49r3">
               <node concept="3_mHL5" id="7ueOe0X7B_f" role="3CIERg">
                 <node concept="c2t0s" id="7breL4JJJ9Z" role="eaaoM">
@@ -265,7 +252,7 @@
                     <ref role="Qu8KH" node="2O$leheIGvQ" resolve="enkele" />
                   </node>
                   <node concept="3yS1BT" id="7ueOe0X7B_D" role="pQQuc">
-                    <ref role="3yS1Ki" node="4weXTpt9DLZ" resolve="bundel" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4zV" resolve="bundel" />
                   </node>
                 </node>
               </node>
@@ -276,6 +263,24 @@
                 <ref role="Qu8KH" node="6fDBUBrrJ6d" resolve="maximum bedrag" />
               </node>
             </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4zZ" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4zT" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4zU" role="eaaoM">
+                  <ref role="Qu8KH" node="nl2u3kiWAf" resolve="te verdelen bedrag" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4zV" role="pQQuc">
+                  <ref role="Qu8KH" node="5Dz0cAr3yLl" resolve="bundel" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4zW" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4zX" role="eaaoM">
+                  <ref role="Qu8KH" node="46MSZP86__a" resolve="onverdeeld bedrag" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4$0" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4zV" resolve="bundel" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2z5Mdt" id="16FrF7ZDksV" role="1wO7i3">
             <node concept="3_mHL5" id="16FrF7ZDl2p" role="2z5D6P">
@@ -283,7 +288,7 @@
                 <ref role="Qu8KH" node="nl2u3kiWAf" resolve="te verdelen bedrag" />
               </node>
               <node concept="3yS1BT" id="16FrF7ZDl9J" role="pQQuc">
-                <ref role="3yS1Ki" node="4weXTpt9DLZ" resolve="bundel" />
+                <ref role="3yS1Ki" node="1EQIU0Ka4zV" resolve="bundel" />
               </node>
             </node>
             <node concept="28IvMi" id="16FrF7ZDlhn" role="2z5HcU" />

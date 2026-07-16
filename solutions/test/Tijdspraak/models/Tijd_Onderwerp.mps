@@ -2,7 +2,7 @@
 <model ref="r:f9694d48-df41-4b32-b932-3c31f031698f(Tijd_Onderwerp)">
   <persistence version="9" />
   <languages>
-    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
+    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
     <use id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts" version="0" />
     <use id="299845ab-8a41-470d-b76f-9736f9b49925" name="regelspraak.tijd" version="7" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />

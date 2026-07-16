@@ -37,9 +37,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
@@ -62,6 +61,10 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
       <concept id="6395925451710904058" name="regelspraak.structure.SorteerCriterium" flags="ng" index="3RQlaP">
         <property id="9068608409324957028" name="oplopend" index="21dgoC" />
@@ -315,22 +318,6 @@
       <node concept="1wO7pt" id="3lL3AAj9QIl" role="kiesI">
         <node concept="2boe1W" id="3lL3AAj9QIr" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$qE" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$qs" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$qt" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$qr" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$qv" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$qw" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$qu" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$qr" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$qC" role="2u49r3">
               <property role="3RnCl3" value="-1" />
               <node concept="23ogZD" id="3DPnffTv$qD" role="23ogZ$">
@@ -345,7 +332,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$q_" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$qr" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4_N" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -353,6 +340,24 @@
                 <property role="21dgoC" value="true" />
                 <node concept="c2t0s" id="3DPnffTv$qA" role="21dgoE">
                   <ref role="Qu8KH" node="3lL3AAj9QHS" resolve="leeftijd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4_R" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4_L" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4_M" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4_N" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4_O" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4_P" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4_S" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4_N" resolve="verdeler" />
                 </node>
               </node>
             </node>
@@ -373,22 +378,6 @@
       <node concept="1wO7pt" id="3lL3AAj9QIm" role="kiesI">
         <node concept="2boe1W" id="3lL3AAj9QIt" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$r3" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$qP" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$qQ" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$qO" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$qS" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$qT" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$qR" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$qO" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$r1" role="2u49r3">
               <property role="3RnCl3" value="2" />
               <node concept="23ogZD" id="3DPnffTv$r2" role="23ogZ$">
@@ -403,7 +392,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$qY" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$qO" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4_V" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -411,6 +400,24 @@
                 <property role="21dgoC" value="true" />
                 <node concept="c2t0s" id="3DPnffTv$qZ" role="21dgoE">
                   <ref role="Qu8KH" node="3lL3AAj9QHS" resolve="leeftijd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4_Z" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4_T" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4_U" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4_V" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4_W" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4_X" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4A0" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4_V" resolve="verdeler" />
                 </node>
               </node>
             </node>
@@ -431,22 +438,6 @@
       <node concept="1wO7pt" id="3lL3AAj9QIo" role="kiesI">
         <node concept="2boe1W" id="3lL3AAj9QIx" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$rt" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$re" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$rf" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$rd" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$rh" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$ri" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$rg" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$rd" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$rr" role="2u49r3">
               <property role="3RnCl3" value="-1" />
               <node concept="23ogZD" id="3DPnffTv$rs" role="23ogZ$">
@@ -461,7 +452,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$rn" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$rd" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4A3" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -472,6 +463,24 @@
                 <property role="21dgoC" value="true" />
                 <node concept="c2t0s" id="3DPnffTv$rp" role="21dgoE">
                   <ref role="Qu8KH" node="3lL3AAj9QHS" resolve="leeftijd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4A7" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4A1" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4A2" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4A3" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4A4" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4A5" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4A8" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4A3" resolve="verdeler" />
                 </node>
               </node>
             </node>
@@ -492,22 +501,6 @@
       <node concept="1wO7pt" id="3lL3AAj9QIp" role="kiesI">
         <node concept="2boe1W" id="3lL3AAj9QIz" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$rR" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$rC" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$rD" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$rB" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$rF" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$rG" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$rE" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$rB" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$rP" role="2u49r3">
               <property role="3RnCl3" value="0" />
               <node concept="23ogZD" id="3DPnffTv$rQ" role="23ogZ$">
@@ -522,7 +515,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$rL" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$rB" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4Ab" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -533,6 +526,24 @@
                 <property role="21dgoC" value="true" />
                 <node concept="c2t0s" id="3DPnffTv$rN" role="21dgoE">
                   <ref role="Qu8KH" node="3lL3AAj9QHS" resolve="leeftijd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4Af" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4A9" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4Aa" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4Ab" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4Ac" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4Ad" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4Ag" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4Ab" resolve="verdeler" />
                 </node>
               </node>
             </node>
@@ -553,22 +564,6 @@
       <node concept="1wO7pt" id="3lL3AAj9QIq" role="kiesI">
         <node concept="2boe1W" id="3lL3AAj9QI_" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$si" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$s2" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$s3" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$s1" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$s5" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$s6" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$s4" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$s1" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$sg" role="2u49r3">
               <property role="3RnCl3" value="0" />
               <node concept="23ogZD" id="3DPnffTv$sh" role="23ogZ$">
@@ -583,7 +578,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$sb" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$s1" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4Aj" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -597,6 +592,24 @@
                 <property role="21dgoC" value="true" />
                 <node concept="c2t0s" id="3DPnffTv$se" role="21dgoE">
                   <ref role="Qu8KH" node="3lL3AAj9QHS" resolve="leeftijd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4An" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4Ah" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4Ai" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4Aj" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4Ak" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4Al" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4Ao" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4Aj" resolve="verdeler" />
                 </node>
               </node>
             </node>
@@ -617,22 +630,6 @@
       <node concept="1wO7pt" id="3lL3AAj9Uz7" role="kiesI">
         <node concept="2boe1W" id="3lL3AAj9Uz8" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$sJ" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$st" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$su" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$ss" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$sw" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$sx" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$sv" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$ss" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$sH" role="2u49r3">
               <property role="3RnCl3" value="0" />
               <node concept="23ogZD" id="3DPnffTv$sI" role="23ogZ$">
@@ -647,7 +644,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$sA" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$ss" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4Ar" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -670,6 +667,24 @@
                 </node>
               </node>
             </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4Av" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4Ap" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4Aq" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4Ar" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4As" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4At" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4Aw" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4Ar" resolve="verdeler" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2ljwA5" id="3lL3AAj9Uzj" role="1nvPAL">
@@ -687,22 +702,6 @@
       <node concept="1wO7pt" id="2Bek4S8AlrJ" role="kiesI">
         <node concept="2boe1W" id="2Bek4S8AlrK" role="1wO7pp">
           <node concept="2u49r7" id="2Bek4S8AlrL" role="1wO7i6">
-            <node concept="3_mHL5" id="2Bek4S8AlrM" role="2u49r4">
-              <node concept="c2t0s" id="2Bek4S8AlrN" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
-              </node>
-              <node concept="3_kdyS" id="2Bek4S8AlrO" role="pQQuc">
-                <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="2Bek4S8AlrP" role="2u49r2">
-              <node concept="c2t0s" id="2Bek4S8AlrQ" role="eaaoM">
-                <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
-              </node>
-              <node concept="3yS1BT" id="2Bek4S8AlrR" role="pQQuc">
-                <ref role="3yS1Ki" node="2Bek4S8AlrO" resolve="verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="2Bek4S8AlrS" role="2u49r3">
               <property role="3RnCl3" value="0" />
               <node concept="23ogZD" id="2Bek4S8AlrT" role="23ogZ$">
@@ -717,7 +716,7 @@
                     <ref role="Qu8KH" node="3lL3AAj9QHU" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="2Bek4S8AlrY" role="pQQuc">
-                    <ref role="3yS1Ki" node="2Bek4S8AlrO" resolve="verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4Az" resolve="verdeler" />
                   </node>
                 </node>
               </node>
@@ -738,6 +737,24 @@
               </node>
               <node concept="c2t0s" id="5kNbwk6I_mC" role="20pUfr">
                 <ref role="Qu8KH" node="3lL3AAj9QHR" resolve="aanspraak" />
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4AB" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4Ax" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4Ay" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHO" resolve="verdeelplafond" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4Az" role="pQQuc">
+                  <ref role="Qu8KH" node="3lL3AAj9QHT" resolve="verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4A$" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4A_" role="eaaoM">
+                  <ref role="Qu8KH" node="3lL3AAj9QHP" resolve="onverdeeld verdeelplafond" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4AC" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4Az" resolve="verdeler" />
+                </node>
               </node>
             </node>
           </node>

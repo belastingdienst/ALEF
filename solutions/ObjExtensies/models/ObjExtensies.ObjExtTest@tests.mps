@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
-    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
+    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
   </languages>
   <imports>
     <import index="hqnh" ref="r:49dced04-eaf7-4d01-9397-2df858963cd0(ObjExtensies.ObjExtTest)" />
@@ -79,9 +79,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="993564824856099500" name="regelspraak.structure.EnkeleVoorwaarde" flags="ng" index="2z5Mdt">
         <child id="993564824856119364" name="expr" index="2z5D6P" />
@@ -127,6 +126,10 @@
         <child id="2773276936919436605" name="dag" index="1ACmmj" />
         <child id="2773276936919436602" name="maand" index="1ACmmk" />
         <child id="2773276936919436600" name="jaar" index="1ACmmm" />
+      </concept>
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
       </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
       <concept id="6329107844233955953" name="regelspraak.structure.Initialisatie" flags="ng" index="1RooxW" />
@@ -539,22 +542,6 @@
         <node concept="1wO7pt" id="7_1VluZ8_az" role="kiesI">
           <node concept="2boe1W" id="7_1VluZ8_a$" role="1wO7pp">
             <node concept="2u49r7" id="7_1VluZ8_qx" role="1wO7i6">
-              <node concept="3_mHL5" id="7_1VluZ8_qz" role="2u49r4">
-                <node concept="c2t0s" id="7_1VluZ8EwL" role="eaaoM">
-                  <ref role="Qu8KH" to="hqnh:1dntnMbIGW2" resolve="stand van teller" />
-                </node>
-                <node concept="3_kdyS" id="7_1VluZ8EwK" role="pQQuc">
-                  <ref role="Qu8KH" to="hqnh:1dntnMbIAB0" resolve="auto" />
-                </node>
-              </node>
-              <node concept="3_mHL5" id="7_1VluZ8_q_" role="2u49r2">
-                <node concept="c2t0s" id="7_1VluZ8H3G" role="eaaoM">
-                  <ref role="Qu8KH" to="hqnh:7_1VluZ8FEQ" resolve="onvermelde kilometers" />
-                </node>
-                <node concept="3yS1BT" id="7_1VluZ8H3F" role="pQQuc">
-                  <ref role="3yS1Ki" node="7_1VluZ8EwK" resolve="auto" />
-                </node>
-              </node>
               <node concept="2u49r1" id="7_1VluZ8_qB" role="2u49r3">
                 <node concept="3_mHL5" id="7_1VluZ8_qD" role="3CIERg">
                   <node concept="c2t0s" id="7_1VluZ8EBn" role="eaaoM">
@@ -565,11 +552,29 @@
                       <ref role="Qu8KH" to="hqnh:1dntnMbJbO9" resolve="lease-er" />
                     </node>
                     <node concept="3yS1BT" id="7_1VluZ8EBm" role="pQQuc">
-                      <ref role="3yS1Ki" node="7_1VluZ8EwK" resolve="auto" />
+                      <ref role="3yS1Ki" node="1EQIU0Ka4y6" resolve="auto" />
                     </node>
                   </node>
                 </node>
                 <node concept="23ogZD" id="7_1VluZ8_qF" role="23ogZ$" />
+              </node>
+              <node concept="3HNPz1" id="1EQIU0Ka4ya" role="3HMuxP">
+                <node concept="3_mHL5" id="1EQIU0Ka4y4" role="3HNPwz">
+                  <node concept="c2t0s" id="1EQIU0Ka4y5" role="eaaoM">
+                    <ref role="Qu8KH" to="hqnh:1dntnMbIGW2" resolve="stand van teller" />
+                  </node>
+                  <node concept="3_kdyS" id="1EQIU0Ka4y6" role="pQQuc">
+                    <ref role="Qu8KH" to="hqnh:1dntnMbIAB0" resolve="auto" />
+                  </node>
+                </node>
+                <node concept="3_mHL5" id="1EQIU0Ka4y7" role="3VyISy">
+                  <node concept="c2t0s" id="1EQIU0Ka4y8" role="eaaoM">
+                    <ref role="Qu8KH" to="hqnh:7_1VluZ8FEQ" resolve="onvermelde kilometers" />
+                  </node>
+                  <node concept="3yS1BT" id="1EQIU0Ka4yb" role="pQQuc">
+                    <ref role="3yS1Ki" node="1EQIU0Ka4y6" resolve="auto" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1021,22 +1026,6 @@
         <node concept="1wO7pt" id="6rTbGWvRKGT" role="kiesI">
           <node concept="2boe1W" id="6rTbGWvRKGU" role="1wO7pp">
             <node concept="2u49r7" id="6rTbGWvRKGZ" role="1wO7i6">
-              <node concept="3_mHL5" id="6rTbGWvRKH1" role="2u49r4">
-                <node concept="c2t0s" id="6rTbGWvRKHf" role="eaaoM">
-                  <ref role="Qu8KH" to="68r:6rTbGWvvyJY" resolve="kilometertellerstand" />
-                </node>
-                <node concept="3_kdyS" id="6rTbGWvRKHe" role="pQQuc">
-                  <ref role="Qu8KH" to="68r:1dntnMbIAB0" resolve="tweewieler" />
-                </node>
-              </node>
-              <node concept="3_mHL5" id="6rTbGWvRKH3" role="2u49r2">
-                <node concept="c2t0s" id="6rTbGWvRLup" role="eaaoM">
-                  <ref role="Qu8KH" to="hqnh:7Ovk1HqHxRv" resolve="recreatieve kilometers" />
-                </node>
-                <node concept="3yS1BT" id="6rTbGWvRLuo" role="pQQuc">
-                  <ref role="3yS1Ki" node="6rTbGWvRKHe" resolve="tweewieler" />
-                </node>
-              </node>
               <node concept="2u49r1" id="6rTbGWvRKH5" role="2u49r3">
                 <node concept="3_mHL5" id="6rTbGWvRKH7" role="3CIERg">
                   <node concept="c2t0s" id="6rTbGWvRMg2" role="eaaoM">
@@ -1047,11 +1036,29 @@
                       <ref role="Qu8KH" to="hqnh:7Ovk1HqHxXu" resolve="gebruiker van fiets" />
                     </node>
                     <node concept="3yS1BT" id="6rTbGWvRMg1" role="pQQuc">
-                      <ref role="3yS1Ki" node="6rTbGWvRKHe" resolve="tweewieler" />
+                      <ref role="3yS1Ki" node="1EQIU0Ka4ye" resolve="tweewieler" />
                     </node>
                   </node>
                 </node>
                 <node concept="23ogZD" id="6rTbGWvRKH9" role="23ogZ$" />
+              </node>
+              <node concept="3HNPz1" id="1EQIU0Ka4yi" role="3HMuxP">
+                <node concept="3_mHL5" id="1EQIU0Ka4yc" role="3HNPwz">
+                  <node concept="c2t0s" id="1EQIU0Ka4yd" role="eaaoM">
+                    <ref role="Qu8KH" to="68r:6rTbGWvvyJY" resolve="kilometertellerstand" />
+                  </node>
+                  <node concept="3_kdyS" id="1EQIU0Ka4ye" role="pQQuc">
+                    <ref role="Qu8KH" to="68r:1dntnMbIAB0" resolve="tweewieler" />
+                  </node>
+                </node>
+                <node concept="3_mHL5" id="1EQIU0Ka4yf" role="3VyISy">
+                  <node concept="c2t0s" id="1EQIU0Ka4yg" role="eaaoM">
+                    <ref role="Qu8KH" to="hqnh:7Ovk1HqHxRv" resolve="recreatieve kilometers" />
+                  </node>
+                  <node concept="3yS1BT" id="1EQIU0Ka4yj" role="pQQuc">
+                    <ref role="3yS1Ki" node="1EQIU0Ka4ye" resolve="tweewieler" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

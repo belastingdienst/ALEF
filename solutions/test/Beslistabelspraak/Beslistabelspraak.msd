@@ -30,7 +30,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:804014de-e593-4efc-b1b2-c667769358b9:linguistics" version="0" />
     <language slang="l:b2fc4154-1657-4d74-8828-c55b57a96ecd:rapporten" version="2" />
-    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="29" />
+    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="30" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

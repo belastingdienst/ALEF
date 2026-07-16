@@ -30,9 +30,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="2800963173588713245" name="regelspraak.structure.Leeg" flags="ng" index="2CqVCR" />
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
@@ -56,6 +55,10 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
       <concept id="1760893194706269227" name="regelspraak.structure.SubSelectie" flags="ng" index="3PGksG">
         <child id="1760893194706278472" name="predicaat" index="3PGiHf" />
@@ -231,27 +234,6 @@
       <node concept="1wO7pt" id="3AIlE$_zkdi" role="kiesI">
         <node concept="2boe1W" id="3AIlE$_zkdj" role="1wO7pp">
           <node concept="2u49r7" id="3AIlE$_zkdl" role="1wO7i6">
-            <node concept="3_mHL5" id="3AIlE$_zkdm" role="2u49r4">
-              <node concept="c2t0s" id="3AIlE$_zkdp" role="eaaoM">
-                <ref role="Qu8KH" node="3AIlE$_zkd5" resolve="aantal snoepjes" />
-              </node>
-              <node concept="3_mHL5" id="3AIlE$_zkdq" role="pQQuc">
-                <node concept="ean_g" id="3AIlE$_zkdv" role="eaaoM">
-                  <ref role="Qu8KH" node="3AIlE$_zkd9" resolve="snoeppot" />
-                </node>
-                <node concept="3_kdyS" id="3AIlE$_zkdw" role="pQQuc">
-                  <ref role="Qu8KH" node="3AIlE$_zkd8" resolve="opa" />
-                </node>
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3AIlE$_zkdn" role="2u49r2">
-              <node concept="c2t0s" id="3AIlE$_zkdr" role="eaaoM">
-                <ref role="Qu8KH" node="3AIlE$_zkd6" resolve="snoepjes restant" />
-              </node>
-              <node concept="3yS1BT" id="3AIlE$_zkds" role="pQQuc">
-                <ref role="3yS1Ki" node="3AIlE$_zkdv" resolve="snoeppot" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3AIlE$_zkdo" role="2u49r3">
               <node concept="3_mHL5" id="3AIlE$_zkdt" role="3CIERg">
                 <node concept="c2t0s" id="3AIlE$_zkdx" role="eaaoM">
@@ -260,7 +242,7 @@
                 <node concept="3PGksG" id="3AIlE$_zksd" role="pQQuc">
                   <node concept="3_mHL5" id="3AIlE$_zkse" role="3PGjZD">
                     <node concept="3yS1BT" id="3AIlE$_zksf" role="pQQuc">
-                      <ref role="3yS1Ki" node="3AIlE$_zkdw" resolve="opa" />
+                      <ref role="3yS1Ki" node="1EQIU0Ka4Br" resolve="opa" />
                     </node>
                     <node concept="ean_g" id="3AIlE$_zkuy" role="eaaoM">
                       <ref role="Qu8KH" node="3AIlE$_zkdb" resolve="kleinkind" />
@@ -273,6 +255,29 @@
                 </node>
               </node>
               <node concept="23ogZD" id="3AIlE$_zkdu" role="23ogZ$" />
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4Bv" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4Bn" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4Bo" role="eaaoM">
+                  <ref role="Qu8KH" node="3AIlE$_zkd5" resolve="aantal snoepjes" />
+                </node>
+                <node concept="3_mHL5" id="1EQIU0Ka4Bp" role="pQQuc">
+                  <node concept="ean_g" id="1EQIU0Ka4Bq" role="eaaoM">
+                    <ref role="Qu8KH" node="3AIlE$_zkd9" resolve="snoeppot" />
+                  </node>
+                  <node concept="3_kdyS" id="1EQIU0Ka4Br" role="pQQuc">
+                    <ref role="Qu8KH" node="3AIlE$_zkd8" resolve="opa" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4Bs" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4Bt" role="eaaoM">
+                  <ref role="Qu8KH" node="3AIlE$_zkd6" resolve="snoepjes restant" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4Bw" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4Bq" resolve="snoeppot" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

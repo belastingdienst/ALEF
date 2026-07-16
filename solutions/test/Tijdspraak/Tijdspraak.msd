@@ -74,7 +74,7 @@
     <language slang="l:2d1a603f-d3a3-4833-be8d-f1e1edc42693:merlinTests" version="0" />
     <language slang="l:fddd88e2-5ac0-43ee-83ad-b71610c0c2e9:merlinTests.tijd" version="0" />
     <language slang="l:b2fc4154-1657-4d74-8828-c55b57a96ecd:rapporten" version="2" />
-    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="29" />
+    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="30" />
     <language slang="l:299845ab-8a41-470d-b76f-9736f9b49925:regelspraak.tijd" version="7" />
     <language slang="l:ba4e7906-3f6b-4144-a385-91e72898fee4:serviceNaarOpenApi.tijd" version="0" />
     <language slang="l:e107d4b4-25d4-42be-99db-ec5b2643464c:serviceNaarXsd" version="0" />
