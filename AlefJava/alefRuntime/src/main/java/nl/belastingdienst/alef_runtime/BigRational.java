@@ -153,6 +153,10 @@ public final class BigRational extends Number implements Comparable<BigRational>
         }
     }
 
+    public static BigRational min(BigRational a, BigRational b) {
+        return a.compareTo(b) < 0 ? a : b;
+    }
+
     public static boolean finiteDecimals(BigRational value) {
         return value.finiteDecimals();
     }

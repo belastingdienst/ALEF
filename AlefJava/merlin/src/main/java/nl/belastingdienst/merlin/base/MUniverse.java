@@ -24,6 +24,7 @@ public class MUniverse implements IMDelegatedExecution {
     private boolean workingDateChanged = false;
     private final List<MDelegateeRule> delegatees = new ArrayList<>();
     private HashMap<String, MParameterValue> activeParameters = new HashMap<>();
+    private final List<MDistributionRule> distributionRules = new ArrayList<>();
 
     private Set<Class<?>> selectedRulesets;
     private boolean lazyEval = true;
@@ -319,10 +320,20 @@ public class MUniverse implements IMDelegatedExecution {
     }
 
     @Override
+    public MElementList<MDistributionRule> getDistributionRules() {
+        return distributionRules.isEmpty() ? MElementList.empty() : MElementList.of(distributionRules);
+    }
+    @Override
     public MElementList<MDelegateeRule> getDelegatees() {
         return MElementList.of(delegatees);
     }
 
+    public void addDistributionRule(MDistributionRule rule) {
+        if (rule == null) {
+            throw new IllegalArgumentException("rule");
+        }
+        this.distributionRules.add(rule);
+    }
     public void addDelegateeRule(MDelegateeRule rule) {
         if (rule == null) {
             throw new IllegalArgumentException("rule");

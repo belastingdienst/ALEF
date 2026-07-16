@@ -8,6 +8,9 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class MElementList<E> implements Iterable<E> {
 
@@ -229,6 +232,11 @@ public class MElementList<E> implements Iterable<E> {
     public MElementList<E> distinctNotNull() {
         List<E> result = elementList.stream().filter(Objects::nonNull).distinct().toList();
         return of(result);
+    }
+
+    public List<List<E>> groupedBy(Comparator<E> c) {
+        Map<E, List<E>> grouped = elementList.stream().collect(Collectors.groupingBy(Function.identity(), () -> new TreeMap<>(c), Collectors.toList()));
+        return new ArrayList<>(grouped.values());
     }
 
     public int count() {

@@ -2128,22 +2128,33 @@
     <property role="TrG5h" value="Verdeling" />
     <property role="34LRSv" value="Verdeling" />
     <ref role="1TJDcQ" node="1ibElXOlZMm" resolve="Actie" />
+    <node concept="1TJgyj" id="46XLVEGt2Zf" role="1TKVEi">
+      <property role="IQ2ns" value="4737161987634769871" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="verdeler" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="46XLVEGsDXV" resolve="Verdeler" />
+    </node>
     <node concept="1TJgyj" id="pFJaqouMDy" role="1TKVEi">
       <property role="IQ2ns" value="462670810444409442" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="verdeelBedrag" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="SQYpBFr2ns" resolve="Selectie" />
       <node concept="t5JxF" id="pFJaqouMDz" role="lGtFl">
         <property role="t5JxN" value="de verdeler verdeelt het verdeelplafond naar het verdeeldDeelPlafond van de ontvanger" />
+      </node>
+      <node concept="asaX9" id="1bGZokxet$4" role="lGtFl">
+        <property role="YLPcu" value="14.7.0" />
       </node>
     </node>
     <node concept="1TJgyj" id="pFJaqouMD$" role="1TKVEi">
       <property role="IQ2ns" value="462670810444409444" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="rest" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="SQYpBFr2ns" resolve="Selectie" />
+      <node concept="asaX9" id="1bGZokxet$6" role="lGtFl">
+        <property role="YLPcu" value="14.7.0" />
+      </node>
     </node>
     <node concept="1TJgyj" id="pFJaqouMD_" role="1TKVEi">
       <property role="IQ2ns" value="462670810444409445" />
@@ -2155,14 +2166,22 @@
     <node concept="PrWs8" id="6vdyoTHa5$t" role="PzmwI">
       <ref role="PrY4T" node="6vdyoTGVVEf" resolve="IWithLValue" />
     </node>
-    <node concept="PrWs8" id="pFJaqouTuF" role="PzmwI">
-      <ref role="PrY4T" node="5J$lPUt9E8F" resolve="IUnivQuantifier" />
-    </node>
     <node concept="PrWs8" id="1MzgQWlpT$O" role="PzmwI">
       <ref role="PrY4T" to="3ic2:1XN84VF0KFF" resolve="ITypeExpector" />
     </node>
     <node concept="PrWs8" id="5aq3ETm0hMt" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="1CB5uOzLDq_" role="1TKVEi">
+      <property role="IQ2ns" value="1884499077329491621" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="transactie" />
+      <ref role="20lvS9" node="1CB5uOzCnI3" resolve="TransactieObject" />
+    </node>
+    <node concept="1TJgyi" id="3Ji82j8rTCy" role="1TKVEl">
+      <property role="IQ2nx" value="4310543135700654626" />
+      <property role="TrG5h" value="isMeerdereVerdelers" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="siLAiOhQ7C">
@@ -2983,6 +3002,79 @@
     <property role="EcuMT" value="2773805708325689186" />
     <property role="3GE5qa" value="condities" />
     <property role="TrG5h" value="IConditieSubstitutieContext" />
+  </node>
+  <node concept="1TIwiD" id="46XLVEGsDXV">
+    <property role="EcuMT" value="4737161987634667387" />
+    <property role="3GE5qa" value="acties.verdeling" />
+    <property role="TrG5h" value="Verdeler" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="46XLVEGsDYl" role="1TKVEi">
+      <property role="IQ2ns" value="4737161987634667413" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sorteerCriterium" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5z2T4YJ6VrU" resolve="SorteerCriterium" />
+    </node>
+    <node concept="1TJgyj" id="46XLVEGsDYp" role="1TKVEi">
+      <property role="IQ2ns" value="4737161987634667417" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="teVerdelen" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="SQYpBFr2ns" resolve="Selectie" />
+    </node>
+    <node concept="1TJgyj" id="2$HnE7iDV23" role="1TKVEi">
+      <property role="IQ2ns" value="2967131778623975555" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rest" />
+      <ref role="20lvS9" node="SQYpBFr2ns" resolve="Selectie" />
+    </node>
+    <node concept="PrWs8" id="46XLVEGsDXW" role="PzmwI">
+      <ref role="PrY4T" node="6vdyoTGVVEf" resolve="IWithLValue" />
+    </node>
+    <node concept="PrWs8" id="46XLVEGsDXY" role="PzmwI">
+      <ref role="PrY4T" node="5aq3ETlDVkt" resolve="ILeesOfSchrijf" />
+    </node>
+    <node concept="PrWs8" id="46XLVEGsDY1" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:1XN84VF0KFF" resolve="ITypeExpector" />
+    </node>
+    <node concept="PrWs8" id="46XLVEGsDY5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="4KVP8PQFwEE" role="PzmwI">
+      <ref role="PrY4T" node="5J$lPUt9E8F" resolve="IUnivQuantifier" />
+    </node>
+    <node concept="1TJgyi" id="46XLVEGsDYc" role="1TKVEl">
+      <property role="IQ2nx" value="4737161987634667404" />
+      <property role="TrG5h" value="decimalen" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1CB5uOzCnI3">
+    <property role="EcuMT" value="1884499077327059843" />
+    <property role="3GE5qa" value="acties.verdeling" />
+    <property role="TrG5h" value="TransactieObject" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="eYkia67XAG" role="1TKVEi">
+      <property role="IQ2ns" value="269742236409780652" />
+      <property role="20kJfa" value="verdeler" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
+    </node>
+    <node concept="1TJgyj" id="eYkia67XAW" role="1TKVEi">
+      <property role="IQ2ns" value="269742236409780668" />
+      <property role="20kJfa" value="ontvanger" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
+    </node>
+    <node concept="PrWs8" id="2qLrsoLbDNf" role="PzmwI">
+      <ref role="PrY4T" to="dse8:51QYbfAyCB$" resolve="LConstruction" />
+    </node>
+    <node concept="1TJgyj" id="2LMRIkJ7R8U" role="1TKVEi">
+      <property role="IQ2ns" value="3202867360933311034" />
+      <property role="20kJfa" value="transfer" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:$infi2rzcc" resolve="Attribuut" />
+    </node>
   </node>
 </model>
 

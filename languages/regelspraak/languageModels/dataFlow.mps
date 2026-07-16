@@ -80,6 +80,7 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow">
       <concept id="1206442055221" name="jetbrains.mps.lang.dataFlow.structure.DataFlowBuilderDeclaration" flags="ig" index="3_zdsH">
@@ -1452,7 +1453,7 @@
           <node concept="2OqwBi" id="5aq3ETg4akL" role="3Ah4Yx">
             <node concept="3__QtB" id="5aq3ETg4akM" role="2Oq$k0" />
             <node concept="3TrEf2" id="5aq3ETg4aRU" role="2OqNvi">
-              <ref role="3Tt5mk" to="m234:pFJaqouMDy" resolve="verdeelBedrag" />
+              <ref role="3Tt5mk" to="m234:46XLVEGt2Zf" resolve="verdeler" />
             </node>
           </node>
         </node>
@@ -1467,10 +1468,15 @@
         <node concept="3clFbJ" id="5aq3ETg4akY" role="3cqZAp">
           <node concept="3clFbS" id="5aq3ETg4akZ" role="3clFbx">
             <node concept="3AgYrR" id="5aq3ETlBaUx" role="3cqZAp">
-              <node concept="2OqwBi" id="5aq3ETlBb4R" role="3Ah4Yx">
-                <node concept="3__QtB" id="5aq3ETlBaV0" role="2Oq$k0" />
-                <node concept="3TrEf2" id="5aq3ETlBblq" role="2OqNvi">
-                  <ref role="3Tt5mk" to="m234:pFJaqouMD$" resolve="rest" />
+              <node concept="2OqwBi" id="2$HnE7iEMrW" role="3Ah4Yx">
+                <node concept="2OqwBi" id="5aq3ETlBb4R" role="2Oq$k0">
+                  <node concept="3__QtB" id="5aq3ETlBaV0" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5aq3ETlBblq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="m234:46XLVEGt2Zf" resolve="verdeler" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="2$HnE7iEMRZ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="m234:2$HnE7iDV23" resolve="rest" />
                 </node>
               </node>
             </node>
@@ -1484,6 +1490,32 @@
             </node>
             <node concept="2qgKlT" id="5aq3ETg4cW5" role="2OqNvi">
               <ref role="37wK5l" to="u5to:pFJaqoy0a7" resolve="toonRest" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2$HnE7iEMY9" role="3cqZAp">
+          <node concept="3clFbS" id="2$HnE7iEMYb" role="3clFbx">
+            <node concept="3AgYrR" id="2$HnE7iENRj" role="3cqZAp">
+              <node concept="2OqwBi" id="2$HnE7iENSd" role="3Ah4Yx">
+                <node concept="3__QtB" id="2$HnE7iENRO" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2$HnE7iENWj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="m234:1CB5uOzLDq_" resolve="transactie" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="2$HnE7iENIN" role="3clFbw">
+            <node concept="2OqwBi" id="2$HnE7iENLn" role="3uHU7w">
+              <node concept="3__QtB" id="2$HnE7iENKm" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2$HnE7iENPH" role="2OqNvi">
+                <ref role="37wK5l" to="u5to:3CMHydiKoc3" resolve="toonTransacties" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2$HnE7iENev" role="3uHU7B">
+              <node concept="3__QtB" id="2$HnE7iEMZY" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2$HnE7iENiu" role="2OqNvi">
+                <ref role="37wK5l" to="u5to:5MsfiluGVev" resolve="meerdereVerdelers" />
+              </node>
             </node>
           </node>
         </node>
@@ -2046,6 +2078,51 @@
             <node concept="3__QtB" id="4lD$O_1o5aj" role="2Oq$k0" />
             <node concept="3TrEf2" id="4lD$O_1o64z" role="2OqNvi">
               <ref role="3Tt5mk" to="m234:6wptU_gLM0Z" resolve="conditie" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="46XLVEGsFeR">
+    <property role="3GE5qa" value="acties.verdeling" />
+    <ref role="3_znuS" to="m234:46XLVEGsDXV" resolve="Verdeler" />
+    <node concept="3__wT9" id="46XLVEGsFeS" role="3_A6iZ">
+      <node concept="3clFbS" id="46XLVEGsFeT" role="2VODD2">
+        <node concept="1DcWWT" id="46XLVEGsGNp" role="3cqZAp">
+          <node concept="3clFbS" id="46XLVEGsGNr" role="2LFqv$">
+            <node concept="3AgYrR" id="46XLVEGsJ3w" role="3cqZAp">
+              <node concept="37vLTw" id="46XLVEGsJ41" role="3Ah4Yx">
+                <ref role="3cqZAo" node="46XLVEGsGNs" resolve="c" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="46XLVEGsGNs" role="1Duv9x">
+            <property role="TrG5h" value="c" />
+            <node concept="3Tqbb2" id="46XLVEGsGX3" role="1tU5fm">
+              <ref role="ehGHo" to="m234:5z2T4YJ6VrU" resolve="SorteerCriterium" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="46XLVEGsH_F" role="1DdaDG">
+            <node concept="3__QtB" id="46XLVEGsHoa" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="46XLVEGsHQN" role="2OqNvi">
+              <ref role="3TtcxE" to="m234:46XLVEGsDYl" resolve="sorteerCriterium" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_DX4M" id="5F9fPKg9Vba" role="3cqZAp">
+          <node concept="2OqwBi" id="5F9fPKg9WB5" role="3_H1SZ">
+            <node concept="3__QtB" id="5F9fPKg9WpT" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5F9fPKg9X1y" role="2OqNvi">
+              <ref role="3Tt5mk" to="m234:46XLVEGsDYp" resolve="teVerdelen" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="2$HnE7iEkyJ" role="3cqZAp">
+          <node concept="2OqwBi" id="2$HnE7iElSJ" role="3Ah4Yx">
+            <node concept="3__QtB" id="2$HnE7iElGq" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2$HnE7iEmJE" role="2OqNvi">
+              <ref role="3Tt5mk" to="m234:2$HnE7iDV23" resolve="rest" />
             </node>
           </node>
         </node>
