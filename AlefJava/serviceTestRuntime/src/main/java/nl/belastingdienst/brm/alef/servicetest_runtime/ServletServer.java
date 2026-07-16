@@ -1,19 +1,17 @@
 package nl.belastingdienst.brm.alef.servicetest_runtime;
 
+import jakarta.servlet.http.HttpServlet;
+import org.eclipse.jetty.ee10.servlet.ServletContextHandler;
 import org.eclipse.jetty.http.spi.DelegatingThreadPool;
-import org.eclipse.jetty.http.spi.JettyHttpServerProvider;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
 
-import jakarta.xml.ws.Endpoint;
-
-public class EndpointServer {
+public class ServletServer {
     private final Server jettyServer;
     private final ServerConnector connector;
 
-    public EndpointServer(Object endpoint, String contextPath) {
+    public ServletServer(HttpServlet servlet) {
         jettyServer = new Server(new DelegatingThreadPool(new QueuedThreadPool()));
 
         connector = new ServerConnector(jettyServer);
@@ -21,21 +19,17 @@ public class EndpointServer {
         jettyServer.addConnector(connector);
         jettyServer.setStopAtShutdown(true);
 
-        ContextHandlerCollection context = new ContextHandlerCollection();
-
+        ServletContextHandler context = new ServletContextHandler();
+        context.setContextPath("/");
         jettyServer.setHandler(context);
 
-        System.setProperty("com.sun.net.httpserver.HttpServerProvider", "org.eclipse.jetty.http.spi.JettyHttpServerProvider");
-
-        JettyHttpServerProvider.setServer(jettyServer);
+        context.addServlet(servlet, "/*");
 
         try {
             jettyServer.start();
         } catch (Exception e) {
             throw new ServerException("Can't start server", e);
         }
-
-        Endpoint.publish(getUrl() + contextPath, endpoint);
     }
 
     public void stop() {

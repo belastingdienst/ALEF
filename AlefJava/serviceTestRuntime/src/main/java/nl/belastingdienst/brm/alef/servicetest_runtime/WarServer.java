@@ -12,11 +12,6 @@ public class WarServer {
     private final Server jettyServer;
     private final ServerConnector connector;
 
-    private static final class ServerException extends RuntimeException {
-        public ServerException(String message, Exception cause) {
-            super(message, cause);
-        }
-    }
     public WarServer(String warPath, Map<String, Object> env) {
         jettyServer = new Server();
         

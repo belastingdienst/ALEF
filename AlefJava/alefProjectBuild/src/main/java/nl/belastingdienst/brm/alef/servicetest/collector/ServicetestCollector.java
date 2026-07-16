@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import nl.belastingdienst.brm.alef.servicetest.dto.ServiceTest;
 import nl.belastingdienst.brm.alef.servicetest.dto.ServiceTestSet;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -46,7 +45,7 @@ public final class ServicetestCollector {
 
         final Map<String, TestSets> services = collectTestSets(serviceInfoFiles, mapper);
 
-        writeZip(services, outputPath, mapper);
+        writeZip(services, outputPath, searchPath, mapper);
     }
 
     private static Map<String, TestSets> collectTestSets(List<Path> serviceInfoFiles, ObjectMapper mapper) throws IOException {
@@ -59,56 +58,81 @@ public final class ServicetestCollector {
             }
             TestSets testSets = services.get(data.getService());
 
-            if (data.getSoap() != null) {
-                for (ServiceTest test : data.getSoap()) {
-                    testSets.files.put(p.getParent().resolve(test.getInput()), test.getInput());
-                    testSets.files.put(p.getParent().resolve(test.getExpected()), test.getExpected());
-                }
-            }
-            if (data.getRest() != null) {
-                for (ServiceTest test : data.getRest()) {
-                    testSets.files.put(p.getParent().resolve(test.getInput()), test.getInput());
-                    testSets.files.put(p.getParent().resolve(test.getExpected()), test.getExpected());
-                }
-            }
+            processTestSets(data.getSoap(), p.getParent(), "soap/inp/", "soap/exp/", testSets);
+            processTestSets(data.getRest(), p.getParent(), "json/inp/", "json/exp/", testSets);
 
-            String relativeXsdPath = "xsd/" + new File(data.getXsd()).getName();
-            if (!testSets.files.containsValue(relativeXsdPath)) {
-                testSets.files.put(new File(data.getXsd()).toPath(), relativeXsdPath);
+            if (!data.getXsd().isEmpty()) {
+                Path xsdPath = p.getParent().resolve(Path.of(data.getXsd()));
+                String relativeXsdPath = "xsd/" + xsdPath.getFileName();
+                if (!testSets.files.containsValue(relativeXsdPath)) {
+                    testSets.files.put(xsdPath, relativeXsdPath);
+                }
+                data.setXsd(relativeXsdPath);
             }
-            data.setXsd(relativeXsdPath);
 
             testSets.testSetList.add(data);
         }
         return services;
     }
 
+    private static void processTestSets(List<ServiceTest> data, Path basePath, String inputPath, String outputPath, TestSets testSets) {
+        if (data != null) {
+            for (ServiceTest test : data) {
+                final Path inputFile = basePath.resolve(test.getInput());
+                final Path outputFile = basePath.resolve(test.getExpected());
+                final String relativeInputFilePath = inputPath + inputFile.getFileName();
+                final String relativeExpectedFilePath = outputPath + outputFile.getFileName();
+                testSets.files.put(inputFile, relativeInputFilePath);
+                testSets.files.put(outputFile, relativeExpectedFilePath);
+                test.setInput(relativeInputFilePath);
+                test.setExpected(relativeExpectedFilePath);
+            }
+        }
+    }
+
     private static void writeZip(final Map<String, TestSets> services,
                                  final Path outputPath,
+                                 final Path basePath,
                                  final ObjectMapper mapper) throws IOException {
         for (Map.Entry<String, TestSets> entry : services.entrySet()) {
-            try (FileOutputStream fos = new FileOutputStream(outputPath.resolve(entry.getKey() + ".zip").toFile(), false);
-                 ZipOutputStream zip = new ZipOutputStream(fos)) {
-                final TestSets sets = entry.getValue();
-                ZipEntry zipEntry = new ZipEntry("data.json");
-                zip.putNextEntry(zipEntry);
-                mapper.writeValue(zip, entry.getValue().testSetList);
-                zip.closeEntry();
+            if (entry.getKey() != null && !entry.getKey().isBlank()) {
+                if (!outputPath.resolve(entry.getKey() + ".zip").normalize().startsWith(outputPath.normalize())) {
+                    throw new PathTraversalException(entry.getKey());
+                }
+                try (FileOutputStream fos = new FileOutputStream(outputPath.resolve(entry.getKey() + ".zip").toFile(), false);
+                     ZipOutputStream zip = new ZipOutputStream(fos)) {
+                    final TestSets sets = entry.getValue();
+                    addMetaData(zip, sets, mapper);
 
-                final byte[] buffer = new byte[1024*1024];
-                for (Map.Entry<Path, String> file : sets.files.entrySet()) {
-                    final ZipEntry zipFileEntry = new ZipEntry(file.getValue());
-                    zip.putNextEntry(zipFileEntry);
-                    try (FileInputStream fis = new FileInputStream(file.getKey().toFile())) {
-                        int read;
-                        while ((read = fis.read(buffer, 0, buffer.length)) > 0) {
-                            zip.write(buffer, 0, read);
-                        }
-                    } finally {
-                        zip.closeEntry();
+                    for (Map.Entry<Path, String> file : sets.files.entrySet()) {
+                        addFileToZip(zip, basePath, file.getKey(), file.getValue());
                     }
                 }
             }
+        }
+    }
+
+    private static void addMetaData(final ZipOutputStream zip, final TestSets sets, final ObjectMapper mapper) throws IOException {
+        final ZipEntry zipEntry = new ZipEntry("data.json");
+        zip.putNextEntry(zipEntry);
+        mapper.writeValue(zip, sets.testSetList);
+        zip.closeEntry();
+    }
+
+    private static void addFileToZip(final ZipOutputStream zip, final Path basePath, final Path file, final String name) throws IOException {
+        final byte[] buffer = new byte[1024*1024];
+        final ZipEntry zipFileEntry = new ZipEntry(name);
+        zip.putNextEntry(zipFileEntry);
+        if (!file.normalize().toAbsolutePath().startsWith(basePath.normalize().toAbsolutePath())) {
+            throw new PathTraversalException(file.toString());
+        }
+        try (FileInputStream fis = new FileInputStream(file.toFile())) {
+            int read;
+            while ((read = fis.read(buffer, 0, buffer.length)) > 0) {
+                zip.write(buffer, 0, read);
+            }
+        } finally {
+            zip.closeEntry();
         }
     }
 }

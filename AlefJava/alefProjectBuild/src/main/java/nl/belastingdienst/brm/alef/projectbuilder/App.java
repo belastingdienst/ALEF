@@ -166,7 +166,7 @@ public final class App {
             }
             Platform.showMessage("---- >8 ---- Last lines of log file '" + logFile + "'. ---- >8 ----");
         } catch (IOException io) {
-            logger.severe("Cannot read log file '" + logFile + "': " + io.getMessage());
+            logger.severe(String.format("Cannot read log file '%s': %s", logFile, io.getMessage()));
         }
         System.exit(exitCode);
     }
