@@ -15,7 +15,7 @@ public class MObject extends MBase implements IMDelegatedExecution {
         }
     }
     private final List<MConsistencyRule> consistencyRules = new ArrayList<>();
-    private final List<MExecutable> distributionRules = new ArrayList<>();
+    private final List<MDistributionRule> distributionRules = new ArrayList<>();
     private final List<MDelegateeRule> delegateeRules = new ArrayList<>();
     private final List<MRuleBase> callbackRulesList = new ArrayList<>();
     private final MObjectType objectType;
@@ -51,9 +51,13 @@ public class MObject extends MBase implements IMDelegatedExecution {
 
     public String getExternalId() { return externalId; }
 
+    @Override
+    public MElementList<MDistributionRule> getDistributionRules() {
+        return (distributionRules.isEmpty()) ? MElementList.empty() : MElementList.of(distributionRules);
+    }
 
-    public <T extends MExecutable> T getDistributionRule(Class<T> ruleClass) {
-        return (T) MElementList.of(distributionRules).findFirst(rule -> rule.getClass().equals(ruleClass)).first();
+    public MDistributionRule getDistributionRule(Class<? extends MDistributionRule> ruleClass) {
+        return MElementList.of(distributionRules).findFirst(rule -> rule.getClass().equals(ruleClass)).first();
     }
 
     @Override
@@ -109,8 +113,7 @@ public class MObject extends MBase implements IMDelegatedExecution {
         final MRole role = roles.computeIfAbsent(roleKey, k -> roleKey.createRole(this, fact.getFactType()));
         role.add(fact);
     }
-
-    public void addDistributionRule(MExecutable rule) {
+    public void addDistributionRule(MDistributionRule rule) {
         distributionRules.add(rule);
     }
 

@@ -14,6 +14,9 @@
         <reference id="3534427357911017257" name="eigenschap" index="21IqBt" />
         <child id="3534427357911017259" name="waarde" index="21IqBv" />
       </concept>
+      <concept id="9068608409355101349" name="regelspraak.structure.Afronding" flags="ng" index="23ogZD">
+        <property id="9068608409355101350" name="decimalen" index="23ogZE" />
+      </concept>
       <concept id="6747529342265147481" name="regelspraak.structure.SamengesteldPredicaat" flags="ng" index="28AkDQ">
         <child id="6747529342265147484" name="subconditie" index="28AkDN" />
         <child id="6747529342265147483" name="quant" index="28AkDO" />
@@ -37,9 +40,21 @@
         <child id="9154144551704439187" name="inhoud" index="1HSqhF" />
       </concept>
       <concept id="347899601029393859" name="regelspraak.structure.DimAttribuutSelector" flags="ng" index="c294r" />
+      <concept id="347899601029311684" name="regelspraak.structure.AttribuutSelector" flags="ng" index="c2t0s" />
       <concept id="6774523643279607820" name="regelspraak.structure.RolSelector" flags="ng" index="ean_g" />
       <concept id="6223277501270327848" name="regelspraak.structure.AbstracteRegel" flags="ng" index="nISv2">
         <child id="6223277501273432772" name="versie" index="kiesI" />
+      </concept>
+      <concept id="462670810444409447" name="regelspraak.structure.Ontvanger" flags="ng" index="2u49r1">
+        <child id="9068608409338480789" name="sorteerCriterium" index="20pUfp" />
+        <child id="9068608409338480790" name="maxAanspraak" index="20pUfq" />
+        <child id="9068608409355101352" name="afronding" index="23ogZ$" />
+        <child id="6395925451733748127" name="aandeel" index="3CIERg" />
+      </concept>
+      <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
+        <property id="4310543135700654626" name="isMeerdereVerdelers" index="3NJrC6" />
+        <child id="462670810444409445" name="ontvanger" index="2u49r3" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="993564824856099500" name="regelspraak.structure.EnkeleVoorwaarde" flags="ng" index="2z5Mdt">
         <child id="993564824856119364" name="expr" index="2z5D6P" />
@@ -75,8 +90,17 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="4737161987634667413" name="sorteerCriterium" index="3HNPwJ" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
       <concept id="6329107844233955953" name="regelspraak.structure.Initialisatie" flags="ng" index="1RooxW" />
+      <concept id="6395925451710904058" name="regelspraak.structure.SorteerCriterium" flags="ng" index="3RQlaP">
+        <property id="9068608409324957028" name="oplopend" index="21dgoC" />
+        <child id="9068608409324957030" name="expr" index="21dgoE" />
+      </concept>
     </language>
     <language id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak">
       <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa" />
@@ -170,6 +194,9 @@
       <concept id="8569264619985858707" name="gegevensspraak.structure.IDimensieLabelSelectie" flags="ngI" index="1Eu5hm">
         <child id="8569264619985858708" name="labels" index="1Eu5hh" />
       </concept>
+      <concept id="5917060184181247365" name="gegevensspraak.structure.DatumTijdType" flags="ng" index="1EDDdA">
+        <property id="5917060184181247410" name="granulariteit" index="1EDDdh" />
+      </concept>
       <concept id="5917060184181247326" name="gegevensspraak.structure.NumeriekType" flags="ng" index="1EDDeX" />
       <concept id="8569264619982142397" name="gegevensspraak.structure.GedimensioneerdType" flags="ng" index="1EHTXS">
         <child id="8569264619982147943" name="dimensies" index="1EHZmy" />
@@ -250,7 +277,43 @@
         <property role="TrG5h" value="winstgevend" />
       </node>
     </node>
-    <node concept="1uxNW$" id="5QGe9ffViU" role="2bv6Cn" />
+    <node concept="2bvS6$" id="1xpNZMdrfW1" role="2bv6Cn">
+      <property role="TrG5h" value="Aandeelhouder" />
+      <node concept="2bv6ZS" id="1xpNZMdrfWj" role="2bv01j">
+        <property role="TrG5h" value="dividend" />
+        <node concept="1EHTXS" id="1xpNZMdrfW_" role="1EDDcc">
+          <node concept="1EDDeX" id="1xpNZMdrfWA" role="1EHZVt">
+            <property role="3GST$d" value="-1" />
+          </node>
+          <node concept="1EHZm$" id="1xpNZMdrfWK" role="1EHZmy">
+            <ref role="1EHZmB" node="AmbZWR2wUI" resolve="regio" />
+          </node>
+          <node concept="1EHZm$" id="1xpNZMdrfWX" role="1EHZmy">
+            <ref role="1EHZmB" node="AmbZWR2wUL" resolve="boekjaar" />
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="1xpNZMdrk30" role="2bv01j">
+        <property role="TrG5h" value="registratie datum" />
+        <node concept="1EDDdA" id="1xpNZMdrk3o" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="1xpNZMdrkhs" role="2bv01j">
+        <property role="TrG5h" value="maximum dividend" />
+        <node concept="1EHTXS" id="1xpNZMdrkhY" role="1EDDcc">
+          <node concept="1EDDeX" id="1xpNZMdrkhZ" role="1EHZVt">
+            <property role="3GST$d" value="-1" />
+          </node>
+          <node concept="1EHZm$" id="1xpNZMdrkk2" role="1EHZmy">
+            <ref role="1EHZmB" node="AmbZWR2wUI" resolve="regio" />
+          </node>
+          <node concept="1EHZm$" id="1xpNZMdrkkf" role="1EHZmy">
+            <ref role="1EHZmB" node="AmbZWR2wUL" resolve="boekjaar" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2mG0Cb" id="AmbZWRW5Ts" role="2bv6Cn">
       <property role="TrG5h" value="ouder-kind" />
       <node concept="2mG0Ck" id="AmbZWRW5Tt" role="2mG0Ct">
@@ -264,7 +327,19 @@
         <ref role="1fE_qF" node="AmbZWRW5L2" resolve="SubOnderneming" />
       </node>
     </node>
-    <node concept="1uxNW$" id="CpRsNVm2WW" role="2bv6Cn" />
+    <node concept="2mG0Cb" id="1xpNZMdrgvo" role="2bv6Cn">
+      <property role="TrG5h" value="bedrijf-aandeelhouder" />
+      <node concept="2mG0Ck" id="1xpNZMdrgvp" role="2mG0Ct">
+        <property role="u$DAK" value="true" />
+        <property role="TrG5h" value="bedrijf" />
+        <ref role="1fE_qF" node="AmbZWR2wUP" resolve="Onderneming" />
+      </node>
+      <node concept="2mG0Ck" id="1xpNZMdrgvq" role="2mG0Ct">
+        <property role="u$DAK" value="false" />
+        <property role="TrG5h" value="aandeelhouder" />
+        <ref role="1fE_qF" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+      </node>
+    </node>
     <node concept="2bvS6$" id="AmbZWRW5L2" role="2bv6Cn">
       <property role="TrG5h" value="SubOnderneming" />
       <node concept="2bv6ZS" id="AmbZWRW5Ly" role="2bv01j">
@@ -277,6 +352,26 @@
             <ref role="1EHZmB" node="AmbZWR2wUI" resolve="regio" />
           </node>
           <node concept="1EHZm$" id="AmbZWRW5Sh" role="1EHZmy">
+            <ref role="1EHZmB" node="AmbZWR2wUL" resolve="boekjaar" />
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="1xpNZMdri0D" role="2bv01j">
+        <property role="TrG5h" value="boekdatum" />
+        <node concept="1EDDdA" id="1xpNZMdri0X" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="1xpNZMdriMn" role="2bv01j">
+        <property role="TrG5h" value="restant" />
+        <node concept="1EHTXS" id="1xpNZMdriN5" role="1EDDcc">
+          <node concept="1EDDeX" id="1xpNZMdriN6" role="1EHZVt">
+            <property role="3GST$d" value="-1" />
+          </node>
+          <node concept="1EHZm$" id="1xpNZMdriNg" role="1EHZmy">
+            <ref role="1EHZmB" node="AmbZWR2wUI" resolve="regio" />
+          </node>
+          <node concept="1EHZm$" id="1xpNZMdriNt" role="1EHZmy">
             <ref role="1EHZmB" node="AmbZWR2wUL" resolve="boekjaar" />
           </node>
         </node>
@@ -558,7 +653,102 @@
         <node concept="2ljwA5" id="59kn773r4JA" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1uxNW$" id="5QGe9ffX7q" role="1HSqhF" />
+    <node concept="1HSql3" id="1xpNZMdrg6q" role="1HSqhF">
+      <property role="TrG5h" value="Verdeling van dividend" />
+      <node concept="1wO7pt" id="1xpNZMdrg6s" role="kiesI">
+        <node concept="2boe1W" id="1xpNZMdrg6t" role="1wO7pp">
+          <node concept="2u49r7" id="1xpNZMdrgm$" role="1wO7i6">
+            <property role="3NJrC6" value="true" />
+            <node concept="3HNPz1" id="1xpNZMdrgmA" role="3HMuxP">
+              <node concept="3_mHL5" id="1xpNZMdrgmC" role="3HNPwz">
+                <node concept="c294r" id="1xpNZMdrhLy" role="eaaoM">
+                  <ref role="Qu8KH" node="AmbZWRW5Ly" resolve="sub-winst" />
+                  <node concept="1EHZmx" id="1xpNZMdrhL$" role="1Eu5hh">
+                    <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+                  </node>
+                  <node concept="1EHZmx" id="1xpNZMdrhLz" role="1Eu5hh">
+                    <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+                  </node>
+                </node>
+                <node concept="3_mHL5" id="1xpNZMdrh1m" role="pQQuc">
+                  <node concept="ean_g" id="1xpNZMdrh1n" role="eaaoM">
+                    <ref role="Qu8KH" node="AmbZWRW5Tu" resolve="dochter" />
+                  </node>
+                  <node concept="3_kdyS" id="1xpNZMdrh1o" role="pQQuc">
+                    <ref role="Qu8KH" node="AmbZWRW5Tt" resolve="moeder" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1xpNZMdrgmE" role="3VyISy">
+                <node concept="c294r" id="1xpNZMdriSp" role="eaaoM">
+                  <ref role="Qu8KH" node="1xpNZMdriMn" resolve="restant" />
+                  <node concept="1EHZmx" id="1xpNZMdriSr" role="1Eu5hh">
+                    <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+                  </node>
+                  <node concept="1EHZmx" id="1xpNZMdriSq" role="1Eu5hh">
+                    <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+                  </node>
+                </node>
+                <node concept="3_mHL5" id="1xpNZMdriSm" role="pQQuc">
+                  <node concept="ean_g" id="1xpNZMdriSn" role="eaaoM">
+                    <ref role="Qu8KH" node="AmbZWRW5Tu" resolve="dochter" />
+                  </node>
+                  <node concept="3yS1BT" id="1xpNZMdriSo" role="pQQuc">
+                    <ref role="3yS1Ki" node="1xpNZMdrh1o" resolve="moeder" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3RQlaP" id="1xpNZMdrhWZ" role="3HNPwJ">
+                <node concept="c2t0s" id="1xpNZMdriu3" role="21dgoE">
+                  <ref role="Qu8KH" node="1xpNZMdri0D" resolve="boekdatum" />
+                </node>
+              </node>
+            </node>
+            <node concept="2u49r1" id="1xpNZMdrgmG" role="2u49r3">
+              <node concept="3_mHL5" id="1xpNZMdrgmI" role="3CIERg">
+                <node concept="c294r" id="1xpNZMdri_9" role="eaaoM">
+                  <ref role="Qu8KH" node="1xpNZMdrfWj" resolve="dividend" />
+                  <node concept="1EHZmx" id="1xpNZMdri_b" role="1Eu5hh">
+                    <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+                  </node>
+                  <node concept="1EHZmx" id="1xpNZMdri_a" role="1Eu5hh">
+                    <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+                  </node>
+                </node>
+                <node concept="3_mHL5" id="1xpNZMdrixZ" role="pQQuc">
+                  <node concept="ean_g" id="1xpNZMdriy0" role="eaaoM">
+                    <ref role="Qu8KH" node="1xpNZMdrgvq" resolve="aandeelhouder" />
+                  </node>
+                  <node concept="3yS1BT" id="1xpNZMdrixY" role="pQQuc">
+                    <ref role="3yS1Ki" node="1xpNZMdrh1o" resolve="moeder" />
+                  </node>
+                </node>
+              </node>
+              <node concept="23ogZD" id="1xpNZMdrgmK" role="23ogZ$">
+                <property role="23ogZE" value="-1" />
+              </node>
+              <node concept="3RQlaP" id="1xpNZMdrjZ$" role="20pUfp">
+                <property role="21dgoC" value="true" />
+                <node concept="c2t0s" id="1xpNZMdrk9F" role="21dgoE">
+                  <ref role="Qu8KH" node="1xpNZMdrk30" resolve="registratie datum" />
+                </node>
+              </node>
+              <node concept="c294r" id="1xpNZMdrkz5" role="20pUfq">
+                <ref role="Qu8KH" node="1xpNZMdrkhs" resolve="maximum dividend" />
+                <node concept="1EHZmx" id="1xpNZMdrkz7" role="1Eu5hh">
+                  <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+                </node>
+                <node concept="1EHZmx" id="1xpNZMdrkz6" role="1Eu5hh">
+                  <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="1xpNZMdrg6v" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1uxNW$" id="1xpNZMdrgbF" role="1HSqhF" />
   </node>
   <node concept="1rXTK1" id="AmbZWRW2sA">
     <property role="TrG5h" value="Consistentie met meerdere criteria" />
@@ -1389,6 +1579,530 @@
       </node>
       <node concept="1EHZmx" id="2bb480KMVQZ" role="1Eu5hh">
         <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+      </node>
+    </node>
+  </node>
+  <node concept="1rXTK1" id="1xpNZMdrkd8">
+    <property role="TrG5h" value="Verdeling" />
+    <node concept="2ljwA5" id="1xpNZMdrkd9" role="3Na4y7">
+      <node concept="2ljiaL" id="1xpNZMdrkda" role="2ljwA6">
+        <property role="2ljiaO" value="2026" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaM" value="1" />
+      </node>
+      <node concept="2ljiaL" id="1xpNZMdrkdb" role="2ljwA7">
+        <property role="2ljiaO" value="2026" />
+        <property role="2ljiaN" value="12" />
+        <property role="2ljiaM" value="31" />
+      </node>
+    </node>
+    <node concept="2ljiaL" id="1xpNZMdrkdc" role="1lUMLE">
+      <property role="2ljiaO" value="2026" />
+      <property role="2ljiaN" value="7" />
+      <property role="2ljiaM" value="1" />
+    </node>
+    <node concept="1rXTKl" id="1xpNZMdrkdo" role="vfxHU">
+      <ref role="1G6pT_" node="1xpNZMdrg6q" resolve="Verdeling van dividend" />
+    </node>
+    <node concept="210ffa" id="1xpNZMdrkdu" role="10_$IM">
+      <property role="TrG5h" value="TestMeerderVerdelersMetDimensies" />
+      <node concept="4Oh8J" id="1xpNZMdrkZg" role="4Ohb1">
+        <ref role="4Oh8G" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+        <ref role="3teO_M" node="1xpNZMdrkgT" resolve="Tim" />
+        <node concept="3mzBic" id="1xpNZMdrl0h" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0j" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0k" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrlfT" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0l" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0n" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0o" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrln5" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0p" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EQTEq" id="1xpNZMdrl0q" role="3mzBi6">
+            <property role="3e6Tb2" value="5" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0r" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0s" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0w" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0y" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0z" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrluf" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0$" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0A" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0B" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrl$E" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0C" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0E" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0F" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrlEm" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0J" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0L" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0M" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrlJI" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0N" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0P" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0Q" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrlOM" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrl0R" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrl0T" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrl0U" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrlTy" role="3mzBi6" />
+        </node>
+      </node>
+      <node concept="4Oh8J" id="1xpNZMdrmPQ" role="4Ohb1">
+        <ref role="4Oh8G" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+        <ref role="3teO_M" node="1xpNZMdrkgH" resolve="Jan" />
+        <node concept="3mzBic" id="1xpNZMdrmPR" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmPS" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmPT" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmPU" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmPV" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmPW" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmPX" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmPY" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmPZ" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EQTEq" id="1xpNZMdrmQ0" role="3mzBi6">
+            <property role="3e6Tb2" value="10" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQ1" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQ2" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmQ3" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmQ4" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQ5" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmQ6" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmQ7" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmQ8" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQ9" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmQa" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmQb" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmQc" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQd" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmQe" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmQf" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmQg" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQh" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmQi" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmQj" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmQk" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQl" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmQm" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmQn" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmQo" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmQp" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmQq" role="3mzBi6" />
+        </node>
+      </node>
+      <node concept="4Oh8J" id="1xpNZMdrmSO" role="4Ohb1">
+        <ref role="4Oh8G" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+        <ref role="3teO_M" node="1xpNZMdrkh5" resolve="Tom" />
+        <node concept="3mzBic" id="1xpNZMdrmSP" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmSQ" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmSR" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmSS" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmST" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmSU" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmSV" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmSW" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmSX" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EQTEq" id="1xpNZMdrmSY" role="3mzBi6">
+            <property role="3e6Tb2" value="3" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmSZ" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmT0" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmT1" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmT2" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmT3" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmT4" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmT5" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmT6" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmT7" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmT8" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmT9" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmTa" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUK" resolve="duitse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmTb" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmTc" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmTd" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmTe" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmTf" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUM" resolve="twee jaar geleden" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmTg" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmTh" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmTi" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmTj" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUN" resolve="vorig jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmTk" role="3mzBi6" />
+        </node>
+        <node concept="3mzBic" id="1xpNZMdrmTl" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdrfWj" resolve="dividend" />
+          <node concept="1EHZmx" id="1xpNZMdrmTm" role="1Eu5hh">
+            <ref role="1EHZmw" node="59kn773r56e" resolve="engelse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmTn" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="2CqVCR" id="1xpNZMdrmTo" role="3mzBi6" />
+        </node>
+      </node>
+      <node concept="4OhPC" id="1xpNZMdrkdw" role="4Ohaa">
+        <property role="TrG5h" value="Janssen en Jansse" />
+        <ref role="4OhPH" node="AmbZWR2wUP" resolve="Onderneming" />
+        <node concept="3_ceKt" id="1xpNZMdrke_" role="4OhPJ">
+          <ref role="3_ceKs" node="AmbZWRW5Tu" resolve="dochter" />
+          <node concept="4PMua" id="1xpNZMdrkeA" role="3_ceKu">
+            <node concept="4PMub" id="1xpNZMdrkV0" role="4PMue">
+              <ref role="4PMuN" node="1xpNZMdrkeo" resolve="ColaCo" />
+            </node>
+            <node concept="4PMub" id="1xpNZMdrkVs" role="4PMue">
+              <ref role="4PMuN" node="1xpNZMdrkev" resolve="Snackers" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1xpNZMdrkWj" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrgvq" resolve="aandeelhouder" />
+          <node concept="4PMua" id="1xpNZMdrkWr" role="3_ceKu">
+            <node concept="4PMub" id="1xpNZMdrkWC" role="4PMue">
+              <ref role="4PMuN" node="1xpNZMdrkgH" resolve="Jan" />
+            </node>
+            <node concept="4PMub" id="1xpNZMdrkX6" role="4PMue">
+              <ref role="4PMuN" node="1xpNZMdrkgT" resolve="Tim" />
+            </node>
+            <node concept="4PMub" id="1xpNZMdrkY1" role="4PMue">
+              <ref role="4PMuN" node="1xpNZMdrkh5" resolve="Tom" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1xpNZMdrkeo" role="4Ohaa">
+        <property role="TrG5h" value="ColaCo" />
+        <ref role="4OhPH" node="AmbZWRW5L2" resolve="SubOnderneming" />
+        <node concept="3_ceKt" id="1xpNZMdrmoT" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdri0D" resolve="boekdatum" />
+          <node concept="2ljiaL" id="1xpNZMdrmpv" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2026" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1xpNZMdrm4g" role="4OhPJ">
+          <ref role="3_ceKs" node="AmbZWRW5Ly" resolve="sub-winst" />
+          <node concept="1EQTEq" id="1xpNZMdrm4l" role="3_ceKu">
+            <property role="3e6Tb2" value="15" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrm5K" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrm6e" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1xpNZMdrkev" role="4Ohaa">
+        <property role="TrG5h" value="Snackers" />
+        <ref role="4OhPH" node="AmbZWRW5L2" resolve="SubOnderneming" />
+        <node concept="3_ceKt" id="1xpNZMdrmqH" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdri0D" resolve="boekdatum" />
+          <node concept="2ljiaL" id="1xpNZMdrmqI" role="3_ceKu">
+            <property role="2ljiaM" value="2" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2026" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1xpNZMdrmrB" role="4OhPJ">
+          <ref role="3_ceKs" node="AmbZWRW5Ly" resolve="sub-winst" />
+          <node concept="1EQTEq" id="1xpNZMdrmrC" role="3_ceKu">
+            <property role="3e6Tb2" value="4" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmrD" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrmrE" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1xpNZMdrkgH" role="4Ohaa">
+        <property role="TrG5h" value="Jan" />
+        <ref role="4OhPH" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+        <node concept="3_ceKt" id="1xpNZMdrmCb" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrk30" resolve="registratie datum" />
+          <node concept="2ljiaL" id="1xpNZMdrmCt" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="12" />
+            <property role="2ljiaO" value="2025" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1xpNZMdrkN2" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrkhs" resolve="maximum dividend" />
+          <node concept="1EQTEq" id="1xpNZMdrkN3" role="3_ceKu">
+            <property role="3e6Tb2" value="10" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrkN4" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrkN5" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1xpNZMdrkgT" role="4Ohaa">
+        <property role="TrG5h" value="Tim" />
+        <ref role="4OhPH" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+        <node concept="3_ceKt" id="1xpNZMdrmE$" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrk30" resolve="registratie datum" />
+          <node concept="2ljiaL" id="1xpNZMdrmE_" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="11" />
+            <property role="2ljiaO" value="2025" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1xpNZMdrkS7" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrkhs" resolve="maximum dividend" />
+          <node concept="1EQTEq" id="1xpNZMdrkS8" role="3_ceKu">
+            <property role="3e6Tb2" value="5" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrkS9" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrkSa" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1xpNZMdrkh5" role="4Ohaa">
+        <property role="TrG5h" value="Tom" />
+        <ref role="4OhPH" node="1xpNZMdrfW1" resolve="Aandeelhouder" />
+        <node concept="3_ceKt" id="1xpNZMdrmFu" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrk30" resolve="registratie datum" />
+          <node concept="2ljiaL" id="1xpNZMdrmFv" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="10" />
+            <property role="2ljiaO" value="2025" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1xpNZMdrkU7" role="4OhPJ">
+          <ref role="3_ceKs" node="1xpNZMdrkhs" resolve="maximum dividend" />
+          <node concept="1EQTEq" id="1xpNZMdrkU8" role="3_ceKu">
+            <property role="3e6Tb2" value="3" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrkU9" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrkUa" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="1xpNZMdrnbx" role="4Ohb1">
+        <ref role="4Oh8G" node="AmbZWRW5L2" resolve="SubOnderneming" />
+        <ref role="3teO_M" node="1xpNZMdrkeo" resolve="ColaCo" />
+        <node concept="3mzBic" id="1xpNZMdrncE" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdriMn" resolve="restant" />
+          <node concept="1EQTEq" id="1xpNZMdrncK" role="3mzBi6">
+            <property role="3e6Tb2" value="1" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrntd" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrnv2" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="1xpNZMdrndY" role="4Ohb1">
+        <ref role="4Oh8G" node="AmbZWRW5L2" resolve="SubOnderneming" />
+        <ref role="3teO_M" node="1xpNZMdrkev" resolve="Snackers" />
+        <node concept="3mzBic" id="1xpNZMdrndZ" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1xpNZMdriMn" resolve="restant" />
+          <node concept="1EQTEq" id="1xpNZMdrne0" role="3mzBi6">
+            <property role="3e6Tb2" value="0" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrnxf" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUO" resolve="dit jaar" />
+          </node>
+          <node concept="1EHZmx" id="1xpNZMdrnz5" role="1Eu5hh">
+            <ref role="1EHZmw" node="AmbZWR2wUJ" resolve="nederlandse" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

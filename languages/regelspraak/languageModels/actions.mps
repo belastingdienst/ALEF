@@ -559,10 +559,15 @@
             <node concept="2OqwBi" id="6CPELB_8IQN" role="3clFbG">
               <node concept="2OqwBi" id="6CPELByCzev" role="2Oq$k0">
                 <node concept="2OqwBi" id="6CPELByCyNG" role="2Oq$k0">
-                  <node concept="2OqwBi" id="6CPELByCyoX" role="2Oq$k0">
-                    <node concept="1r4Lsj" id="6CPELByCyeq" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="6CPELByCyBi" role="2OqNvi">
-                      <ref role="3Tt5mk" to="m234:pFJaqouMDy" resolve="verdeelBedrag" />
+                  <node concept="2OqwBi" id="4ipDHXO1JzS" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6CPELByCyoX" role="2Oq$k0">
+                      <node concept="1r4Lsj" id="6CPELByCyeq" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="6CPELByCyBi" role="2OqNvi">
+                        <ref role="3Tt5mk" to="m234:46XLVEGt2Zf" resolve="verdeler" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="4ipDHXO1JWW" role="2OqNvi">
+                      <ref role="3Tt5mk" to="m234:46XLVEGsDYp" resolve="teVerdelen" />
                     </node>
                   </node>
                   <node concept="zfrQC" id="6CPELB_8JWG" role="2OqNvi">
@@ -574,29 +579,6 @@
                 </node>
               </node>
               <node concept="zfrQC" id="6CPELB_8KPQ" role="2OqNvi">
-                <ref role="1A9B2P" to="m234:jjZdw8QyN4" resolve="AttribuutSelector" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6CPELB_gtpM" role="3cqZAp">
-            <node concept="2OqwBi" id="6CPELB_guIQ" role="3clFbG">
-              <node concept="2OqwBi" id="6CPELB_gutL" role="2Oq$k0">
-                <node concept="2OqwBi" id="6CPELB_gu0o" role="2Oq$k0">
-                  <node concept="2OqwBi" id="6CPELB_gtA_" role="2Oq$k0">
-                    <node concept="1r4Lsj" id="6CPELB_gtpL" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="6CPELB_gtN1" role="2OqNvi">
-                      <ref role="3Tt5mk" to="m234:pFJaqouMD$" resolve="rest" />
-                    </node>
-                  </node>
-                  <node concept="zfrQC" id="6CPELB_gumU" role="2OqNvi">
-                    <ref role="1A9B2P" to="m234:SQYpBFr2ns" resolve="Selectie" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="6CPELB_guvY" role="2OqNvi">
-                  <ref role="3Tt5mk" to="m234:5S3WlLgaPtI" resolve="selector" />
-                </node>
-              </node>
-              <node concept="zfrQC" id="6CPELB_gv8a" role="2OqNvi">
                 <ref role="1A9B2P" to="m234:jjZdw8QyN4" resolve="AttribuutSelector" />
               </node>
             </node>
@@ -639,12 +621,17 @@
                 <node concept="37vLTI" id="6CPELB_h7NV" role="3clFbG">
                   <node concept="2OqwBi" id="2Ekvc7KXdLL" role="37vLTx">
                     <node concept="2OqwBi" id="6CPELB_h8or" role="2Oq$k0">
-                      <node concept="2OqwBi" id="6CPELB_h832" role="2Oq$k0">
-                        <node concept="Jnkvi" id="6CPELB_h7QZ" role="2Oq$k0">
-                          <ref role="1M0zk5" node="6CPELB_h69F" resolve="verdeling" />
+                      <node concept="2OqwBi" id="4ipDHXMZlO0" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6CPELB_h832" role="2Oq$k0">
+                          <node concept="Jnkvi" id="6CPELB_h7QZ" role="2Oq$k0">
+                            <ref role="1M0zk5" node="6CPELB_h69F" resolve="verdeling" />
+                          </node>
+                          <node concept="3TrEf2" id="6CPELB_h8i5" role="2OqNvi">
+                            <ref role="3Tt5mk" to="m234:46XLVEGt2Zf" resolve="verdeler" />
+                          </node>
                         </node>
-                        <node concept="3TrEf2" id="6CPELB_h8i5" role="2OqNvi">
-                          <ref role="3Tt5mk" to="m234:pFJaqouMDy" resolve="verdeelBedrag" />
+                        <node concept="3TrEf2" id="4ipDHXMZmb0" role="2OqNvi">
+                          <ref role="3Tt5mk" to="m234:46XLVEGsDYp" resolve="teVerdelen" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="2Ekvc7KXdxW" role="2OqNvi">
@@ -677,6 +664,59 @@
             <node concept="JncvC" id="6CPELB_h69F" role="JncvA">
               <property role="TrG5h" value="verdeling" />
               <node concept="2jxLKc" id="6CPELB_h69G" role="1tU5fm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="37WvkG" id="2X28zwOdFtN" role="37WGs$">
+      <ref role="37XkoT" to="m234:46XLVEGsDXV" resolve="Verdeler" />
+      <node concept="37Y9Zx" id="2X28zwOdFtO" role="37ZfLb">
+        <node concept="3clFbS" id="2X28zwOdFtP" role="2VODD2">
+          <node concept="3clFbF" id="2X28zwOdFtQ" role="3cqZAp">
+            <node concept="2OqwBi" id="2X28zwOdFtR" role="3clFbG">
+              <node concept="2OqwBi" id="2X28zwOdFtS" role="2Oq$k0">
+                <node concept="2OqwBi" id="2X28zwOdFtT" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2X28zwOdFtU" role="2Oq$k0">
+                    <node concept="1r4Lsj" id="2X28zwOdFtV" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2X28zwOdFtW" role="2OqNvi">
+                      <ref role="3Tt5mk" to="m234:46XLVEGsDYp" resolve="teVerdelen" />
+                    </node>
+                  </node>
+                  <node concept="zfrQC" id="2X28zwOdFtX" role="2OqNvi">
+                    <ref role="1A9B2P" to="m234:SQYpBFr2ns" resolve="Selectie" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="2X28zwOdFtY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="m234:5S3WlLgaPtI" resolve="selector" />
+                </node>
+              </node>
+              <node concept="zfrQC" id="2X28zwOdFtZ" role="2OqNvi">
+                <ref role="1A9B2P" to="m234:jjZdw8QyN4" resolve="AttribuutSelector" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6CPELB_gtpM" role="3cqZAp">
+            <node concept="2OqwBi" id="6CPELB_guIQ" role="3clFbG">
+              <node concept="2OqwBi" id="6CPELB_gutL" role="2Oq$k0">
+                <node concept="2OqwBi" id="6CPELB_gu0o" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6CPELB_gtA_" role="2Oq$k0">
+                    <node concept="1r4Lsj" id="6CPELB_gtpL" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="6CPELB_gtN1" role="2OqNvi">
+                      <ref role="3Tt5mk" to="m234:2$HnE7iDV23" resolve="rest" />
+                    </node>
+                  </node>
+                  <node concept="zfrQC" id="6CPELB_gumU" role="2OqNvi">
+                    <ref role="1A9B2P" to="m234:SQYpBFr2ns" resolve="Selectie" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6CPELB_guvY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="m234:5S3WlLgaPtI" resolve="selector" />
+                </node>
+              </node>
+              <node concept="zfrQC" id="6CPELB_gv8a" role="2OqNvi">
+                <ref role="1A9B2P" to="m234:jjZdw8QyN4" resolve="AttribuutSelector" />
+              </node>
             </node>
           </node>
         </node>
