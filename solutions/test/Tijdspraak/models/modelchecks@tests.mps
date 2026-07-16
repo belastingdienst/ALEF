@@ -5,7 +5,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
+    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
     <use id="299845ab-8a41-470d-b76f-9736f9b49925" name="regelspraak.tijd" version="7" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="c40e126b-a0e9-42bb-b903-9b5fd0b050d2" name="gegevensspraak.tijd" version="4" />
@@ -120,9 +120,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="2018749743879756032" name="regelspraak.structure.TekstDeel" flags="ng" index="ymhcM">
         <child id="2018749743879756033" name="waarde" index="ymhcN" />
@@ -182,6 +181,10 @@
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
       <concept id="9077342650988135936" name="regelspraak.structure.AlleOnderwerp" flags="ng" index="1_nVkc" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="5514682949681279713" name="regelspraak.structure.TekstExpressie" flags="ng" index="3ObYgd">
         <child id="6899278994318486911" name="tekstdeel" index="2x5sjf" />
       </concept>
@@ -874,22 +877,6 @@
     <node concept="1qefOq" id="6XD6DNLZ3Ij" role="1SKRRt">
       <node concept="2boe1W" id="6XD6DNLZ3Iy" role="1qenE9">
         <node concept="2u49r7" id="6XD6DNLZ3IA" role="1wO7i6">
-          <node concept="3_mHL5" id="6XD6DNLZ3IC" role="2u49r4">
-            <node concept="c2t0s" id="6XD6DNLZ3IZ" role="eaaoM">
-              <ref role="Qu8KH" node="57Pip_JXNKl" resolve="numMaand" />
-            </node>
-            <node concept="3_kdyS" id="6XD6DNLZ3IY" role="pQQuc">
-              <ref role="Qu8KH" node="3cO0hDgmUdM" resolve="X" />
-            </node>
-          </node>
-          <node concept="3_mHL5" id="6XD6DNLZ3IE" role="2u49r2">
-            <node concept="c2t0s" id="6XD6DNLZlN0" role="eaaoM">
-              <ref role="Qu8KH" node="6XD6DNLZ3is" resolve="numMaand 2" />
-            </node>
-            <node concept="3yS1BT" id="6XD6DNLZlMZ" role="pQQuc">
-              <ref role="3yS1Ki" node="6XD6DNLZ3IY" resolve="X" />
-            </node>
-          </node>
           <node concept="2u49r1" id="6XD6DNLZ3IG" role="2u49r3">
             <node concept="23ogZD" id="6XD6DNLZ3IK" role="23ogZ$" />
             <node concept="3_mHL5" id="6XD6DNLZ$l4" role="3CIERg">
@@ -901,7 +888,7 @@
                   <ref role="Qu8KH" node="6XD6DNLZ3Yy" resolve="y" />
                 </node>
                 <node concept="3yS1BT" id="6XD6DNLZ$mu" role="pQQuc">
-                  <ref role="3yS1Ki" node="6XD6DNLZ3IY" resolve="X" />
+                  <ref role="3yS1Ki" node="1EQIU0Ka4Bz" resolve="X" />
                 </node>
               </node>
             </node>
@@ -910,6 +897,24 @@
             <node concept="1TM$A" id="6XD6DNLZzCF" role="7EUXB">
               <node concept="2PYRI3" id="6XD6DNLZzEU" role="3lydEf">
                 <ref role="39XzEq" to="nksh:6XD6DNLZlWF" />
+              </node>
+            </node>
+          </node>
+          <node concept="3HNPz1" id="1EQIU0Ka4BB" role="3HMuxP">
+            <node concept="3_mHL5" id="1EQIU0Ka4Bx" role="3HNPwz">
+              <node concept="c2t0s" id="1EQIU0Ka4By" role="eaaoM">
+                <ref role="Qu8KH" node="57Pip_JXNKl" resolve="numMaand" />
+              </node>
+              <node concept="3_kdyS" id="1EQIU0Ka4Bz" role="pQQuc">
+                <ref role="Qu8KH" node="3cO0hDgmUdM" resolve="X" />
+              </node>
+            </node>
+            <node concept="3_mHL5" id="1EQIU0Ka4B$" role="3VyISy">
+              <node concept="c2t0s" id="1EQIU0Ka4B_" role="eaaoM">
+                <ref role="Qu8KH" node="6XD6DNLZ3is" resolve="numMaand 2" />
+              </node>
+              <node concept="3yS1BT" id="1EQIU0Ka4BC" role="pQQuc">
+                <ref role="3yS1Ki" node="1EQIU0Ka4Bz" resolve="X" />
               </node>
             </node>
           </node>

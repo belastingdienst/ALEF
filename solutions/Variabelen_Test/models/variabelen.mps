@@ -60,9 +60,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="8209696620344005542" name="regelspraak.structure.UnivVarRef" flags="ng" index="wII0M">
         <reference id="8209696620344005543" name="univSelectie" index="wII0N" />
@@ -135,6 +134,10 @@
         <child id="2773276936919436605" name="dag" index="1ACmmj" />
         <child id="2773276936919436602" name="maand" index="1ACmmk" />
         <child id="2773276936919436600" name="jaar" index="1ACmmm" />
+      </concept>
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
       </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
       <concept id="5128603206711845672" name="regelspraak.structure.DelenExpressie" flags="ng" index="3IOlpp" />
@@ -1386,22 +1389,6 @@
       <node concept="1wO7pt" id="4CwPmoYgtBY" role="kiesI">
         <node concept="2boe1W" id="4CwPmoYgtBZ" role="1wO7pp">
           <node concept="2u49r7" id="4CwPmoYgv68" role="1wO7i6">
-            <node concept="3_mHL5" id="4CwPmoYgv6a" role="2u49r4">
-              <node concept="c2t0s" id="4CwPmoYgwCp" role="eaaoM">
-                <ref role="Qu8KH" node="4CwPmoYgveu" resolve="in8" />
-              </node>
-              <node concept="3_kdyS" id="4CwPmoYgwCo" role="pQQuc">
-                <ref role="Qu8KH" node="6JLpNAQFY3c" resolve="InOutObject" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="4CwPmoYgv6c" role="2u49r2">
-              <node concept="c2t0s" id="4CwPmoYgBjv" role="eaaoM">
-                <ref role="Qu8KH" node="4CwPmoYgves" resolve="out8" />
-              </node>
-              <node concept="3yS1BT" id="4CwPmoYgBju" role="pQQuc">
-                <ref role="3yS1Ki" node="4CwPmoYgwCo" resolve="InOutObject" />
-              </node>
-            </node>
             <node concept="2u49r1" id="4CwPmoYgv6e" role="2u49r3">
               <node concept="23ogZD" id="4CwPmoYgv6i" role="23ogZ$" />
               <node concept="3_mHL5" id="4CwPmoYg$6F" role="3CIERg">
@@ -1414,7 +1401,7 @@
                       <ref role="Qu8KH" node="5w67KN4RWG$" resolve="post" />
                     </node>
                     <node concept="3yS1BT" id="4CwPmoYg$r0" role="pQQuc">
-                      <ref role="3yS1Ki" node="4CwPmoYgwCo" resolve="InOutObject" />
+                      <ref role="3yS1Ki" node="1EQIU0Ka4yA" resolve="InOutObject" />
                     </node>
                   </node>
                 </node>
@@ -1423,14 +1410,32 @@
                 </node>
               </node>
             </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4yE" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4y$" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4y_" role="eaaoM">
+                  <ref role="Qu8KH" node="4CwPmoYgveu" resolve="in8" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4yA" role="pQQuc">
+                  <ref role="Qu8KH" node="6JLpNAQFY3c" resolve="InOutObject" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4yB" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4yC" role="eaaoM">
+                  <ref role="Qu8KH" node="4CwPmoYgves" resolve="out8" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4yF" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4yA" resolve="InOutObject" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="wII0M" id="4CwPmoYgyk8" role="wII0b">
             <property role="TrG5h" value="A" />
-            <ref role="wII0N" node="4CwPmoYgv6a" />
+            <ref role="wII0N" node="1EQIU0Ka4y$" />
           </node>
           <node concept="2z5Mdt" id="4CwPmoYhDL4" role="1wO7i3">
             <node concept="3yS1BT" id="4CwPmoYhDT2" role="2z5D6P">
-              <ref role="3yS1Ki" node="4CwPmoYgwCo" resolve="InOutObject" />
+              <ref role="3yS1Ki" node="1EQIU0Ka4yA" resolve="InOutObject" />
             </node>
             <node concept="28IzFB" id="4CwPmoYhDZr" role="2z5HcU">
               <ref role="28I$VD" node="4CwPmoYhBLO" resolve="te verdelen" />

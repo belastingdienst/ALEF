@@ -32,9 +32,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
@@ -57,6 +56,10 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
     </language>
     <language id="08d6f877-03cc-45d3-b03c-d6f786266853" name="bronspraak">
@@ -240,22 +243,6 @@
       <node concept="1wO7pt" id="2Njh0YKkd_u" role="kiesI">
         <node concept="2boe1W" id="2Njh0YKkd_v" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$nQ" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$nE" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$nF" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$nD" role="pQQuc">
-                <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$nH" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$nI" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$nG" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$nD" resolve="Gever" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$nO" role="2u49r3">
               <property role="3RnCl3" value="0" />
               <node concept="23ogZD" id="3DPnffTv$nP" role="23ogZ$" />
@@ -268,8 +255,26 @@
                     <ref role="Qu8KH" node="32siDUoUsOg" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$nN" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$nD" resolve="Gever" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4$3" resolve="Gever" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4$7" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4$1" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4$2" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4$3" role="pQQuc">
+                  <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4$4" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4$5" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4$8" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4$3" resolve="Gever" />
                 </node>
               </node>
             </node>
@@ -287,22 +292,6 @@
       <node concept="1wO7pt" id="2Njh0YKkd_D" role="kiesI">
         <node concept="2boe1W" id="2Njh0YKkd_E" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$oc" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$o0" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$o1" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$nZ" role="pQQuc">
-                <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$o3" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$o4" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$o2" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$nZ" resolve="Gever" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$oa" role="2u49r3">
               <property role="3RnCl3" value="1" />
               <node concept="23ogZD" id="3DPnffTv$ob" role="23ogZ$">
@@ -317,8 +306,26 @@
                     <ref role="Qu8KH" node="32siDUoUsOg" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$o9" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$nZ" resolve="Gever" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4$b" resolve="Gever" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4$f" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4$9" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4$a" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4$b" role="pQQuc">
+                  <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4$c" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4$d" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4$g" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4$b" resolve="Gever" />
                 </node>
               </node>
             </node>
@@ -336,22 +343,6 @@
       <node concept="1wO7pt" id="2Njh0YKkd_O" role="kiesI">
         <node concept="2boe1W" id="2Njh0YKkd_P" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$oy" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$om" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$on" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$ol" role="pQQuc">
-                <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$op" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$oq" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$oo" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$ol" resolve="Gever" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$ow" role="2u49r3">
               <property role="3RnCl3" value="2" />
               <node concept="23ogZD" id="3DPnffTv$ox" role="23ogZ$">
@@ -366,8 +357,26 @@
                     <ref role="Qu8KH" node="32siDUoUsOg" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$ov" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$ol" resolve="Gever" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4$j" resolve="Gever" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4$n" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4$h" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4$i" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4$j" role="pQQuc">
+                  <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4$k" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4$l" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4$o" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4$j" resolve="Gever" />
                 </node>
               </node>
             </node>
@@ -385,22 +394,6 @@
       <node concept="1wO7pt" id="2Njh0YKkd_Z" role="kiesI">
         <node concept="2boe1W" id="2Njh0YKkdA0" role="1wO7pp">
           <node concept="2u49r7" id="3DPnffTv$oS" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTv$oG" role="2u49r4">
-              <node concept="c2t0s" id="3DPnffTv$oH" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTv$oF" role="pQQuc">
-                <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="3DPnffTv$oJ" role="2u49r2">
-              <node concept="c2t0s" id="3DPnffTv$oK" role="eaaoM">
-                <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
-              </node>
-              <node concept="3yS1BT" id="3DPnffTv$oI" role="pQQuc">
-                <ref role="3yS1Ki" node="3DPnffTv$oF" resolve="Gever" />
-              </node>
-            </node>
             <node concept="2u49r1" id="3DPnffTv$oQ" role="2u49r3">
               <property role="3RnCl3" value="2" />
               <node concept="23ogZD" id="3DPnffTv$oR" role="23ogZ$">
@@ -415,8 +408,26 @@
                     <ref role="Qu8KH" node="32siDUoUsOg" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="3DPnffTv$oP" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTv$oF" resolve="Gever" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4$r" resolve="Gever" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4$v" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4$p" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4$q" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOa" resolve="geldbedrag" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4$r" role="pQQuc">
+                  <ref role="Qu8KH" node="32siDUoUsO6" resolve="Gever" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4$s" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4$t" role="eaaoM">
+                  <ref role="Qu8KH" node="32siDUoUsOb" resolve="onverdeeld bedrag" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4$w" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4$r" resolve="Gever" />
                 </node>
               </node>
             </node>

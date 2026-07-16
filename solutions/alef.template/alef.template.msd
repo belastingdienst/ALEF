@@ -54,7 +54,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:804014de-e593-4efc-b1b2-c667769358b9:linguistics" version="0" />
     <language slang="l:b2fc4154-1657-4d74-8828-c55b57a96ecd:rapporten" version="2" />
-    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="29" />
+    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="30" />
     <language slang="l:d8af31be-1847-4d5b-8686-78e232d4e0f8:servicespraak" version="19" />
     <language slang="l:8bc962c0-cb3c-49f0-aa03-23c3bc0304b0:testspraak" version="24" />
   </languageVersions>

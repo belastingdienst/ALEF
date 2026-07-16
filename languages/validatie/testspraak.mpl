@@ -122,7 +122,7 @@
     <language slang="l:804014de-e593-4efc-b1b2-c667769358b9:linguistics" version="0" />
     <language slang="l:9a426806-963f-464e-a66c-82a7bdb9cfde:projecthygiene" version="0" />
     <language slang="l:b2fc4154-1657-4d74-8828-c55b57a96ecd:rapporten" version="2" />
-    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="29" />
+    <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="30" />
     <language slang="l:bef79dc4-9060-4318-a10a-46eb2fa0f3b1:translator" version="1" />
   </languageVersions>
   <dependencyVersions>

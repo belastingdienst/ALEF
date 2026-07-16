@@ -41,7 +41,7 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <property id="4310543135700654626" name="isMeerderVerdelers" index="3NJrC6" />
+        <property id="4310543135700654626" name="isMeerdereVerdelers" index="3NJrC6" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
         <child id="1884499077329491621" name="transactie" index="TSod8" />
         <child id="4737161987634769871" name="verdeler" index="3HMuxP" />

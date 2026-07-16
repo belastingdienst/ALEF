@@ -27,9 +27,8 @@
         <child id="6395925451733748127" name="aandeel" index="3CIERg" />
       </concept>
       <concept id="462670810444409441" name="regelspraak.structure.Verdeling" flags="ng" index="2u49r7">
-        <child id="462670810444409444" name="rest" index="2u49r2" />
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
-        <child id="462670810444409442" name="verdeelBedrag" index="2u49r4" />
+        <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
       <concept id="993564824856485635" name="regelspraak.structure.ObjectCreatie" flags="ng" index="2zbgrM" />
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
@@ -53,6 +52,10 @@
         <reference id="7647149462025448902" name="base" index="Qu8KH" />
       </concept>
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
+      <concept id="4737161987634667387" name="regelspraak.structure.Verdeler" flags="ng" index="3HNPz1">
+        <child id="4737161987634667417" name="teVerdelen" index="3HNPwz" />
+        <child id="2967131778623975555" name="rest" index="3VyISy" />
+      </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
     </language>
     <language id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak">
@@ -321,22 +324,6 @@
       <node concept="1wO7pt" id="AkS0UnUIjF" role="kiesI">
         <node concept="2boe1W" id="AkS0UnUIjG" role="1wO7pp">
           <node concept="2u49r7" id="AkS0UnUIkJ" role="1wO7i6">
-            <node concept="3_mHL5" id="AkS0UnUIkL" role="2u49r4">
-              <node concept="c2t0s" id="AkS0UnUIll" role="eaaoM">
-                <ref role="Qu8KH" node="AkS0UnUHwj" resolve="te verdelen bedrag" />
-              </node>
-              <node concept="3_kdyS" id="AkS0UnUIlk" role="pQQuc">
-                <ref role="Qu8KH" node="AkS0UnUHvZ" resolve="Verdeler" />
-              </node>
-            </node>
-            <node concept="3_mHL5" id="AkS0UnUIkN" role="2u49r2">
-              <node concept="c2t0s" id="AkS0UnUInm" role="eaaoM">
-                <ref role="Qu8KH" node="AkS0UnUHx6" resolve="restant" />
-              </node>
-              <node concept="3yS1BT" id="AkS0UnUInl" role="pQQuc">
-                <ref role="3yS1Ki" node="AkS0UnUIlk" resolve="Verdeler" />
-              </node>
-            </node>
             <node concept="2u49r1" id="AkS0UnUIkP" role="2u49r3">
               <node concept="3_mHL5" id="AkS0UnUIkR" role="3CIERg">
                 <node concept="c2t0s" id="AkS0UnUIm9" role="eaaoM">
@@ -347,11 +334,29 @@
                     <ref role="Qu8KH" node="AkS0UnUHzr" resolve="ontvanger" />
                   </node>
                   <node concept="3yS1BT" id="AkS0UnUIm8" role="pQQuc">
-                    <ref role="3yS1Ki" node="AkS0UnUIlk" resolve="Verdeler" />
+                    <ref role="3yS1Ki" node="1EQIU0Ka4AF" resolve="Verdeler" />
                   </node>
                 </node>
               </node>
               <node concept="23ogZD" id="AkS0UnUIkT" role="23ogZ$" />
+            </node>
+            <node concept="3HNPz1" id="1EQIU0Ka4AJ" role="3HMuxP">
+              <node concept="3_mHL5" id="1EQIU0Ka4AD" role="3HNPwz">
+                <node concept="c2t0s" id="1EQIU0Ka4AE" role="eaaoM">
+                  <ref role="Qu8KH" node="AkS0UnUHwj" resolve="te verdelen bedrag" />
+                </node>
+                <node concept="3_kdyS" id="1EQIU0Ka4AF" role="pQQuc">
+                  <ref role="Qu8KH" node="AkS0UnUHvZ" resolve="Verdeler" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="1EQIU0Ka4AG" role="3VyISy">
+                <node concept="c2t0s" id="1EQIU0Ka4AH" role="eaaoM">
+                  <ref role="Qu8KH" node="AkS0UnUHx6" resolve="restant" />
+                </node>
+                <node concept="3yS1BT" id="1EQIU0Ka4AK" role="pQQuc">
+                  <ref role="3yS1Ki" node="1EQIU0Ka4AF" resolve="Verdeler" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

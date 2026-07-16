@@ -2,7 +2,7 @@
 <model ref="r:18583109-7585-4647-bde1-528806803ccc(ALEF_Testen.ALEF4525@tests)">
   <persistence version="9" />
   <languages>
-    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
+    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
   </languages>
