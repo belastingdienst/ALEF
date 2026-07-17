@@ -44,6 +44,7 @@
     <import index="o99v" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="vuki" ref="r:9d8fdbe6-7bc1-4b58-82df-212f1d42dd13(beslistabelspraak.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1083,6 +1084,28 @@
       <node concept="16NfWO" id="6sAIOTOGjTd" role="upBLP">
         <node concept="2h3Zct" id="6sAIOTOGkpX" role="16NeZM">
           <property role="2h4Kg1" value="gedurende de gehele ..." />
+        </node>
+      </node>
+      <node concept="16NL3D" id="428QPkvVzTB" role="upBLP">
+        <node concept="16Na2f" id="428QPkvVzTD" role="16NL3A">
+          <node concept="3clFbS" id="428QPkvVzTF" role="2VODD2">
+            <node concept="3clFbF" id="428QPkvV$rP" role="3cqZAp">
+              <node concept="2OqwBi" id="428QPkw6r$7" role="3clFbG">
+                <node concept="2OqwBi" id="428QPkw6r$8" role="2Oq$k0">
+                  <node concept="1yR$tW" id="428QPkw6r$9" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="428QPkw6r$a" role="2OqNvi">
+                    <node concept="1xMEDy" id="428QPkw6r$b" role="1xVPHs">
+                      <node concept="chp4Y" id="428QPkw6r$c" role="ri$Ld">
+                        <ref role="cht4Q" to="vuki:42_2FftMOq6" resolve="BeslistabelVersieHierarchisch" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="428QPkw6r$d" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="428QPkw6r$e" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

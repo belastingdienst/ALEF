@@ -6319,8 +6319,8 @@
             </node>
             <node concept="liA8E" id="91VjOM72Ib" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
-              <node concept="3VsKOn" id="91VjOM7376" role="37wK5m">
-                <ref role="3VsUkX" to="qrag:6GK5Pk23yp$" resolve="BeslistabelDesugaring" />
+              <node concept="3VsKOn" id="428QPkwd0S6" role="37wK5m">
+                <ref role="3VsUkX" to="qrag:7wE_vwchcUE" resolve="BtHierarchicalDesugarer" />
               </node>
               <node concept="10Nm6u" id="91VjOM73ct" role="37wK5m" />
             </node>
