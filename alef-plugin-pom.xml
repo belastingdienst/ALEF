@@ -18,11 +18,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<branch>feature/${project.version}</branch>
-		<jenkins.buildnumber>1</jenkins.buildnumber>
 
-		<mps.version>2025.1</mps.version>
-		<extensions.version>2025.1.3226.9d3d593</extensions.version>
-		<jbr.version>21.0.6-b631.39</jbr.version>
+		<mps.version>2026.1.2</mps.version>
+		<extensions.version>2026.1.3712.45fabf4</extensions.version>
+		<jbr.version>25.0.4.1-b329.142</jbr.version>
 		<jbr.type>tgz</jbr.type>
 		<jbr.classifier/>
 		<java.home/>
@@ -42,13 +41,6 @@
 			<artifactId>jbr</artifactId>
 			<version>${jbr.version}</version>
 			<classifier>windows-x64</classifier>
-			<type>tgz</type>
-		</dependency>
-		<dependency>
-			<groupId>com.jetbrains.jdk</groupId>
-			<artifactId>jbr</artifactId>
-			<version>${jbr.version}</version>
-			<classifier>osx-x64</classifier>
 			<type>tgz</type>
 		</dependency>
 		<dependency>
@@ -213,17 +205,6 @@
                                 	</outputDirectory>
                                 	<destFileName>jbr-linux-x64.tar.gz</destFileName>
                                 </artifactItem>
-                                <artifactItem>
-									<groupId>com.jetbrains.jdk</groupId>
-									<artifactId>jbr</artifactId>
-									<version>${jbr.version}</version>
-									<classifier>osx-x64</classifier>
-									<type>tgz</type>
-									<outputDirectory>
-									   ${project.basedir}/build/jbrs
-									</outputDirectory>
-                                	<destFileName>jbr-osx-x64.tar.gz</destFileName>
-                                </artifactItem>
 								<artifactItem>
 									<groupId>com.jetbrains.jdk</groupId>
 									<artifactId>jbr</artifactId>
@@ -295,6 +276,7 @@
 									</fileMappers>
 									<outputDirectory>${project.build.directory}/extra-mps-plugins</outputDirectory>
 									<destFileName>extensions-${extensions.version}.zip</destFileName>
+									<includes>de.itemis.mps.extensions/de.itemis.mps.grammarcells/,de.itemis.mps.extensions/com.mbeddr.mpsutil.editor.querylist/,de.itemis.mps.extensions/de.slisson.mps.hacks/,de.itemis.mps.extensions/mps-richtext/,de.itemis.mps.extensions/mps-multiline/,de.itemis.mps.extensions/de-itemis-mps-selection/,de.itemis.mps.extensions/de.itemis.mps.celllayout/,de.itemis.mps.extensions/de.itemis.mps.extensions.build/,de.itemis.mps.extensions/mps-apache-commons/,de.itemis.mps.extensions/mps-math-editor/,de.itemis.mps.extensions/de.itemis.mps.editor.diagram/,de.itemis.mps.extensions/de.itemis.mps.editor.widgets/,de.itemis.mps.extensions/de.slisson.mps.conditionalEditor/,de.itemis.mps.extensions/de.itemis.stubs.batik/,de.itemis.mps.extensions/de.itemis.stubs.xml/,de.itemis.mps.extensions/de.q60.mps.collections.libs/,de.itemis.mps.extensions/de.itemis.mps.utils/,de.itemis.mps.extensions/mps-tables/,de.itemis.mps.extensions/com.dslfoundry.plaintextgen/,de.itemis.mps.extensions/de.itemis.mps.compare/,de.itemis.mps.extensions/MPS.Kotlin/,de.itemis.mps.extensions/sbom.*,de.itemis.mps.extensions/stubs.jar</includes>
 								</artifactItem>
 								</artifactItems>
 						</configuration>
