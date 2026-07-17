@@ -18,11 +18,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<branch>feature/${project.version}</branch>
-		<jenkins.buildnumber>1</jenkins.buildnumber>
 
-		<mps.version>2025.1</mps.version>
-		<extensions.version>2025.1.3226.9d3d593</extensions.version>
-		<jbr.version>21.0.6-b631.39</jbr.version>
+		<mps.version>2026.1</mps.version>
+		<extensions.version>2026.1.3653.4220137</extensions.version>
+		<jbr.version>25.0.3-b329.124</jbr.version>
 		<jbr.type>tgz</jbr.type>
 		<jbr.classifier/>
 		<java.home/>
