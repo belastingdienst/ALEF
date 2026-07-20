@@ -54,7 +54,6 @@
     <dependency reexport="false">c40e126b-a0e9-42bb-b903-9b5fd0b050d2(gegevensspraak.tijd)</dependency>
     <dependency reexport="false">4a6bb6ab-de63-4605-8a60-a06fda7893a8(alef.tools)</dependency>
     <dependency reexport="false">278fe5e6-6f2d-4073-b394-c758ba9a9f1a(testUtil)</dependency>
-    <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
     <dependency reexport="false">d65f6f0b-d425-4cdb-985f-4194ffdf3ab2(json)</dependency>
     <dependency reexport="false">8540ea77-3009-49fb-92e7-1481dee45b14(migrationUtils)</dependency>
     <dependency reexport="false">55271945-c9a9-4148-8b1b-b255336170d6(immutable)</dependency>
