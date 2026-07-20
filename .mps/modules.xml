@@ -80,6 +80,7 @@
       <modulePath path="$PROJECT_DIR$/plugins/linguistics/devkits/linguistics.devkit/linguistics.devkit.devkit" folder="plugins.linguistics" />
       <modulePath path="$PROJECT_DIR$/plugins/linguistics/languages/linguistics/linguistics.mpl" folder="plugins.linguistics" />
       <modulePath path="$PROJECT_DIR$/plugins/linguistics/solutions/linguistics.build/linguistics.build.msd" folder="plugins.linguistics" />
+      <modulePath path="$PROJECT_DIR$/plugins/linguistics/solutions/linguistics.editor/linguistics.editor.msd" folder="plugins.linguistics" />
       <modulePath path="$PROJECT_DIR$/plugins/linguistics/solutions/linguistics.genplan/linguistics.genplan.msd" folder="plugins.linguistics" />
       <modulePath path="$PROJECT_DIR$/plugins/linguistics/solutions/linguistics.plugin/linguistics.plugin.msd" folder="plugins.linguistics" />
       <modulePath path="$PROJECT_DIR$/plugins/linguistics/solutions/linguistics.runtime/linguistics.runtime.msd" folder="plugins.linguistics" />
