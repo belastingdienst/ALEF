@@ -959,7 +959,7 @@
                         </node>
                       </node>
                       <node concept="2pIpSj" id="38NzMl4ITrR" role="2pJxcM">
-                        <ref role="2pIpSl" to="3ic2:7rG9cksmX5B" resolve="dimensies" />
+                        <ref role="2pIpSl" to="3ic2:7rG9cksmX5B" resolve="dimensieRefs" />
                         <node concept="36be1Y" id="38NzMl4ITvI" role="28nt2d" />
                       </node>
                     </node>
