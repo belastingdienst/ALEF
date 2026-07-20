@@ -38,7 +38,6 @@
         <dependency reexport="false">09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)</dependency>
         <dependency reexport="false">072863a9-307a-4d61-8cad-0470b3593e3c(gegevensNaarHtml#01)</dependency>
         <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
-        <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:c62c1a4f-1c0f-4d46-b67d-d0e1931f6000:html" version="0" />
