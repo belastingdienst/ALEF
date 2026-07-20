@@ -14577,7 +14577,7 @@
         <ref role="1k5W1q" node="7MZNd$UeFXk" resolve="VasteTekst" />
       </node>
       <node concept="3F2HdR" id="6A3WvmdzVw$" role="3EZMnx">
-        <ref role="1NtTu8" to="3ic2:7rG9cksmX5B" resolve="dimensies" />
+        <ref role="1NtTu8" to="3ic2:7rG9cksmX5B" resolve="dimensieRefs" />
         <node concept="l2Vlx" id="6A3WvmdzVw_" role="2czzBx" />
       </node>
     </node>

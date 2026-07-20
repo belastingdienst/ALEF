@@ -2709,7 +2709,7 @@
                             <ref role="1M0zk5" node="7rG9cksyytX" resolve="gdt" />
                           </node>
                           <node concept="3Tsc0h" id="7rG9cksyLQk" role="2OqNvi">
-                            <ref role="3TtcxE" to="3ic2:7rG9cksmX5B" resolve="dimensies" />
+                            <ref role="3TtcxE" to="3ic2:7rG9cksmX5B" resolve="dimensieRefs" />
                           </node>
                         </node>
                       </node>
