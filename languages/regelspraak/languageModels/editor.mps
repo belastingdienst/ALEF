@@ -69,6 +69,8 @@
     <import index="gdpt" ref="r:27fc9218-2a6a-48c7-b6cf-3d630d9aaacd(com.mbeddr.mpsutil.grammarcells.runtime.menu)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="9pyn" ref="r:b4728f43-50dc-4d2d-b79b-48aa1c02e86b(text)" />
+    <import index="dt2v" ref="r:6fac4bc3-edc5-4057-8019-e0aca801f64f(linguistics.runtime)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -331,6 +333,9 @@
         <child id="414384289274424750" name="condition" index="3ft5RY" />
       </concept>
       <concept id="414384289274418284" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Condition" flags="ig" index="3ft6gW" />
+      <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
+        <child id="1176475119347" name="componentProvider" index="3FoqZy" />
+      </concept>
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -451,6 +456,7 @@
         <child id="7279578193766667847" name="removeHints" index="78xub" />
         <child id="1182233390675" name="filter" index="12AuX0" />
       </concept>
+      <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
       <concept id="4233361609415247331" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Parameter" flags="ig" index="1GhMSn" />
       <concept id="4233361609415240997" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Parameterized" flags="ng" index="1GhOrh">
         <child id="4233361609415240998" name="part" index="1GhOri" />
@@ -25387,8 +25393,37 @@
   <node concept="PKFIW" id="5qOJsDPAZeM">
     <property role="TrG5h" value="RegelStatement" />
     <ref role="1XX52x" to="m234:1ibElXOmXW2" resolve="RegelVersie" />
-    <node concept="3F1sOY" id="5qOJsDPAZeN" role="2wV5jI">
-      <ref role="1NtTu8" to="m234:1ibElXOmXW6" resolve="statement" />
+    <node concept="3EZMnI" id="2i34ocLn9tV" role="2wV5jI">
+      <node concept="2iRkQZ" id="2i34ocLn9tW" role="2iSdaV" />
+      <node concept="3F1sOY" id="5qOJsDPAZeN" role="3EZMnx">
+        <ref role="1NtTu8" to="m234:1ibElXOmXW6" resolve="statement" />
+      </node>
+      <node concept="3F0ifn" id="4muIW6$Fl9G" role="3EZMnx" />
+      <node concept="3gTLQM" id="2i34ocLn9vk" role="3EZMnx">
+        <node concept="3Fmcul" id="2i34ocLn9vm" role="3FoqZy">
+          <node concept="3clFbS" id="2i34ocLn9vo" role="2VODD2">
+            <node concept="3clFbF" id="2i34ocLn9Hw" role="3cqZAp">
+              <node concept="2ShNRf" id="2i34ocLn9Hu" role="3clFbG">
+                <node concept="1pGfFk" id="2i34ocLnx9I" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="9pyn:4k9sohB9qiE" resolve="JSentenceEditor" />
+                  <node concept="2OqwBi" id="4muIW6$u8s5" role="37wK5m">
+                    <node concept="pncrf" id="2i34ocLnx9L" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4muIW6$uaiJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="m234:1ibElXOmXW6" resolve="statement" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2i34ocLnNwq" role="37wK5m">
+                    <ref role="37wK5l" to="u5to:2i34ocLnLmr" resolve="getRenderer" />
+                    <ref role="1Pybhc" to="u5to:3bS5kyoYM09" resolve="RegelspraakRenderer" />
+                  </node>
+                  <node concept="1Q80Hx" id="2i34ocLnyph" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1PE4EZ" id="5qOJsDPB48$" role="1PM95z">
       <ref role="1PE7su" node="5qOJsDPAJ9b" resolve="RegelBody" />

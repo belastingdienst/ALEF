@@ -56,6 +56,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">55271945-c9a9-4148-8b1b-b255336170d6(immutable)</dependency>
     <dependency reexport="false">9a426806-963f-464e-a66c-82a7bdb9cfde(projecthygiene)</dependency>
+    <dependency reexport="false">72678fd4-f240-4c53-90e8-885de83e12e2(linguistics.editor.swing)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e29c7933-87c7-4a8b-be3d-7b67dc45c337:bl.layout" version="0" />
@@ -195,6 +196,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)" version="0" />
     <module reference="804014de-e593-4efc-b1b2-c667769358b9(linguistics)" version="0" />
+    <module reference="72678fd4-f240-4c53-90e8-885de83e12e2(linguistics.editor.swing)" version="0" />
     <module reference="f8bf3c8d-ee85-439f-86d4-91cc941f4852(linguistics.genplan)" version="0" />
     <module reference="c31f3da0-0042-4ad5-b4fc-2622762fa0fe(linguistics.runtime)" version="0" />
     <module reference="27ef20b0-dcf2-46c4-9164-c9d9de282952(mpsUtils)" version="0" />

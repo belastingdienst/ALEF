@@ -12986,6 +12986,21 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3bS5kyoZ5km" role="jymVt" />
+    <node concept="2YIFZL" id="2i34ocLnLmr" role="jymVt">
+      <property role="TrG5h" value="getRenderer" />
+      <node concept="3clFbS" id="2i34ocLnLmu" role="3clF47">
+        <node concept="3cpWs6" id="2i34ocLnLGR" role="3cqZAp">
+          <node concept="37vLTw" id="2i34ocLnLRV" role="3cqZAk">
+            <ref role="3cqZAo" node="3bS5kyoYM4g" resolve="renderer" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2i34ocLnL8p" role="1B3o_S" />
+      <node concept="3uibUv" id="2i34ocLnMsP" role="3clF45">
+        <ref role="3uigEE" to="dt2v:4FY5JwuSuV6" resolve="IRenderer" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2i34ocLnM2A" role="jymVt" />
     <node concept="2YIFZL" id="3bS5kyoYM2i" role="jymVt">
       <property role="TrG5h" value="render" />
       <node concept="3clFbS" id="3bS5kyoYM2l" role="3clF47">
