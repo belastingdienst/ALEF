@@ -78,8 +78,6 @@
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="jgyw" ref="r:3f2425bc-6eca-4e4c-b6d9-dbf5333694ad(testUtil.testruns)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
-    <import index="rcv5" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.ide.util.treeView(MPS.ThirdParty/)" />
-    <import index="jkm4" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.openapi.ui(MPS.ThirdParty/)" />
     <import index="3fkn" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileChooser(MPS.IDEA/)" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="ctzw" ref="r:74f223ba-ead2-455d-852d-25e8cdeee4d3(json.structure)" />
@@ -91,6 +89,8 @@
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="mk90" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
+    <import index="rcv5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util.treeView(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -153,6 +153,9 @@
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
@@ -11142,14 +11145,14 @@
               <ref role="ehGHo" to="ku5w:4vEb97MXvUE" resolve="Xsd" />
             </node>
             <node concept="2OqwBi" id="1xXjEZkrhl6" role="33vP2m">
-              <node concept="2qgKlT" id="1xXjEZkrhl7" role="2OqNvi">
+              <node concept="3zqWPK" id="7TuSft9HwgT" role="2OqNvi">
                 <ref role="37wK5l" to="txb8:4vEb97MLygs" resolve="getRegisteredXsd" />
               </node>
               <node concept="2OqwBi" id="1xXjEZkrhl8" role="2Oq$k0">
                 <node concept="37vLTw" id="1xXjEZkrhl9" role="2Oq$k0">
                   <ref role="3cqZAo" node="1xXjEZkrhkY" resolve="entrypoint" />
                 </node>
-                <node concept="2qgKlT" id="1xXjEZkrhla" role="2OqNvi">
+                <node concept="3zqWPK" id="7TuSft9HwgV" role="2OqNvi">
                   <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
                 </node>
               </node>

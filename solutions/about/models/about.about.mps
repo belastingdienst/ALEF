@@ -27,6 +27,7 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="l5y2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.scale(MPS.IDEA/)" />
+    <import index="vuqn" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.mac(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2686,9 +2687,9 @@
               <ref role="37wK5l" to="qkt:~Presentation.setEnabledAndVisible(boolean)" resolve="setEnabledAndVisible" />
               <node concept="22lmx$" id="6OmmfoGfGaP" role="37wK5m">
                 <node concept="3fqX7Q" id="6OmmfoGfGaQ" role="3uHU7B">
-                  <node concept="10M0yZ" id="6OmmfoGfGaR" role="3fr31v">
-                    <ref role="1PxDUh" to="zn9m:~SystemInfo" resolve="SystemInfo" />
-                    <ref role="3cqZAo" to="zn9m:~SystemInfo.isMacSystemMenu" resolve="isMacSystemMenu" />
+                  <node concept="10M0yZ" id="4yTkyVDuHmG" role="3fr31v">
+                    <ref role="3cqZAo" to="vuqn:~MacMenuSettings.isSystemMenu" resolve="isSystemMenu" />
+                    <ref role="1PxDUh" to="vuqn:~MacMenuSettings" resolve="MacMenuSettings" />
                   </node>
                 </node>
                 <node concept="3fqX7Q" id="6OmmfoGfGaS" role="3uHU7w">
