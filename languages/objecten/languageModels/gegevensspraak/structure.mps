@@ -1396,7 +1396,7 @@
     <node concept="1TJgyj" id="7rG9cksmX5B" role="1TKVEi">
       <property role="IQ2ns" value="8569264619982147943" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dimensies" />
+      <property role="20kJfa" value="dimensieRefs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7rG9cksmX5x" resolve="DimensieRef" />
     </node>
