@@ -1565,7 +1565,7 @@
       <ref role="2oHhyl" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
     </node>
     <node concept="2oHgup" id="4foijzrww2X" role="2oHhQ2">
-      <property role="2oHhkI" value="tijdstippen" />
+      <property role="2oHhkI" value="nanoseconden" />
       <ref role="2oHhyl" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
     </node>
   </node>

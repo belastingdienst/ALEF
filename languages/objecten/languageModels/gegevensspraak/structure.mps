@@ -1135,7 +1135,7 @@
     </node>
     <node concept="25R33" id="4WetKT2PyUx" role="25R1y">
       <property role="TrG5h" value="TIJDSTIP" />
-      <property role="1L1pqM" value="tijdstip" />
+      <property role="1L1pqM" value="nanoseconde" />
       <property role="3tVfz5" value="3122098214252894641" />
     </node>
     <node concept="25R33" id="4WetKT2PyUw" role="25R1y">
