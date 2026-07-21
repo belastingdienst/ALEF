@@ -25,6 +25,7 @@
     <dependency reexport="false">190f6e5e-e2d6-460d-85ec-d24ccf46d846(nodeUpdater)</dependency>
     <dependency reexport="false">8402ec3b-cbf9-4907-b838-49984a499aaf(alef.template)</dependency>
     <dependency reexport="false">707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)</dependency>
+    <dependency reexport="false">f21369f7-7e7f-4a03-a372-565160d29d2b(merlinBaseExt)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3:beslistabelspraak" version="2" />
@@ -121,6 +122,7 @@
     <module reference="804014de-e593-4efc-b1b2-c667769358b9(linguistics)" version="0" />
     <module reference="c31f3da0-0042-4ad5-b4fc-2622762fa0fe(linguistics.runtime)" version="0" />
     <module reference="1c5e9ad5-77a4-4ada-868f-9454fba4d4c1(merlin.runtime)" version="0" />
+    <module reference="f21369f7-7e7f-4a03-a372-565160d29d2b(merlinBaseExt)" version="0" />
     <module reference="190f6e5e-e2d6-460d-85ec-d24ccf46d846(nodeUpdater)" version="0" />
     <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
     <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />

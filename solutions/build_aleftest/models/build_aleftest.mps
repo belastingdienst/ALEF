@@ -392,6 +392,11 @@
             <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4x17N9hgEWf" role="3bR37C">
+          <node concept="3bR9La" id="4x17N9hgEWg" role="1SiIV1">
+            <ref role="3bR37D" to="wu98:2Up$QHIJdZR" resolve="merlinBaseExt" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1wpLHGhY5kR" role="2G$12L">
         <property role="TrG5h" value="Beslistabellen_Test" />
