@@ -373,7 +373,7 @@
     <property role="2R2JXj" value="alf" />
     <property role="2R2JWx" value="toka3356" />
     <property role="1CIKbG" value="https://example.org/Sd__alef3356" />
-    <property role="3jS_BH" value="http://toka3356.belastingdienst.nl" />
+    <property role="3jS_BH" value="http://toka3356.example.org" />
     <property role="1CIKbk" value="rssd_alef3356" />
     <node concept="3AW6rv" id="40sycsKs5a2" role="21XpMX">
       <node concept="THod0" id="40sycsKs5as" role="3AW66m" />
