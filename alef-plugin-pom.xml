@@ -484,6 +484,8 @@
 							<arguments>
 								<argument>-jar</argument>
 								<argument>build/artifacts/alef-plugin/Alef/project-build/alefProjectBuild.jar</argument>
+								<argument>--log</argument>
+								<argument>logs/services-build.log</argument>
 								<argument>service</argument>
 							</arguments>
 						</configuration>
