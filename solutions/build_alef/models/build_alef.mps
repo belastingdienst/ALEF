@@ -14168,6 +14168,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7sYf6Nddg5C" role="3bR31x">
+          <node concept="3LXTmp" id="7sYf6Nddg5D" role="3rtmxm">
+            <node concept="398BVA" id="7sYf6Nddg5E" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="7sYf6Nddg5F" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7sYf6Nddg5G" role="2Ry0An">
+                  <property role="2Ry0Am" value="linguistic.editor" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7sYf6Nddg5I" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2i$QD9l9T_d" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -15363,18 +15379,18 @@
           <property role="2Ry0Am" value="alef.ico" />
         </node>
       </node>
-      <node concept="55IIr" id="5etUpQSoVZL" role="2EqU2s">
-        <node concept="2Ry0Ak" id="5etUpQSoVZM" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="5etUpQSoVZN" role="2Ry0An">
-            <property role="2Ry0Am" value="splash.png" />
-          </node>
-        </node>
-      </node>
       <node concept="55IIr" id="5etUpQSoVdh" role="2EqU2t">
         <node concept="2Ry0Ak" id="5etUpQSoVvV" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="vtZUVBr1yn" role="2Ry0An">
+            <property role="2Ry0Am" value="splash.png" />
+          </node>
+        </node>
+      </node>
+      <node concept="55IIr" id="5etUpQSoVZL" role="2EqU2s">
+        <node concept="2Ry0Ak" id="5etUpQSoVZM" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5etUpQSoVZN" role="2Ry0An">
             <property role="2Ry0Am" value="splash.png" />
           </node>
         </node>
