@@ -171,25 +171,28 @@ public final class BigRational extends Number implements Comparable<BigRational>
     private static boolean getPowersOf2And5(BigInteger number, int[] factors) {
         int nTwo = 0;
         int nFive = 0;
-        BigInteger two = BigInteger.valueOf(2);
-        BigInteger[] divideAndRemainder;
-        while (!number.equals(BigInteger.ONE)) {
-            divideAndRemainder = number.divideAndRemainder(two);
-            if (divideAndRemainder[1].equals(BigInteger.ZERO)) {
-                nTwo++;
-                number = divideAndRemainder[0];
-            } else {
-                break;
+        if (!BigInteger.ZERO.equals(number)) {
+            number = number.abs();
+            BigInteger two = BigInteger.valueOf(2);
+            BigInteger[] divideAndRemainder;
+            while (!number.equals(BigInteger.ONE)) {
+                divideAndRemainder = number.divideAndRemainder(two);
+                if (divideAndRemainder[1].equals(BigInteger.ZERO)) {
+                    nTwo++;
+                    number = divideAndRemainder[0];
+                } else {
+                    break;
+                }
             }
-        }
-        BigInteger five = BigInteger.valueOf(5);
-        while (!number.equals(BigInteger.ONE)) {
-            divideAndRemainder = number.divideAndRemainder(five);
-            if (divideAndRemainder[1].equals(BigInteger.ZERO)) {
-                nFive++;
-                number = divideAndRemainder[0];
-            } else {
-                break;
+            BigInteger five = BigInteger.valueOf(5);
+            while (!number.equals(BigInteger.ONE)) {
+                divideAndRemainder = number.divideAndRemainder(five);
+                if (divideAndRemainder[1].equals(BigInteger.ZERO)) {
+                    nFive++;
+                    number = divideAndRemainder[0];
+                } else {
+                    break;
+                }
             }
         }
         factors[0] = nTwo;
