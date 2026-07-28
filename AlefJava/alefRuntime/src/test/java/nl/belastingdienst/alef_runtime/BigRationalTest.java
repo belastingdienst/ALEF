@@ -16,7 +16,7 @@ class BigRationalTest {
         assertFalse(value.finiteDecimals());
     }
     @ParameterizedTest
-    @ValueSource(strings = {"1/5000","13/5000","-1/5000","-13/5000"})
+    @ValueSource(strings = {"1/5000","13/5000","-1/5000","-13/5000", "0", "0.001", "1/10", "-1/10", "-123.456789"})
     void finiteDecimals_test(String input) {
         assertTrue(BigRational.valueOf(input).finiteDecimals());
     }
@@ -25,6 +25,15 @@ class BigRationalTest {
     void zeroDecimals_test() {
         BigRational value = BigRational.valueOf("32768/128");
         assertEquals(0,value.numberOfDecimals());
+        assertEquals(0,BigRational.valueOf("0").numberOfDecimals());
+        assertEquals(0,BigRational.valueOf("-42").numberOfDecimals());
+    }
+    @Test
+    void getPowersOf10InNumerator_test() {
+        assertEquals(0, BigRational.valueOf("0").getPowersOf10InNumerator());
+        assertEquals(0, BigRational.valueOf("1").getPowersOf10InNumerator());
+        assertEquals(2, BigRational.valueOf("-100").getPowersOf10InNumerator());
+        assertEquals(3, BigRational.valueOf("1000").getPowersOf10InNumerator());
     }
     @Test
     void factorTwoDecimals_test() {

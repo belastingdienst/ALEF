@@ -72,6 +72,9 @@
       </concept>
       <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
+      <concept id="1227182079811" name="jetbrains.mps.lang.test.structure.TypeKeyStatement" flags="nn" index="2TK7Tu">
+        <property id="1227184461946" name="keys" index="2TTd_B" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -4135,6 +4138,158 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="4RiI2$4vJw6">
+    <property role="TrG5h" value="EnteringZeroPercent" />
+    <property role="3YCmrE" value="ALEF froze when entering 0%" />
+    <node concept="1qefOq" id="4RiI2$4vJwn" role="25YQCW">
+      <node concept="2bQVlO" id="2ONNSf1DCcW" role="1qenE9">
+        <property role="TrG5h" value="#72" />
+        <node concept="1HSql3" id="2ONNSf1F7e2" role="1HSqhF">
+          <property role="TrG5h" value="#72" />
+          <node concept="1wO7pt" id="2ONNSf1F7e3" role="kiesI">
+            <node concept="2boe1W" id="2ONNSf1F7e4" role="1wO7pp">
+              <node concept="2boe1X" id="2ONNSf1F7e5" role="1wO7i6">
+                <node concept="3_mHL5" id="3DPnffTvxBW" role="2bokzF">
+                  <node concept="c2t0s" id="3DPnffTvxBX" role="eaaoM">
+                    <ref role="Qu8KH" to="n7la:36UHhXubQRi" resolve="saldo2" />
+                  </node>
+                  <node concept="3_kdyS" id="3DPnffTvxBV" role="pQQuc">
+                    <ref role="Qu8KH" to="n7la:2ONNSf1DC6O" resolve="Rekening" />
+                  </node>
+                </node>
+                <node concept="2QDHpF" id="6nhthjbiLJx" role="2bokzm">
+                  <node concept="3cHhmn" id="6nhthjbiM05" role="2C$i6h">
+                    <node concept="LIFWc" id="4RiI2$4vQ5O" role="lGtFl">
+                      <property role="ZRATv" value="true" />
+                      <property role="OXtK3" value="true" />
+                      <property role="p6zMq" value="0" />
+                      <property role="p6zMs" value="0" />
+                      <property role="LIFWd" value="property_waarde" />
+                    </node>
+                  </node>
+                  <node concept="1EQTEq" id="6nhthjbiLLJ" role="2C$i6l">
+                    <property role="3e6Tb2" value="100" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2ljwA5" id="2ONNSf1F7ee" role="1nvPAL" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="4RiI2$4wfXv" role="1HSqhF" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="4RiI2$4vQpr" role="LjaKd">
+      <node concept="2TK7Tu" id="4RiI2$4vQpq" role="3cqZAp">
+        <property role="2TTd_B" value="0" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="4RiI2$4w32o" role="25YQFr">
+      <node concept="2bQVlO" id="4RiI2$4w32p" role="1qenE9">
+        <property role="TrG5h" value="#72" />
+        <node concept="1HSql3" id="4RiI2$4w32q" role="1HSqhF">
+          <property role="TrG5h" value="#72" />
+          <node concept="1wO7pt" id="4RiI2$4w32r" role="kiesI">
+            <node concept="2boe1W" id="4RiI2$4w32s" role="1wO7pp">
+              <node concept="2boe1X" id="4RiI2$4w32t" role="1wO7i6">
+                <node concept="3_mHL5" id="4RiI2$4w32u" role="2bokzF">
+                  <node concept="c2t0s" id="4RiI2$4w32v" role="eaaoM">
+                    <ref role="Qu8KH" to="n7la:36UHhXubQRi" resolve="saldo2" />
+                  </node>
+                  <node concept="3_kdyS" id="4RiI2$4w32w" role="pQQuc">
+                    <ref role="Qu8KH" to="n7la:2ONNSf1DC6O" resolve="Rekening" />
+                  </node>
+                </node>
+                <node concept="2QDHpF" id="4RiI2$4w32x" role="2bokzm">
+                  <node concept="3cHhmn" id="4RiI2$4w32y" role="2C$i6h">
+                    <property role="3e6Tb2" value="0" />
+                  </node>
+                  <node concept="1EQTEq" id="4RiI2$4w32$" role="2C$i6l">
+                    <property role="3e6Tb2" value="100" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2ljwA5" id="4RiI2$4w32_" role="1nvPAL" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="4RiI2$4wfYd" role="1HSqhF" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="4RiI2$4wga5">
+    <property role="TrG5h" value="EnteringZeroComma" />
+    <property role="3YCmrE" value="ALEF froze when entering 0," />
+    <node concept="1qefOq" id="4RiI2$4wga6" role="25YQCW">
+      <node concept="2bQVlO" id="4RiI2$4wga7" role="1qenE9">
+        <property role="TrG5h" value="#64" />
+        <node concept="1HSql3" id="4RiI2$4wga8" role="1HSqhF">
+          <property role="TrG5h" value="#64" />
+          <node concept="1wO7pt" id="4RiI2$4wga9" role="kiesI">
+            <node concept="2boe1W" id="4RiI2$4wgaa" role="1wO7pp">
+              <node concept="2boe1X" id="4RiI2$4wgab" role="1wO7i6">
+                <node concept="3_mHL5" id="4RiI2$4wgac" role="2bokzF">
+                  <node concept="c2t0s" id="4RiI2$4woBV" role="eaaoM">
+                    <ref role="Qu8KH" to="n7la:2ONNSf1DC8J" resolve="saldo" />
+                  </node>
+                  <node concept="3_kdyS" id="4RiI2$4wgae" role="pQQuc">
+                    <ref role="Qu8KH" to="n7la:2ONNSf1DC6O" resolve="Rekening" />
+                  </node>
+                </node>
+                <node concept="LIFWc" id="4RiI2$4wgX8" role="lGtFl">
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                  <property role="LIFWd" value="empty_rechts" />
+                </node>
+              </node>
+            </node>
+            <node concept="2ljwA5" id="4RiI2$4wgaj" role="1nvPAL" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="4RiI2$4wgak" role="1HSqhF" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="4RiI2$4wgal" role="LjaKd">
+      <node concept="2TK7Tu" id="4RiI2$4wgam" role="3cqZAp">
+        <property role="2TTd_B" value="0" />
+      </node>
+      <node concept="2TK7Tu" id="4RiI2$4wgyT" role="3cqZAp">
+        <property role="2TTd_B" value="," />
+      </node>
+      <node concept="2TK7Tu" id="4RiI2$4wgPS" role="3cqZAp">
+        <property role="2TTd_B" value="01" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="4RiI2$4wgan" role="25YQFr">
+      <node concept="2bQVlO" id="4RiI2$4wgao" role="1qenE9">
+        <property role="TrG5h" value="#64" />
+        <node concept="1HSql3" id="4RiI2$4wgap" role="1HSqhF">
+          <property role="TrG5h" value="#64" />
+          <node concept="1wO7pt" id="4RiI2$4wgaq" role="kiesI">
+            <node concept="2boe1W" id="4RiI2$4wgar" role="1wO7pp">
+              <node concept="2boe1X" id="4RiI2$4wgas" role="1wO7i6">
+                <node concept="3_mHL5" id="4RiI2$4wgat" role="2bokzF">
+                  <node concept="c2t0s" id="4RiI2$4woCD" role="eaaoM">
+                    <ref role="Qu8KH" to="n7la:2ONNSf1DC8J" resolve="saldo" />
+                  </node>
+                  <node concept="3_kdyS" id="4RiI2$4wgav" role="pQQuc">
+                    <ref role="Qu8KH" to="n7la:2ONNSf1DC6O" resolve="Rekening" />
+                  </node>
+                </node>
+                <node concept="1EQTEq" id="4RiI2$4wgeC" role="2bokzm">
+                  <property role="3e6Tb2" value="0,01" />
+                </node>
+              </node>
+            </node>
+            <node concept="2ljwA5" id="4RiI2$4wgaz" role="1nvPAL" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="4RiI2$4wga$" role="1HSqhF" />
       </node>
     </node>
   </node>
