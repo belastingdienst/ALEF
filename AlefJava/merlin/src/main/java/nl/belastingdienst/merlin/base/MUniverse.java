@@ -1,10 +1,14 @@
 package nl.belastingdienst.merlin.base;
 
+import nl.belastingdienst.alef_runtime.LocationInfoProvider;
+import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationCollector;
+
 import java.time.LocalDateTime;
 import java.util.*;
 
 
-public class MUniverse implements IMDelegatedExecution {
+public class MUniverse implements IMDelegatedExecution, ViolationCollector {
 
     private final IMTracer tracer;
     private final int maxRecursion;
@@ -29,6 +33,8 @@ public class MUniverse implements IMDelegatedExecution {
     private Set<Class<?>> selectedRulesets;
     private boolean lazyEval = true;
     private boolean makeCreatedObjectTypesDone = false;
+    private String messageId;
+    private final List<Violation> violations = new ArrayList<>();
 
     public MUniverse(boolean lazyEval) {
         this(lazyEval, 250);
@@ -392,5 +398,22 @@ public class MUniverse implements IMDelegatedExecution {
         for (IMContext context : contexten) {
             context.initRole(role);
         }
+    }
+
+    public String getMessageId() {
+        return messageId;
+    }
+
+    public void setMessageId(String messageId) {
+        this.messageId = messageId;
+    }
+
+    @Override
+    public void add(Violation violation) {
+        this.violations.add(violation);
+    }
+
+    public List<Violation> getViolations() {
+        return this.violations;
     }
 }

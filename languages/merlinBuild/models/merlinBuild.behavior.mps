@@ -2255,6 +2255,172 @@
       <node concept="17QB3L" id="4F66EHxrHfK" role="3clF45" />
       <node concept="3Tm1VV" id="4F66EHxrHfL" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="2L0M$HhPv43" role="jymVt" />
+    <node concept="2YIFZL" id="55kDvbJtI2A" role="jymVt">
+      <property role="TrG5h" value="enumMappings" />
+      <node concept="3clFbS" id="55kDvbJtI2D" role="3clF47">
+        <node concept="Jncv_" id="55kDvbJtI2E" role="3cqZAp">
+          <ref role="JncvD" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <node concept="37vLTw" id="55kDvbJtI2F" role="JncvB">
+            <ref role="3cqZAo" node="55kDvbJtI2U" resolve="bron" />
+          </node>
+          <node concept="3clFbS" id="55kDvbJtI2G" role="Jncv$">
+            <node concept="3cpWs6" id="55kDvbJtI2H" role="3cqZAp">
+              <node concept="2OqwBi" id="55kDvbJtI2I" role="3cqZAk">
+                <node concept="2OqwBi" id="55kDvbJtI2J" role="2Oq$k0">
+                  <node concept="Jnkvi" id="55kDvbJtI2K" role="2Oq$k0">
+                    <ref role="1M0zk5" node="55kDvbJtI2O" resolve="service" />
+                  </node>
+                  <node concept="3Tsc0h" id="55kDvbJxwPP" role="2OqNvi">
+                    <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="55kDvbJtI2M" role="2OqNvi">
+                  <node concept="chp4Y" id="55kDvbJtI2N" role="v3oSu">
+                    <ref role="cht4Q" to="ku5w:659DFnwLYYb" resolve="MappedEnumTypeRef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="55kDvbJtI2O" role="JncvA">
+            <property role="TrG5h" value="service" />
+            <node concept="2jxLKc" id="55kDvbJtI2P" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="55kDvbJtI2Q" role="3cqZAp">
+          <node concept="2YIFZM" id="55kDvbJtI2R" role="3cqZAk">
+            <ref role="37wK5l" to="33ny:~Collections.emptyList()" resolve="emptyList" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="55kDvbJtI2S" role="3clF45">
+        <node concept="3Tqbb2" id="55kDvbJtI2T" role="A3Ik2">
+          <ref role="ehGHo" to="ku5w:659DFnwLYYb" resolve="MappedEnumTypeRef" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="55kDvbJtI2U" role="3clF46">
+        <property role="TrG5h" value="bron" />
+        <node concept="3Tqbb2" id="55kDvbJtI2V" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="55kDvbJtI2C" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2L0M$HhPB5P" role="jymVt" />
+    <node concept="2YIFZL" id="6YQ42ghw4tm" role="jymVt">
+      <property role="TrG5h" value="invoerBerichtTypes" />
+      <node concept="3clFbS" id="6YQ42ghw4tn" role="3clF47">
+        <node concept="Jncv_" id="6YQ42ghw4to" role="3cqZAp">
+          <ref role="JncvD" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <node concept="37vLTw" id="6YQ42ghw4tp" role="JncvB">
+            <ref role="3cqZAo" node="6YQ42ghw4tC" resolve="bron" />
+          </node>
+          <node concept="3clFbS" id="6YQ42ghw4tq" role="Jncv$">
+            <node concept="3cpWs6" id="6YQ42ghw4tr" role="3cqZAp">
+              <node concept="2OqwBi" id="6YQ42ghxCtO" role="3cqZAk">
+                <node concept="35c_gC" id="6YQ42ghw4tt" role="2Oq$k0">
+                  <ref role="35c_gD" to="ku5w:1ikyrmjHd1d" resolve="BerichtType" />
+                </node>
+                <node concept="2qgKlT" id="6YQ42ghxDCK" role="2OqNvi">
+                  <ref role="37wK5l" to="txb8:6F9D3QEpEpj" resolve="containedTypes" />
+                  <node concept="2OqwBi" id="6YQ42ghxMFb" role="37wK5m">
+                    <node concept="2OqwBi" id="6YQ42ghxFvl" role="2Oq$k0">
+                      <node concept="Jnkvi" id="6YQ42ghxEE9" role="2Oq$k0">
+                        <ref role="1M0zk5" node="6YQ42ghw4t$" resolve="service" />
+                      </node>
+                      <node concept="3Tsc0h" id="6YQ42ghxHzf" role="2OqNvi">
+                        <ref role="3TtcxE" to="ku5w:2a2AOY31f4v" resolve="entrypoints" />
+                      </node>
+                    </node>
+                    <node concept="13MTOL" id="6YQ42ghxXiq" role="2OqNvi">
+                      <ref role="13MTZf" to="ku5w:2a2AOY3pVMc" resolve="invoer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="6YQ42ghw4t$" role="JncvA">
+            <property role="TrG5h" value="service" />
+            <node concept="2jxLKc" id="6YQ42ghw4t_" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6YQ42ghw4tA" role="3cqZAp">
+          <node concept="2YIFZM" id="6YQ42ghw4tB" role="3cqZAk">
+            <ref role="37wK5l" to="33ny:~List.of()" resolve="of" />
+            <ref role="1Pybhc" to="33ny:~List" resolve="List" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6YQ42ghw4tC" role="3clF46">
+        <property role="TrG5h" value="bron" />
+        <node concept="3Tqbb2" id="6YQ42ghw4tD" role="1tU5fm" />
+      </node>
+      <node concept="A3Dl8" id="6YQ42ghw4tE" role="3clF45">
+        <node concept="3Tqbb2" id="6YQ42ghw4tF" role="A3Ik2">
+          <ref role="ehGHo" to="ku5w:1ikyrmjHd1d" resolve="BerichtType" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6YQ42ghw4tG" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="6YQ42ghw9rO" role="jymVt" />
+    <node concept="2YIFZL" id="6YQ42ghvxQL" role="jymVt">
+      <property role="TrG5h" value="uitvoerBerichtTypes" />
+      <node concept="3clFbS" id="6YQ42ghvxQM" role="3clF47">
+        <node concept="Jncv_" id="6YQ42ghvxQN" role="3cqZAp">
+          <ref role="JncvD" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <node concept="37vLTw" id="6YQ42ghvxQO" role="JncvB">
+            <ref role="3cqZAo" node="6YQ42ghvxRa" resolve="bron" />
+          </node>
+          <node concept="3clFbS" id="6YQ42ghvxQP" role="Jncv$">
+            <node concept="3cpWs6" id="6YQ42ghvxQQ" role="3cqZAp">
+              <node concept="2OqwBi" id="6YQ42ghvxQR" role="3cqZAk">
+                <node concept="35c_gC" id="6YQ42ghvxQS" role="2Oq$k0">
+                  <ref role="35c_gD" to="ku5w:1ikyrmjHd1d" resolve="BerichtType" />
+                </node>
+                <node concept="2qgKlT" id="6YQ42ghvxQT" role="2OqNvi">
+                  <ref role="37wK5l" to="txb8:6F9D3QEpEpj" resolve="containedTypes" />
+                  <node concept="2OqwBi" id="6YQ42ghvQcW" role="37wK5m">
+                    <node concept="2OqwBi" id="6YQ42ghvJdo" role="2Oq$k0">
+                      <node concept="Jnkvi" id="6YQ42ghvI5G" role="2Oq$k0">
+                        <ref role="1M0zk5" node="6YQ42ghvxR6" resolve="service" />
+                      </node>
+                      <node concept="3Tsc0h" id="6YQ42ghvLfk" role="2OqNvi">
+                        <ref role="3TtcxE" to="ku5w:2a2AOY31f4v" resolve="entrypoints" />
+                      </node>
+                    </node>
+                    <node concept="13MTOL" id="6YQ42ghvYod" role="2OqNvi">
+                      <ref role="13MTZf" to="ku5w:2a2AOY3pVMd" resolve="uitvoer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="6YQ42ghvxR6" role="JncvA">
+            <property role="TrG5h" value="service" />
+            <node concept="2jxLKc" id="6YQ42ghvxR7" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6YQ42ghvxR8" role="3cqZAp">
+          <node concept="2YIFZM" id="6YQ42ghvxR9" role="3cqZAk">
+            <ref role="37wK5l" to="33ny:~List.of()" resolve="of" />
+            <ref role="1Pybhc" to="33ny:~List" resolve="List" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6YQ42ghvxRa" role="3clF46">
+        <property role="TrG5h" value="bron" />
+        <node concept="3Tqbb2" id="6YQ42ghvxRb" role="1tU5fm" />
+      </node>
+      <node concept="A3Dl8" id="6YQ42ghvxRc" role="3clF45">
+        <node concept="3Tqbb2" id="6YQ42ghvxRd" role="A3Ik2">
+          <ref role="ehGHo" to="ku5w:1ikyrmjHd1d" resolve="BerichtType" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6YQ42ghvxRe" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2L0M$HhPvgk" role="jymVt" />
     <node concept="2tJIrI" id="6u7l4$0gIia" role="jymVt" />
     <node concept="2YIFZL" id="7Za$ScdCK_y" role="jymVt">
       <property role="TrG5h" value="isPredefined" />
