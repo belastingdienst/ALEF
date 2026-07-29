@@ -708,6 +708,23 @@
             <node concept="2iRfu4" id="6zStTJju2Zb" role="2iSdaV" />
           </node>
         </node>
+        <node concept="3EZMnI" id="4sP75nusUra" role="3EZMnx">
+          <node concept="VPM3Z" id="4sP75nusUrc" role="3F10Kt" />
+          <node concept="3F0ifn" id="4sP75nusUrg" role="3EZMnx">
+            <property role="3F0ifm" value="validatie invoer" />
+            <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
+          </node>
+          <node concept="2aMyGU" id="4sP75nvfcyL" role="3EZMnx">
+            <property role="2aYyza" value="aan" />
+            <property role="2aYyvO" value="uit" />
+            <ref role="1NtTu8" to="ku5w:4sP75nusTVq" resolve="enableValidation" />
+            <ref role="1k5W1q" to="mbb7:2RxNjHXKBDU" resolve="Naam" />
+            <node concept="3$7fVu" id="4sP75nvhIOl" role="3F10Kt">
+              <property role="3$6WeP" value="4" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="4sP75nusUrf" role="2iSdaV" />
+        </node>
         <node concept="2iRkQZ" id="6zStTJll_jW" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7GYmR1bB1CW" role="3EZMnx">
