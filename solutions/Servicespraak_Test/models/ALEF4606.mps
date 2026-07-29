@@ -132,6 +132,13 @@
       </concept>
     </language>
     <language id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak">
+      <concept id="3470082797177816366" name="servicespraak.structure.RestrictedDatatype" flags="ng" index="2OB35" />
+      <concept id="3470082797177568556" name="servicespraak.structure.PredefinedBerichtDataType" flags="ng" index="2R$z7">
+        <property id="3470082797177593129" name="predef" index="2RIz2" />
+      </concept>
+      <concept id="3470082797177561953" name="servicespraak.structure.BerichtDatatypeDefinitie" flags="ng" index="2R_qa">
+        <child id="8943333957934572437" name="base" index="2Evv_c" />
+      </concept>
       <concept id="1482961590271922253" name="servicespraak.structure.BerichtType" flags="ng" index="2785BS">
         <reference id="2657656834086768020" name="object" index="1Ig6_r" />
         <child id="1482961590271922261" name="veld" index="2785Bw" />
@@ -143,6 +150,8 @@
         <property id="8879350159213016767" name="projectnaam" index="2R2JXj" />
         <property id="235016714107005849" name="serviceNamespace" index="3jS_BH" />
         <property id="2657656834115692067" name="xsdNamespace" index="1CIKbG" />
+        <child id="7010317595068611080" name="mapping" index="21XpMX" />
+        <child id="3470082797177933968" name="datatype" index="2P2lV" />
         <child id="2486720710064795935" name="entrypoints" index="2xxADg" />
       </concept>
       <concept id="2486720710064725693" name="servicespraak.structure.Entrypoint" flags="ng" index="2xwknM">
@@ -169,6 +178,10 @@
       </concept>
       <concept id="863060001960253979" name="servicespraak.structure.DirectKenmerk" flags="ng" index="3fiAT$">
         <reference id="863060001960383705" name="kenmerk" index="3fi62A" />
+      </concept>
+      <concept id="3670915702568636606" name="servicespraak.structure.DataTypeMapping" flags="ng" index="3AW6rv">
+        <child id="8847999994590430363" name="extern" index="2KWIQ6" />
+        <child id="3670915702568638455" name="intern" index="3AW66m" />
       </concept>
       <concept id="2657656834081800124" name="servicespraak.structure.DirectInvoerAttribuut" flags="ng" index="1IH5HN" />
       <concept id="2657656834081829135" name="servicespraak.structure.DirectUitvoerAttribuut" flags="ng" index="1IHXn0" />
@@ -258,6 +271,12 @@
     <property role="2R2JWx" value="cvs" />
     <property role="3jS_BH" value="http://example.org" />
     <property role="1CIKbG" value="https://service.example.org/Alef4606" />
+    <node concept="3AW6rv" id="67OQlJcEBfD" role="21XpMX">
+      <node concept="1EDDcM" id="67OQlJcEBfP" role="3AW66m" />
+      <node concept="2R$z7" id="67OQlJcEBfY" role="2KWIQ6">
+        <property role="2RIz2" value="9VpsLQ2dhg/byte" />
+      </node>
+    </node>
     <node concept="2xwknM" id="4SL1R875q6y" role="2xxADg">
       <property role="TrG5h" value="DecisionService" />
       <property role="3EWdbH" value="rscreatievariabelenservice" />
@@ -279,6 +298,12 @@
       </node>
       <node concept="17AEQp" id="4xKWB0uLHK" role="2dhVIB">
         <ref role="17AE6y" node="4SL1R875q5M" resolve="Regels" />
+      </node>
+    </node>
+    <node concept="2OB35" id="67OQlJcEBgc" role="2P2lV">
+      <property role="TrG5h" value="sdsdsd" />
+      <node concept="2R$z7" id="67OQlJcEBgq" role="2Evv_c">
+        <property role="2RIz2" value="30CduGMXDSJ/boolean" />
       </node>
     </node>
   </node>

@@ -1,0 +1,21 @@
+package nl.belastingdienst.merlin.io.input;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class InputIdentifierTest {
+    @Test
+    public void testIsRequiredMethod() {
+        final InputIdentifier identifier1 = new InputIdentifier("test", true);
+        final InputIdentifier identifier2 = new InputIdentifier("test", false);
+        assertTrue(identifier1.isRequired());
+        assertFalse(identifier2.isRequired());
+    }
+
+    @Test
+    public void testGetFieldNameMethod() {
+        final InputIdentifier identifier1 = new InputIdentifier("test", true);
+        assertEquals("test", identifier1.getFieldName());
+    }
+}
