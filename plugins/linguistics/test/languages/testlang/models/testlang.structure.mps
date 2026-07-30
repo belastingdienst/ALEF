@@ -398,5 +398,39 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3PMxi9c$D1O">
+    <property role="EcuMT" value="4427747766018674804" />
+    <property role="TrG5h" value="LogicBinaryExpression" />
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1TJDcQ" node="3PMxi9c$E3w" resolve="LogicExpression" />
+    <node concept="1TJgyj" id="3PMxi9c$DcL" role="1TKVEi">
+      <property role="IQ2ns" value="4427747766018675505" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="left" />
+      <ref role="20lvS9" node="3PMxi9c$E3w" resolve="LogicExpression" />
+    </node>
+    <node concept="1TJgyj" id="3PMxi9c$DnI" role="1TKVEi">
+      <property role="IQ2ns" value="4427747766018676206" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="right" />
+      <ref role="20lvS9" node="3PMxi9c$E3w" resolve="LogicExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PMxi9c$DyF">
+    <property role="EcuMT" value="4427747766018676907" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="LogicLiteral" />
+    <ref role="1TJDcQ" node="3PMxi9c$E3w" resolve="LogicExpression" />
+    <node concept="PrWs8" id="3PMxi9c$F59" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PMxi9c$E3w">
+    <property role="EcuMT" value="4427747766018679008" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="LogicExpression" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

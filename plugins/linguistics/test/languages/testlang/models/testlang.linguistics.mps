@@ -8,6 +8,7 @@
   <imports>
     <import index="jcj8" ref="r:81a9f3ec-40e7-40ab-bffd-1127dd15e954(testlang.structure)" />
     <import index="13b3" ref="r:f8e53868-0790-4e4f-a87d-8c1a5ce267c2(testlang.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1360,6 +1361,34 @@
           </node>
           <node concept="HZFSw" id="24ev3chTkk_" role="3i2ZaD" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2xOZSM" id="3PMxi9c_tOz">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="2xOZSN" to="jcj8:3PMxi9c$DyF" resolve="LogicLiteral" />
+    <node concept="23GdfO" id="3PMxi9c_tO$" role="1co$Kl">
+      <node concept="2xS9Io" id="3PMxi9c_tZx" role="23GdfP">
+        <ref role="2xS9Ip" to="tpck:h0TrG11" resolve="name" />
+      </node>
+    </node>
+  </node>
+  <node concept="2xOZSM" id="3PMxi9c_uau">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="2xOZSN" to="jcj8:3PMxi9c$D1O" resolve="LogicBinaryExpression" />
+    <node concept="23GdfO" id="3PMxi9c_uav" role="1co$Kl">
+      <node concept="23Fm0F" id="3PMxi9c_uls" role="23GdfP">
+        <ref role="2xS9Ik" to="jcj8:3PMxi9c$DcL" resolve="left" />
+        <node concept="23GdfO" id="3PMxi9c_ult" role="23E8Zc" />
+        <node concept="23GdfO" id="3PMxi9c_ulu" role="23E8Z2" />
+      </node>
+      <node concept="2xS9Ii" id="3PMxi9c_uQy" role="23GdfP">
+        <property role="23G6sU" value="implies" />
+      </node>
+      <node concept="23Fm0F" id="3PMxi9c_ulx" role="23GdfP">
+        <ref role="2xS9Ik" to="jcj8:3PMxi9c$DnI" resolve="right" />
+        <node concept="23GdfO" id="3PMxi9c_uly" role="23E8Zc" />
+        <node concept="23GdfO" id="3PMxi9c_ulz" role="23E8Z2" />
       </node>
     </node>
   </node>

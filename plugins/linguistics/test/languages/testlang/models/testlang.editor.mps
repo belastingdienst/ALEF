@@ -1565,5 +1565,28 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3PMxi9c$Fr2">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="jcj8:3PMxi9c$D1O" resolve="LogicBinaryExpression" />
+    <node concept="3EZMnI" id="3PMxi9c$FA0" role="2wV5jI">
+      <node concept="3F1sOY" id="3PMxi9c$FA4" role="3EZMnx">
+        <ref role="1NtTu8" to="jcj8:3PMxi9c$DcL" resolve="left" />
+      </node>
+      <node concept="3F0ifn" id="3PMxi9c$FA9" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="3PMxi9c$FAc" role="3EZMnx">
+        <ref role="1NtTu8" to="jcj8:3PMxi9c$DnI" resolve="right" />
+      </node>
+      <node concept="l2Vlx" id="3PMxi9c$FA3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3PMxi9c$G72">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="jcj8:3PMxi9c$DyF" resolve="LogicLiteral" />
+    <node concept="3F0A7n" id="3PMxi9c$Gi0" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
 </model>
 
