@@ -11600,7 +11600,7 @@
                       </node>
                       <node concept="2YIFZM" id="1QoQagBVN7f" role="37wK5m">
                         <ref role="37wK5l" to="w5gj:1QoQagBVygf" resolve="versions" />
-                        <ref role="1Pybhc" to="w5gj:1QoQagBSuEv" resolve="RegelGroep.RegelXX" />
+                        <ref role="1Pybhc" to="w5gj:1QoQagBSuEv" resolve="RegelGroep.Regel" />
                         <node concept="1ZhdrF" id="1QoQagBVN7g" role="lGtFl">
                           <property role="2qtEX8" value="classConcept" />
                           <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937/1144433194310" />

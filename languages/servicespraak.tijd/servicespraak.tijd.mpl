@@ -155,7 +155,7 @@
     <language slang="l:b2fc4154-1657-4d74-8828-c55b57a96ecd:rapporten" version="2" />
     <language slang="l:7bbaf860-5f96-44b4-9731-6e00ae137ece:regelspraak" version="29" />
     <language slang="l:e107d4b4-25d4-42be-99db-ec5b2643464c:serviceNaarXsd" version="0" />
-    <language slang="l:d8af31be-1847-4d5b-8686-78e232d4e0f8:servicespraak" version="18" />
+    <language slang="l:d8af31be-1847-4d5b-8686-78e232d4e0f8:servicespraak" version="19" />
     <language slang="l:26c003b8-2642-44b1-8d28-63f478da851b:servicespraak.tijd" version="1" />
     <language slang="l:bef79dc4-9060-4318-a10a-46eb2fa0f3b1:translator" version="1" />
   </languageVersions>

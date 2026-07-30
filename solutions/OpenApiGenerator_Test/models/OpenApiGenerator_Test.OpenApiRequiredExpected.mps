@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d65f6f0b-d425-4cdb-985f-4194ffdf3ab2" name="json" version="0" />
-    <use id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak" version="18" />
+    <use id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak" version="19" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts" version="0" />
     <use id="65239ca4-9057-41f8-999d-97fa1a60b298" name="besturingspraak" version="2" />

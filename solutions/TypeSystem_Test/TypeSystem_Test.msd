@@ -58,7 +58,7 @@
     <language slang="l:299845ab-8a41-470d-b76f-9736f9b49925:regelspraak.tijd" version="7" />
     <language slang="l:ba4e7906-3f6b-4144-a385-91e72898fee4:serviceNaarOpenApi.tijd" version="0" />
     <language slang="l:e107d4b4-25d4-42be-99db-ec5b2643464c:serviceNaarXsd" version="0" />
-    <language slang="l:d8af31be-1847-4d5b-8686-78e232d4e0f8:servicespraak" version="18" />
+    <language slang="l:d8af31be-1847-4d5b-8686-78e232d4e0f8:servicespraak" version="19" />
     <language slang="l:26c003b8-2642-44b1-8d28-63f478da851b:servicespraak.tijd" version="1" />
     <language slang="l:4870dde3-9d34-4a2f-b423-f23a5af25166:servicetestNaarJson" version="0" />
     <language slang="l:5215575b-33d7-4f85-818c-19de6ecac80d:servicetestNaarJson.tijd" version="0" />
