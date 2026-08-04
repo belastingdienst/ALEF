@@ -328,11 +328,11 @@
     <node concept="2YIFZL" id="3s5saVVNIMA" role="jymVt">
       <property role="TrG5h" value="mavenArtifactId" />
       <node concept="3clFbS" id="3s5saVVNIMD" role="3clF47">
-        <node concept="3clFbF" id="L78gu4JDVb" role="3cqZAp">
-          <node concept="2YIFZM" id="L78gu55s_f" role="3clFbG">
-            <ref role="37wK5l" to="wvoc:L78gu554MS" resolve="unqiueJavaFilename" />
-            <ref role="1Pybhc" to="wvoc:7PqDgR_DS2Y" resolve="JavaUtil" />
-            <node concept="2OqwBi" id="L78gu55s_g" role="37wK5m">
+        <node concept="3cpWs8" id="7SZWWc_mgVz" role="3cqZAp">
+          <node concept="3cpWsn" id="7SZWWc_mgV5" role="3cpWs9">
+            <property role="TrG5h" value="prefix" />
+            <node concept="17QB3L" id="7SZWWc_mgVy" role="1tU5fm" />
+            <node concept="2OqwBi" id="L78gu55s_g" role="33vP2m">
               <node concept="2OqwBi" id="L78gu55s_h" role="2Oq$k0">
                 <node concept="37vLTw" id="L78gu55s_i" role="2Oq$k0">
                   <ref role="3cqZAo" node="3s5saVVNJYu" resolve="node" />
@@ -343,8 +343,22 @@
                 <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
               </node>
             </node>
-            <node concept="37vLTw" id="L78gu55s_l" role="37wK5m">
-              <ref role="3cqZAo" node="3s5saVVNJYu" resolve="node" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="L78gu4JDVb" role="3cqZAp">
+          <node concept="2YIFZM" id="7SZWWc_mjnn" role="3clFbG">
+            <ref role="1Pybhc" to="wvoc:7PqDgR_DS2Y" resolve="JavaUtil" />
+            <ref role="37wK5l" to="wvoc:3qwAmpfs6JS" resolve="asJavaFilename" />
+            <node concept="37vLTw" id="7SZWWc_mjno" role="37wK5m">
+              <ref role="3cqZAo" node="7SZWWc_mgV5" resolve="prefix" />
+            </node>
+            <node concept="2OqwBi" id="7SZWWc_mjnp" role="37wK5m">
+              <node concept="37vLTw" id="7SZWWc_mjnq" role="2Oq$k0">
+                <ref role="3cqZAo" node="3s5saVVNJYu" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="7SZWWc_mjnr" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
             </node>
           </node>
         </node>
