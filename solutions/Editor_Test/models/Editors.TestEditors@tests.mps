@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="24" />
   </languages>
   <imports>
     <import index="8x8p" ref="r:4f06f137-8875-46b2-95c8-a75b81fd2b97(Editor_Test.definities)" />

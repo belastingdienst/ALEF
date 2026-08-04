@@ -6,7 +6,7 @@
     <use id="bef79dc4-9060-4318-a10a-46eb2fa0f3b1" name="translator" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="08d6f877-03cc-45d3-b03c-d6f786266853" name="bronspraak" version="1" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="24" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
   </languages>
   <imports>

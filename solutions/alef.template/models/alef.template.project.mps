@@ -15,7 +15,7 @@
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="29" />
-    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="23" />
+    <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="24" />
     <use id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak" version="19" />
   </languages>
   <imports>
