@@ -64,6 +64,7 @@
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <property id="5314546615192664131" name="transient" index="1H4juY" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -72,6 +73,7 @@
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <property id="2395585628928459314" name="unordered" index="38shpt" />
+        <property id="5314546615192665377" name="transient" index="1H4jbs" />
         <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -1562,6 +1564,63 @@
     </node>
     <node concept="PrWs8" id="6lR0svjHAuC" role="PzmwI">
       <ref role="PrY4T" to="3ic2:2k62pTb3lQI" resolve="Typed" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="42JIoCnmTen">
+    <property role="EcuMT" value="4661148142100255639" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="SelectableMessageField" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="42JIoCnmVNM" role="1TKVEl">
+      <property role="IQ2nx" value="4661148142100266226" />
+      <property role="TrG5h" value="selected" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6rg900SgeUj" role="1TKVEi">
+      <property role="IQ2ns" value="7408460970386845331" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="veld" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1ikyrmjHd1n" resolve="BerichtVeld" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6TDyi7ggYgU">
+    <property role="EcuMT" value="7956040995047728186" />
+    <property role="TrG5h" value="SelectableBerichtType" />
+    <property role="19KtqR" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="berichttype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6TDyi7ggYgV" role="1TKVEi">
+      <property role="IQ2ns" value="7956040995047728187" />
+      <property role="20kJfa" value="object" />
+      <ref role="20lvS9" to="3ic2:$infi2rtPg" resolve="ObjectType" />
+    </node>
+    <node concept="1TJgyj" id="6TDyi7ggYgW" role="1TKVEi">
+      <property role="IQ2ns" value="7956040995047728188" />
+      <property role="20kJfa" value="selectedEditorField" />
+      <property role="1H4jbs" value="true" />
+      <ref role="20lvS9" node="1ikyrmjHd1n" resolve="BerichtVeld" />
+    </node>
+    <node concept="1TJgyj" id="6TDyi7ggYgZ" role="1TKVEi">
+      <property role="IQ2ns" value="7956040995047728191" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectableField" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="1H4jbs" value="true" />
+      <ref role="20lvS9" node="42JIoCnmTen" resolve="SelectableMessageField" />
+    </node>
+    <node concept="1TJgyi" id="6TDyi7ggYh8" role="1TKVEl">
+      <property role="IQ2nx" value="7956040995047728200" />
+      <property role="TrG5h" value="search" />
+      <property role="1H4juY" value="true" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6TDyi7ggYha" role="1TKVEl">
+      <property role="IQ2nx" value="7956040995047728202" />
+      <property role="TrG5h" value="deselectAll" />
+      <property role="1H4juY" value="true" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
