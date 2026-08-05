@@ -110,7 +110,7 @@ public class ServiceTestCollectorTests {
 
     @Test
     public void pathTraversalServiceNameTest() throws IOException {
-        final String serviceName = Path.of("..", "test-service").toString().replace("\\", "\\\\");
+        final String serviceName = Path.of("..", "test-service").toString();
 
         final Path tmpFolder = createTempFolder();
         final Path rootFolder = tmpFolder.resolve(Path.of("root"));
@@ -255,7 +255,7 @@ public class ServiceTestCollectorTests {
         StringBuilder content = new StringBuilder();
         content.append("{\"testSet\": \"")
                 .append(testSet).append("\", \"service\": \"")
-                .append(service).append("\", ");
+                .append(service.replace("\\", "\\\\")).append("\", ");
         buildFileField(serviceInfo, content, "xsd", xsd);
         buildMessages(serviceInfo, content, "soap", soapInput, soapExpected);
         buildMessages(serviceInfo, content, "rest", restInput, restExpected);
@@ -281,12 +281,8 @@ public class ServiceTestCollectorTests {
         content.append("\"").append(fieldName).append("\": \"");
         if (file != null) {
             Files.writeString(file, "empty");
-            content.append(relativePath(serviceInfo.getParent(), file));
+            content.append(serviceInfo.getParent().relativize(file).toString().replace("\\", "\\\\"));
         }
         content.append("\"");
-    }
-
-    private String relativePath(final Path basePath, final Path path) {
-        return basePath.relativize(path).toString().replace("\\", "\\\\");
     }
 }
