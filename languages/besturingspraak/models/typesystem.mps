@@ -15,6 +15,7 @@
     <import index="8l26" ref="r:788951b7-6ce7-4cdf-b16c-b6ef0e226719(gegevensspraak.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" implicit="true" />
+    <import index="wrck" ref="r:ea76656e-adc2-4c94-b937-dbef9f83e861(contexts.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -122,6 +123,9 @@
       </concept>
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
+      </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -1360,6 +1364,53 @@
     <node concept="1YaCAy" id="2vYEUgCtBAS" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="jwpy:7r0xHq41oCJ" resolve="Flow" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4605UnkRuZc">
+    <property role="TrG5h" value="check_RuleTask" />
+    <node concept="3clFbS" id="4605UnkRuZd" role="18ibNy">
+      <node concept="3clFbJ" id="4605UnkRLc0" role="3cqZAp">
+        <node concept="3clFbS" id="4605UnkRLc2" role="3clFbx">
+          <node concept="2MkqsV" id="4605UnkS2M$" role="3cqZAp">
+            <node concept="Xl_RD" id="4605UnkS2MK" role="2MkJ7o">
+              <property role="Xl_RC" value="Regelgroepen met een voorwaarde mogen alleen in regelgroepbundels" />
+            </node>
+            <node concept="1YBJjd" id="4605UnkS2Pa" role="1urrMF">
+              <ref role="1YBMHb" node="4605UnkRuZf" resolve="node" />
+            </node>
+            <node concept="2OE7Q9" id="F9v0mHIQN5" role="1urrC5">
+              <ref role="2OEe5H" to="jwpy:7r0xHq41wZ7" resolve="rule" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4605UnkSFBF" role="3clFbw">
+          <node concept="2OqwBi" id="4605UnkRVAX" role="2Oq$k0">
+            <node concept="2OqwBi" id="4605UnkRMiY" role="2Oq$k0">
+              <node concept="2qgKlT" id="4605UnkRRfD" role="2OqNvi">
+                <ref role="37wK5l" to="wrck:Jpyd_STpbS" resolve="inhoud" />
+              </node>
+              <node concept="2OqwBi" id="F9v0mHI9O6" role="2Oq$k0">
+                <node concept="1YBJjd" id="F9v0mHI9xY" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4605UnkRuZf" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="F9v0mHIbV_" role="2OqNvi">
+                  <ref role="3Tt5mk" to="jwpy:7r0xHq41wZ7" resolve="rule" />
+                </node>
+              </node>
+            </node>
+            <node concept="v3k3i" id="4605UnkSFh2" role="2OqNvi">
+              <node concept="chp4Y" id="4605UnkSFlA" role="v3oSu">
+                <ref role="cht4Q" to="m234:3RRICzLytP$" resolve="RegelgroepConditie" />
+              </node>
+            </node>
+          </node>
+          <node concept="3GX2aA" id="4605UnkSGr9" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4605UnkRuZf" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="jwpy:7r0xHq41wZ6" resolve="RuleTask" />
     </node>
   </node>
 </model>
