@@ -24360,6 +24360,7 @@
                     <ref role="cht4Q" to="m234:$infi2sFM8" resolve="ActieIndienVoorwaarde" />
                   </node>
                 </node>
+                <node concept="1xIGOp" id="7DiMnh32fss" role="1xVPHs" />
               </node>
             </node>
           </node>
@@ -24492,6 +24493,28 @@
               <ref role="3cqZAo" node="5J$lPUFCMpT" resolve="variabele" />
             </node>
             <node concept="3x8VRR" id="5J$lPUFCMgQ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7DiMngVLjs2" role="3cqZAp">
+          <node concept="2OqwBi" id="7DiMngVLjrZ" role="3clFbG">
+            <node concept="10M0yZ" id="7DiMngVLjs0" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7DiMngVLjs1" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="7DiMngVLmUI" role="37wK5m">
+                <node concept="2OqwBi" id="7DiMnh0FC6a" role="3uHU7w">
+                  <node concept="37vLTw" id="7DiMnh0F$p1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5J$lPUFCGQ2" resolve="zin" />
+                  </node>
+                  <node concept="2Iv5rx" id="7DiMnh0FCYc" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="7DiMngVLk8z" role="3uHU7B">
+                  <property role="Xl_RC" value="Boing! " />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3cpWs6" id="5J$lPUFCxat" role="3cqZAp">

@@ -12325,6 +12325,108 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="3RpKnA$6eSe" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="risicospraak" />
+        <property role="3LESm3" value="c19b6664-434b-4bd3-8cc4-96f3c84a09f1" />
+        <node concept="55IIr" id="3RpKnA$6eSh" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3RpKnA$6fgG" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3RpKnA$6fD7" role="2Ry0An">
+              <property role="2Ry0Am" value="risicospraak" />
+              <node concept="2Ry0Ak" id="3RpKnA$6g1y" role="2Ry0An">
+                <property role="2Ry0Am" value="risicospraak.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3RpKnA$6gMb" role="3bR37C">
+          <node concept="3bR9La" id="3RpKnA$6gMc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3RpKnA$6gMd" role="3bR37C">
+          <node concept="3bR9La" id="3RpKnA$6gMe" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3RpKnA$6gMf" role="3bR37C">
+          <node concept="3bR9La" id="3RpKnA$6gMg" role="1SiIV1">
+            <ref role="3bR37D" node="5qlw_qNL1oh" resolve="strings" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3RpKnA$6gMx" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3RpKnA$6gMy" role="1HemKq">
+            <node concept="398BVA" id="3RpKnA$6gMh" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="3RpKnA$6gMi" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3RpKnA$6gMj" role="2Ry0An">
+                  <property role="2Ry0Am" value="risicospraak" />
+                  <node concept="2Ry0Ak" id="3RpKnA$6gMk" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3RpKnA$6gMz" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3RpKnA$6gM$" role="3bR37C">
+          <node concept="1Busua" id="3RpKnA$6gM_" role="1SiIV1">
+            <ref role="1Busuk" node="4wvGeDpkGS5" resolve="regelspraak" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3RpKnA$6gMA" role="1TViLv">
+          <property role="TrG5h" value="risicospraak.generator" />
+          <property role="3LESm3" value="95ff0bfa-2de3-4908-9efe-333ae4db5c1e" />
+          <node concept="1BupzO" id="3RpKnA$6gMV" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="3RpKnA$6gMW" role="1HemKq">
+              <node concept="398BVA" id="3RpKnA$6gMB" role="3LXTmr">
+                <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+                <node concept="2Ry0Ak" id="3RpKnA$6gMC" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3RpKnA$6gMD" role="2Ry0An">
+                    <property role="2Ry0Am" value="risicospraak" />
+                    <node concept="2Ry0Ak" id="3RpKnA$6gME" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="3RpKnA$6gMF" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="3RpKnA$6gMX" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3RpKnA$6hdq" role="3bR31x">
+          <node concept="3LXTmp" id="3RpKnA$6hdr" role="3rtmxm">
+            <node concept="55IIr" id="3RpKnA$6hds" role="3LXTmr">
+              <node concept="2Ry0Ak" id="3RpKnA$6hdt" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3RpKnA$6hdu" role="2Ry0An">
+                  <property role="2Ry0Am" value="risicospraak" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3RpKnA$6hdw" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="4goxJ2eOV40" role="3989C9">
       <property role="TrG5h" value="alef-base" />

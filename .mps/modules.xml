@@ -49,6 +49,7 @@
       <modulePath path="$PROJECT_DIR$/languages/rapporten/rapporten.mpl" folder="alef.ide" />
       <modulePath path="$PROJECT_DIR$/languages/regelspraak.tijd/regelspraak.tijd.mpl" folder="alef.spraken.tijd" />
       <modulePath path="$PROJECT_DIR$/languages/regelspraak/regelspraak.mpl" folder="alef.spraken" />
+      <modulePath path="$PROJECT_DIR$/languages/risicospraak/risicospraak.mpl" folder="alef.spraken" />
       <modulePath path="$PROJECT_DIR$/languages/serviceNaarOpenApi.tijd/serviceNaarOpenApi.tijd.mpl" folder="alef.generator.service" />
       <modulePath path="$PROJECT_DIR$/languages/serviceNaarOpenApi/serviceNaarOpenApi.mpl" folder="alef.generator.service" />
       <modulePath path="$PROJECT_DIR$/languages/serviceNaarWsdl/serviceNaarWsdl.mpl" folder="alef.generator.service" />
@@ -139,6 +140,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/RegelCondities_Test/RegelCondities_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/RekenenMetDatumTijd_Test/RekenenMetDatumTijd_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/RekenkundigeFuncties_Test/RekenkundigeFuncties_Test.msd" folder="test.alef" />
+      <modulePath path="$PROJECT_DIR$/solutions/RisicoSpraak/RisicoSpraak.msd" folder="test.alef.spraken" />
       <modulePath path="$PROJECT_DIR$/solutions/Servicespraak_Test/Servicespraak_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/Solver_Test/Solver_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/Test_Spraken/Test_Spraken.msd" folder="test.alef" />
