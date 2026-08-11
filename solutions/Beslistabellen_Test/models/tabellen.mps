@@ -71,6 +71,7 @@
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
       </concept>
+      <concept id="6717268411822268012" name="regelspraak.structure.PercentageVanExpressie" flags="ng" index="2QDHpF" />
       <concept id="5696347358893285502" name="regelspraak.structure.ISelectie" flags="ngI" index="137dR0">
         <child id="6774523643279660910" name="selector" index="eaaoM" />
         <child id="9009487889885775372" name="object" index="pQQuc" />
@@ -4751,6 +4752,241 @@
     <node concept="3WogBB" id="4xKWB0uM2k" role="vfxHU">
       <node concept="17AEQp" id="4xKWB0uM2j" role="3WoufU">
         <ref role="17AE6y" node="1kjk$xKv3RH" resolve="ALEF-3177" />
+      </node>
+    </node>
+  </node>
+  <node concept="2bv6Cm" id="70BIiIg6fMY">
+    <property role="TrG5h" value="Issue71" />
+    <node concept="2bvS6$" id="70BIiIg6fMZ" role="2bv6Cn">
+      <property role="TrG5h" value="Person" />
+      <node concept="2bv6ZS" id="70BIiIg6fN0" role="2bv01j">
+        <property role="TrG5h" value="payment" />
+        <property role="16Ztxt" value="true" />
+        <node concept="1EDDeX" id="70BIiIg6fN1" role="1EDDcc">
+          <property role="3GST$d" value="-1" />
+          <node concept="PwxsY" id="70BIiIg6fN2" role="PyN7z">
+            <node concept="Pwxi7" id="70BIiIg6fN3" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="70BIiIg6fSN" role="2bv01j">
+        <property role="TrG5h" value="income" />
+        <property role="16Ztxt" value="true" />
+        <node concept="1EDDeX" id="70BIiIg6fSO" role="1EDDcc">
+          <property role="3GST$d" value="2" />
+          <node concept="PwxsY" id="70BIiIg6fSP" role="PyN7z">
+            <node concept="Pwxi7" id="70BIiIg6fSQ" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="70BIiIg6fUn" role="2bv01j">
+        <property role="TrG5h" value="age" />
+        <property role="16Ztxt" value="true" />
+        <node concept="1EDDeX" id="70BIiIg6fUo" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="70BIiIg6fN4" role="2bv6Cn" />
+  </node>
+  <node concept="2bQVlO" id="70BIiIg6fZ8">
+    <property role="TrG5h" value="Issue71" />
+    <node concept="i4t92" id="70BIiIg6tWx" role="1HSqhF">
+      <property role="TrG5h" value="Table with percentage of" />
+      <node concept="2X3mv7" id="70BIiIg6tWy" role="kiesI">
+        <node concept="2X3ifB" id="70BIiIg6tWz" role="2X3ifz">
+          <node concept="3_mHL5" id="70BIiIg6tW$" role="2mKM6d">
+            <node concept="c2t0s" id="70BIiIg6tW_" role="eaaoM">
+              <ref role="Qu8KH" node="70BIiIg6fN0" resolve="payment" />
+            </node>
+            <node concept="3_kdyS" id="70BIiIg6tWA" role="pQQuc">
+              <ref role="Qu8KH" node="70BIiIg6fMZ" resolve="Person" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X3ifT" id="70BIiIg6tWB" role="2X3ifS">
+          <property role="2X3IFY" value="5brrC35IcX$/GT" />
+          <node concept="3_mHL5" id="70BIiIg6tWC" role="2oUl7d">
+            <node concept="c2t0s" id="70BIiIg6tWD" role="eaaoM">
+              <ref role="Qu8KH" node="70BIiIg6fUn" resolve="age" />
+            </node>
+            <node concept="3yS1BT" id="70BIiIg6tWE" role="pQQuc">
+              <ref role="3yS1Ki" node="70BIiIg6tWA" resolve="Person" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X3ifT" id="70BIiIg6tWF" role="2X3ifS">
+          <property role="2X3IFY" value="5brrC35IcXw/LE" />
+          <node concept="3_mHL5" id="70BIiIg6tWG" role="2oUl7d">
+            <node concept="c2t0s" id="70BIiIg6tWH" role="eaaoM">
+              <ref role="Qu8KH" node="70BIiIg6fUn" resolve="age" />
+            </node>
+            <node concept="3yS1BT" id="70BIiIg6tWI" role="pQQuc">
+              <ref role="3yS1Ki" node="70BIiIg6tWA" resolve="Person" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X3DpY" id="70BIiIg6tWJ" role="2X3ifY">
+          <node concept="2W9DTK" id="70BIiIg6tWK" role="2X3DpX">
+            <ref role="2Wjr0C" node="70BIiIg6tWB" />
+            <node concept="3DFEyr" id="70BIiIg6tWL" role="19Qu69" />
+          </node>
+          <node concept="2W9DTK" id="70BIiIg6tWM" role="2X3DpX">
+            <ref role="2Wjr0C" node="70BIiIg6tWF" />
+            <node concept="1EQTEq" id="70BIiIg6tWN" role="19Qu69">
+              <property role="3e6Tb2" value="18" />
+            </node>
+          </node>
+          <node concept="19B5yA" id="70BIiIg6tWO" role="2X3DpX">
+            <ref role="19B5yx" node="70BIiIg6tWz" />
+            <node concept="2QDHpF" id="70BIiIg6uh4" role="19Qu69">
+              <node concept="3cHhmn" id="70BIiIg6u_E" role="2C$i6h">
+                <property role="3e6Tb2" value="100" />
+              </node>
+              <node concept="3_mHL5" id="70BIiIg6tWP" role="2C$i6l">
+                <node concept="c2t0s" id="70BIiIg6tWQ" role="eaaoM">
+                  <ref role="Qu8KH" node="70BIiIg6fSN" resolve="income" />
+                </node>
+                <node concept="3yS1BT" id="70BIiIg6tWR" role="pQQuc">
+                  <ref role="3yS1Ki" node="70BIiIg6tWA" resolve="Person" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2X3DpY" id="70BIiIg6tWS" role="2X3ifY">
+          <node concept="2W9DTK" id="70BIiIg6tWT" role="2X3DpX">
+            <ref role="2Wjr0C" node="70BIiIg6tWB" />
+            <node concept="1EQTEq" id="70BIiIg6tWU" role="19Qu69">
+              <property role="3e6Tb2" value="18" />
+            </node>
+          </node>
+          <node concept="2W9DTK" id="70BIiIg6tWV" role="2X3DpX">
+            <ref role="2Wjr0C" node="70BIiIg6tWF" />
+            <node concept="1EQTEq" id="70BIiIg6tWW" role="19Qu69">
+              <property role="3e6Tb2" value="65" />
+            </node>
+          </node>
+          <node concept="19B5yA" id="70BIiIg6tWX" role="2X3DpX">
+            <ref role="19B5yx" node="70BIiIg6tWz" />
+            <node concept="2QDHpF" id="70BIiIg6uJQ" role="19Qu69">
+              <node concept="3cHhmn" id="70BIiIg6uJR" role="2C$i6h">
+                <property role="3e6Tb2" value="50" />
+              </node>
+              <node concept="3_mHL5" id="70BIiIg6uJS" role="2C$i6l">
+                <node concept="c2t0s" id="70BIiIg6uJT" role="eaaoM">
+                  <ref role="Qu8KH" node="70BIiIg6fSN" resolve="income" />
+                </node>
+                <node concept="3yS1BT" id="70BIiIg6uJU" role="pQQuc">
+                  <ref role="3yS1Ki" node="70BIiIg6tWA" resolve="Person" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2X3DpY" id="70BIiIg6tX1" role="2X3ifY">
+          <node concept="2W9DTK" id="70BIiIg6tX2" role="2X3DpX">
+            <ref role="2Wjr0C" node="70BIiIg6tWB" />
+            <node concept="1EQTEq" id="70BIiIg6tX3" role="19Qu69">
+              <property role="3e6Tb2" value="65" />
+            </node>
+          </node>
+          <node concept="2W9DTK" id="70BIiIg6tX4" role="2X3DpX">
+            <ref role="2Wjr0C" node="70BIiIg6tWF" />
+            <node concept="3DFEyr" id="70BIiIg6tX5" role="19Qu69" />
+          </node>
+          <node concept="19B5yA" id="70BIiIg6tX6" role="2X3DpX">
+            <ref role="19B5yx" node="70BIiIg6tWz" />
+            <node concept="2QDHpF" id="70BIiIg6uMO" role="19Qu69">
+              <node concept="3cHhmn" id="70BIiIg6uMP" role="2C$i6h">
+                <property role="3e6Tb2" value="10" />
+              </node>
+              <node concept="3_mHL5" id="70BIiIg6uMQ" role="2C$i6l">
+                <node concept="c2t0s" id="70BIiIg6uMR" role="eaaoM">
+                  <ref role="Qu8KH" node="70BIiIg6fSN" resolve="income" />
+                </node>
+                <node concept="3yS1BT" id="70BIiIg6uMS" role="pQQuc">
+                  <ref role="3yS1Ki" node="70BIiIg6tWA" resolve="Person" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="70BIiIg6tXa" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1uxNW$" id="70BIiIg6fZG" role="1HSqhF" />
+  </node>
+  <node concept="1rXTK1" id="1UCOV1Pw$gF">
+    <property role="TrG5h" value="Issue71" />
+    <node concept="210ffa" id="1UCOV1PwESp" role="10_$IM">
+      <property role="TrG5h" value="001" />
+      <node concept="4OhPC" id="1UCOV1PwIcb" role="4Ohaa">
+        <property role="TrG5h" value="P" />
+        <ref role="4OhPH" node="70BIiIg6fMZ" resolve="Person" />
+        <node concept="3_ceKt" id="1UCOV1PwONA" role="4OhPJ">
+          <ref role="3_ceKs" node="70BIiIg6fUn" resolve="age" />
+          <node concept="1EQTEq" id="1UCOV1PwONB" role="3_ceKu">
+            <property role="3e6Tb2" value="35" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1UCOV1PwS8s" role="4OhPJ">
+          <ref role="3_ceKs" node="70BIiIg6fSN" resolve="income" />
+          <node concept="1EQTEq" id="1UCOV1PwTMH" role="3_ceKu">
+            <property role="3e6Tb2" value="12" />
+            <node concept="PwxsY" id="1UCOV1PwYR9" role="1jdwn1">
+              <node concept="Pwxi7" id="1UCOV1PwYR8" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="1UCOV1PwESq" role="4Ohb1">
+        <ref role="4Oh8G" node="70BIiIg6fMZ" resolve="Person" />
+        <ref role="3teO_M" node="1UCOV1PwIcb" resolve="P" />
+        <node concept="3mzBic" id="1UCOV1PwXam" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="70BIiIg6fN0" resolve="payment" />
+          <node concept="1EQTEq" id="1UCOV1PwXao" role="3mzBi6">
+            <property role="3e6Tb2" value="6" />
+            <node concept="PwxsY" id="1UCOV1Px2gs" role="1jdwn1">
+              <node concept="Pwxi7" id="1UCOV1Px2gr" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ljwA5" id="1UCOV1Pw$gG" role="3Na4y7">
+      <node concept="2ljiaL" id="1UCOV1Pw$gH" role="2ljwA6">
+        <property role="2ljiaO" value="2026" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaM" value="1" />
+      </node>
+      <node concept="2ljiaL" id="1UCOV1Pw$gI" role="2ljwA7">
+        <property role="2ljiaO" value="2026" />
+        <property role="2ljiaN" value="12" />
+        <property role="2ljiaM" value="31" />
+      </node>
+    </node>
+    <node concept="2ljiaL" id="1UCOV1Pw$gJ" role="1lUMLE">
+      <property role="2ljiaO" value="2026" />
+      <property role="2ljiaN" value="7" />
+      <property role="2ljiaM" value="1" />
+    </node>
+    <node concept="3WogBB" id="1UCOV1PwB$A" role="vfxHU">
+      <node concept="17AEQp" id="1UCOV1PwDew" role="3WoufU">
+        <ref role="17AE6y" node="70BIiIg6fZ8" resolve="Issue71" />
       </node>
     </node>
   </node>
