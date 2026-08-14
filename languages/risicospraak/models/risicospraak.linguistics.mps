@@ -138,13 +138,16 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="2xOZSM" id="5f4fBCYDGcs">
-    <ref role="2xOZSN" to="tnkk:1VwGgOvrW_4" resolve="RisicoProfielActie" />
+    <ref role="2xOZSN" to="tnkk:1VwGgOvrW_4" resolve="RisicoProfielActie_p1" />
     <node concept="23GdfO" id="5f4fBCYDGct" role="1co$Kl">
       <node concept="23Fm0F" id="5f4fBCYDGcu" role="23GdfP">
         <ref role="2xS9Ik" to="tnkk:1VwGgOvs42c" resolve="indicator" />
@@ -160,7 +163,7 @@
     </node>
   </node>
   <node concept="2xOZSM" id="7DiMnh5om1F">
-    <ref role="2xOZSN" to="tnkk:7B1JShDoLdE" resolve="SteekProef" />
+    <ref role="2xOZSN" to="tnkk:7B1JShDoLdE" resolve="SteekProef_p1" />
     <node concept="23GdfO" id="7DiMnh5om1G" role="1co$Kl">
       <node concept="2lkona" id="7DiMnh5opNT" role="23GdfP">
         <node concept="23GdfO" id="7DiMnh5opNU" role="2lkn8m">
@@ -221,7 +224,7 @@
               <node concept="3clFbJ" id="7B1JShDpr4z" role="3cqZAp">
                 <node concept="3clFbS" id="7B1JShDpr4_" role="3clFbx">
                   <node concept="Jncv_" id="7B1JShDprWX" role="3cqZAp">
-                    <ref role="JncvD" to="tnkk:1VwGgOvrW_4" resolve="RisicoProfielActie" />
+                    <ref role="JncvD" to="tnkk:1VwGgOvrW_4" resolve="RisicoProfielActie_p1" />
                     <node concept="2OqwBi" id="7B1JShDprYU" role="JncvB">
                       <node concept="37vLTw" id="7B1JShDprY2" role="2Oq$k0">
                         <ref role="3cqZAo" node="7B1JShDppEf" resolve="rpb" />
@@ -279,6 +282,23 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2xOZSM" id="4gB84N0uHPg">
+    <property role="3GE5qa" value="" />
+    <ref role="2xOZSN" to="tnkk:2EnkD83mZ6X" resolve="RisicoProfielActie" />
+    <node concept="23GdfO" id="4gB84N0uHPh" role="1co$Kl">
+      <node concept="23Fm0F" id="4gB84N0uHPi" role="23GdfP">
+        <ref role="2xS9Ik" to="tnkk:2EnkD83mZ6Y" resolve="indicator" />
+        <node concept="23GdfO" id="4gB84N0uHPj" role="23E8Zc" />
+        <node concept="23GdfO" id="4gB84N0uHPk" role="23E8Z2" />
+      </node>
+      <node concept="2xS9Ii" id="4gB84N0uHPl" role="23GdfP">
+        <property role="23G6sU" value="is" />
+      </node>
+      <node concept="2xS9Ii" id="4gB84N0uHPm" role="23GdfP">
+        <property role="23G6sU" value="risicovol" />
       </node>
     </node>
   </node>

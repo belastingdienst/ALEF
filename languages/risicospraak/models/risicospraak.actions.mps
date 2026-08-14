@@ -61,7 +61,7 @@
   <node concept="37WguZ" id="BzmklQd5sj">
     <property role="TrG5h" value="RisicospraakFactories" />
     <node concept="37WvkG" id="BzmklQd5sk" role="37WGs$">
-      <ref role="37XkoT" to="tnkk:WmlSKI2rBb" resolve="RisicoProfiel" />
+      <ref role="37XkoT" to="tnkk:WmlSKI2rBb" resolve="RisicoProfiel_p1" />
       <node concept="37Y9Zx" id="BzmklQd5sl" role="37ZfLb">
         <node concept="3clFbS" id="BzmklQd5sm" role="2VODD2">
           <node concept="3clFbF" id="BzmklQd5sD" role="3cqZAp">
@@ -113,7 +113,7 @@
                 </node>
               </node>
               <node concept="2DeJnY" id="BzmklQdcWe" role="2OqNvi">
-                <ref role="1A9B2P" to="tnkk:1VwGgOvrW_4" resolve="RisicoProfielActie" />
+                <ref role="1A9B2P" to="tnkk:1VwGgOvrW_4" resolve="RisicoProfielActie_p1" />
               </node>
             </node>
           </node>
