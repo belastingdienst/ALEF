@@ -41,6 +41,9 @@
         <child id="653687101152498722" name="rechts" index="2bokzm" />
         <child id="653687101152498719" name="links" index="2bokzF" />
       </concept>
+      <concept id="653687101152476040" name="regelspraak.structure.ParameterRef" flags="ng" index="2boetW">
+        <reference id="653687101152476041" name="param" index="2boetX" />
+      </concept>
       <concept id="653687101158189440" name="regelspraak.structure.Regelgroep" flags="ng" index="2bQVlO">
         <child id="9154144551704439187" name="inhoud" index="1HSqhF" />
       </concept>
@@ -111,7 +114,9 @@
       </concept>
     </language>
     <language id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak">
-      <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa" />
+      <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa">
+        <child id="4520032613910301313" name="parameter" index="3FXUGR" />
+      </concept>
       <concept id="6527873696160725157" name="testspraak.structure.Resultaat" flags="ng" index="4Oh8J">
         <property id="6744974776274785194" name="isGeneriekConsistent" index="3bjIlS" />
         <property id="6744974776274785192" name="generiekeConsistentieCheck" index="3bjIlU" />
@@ -237,6 +242,13 @@
       <concept id="5970487230362917627" name="gegevensspraak.structure.EnumeratieType" flags="ng" index="2n4JhV">
         <child id="4145085948684469801" name="waarde" index="1niOIs" />
       </concept>
+      <concept id="7037334947758876146" name="gegevensspraak.structure.Parameterset" flags="ng" index="vdosF">
+        <child id="7037334947758876149" name="toekenning" index="vdosG" unordered="true" />
+        <child id="3122098214253204654" name="geldig" index="3H8BXA" />
+      </concept>
+      <concept id="2800963173597667853" name="gegevensspraak.structure.Parameter" flags="ng" index="2DSAsB">
+        <child id="5917060184181634509" name="type" index="1ERmGI" />
+      </concept>
       <concept id="4697074533531412717" name="gegevensspraak.structure.TekstLiteral" flags="ng" index="2JwNib">
         <property id="4697074533531412721" name="waarde" index="2JwNin" />
       </concept>
@@ -257,6 +269,10 @@
       </concept>
       <concept id="558527188464633210" name="gegevensspraak.structure.AbstractNumeriekeLiteral" flags="ng" index="3e5kNY">
         <property id="558527188465081158" name="waarde" index="3e6Tb2" />
+      </concept>
+      <concept id="5917060184176395023" name="gegevensspraak.structure.Parametertoekenning" flags="ng" index="1Er9RG">
+        <reference id="5917060184176396258" name="param" index="1Er9$1" />
+        <child id="2445565176094168041" name="waarde" index="HQftV" />
       </concept>
       <concept id="5917060184181247441" name="gegevensspraak.structure.BooleanType" flags="ng" index="1EDDcM" />
       <concept id="5917060184181247365" name="gegevensspraak.structure.DatumTijdType" flags="ng" index="1EDDdA">
@@ -405,7 +421,14 @@
         </node>
       </node>
     </node>
-    <node concept="1uxNW$" id="5QGe9ffVi3" role="2bv6Cn" />
+    <node concept="1uxNW$" id="3TsQ_4tXC8t" role="2bv6Cn" />
+    <node concept="2DSAsB" id="3TsQ_4tXBI3" role="2bv6Cn">
+      <property role="TrG5h" value="begindatum" />
+      <node concept="1EDDdA" id="3TsQ_4tXBWH" role="1ERmGI">
+        <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
+      </node>
+    </node>
+    <node concept="1uxNW$" id="3TsQ_4tXC8s" role="2bv6Cn" />
     <node concept="2bvS6$" id="7sI2MDxm0ee" role="2bv6Cn">
       <property role="TrG5h" value="Persoon" />
       <property role="u$8uw" value="true" />
@@ -2127,7 +2150,12 @@
             <node concept="3ObYgd" id="1JzahCtSlAg" role="2bokzm">
               <node concept="ymhcM" id="1JzahCtSlAf" role="2x5sjf">
                 <node concept="2JwNib" id="1JzahCtSlAe" role="ymhcN">
-                  <property role="2JwNin" value="veld1 is gecontroleerd" />
+                  <property role="2JwNin" value="veld1 is gecontroleerd na " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="1QW1aZiL76m" role="2x5sjf">
+                <node concept="2boetW" id="1QW1aZiL76n" role="ymhcN">
+                  <ref role="2boetX" node="3TsQ_4tXBI3" resolve="begindatum" />
                 </node>
               </node>
               <node concept="ymhcM" id="4i8X4kdlBe$" role="2x5sjf">
@@ -2207,7 +2235,12 @@
               </node>
               <node concept="ymhcM" id="3RxOc3vY$u8" role="2x5sjf">
                 <node concept="2JwNib" id="3RxOc3vY$u9" role="ymhcN">
-                  <property role="2JwNin" value=")." />
+                  <property role="2JwNin" value=")" />
+                </node>
+              </node>
+              <node concept="ymhcM" id="1QW1aZiL74C" role="2x5sjf">
+                <node concept="2JwNib" id="1QW1aZiL74D" role="ymhcN">
+                  <property role="2JwNin" value="." />
                 </node>
               </node>
             </node>
@@ -2232,7 +2265,7 @@
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="1TFj4rzw8ac" resolve="veld2" />
           <node concept="2JwNib" id="3RxOc3vY_$p" role="3mzBi6">
-            <property role="2JwNin" value="veld1 is gecontroleerd (uren: ) (minuten: ) (seconden: ) (tijdstip: )." />
+            <property role="2JwNin" value="veld1 is gecontroleerd na 01-02-2003 (uren: ) (minuten: ) (seconden: ) (tijdstip: )." />
           </node>
         </node>
       </node>
@@ -2265,6 +2298,14 @@
           </node>
         </node>
       </node>
+      <node concept="1Er9RG" id="3TsQ_4tXCN5" role="3FXUGR">
+        <ref role="1Er9$1" node="3TsQ_4tXBI3" resolve="begindatum" />
+        <node concept="2ljiaL" id="3TsQ_4tXCS2" role="HQftV">
+          <property role="2ljiaM" value="1" />
+          <property role="2ljiaN" value="2" />
+          <property role="2ljiaO" value="2003" />
+        </node>
+      </node>
     </node>
     <node concept="210ffa" id="1JzahCtSlNF" role="10_$IM">
       <property role="TrG5h" value="Kenmerk" />
@@ -2278,7 +2319,7 @@
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="1TFj4rzw8ac" resolve="veld2" />
           <node concept="2JwNib" id="3RxOc3vYSSm" role="3mzBi6">
-            <property role="2JwNin" value="veld1 is gecontroleerd (uren: 01-02-2003 04) (minuten: 05-06-2007 08:09) (seconden: 10-11-2012 13:14:15) (tijdstip: 16-05-2018 19:20:21.123456789)." />
+            <property role="2JwNin" value="veld1 is gecontroleerd na 01-01-2001 (uren: 01-02-2003 04) (minuten: 05-06-2007 08:09) (seconden: 10-11-2012 13:14:15) (tijdstip: 16-05-2018 19:20:21.123456789)." />
           </node>
         </node>
       </node>
@@ -2372,7 +2413,7 @@
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="1TFj4rzw8ac" resolve="veld2" />
           <node concept="2JwNib" id="3RxOc3vYACJ" role="3mzBi6">
-            <property role="2JwNin" value="veld1 is gecontroleerd (uren: ) (minuten: ) (seconden: ) (tijdstip: )." />
+            <property role="2JwNin" value="veld1 is gecontroleerd na 19-09-2009 (uren: ) (minuten: ) (seconden: ) (tijdstip: )." />
           </node>
         </node>
       </node>
@@ -2417,6 +2458,14 @@
           </node>
         </node>
       </node>
+      <node concept="1Er9RG" id="3TsQ_4tXD$c" role="3FXUGR">
+        <ref role="1Er9$1" node="3TsQ_4tXBI3" resolve="begindatum" />
+        <node concept="2ljiaL" id="3TsQ_4tXDFM" role="HQftV">
+          <property role="2ljiaM" value="19" />
+          <property role="2ljiaN" value="9" />
+          <property role="2ljiaO" value="2009" />
+        </node>
+      </node>
     </node>
     <node concept="2ljwA5" id="1JzahCtSlMP" role="3Na4y7">
       <node concept="2ljiaL" id="1JzahCtSlMQ" role="2ljwA6">
@@ -2438,6 +2487,18 @@
     <node concept="3WogBB" id="4xKWB0uM3O" role="vfxHU">
       <node concept="17AEQp" id="4xKWB0uM3N" role="3WoufU">
         <ref role="17AE6y" node="1JzahCtNqg$" resolve="Meldingen" />
+      </node>
+    </node>
+  </node>
+  <node concept="vdosF" id="3TsQ_4tXIsO">
+    <property role="TrG5h" value="ALEFS-1158" />
+    <node concept="2ljwA5" id="3TsQ_4tXIsP" role="3H8BXA" />
+    <node concept="1Er9RG" id="3TsQ_4tXQ8l" role="vdosG">
+      <ref role="1Er9$1" node="3TsQ_4tXBI3" resolve="begindatum" />
+      <node concept="2ljiaL" id="3TsQ_4tXQaM" role="HQftV">
+        <property role="2ljiaM" value="1" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaO" value="2001" />
       </node>
     </node>
   </node>

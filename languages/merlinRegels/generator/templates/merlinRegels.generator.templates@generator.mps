@@ -4946,6 +4946,76 @@
         <node concept="raruj" id="4Z8lJ69Ky3W" role="lGtFl" />
       </node>
     </node>
+    <node concept="3aamgX" id="3s46AO9hPDi" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="m234:$infi2sFI8" resolve="ParameterRef" />
+      <node concept="30G5F_" id="3s46AO9hXh2" role="30HLyM">
+        <node concept="3clFbS" id="3s46AO9hXh3" role="2VODD2">
+          <node concept="3clFbF" id="3s46AO9hXib" role="3cqZAp">
+            <node concept="2OqwBi" id="3s46AO9hXid" role="3clFbG">
+              <node concept="2OqwBi" id="3s46AO9hXie" role="2Oq$k0">
+                <node concept="30H73N" id="3s46AO9hYCE" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3s46AO9hXig" role="2OqNvi">
+                  <ref role="37wK5l" to="8l26:1XN84VJ3liw" resolve="basisType" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3s46AO9hXih" role="2OqNvi">
+                <node concept="chp4Y" id="3s46AO9hXii" role="cj9EA">
+                  <ref role="cht4Q" to="3ic2:58tBIcSIKQ5" resolve="DatumTijdType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="3s46AO9hZxv" role="1lVwrX">
+        <node concept="2YIFZM" id="3s46AO9hZxw" role="gfFT$">
+          <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
+          <ref role="37wK5l" to="2vij:~DateUtil.formatLocalDateTime(java.time.LocalDateTime,nl.belastingdienst.alef_runtime.TimeGranularity)" resolve="formatLocalDateTime" />
+          <node concept="2YIFZM" id="3s46AO9hZxx" role="37wK5m">
+            <ref role="37wK5l" to="28m1:~LocalDateTime.now()" resolve="now" />
+            <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+            <node concept="1sPUBX" id="3s46AO9hZxy" role="lGtFl">
+              <ref role="v9R2y" node="dortWW4mpA" resolve="expressie" />
+            </node>
+          </node>
+          <node concept="Rm8GO" id="3s46AO9hZxz" role="37wK5m">
+            <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+            <ref role="Rm8GQ" to="2vij:~TimeGranularity.DAY" resolve="DAY" />
+            <node concept="1ZhdrF" id="3s46AO9hZx$" role="lGtFl">
+              <property role="2qtEX8" value="enumConstantDeclaration" />
+              <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1083260308424/1083260308426" />
+              <node concept="3$xsQk" id="3s46AO9hZx_" role="3$ytzL">
+                <node concept="3clFbS" id="3s46AO9hZxA" role="2VODD2">
+                  <node concept="3clFbF" id="3s46AO9hZxB" role="3cqZAp">
+                    <node concept="2YIFZM" id="3s46AO9hZxC" role="3clFbG">
+                      <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
+                      <ref role="37wK5l" to="8l26:4ex8sf3mjMb" resolve="toTimeGranularity" />
+                      <node concept="2OqwBi" id="3s46AO9hZxD" role="37wK5m">
+                        <node concept="1PxgMI" id="3s46AO9hZxE" role="2Oq$k0">
+                          <node concept="chp4Y" id="3s46AO9hZxF" role="3oSUPX">
+                            <ref role="cht4Q" to="3ic2:58tBIcSIKQ5" resolve="DatumTijdType" />
+                          </node>
+                          <node concept="2OqwBi" id="3s46AO9hZxG" role="1m5AlR">
+                            <node concept="30H73N" id="3s46AO9hZxH" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="3s46AO9hZxI" role="2OqNvi">
+                              <ref role="37wK5l" to="8l26:1XN84VJ3liw" resolve="basisType" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="3s46AO9hZxJ" role="2OqNvi">
+                          <ref role="3TsBF5" to="3ic2:4WetKT2Pzpu" resolve="granulariteit" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1pmfR0" id="5ZzkcdUDUEJ">
     <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
