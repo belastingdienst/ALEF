@@ -1564,5 +1564,53 @@
       <ref role="PrY4T" to="3ic2:2k62pTb3lQI" resolve="Typed" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6IerQZiPC_y">
+    <property role="EcuMT" value="7750254534820530530" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="VerwijzendBerichtVeld" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6IerQZiPCBM" role="PzmwI">
+      <ref role="PrY4T" node="1ikyrmjHd1n" resolve="BerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="6IerQZiUxXK" role="PzmwI">
+      <ref role="PrY4T" node="1ikyrmjHd1q" resolve="InvoerBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="7wz_GqYGClZ" role="PzmwI">
+      <ref role="PrY4T" node="1ikyrmjHd1t" resolve="UitvoerBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="4rxfODYE3Ff" role="PzmwI">
+      <ref role="PrY4T" to="dse8:51QYbfBR3DV" resolve="LReference" />
+    </node>
+    <node concept="PrWs8" id="4rxfOE2aDgT" role="PzmwI">
+      <ref role="PrY4T" to="dse8:51QYbfAyCB$" resolve="LConstruction" />
+    </node>
+    <node concept="1TJgyj" id="6IerQZiPCCk" role="1TKVEi">
+      <property role="IQ2ns" value="7750254534820530708" />
+      <property role="20kJfa" value="rol" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
+    </node>
+    <node concept="1TJgyj" id="6IerQZiPCDc" role="1TKVEi">
+      <property role="IQ2ns" value="7750254534820530764" />
+      <property role="20kJfa" value="idVeld" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="61sBFvfD12W" resolve="IdentificerendBerichtVeld" />
+    </node>
+    <node concept="1TJgyi" id="6IerQZiPNQs" role="1TKVEl">
+      <property role="IQ2nx" value="7750254534820576668" />
+      <property role="TrG5h" value="verplicht" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6IerQZiWnQX" role="1TKVEl">
+      <property role="IQ2nx" value="7750254534822297021" />
+      <property role="TrG5h" value="minOccurs" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6IerQZiWnRE" role="1TKVEl">
+      <property role="IQ2nx" value="7750254534822297066" />
+      <property role="TrG5h" value="maxOccurs" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

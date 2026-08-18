@@ -1783,5 +1783,21 @@
       <ref role="PrY4T" node="5yztnPwm8y3" resolve="INavigeer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6IerQZjEh4q">
+    <property role="EcuMT" value="7750254534834327834" />
+    <property role="TrG5h" value="VerwijzendTestBerichtVeld" />
+    <ref role="1TJDcQ" node="7CG9sYRRYcF" resolve="TestBerichtVeld" />
+    <node concept="1TJgyi" id="6IerQZjWz_f" role="1TKVEl">
+      <property role="IQ2nx" value="7750254534839122255" />
+      <property role="TrG5h" value="waarde" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6IerQZjWM5M" role="1TKVEi">
+      <property role="IQ2ns" value="7750254534839181682" />
+      <property role="20kJfa" value="veld" />
+      <ref role="20lvS9" to="ku5w:6IerQZiPC_y" resolve="VerwijzendBerichtVeld" />
+      <ref role="20ksaX" node="7CG9sYRRZOO" resolve="veld" />
+    </node>
+  </node>
 </model>
 

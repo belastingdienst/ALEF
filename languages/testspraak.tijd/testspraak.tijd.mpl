@@ -31,6 +31,7 @@
     <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
     <dependency reexport="false">d65f6f0b-d425-4cdb-985f-4194ffdf3ab2(json)</dependency>
     <dependency reexport="false">3ea0ff8b-be16-4cc9-8f8a-d8cec13f47fc(alef.menus)</dependency>
+    <dependency reexport="false">55271945-c9a9-4148-8b1b-b255336170d6(immutable)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:df9c8cd5-fc3e-4cf4-a68a-5176c7973a7b:functionalView" version="0" />
@@ -92,6 +93,7 @@
     <module reference="6bf90e42-57fe-4f10-8f78-bd89cffdf18c(editorcells)" version="0" />
     <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="5" />
     <module reference="c40e126b-a0e9-42bb-b903-9b5fd0b050d2(gegevensspraak.tijd)" version="2" />
+    <module reference="55271945-c9a9-4148-8b1b-b255336170d6(immutable)" version="0" />
     <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
     <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />
     <module reference="8af387a4-2ad4-4680-9888-6e523ff2ae0a(interpreter.timed.debug)" version="0" />

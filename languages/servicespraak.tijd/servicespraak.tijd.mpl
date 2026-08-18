@@ -105,6 +105,7 @@
     <dependency reexport="false">51f8c68a-90ac-4dbf-b58a-c9e9db784c81(xml.schema)</dependency>
     <dependency reexport="false">9624b6ec-18c7-44ba-9a78-e6c1520c2cf7(xmlUtils)</dependency>
     <dependency reexport="false">caef3229-d6fe-4ba8-b3e3-cf13cc4a9119(strings)</dependency>
+    <dependency reexport="false">93c97f43-f6de-4be4-85d8-51581539af1e(interpreter.timed.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:08d6f877-03cc-45d3-b03c-d6f786266853:bronspraak" version="1" />
@@ -178,6 +179,7 @@
     <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
     <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />
     <module reference="8af387a4-2ad4-4680-9888-6e523ff2ae0a(interpreter.timed.debug)" version="0" />
+    <module reference="93c97f43-f6de-4be4-85d8-51581539af1e(interpreter.timed.runtime)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" version="0" />

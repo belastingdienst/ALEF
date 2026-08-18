@@ -54,10 +54,10 @@
     <import index="2vij" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime(alef.runtime/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="rv7c" ref="r:3df2789f-2276-4555-9d69-e4a458025ad6(servicespraak.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" implicit="true" />
-    <import index="rv7c" ref="r:3df2789f-2276-4555-9d69-e4a458025ad6(servicespraak.editor)" implicit="true" />
     <import index="txb8" ref="r:6d537c47-71e0-4074-bdff-6df0d77b3827(servicespraak.behavior)" implicit="true" />
     <import index="7fo8" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.chrono(JDK/)" implicit="true" />
     <import index="zkaa" ref="r:a5cf0ceb-488c-4bfb-ba89-78b926701fdb(contexts.editor)" implicit="true" />
@@ -6762,6 +6762,28 @@
             <ref role="1wgcnl" to="rv7c:5By9iitYV9q" resolve="XML" />
           </node>
         </node>
+        <node concept="3k4GqR" id="3zSZ_ehYPWQ" role="3F10Kt">
+          <node concept="3k4GqP" id="3zSZ_ehYPWS" role="3k4GqO">
+            <node concept="3clFbS" id="3zSZ_ehYPWU" role="2VODD2">
+              <node concept="3clFbF" id="3zSZ_ehYQo6" role="3cqZAp">
+                <node concept="2OqwBi" id="3zSZ_ehYS02" role="3clFbG">
+                  <node concept="1PxgMI" id="3zSZ_ehYRGd" role="2Oq$k0">
+                    <node concept="chp4Y" id="3zSZ_ehYRHq" role="3oSUPX">
+                      <ref role="cht4Q" to="6ldf:7CG9sYRRZRb" resolve="ComplexTestBerichtVeld" />
+                    </node>
+                    <node concept="2OqwBi" id="3zSZ_ehYQKB" role="1m5AlR">
+                      <node concept="pncrf" id="3zSZ_ehYQo5" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="3zSZ_ehYRxY" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3zSZ_ehYTnG" role="2OqNvi">
+                    <ref role="3Tt5mk" to="6ldf:2Blt97GA8qu" resolve="veld" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="pkWqt" id="Wr_nwHtRvo" role="pqm2j">
           <node concept="3clFbS" id="Wr_nwHtRvp" role="2VODD2">
             <node concept="Jncv_" id="Wr_nwHtR$5" role="3cqZAp">
@@ -13206,6 +13228,91 @@
         </node>
       </node>
       <node concept="2SsqMj" id="7nsiBeW3ZWL" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6IerQZjWSen">
+    <property role="3GE5qa" value="testbericht.invoer" />
+    <property role="TrG5h" value="VerwijzendBerichtWaarde_EditorComponent" />
+    <ref role="1XX52x" to="6ldf:6IerQZjEh4q" resolve="VerwijzendTestBerichtVeld" />
+    <node concept="1PE4EZ" id="6IerQZjWSeo" role="1PM95z">
+      <ref role="1PE7su" node="7CG9sYRRZQq" resolve="TestBerichtWaarde_EditorComponent" />
+    </node>
+    <node concept="3F0A7n" id="6IerQZjWSep" role="2wV5jI">
+      <property role="1$x2rV" value="&lt;vul waarde in&gt;" />
+      <property role="1O74Pk" value="true" />
+      <ref role="1k5W1q" to="mbb7:2RxNjHXKBDU" resolve="Naam" />
+      <ref role="1NtTu8" to="6ldf:6IerQZjWz_f" resolve="waarde" />
+      <node concept="3k4GqR" id="4rxfODV5wxa" role="3F10Kt">
+        <node concept="3k4GqP" id="4rxfODV5wxb" role="3k4GqO">
+          <node concept="3clFbS" id="4rxfODV5wxc" role="2VODD2">
+            <node concept="3clFbF" id="4rxfODV5wTW" role="3cqZAp">
+              <node concept="2OqwBi" id="4rxfODV5xb4" role="3clFbG">
+                <node concept="pncrf" id="4rxfODV5wTV" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4rxfODV5yAd" role="2OqNvi">
+                  <ref role="37wK5l" to="r02f:4rxfODUZMD7" resolve="deref" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6IerQZk30NQ">
+    <ref role="1XX52x" to="6ldf:6IerQZjEh4q" resolve="VerwijzendTestBerichtVeld" />
+    <node concept="3EZMnI" id="6IerQZk311Q" role="2wV5jI">
+      <node concept="1iCGBv" id="6IerQZk323T" role="3EZMnx">
+        <ref role="1NtTu8" to="6ldf:6IerQZjWM5M" resolve="veld" />
+        <ref role="1k5W1q" to="mbb7:2RxNjHXUPFT" resolve="NaamReferentie" />
+        <node concept="1sVBvm" id="6IerQZk323V" role="1sWHZn">
+          <node concept="3F0A7n" id="6IerQZk3258" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="3Xmtl4" id="6IerQZk3274" role="3F10Kt">
+          <node concept="1wgc9g" id="6IerQZk3275" role="3XvnJa">
+            <ref role="1wgcnl" to="rv7c:3WW74rnhyhw" resolve="XmlVeld" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6IerQZk31Dk" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="6IerQZk5n6B" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6IerQZk5n6Z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6IerQZk31H4" role="3EZMnx">
+        <ref role="1NtTu8" to="6ldf:6IerQZjWM5M" resolve="veld" />
+        <ref role="1k5W1q" to="mbb7:2RxNjHXUPFT" resolve="NaamReferentie" />
+        <node concept="1sVBvm" id="6IerQZk31H6" role="1sWHZn">
+          <node concept="1iCGBv" id="6IerQZk321e" role="2wV5jI">
+            <ref role="1NtTu8" to="ku5w:6IerQZiPCDc" resolve="idVeld" />
+            <node concept="1sVBvm" id="6IerQZk321g" role="1sWHZn">
+              <node concept="3F0A7n" id="6IerQZk321G" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Xmtl4" id="6IerQZk329l" role="3F10Kt">
+          <node concept="1wgc9g" id="6IerQZk329m" role="3XvnJa">
+            <ref role="1wgcnl" to="rv7c:3WW74rnhyhw" resolve="XmlVeld" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6IerQZk3126" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
+      </node>
+      <node concept="PMmxH" id="6IerQZk3127" role="3EZMnx">
+        <ref role="PMmxG" node="7CG9sYRRZQq" resolve="TestBerichtWaarde_EditorComponent" />
+      </node>
+      <node concept="l2Vlx" id="6IerQZk3128" role="2iSdaV" />
     </node>
   </node>
 </model>
