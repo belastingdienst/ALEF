@@ -22,13 +22,13 @@
 		<sonar.dependencyCheck.htmlReportPath>${project.basedir}/target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
 
 		<!-- Zie ook de DependencyVersions class in MPS -->
-		<jetbrains.annotations.version>26.0.2-1</jetbrains.annotations.version>
+		<jetbrains.annotations.version>26.1.0</jetbrains.annotations.version>
 		<junit.version>5.14.2</junit.version>
 		<junitAssert.version>4.13.2</junitAssert.version>
 		<jetty.version>12.0.37</jetty.version>
 		<jackson-annotations.version>2.21</jackson-annotations.version>
 		<jackson-databind.version>2.21.5</jackson-databind.version>
-		<slf4jSimple.version>2.0.17</slf4jSimple.version>
+		<slf4jSimple.version>2.0.18</slf4jSimple.version>
 		<jakartaXmlWsApi.version>4.0.3</jakartaXmlWsApi.version>
 		<jakartaXmlSoapApi.version>3.0.2</jakartaXmlSoapApi.version>
 		<jakartaJwsApi.version>3.0.0</jakartaJwsApi.version>
