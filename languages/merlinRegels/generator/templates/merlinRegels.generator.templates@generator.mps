@@ -570,9 +570,6 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -5131,7 +5128,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3EEAIR3$NZ6" role="3cqZAp" />
-        <node concept="3clFbH" id="3EEAIR3$Peb" role="3cqZAp" />
         <node concept="2Gpval" id="4im2fjjJugj" role="3cqZAp">
           <node concept="2GrKxI" id="4im2fjjJugk" role="2Gsz3X">
             <property role="TrG5h" value="aiv" />
@@ -5145,45 +5141,14 @@
             </node>
           </node>
           <node concept="3clFbS" id="4im2fjjJugp" role="2LFqv$">
-            <node concept="3cpWs8" id="14HxAhgkQ$c" role="3cqZAp">
-              <node concept="3cpWsn" id="14HxAhgkQ$d" role="3cpWs9">
-                <property role="TrG5h" value="conditie" />
-                <property role="3TUv4t" value="true" />
-                <node concept="3Tqbb2" id="14HxAhgkQvR" role="1tU5fm">
-                  <ref role="ehGHo" to="m234:1ibElXOlZJv" resolve="Conditie" />
+            <node concept="3clFbF" id="2hcqRuuodbQ" role="3cqZAp">
+              <node concept="2OqwBi" id="2hcqRuuodrf" role="3clFbG">
+                <node concept="2GrUjf" id="2hcqRuuodbO" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="4im2fjjJugk" resolve="aiv" />
                 </node>
-                <node concept="2OqwBi" id="14HxAhgkQ$e" role="33vP2m">
-                  <node concept="2GrUjf" id="14HxAhgkQ$f" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="4im2fjjJugk" resolve="aiv" />
-                  </node>
-                  <node concept="3TrEf2" id="14HxAhgkQ$g" role="2OqNvi">
-                    <ref role="3Tt5mk" to="m234:1ibElXOmXRs" resolve="conditie" />
-                  </node>
+                <node concept="2qgKlT" id="2hcqRuuoftn" role="2OqNvi">
+                  <ref role="37wK5l" to="u5to:2hcqRuunMj2" resolve="verplaatsOnderwerpRefsInCondities" />
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="14HxAhgkQQ$" role="3cqZAp">
-              <property role="TyiWL" value="true" />
-              <node concept="3clFbS" id="14HxAhgkQQA" role="3clFbx">
-                <node concept="3clFbF" id="14HxAhgkO8M" role="3cqZAp">
-                  <node concept="2OqwBi" id="14HxAhgkOAq" role="3clFbG">
-                    <node concept="35c_gC" id="14HxAhgkO8K" role="2Oq$k0">
-                      <ref role="35c_gD" to="m234:SQYpBGPI1w" resolve="OnderwerpRef" />
-                    </node>
-                    <node concept="2qgKlT" id="14HxAhgkOSX" role="2OqNvi">
-                      <ref role="37wK5l" to="u5to:14HxAhgkAcn" resolve="vervangOnderwerpRefsInCondities" />
-                      <node concept="37vLTw" id="14HxAhgkQ$h" role="37wK5m">
-                        <ref role="3cqZAo" node="14HxAhgkQ$d" resolve="conditie" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="14HxAhgkRCk" role="3clFbw">
-                <node concept="37vLTw" id="14HxAhgkRqn" role="2Oq$k0">
-                  <ref role="3cqZAo" node="14HxAhgkQ$d" resolve="conditie" />
-                </node>
-                <node concept="3x8VRR" id="14HxAhgkRT8" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -36487,19 +36452,33 @@
       <node concept="1Koe21" id="6bNpa2$oGVX" role="1lVwrX">
         <node concept="312cEu" id="6bNpa2$oGVY" role="1Koe22">
           <property role="TrG5h" value="DummySelectieSingle" />
-          <node concept="15s5l7" id="6bNpa2$oGVZ" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: The classifier 'DummySelectieSingle' must be declared abstract or implement abstract method 'execute' in 'MExecutable'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7861981782410371482]&quot;;" />
-            <property role="huDt6" value="Error: The classifier 'DummySelectieSingle' must be declared abstract or implement abstract method 'execute' in 'MExecutable'" />
-          </node>
-          <node concept="2tJIrI" id="6bNpa2$qm7P" role="jymVt" />
-          <node concept="312cEg" id="6bNpa2$qUNw" role="jymVt">
+          <node concept="312cEg" id="2hcqRutJ7d$" role="jymVt">
             <property role="TrG5h" value="aObject" />
-            <node concept="3Tm6S6" id="6bNpa2$qUNx" role="1B3o_S" />
-            <node concept="17Uvod" id="6bNpa2$qUNI" role="lGtFl">
+            <node concept="3Tm6S6" id="2hcqRutJ72$" role="1B3o_S" />
+            <node concept="3uibUv" id="2hcqRutJ7cU" role="1tU5fm">
+              <ref role="3uigEE" to="jyki:~MObject" resolve="MObject" />
+            </node>
+            <node concept="raruj" id="2hcqRutJ7pA" role="lGtFl" />
+            <node concept="2ZBi8u" id="2hcqRutJ7ql" role="lGtFl">
+              <ref role="2rW$FS" node="6idE4FrYo1Z" resolve="m_onderwerpVar" />
+              <node concept="38ki3A" id="2hcqRutJ7qS" role="38klgt">
+                <node concept="3clFbS" id="2hcqRutJ7qT" role="2VODD2">
+                  <node concept="3clFbF" id="2hcqRutJ7t_" role="3cqZAp">
+                    <node concept="2OqwBi" id="2hcqRutJ7RT" role="3clFbG">
+                      <node concept="30H73N" id="2hcqRutJ7t$" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2hcqRutJ8$C" role="2OqNvi">
+                        <ref role="3Tt5mk" to="m234:5S3WlLgaPtI" resolve="selector" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17Uvod" id="2hcqRutJ9Uh" role="lGtFl">
               <property role="2qtEX9" value="name" />
               <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-              <node concept="3zFVjK" id="6bNpa2$qUNJ" role="3zH0cK">
-                <node concept="3clFbS" id="6bNpa2$qUNK" role="2VODD2">
+              <node concept="3zFVjK" id="2hcqRutJ9Ui" role="3zH0cK">
+                <node concept="3clFbS" id="2hcqRutJ9Uj" role="2VODD2">
                   <node concept="3clFbF" id="6bNpa2$r8Ea" role="3cqZAp">
                     <node concept="2YIFZM" id="68b484ruQvD" role="3clFbG">
                       <ref role="37wK5l" to="wvoc:7aW720Ygngb" resolve="asJavaField" />
@@ -36508,40 +36487,7 @@
                         <property role="Xl_RC" value="" />
                       </node>
                       <node concept="1iwH7S" id="68b484ruQvE" role="37wK5m" />
-                      <node concept="2OqwBi" id="68b484ruQvF" role="37wK5m">
-                        <node concept="1iwH7S" id="68b484ruQvG" role="2Oq$k0" />
-                        <node concept="1psM6Z" id="68b484ruQvH" role="2OqNvi">
-                          <ref role="1psM6Y" node="6bNpa2$ri8E" resolve="objectType" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="raruj" id="6bNpa2$r2BV" role="lGtFl" />
-            <node concept="2ZBi8u" id="6bNpa2$r2YD" role="lGtFl">
-              <ref role="2rW$FS" node="6idE4FrYo1Z" resolve="m_onderwerpVar" />
-              <node concept="38ki3A" id="6bNpa2$r48I" role="38klgt">
-                <node concept="3clFbS" id="6bNpa2$r48J" role="2VODD2">
-                  <node concept="3clFbF" id="6bNpa2$r4_L" role="3cqZAp">
-                    <node concept="2OqwBi" id="6bNpa2$r4_M" role="3clFbG">
-                      <node concept="30H73N" id="6bNpa2$r4_N" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="6bNpa2$r4_O" role="2OqNvi">
-                        <ref role="3Tt5mk" to="m234:5S3WlLgaPtI" resolve="selector" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1ps_y7" id="6bNpa2$ri8D" role="lGtFl">
-              <node concept="1ps_xZ" id="6bNpa2$ri8E" role="1ps_xO">
-                <property role="TrG5h" value="objectType" />
-                <node concept="2jfdEK" id="6bNpa2$ri8F" role="1ps_xN">
-                  <node concept="3clFbS" id="6bNpa2$ri8G" role="2VODD2">
-                    <node concept="3clFbF" id="6bNpa2$riPZ" role="3cqZAp">
-                      <node concept="2OqwBi" id="6bNpa2$riQ0" role="3clFbG">
+                      <node concept="2OqwBi" id="6bNpa2$riQ0" role="37wK5m">
                         <node concept="1PxgMI" id="6bNpa2$riQ1" role="2Oq$k0">
                           <node concept="chp4Y" id="6bNpa2$riQ2" role="3oSUPX">
                             <ref role="cht4Q" to="m234:6Cw8uHx$_hB" resolve="Onderwerp" />
@@ -36562,9 +36508,10 @@
                 </node>
               </node>
             </node>
-            <node concept="3uibUv" id="428QPkDZC5b" role="1tU5fm">
-              <ref role="3uigEE" to="jyki:~MObject" resolve="MObject" />
-            </node>
+          </node>
+          <node concept="15s5l7" id="6bNpa2$oGVZ" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: The classifier 'DummySelectieSingle' must be declared abstract or implement abstract method 'execute' in 'MExecutable'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7861981782410371482]&quot;;" />
+            <property role="huDt6" value="Error: The classifier 'DummySelectieSingle' must be declared abstract or implement abstract method 'execute' in 'MExecutable'" />
           </node>
           <node concept="312cEg" id="6bNpa2$qsuD" role="jymVt">
             <property role="TrG5h" value="obj1" />
