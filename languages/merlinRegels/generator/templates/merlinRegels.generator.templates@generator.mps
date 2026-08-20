@@ -4934,8 +4934,8 @@
     </node>
     <node concept="1Koe21" id="3_BNsIrWoOY" role="jxRDz">
       <node concept="2YIFZM" id="4Z8lJ69Ky3T" role="1Koe22">
-        <ref role="37wK5l" to="2vij:~TekstUtil.toAlefText(nl.belastingdienst.alef_runtime.BigRational)" resolve="toAlefText" />
-        <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
+        <ref role="37wK5l" to="2vij:~Util.toAlefText(nl.belastingdienst.alef_runtime.BigRational)" resolve="toAlefText" />
+        <ref role="1Pybhc" to="2vij:~Util" resolve="Util" />
         <node concept="10M0yZ" id="4Z8lJ69Ky3U" role="37wK5m">
           <ref role="1PxDUh" to="2vij:~BigRational" resolve="BigRational" />
           <ref role="3cqZAo" to="2vij:~BigRational.ONE" resolve="ONE" />

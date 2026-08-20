@@ -36,6 +36,9 @@ public class DateUtil {
     private static final String YEARFORMAT_PATTERN = "uuuu";
     private static final String MONTHFORMAT_PATTERN = "MM-uuuu";
     private static final String DATEFORMAT_PATTERN = "dd-MM-uuuu";
+    private static final String HOURFORMAT_PATTERN = "dd-MM-uuuu HH";
+    private static final String MINUTEFORMAT_PATTERN = "dd-MM-uuuu HH:mm";
+    private static final String SECONDFORMAT_PATTERN = "dd-MM-uuuu HH:mm:ss";
     private static final String TIMESTAMPFORMAT_PATTERN = "dd-MM-uuuu HH:mm:ss.SSSSSSSSS";
 
     private static final DateTimeFormatter ALEF_YEARFORMAT = DateTimeFormatter.ofPattern(YEARFORMAT_PATTERN);
@@ -48,6 +51,9 @@ public class DateUtil {
     private static final DateTimeFormatter YEAR_FORMATTER = DateTimeFormatter.ofPattern(YEARFORMAT_PATTERN);
     private static final DateTimeFormatter MONTH_FORMATTER = DateTimeFormatter.ofPattern(MONTHFORMAT_PATTERN);
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern(DATEFORMAT_PATTERN);
+    private static final DateTimeFormatter HOUR_FORMATTER = DateTimeFormatter.ofPattern(HOURFORMAT_PATTERN);
+    private static final DateTimeFormatter MINUTE_FORMATTER = DateTimeFormatter.ofPattern(MINUTEFORMAT_PATTERN);
+    private static final DateTimeFormatter SECOND_FORMATTER = DateTimeFormatter.ofPattern(SECONDFORMAT_PATTERN);
     private static final DateTimeFormatter DATETIME_FORMATTER = DateTimeFormatter.ofPattern(TIMESTAMPFORMAT_PATTERN);
 
 
@@ -77,8 +83,11 @@ public class DateUtil {
         return switch (granularity) {
             case YEAR -> dt.format(YEAR_FORMATTER);
             case MONTH -> dt.format(MONTH_FORMATTER);
-            case POINT_IN_TIME -> dt.format(DATETIME_FORMATTER);
-            default -> dt.format(DATE_FORMATTER);
+            case DAY -> dt.format(DATE_FORMATTER);
+            case HOUR -> dt.format(HOUR_FORMATTER);
+            case MINUTE -> dt.format(MINUTE_FORMATTER);
+            case SECOND -> dt.format(SECOND_FORMATTER);
+            default -> dt.format(DATETIME_FORMATTER);
         };
     }
 

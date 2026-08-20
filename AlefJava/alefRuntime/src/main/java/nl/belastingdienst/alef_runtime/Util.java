@@ -241,56 +241,6 @@ public final class Util {
         return o2;
     }
 
-    public static String toAlefText(BigRational o) {
-        return TekstUtil.toAlefText(o);
-    }
-
-    public static String toAlefText(Timespan o) {
-        return TekstUtil.toAlefText(o);
-    }
-
-    public static String toAlefText(Boolean o) {
-        return TekstUtil.toAlefText(o);
-    }
-
-    public static String toAlefText(LocalDate o) {
-        return TekstUtil.toAlefText(o);
-    }
-
-    public static String toAlefText(String o) {
-        return TekstUtil.toAlefText(o);
-    }
-
-    public static String toAlefTextInFractionalSeconds(LocalDateTime o) {
-        if (o == null) return "";
-        return TekstUtil.toAlefTextInFractionalSeconds(o);
-    }
-
-    public static String toAlefTextInDays(LocalDate o) {
-        if (o == null) return "";
-        return TekstUtil.toAlefTextInDays(o);
-    }
-
-    public static String toAlefTextInMonths(LocalDate o) {
-        if (o == null) return "";
-        return TekstUtil.toAlefTextInMonths(o);
-    }
-
-    public static String toAlefTextInYears(Integer o) {
-        if (o == null) return "";
-        return TekstUtil.toAlefTextInYears(o);
-    }
-
-    public static String toAlefTextInYears(Long o) {
-        if (o == null) return "";
-        return TekstUtil.toAlefTextInYears(o.intValue());
-    }
-
-    public static String toAlefTextInYears(LocalDate o) {
-        if (o == null) return "";
-        return TekstUtil.toAlefTextInYears(o);
-    }
-
     public static class DateOfYearWithDefaultForMonthAndDayException extends RuntimeException {
         private DateOfYearWithDefaultForMonthAndDayException(String message) {
             super(message);
@@ -301,5 +251,17 @@ public final class Util {
         return pYear == null ? null : DateUtil.easterSundayFor(pYear.intValue()).atStartOfDay();
     }
 
+    public static String toAlefText(final BigRational bigRational) {
+        return bigRational == null ? "" : bigRational.toString().replace(".", ",");
+    }
+
+    public static String toAlefText(final Boolean b) {
+        if (b == null) return "";
+        return b ? "waar" : "onwaar";
+    }
+
+    public static String toAlefText(final String s) {
+        return s == null ? "" : s;
+    }
 
 }
