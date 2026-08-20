@@ -10,8 +10,6 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="33ffcc1f-fa7d-4e95-a508-70b7986298ef" name="bl.stringinterpolation" version="0" />
-    <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
-    <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="bef79dc4-9060-4318-a10a-46eb2fa0f3b1" name="translator" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="3d687654-ce51-492e-82ac-5898fafc23a3(translator.devkit)" />
@@ -24,10 +22,8 @@
     <import index="8l26" ref="r:788951b7-6ce7-4cdf-b16c-b6ef0e226719(gegevensspraak.behavior)" />
     <import index="3ic2" ref="r:1be64251-a392-4bb4-8ecb-06d30a9277a4(gegevensspraak.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="u5to" ref="r:0f988837-f15f-4013-9404-13c879f74c10(regelspraak.behavior)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="zepk" ref="r:b1fbbf4f-983a-46db-824c-f5a0c310c50c(regelspraak.dummyslots)" />
     <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
@@ -37,17 +33,13 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="hmrn" ref="r:1a4dea10-7616-406d-86c1-7e45fadebbbb(translator.runtime.runtime)" />
     <import index="2vij" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime(alef.runtime/)" />
-    <import index="r2nh" ref="r:05a8f765-7ff1-45ab-8d9d-4557ba983db4(regelspraak.typesystem)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="owxc" ref="r:5463a47b-468f-40ba-8bbc-500ed0f64f7f(gegevensspraak.typesystem)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="jpdh" ref="r:6d19ab91-a3da-42c8-a914-18d843cf9eb4(interpreter.debug.translator)" />
     <import index="5iz4" ref="r:a10379d1-7a2d-4e32-a57a-72cdb4f3ff7e(strings)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
-    <import index="4fyb" ref="r:c1f51457-1dd3-44d9-8648-a0a2e4e72bef(immutable)" />
-    <import index="mhfm" ref="09737df8-57b5-428f-9399-89f414a94263/java:org.jetbrains.annotations(alef.runtime/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
-    <import index="nhsg" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime.time(alef.runtime/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="r9dj" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime.verdeling(alef.runtime/)" />
     <import index="wrck" ref="r:ea76656e-adc2-4c94-b937-dbef9f83e861(contexts.behavior)" implicit="true" />
@@ -428,6 +420,7 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -23072,10 +23065,17 @@
             </node>
           </node>
           <node concept="3clFbS" id="KE591_5_n7" role="3clF47">
-            <node concept="3cpWs6" id="2MiQTsO8ETd" role="3cqZAp">
-              <node concept="2YIFZM" id="4Z8lJ69PPul" role="3cqZAk">
-                <ref role="37wK5l" to="2vij:~TekstUtil.toAlefText(java.time.LocalDate)" resolve="toAlefText" />
-                <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
+            <node concept="3clFbF" id="31Qx$3WxChZ" role="3cqZAp">
+              <node concept="21Gwf3" id="3RxOc3wYDQ5" role="3clFbG">
+                <ref role="37wK5l" node="3RxOc3wENX2" resolve="mapping_enumTijdsGranulariteit" />
+                <node concept="2OqwBi" id="3RxOc3wZf42" role="37wK5m">
+                  <node concept="1XH99k" id="3RxOc3wZ7CH" role="2Oq$k0">
+                    <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                  </node>
+                  <node concept="2ViDtV" id="3RxOc3wZHoE" role="2OqNvi">
+                    <ref role="2ViDtZ" to="3ic2:4WetKT2PyUs" resolve="DAG" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="4Z8lJ69PPum" role="37wK5m">
                   <node concept="37vLTw" id="4Z8lJ69PPun" role="2Oq$k0">
                     <ref role="3cqZAo" node="KE591_fcd1" resolve="ctx" />
@@ -23124,7 +23124,6 @@
           <node concept="17QB3L" id="KE591$gQQI" role="3clF45" />
         </node>
         <node concept="21FBqJ" id="2wzpRE7nrVI" role="jymVt" />
-        <node concept="21FBqJ" id="6UKKgoWsosH" role="jymVt" />
         <node concept="21HLnp" id="6UKKgoSNJ7U" role="jymVt">
           <property role="3GE5qa" value="oud.expressies" />
           <node concept="37vLTG" id="6UKKgoSNJ7V" role="3clF46">
@@ -23143,6 +23142,7 @@
             <node concept="3cpWs8" id="6UKKgoT0yHj" role="3cqZAp">
               <node concept="3cpWsn" id="6UKKgoT0yHk" role="3cpWs9">
                 <property role="TrG5h" value="datetime" />
+                <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="6UKKgoT0yHl" role="1tU5fm">
                   <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
@@ -23163,22 +23163,10 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6UKKgoT0yHt" role="3cqZAp">
-              <node concept="3cpWsn" id="6UKKgoT0yHu" role="3cpWs9">
-                <property role="TrG5h" value="sb" />
-                <node concept="3uibUv" id="6UKKgoT0yHv" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~StringBuffer" resolve="StringBuffer" />
-                </node>
-                <node concept="2ShNRf" id="6UKKgoT0yHw" role="33vP2m">
-                  <node concept="1pGfFk" id="6UKKgoT0yHx" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;()" resolve="StringBuffer" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="6UKKgoVJfyp" role="3cqZAp">
               <node concept="3cpWsn" id="6UKKgoVJfys" role="3cpWs9">
                 <property role="TrG5h" value="datumTijd" />
+                <property role="3TUv4t" value="true" />
                 <node concept="3Tqbb2" id="6UKKgoVJfyn" role="1tU5fm">
                   <ref role="ehGHo" to="3ic2:58tBIcSIKQ5" resolve="DatumTijdType" />
                 </node>
@@ -23197,129 +23185,19 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6UKKgoT0yHy" role="3cqZAp">
-              <node concept="3X5UdL" id="6UKKgoT0yHz" role="3clFbG">
-                <node concept="3X5Udd" id="6UKKgoT0yH$" role="3X5gkp">
-                  <node concept="21nZrQ" id="6UKKgoT0yH_" role="3X5Uda">
-                    <ref role="21nZrZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
-                  </node>
-                  <node concept="3X5gDF" id="6UKKgoT0yHA" role="3X5gFO">
-                    <node concept="2OqwBi" id="6UKKgoT0yHB" role="3X5gDC">
-                      <node concept="37vLTw" id="6UKKgoT0yHC" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6UKKgoT0yHu" resolve="sb" />
-                      </node>
-                      <node concept="liA8E" id="6UKKgoT0yHD" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
-                        <node concept="2YIFZM" id="4Z8lJ69Qfzi" role="37wK5m">
-                          <ref role="37wK5l" to="2vij:~TekstUtil.toAlefTextInFractionalSeconds(java.time.LocalDateTime)" resolve="toAlefTextInFractionalSeconds" />
-                          <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
-                          <node concept="2YIFZM" id="4Z8lJ69Qfzj" role="37wK5m">
-                            <ref role="37wK5l" to="2vij:~DateUtil.asLocalDateTime(java.lang.Object)" resolve="asLocalDateTime" />
-                            <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
-                            <node concept="37vLTw" id="4Z8lJ69Qfzk" role="37wK5m">
-                              <ref role="3cqZAo" node="6UKKgoT0yHk" resolve="datetime" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3X5Udd" id="6UKKgoT0yHG" role="3X5gkp">
-                  <node concept="21nZrQ" id="6UKKgoT0yHH" role="3X5Uda">
-                    <ref role="21nZrZ" to="3ic2:4WetKT2PyUs" resolve="DAG" />
-                  </node>
-                  <node concept="3X5gDF" id="6UKKgoT0yHI" role="3X5gFO">
-                    <node concept="2OqwBi" id="6UKKgoT0yHJ" role="3X5gDC">
-                      <node concept="37vLTw" id="6UKKgoT0yHK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6UKKgoT0yHu" resolve="sb" />
-                      </node>
-                      <node concept="liA8E" id="6UKKgoT0yHL" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
-                        <node concept="2YIFZM" id="4Z8lJ69QLXn" role="37wK5m">
-                          <ref role="37wK5l" to="2vij:~TekstUtil.toAlefTextInDays(java.time.LocalDate)" resolve="toAlefTextInDays" />
-                          <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
-                          <node concept="2YIFZM" id="4Z8lJ69QLXo" role="37wK5m">
-                            <ref role="37wK5l" to="2vij:~DateUtil.asLocalDate(java.lang.Object)" resolve="asLocalDate" />
-                            <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
-                            <node concept="37vLTw" id="4Z8lJ69QLXp" role="37wK5m">
-                              <ref role="3cqZAo" node="6UKKgoT0yHk" resolve="datetime" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3X5Udd" id="6UKKgoT0yHO" role="3X5gkp">
-                  <node concept="21nZrQ" id="6UKKgoT0yHP" role="3X5Uda">
-                    <ref role="21nZrZ" to="3ic2:4WetKT2PyUq" resolve="MAAND" />
-                  </node>
-                  <node concept="3X5gDF" id="6UKKgoT0yHQ" role="3X5gFO">
-                    <node concept="2OqwBi" id="6UKKgoT0yHR" role="3X5gDC">
-                      <node concept="37vLTw" id="6UKKgoT0yHS" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6UKKgoT0yHu" resolve="sb" />
-                      </node>
-                      <node concept="liA8E" id="6UKKgoT0yHT" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
-                        <node concept="2YIFZM" id="4Z8lJ69RbWk" role="37wK5m">
-                          <ref role="37wK5l" to="2vij:~TekstUtil.toAlefTextInMonths(java.time.LocalDate)" resolve="toAlefTextInMonths" />
-                          <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
-                          <node concept="2YIFZM" id="4Z8lJ69RbWl" role="37wK5m">
-                            <ref role="37wK5l" to="2vij:~DateUtil.asLocalDate(java.lang.Object)" resolve="asLocalDate" />
-                            <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
-                            <node concept="37vLTw" id="4Z8lJ69RbWm" role="37wK5m">
-                              <ref role="3cqZAo" node="6UKKgoT0yHk" resolve="datetime" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3X5Udd" id="6UKKgoT0yHW" role="3X5gkp">
-                  <node concept="21nZrQ" id="6UKKgoT0yHX" role="3X5Uda">
-                    <ref role="21nZrZ" to="3ic2:4WetKT2PyUo" resolve="JAAR" />
-                  </node>
-                  <node concept="3X5gDF" id="6UKKgoT0yHY" role="3X5gFO">
-                    <node concept="2OqwBi" id="6UKKgoT0yHZ" role="3X5gDC">
-                      <node concept="37vLTw" id="6UKKgoT0yI0" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6UKKgoT0yHu" resolve="sb" />
-                      </node>
-                      <node concept="liA8E" id="6UKKgoT0yI1" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
-                        <node concept="2YIFZM" id="4Z8lJ69SI5R" role="37wK5m">
-                          <ref role="37wK5l" to="2vij:~TekstUtil.toAlefTextInYears(java.time.LocalDate)" resolve="toAlefTextInYears" />
-                          <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
-                          <node concept="2YIFZM" id="4Z8lJ69SI5S" role="37wK5m">
-                            <ref role="37wK5l" to="2vij:~DateUtil.asLocalDate(java.lang.Object)" resolve="asLocalDate" />
-                            <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
-                            <node concept="37vLTw" id="4Z8lJ69SI5T" role="37wK5m">
-                              <ref role="3cqZAo" node="6UKKgoT0yHk" resolve="datetime" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6UKKgoT0yI4" role="3X5Ude">
-                  <node concept="37vLTw" id="6UKKgoW6ZUe" role="2Oq$k0">
+            <node concept="3cpWs6" id="3RxOc3wJlp1" role="3cqZAp">
+              <node concept="21Gwf3" id="3RxOc3wHx3g" role="3cqZAk">
+                <ref role="37wK5l" node="3RxOc3wENX2" resolve="mapping_enumTijdsGranulariteit" />
+                <node concept="2OqwBi" id="3RxOc3wNOtB" role="37wK5m">
+                  <node concept="37vLTw" id="3RxOc3wHXZK" role="2Oq$k0">
                     <ref role="3cqZAo" node="6UKKgoVJfys" resolve="datumTijd" />
                   </node>
-                  <node concept="3TrcHB" id="6UKKgoT0yI6" role="2OqNvi">
+                  <node concept="3TrcHB" id="3RxOc3wO94O" role="2OqNvi">
                     <ref role="3TsBF5" to="3ic2:4WetKT2Pzpu" resolve="granulariteit" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="6UKKgoT0yI7" role="3cqZAp">
-              <node concept="2OqwBi" id="6UKKgoT0yI8" role="3cqZAk">
-                <node concept="37vLTw" id="6UKKgoT0yI9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6UKKgoT0yHu" resolve="sb" />
-                </node>
-                <node concept="liA8E" id="6UKKgoT0yIa" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
+                <node concept="37vLTw" id="3RxOc3wIHRM" role="37wK5m">
+                  <ref role="3cqZAo" node="6UKKgoT0yHk" resolve="datetime" />
                 </node>
               </node>
             </node>
@@ -23342,6 +23220,69 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="21HLnp" id="3RxOc3wENX2" role="jymVt">
+          <node concept="37vLTG" id="3RxOc3wENX3" role="3clF46">
+            <property role="TrG5h" value="granulariteit" />
+            <node concept="2ZThk1" id="3RxOc3wLP8P" role="1tU5fm">
+              <ref role="2ZWj4r" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+            </node>
+          </node>
+          <node concept="37vLTG" id="3RxOc3wFJ_c" role="3clF46">
+            <property role="TrG5h" value="value" />
+            <node concept="3uibUv" id="3RxOc3wFWoG" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3RxOc3wENX4" role="3clF47">
+            <node concept="3clFbF" id="31Qx$3WvNde" role="3cqZAp">
+              <node concept="2YIFZM" id="3RxOc3wGkKC" role="3clFbG">
+                <ref role="37wK5l" to="2vij:~DateUtil.formatLocalDateTime(java.time.LocalDateTime,nl.belastingdienst.alef_runtime.TimeGranularity)" resolve="formatLocalDateTime" />
+                <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
+                <node concept="2YIFZM" id="3RxOc3wGkKD" role="37wK5m">
+                  <ref role="37wK5l" to="2vij:~DateUtil.asLocalDateTime(java.lang.Object)" resolve="asLocalDateTime" />
+                  <ref role="1Pybhc" to="2vij:~DateUtil" resolve="DateUtil" />
+                  <node concept="37vLTw" id="3RxOc3wGkKE" role="37wK5m">
+                    <ref role="3cqZAo" node="3RxOc3wFJ_c" resolve="value" />
+                  </node>
+                </node>
+                <node concept="21Gwf3" id="3RxOc3wGkKF" role="37wK5m">
+                  <ref role="37wK5l" node="3RxOc3wgwZL" resolve="mapping_enumTijdsGranulariteit" />
+                  <node concept="37vLTw" id="3RxOc3wGkKH" role="37wK5m">
+                    <ref role="3cqZAo" node="3RxOc3wENX3" resolve="granulariteit" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="3RxOc3wENX5" role="1B3o_S" />
+          <node concept="17QB3L" id="3RxOc3wF7BN" role="3clF45" />
+        </node>
+        <node concept="21HLnp" id="3RxOc3wgwZL" role="jymVt">
+          <node concept="37vLTG" id="3RxOc3wgwZM" role="3clF46">
+            <property role="TrG5h" value="granulariteit" />
+            <node concept="2ZThk1" id="3RxOc3wiemX" role="1tU5fm">
+              <ref role="2ZWj4r" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3RxOc3wgwZN" role="3clF47">
+            <node concept="3clFbF" id="3RxOc3wilLH" role="3cqZAp">
+              <node concept="2YIFZM" id="3RxOc3wilLJ" role="3clFbG">
+                <ref role="37wK5l" to="2vij:~TimeGranularity.fromAlef(java.lang.String)" resolve="fromAlef" />
+                <ref role="1Pybhc" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                <node concept="2OqwBi" id="3RxOc3wilLK" role="37wK5m">
+                  <node concept="37vLTw" id="3RxOc3wilLL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3RxOc3wgwZM" resolve="granulariteit" />
+                  </node>
+                  <node concept="24Tkf9" id="3RxOc3wilLM" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="3RxOc3wgwZO" role="1B3o_S" />
+          <node concept="3uibUv" id="3RxOc3whjDQ" role="3clF45">
+            <ref role="3uigEE" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
           </node>
         </node>
         <node concept="21FBqJ" id="6UKKgoSM3n3" role="jymVt" />
@@ -23468,8 +23409,8 @@
           <node concept="3clFbS" id="2PZZJlQIZax" role="3clF47">
             <node concept="3cpWs6" id="2PZZJlQZbJe" role="3cqZAp">
               <node concept="2YIFZM" id="4Z8lJ69Tl1k" role="3cqZAk">
-                <ref role="37wK5l" to="2vij:~TekstUtil.toAlefText(nl.belastingdienst.alef_runtime.BigRational)" resolve="toAlefText" />
-                <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
+                <ref role="37wK5l" to="2vij:~Util.toAlefText(nl.belastingdienst.alef_runtime.BigRational)" resolve="toAlefText" />
+                <ref role="1Pybhc" to="2vij:~Util" resolve="Util" />
                 <node concept="37vLTw" id="4Z8lJ69Tl1l" role="37wK5m">
                   <ref role="3cqZAo" node="2PZZJlQIZaw" resolve="waarde" />
                 </node>
@@ -23490,8 +23431,8 @@
           <node concept="3clFbS" id="2PZZJlQP0q2" role="3clF47">
             <node concept="3cpWs6" id="2PZZJlQZfxx" role="3cqZAp">
               <node concept="2YIFZM" id="4Z8lJ69TUX0" role="3cqZAk">
-                <ref role="37wK5l" to="2vij:~TekstUtil.toAlefText(java.lang.Boolean)" resolve="toAlefText" />
-                <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
+                <ref role="37wK5l" to="2vij:~Util.toAlefText(java.lang.Boolean)" resolve="toAlefText" />
+                <ref role="1Pybhc" to="2vij:~Util" resolve="Util" />
                 <node concept="37vLTw" id="4Z8lJ69TUX1" role="37wK5m">
                   <ref role="3cqZAo" node="2PZZJlQP0q1" resolve="waarde" />
                 </node>
@@ -23510,11 +23451,18 @@
             </node>
           </node>
           <node concept="3clFbS" id="2PZZJlQUBD_" role="3clF47">
-            <node concept="3cpWs6" id="2PZZJlQZjfC" role="3cqZAp">
-              <node concept="2YIFZM" id="4Z8lJ69Uk$Q" role="3cqZAk">
-                <ref role="37wK5l" to="2vij:~TekstUtil.toAlefTextInFractionalSeconds(java.time.LocalDateTime)" resolve="toAlefTextInFractionalSeconds" />
-                <ref role="1Pybhc" to="2vij:~TekstUtil" resolve="TekstUtil" />
-                <node concept="37vLTw" id="4Z8lJ69Uk$R" role="37wK5m">
+            <node concept="3cpWs6" id="3RxOc3wKtAN" role="3cqZAp">
+              <node concept="21Gwf3" id="3RxOc3wQmFQ" role="3cqZAk">
+                <ref role="37wK5l" node="3RxOc3wENX2" resolve="mapping_enumTijdsGranulariteit" />
+                <node concept="2OqwBi" id="3RxOc3wSJIx" role="37wK5m">
+                  <node concept="1XH99k" id="3RxOc3wSl49" role="2Oq$k0">
+                    <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                  </node>
+                  <node concept="2ViDtV" id="3RxOc3wTeqN" role="2OqNvi">
+                    <ref role="2ViDtZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3RxOc3wRHfI" role="37wK5m">
                   <ref role="3cqZAo" node="2PZZJlQUBD$" resolve="waarde" />
                 </node>
               </node>

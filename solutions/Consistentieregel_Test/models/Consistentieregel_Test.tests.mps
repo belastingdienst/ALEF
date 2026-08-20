@@ -215,9 +215,13 @@
         <child id="653687101152189607" name="elem" index="2bv01j" unordered="true" />
       </concept>
       <concept id="5478077304742291705" name="gegevensspraak.structure.DatumTijdLiteral" flags="ng" index="2ljiaL">
+        <property id="2954841454439039096" name="fractioneleSeconde" index="2isrjt" />
         <property id="5478077304742291706" name="dag" index="2ljiaM" />
         <property id="5478077304742291707" name="maand" index="2ljiaN" />
         <property id="5478077304742291708" name="jaar" index="2ljiaO" />
+        <property id="4697074533531796330" name="minuut" index="2JBhWc" />
+        <property id="4697074533531796339" name="seconde" index="2JBhWl" />
+        <property id="4697074533531796301" name="uur" index="2JBhWF" />
       </concept>
       <concept id="5478077304742085581" name="gegevensspraak.structure.Geldigheidsperiode" flags="ng" index="2ljwA5">
         <child id="5478077304742085582" name="van" index="2ljwA6" />
@@ -248,10 +252,16 @@
         <property id="8989128614612178052" name="isOnzijdig" index="16Ztxt" />
         <property id="8989128614612178055" name="meervoudsvorm" index="16Ztxu" />
       </concept>
+      <concept id="552830129173627999" name="gegevensspraak.structure.Koptekst" flags="ng" index="39aKxd">
+        <property id="552830129173628020" name="tekst" index="39aKxA" />
+      </concept>
       <concept id="558527188464633210" name="gegevensspraak.structure.AbstractNumeriekeLiteral" flags="ng" index="3e5kNY">
         <property id="558527188465081158" name="waarde" index="3e6Tb2" />
       </concept>
       <concept id="5917060184181247441" name="gegevensspraak.structure.BooleanType" flags="ng" index="1EDDcM" />
+      <concept id="5917060184181247365" name="gegevensspraak.structure.DatumTijdType" flags="ng" index="1EDDdA">
+        <property id="5917060184181247410" name="granulariteit" index="1EDDdh" />
+      </concept>
       <concept id="5917060184181247326" name="gegevensspraak.structure.NumeriekType" flags="ng" index="1EDDeX" />
       <concept id="5917060184181247285" name="gegevensspraak.structure.DomeinType" flags="ng" index="1EDDfm">
         <reference id="5917060184181247286" name="domein" index="1EDDfl" />
@@ -366,6 +376,33 @@
       <node concept="2bpyt6" id="1JzahCtSmf9" role="2bv01j">
         <property role="TrG5h" value="strict formulier" />
         <property role="2n7kvO" value="true" />
+      </node>
+      <node concept="39aKxd" id="3RxOc3vYUgM" role="2bv01j">
+        <property role="39aKxA" value="ALEFS-1159: test time in sequence of text" />
+      </node>
+      <node concept="2bv6ZS" id="3RxOc3vFHmi" role="2bv01j">
+        <property role="TrG5h" value="uren" />
+        <node concept="1EDDdA" id="3RxOc3vFHmW" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQk/UUR" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="3RxOc3vFHn8" role="2bv01j">
+        <property role="TrG5h" value="minuten" />
+        <node concept="1EDDdA" id="3RxOc3vFHn9" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQq/MINUUT" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="3RxOc3vFHnK" role="2bv01j">
+        <property role="TrG5h" value="seconden" />
+        <node concept="1EDDdA" id="3RxOc3vFHnL" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQx/SECONDE" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="3RxOc3vFHoy" role="2bv01j">
+        <property role="TrG5h" value="tijdstip" />
+        <node concept="1EDDdA" id="3RxOc3vFHoz" role="1EDDcc">
+          <property role="1EDDdh" value="2HjUWz6rdAL/TIJDSTIP" />
+        </node>
       </node>
     </node>
     <node concept="1uxNW$" id="5QGe9ffVi3" role="2bv6Cn" />
@@ -2093,6 +2130,86 @@
                   <property role="2JwNin" value="veld1 is gecontroleerd" />
                 </node>
               </node>
+              <node concept="ymhcM" id="4i8X4kdlBe$" role="2x5sjf">
+                <node concept="2JwNib" id="4i8X4kdlBeA" role="ymhcN">
+                  <property role="2JwNin" value=" (uren: " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3u42d2" role="2x5sjf">
+                <node concept="3_mHL5" id="3RxOc3vY$bu" role="ymhcN">
+                  <node concept="c2t0s" id="3RxOc3vY$cI" role="eaaoM">
+                    <ref role="Qu8KH" node="3RxOc3vFHmi" resolve="uren" />
+                  </node>
+                  <node concept="3yS1BT" id="3RxOc3vY$cH" role="pQQuc">
+                    <ref role="3yS1Ki" node="1JzahCtRGPT" resolve="formulier met melding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3u42cZ" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3u42d1" role="ymhcN">
+                  <property role="2JwNin" value=") " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$ql" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3vY$qm" role="ymhcN">
+                  <property role="2JwNin" value="(minuten: " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$qn" role="2x5sjf">
+                <node concept="3_mHL5" id="3RxOc3vY$qo" role="ymhcN">
+                  <node concept="c2t0s" id="3RxOc3vY$w0" role="eaaoM">
+                    <ref role="Qu8KH" node="3RxOc3vFHn8" resolve="minuten" />
+                  </node>
+                  <node concept="3yS1BT" id="3RxOc3vY$qq" role="pQQuc">
+                    <ref role="3yS1Ki" node="1JzahCtRGPT" resolve="formulier met melding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$qr" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3vY$qs" role="ymhcN">
+                  <property role="2JwNin" value=") " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$s9" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3vY$sa" role="ymhcN">
+                  <property role="2JwNin" value="(seconden: " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$sb" role="2x5sjf">
+                <node concept="3_mHL5" id="3RxOc3vY$sc" role="ymhcN">
+                  <node concept="c2t0s" id="3RxOc3vY$xG" role="eaaoM">
+                    <ref role="Qu8KH" node="3RxOc3vFHnK" resolve="seconden" />
+                  </node>
+                  <node concept="3yS1BT" id="3RxOc3vY$se" role="pQQuc">
+                    <ref role="3yS1Ki" node="1JzahCtRGPT" resolve="formulier met melding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$sf" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3vY$sg" role="ymhcN">
+                  <property role="2JwNin" value=") " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$u2" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3vY$u3" role="ymhcN">
+                  <property role="2JwNin" value="(tijdstip: " />
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$u4" role="2x5sjf">
+                <node concept="3_mHL5" id="3RxOc3vY$u5" role="ymhcN">
+                  <node concept="c2t0s" id="3RxOc3vY$zp" role="eaaoM">
+                    <ref role="Qu8KH" node="3RxOc3vFHoy" resolve="tijdstip" />
+                  </node>
+                  <node concept="3yS1BT" id="3RxOc3vY$u7" role="pQQuc">
+                    <ref role="3yS1Ki" node="1JzahCtRGPT" resolve="formulier met melding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ymhcM" id="3RxOc3vY$u8" role="2x5sjf">
+                <node concept="2JwNib" id="3RxOc3vY$u9" role="ymhcN">
+                  <property role="2JwNin" value=")." />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2114,8 +2231,8 @@
         <node concept="3mzBic" id="1JzahCtX9Q_" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="1TFj4rzw8ac" resolve="veld2" />
-          <node concept="2JwNib" id="1JzahCtX9QA" role="3mzBi6">
-            <property role="2JwNin" value="veld1 is gecontroleerd" />
+          <node concept="2JwNib" id="3RxOc3vY_$p" role="3mzBi6">
+            <property role="2JwNin" value="veld1 is gecontroleerd (uren: ) (minuten: ) (seconden: ) (tijdstip: )." />
           </node>
         </node>
       </node>
@@ -2160,8 +2277,8 @@
         <node concept="3mzBic" id="1JzahCtSlZt" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="1TFj4rzw8ac" resolve="veld2" />
-          <node concept="2JwNib" id="1JzahCtSlZE" role="3mzBi6">
-            <property role="2JwNin" value="veld1 is gecontroleerd" />
+          <node concept="2JwNib" id="3RxOc3vYSSm" role="3mzBi6">
+            <property role="2JwNin" value="veld1 is gecontroleerd (uren: 01-02-2003 04) (minuten: 05-06-2007 08:09) (seconden: 10-11-2012 13:14:15) (tijdstip: 16-05-2018 19:20:21.123456789)." />
           </node>
         </node>
       </node>
@@ -2178,6 +2295,48 @@
           <ref role="3_ceKs" node="1JzahCtSmf9" resolve="strict formulier" />
           <node concept="2Jx4MH" id="1JzahCtSmik" role="3_ceKu">
             <property role="2Jx4MO" value="true" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="3RxOc3vYB$I" role="4OhPJ">
+          <ref role="3_ceKs" node="3RxOc3vFHmi" resolve="uren" />
+          <node concept="2ljiaL" id="3RxOc3vYC63" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="2" />
+            <property role="2ljiaO" value="2003" />
+            <property role="2JBhWF" value="4" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="3RxOc3vYCBu" role="4OhPJ">
+          <ref role="3_ceKs" node="3RxOc3vFHn8" resolve="minuten" />
+          <node concept="2ljiaL" id="3RxOc3vYDab" role="3_ceKu">
+            <property role="2ljiaM" value="5" />
+            <property role="2ljiaN" value="6" />
+            <property role="2ljiaO" value="2007" />
+            <property role="2JBhWF" value="8" />
+            <property role="2JBhWc" value="9" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="3RxOc3vYDFE" role="4OhPJ">
+          <ref role="3_ceKs" node="3RxOc3vFHnK" resolve="seconden" />
+          <node concept="2ljiaL" id="3RxOc3vYEd7" role="3_ceKu">
+            <property role="2ljiaM" value="10" />
+            <property role="2ljiaN" value="11" />
+            <property role="2ljiaO" value="2012" />
+            <property role="2JBhWF" value="13" />
+            <property role="2JBhWc" value="14" />
+            <property role="2JBhWl" value="15" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="3RxOc3vYEIE" role="4OhPJ">
+          <ref role="3_ceKs" node="3RxOc3vFHoy" resolve="tijdstip" />
+          <node concept="2ljiaL" id="3RxOc3vYFgb" role="3_ceKu">
+            <property role="2ljiaM" value="16" />
+            <property role="2ljiaN" value="5" />
+            <property role="2ljiaO" value="2018" />
+            <property role="2JBhWF" value="19" />
+            <property role="2JBhWc" value="20" />
+            <property role="2JBhWl" value="21" />
+            <property role="2isrjt" value="123456789" />
           </node>
         </node>
       </node>
@@ -2212,8 +2371,8 @@
         <node concept="3mzBic" id="1JzahCtWpgt" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="1TFj4rzw8ac" resolve="veld2" />
-          <node concept="2JwNib" id="1JzahCtWpgu" role="3mzBi6">
-            <property role="2JwNin" value="veld1 is gecontroleerd" />
+          <node concept="2JwNib" id="3RxOc3vYACJ" role="3mzBi6">
+            <property role="2JwNin" value="veld1 is gecontroleerd (uren: ) (minuten: ) (seconden: ) (tijdstip: )." />
           </node>
         </node>
       </node>

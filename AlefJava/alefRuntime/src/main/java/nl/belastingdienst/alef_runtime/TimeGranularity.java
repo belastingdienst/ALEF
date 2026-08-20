@@ -1,6 +1,7 @@
 package nl.belastingdienst.alef_runtime;
 
 public enum TimeGranularity {
+    // All strings need to be lower case only and match the names using in the enumeration TijdsGranulariteit in MPS.
     POINT_IN_TIME("tijdstip", "tijdstippen", 1, false),
     MILLI_SECOND("milliseconde", "millisecondes", 1000000 * TimeGranularity.POINT_IN_TIME.getDurationFactor(), false),
     SECOND("seconde", "secondes", 1000 * TimeGranularity.MILLI_SECOND.getDurationFactor(), false),
@@ -67,10 +68,10 @@ public enum TimeGranularity {
         throw new IllegalArgumentException("Onbekende granulariteit: " + alefName);
     }
     public static TimeGranularity fromString(String s) {
-        final String clean_string = s.trim().toUpperCase();
+        final String clean_string = s.trim().toLowerCase();
         for (TimeGranularity tg : TimeGranularity.values()) {
-             if (tg.getAlefEnum().toUpperCase().equals(clean_string) ||
-                tg.getPlural().toUpperCase().equals(clean_string))
+             if (tg.getAlefEnum().equals(clean_string) ||
+                tg.getPlural().equals(clean_string))
                 return tg;
         }
         throw new IllegalArgumentException("Onbekende granulariteit: " + s);
