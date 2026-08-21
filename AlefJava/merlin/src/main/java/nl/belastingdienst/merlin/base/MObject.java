@@ -6,7 +6,6 @@ import nl.belastingdienst.alef_runtime.time.IValidity;
 import nl.belastingdienst.merlin.time.MTimedObjectSet;
 import nl.belastingdienst.merlin.time.MTimedObjectSingleton;
 
-import javax.management.relation.RoleInfoNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -154,8 +153,18 @@ public class MObject extends MBase implements IMDelegatedExecution {
         return property.gePropertyByIndex(index);
     }
 
+    public static boolean hasKenmerk(MObject object, MKenmerkKey<Boolean> kenmerk, boolean ifObjectNull) {
+        if (object == null) return ifObjectNull;
+        return Boolean.TRUE.equals(object.getProperty(kenmerk).get());
+    }
+
     public MRole getRole(MRoleKey roleKey) {
         return roles.computeIfAbsent(roleKey, k -> k.createRole(this));
+    }
+
+    public static boolean isRole(MObject object, MRoleKey role) {
+        if (object == null) return false;
+        return object.isRole(role);
     }
 
     public boolean isRole(MRoleKey roleKey) {
