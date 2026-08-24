@@ -6,8 +6,9 @@ law experts and at the same time precise enough to be executed by a computer.
 
 See for more information:
 
-* ALEF user documentation: [https://wendbarewetsuitvoering.pleio.nl](https://wendbarewetsuitvoering.pleio.nl) (in Dutch).
-* Regelspraak: [https://regels.overheid.nl](https://regels.overheid.nl/docs/methods/REGELSPRAAK) website (in Dutch).
+* ALEF user documentation: [docs/index.md](docs/index.md) (in Dutch).
+* Regelspraak: [https://wendbarewetsuitvoering.pleio.nl/page/view/ba938b8f-0668-4451-a7e6-81de78bbe66a/regelspraak](https://wendbarewetsuitvoering.pleio.nl/page/view/ba938b8f-0668-4451-a7e6-81de78bbe66a/regelspraak) (in Dutch).
+* Training material: [https://wendbarewetsuitvoering.pleio.nl/page/view/bd4e8297-8e41-4ac8-9bcf-2aa4f9adda2d/opleidingsmateriaal](https://wendbarewetsuitvoering.pleio.nl/page/view/bd4e8297-8e41-4ac8-9bcf-2aa4f9adda2d/opleidingsmateriaal) (in Dutch).
 
 ## Build
 
