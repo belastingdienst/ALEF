@@ -7,7 +7,6 @@
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -8111,6 +8110,29 @@
               <node concept="1HfYo3" id="6TDyi7ggYiy" role="1HlULh">
                 <node concept="3TQlhw" id="6TDyi7ggYiz" role="1Hhtcw">
                   <node concept="3clFbS" id="6TDyi7ggYi$" role="2VODD2">
+                    <node concept="3cpWs8" id="6r10fyqFPDi" role="3cqZAp">
+                      <node concept="3cpWsn" id="6r10fyqFPDl" role="3cpWs9">
+                        <property role="TrG5h" value="text" />
+                        <node concept="17QB3L" id="6r10fyqFPDg" role="1tU5fm" />
+                        <node concept="3K4zz7" id="6r10fyqFU5h" role="33vP2m">
+                          <node concept="Xl_RD" id="6r10fyqFU6O" role="3K4E3e">
+                            <property role="Xl_RC" value="Allen" />
+                          </node>
+                          <node concept="Xl_RD" id="6r10fyqFUbf" role="3K4GZi">
+                            <property role="Xl_RC" value="Gefilterde" />
+                          </node>
+                          <node concept="2OqwBi" id="6r10fyqFSEC" role="3K4Cdx">
+                            <node concept="2OqwBi" id="6r10fyqFPYn" role="2Oq$k0">
+                              <node concept="pncrf" id="6r10fyqFPHS" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="6r10fyqFSgu" role="2OqNvi">
+                                <ref role="3TsBF5" to="ku5w:6TDyi7ggYh8" resolve="search" />
+                              </node>
+                            </node>
+                            <node concept="17RlXB" id="6r10fyqFTGg" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="6TDyi7ggYi_" role="3cqZAp">
                       <node concept="3K4zz7" id="6TDyi7ggYiA" role="3clFbG">
                         <node concept="2OqwBi" id="6TDyi7ggYiB" role="3K4Cdx">
@@ -8119,11 +8141,21 @@
                             <ref role="3TsBF5" to="ku5w:6TDyi7ggYha" resolve="deselectAll" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="6TDyi7ggYiE" role="3K4E3e">
-                          <property role="Xl_RC" value="Deselecteer Allen" />
+                        <node concept="3cpWs3" id="6r10fyqFU$4" role="3K4E3e">
+                          <node concept="37vLTw" id="6r10fyqFU_L" role="3uHU7w">
+                            <ref role="3cqZAo" node="6r10fyqFPDl" resolve="text" />
+                          </node>
+                          <node concept="Xl_RD" id="6TDyi7ggYiE" role="3uHU7B">
+                            <property role="Xl_RC" value="Deselecteer " />
+                          </node>
                         </node>
-                        <node concept="Xl_RD" id="6TDyi7ggYiF" role="3K4GZi">
-                          <property role="Xl_RC" value="Selecteer Allen" />
+                        <node concept="3cpWs3" id="6r10fyqFUuH" role="3K4GZi">
+                          <node concept="37vLTw" id="6r10fyqFUwh" role="3uHU7w">
+                            <ref role="3cqZAo" node="6r10fyqFPDl" resolve="text" />
+                          </node>
+                          <node concept="Xl_RD" id="6TDyi7ggYiF" role="3uHU7B">
+                            <property role="Xl_RC" value="Selecteer " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -8167,6 +8199,21 @@
               <ref role="1ERwB7" node="2gwp8ZilqsX" resolve="ResetBerichtVeldenFilter" />
               <node concept="2SqB2G" id="6TDyi7ggYiU" role="2SqHTX">
                 <property role="TrG5h" value="resetFilter" />
+              </node>
+              <node concept="pkWqt" id="6r10fyqIJcI" role="pqm2j">
+                <node concept="3clFbS" id="6r10fyqIJcJ" role="2VODD2">
+                  <node concept="3clFbF" id="6r10fyqIJlU" role="3cqZAp">
+                    <node concept="2OqwBi" id="6r10fyqIKQS" role="3clFbG">
+                      <node concept="2OqwBi" id="6r10fyqIJAs" role="2Oq$k0">
+                        <node concept="pncrf" id="6r10fyqIJlT" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="6r10fyqIKhW" role="2OqNvi">
+                          <ref role="3TsBF5" to="ku5w:6TDyi7ggYh8" resolve="search" />
+                        </node>
+                      </node>
+                      <node concept="17RvpY" id="6r10fyqILM8" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3F0ifn" id="6TDyi7ggYiV" role="3EZMnx">

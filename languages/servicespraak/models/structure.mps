@@ -1583,6 +1583,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1ikyrmjHd1n" resolve="BerichtVeld" />
     </node>
+    <node concept="t5JxF" id="IBPrFkrsgo" role="lGtFl">
+      <property role="t5JxN" value="This concept is only for a dialog editor" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6TDyi7ggYgU">
     <property role="EcuMT" value="7956040995047728186" />
@@ -1621,6 +1624,9 @@
       <property role="TrG5h" value="deselectAll" />
       <property role="1H4juY" value="true" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="t5JxF" id="IBPrFkrsgn" role="lGtFl">
+      <property role="t5JxN" value="This concept is only for a dialog editor" />
     </node>
   </node>
 </model>

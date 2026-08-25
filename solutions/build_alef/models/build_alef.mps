@@ -11015,16 +11015,6 @@
             <ref role="3bR37D" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="LxvEVRXxrL" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVRXxrM" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:5cCcm$KATVz" resolve="jetbrains.mps.lang.migration.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="LxvEVRXxrN" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVRXxrO" role="1SiIV1">
-            <ref role="3bR37D" node="3PgQ0IMyhub" resolve="migrationUtils" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="4wvGeDpkGRx" role="2G$12L">
         <property role="TrG5h" value="servicespraak" />

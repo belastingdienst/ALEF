@@ -45,7 +45,6 @@
     <dependency reexport="false">9624b6ec-18c7-44ba-9a78-e6c1520c2cf7(xmlUtils)</dependency>
     <dependency reexport="false">20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)</dependency>
     <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
-    <dependency reexport="false">267d4bfa-f8da-40b1-a8fd-096d94d6918a(Sample)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:08d6f877-03cc-45d3-b03c-d6f786266853:bronspraak" version="1" />
@@ -124,7 +123,6 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" version="0" />
     <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
-    <module reference="267d4bfa-f8da-40b1-a8fd-096d94d6918a(Sample)" version="0" />
     <module reference="09737df8-57b5-428f-9399-89f414a94263(alef.runtime)" version="0" />
     <module reference="4a6bb6ab-de63-4605-8a60-a06fda7893a8(alef.tools)" version="0" />
     <module reference="7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3(beslistabelspraak)" version="0" />
