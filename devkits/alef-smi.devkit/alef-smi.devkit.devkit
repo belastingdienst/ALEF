@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="alef-smi.devkit" uuid="5f8dcc1b-0593-4198-933e-6acec386c45c">
+  <exported-language name="421e69be-2491-4702-be1c-bfd5ff22ca14(modelNaarJson)" />
+  <extendedDevKits>
+    <extendedDevKit>d07fa9c5-678d-4a9b-9eaf-b1b8c569b820(alef.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <generation-plan model="r:a062d0a9-f123-4df2-9408-f9613eba584a(alef_smi@genplan)" />
+</dev-kit>
+
