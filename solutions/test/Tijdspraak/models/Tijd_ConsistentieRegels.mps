@@ -477,13 +477,8 @@
             </node>
           </node>
           <node concept="2z5Mdt" id="3aAX0I$AyAq" role="1wO7i3">
-            <node concept="3_mHL5" id="3aAX0I$AyAr" role="2z5D6P">
-              <node concept="c2t0s" id="3aAX0I$AyB6" role="eaaoM">
-                <ref role="Qu8KH" node="2FJeVze6K1F" resolve="inkomen" />
-              </node>
-              <node concept="3yS1BT" id="3aAX0I$AyAt" role="pQQuc">
-                <ref role="3yS1Ki" node="2FJeVze6Kdz" resolve="Persoon" />
-              </node>
+            <node concept="3yS1BT" id="4$yuTK8lThi" role="2z5D6P">
+              <ref role="3yS1Ki" node="2FJeVze6Kd$" resolve="inkomen" />
             </node>
             <node concept="28IvMi" id="3aAX0I$AyBB" role="2z5HcU" />
           </node>

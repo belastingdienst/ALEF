@@ -38,6 +38,7 @@
         <dependency reexport="false">09737df8-57b5-428f-9399-89f414a94263(alef.runtime)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">f21369f7-7e7f-4a03-a372-565160d29d2b(merlinBaseExt)</dependency>
+        <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -91,6 +92,7 @@
         <module reference="45e39a9b-8c0e-4795-9736-c8938479b3ad(merlinRegels.generator)" version="0" />
         <module reference="8f48a912-bed6-465c-aa56-b7c3880b762b(merlinRegels.tijd)" version="0" />
         <module reference="e73928a3-8e2e-4652-9573-7e7eae2e0832(merlinRegels.tijd.generator)" version="0" />
+        <module reference="71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)" version="0" />
         <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
         <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
         <module reference="299845ab-8a41-470d-b76f-9736f9b49925(regelspraak.tijd)" version="1" />

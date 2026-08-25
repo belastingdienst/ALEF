@@ -32,4 +32,7 @@ public class Count {
         }
         return count >= 0;
     }
+
+    private Count() {
+    }
 }
