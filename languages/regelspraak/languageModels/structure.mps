@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <engage id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -27,6 +27,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n">
@@ -365,6 +366,18 @@
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
+      <node concept="1irR9n" id="5JOGi5SkCLF" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+        <node concept="3PKj8D" id="5JOGi5SkCLG" role="3PKjn_">
+          <property role="3PKj8l" value="40C020" />
+        </node>
+      </node>
+      <node concept="1irPie" id="5JOGi5SkCLH" role="2rmM5M">
+        <property role="1irPi9" value="r" />
+        <node concept="3PKj8D" id="5JOGi5SkCLI" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
     </node>
     <node concept="PrWs8" id="1g8tPI0jh7S" role="PzmwI">
       <ref role="PrY4T" to="dse8:1g8tPI0iBvn" resolve="ICoverageArc" />
@@ -556,6 +569,17 @@
       <node concept="1irPie" id="qIhn9908qD" role="1irR9h">
         <property role="1irPi9" value="r" />
         <node concept="3PKj8D" id="qIhn9908qI" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="5JOGi5SkCLJ" role="2rmM5M">
+        <node concept="3PKj8D" id="5JOGi5SkCLK" role="3PKjn_">
+          <property role="3PKj8l" value="20C010" />
+        </node>
+      </node>
+      <node concept="1irPie" id="5JOGi5SkCLL" role="2rmM5M">
+        <property role="1irPi9" value="r" />
+        <node concept="3PKj8D" id="5JOGi5SkCLM" role="3PKjny">
           <property role="3PKj8l" value="000000" />
         </node>
       </node>

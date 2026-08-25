@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
@@ -205,7 +205,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -213,13 +212,10 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
@@ -389,51 +385,434 @@
         </node>
       </node>
       <node concept="P$JXv" id="4ve7P4g4udb" role="lGtFl">
-        <node concept="TZ5HA" id="4ve7P4g4udc" role="TZ5H$">
-          <node concept="1dT_AC" id="4ve7P4g4udd" role="1dT_Ay">
-            <property role="1dT_AB" value="Computes the closure of a sequence of elements over an extension function." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4ve7P4g4unj" role="TZ5H$">
-          <node concept="1dT_AC" id="4ve7P4g4unk" role="1dT_Ay">
-            <property role="1dT_AB" value="This can be used e.g. to &quot;flatten&quot; a chain of inheritance - look at uses of this function for examples." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4ve7P4g4unT" role="TZ5H$">
-          <node concept="1dT_AC" id="4ve7P4hemMI" role="1dT_Ay">
-            <property role="1dT_AB" value="The extension function is called for all elements in the original sequence as well as all non-null elements that are returned by any invocation of the extension function along the way." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4ve7P4hemQE" role="TZ5H$">
-          <node concept="1dT_AC" id="4ve7P4hemQF" role="1dT_Ay">
-            <property role="1dT_AB" value="This function is idempotent in the sense that: " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4qBqEm$tz52" role="TZ5H$">
-          <node concept="1dT_AC" id="4qBqEm$tz53" role="1dT_Ay">
-            <property role="1dT_AB" value="        Closure.of(Closure.of(seq, extend), extend) == Closure.of(seq, extend)" />
-          </node>
-        </node>
         <node concept="TUZQ0" id="4ve7P4g4ude" role="3nqlJM">
-          <property role="TUZQ4" value="The original sequence of elements." />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="4ve7P4g4udg" role="zr_5Q">
             <ref role="zr_51" node="4qBqEmzzlT5" resolve="seq" />
           </node>
+          <node concept="1PaTwC" id="5JOGi5SkE$I" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkE$J" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$K" role="1PaTwD">
+              <property role="3oM_SC" value="original" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$L" role="1PaTwD">
+              <property role="3oM_SC" value="sequence" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$M" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$N" role="1PaTwD">
+              <property role="3oM_SC" value="elements." />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="4ve7P4g4udh" role="3nqlJM">
-          <property role="TUZQ4" value="An extension function that takes an element and returns a sequence of other elements." />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="4ve7P4g4udj" role="zr_5Q">
             <ref role="zr_51" node="4qBqEmzzpz8" resolve="extend" />
           </node>
+          <node concept="1PaTwC" id="5JOGi5SkE$O" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkE$P" role="1PaTwD">
+              <property role="3oM_SC" value="An" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$Q" role="1PaTwD">
+              <property role="3oM_SC" value="extension" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$R" role="1PaTwD">
+              <property role="3oM_SC" value="function" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$S" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$T" role="1PaTwD">
+              <property role="3oM_SC" value="takes" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$U" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$V" role="1PaTwD">
+              <property role="3oM_SC" value="element" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$W" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$X" role="1PaTwD">
+              <property role="3oM_SC" value="returns" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$Y" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE$Z" role="1PaTwD">
+              <property role="3oM_SC" value="sequence" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_0" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_1" role="1PaTwD">
+              <property role="3oM_SC" value="other" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_2" role="1PaTwD">
+              <property role="3oM_SC" value="elements." />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="4ve7P4g4udk" role="3nqlJM">
-          <property role="TUZQ4" value="The type of the elements in both the original sequence, as well as the returned sequence." />
+          <property role="TUZQ4" value="" />
           <node concept="zr_56" id="4ve7P4g4udm" role="zr_5Q">
             <ref role="zr_51" node="4qBqEmzzgMQ" resolve="T" />
           </node>
+          <node concept="1PaTwC" id="5JOGi5SkE_3" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkE_4" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_5" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_6" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_7" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_8" role="1PaTwD">
+              <property role="3oM_SC" value="elements" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_9" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_a" role="1PaTwD">
+              <property role="3oM_SC" value="both" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_b" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_c" role="1PaTwD">
+              <property role="3oM_SC" value="original" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_d" role="1PaTwD">
+              <property role="3oM_SC" value="sequence," />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_e" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_f" role="1PaTwD">
+              <property role="3oM_SC" value="well" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_g" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_h" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_i" role="1PaTwD">
+              <property role="3oM_SC" value="returned" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_j" role="1PaTwD">
+              <property role="3oM_SC" value="sequence." />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="4ve7P4g4udn" role="3nqlJM">
-          <property role="x79VB" value="The closure of the original sequence over the extension function." />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="5JOGi5SkE_k" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkE_l" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_m" role="1PaTwD">
+              <property role="3oM_SC" value="closure" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_n" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_o" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_p" role="1PaTwD">
+              <property role="3oM_SC" value="original" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_q" role="1PaTwD">
+              <property role="3oM_SC" value="sequence" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_r" role="1PaTwD">
+              <property role="3oM_SC" value="over" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_s" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_t" role="1PaTwD">
+              <property role="3oM_SC" value="extension" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkE_u" role="1PaTwD">
+              <property role="3oM_SC" value="function." />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkEzk" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkEzl" role="1PaTwD">
+            <property role="3oM_SC" value="Computes" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzm" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzn" role="1PaTwD">
+            <property role="3oM_SC" value="closure" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzo" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzp" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzq" role="1PaTwD">
+            <property role="3oM_SC" value="sequence" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzr" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzs" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzt" role="1PaTwD">
+            <property role="3oM_SC" value="over" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzu" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzv" role="1PaTwD">
+            <property role="3oM_SC" value="extension" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzw" role="1PaTwD">
+            <property role="3oM_SC" value="function." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkEzx" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkEzy" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzz" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz$" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz_" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzA" role="1PaTwD">
+            <property role="3oM_SC" value="e.g." />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzB" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzC" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;flatten&quot;" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzD" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzE" role="1PaTwD">
+            <property role="3oM_SC" value="chain" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzF" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzG" role="1PaTwD">
+            <property role="3oM_SC" value="inheritance" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzH" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzI" role="1PaTwD">
+            <property role="3oM_SC" value="look" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzJ" role="1PaTwD">
+            <property role="3oM_SC" value="at" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzK" role="1PaTwD">
+            <property role="3oM_SC" value="uses" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzL" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzM" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzN" role="1PaTwD">
+            <property role="3oM_SC" value="function" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzO" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzP" role="1PaTwD">
+            <property role="3oM_SC" value="examples." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkEzQ" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkEzR" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzS" role="1PaTwD">
+            <property role="3oM_SC" value="extension" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzT" role="1PaTwD">
+            <property role="3oM_SC" value="function" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzU" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzV" role="1PaTwD">
+            <property role="3oM_SC" value="called" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzW" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzX" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzY" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEzZ" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$0" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$1" role="1PaTwD">
+            <property role="3oM_SC" value="original" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$2" role="1PaTwD">
+            <property role="3oM_SC" value="sequence" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$3" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$4" role="1PaTwD">
+            <property role="3oM_SC" value="well" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$5" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$6" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$7" role="1PaTwD">
+            <property role="3oM_SC" value="non-null" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$8" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$9" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$a" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$b" role="1PaTwD">
+            <property role="3oM_SC" value="returned" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$c" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$d" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$e" role="1PaTwD">
+            <property role="3oM_SC" value="invocation" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$f" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$g" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$h" role="1PaTwD">
+            <property role="3oM_SC" value="extension" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$i" role="1PaTwD">
+            <property role="3oM_SC" value="function" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$j" role="1PaTwD">
+            <property role="3oM_SC" value="along" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$k" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$l" role="1PaTwD">
+            <property role="3oM_SC" value="way." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkE$m" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkE$n" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$o" role="1PaTwD">
+            <property role="3oM_SC" value="function" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$p" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$q" role="1PaTwD">
+            <property role="3oM_SC" value="idempotent" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$r" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$s" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$t" role="1PaTwD">
+            <property role="3oM_SC" value="sense" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$u" role="1PaTwD">
+            <property role="3oM_SC" value="that:" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkE$v" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkE$w" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$x" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$y" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$z" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$A" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$B" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$C" role="1PaTwD">
+            <property role="3oM_SC" value="Closure.of(Closure.of(seq," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$D" role="1PaTwD">
+            <property role="3oM_SC" value="extend)," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$E" role="1PaTwD">
+            <property role="3oM_SC" value="extend)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$F" role="1PaTwD">
+            <property role="3oM_SC" value="==" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$G" role="1PaTwD">
+            <property role="3oM_SC" value="Closure.of(seq," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkE$H" role="1PaTwD">
+            <property role="3oM_SC" value="extend)" />
+          </node>
         </node>
       </node>
     </node>
@@ -628,15 +1007,98 @@
       <property role="TrG5h" value="T" />
     </node>
     <node concept="3UR2Jj" id="4ve7P4g4tAl" role="lGtFl">
-      <node concept="TZ5HA" id="4ve7P4g4tAm" role="TZ5H$">
-        <node concept="1dT_AC" id="4ve7P4g4tAn" role="1dT_Ay">
-          <property role="1dT_AB" value="Helper class exposing a static helper method to compute the closure of a sequence of elements over an extension function." />
-        </node>
-      </node>
       <node concept="TUZQ0" id="4ve7P4g4tAo" role="3nqlJM">
-        <property role="TUZQ4" value="The type of the elements in the sequence." />
+        <property role="TUZQ4" value="" />
         <node concept="zr_56" id="4ve7P4g4tAq" role="zr_5Q">
           <ref role="zr_51" node="4qBqEmzzafv" resolve="T" />
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkEz1" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkEz2" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz3" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz4" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz5" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz6" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz7" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkEz9" role="1PaTwD">
+            <property role="3oM_SC" value="sequence." />
+          </node>
+        </node>
+      </node>
+      <node concept="1PaTwC" id="5JOGi5SkEyG" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkEyH" role="1PaTwD">
+          <property role="3oM_SC" value="Helper" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyI" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyJ" role="1PaTwD">
+          <property role="3oM_SC" value="exposing" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyK" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyL" role="1PaTwD">
+          <property role="3oM_SC" value="static" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyM" role="1PaTwD">
+          <property role="3oM_SC" value="helper" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyN" role="1PaTwD">
+          <property role="3oM_SC" value="method" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyO" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyP" role="1PaTwD">
+          <property role="3oM_SC" value="compute" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyQ" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyR" role="1PaTwD">
+          <property role="3oM_SC" value="closure" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyS" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyT" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyU" role="1PaTwD">
+          <property role="3oM_SC" value="sequence" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyV" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyW" role="1PaTwD">
+          <property role="3oM_SC" value="elements" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyX" role="1PaTwD">
+          <property role="3oM_SC" value="over" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyY" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEyZ" role="1PaTwD">
+          <property role="3oM_SC" value="extension" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEz0" role="1PaTwD">
+          <property role="3oM_SC" value="function." />
         </node>
       </node>
     </node>
@@ -880,9 +1342,33 @@
     </node>
     <node concept="3Tm1VV" id="49oUkg9LE_G" role="1B3o_S" />
     <node concept="3UR2Jj" id="4UZEXxdXZSR" role="lGtFl">
-      <node concept="TZ5HA" id="4UZEXxdXZSS" role="TZ5H$">
-        <node concept="1dT_AC" id="4UZEXxdXZST" role="1dT_Ay">
-          <property role="1dT_AB" value="Util class voor het afleiden van node- en model-IDs." />
+      <node concept="1PaTwC" id="5JOGi5SkEza" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkEzb" role="1PaTwD">
+          <property role="3oM_SC" value="Util" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzc" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzd" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEze" role="1PaTwD">
+          <property role="3oM_SC" value="het" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzf" role="1PaTwD">
+          <property role="3oM_SC" value="afleiden" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzg" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzh" role="1PaTwD">
+          <property role="3oM_SC" value="node-" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzi" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkEzj" role="1PaTwD">
+          <property role="3oM_SC" value="model-IDs." />
         </node>
       </node>
     </node>

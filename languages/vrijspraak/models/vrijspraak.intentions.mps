@@ -29,6 +29,9 @@
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -199,7 +202,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -351,9 +353,9 @@
                 <node concept="35c_gC" id="4kJNa0jAL_o" role="2Oq$k0">
                   <ref role="35c_gD" to="c9ee:goo2m$m7Gz" resolve="VrijStatement" />
                 </node>
-                <node concept="2qgKlT" id="4kJNa0jAL_p" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5Sk_z5" role="2OqNvi">
                   <ref role="37wK5l" to="saki:11CN3kvpwCB" resolve="from" />
-                  <node concept="2Sf5sV" id="4kJNa0jAL_q" role="37wK5m" />
+                  <node concept="2Sf5sV" id="5JOGi5Sk_z7" role="37wK5m" />
                 </node>
               </node>
             </node>

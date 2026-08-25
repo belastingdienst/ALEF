@@ -18,6 +18,9 @@
     <import index="r8y1" ref="r:4680c30b-05e7-4df0-ba11-8c74e0c26486(beslistabelspraak.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -119,7 +122,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -610,10 +612,10 @@
                   <node concept="Jnkvi" id="7p2tph7bHsG" role="2Oq$k0">
                     <ref role="1M0zk5" node="7p2tph7bH54" resolve="oud" />
                   </node>
-                  <node concept="2qgKlT" id="7p2tph7bI5B" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCa5" role="2OqNvi">
                     <ref role="37wK5l" to="r8y1:7p2tph79CbT" resolve="replaceAndUpdateCells" />
-                    <node concept="2pJPEk" id="7p2tph7bJ0E" role="37wK5m">
-                      <node concept="2pJPED" id="7p2tph7bJ0I" role="2pJPEn">
+                    <node concept="2pJPEk" id="5JOGi5SkCa7" role="37wK5m">
+                      <node concept="2pJPED" id="5JOGi5SkCa8" role="2pJPEn">
                         <ref role="2pJxaS" to="vuki:K2G6VsDn3y" resolve="BtConclusie" />
                       </node>
                     </node>

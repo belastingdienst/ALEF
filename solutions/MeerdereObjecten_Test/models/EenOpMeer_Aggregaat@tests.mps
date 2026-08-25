@@ -53,6 +53,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -247,7 +250,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
@@ -673,9 +675,9 @@
                 <node concept="37vLTw" id="29FkOPRrtKZ" role="2Oq$k0">
                   <ref role="3cqZAo" node="29FkOPRrsPF" resolve="geval" />
                 </node>
-                <node concept="2qgKlT" id="29FkOPRruD_" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5Sk_mV" role="2OqNvi">
                   <ref role="37wK5l" to="kv4l:4$o279JSVi$" resolve="evalAsBool" />
-                  <node concept="10M0yZ" id="29FkOPRrQvS" role="37wK5m">
+                  <node concept="10M0yZ" id="5JOGi5Sk_mX" role="37wK5m">
                     <ref role="3cqZAo" to="x0ng:2S1UB$tUK18" resolve="INSTANCE" />
                     <ref role="1PxDUh" to="x0ng:22ARdh02fqc" resolve="Debugger" />
                   </node>

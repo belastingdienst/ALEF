@@ -24,6 +24,7 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.JavaModuleSettingsToFacet" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_3.CleanStubForeignMethodIds" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2024_3.LangResourceImport4Migration" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2026_1.UpdateConceptMethodCall" value="executed" />
     <entry key="jetbrains.mps.javaVersionMigration_JDKDefault" value="executed" />
     <entry key="jetbrains.mps.mps33.resaveModules" value="executed" />
     <entry key="jetbrains.mps.name2id_gen_perroot" value="executed" />
@@ -31,7 +32,7 @@
     <entry key="jetbrains.mps.projectJavaVersionMigration" value="executed" />
     <entry key="jetbrains.mps.resaveModules" value="executed" />
     <entry key="jetbrains.mps.v8_elimination" value="executed" />
-    <entry key="project.migrated.version" value="251" />
+    <entry key="project.migrated.version" value="261" />
     <entry key="projectMigrations.plugin.plugin.BuildExtensionsBuildFileMigration" value="executed" />
     <entry key="projectMigrations.plugin.plugin.JsonPluginBuildFileMigration" value="executed" />
     <entry key="projectMigrations.plugin.plugin.ProjectHygieneBuildFileMigration" value="executed" />

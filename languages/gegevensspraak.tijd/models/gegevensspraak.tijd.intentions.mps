@@ -19,6 +19,9 @@
     <import index="3ph8" ref="r:1d793c6a-f9fb-4b17-9a22-dc37ef699df6(gegevensspraak.tijd.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -119,7 +122,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -352,7 +354,7 @@
                 <node concept="Jnkvi" id="7Cfdn4bkdcA" role="2Oq$k0">
                   <ref role="1M0zk5" node="7Cfdn4bjQtb" resolve="r" />
                 </node>
-                <node concept="2qgKlT" id="7Cfdn4bkjq9" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5Sk$_V" role="2OqNvi">
                   <ref role="37wK5l" to="8l26:5cJ2huNhgy7" resolve="getFeitType" />
                 </node>
               </node>
@@ -396,9 +398,9 @@
                 <node concept="35c_gC" id="1f$rexwZkTf" role="2Oq$k0">
                   <ref role="35c_gD" to="lxx5:1Hy2TK9RvB9" resolve="TijdsafhankelijkeLiteral" />
                 </node>
-                <node concept="2qgKlT" id="1f$rexwZmmv" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5Sk$_X" role="2OqNvi">
                   <ref role="37wK5l" to="3ph8:1f$rexwZhGd" resolve="maakTijdsafhankelijk" />
-                  <node concept="2Sf5sV" id="1f$rexwZmtv" role="37wK5m" />
+                  <node concept="2Sf5sV" id="5JOGi5Sk$_Z" role="37wK5m" />
                 </node>
               </node>
             </node>

@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
+      <concept id="2332321114124261810" name="jetbrains.mps.lang.generator.plan.structure.GeneratorModulePointer" flags="ng" index="lQKw0">
+        <child id="2332321114124261812" name="module" index="lQKw6" />
+      </concept>
       <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
         <property id="1152961914448142318" name="kind" index="2Qf7GI" />
         <child id="1152961914448136208" name="language" index="2Qf6Ng" />
@@ -36,17 +39,16 @@
         <child id="8296877263936660572" name="generator" index="3uOsAP" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
-      </concept>
-      <concept id="8296877263936075789" name="jetbrains.mps.lang.smodel.structure.GeneratorModulePointer" flags="ng" index="3uMdn$">
-        <child id="8296877263936075892" name="module" index="3uMdmt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -147,16 +149,16 @@
     <property role="TrG5h" value="servicetest json plan" />
     <node concept="3uMcMo" id="6oHmw4cr7gZ" role="2VgMA7">
       <property role="26q7pr" value="true" />
-      <node concept="3uMdn$" id="6oHmw4cr7h9" role="3uOsAP">
-        <node concept="20RdaH" id="6oHmw4cr7ha" role="3uMdmt">
-          <property role="20Rdg5" value="cff062ac-3840-4004-acd4-50cdf9d0e0f6" />
-          <property role="20Rdg7" value="servicetestNaarJson.generator" />
+      <node concept="lQKw0" id="5JOGi5SkCNl" role="3uOsAP">
+        <node concept="1dCxOk" id="5JOGi5SkCNm" role="lQKw6">
+          <property role="1XweGW" value="cff062ac-3840-4004-acd4-50cdf9d0e0f6" />
+          <property role="1XxBO9" value="servicetestNaarJson.generator" />
         </node>
       </node>
-      <node concept="3uMdn$" id="6oHmw4cr7hh" role="3uOsAP">
-        <node concept="20RdaH" id="6oHmw4cr7hi" role="3uMdmt">
-          <property role="20Rdg5" value="83f69ea8-2565-41e2-a084-e2ab6a0621f3" />
-          <property role="20Rdg7" value="servicetestNaarJson.tijd.generator" />
+      <node concept="lQKw0" id="5JOGi5SkCNn" role="3uOsAP">
+        <node concept="1dCxOk" id="5JOGi5SkCNo" role="lQKw6">
+          <property role="1XweGW" value="83f69ea8-2565-41e2-a084-e2ab6a0621f3" />
+          <property role="1XxBO9" value="servicetestNaarJson.tijd.generator" />
         </node>
       </node>
     </node>
@@ -177,16 +179,16 @@
     <property role="TrG5h" value="servicetest xml plan" />
     <node concept="3uMcMo" id="6oHmw4cr7Bt" role="2VgMA7">
       <property role="26q7pr" value="true" />
-      <node concept="3uMdn$" id="6oHmw4cr7By" role="3uOsAP">
-        <node concept="20RdaH" id="6oHmw4cr7Bz" role="3uMdmt">
-          <property role="20Rdg5" value="deda082b-0b0e-47d1-9f3b-e2d5d2b76faa" />
-          <property role="20Rdg7" value="servicetestNaarXml#01" />
+      <node concept="lQKw0" id="5JOGi5SkCNp" role="3uOsAP">
+        <node concept="1dCxOk" id="5JOGi5SkCNq" role="lQKw6">
+          <property role="1XweGW" value="deda082b-0b0e-47d1-9f3b-e2d5d2b76faa" />
+          <property role="1XxBO9" value="servicetestNaarXml#01" />
         </node>
       </node>
-      <node concept="3uMdn$" id="6oHmw4cr7BM" role="3uOsAP">
-        <node concept="20RdaH" id="6oHmw4cr7BN" role="3uMdmt">
-          <property role="20Rdg5" value="547a3db2-f104-403e-a2c8-9786e98e493b" />
-          <property role="20Rdg7" value="servicetestNaarXml.tijd.generator" />
+      <node concept="lQKw0" id="5JOGi5SkCNr" role="3uOsAP">
+        <node concept="1dCxOk" id="5JOGi5SkCNs" role="lQKw6">
+          <property role="1XweGW" value="547a3db2-f104-403e-a2c8-9786e98e493b" />
+          <property role="1XxBO9" value="servicetestNaarXml.tijd.generator" />
         </node>
       </node>
     </node>

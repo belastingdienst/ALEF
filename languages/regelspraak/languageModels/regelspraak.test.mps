@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -47,16 +47,10 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="1171931690126" name="jetbrains.mps.baseLanguage.unitTest.structure.TestMethod" flags="ig" index="3s$Bmu">
@@ -87,6 +81,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -433,24 +435,156 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="6De$S0Exa7F" role="lGtFl">
-      <node concept="TZ5HA" id="6De$S0Exa7G" role="TZ5H$">
-        <node concept="1dT_AC" id="6De$S0Exa7H" role="1dT_Ay">
-          <property role="1dT_AB" value="Unit tests om de semantiek van Vergelijking te testen," />
+      <node concept="1PaTwC" id="5JOGi5SkE6t" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkE6u" role="1PaTwD">
+          <property role="3oM_SC" value="Unit" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6v" role="1PaTwD">
+          <property role="3oM_SC" value="tests" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6w" role="1PaTwD">
+          <property role="3oM_SC" value="om" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6x" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6y" role="1PaTwD">
+          <property role="3oM_SC" value="semantiek" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6z" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6$" role="1PaTwD">
+          <property role="3oM_SC" value="Vergelijking" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6_" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6A" role="1PaTwD">
+          <property role="3oM_SC" value="testen," />
         </node>
       </node>
-      <node concept="TZ5HA" id="6De$S0Exa7I" role="TZ5H$">
-        <node concept="1dT_AC" id="6De$S0Exa7J" role="1dT_Ay">
-          <property role="1dT_AB" value="en specifiek voor de operatoren IS/==, NE/!=, en LE/&amp;lt;= i.c.m. &quot;leeg&quot;." />
+      <node concept="1PaTwC" id="5JOGi5SkE6B" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkE6C" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6D" role="1PaTwD">
+          <property role="3oM_SC" value="specifiek" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6E" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6F" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6G" role="1PaTwD">
+          <property role="3oM_SC" value="operatoren" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6H" role="1PaTwD">
+          <property role="3oM_SC" value="IS/==," />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6I" role="1PaTwD">
+          <property role="3oM_SC" value="NE/!=," />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6J" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6K" role="1PaTwD">
+          <property role="3oM_SC" value="LE/&amp;lt;=" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6L" role="1PaTwD">
+          <property role="3oM_SC" value="i.c.m." />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6M" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;leeg&quot;." />
         </node>
       </node>
-      <node concept="TZ5HA" id="6De$S0Exa7K" role="TZ5H$">
-        <node concept="1dT_AC" id="6De$S0Exa7L" role="1dT_Ay">
-          <property role="1dT_AB" value="De semantiek van de overige operatoren komt wat betreft behandeling van &quot;leeg&quot; met LE overeen." />
+      <node concept="1PaTwC" id="5JOGi5SkE6N" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkE6O" role="1PaTwD">
+          <property role="3oM_SC" value="De" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6P" role="1PaTwD">
+          <property role="3oM_SC" value="semantiek" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6Q" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6R" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6S" role="1PaTwD">
+          <property role="3oM_SC" value="overige" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6T" role="1PaTwD">
+          <property role="3oM_SC" value="operatoren" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6U" role="1PaTwD">
+          <property role="3oM_SC" value="komt" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6V" role="1PaTwD">
+          <property role="3oM_SC" value="wat" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6W" role="1PaTwD">
+          <property role="3oM_SC" value="betreft" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6X" role="1PaTwD">
+          <property role="3oM_SC" value="behandeling" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6Y" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE6Z" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;leeg&quot;" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE70" role="1PaTwD">
+          <property role="3oM_SC" value="met" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE71" role="1PaTwD">
+          <property role="3oM_SC" value="LE" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE72" role="1PaTwD">
+          <property role="3oM_SC" value="overeen." />
         </node>
       </node>
-      <node concept="TZ5HA" id="6De$S0Exa7M" role="TZ5H$">
-        <node concept="1dT_AC" id="6De$S0Exa7N" role="1dT_Ay">
-          <property role="1dT_AB" value="De unit tests werken op de classes Vergelijker (in de regelspraakinterpreter), en BigRational." />
+      <node concept="1PaTwC" id="5JOGi5SkE73" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkE74" role="1PaTwD">
+          <property role="3oM_SC" value="De" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE75" role="1PaTwD">
+          <property role="3oM_SC" value="unit" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE76" role="1PaTwD">
+          <property role="3oM_SC" value="tests" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE77" role="1PaTwD">
+          <property role="3oM_SC" value="werken" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE78" role="1PaTwD">
+          <property role="3oM_SC" value="op" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE79" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7a" role="1PaTwD">
+          <property role="3oM_SC" value="classes" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7b" role="1PaTwD">
+          <property role="3oM_SC" value="Vergelijker" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7c" role="1PaTwD">
+          <property role="3oM_SC" value="(in" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7d" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7e" role="1PaTwD">
+          <property role="3oM_SC" value="regelspraakinterpreter)," />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7f" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkE7g" role="1PaTwD">
+          <property role="3oM_SC" value="BigRational." />
         </node>
       </node>
     </node>

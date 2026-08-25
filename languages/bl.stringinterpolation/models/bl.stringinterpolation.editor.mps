@@ -13,6 +13,9 @@
     <import index="ay5x" ref="r:45a4f35d-f80f-4bdf-a1fb-5272ba6a4085(bl.stringinterpolation.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
@@ -127,7 +130,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -340,9 +342,9 @@
           <node concept="3clFbF" id="6sMoVFJXchu" role="3cqZAp">
             <node concept="2OqwBi" id="6sMoVFJXcps" role="3clFbG">
               <node concept="0IXxy" id="6sMoVFJXcht" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6sMoVFJXcJM" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5Sk_5o" role="2OqNvi">
                 <ref role="37wK5l" to="ay5x:6sMoVFJW7OB" resolve="insertExpression" />
-                <node concept="1Q80Hx" id="6sMoVFJXcNS" role="37wK5m" />
+                <node concept="1Q80Hx" id="5JOGi5Sk_5q" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -356,9 +358,9 @@
           <node concept="3clFbF" id="6sMoVFJXZMg" role="3cqZAp">
             <node concept="2OqwBi" id="6sMoVFJXZMh" role="3clFbG">
               <node concept="0IXxy" id="6sMoVFJXZMi" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6sMoVFJXZMj" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5Sk_5r" role="2OqNvi">
                 <ref role="37wK5l" to="ay5x:6sMoVFJW7OB" resolve="insertExpression" />
-                <node concept="1Q80Hx" id="6sMoVFJXZMk" role="37wK5m" />
+                <node concept="1Q80Hx" id="5JOGi5Sk_5t" role="37wK5m" />
               </node>
             </node>
           </node>

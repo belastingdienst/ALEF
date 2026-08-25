@@ -24,6 +24,9 @@
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -99,7 +102,7 @@
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
       </concept>
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
@@ -122,11 +125,11 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
-      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="lg" index="1W57fq">
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
     </language>
@@ -343,7 +346,7 @@
             <node concept="2OqwBi" id="ZlDV_GPrEW" role="3clFbG">
               <node concept="2OqwBi" id="ZlDV_GPq$h" role="2Oq$k0">
                 <node concept="30H73N" id="ZlDV_GPq5R" role="2Oq$k0" />
-                <node concept="2qgKlT" id="ZlDV_GPr8X" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkClW" role="2OqNvi">
                   <ref role="37wK5l" to="r02f:ZlDV_Dm1GW" resolve="serviceTestFolder" />
                 </node>
               </node>
@@ -403,11 +406,11 @@
                             <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="ZlDV_GQTHr" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5SkClY" role="2OqNvi">
                           <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="ZlDV_GQUCT" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCm0" role="2OqNvi">
                         <ref role="37wK5l" to="txb8:6oP8RSSLwH6" resolve="serviceArtifactId" />
                       </node>
                     </node>
@@ -476,7 +479,7 @@
                                 <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                               </node>
                             </node>
-                            <node concept="2qgKlT" id="ZlDV_IBgDH" role="2OqNvi">
+                            <node concept="3zqWPK" id="5JOGi5SkCm2" role="2OqNvi">
                               <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
                             </node>
                           </node>
@@ -490,11 +493,11 @@
                                 <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                               </node>
                             </node>
-                            <node concept="2qgKlT" id="5A$uEIx9YC$" role="2OqNvi">
+                            <node concept="3zqWPK" id="5JOGi5SkCm4" role="2OqNvi">
                               <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="4ZNiRrUUWv7" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5SkCm6" role="2OqNvi">
                             <ref role="37wK5l" to="txb8:rqW0l7470S" resolve="xsdLocatie" />
                           </node>
                         </node>
@@ -530,7 +533,7 @@
                           <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="4YpHKvn_wRz" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCm8" role="2OqNvi">
                         <ref role="37wK5l" to="txb8:46NTomFkZ0k" resolve="requestMessageName" />
                       </node>
                     </node>
@@ -561,7 +564,7 @@
                           <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="6T5JPtwoudW" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCma" role="2OqNvi">
                         <ref role="37wK5l" to="txb8:6T5JPtrC$R8" resolve="responseMessageName" />
                       </node>
                     </node>
@@ -592,7 +595,7 @@
                           <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="6T5JPtD8D0$" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCmc" role="2OqNvi">
                         <ref role="37wK5l" to="txb8:6T5JPtBER49" resolve="xsdMessageName" />
                       </node>
                     </node>
@@ -621,7 +624,7 @@
                           <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="4YpHKvn_z3k" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCme" role="2OqNvi">
                         <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
                       </node>
                     </node>
@@ -687,7 +690,7 @@
                                     <ref role="1psM6Y" node="ZlDV_GUDtx" resolve="serviceTest" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="ZlDV_MWbwS" role="2OqNvi">
+                                <node concept="3zqWPK" id="5JOGi5SkCmg" role="2OqNvi">
                                   <ref role="37wK5l" to="r02f:ZlDV_Dm1GW" resolve="serviceTestFolder" />
                                 </node>
                               </node>
@@ -698,7 +701,7 @@
                                   <ref role="1Pybhc" to="eoo2:~Path" resolve="Path" />
                                   <node concept="2OqwBi" id="1wuhsVGkfil" role="37wK5m">
                                     <node concept="30H73N" id="1wuhsVGkcif" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="1wuhsVGkmo7" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5JOGi5SkCmi" role="2OqNvi">
                                       <ref role="37wK5l" to="r02f:ZlDV_GZlqC" resolve="xmlTestMessageFolderSoapInp" />
                                     </node>
                                   </node>
@@ -708,13 +711,13 @@
                                     </node>
                                     <node concept="2OqwBi" id="5Noxh5wGbDn" role="3uHU7B">
                                       <node concept="30H73N" id="5Noxh5wGbDo" role="2Oq$k0" />
-                                      <node concept="2qgKlT" id="5Noxh5wGbDp" role="2OqNvi">
+                                      <node concept="3zqWPK" id="5JOGi5SkCmk" role="2OqNvi">
                                         <ref role="37wK5l" to="r02f:OXER6W75ri" resolve="xmlTestMessageFileNameSoapInp" />
-                                        <node concept="2YIFZM" id="5Noxh5wGbDq" role="37wK5m">
+                                        <node concept="2YIFZM" id="5JOGi5SkCmm" role="37wK5m">
                                           <ref role="1Pybhc" to="ld76:4UZEXxe39cB" resolve="OriginUtil" />
                                           <ref role="37wK5l" to="ld76:jPW8wmbF8j" resolve="getOrigineelModel" />
-                                          <node concept="1iwH7S" id="5Noxh5wGbDr" role="37wK5m" />
-                                          <node concept="30H73N" id="5Noxh5wGbDs" role="37wK5m" />
+                                          <node concept="1iwH7S" id="5JOGi5SkCmn" role="37wK5m" />
+                                          <node concept="30H73N" id="5JOGi5SkCmo" role="37wK5m" />
                                         </node>
                                       </node>
                                     </node>
@@ -755,7 +758,7 @@
                                     <ref role="1psM6Y" node="ZlDV_GUDtx" resolve="serviceTest" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="ZlDV_Lwmq4" role="2OqNvi">
+                                <node concept="3zqWPK" id="5JOGi5SkCmp" role="2OqNvi">
                                   <ref role="37wK5l" to="r02f:ZlDV_Dm1GW" resolve="serviceTestFolder" />
                                 </node>
                               </node>
@@ -766,7 +769,7 @@
                                   <ref role="1Pybhc" to="eoo2:~Path" resolve="Path" />
                                   <node concept="2OqwBi" id="ZlDV_GSuXS" role="37wK5m">
                                     <node concept="30H73N" id="ZlDV_GSuXT" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="ZlDV_GSuXU" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5JOGi5SkCmr" role="2OqNvi">
                                       <ref role="37wK5l" to="r02f:ZlDV_GZnpo" resolve="xmlTestMessageFolderSoapExp" />
                                     </node>
                                   </node>
@@ -776,13 +779,13 @@
                                     </node>
                                     <node concept="2OqwBi" id="ZlDV_GSuXX" role="3uHU7B">
                                       <node concept="30H73N" id="ZlDV_GSuXY" role="2Oq$k0" />
-                                      <node concept="2qgKlT" id="ZlDV_GSuXZ" role="2OqNvi">
+                                      <node concept="3zqWPK" id="5JOGi5SkCmt" role="2OqNvi">
                                         <ref role="37wK5l" to="r02f:HcouIh7uJq" resolve="xmlTestMessageFileNameSoapExp" />
-                                        <node concept="2YIFZM" id="ZlDV_GSuY0" role="37wK5m">
+                                        <node concept="2YIFZM" id="5JOGi5SkCmv" role="37wK5m">
                                           <ref role="1Pybhc" to="ld76:4UZEXxe39cB" resolve="OriginUtil" />
                                           <ref role="37wK5l" to="ld76:jPW8wmbF8j" resolve="getOrigineelModel" />
-                                          <node concept="1iwH7S" id="ZlDV_GSuY1" role="37wK5m" />
-                                          <node concept="30H73N" id="ZlDV_GSuY2" role="37wK5m" />
+                                          <node concept="1iwH7S" id="5JOGi5SkCmw" role="37wK5m" />
+                                          <node concept="30H73N" id="5JOGi5SkCmx" role="37wK5m" />
                                         </node>
                                       </node>
                                     </node>
@@ -808,7 +811,7 @@
                     <node concept="2OqwBi" id="ZlDV_GSAP5" role="3clFbG">
                       <node concept="2OqwBi" id="ZlDV_GS_9S" role="2Oq$k0">
                         <node concept="30H73N" id="ZlDV_GS$0w" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="ZlDV_GSAbB" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5SkCmy" role="2OqNvi">
                           <ref role="37wK5l" to="r02f:39_ghbP9CCs" resolve="testgevallen" />
                         </node>
                       </node>
@@ -889,7 +892,7 @@
                                     <ref role="1psM6Y" node="ZlDV_GUDtx" resolve="serviceTest" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="ZlDV_Lwo8E" role="2OqNvi">
+                                <node concept="3zqWPK" id="5JOGi5SkCm$" role="2OqNvi">
                                   <ref role="37wK5l" to="r02f:ZlDV_Dm1GW" resolve="serviceTestFolder" />
                                 </node>
                               </node>
@@ -900,9 +903,9 @@
                                   <ref role="1Pybhc" to="eoo2:~Path" resolve="Path" />
                                   <node concept="2OqwBi" id="47v3DsCrGn7" role="37wK5m">
                                     <node concept="30H73N" id="ZlDV_GUr5X" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="47v3DsCrGn9" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5JOGi5SkCmA" role="2OqNvi">
                                       <ref role="37wK5l" to="r02f:59jthqyQMhK" resolve="jsonTestMessageFolderInp" />
-                                      <node concept="37vLTw" id="47v3DsCrGna" role="37wK5m">
+                                      <node concept="37vLTw" id="5JOGi5SkCmC" role="37wK5m">
                                         <ref role="3cqZAo" node="47v3DsCrGmV" resolve="orgModel" />
                                       </node>
                                     </node>
@@ -913,9 +916,9 @@
                                     </node>
                                     <node concept="2OqwBi" id="47v3DsCrGnd" role="3uHU7B">
                                       <node concept="30H73N" id="47v3DsCrGne" role="2Oq$k0" />
-                                      <node concept="2qgKlT" id="47v3DsCrGnf" role="2OqNvi">
+                                      <node concept="3zqWPK" id="5JOGi5SkCmD" role="2OqNvi">
                                         <ref role="37wK5l" to="r02f:59jthqyQFfF" resolve="jsonTestMessageFileNameInp" />
-                                        <node concept="37vLTw" id="47v3DsCrGng" role="37wK5m">
+                                        <node concept="37vLTw" id="5JOGi5SkCmF" role="37wK5m">
                                           <ref role="3cqZAo" node="47v3DsCrGmV" resolve="orgModel" />
                                         </node>
                                       </node>
@@ -969,7 +972,7 @@
                                     <ref role="1psM6Y" node="ZlDV_GUDtx" resolve="serviceTest" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="ZlDV_Lwsdj" role="2OqNvi">
+                                <node concept="3zqWPK" id="5JOGi5SkCmG" role="2OqNvi">
                                   <ref role="37wK5l" to="r02f:ZlDV_Dm1GW" resolve="serviceTestFolder" />
                                 </node>
                               </node>
@@ -980,9 +983,9 @@
                                   <ref role="1Pybhc" to="eoo2:~Path" resolve="Path" />
                                   <node concept="2OqwBi" id="ZlDV_GTaNB" role="37wK5m">
                                     <node concept="30H73N" id="ZlDV_GTaNC" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="ZlDV_GTaND" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5JOGi5SkCmI" role="2OqNvi">
                                       <ref role="37wK5l" to="r02f:59jthqzf2I6" resolve="jsonTestMessageFolderExp" />
-                                      <node concept="37vLTw" id="ZlDV_GTaNE" role="37wK5m">
+                                      <node concept="37vLTw" id="5JOGi5SkCmK" role="37wK5m">
                                         <ref role="3cqZAo" node="ZlDV_GTaNt" resolve="orgModel" />
                                       </node>
                                     </node>
@@ -993,9 +996,9 @@
                                     </node>
                                     <node concept="2OqwBi" id="ZlDV_GTaNH" role="3uHU7B">
                                       <node concept="30H73N" id="ZlDV_GTaNI" role="2Oq$k0" />
-                                      <node concept="2qgKlT" id="ZlDV_GTaNJ" role="2OqNvi">
+                                      <node concept="3zqWPK" id="5JOGi5SkCmL" role="2OqNvi">
                                         <ref role="37wK5l" to="r02f:59jthqzf3Zi" resolve="jsonTestMessageFileNameExp" />
-                                        <node concept="37vLTw" id="ZlDV_GTaNK" role="37wK5m">
+                                        <node concept="37vLTw" id="5JOGi5SkCmN" role="37wK5m">
                                           <ref role="3cqZAo" node="ZlDV_GTaNt" resolve="orgModel" />
                                         </node>
                                       </node>
@@ -1022,7 +1025,7 @@
                     <node concept="2OqwBi" id="ZlDV_GT8kk" role="3clFbG">
                       <node concept="2OqwBi" id="ZlDV_GT7$9" role="2Oq$k0">
                         <node concept="30H73N" id="ZlDV_GT78T" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="ZlDV_GT822" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5SkCmO" role="2OqNvi">
                           <ref role="37wK5l" to="r02f:39_ghbP9CCs" resolve="testgevallen" />
                         </node>
                       </node>
@@ -1046,17 +1049,17 @@
                   <node concept="35c_gC" id="ZlDV_GSJ1c" role="2Oq$k0">
                     <ref role="35c_gD" to="ku5w:1QW$3U9mC5j" resolve="Service" />
                   </node>
-                  <node concept="2qgKlT" id="ZlDV_GSJY4" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCmQ" role="2OqNvi">
                     <ref role="37wK5l" to="txb8:6sIogtXOswF" resolve="restService" />
-                    <node concept="1iwH7S" id="ZlDV_GSY_H" role="37wK5m" />
-                    <node concept="2OqwBi" id="ZlDV_GSZvf" role="37wK5m">
-                      <node concept="2OqwBi" id="ZlDV_GSZaP" role="2Oq$k0">
-                        <node concept="30H73N" id="ZlDV_GSYMA" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="ZlDV_GSZe0" role="2OqNvi">
+                    <node concept="1iwH7S" id="5JOGi5SkCmS" role="37wK5m" />
+                    <node concept="2OqwBi" id="5JOGi5SkCmT" role="37wK5m">
+                      <node concept="2OqwBi" id="5JOGi5SkCmU" role="2Oq$k0">
+                        <node concept="30H73N" id="5JOGi5SkCmV" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="5JOGi5SkCmW" role="2OqNvi">
                           <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="ZlDV_GSZXn" role="2OqNvi">
+                      <node concept="2qgKlT" id="5JOGi5SkCmX" role="2OqNvi">
                         <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
                       </node>
                     </node>

@@ -23,6 +23,9 @@
     <import index="8jym" ref="r:eceb697a-118a-4470-93ae-b884ccf85b80(merlinService.tijd.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -111,7 +114,7 @@
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
@@ -129,17 +132,17 @@
       <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
       <concept id="1805153994415891174" name="jetbrains.mps.lang.generator.structure.TemplateParameterDeclaration" flags="ng" index="1N15co">
         <child id="1805153994415893199" name="type" index="1N15GL" />
       </concept>
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
@@ -181,7 +184,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -244,7 +246,7 @@
             <node concept="2OqwBi" id="1C2ewDwIc0E" role="3clFbG">
               <node concept="2OqwBi" id="1C2ewDwIauh" role="2Oq$k0">
                 <node concept="30H73N" id="1C2ewDwIa4J" role="2Oq$k0" />
-                <node concept="2qgKlT" id="1C2ewDwIbAT" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCn7" role="2OqNvi">
                   <ref role="37wK5l" to="txb8:4SjepUWPWsC" resolve="datatypeMappings" />
                 </node>
               </node>
@@ -350,9 +352,9 @@
                               <node concept="35c_gC" id="7ilwa35plrq" role="2Oq$k0">
                                 <ref role="35c_gD" to="1jm6:6fJ56tah_0K" resolve="MerlinTijdlijnBerichtType" />
                               </node>
-                              <node concept="2qgKlT" id="7ilwa35pm8T" role="2OqNvi">
+                              <node concept="3zqWPK" id="5JOGi5SkCn9" role="2OqNvi">
                                 <ref role="37wK5l" to="8jym:7ilwa35paUn" resolve="key" />
-                                <node concept="30H73N" id="7ilwa35pmgY" role="37wK5m" />
+                                <node concept="30H73N" id="5JOGi5SkCnb" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -395,9 +397,9 @@
                               <node concept="35c_gC" id="7ilwa35pmuh" role="2Oq$k0">
                                 <ref role="35c_gD" to="1jm6:6fJ56tah_0K" resolve="MerlinTijdlijnBerichtType" />
                               </node>
-                              <node concept="2qgKlT" id="7ilwa35pmui" role="2OqNvi">
+                              <node concept="3zqWPK" id="5JOGi5SkCnc" role="2OqNvi">
                                 <ref role="37wK5l" to="8jym:7ilwa35paUn" resolve="key" />
-                                <node concept="30H73N" id="7ilwa35pmuj" role="37wK5m" />
+                                <node concept="30H73N" id="5JOGi5SkCne" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -451,7 +453,7 @@
                     <node concept="3clFbF" id="7ilwa35oQ7L" role="3cqZAp">
                       <node concept="2OqwBi" id="7ilwa34Nxjn" role="3clFbG">
                         <node concept="2OqwBi" id="7ilwa34Kotv" role="2Oq$k0">
-                          <node concept="2qgKlT" id="7ilwa34Kotx" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5SkCnf" role="2OqNvi">
                             <ref role="37wK5l" to="txb8:7ilwa34HFGR" resolve="gebruikteBerichtDatatypes" />
                           </node>
                           <node concept="2OqwBi" id="7ilwa35oRmj" role="2Oq$k0">

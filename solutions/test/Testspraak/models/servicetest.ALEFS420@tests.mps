@@ -32,6 +32,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -118,9 +121,6 @@
         <reference id="6404605531307076156" name="veld" index="1GVH3K" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -145,17 +145,17 @@
             <node concept="3xONca" id="3YK$g09GRal" role="2Oq$k0">
               <ref role="3xOPvv" node="3YK$g09GJ6n" resolve="testNode" />
             </node>
-            <node concept="2qgKlT" id="2iTw6T3VPzz" role="2OqNvi">
+            <node concept="3zqWPK" id="5JOGi5SkAfI" role="2OqNvi">
               <ref role="37wK5l" to="kv4l:30SQGvoC8rA" resolve="evalAsBool" />
-              <node concept="10M0yZ" id="3YK$g09GUdZ" role="37wK5m">
+              <node concept="10M0yZ" id="5JOGi5SkAfK" role="37wK5m">
                 <ref role="3cqZAo" to="x0ng:2S1UB$tUK18" resolve="INSTANCE" />
                 <ref role="1PxDUh" to="x0ng:22ARdh02fqc" resolve="Debugger" />
               </node>
-              <node concept="2ShNRf" id="30SQGvoBRxU" role="37wK5m">
-                <node concept="1pGfFk" id="30SQGvoC7tx" role="2ShVmc">
+              <node concept="2ShNRf" id="5JOGi5SkAfL" role="37wK5m">
+                <node concept="1pGfFk" id="5JOGi5SkAfM" role="2ShVmc">
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" to="st2d:30SQGvnNHUM" resolve="TestSpraakRunParameters" />
-                  <node concept="3clFbT" id="30SQGvoC7P5" role="37wK5m">
+                  <node concept="3clFbT" id="5JOGi5SkAfN" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
                 </node>
@@ -169,7 +169,7 @@
               <node concept="3xONca" id="3YK$g09HdEB" role="2Oq$k0">
                 <ref role="3xOPvv" node="3YK$g0ae$t7" resolve="ys" />
               </node>
-              <node concept="2qgKlT" id="3YK$g09HejX" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5SkAfO" role="2OqNvi">
                 <ref role="37wK5l" to="r02f:65LmUCdc05q" resolve="nietVoorspeldeObjecten" />
               </node>
             </node>

@@ -6,7 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -191,16 +191,10 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
@@ -1270,9 +1264,33 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="5rr9WNg8UJI" role="lGtFl">
-      <node concept="TZ5HA" id="5rr9WNg8UJJ" role="TZ5H$">
-        <node concept="1dT_AC" id="5rr9WNg8UJK" role="1dT_Ay">
-          <property role="1dT_AB" value="Dit is identek aan ReadOnlyQueryList, maar dan niet foldable.i" />
+      <node concept="1PaTwC" id="5JOGi5SkFvv" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkFvw" role="1PaTwD">
+          <property role="3oM_SC" value="Dit" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvx" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvy" role="1PaTwD">
+          <property role="3oM_SC" value="identek" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvz" role="1PaTwD">
+          <property role="3oM_SC" value="aan" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFv$" role="1PaTwD">
+          <property role="3oM_SC" value="ReadOnlyQueryList," />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFv_" role="1PaTwD">
+          <property role="3oM_SC" value="maar" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvA" role="1PaTwD">
+          <property role="3oM_SC" value="dan" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvB" role="1PaTwD">
+          <property role="3oM_SC" value="niet" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvC" role="1PaTwD">
+          <property role="3oM_SC" value="foldable.i" />
         </node>
       </node>
     </node>

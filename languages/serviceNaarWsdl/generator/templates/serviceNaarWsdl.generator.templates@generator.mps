@@ -18,6 +18,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -98,7 +101,7 @@
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
       </concept>
       <concept id="1225228973247" name="jetbrains.mps.lang.generator.structure.MapSrcMacro_PostMapperFunction" flags="in" index="15lBmy" />
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1184690432998" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_outputNode" flags="nn" index="3l3mFP" />
@@ -106,7 +109,7 @@
         <property id="1177959072138" name="keepSourceRoot" index="13Pg2o" />
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
-      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="ln" index="1pdMLZ">
+      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="lg" index="1pdMLZ">
         <child id="1225229330048" name="postMapperFunction" index="15mYut" />
       </concept>
       <concept id="1048903277984099206" name="jetbrains.mps.lang.generator.structure.VarDeclaration" flags="ng" index="1ps_xZ">
@@ -117,8 +120,8 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167756221419" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_templatePropertyValue" flags="nn" index="3zGtF$" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
     </language>
@@ -133,7 +136,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -409,7 +411,7 @@
                       <node concept="3clFbF" id="3u7FNWaCy21" role="3cqZAp">
                         <node concept="2OqwBi" id="3u7FNWaCy22" role="3clFbG">
                           <node concept="30H73N" id="3u7FNWaCy23" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="3u7FNWaCy24" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5Sk$YG" role="2OqNvi">
                             <ref role="37wK5l" to="txb8:46NTomFkZ0k" resolve="requestMessageName" />
                           </node>
                         </node>
@@ -509,7 +511,7 @@
                       <node concept="3clFbF" id="6T5JPtrCGn2" role="3cqZAp">
                         <node concept="2OqwBi" id="6T5JPtrCGEG" role="3clFbG">
                           <node concept="30H73N" id="6T5JPtrCGn1" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="6T5JPtrCHvg" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5Sk$YI" role="2OqNvi">
                             <ref role="37wK5l" to="txb8:6T5JPtrC$R8" resolve="responseMessageName" />
                           </node>
                         </node>
@@ -580,7 +582,7 @@
                     <node concept="3clFbF" id="3u7FNWaCy2K" role="3cqZAp">
                       <node concept="2OqwBi" id="3u7FNWaCy2L" role="3clFbG">
                         <node concept="30H73N" id="3u7FNWaCy2M" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="3u7FNWaCy2N" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5Sk$YK" role="2OqNvi">
                           <ref role="37wK5l" to="txb8:2VFntP5kXN" resolve="soapPortType" />
                         </node>
                       </node>
@@ -657,9 +659,9 @@
                         <node concept="3clFbF" id="3u7FNWaCy3f" role="3cqZAp">
                           <node concept="2OqwBi" id="3u7FNWaCy3g" role="3clFbG">
                             <node concept="30H73N" id="3u7FNWaCy3h" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="3u7FNWaCy3i" role="2OqNvi">
+                            <node concept="3zqWPK" id="5JOGi5Sk$YM" role="2OqNvi">
                               <ref role="37wK5l" to="txb8:2VFntP6ev9" resolve="soapAction" />
-                              <node concept="Xl_RD" id="1a$WeWokZCq" role="37wK5m">
+                              <node concept="Xl_RD" id="5JOGi5Sk$YO" role="37wK5m">
                                 <property role="Xl_RC" value="Request" />
                               </node>
                             </node>
@@ -714,9 +716,9 @@
                         <node concept="3clFbF" id="3u7FNWaCy3$" role="3cqZAp">
                           <node concept="2OqwBi" id="3u7FNWaCy3_" role="3clFbG">
                             <node concept="30H73N" id="3u7FNWaCy3A" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="3u7FNWaCy3B" role="2OqNvi">
+                            <node concept="3zqWPK" id="5JOGi5Sk$YP" role="2OqNvi">
                               <ref role="37wK5l" to="txb8:2VFntP6ev9" resolve="soapAction" />
-                              <node concept="Xl_RD" id="1a$WeWokZGJ" role="37wK5m">
+                              <node concept="Xl_RD" id="5JOGi5Sk$YR" role="37wK5m">
                                 <property role="Xl_RC" value="Response" />
                               </node>
                             </node>
@@ -758,7 +760,7 @@
                     <node concept="3clFbF" id="3u7FNWaCy3R" role="3cqZAp">
                       <node concept="2OqwBi" id="3u7FNWaCy3S" role="3clFbG">
                         <node concept="30H73N" id="3u7FNWaCy3T" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="3u7FNWaCy3U" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5Sk$YS" role="2OqNvi">
                           <ref role="37wK5l" to="txb8:2VFntP6ytM" resolve="soapBinding" />
                         </node>
                       </node>
@@ -784,7 +786,7 @@
                         </node>
                         <node concept="2OqwBi" id="3u7FNWaCy43" role="3uHU7w">
                           <node concept="30H73N" id="3u7FNWaCy44" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="3u7FNWaCy45" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5Sk$YU" role="2OqNvi">
                             <ref role="37wK5l" to="txb8:2VFntP5kXN" resolve="soapPortType" />
                           </node>
                         </node>
@@ -848,9 +850,9 @@
                         <node concept="3clFbF" id="3u7FNWaCy4r" role="3cqZAp">
                           <node concept="2OqwBi" id="3u7FNWaCy4s" role="3clFbG">
                             <node concept="30H73N" id="3u7FNWaCy4t" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="3u7FNWaCy4u" role="2OqNvi">
+                            <node concept="3zqWPK" id="5JOGi5Sk$YW" role="2OqNvi">
                               <ref role="37wK5l" to="txb8:2VFntP6ev9" resolve="soapAction" />
-                              <node concept="Xl_RD" id="1a$WeWol0iC" role="37wK5m">
+                              <node concept="Xl_RD" id="5JOGi5Sk$YY" role="37wK5m">
                                 <property role="Xl_RC" value="Request" />
                               </node>
                             </node>
@@ -998,7 +1000,7 @@
                           </node>
                           <node concept="2OqwBi" id="3u7FNWaCy5p" role="3uHU7w">
                             <node concept="30H73N" id="3u7FNWaCy5q" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="3u7FNWaCy5r" role="2OqNvi">
+                            <node concept="3zqWPK" id="5JOGi5Sk$YZ" role="2OqNvi">
                               <ref role="37wK5l" to="txb8:2VFntP6ytM" resolve="soapBinding" />
                             </node>
                           </node>
@@ -1021,7 +1023,7 @@
                       <node concept="3clFbF" id="3u7FNWaCy5x" role="3cqZAp">
                         <node concept="2OqwBi" id="3u7FNWaCy5y" role="3clFbG">
                           <node concept="30H73N" id="3u7FNWaCy5z" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="3u7FNWaCy5$" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5Sk$Z1" role="2OqNvi">
                             <ref role="37wK5l" to="txb8:2VFntP6X3e" resolve="soapPort" />
                           </node>
                         </node>
@@ -1142,7 +1144,7 @@
             <node concept="3clFbF" id="6u7l4$1ph1r" role="3cqZAp">
               <node concept="2OqwBi" id="6u7l4$1phv1" role="3clFbG">
                 <node concept="30H73N" id="6u7l4$1ph1q" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6u7l4$1piFU" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5Sk$Z3" role="2OqNvi">
                   <ref role="37wK5l" to="txb8:6u7l4$1onfr" resolve="serviceName" />
                 </node>
               </node>
