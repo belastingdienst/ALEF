@@ -47,13 +47,6 @@
 			<groupId>com.jetbrains.jdk</groupId>
 			<artifactId>jbr</artifactId>
 			<version>${jbr.version}</version>
-			<classifier>osx-x64</classifier>
-			<type>tgz</type>
-		</dependency>
-		<dependency>
-			<groupId>com.jetbrains.jdk</groupId>
-			<artifactId>jbr</artifactId>
-			<version>${jbr.version}</version>
 			<classifier>osx-aarch64</classifier>
 			<type>tgz</type>
 		</dependency>
@@ -211,17 +204,6 @@
                                    		${project.basedir}/build/jbrs
                                 	</outputDirectory>
                                 	<destFileName>jbr-linux-x64.tar.gz</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-									<groupId>com.jetbrains.jdk</groupId>
-									<artifactId>jbr</artifactId>
-									<version>${jbr.version}</version>
-									<classifier>osx-x64</classifier>
-									<type>tgz</type>
-									<outputDirectory>
-									   ${project.basedir}/build/jbrs
-									</outputDirectory>
-                                	<destFileName>jbr-osx-x64.tar.gz</destFileName>
                                 </artifactItem>
 								<artifactItem>
 									<groupId>com.jetbrains.jdk</groupId>
@@ -617,21 +599,6 @@
 				<mps.platform>windows</mps.platform>
 				<jbr.classifier>windows-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
-			</properties>
-		</profile>
-		<profile>
-			<!-- MacOS: Intel -->
-			<id>MacOSx64</id>
-			<activation>
-				<os>
-					<family>mac</family>
-					<arch>x64</arch>
-				</os>
-			</activation>
-			<properties>
-				<jbr.classifier>osx-x64</jbr.classifier>
-				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}/Contents/Home</java.home>
-				<maven.test.skip>true</maven.test.skip>
 			</properties>
 		</profile>
 		<profile>
