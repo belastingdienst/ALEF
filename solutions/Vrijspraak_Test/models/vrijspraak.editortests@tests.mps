@@ -6,6 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="4f7705db-6cde-4dd2-bae3-c8d8801d8324" name="vrijspraak" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
   </languages>
   <imports>
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
@@ -68,6 +69,9 @@
         <property id="1207318242773" name="modifiers" index="pLAjc" />
         <property id="1207318242774" name="keycode" index="pLAjf" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -204,7 +208,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -2278,17 +2281,17 @@
               <node concept="35c_gC" id="4MS$36le179" role="2Oq$k0">
                 <ref role="35c_gD" to="c9ee:goo2m$m7Gz" resolve="VrijStatement" />
               </node>
-              <node concept="2qgKlT" id="4MS$36le17a" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5Sk_n0" role="2OqNvi">
                 <ref role="37wK5l" to="saki:11CN3kvpwCB" resolve="from" />
-                <node concept="1PxgMI" id="4MS$36le17b" role="37wK5m">
-                  <node concept="chp4Y" id="4MS$36le17c" role="3oSUPX">
+                <node concept="1PxgMI" id="5JOGi5Sk_n2" role="37wK5m">
+                  <node concept="chp4Y" id="5JOGi5Sk_n3" role="3oSUPX">
                     <ref role="cht4Q" to="m234:$infi2sFM8" resolve="ActieIndienVoorwaarde" />
                   </node>
-                  <node concept="2OqwBi" id="4MS$36le17d" role="1m5AlR">
-                    <node concept="3xONca" id="4MS$36le17e" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5JOGi5Sk_n4" role="1m5AlR">
+                    <node concept="3xONca" id="5JOGi5Sk_n5" role="2Oq$k0">
                       <ref role="3xOPvv" node="4MS$36ldTzn" resolve="regel" />
                     </node>
-                    <node concept="3TrEf2" id="4MS$36le17f" role="2OqNvi">
+                    <node concept="3TrEf2" id="5JOGi5Sk_n6" role="2OqNvi">
                       <ref role="3Tt5mk" to="m234:1ibElXOmXW6" resolve="statement" />
                     </node>
                   </node>

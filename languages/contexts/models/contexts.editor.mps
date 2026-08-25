@@ -22,6 +22,9 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
@@ -340,7 +343,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -525,7 +527,7 @@
           <node concept="2OqwBi" id="5AU3BUkeaRY" role="3clFbw">
             <node concept="2OqwBi" id="5AU3BUke8o0" role="2Oq$k0">
               <node concept="3lBN6O" id="5AU3BUkeAIw" role="2Oq$k0" />
-              <node concept="2qgKlT" id="5AU3BUke8Co" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5SkCty" role="2OqNvi">
                 <ref role="37wK5l" to="wrck:5AU3BUkcEq_" resolve="siblingContexts" />
               </node>
             </node>
@@ -699,7 +701,7 @@
               <node concept="3clFbF" id="38AF0u0PkwZ" role="3cqZAp">
                 <node concept="2OqwBi" id="38AF0u0PkNm" role="3clFbG">
                   <node concept="pncrf" id="38AF0u0PkwY" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="38AF0u0Pl2D" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCt$" role="2OqNvi">
                     <ref role="37wK5l" to="wrck:38AF0u0NGhO" resolve="kanOmvatWorden" />
                   </node>
                 </node>
@@ -745,7 +747,7 @@
                       </node>
                       <node concept="2yIwOk" id="1qfSAxb2hu8" role="2OqNvi" />
                     </node>
-                    <node concept="2qgKlT" id="1qfSAxb2hu9" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkCtA" role="2OqNvi">
                       <ref role="37wK5l" to="wrck:1qfSAxb2flh" resolve="commentsInInspector" />
                     </node>
                   </node>

@@ -15,6 +15,9 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
@@ -163,7 +166,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -336,7 +338,7 @@
               <node concept="3clFbF" id="3QRmxfZtF$P" role="3cqZAp">
                 <node concept="2OqwBi" id="3QRmxfZtFYC" role="3clFbG">
                   <node concept="pncrf" id="3QRmxfZtF$O" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="3QRmxfZtHoi" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkBv7" role="2OqNvi">
                     <ref role="37wK5l" to="dr8r:3QRmxfZtD7T" resolve="firstArgOnNewLine" />
                   </node>
                 </node>
@@ -430,9 +432,9 @@
                   <node concept="3clFbF" id="13PzmVuwU9m" role="3cqZAp">
                     <node concept="2OqwBi" id="13PzmVuwU9n" role="3clFbG">
                       <node concept="1NM5Ph" id="13PzmVuwU9o" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="13PzmVuwU9p" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkBv9" role="2OqNvi">
                         <ref role="37wK5l" to="tpek:7q4lzBFjvF8" resolve="getNestedNameInContext" />
-                        <node concept="1NM5Pg" id="13PzmVuwU9q" role="37wK5m" />
+                        <node concept="1NM5Pg" id="5JOGi5SkBvb" role="37wK5m" />
                       </node>
                     </node>
                   </node>

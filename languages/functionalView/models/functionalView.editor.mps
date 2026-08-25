@@ -21,6 +21,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
@@ -185,7 +188,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -269,7 +271,7 @@
               <node concept="3clFbS" id="hrceH_I7A0" role="2VODD2">
                 <node concept="3cpWs6" id="hrceH_I7A1" role="3cqZAp">
                   <node concept="2OqwBi" id="hrceH_I7A2" role="3cqZAk">
-                    <node concept="2qgKlT" id="6WSEafdhlQc" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkCn3" role="2OqNvi">
                       <ref role="37wK5l" to="csvn:6WSEafdhbZX" resolve="isVirtual" />
                     </node>
                     <node concept="pncrf" id="hrceH_I7A3" role="2Oq$k0" />

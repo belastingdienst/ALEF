@@ -6,7 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
@@ -20,6 +20,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
         <child id="1219921048460" name="componentType" index="8Xvag" />
@@ -119,23 +122,20 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
       <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <property id="2217234381367190444" name="text" index="VUp50" />
         <child id="2217234381367190458" name="reference" index="VUp5m" />
       </concept>
       <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
         <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
       </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -144,7 +144,6 @@
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -279,9 +278,36 @@
         </node>
       </node>
       <node concept="P$JXv" id="6aCfQrXFCPT" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFCPU" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFCPV" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns a Sequence containing all items in the given Iterable." />
+        <node concept="1PaTwC" id="5JOGi5SkFvO" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFvP" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvQ" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvR" role="1PaTwD">
+            <property role="3oM_SC" value="Sequence" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvS" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvT" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvU" role="1PaTwD">
+            <property role="3oM_SC" value="items" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvV" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvW" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvX" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFvY" role="1PaTwD">
+            <property role="3oM_SC" value="Iterable." />
           </node>
         </node>
       </node>
@@ -340,9 +366,27 @@
         </node>
       </node>
       <node concept="P$JXv" id="6aCfQrXFE85" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFE86" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFE87" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns a Sequence containing all given items." />
+        <node concept="1PaTwC" id="5JOGi5SkFvZ" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFw0" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw1" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw2" role="1PaTwD">
+            <property role="3oM_SC" value="Sequence" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw3" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw4" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw5" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw6" role="1PaTwD">
+            <property role="3oM_SC" value="items." />
           </node>
         </node>
       </node>
@@ -427,9 +471,27 @@
         </node>
       </node>
       <node concept="P$JXv" id="6aCfQrXFER0" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFER1" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFER2" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns all roots in the given module." />
+        <node concept="1PaTwC" id="5JOGi5SkFw7" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFw8" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw9" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwa" role="1PaTwD">
+            <property role="3oM_SC" value="roots" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwb" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwc" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwd" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwe" role="1PaTwD">
+            <property role="3oM_SC" value="module." />
           </node>
         </node>
       </node>
@@ -491,9 +553,42 @@
         <node concept="3Tqbb2" id="6aCfQrXHn18" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="6aCfQrXFGAL" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFGAM" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFGAN" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns all nodes under the given parent node, including that node itself." />
+        <node concept="1PaTwC" id="5JOGi5SkFwf" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFwg" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwh" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwi" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwj" role="1PaTwD">
+            <property role="3oM_SC" value="under" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwk" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwl" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwm" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwn" role="1PaTwD">
+            <property role="3oM_SC" value="node," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwo" role="1PaTwD">
+            <property role="3oM_SC" value="including" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwp" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwq" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwr" role="1PaTwD">
+            <property role="3oM_SC" value="itself." />
           </node>
         </node>
       </node>
@@ -693,14 +788,92 @@
         <node concept="3Tqbb2" id="6aCfQrXHNuc" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="6aCfQrXFHmV" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFHmW" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFHmX" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the concepts of all nodes under the given parent node, including that of that node itself." />
+        <node concept="1PaTwC" id="5JOGi5SkFws" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFwt" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwu" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwv" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFww" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwx" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwy" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwz" role="1PaTwD">
+            <property role="3oM_SC" value="under" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw$" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFw_" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwA" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwB" role="1PaTwD">
+            <property role="3oM_SC" value="node," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwC" role="1PaTwD">
+            <property role="3oM_SC" value="including" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwD" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwE" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwF" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwG" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwH" role="1PaTwD">
+            <property role="3oM_SC" value="itself." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7926YsmYjeH" role="TZ5H$">
-          <node concept="1dT_AC" id="7926YsmYjeI" role="1dT_Ay">
-            <property role="1dT_AB" value="Nodes which are commented out (or comments themselves) are completely skipped." />
+        <node concept="1PaTwC" id="5JOGi5SkFwI" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFwJ" role="1PaTwD">
+            <property role="3oM_SC" value="Nodes" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwK" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwL" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwM" role="1PaTwD">
+            <property role="3oM_SC" value="commented" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwN" role="1PaTwD">
+            <property role="3oM_SC" value="out" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwO" role="1PaTwD">
+            <property role="3oM_SC" value="(or" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwP" role="1PaTwD">
+            <property role="3oM_SC" value="comments" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwQ" role="1PaTwD">
+            <property role="3oM_SC" value="themselves)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwR" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwS" role="1PaTwD">
+            <property role="3oM_SC" value="completely" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwT" role="1PaTwD">
+            <property role="3oM_SC" value="skipped." />
           </node>
         </node>
       </node>
@@ -833,9 +1006,84 @@
         <node concept="3bZ5Sz" id="6aCfQrXI1he" role="A3Ik2" />
       </node>
       <node concept="P$JXv" id="6aCfQrXFIl0" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFIl1" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFIl2" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns all concrete concepts of all given languages (2nd arg) that are not instantiated (or only within comments) in any of the given modules (1st arg)." />
+        <node concept="1PaTwC" id="5JOGi5SkFwU" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFwV" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwW" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwX" role="1PaTwD">
+            <property role="3oM_SC" value="concrete" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwY" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFwZ" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx0" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx1" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx2" role="1PaTwD">
+            <property role="3oM_SC" value="languages" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx3" role="1PaTwD">
+            <property role="3oM_SC" value="(2nd" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx4" role="1PaTwD">
+            <property role="3oM_SC" value="arg)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx5" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx6" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx7" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx8" role="1PaTwD">
+            <property role="3oM_SC" value="instantiated" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx9" role="1PaTwD">
+            <property role="3oM_SC" value="(or" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxa" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxb" role="1PaTwD">
+            <property role="3oM_SC" value="within" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxc" role="1PaTwD">
+            <property role="3oM_SC" value="comments)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxd" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxe" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxf" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxg" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxh" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxi" role="1PaTwD">
+            <property role="3oM_SC" value="modules" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxj" role="1PaTwD">
+            <property role="3oM_SC" value="(1st" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxk" role="1PaTwD">
+            <property role="3oM_SC" value="arg)." />
           </node>
         </node>
       </node>
@@ -916,9 +1164,69 @@
         </node>
       </node>
       <node concept="P$JXv" id="6aCfQrXFJMT" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFJMU" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFJMV" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns all concrete concepts of all ALEF-&quot;spraken&quot; that are not instantiated (or only within comments) in any of the given modules." />
+        <node concept="1PaTwC" id="5JOGi5SkFxl" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFxm" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxn" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxo" role="1PaTwD">
+            <property role="3oM_SC" value="concrete" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxp" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxq" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxr" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxs" role="1PaTwD">
+            <property role="3oM_SC" value="ALEF-&quot;spraken&quot;" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxt" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxu" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxv" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxw" role="1PaTwD">
+            <property role="3oM_SC" value="instantiated" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxx" role="1PaTwD">
+            <property role="3oM_SC" value="(or" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxy" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxz" role="1PaTwD">
+            <property role="3oM_SC" value="within" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx$" role="1PaTwD">
+            <property role="3oM_SC" value="comments)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFx_" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxA" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxB" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxC" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxD" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxE" role="1PaTwD">
+            <property role="3oM_SC" value="modules." />
           </node>
         </node>
       </node>
@@ -1029,14 +1337,128 @@
         </node>
       </node>
       <node concept="P$JXv" id="6aCfQrXFKPf" role="lGtFl">
-        <node concept="TZ5HA" id="6aCfQrXFKPg" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFKPh" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns all concrete concepts of all ALEF-&quot;spraken&quot; that (are supposed to) have semantics, that are not instantiated (or only within comments) in any of the test modules." />
+        <node concept="1PaTwC" id="5JOGi5SkFxF" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFxG" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxH" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxI" role="1PaTwD">
+            <property role="3oM_SC" value="concrete" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxJ" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxK" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxL" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxM" role="1PaTwD">
+            <property role="3oM_SC" value="ALEF-&quot;spraken&quot;" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxN" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxO" role="1PaTwD">
+            <property role="3oM_SC" value="(are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxP" role="1PaTwD">
+            <property role="3oM_SC" value="supposed" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxQ" role="1PaTwD">
+            <property role="3oM_SC" value="to)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxR" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxS" role="1PaTwD">
+            <property role="3oM_SC" value="semantics," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxT" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxU" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxV" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxW" role="1PaTwD">
+            <property role="3oM_SC" value="instantiated" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxX" role="1PaTwD">
+            <property role="3oM_SC" value="(or" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxY" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFxZ" role="1PaTwD">
+            <property role="3oM_SC" value="within" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy0" role="1PaTwD">
+            <property role="3oM_SC" value="comments)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy1" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy2" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy3" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy5" role="1PaTwD">
+            <property role="3oM_SC" value="test" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy6" role="1PaTwD">
+            <property role="3oM_SC" value="modules." />
           </node>
         </node>
-        <node concept="TZ5HA" id="6aCfQrXFWAj" role="TZ5H$">
-          <node concept="1dT_AC" id="6aCfQrXFWAk" role="1dT_Ay">
-            <property role="1dT_AB" value="The concepts are returned as links to their definitions in a structure aspect." />
+        <node concept="1PaTwC" id="5JOGi5SkFy7" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFy8" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy9" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFya" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyb" role="1PaTwD">
+            <property role="3oM_SC" value="returned" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyc" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyd" role="1PaTwD">
+            <property role="3oM_SC" value="links" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFye" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyf" role="1PaTwD">
+            <property role="3oM_SC" value="their" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyg" role="1PaTwD">
+            <property role="3oM_SC" value="definitions" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyh" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyi" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyj" role="1PaTwD">
+            <property role="3oM_SC" value="structure" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyk" role="1PaTwD">
+            <property role="3oM_SC" value="aspect." />
           </node>
         </node>
       </node>
@@ -1108,14 +1530,45 @@
         </node>
       </node>
       <node concept="P$JXv" id="7926YsmYjuc" role="lGtFl">
-        <node concept="TZ5HA" id="7926YsmYkau" role="TZ5H$">
-          <node concept="1dT_AC" id="7926YsmYkav" role="1dT_Ay">
-            <property role="1dT_AB" value="Same as unusedConceptsInTestModules, except it returns only the deprecated concepts." />
-          </node>
-        </node>
         <node concept="VUp57" id="7926YsmYkdv" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="7926YsmYker" role="VUp5m">
             <ref role="VXe0S" node="3UIvosibj5D" resolve="unusedConceptsInTestModules" />
+          </node>
+          <node concept="1PaTwC" id="5JOGi5SkFyw" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkFyx" role="1PaTwD" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkFyl" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFym" role="1PaTwD">
+            <property role="3oM_SC" value="Same" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyn" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyo" role="1PaTwD">
+            <property role="3oM_SC" value="unusedConceptsInTestModules," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyp" role="1PaTwD">
+            <property role="3oM_SC" value="except" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyq" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyr" role="1PaTwD">
+            <property role="3oM_SC" value="returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFys" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyt" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyu" role="1PaTwD">
+            <property role="3oM_SC" value="deprecated" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyv" role="1PaTwD">
+            <property role="3oM_SC" value="concepts." />
           </node>
         </node>
       </node>
@@ -1159,19 +1612,50 @@
         </node>
       </node>
       <node concept="P$JXv" id="7926YsmYmdu" role="lGtFl">
-        <node concept="TZ5HA" id="7926YsmYmdv" role="TZ5H$">
-          <node concept="1dT_AC" id="7926YsmYmdw" role="1dT_Ay">
-            <property role="1dT_AB" value="Same as unusedConceptsInTestModules, except it returns only the non-deprecated concepts." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7926YsmYmvP" role="TZ5H$">
-          <node concept="1dT_AC" id="7926YsmYmvQ" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
         <node concept="VUp57" id="7926YsmYmwP" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="7926YsmYmxL" role="VUp5m">
             <ref role="VXe0S" node="3UIvosibj5D" resolve="unusedConceptsInTestModules" />
+          </node>
+          <node concept="1PaTwC" id="5JOGi5SkFyJ" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkFyK" role="1PaTwD" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkFyy" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFyz" role="1PaTwD">
+            <property role="3oM_SC" value="Same" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy$" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFy_" role="1PaTwD">
+            <property role="3oM_SC" value="unusedConceptsInTestModules," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyA" role="1PaTwD">
+            <property role="3oM_SC" value="except" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyB" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyC" role="1PaTwD">
+            <property role="3oM_SC" value="returns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyD" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyE" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyF" role="1PaTwD">
+            <property role="3oM_SC" value="non-deprecated" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyG" role="1PaTwD">
+            <property role="3oM_SC" value="concepts." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkFyH" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFyI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -1198,7 +1682,7 @@
                       <node concept="37vLTw" id="6aCfQrYoBQ1" role="2Oq$k0">
                         <ref role="3cqZAo" node="5vSJaT$FKGU" resolve="it" />
                       </node>
-                      <node concept="2qgKlT" id="6aCfQrYoCQZ" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCFL" role="2OqNvi">
                         <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                       </node>
                     </node>
@@ -1222,18 +1706,105 @@
         </node>
       </node>
       <node concept="P$JXv" id="7926YsmYndn" role="lGtFl">
-        <node concept="TZ5HA" id="7926YsmYndo" role="TZ5H$">
-          <node concept="1dT_AC" id="7926YsmYndp" role="1dT_Ay">
-            <property role="1dT_AB" value="Turns a list of concepts (e.g., the result of any of the unused*Concepts*-methods) into a flat list of their qualified names." />
+        <node concept="1PaTwC" id="5JOGi5SkFyL" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFyM" role="1PaTwD">
+            <property role="3oM_SC" value="Turns" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyN" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyO" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyP" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyQ" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyR" role="1PaTwD">
+            <property role="3oM_SC" value="(e.g.," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyS" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyT" role="1PaTwD">
+            <property role="3oM_SC" value="result" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyU" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyV" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyW" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyY" role="1PaTwD">
+            <property role="3oM_SC" value="unused*Concepts*-methods)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFyZ" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz0" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz1" role="1PaTwD">
+            <property role="3oM_SC" value="flat" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz2" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz3" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz4" role="1PaTwD">
+            <property role="3oM_SC" value="their" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz5" role="1PaTwD">
+            <property role="3oM_SC" value="qualified" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFz6" role="1PaTwD">
+            <property role="3oM_SC" value="names." />
           </node>
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6aCfQrYoE$y" role="jymVt" />
     <node concept="3UR2Jj" id="6aCfQrXFCmL" role="lGtFl">
-      <node concept="TZ5HA" id="6aCfQrXFCmM" role="TZ5H$">
-        <node concept="1dT_AC" id="6aCfQrXFCmN" role="1dT_Ay">
-          <property role="1dT_AB" value="Class to help with determining which concepts are not instantiated." />
+      <node concept="1PaTwC" id="5JOGi5SkFvD" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkFvE" role="1PaTwD">
+          <property role="3oM_SC" value="Class" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvF" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvG" role="1PaTwD">
+          <property role="3oM_SC" value="help" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvH" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvI" role="1PaTwD">
+          <property role="3oM_SC" value="determining" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvJ" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvK" role="1PaTwD">
+          <property role="3oM_SC" value="concepts" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvL" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvM" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkFvN" role="1PaTwD">
+          <property role="3oM_SC" value="instantiated." />
         </node>
       </node>
     </node>

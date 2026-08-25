@@ -18,6 +18,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -126,7 +129,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -454,7 +456,7 @@
                           <ref role="3Tt5mk" to="lxx5:3SYd9_wKTHP" resolve="tijdlijn" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="10V$HnZN$W5" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCpI" role="2OqNvi">
                         <ref role="37wK5l" to="3ph8:1X_GLydemn$" resolve="isOnzijdig" />
                       </node>
                     </node>
@@ -527,7 +529,7 @@
             <node concept="3clFbF" id="7ujcURq19hf" role="3cqZAp">
               <node concept="2OqwBi" id="7ujcURq19$S" role="3clFbG">
                 <node concept="236Rlm" id="7ujcURq19he" role="2Oq$k0" />
-                <node concept="2qgKlT" id="7ujcURq1a4K" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCpK" role="2OqNvi">
                   <ref role="37wK5l" to="hiv9:7ujcURq0XDU" resolve="heeftAls" />
                 </node>
               </node>
@@ -544,7 +546,7 @@
             <node concept="3clFbF" id="7ujcURq1ace" role="3cqZAp">
               <node concept="2OqwBi" id="7ujcURq1acf" role="3clFbG">
                 <node concept="236Rlm" id="7ujcURq1acg" role="2Oq$k0" />
-                <node concept="2qgKlT" id="7ujcURq1ach" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCpM" role="2OqNvi">
                   <ref role="37wK5l" to="hiv9:7ujcURq0XI3" resolve="heeftGedurende" />
                 </node>
               </node>
@@ -697,7 +699,7 @@
                     <ref role="3Tt5mk" to="m234:3QRmxg04Qvf" resolve="predicaat" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="1mrznZNWwR5" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCpO" role="2OqNvi">
                   <ref role="37wK5l" to="u5to:5NcSwk7Lpr_" resolve="onderdrukWerkwoord" />
                 </node>
               </node>
@@ -719,7 +721,7 @@
                     <ref role="3Tt5mk" to="lxx5:3SYd9_wKTHP" resolve="tijdlijn" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="6B6L_QK3zEY" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCpQ" role="2OqNvi">
                   <ref role="37wK5l" to="3ph8:1X_GLydemn$" resolve="isOnzijdig" />
                 </node>
               </node>

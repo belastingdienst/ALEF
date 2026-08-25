@@ -16,6 +16,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
@@ -253,7 +256,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -281,13 +283,13 @@
       <node concept="2ElW$n" id="1rVOyyyzMSD" role="2El2Yn">
         <node concept="2OqwBi" id="1rVOyyyOeYG" role="2EmT7a">
           <node concept="2EmZKS" id="1rVOyyyOeFT" role="2Oq$k0" />
-          <node concept="2qgKlT" id="1rVOyyyOfJF" role="2OqNvi">
+          <node concept="3zqWPK" id="5JOGi5SkBuX" role="2OqNvi">
             <ref role="37wK5l" to="qimj:1rVOyyyOeZp" resolve="leftAssoc" />
           </node>
         </node>
         <node concept="2OqwBi" id="1rVOyyyOg7l" role="2EmURo">
           <node concept="2EmZKS" id="1rVOyyyOfOF" role="2Oq$k0" />
-          <node concept="2qgKlT" id="1rVOyyyOg91" role="2OqNvi">
+          <node concept="3zqWPK" id="5JOGi5SkBuZ" role="2OqNvi">
             <ref role="37wK5l" to="qimj:1rVOyyyOf6b" resolve="prio" />
           </node>
         </node>
@@ -383,7 +385,7 @@
                 <node concept="2OqwBi" id="1rVOyyz_Jq7" role="3fr31v">
                   <node concept="2OqwBi" id="1rVOyyz_Jq8" role="2Oq$k0">
                     <node concept="pncrf" id="1rVOyyz_Jq9" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1rVOyyz_Jqa" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkBv1" role="2OqNvi">
                       <ref role="37wK5l" to="qimj:1rVOyyy$hgt" resolve="calculate" />
                     </node>
                   </node>
@@ -410,7 +412,7 @@
                   <node concept="3clFbF" id="1rVOyyy$hCy" role="3cqZAp">
                     <node concept="2OqwBi" id="1rVOyyy$hU5" role="3clFbG">
                       <node concept="pncrf" id="1rVOyyy$hCx" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1rVOyyy$igy" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkBv3" role="2OqNvi">
                         <ref role="37wK5l" to="qimj:1rVOyyy$hgt" resolve="calculate" />
                       </node>
                     </node>
@@ -436,7 +438,7 @@
                   <node concept="2OqwBi" id="1rVOyyz_Hbr" role="3clFbG">
                     <node concept="2OqwBi" id="1rVOyyz_GCZ" role="2Oq$k0">
                       <node concept="pncrf" id="1rVOyyz_GD0" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1rVOyyz_GD1" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkBv5" role="2OqNvi">
                         <ref role="37wK5l" to="qimj:1rVOyyy$hgt" resolve="calculate" />
                       </node>
                     </node>

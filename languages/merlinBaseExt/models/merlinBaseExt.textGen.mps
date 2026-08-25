@@ -12,6 +12,9 @@
     <import index="dr8r" ref="r:cadb6cc9-e1f1-4ef4-bcaf-48b455418da2(merlinBaseExt.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -116,7 +119,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="3609773094169249792" name="jetbrains.mps.lang.smodel.structure.Node_GetReferenceOperation" flags="nn" index="37Cfm0">
         <child id="3609773094169252180" name="linkQualifier" index="37CeNk" />
@@ -372,7 +374,7 @@
                       <node concept="3eNFk2" id="3QRmxfZtJ7S" role="3eNLev">
                         <node concept="2OqwBi" id="3QRmxfZtJoa" role="3eO9$A">
                           <node concept="117lpO" id="3QRmxfZtJ8C" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="3QRmxfZtKfJ" role="2OqNvi">
+                          <node concept="3zqWPK" id="5JOGi5SkBvc" role="2OqNvi">
                             <ref role="37wK5l" to="dr8r:3QRmxfZtD7T" resolve="firstArgOnNewLine" />
                           </node>
                         </node>
