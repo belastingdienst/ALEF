@@ -7,8 +7,8 @@ import nl.belastingdienst.merlin.lazy.MLazyProperty;
 public class MDimensionalPropertyKey<T> extends MPropertyKey<T> {
     private final int[] dimensions;
 
-    public MDimensionalPropertyKey(int[] dimensions) {
-        super(false);
+    public MDimensionalPropertyKey(String name, int[] dimensions) {
+        super(name, false);
         this.dimensions = dimensions;
 
     }

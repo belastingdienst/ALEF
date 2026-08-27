@@ -9,6 +9,7 @@ import nl.belastingdienst.merlin.time.MTimedObjectSingleton;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class MObject extends MBase implements IMDelegatedExecution {
@@ -22,8 +23,8 @@ public class MObject extends MBase implements IMDelegatedExecution {
     private final List<MDelegateeRule> delegateeRules = new ArrayList<>();
     private final List<MRuleBase> callbackRulesList = new ArrayList<>();
     private final MObjectType objectType;
-    private final HashMap<MPropertyKey, MProperty> propertyInstances = new HashMap<>();
-    private final HashMap<MRoleKey, MRole> roles = new HashMap<>();
+    private final Map<MPropertyKey, MProperty> propertyInstances = new HashMap<>();
+    private final Map<MRoleKey, MRole> roles = new HashMap<>();
 
     private Boolean consistent;
     private final String externalId;
@@ -56,7 +57,7 @@ public class MObject extends MBase implements IMDelegatedExecution {
 
     @Override
     public MElementList<MDistributionRule> getDistributionRules() {
-        return (distributionRules.isEmpty()) ? MElementList.empty() : MElementList.of(distributionRules);
+        return distributionRules.isEmpty() ? MElementList.<MDistributionRule>empty() : MElementList.of(distributionRules);
     }
 
     public MDistributionRule getDistributionRule(Class<? extends MDistributionRule> ruleClass) {
@@ -214,5 +215,20 @@ public class MObject extends MBase implements IMDelegatedExecution {
     public boolean isObjectType(Class<? extends MObjectType> ot) {
         return ot.equals(getObjectType().getClass());
     }
-}
+
+    @Override
+    public String toString() {
+        final StringBuilder b = new StringBuilder();
+        b.append(this.objectType.getClass().getSimpleName());
+        b.append("{\n");
+        for (Map.Entry<MPropertyKey, MProperty> p : this.propertyInstances.entrySet()) {
+            b.append("  ");
+            b.append(p.getKey().getName());
+            b.append(" ");
+            b.append(p.getValue());
+            b.append("\n");
+        }
+        b.append("}");
+        return b.toString();
+    }}
 

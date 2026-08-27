@@ -6,11 +6,12 @@ import nl.belastingdienst.merlin.lazy.MLazyTimedProperty;
 
 public class MPropertyKey<T> extends MBaseKey {
 
-    public MPropertyKey() {
-        super(false);
+    public MPropertyKey(String name) {
+        super(name, false);
     }
-    public MPropertyKey(boolean timed) {
-        super(timed);
+
+    public MPropertyKey(String name, boolean timed) {
+        super(name, timed);
     }
 
     public MProperty createProperty(MObject parent) {
