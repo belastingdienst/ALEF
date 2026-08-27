@@ -253,54 +253,6 @@
               <property role="1GVH2a" value="198" />
               <ref role="1GVH3K" to="eiom:1v8mUrxexHZ" resolve="uitvoer_positief_geheelgetal" />
             </node>
-            <node concept="1GVH3N" id="32wVc3AkeIr" role="27HnPh">
-              <property role="1GVH2a" value="99" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexK3" resolve="uitvoer_nietnegatief_geheelgetal" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIw" role="27HnPh">
-              <property role="1GVH2a" value="10.866" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexNJ" resolve="uitvoer_3decimalengetal" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIy" role="27HnPh">
-              <property role="1GVH2a" value="-10.866" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexPR" resolve="uitvoer_negatief_3decimalengetal" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIx" role="27HnPh">
-              <property role="1GVH2a" value="10.866" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexS1" resolve="uitvoer_positief_3decimalengetal" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIp" role="27HnPh">
-              <property role="1GVH2a" value="0.99" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexUd" resolve="uitvoer_nietnegatief_3decimalengetal" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIz" role="27HnPh">
-              <property role="1GVH2a" value="33.333" />
-              <ref role="1GVH3K" to="eiom:3l_Z4YZDEZe" resolve="uitvoer_percentage" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIA" role="27HnPh">
-              <property role="1GVH2a" value="false" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexVX" resolve="uitvoer_boolean" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIs" role="27HnPh">
-              <property role="1GVH2a" value="2020-08-07" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexXJ" resolve="uitvoer_datum" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIB" role="27HnPh">
-              <property role="1GVH2a" value="2020-05-04T16:13:13" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxexZz" resolve="uitvoer_datumtijd" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeI$" role="27HnPh">
-              <property role="1GVH2a" value="112" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxey1R" resolve="uitvoer_tijdsduur" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeI_" role="27HnPh">
-              <property role="1GVH2a" value="199.98" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxey4F" resolve="uitvoer_bedrag" />
-            </node>
-            <node concept="1GVH3N" id="32wVc3AkeIq" role="27HnPh">
-              <property role="1GVH2a" value="negenennegentig" />
-              <ref role="1GVH3K" to="eiom:1v8mUrxey6_" resolve="uitvoer_enumeratie" />
-            </node>
             <node concept="1GVH3N" id="AJANz$dUnu" role="27HnPh">
               <property role="1GVH2a" value="kubus" />
               <ref role="1GVH3K" to="eiom:37rcb5CK6Mv" resolve="uitvoer_gedimensioneerde_enumeratie" />
@@ -312,6 +264,54 @@
             <node concept="1GVH3N" id="1JH0m9DGd8h" role="27HnPh">
               <property role="1GVH2a" value="13" />
               <ref role="1GVH3K" to="eiom:1JH0m9DG8gr" resolve="uitvoer_attr_A1_B2" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqj" role="27HnPh">
+              <property role="1GVH2a" value="99" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexK3" resolve="uitvoer_nietnegatief_geheelgetal" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqk" role="27HnPh">
+              <property role="1GVH2a" value="10.866" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexNJ" resolve="uitvoer_3decimalengetal" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWql" role="27HnPh">
+              <property role="1GVH2a" value="-10.866" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexPR" resolve="uitvoer_negatief_3decimalengetal" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqm" role="27HnPh">
+              <property role="1GVH2a" value="10.866" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexS1" resolve="uitvoer_positief_3decimalengetal" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqn" role="27HnPh">
+              <property role="1GVH2a" value="0.99" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexUd" resolve="uitvoer_nietnegatief_3decimalengetal" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqo" role="27HnPh">
+              <property role="1GVH2a" value="33.333" />
+              <ref role="1GVH3K" to="eiom:3l_Z4YZDEZe" resolve="uitvoer_percentage" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqp" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexVX" resolve="uitvoer_boolean" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqq" role="27HnPh">
+              <property role="1GVH2a" value="2020-08-07" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexXJ" resolve="uitvoer_datum" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqr" role="27HnPh">
+              <property role="1GVH2a" value="2020-05-04T16:13:13" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxexZz" resolve="uitvoer_datumtijd" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqs" role="27HnPh">
+              <property role="1GVH2a" value="112" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxey1R" resolve="uitvoer_tijdsduur" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqt" role="27HnPh">
+              <property role="1GVH2a" value="199.98" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxey4F" resolve="uitvoer_bedrag" />
+            </node>
+            <node concept="1GVH3N" id="50tnyi8LWqu" role="27HnPh">
+              <property role="1GVH2a" value="negenennegentig" />
+              <ref role="1GVH3K" to="eiom:1v8mUrxey6_" resolve="uitvoer_enumeratie" />
             </node>
           </node>
         </node>
