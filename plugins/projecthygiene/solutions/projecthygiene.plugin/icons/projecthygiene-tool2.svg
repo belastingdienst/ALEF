@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="projecthygiene-tool2.svg"
+   inkscape:export-filename="record.png"
+   inkscape:export-xdpi="576"
+   inkscape:export-ydpi="576"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="51.3125"
+     inkscape:cx="8.3507917"
+     inkscape:cy="8.3702801"
+     inkscape:window-width="2288"
+     inkscape:window-height="1036"
+     inkscape:window-x="3645"
+     inkscape:window-y="137"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1"
+     showgrid="false" />
+  <rect
+     style="fill:none;stroke:#636363;stroke-width:1.12428;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     id="rect1"
+     width="12.661705"
+     height="11.843193"
+     x="1.6204257"
+     y="1.6009374" />
+  <path
+     style="fill:none;stroke:#636363;stroke-width:1.16563;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="M 5.9110353,8.4896186 C 8.8105732,11.418003 8.832707,11.418003 8.832707,11.418003 l 3.320082,-5.9962147 v 0"
+     id="path1" />
+  <text
+     xml:space="preserve"
+     style="font-size:5.94946px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#999999;stroke:#636363;stroke-width:0.496567;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.99"
+     x="2.592957"
+     y="7.897562"
+     id="text1"
+     transform="scale(1.0878408,0.91925212)"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="2.592957"
+       y="7.897562"
+       style="fill:#666666;stroke-width:0.496567">H</tspan></text>
+</svg>

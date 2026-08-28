@@ -273,6 +273,9 @@
       <node concept="m$_yC" id="1izTxFAPQwA" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
+      <node concept="m$_yC" id="2qzJzSROT4G" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
+      </node>
       <node concept="3_J27D" id="1izTxFAOy2R" role="m_cZH">
         <node concept="3Mxwew" id="1izTxFAOy2S" role="3MwsjC">
           <property role="3MwjfP" value="hygiene" />
@@ -557,6 +560,16 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7EB9w9kC8GT" role="3bR37C">
+          <node concept="3bR9La" id="7EB9w9kC8GU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6NC7D6ImuiR" role="3bR37C">
+          <node concept="3bR9La" id="6NC7D6ImuiS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
           </node>
         </node>
       </node>

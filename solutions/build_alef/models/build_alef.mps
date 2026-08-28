@@ -96,6 +96,7 @@
         <property id="3970102152660876448" name="pattern" index="2$htTZ" />
       </concept>
       <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033859" name="optionsName" index="2_Ic$y" />
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
         <child id="927724900262033863" name="resourceSelectors" index="2_Ic$A" />
@@ -1577,6 +1578,7 @@
     <node concept="2_Ic$z" id="5QEPYXFfa9n" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_Ic$B" value="true" />
+      <property role="2_Ic$y" value="-Dprojecthygiene.check=0" />
       <node concept="3qWCbU" id="5QEPYXFfaxV" role="2_Ic$A">
         <property role="3qWCbO" value="**/*.png" />
       </node>
@@ -14939,7 +14941,7 @@
       <node concept="24cAiW" id="5i00LOfARQj" role="24cAkG">
         <node concept="NbPM2" id="5i00LOfASsC" role="1psgkv">
           <node concept="3Mxwew" id="5i00LOfAS_V" role="3MwsjC">
-            <property role="3MwjfP" value="-Xmx6g" />
+            <property role="3MwjfP" value="-Xmx6g " />
           </node>
         </node>
         <node concept="398BVA" id="4uhklCQ7OsY" role="3l6Mlw">
