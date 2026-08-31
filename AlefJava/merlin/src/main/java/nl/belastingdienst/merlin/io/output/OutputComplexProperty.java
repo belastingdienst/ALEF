@@ -2,6 +2,7 @@ package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.merlin.base.*;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
+import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 
 import java.io.IOException;
 
@@ -75,7 +76,7 @@ public class OutputComplexProperty<T extends MObjectType> implements OutputField
     }
 
     private void generateElements(MUniverse universe, ContentGenerator generator, MElementList<MObject> elements) throws IOException {
-        if (!elements.isEmpty() || required) {
+        if (!elements.isEmpty() || required || generator instanceof JsonGenerator) {
             generator.writeFieldName(getRelevantFieldName(generator));
             generateBeginCollection(generator);
             for (MObject childObject : elements) {

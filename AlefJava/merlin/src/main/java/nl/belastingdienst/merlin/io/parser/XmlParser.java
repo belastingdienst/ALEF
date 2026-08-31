@@ -217,6 +217,10 @@ public class XmlParser extends JacksonParser {
         return internalNextToken(false);
     }
 
+    protected ContentToken retrieveCurrentToken() throws IOException {
+        return peekedToken == null ? super.retrieveCurrentToken() : peekedToken;
+    }
+
     private ContentToken internalNextTokenWhilePeeking() throws IOException {
         if (peekedToken == null) {
             peekedToken = super.internalNextToken(true);

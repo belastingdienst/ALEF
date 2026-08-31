@@ -23,10 +23,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class OutputComplexPropertyTest {
     @Test
     public void testCollection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", null, false, true,
@@ -49,10 +48,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testSingle() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("item", null, false, false,
@@ -72,10 +70,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testEnclosedCollection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", "item", false, true,
@@ -100,11 +97,10 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testWithNoRole() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefObjectItem1 = universe.getObjectType(ItemType.class).createObject();
         alefObjectItem1.getProperty(ItemType.name).setValueDirect("itemName");
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", "item", false, true, null, ItemType.class, mockItem);
@@ -125,10 +121,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testWithNoObjectType() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         universe.setParameter("paramName", "value");
-        // Given (mapping)
         final OutputMessage mockParam = new OutputMessageMock();
         mockParam.addField(new OutputParameter<>("name", "paramName", false, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("param", null, false, true, null, null, mockParam);
@@ -147,12 +142,11 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testWithObjectTypeNoRoleKeyAndMainObject() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson1 = universe.getObjectType(PersonType.class).createObject();
         alefPerson1.getProperty(PersonType.name).setValueDirect("test");
         final MObject alefPerson2 = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockPerson = new OutputMessageMock();
         mockPerson.addField(new OutputAttribute<>("name", true, PersonType.name, new StringToStringWriter()));
         final OutputComplexProperty<PersonType> complexProperty = new OutputComplexProperty<>("person", null, false, true, null, PersonType.class, mockPerson);
@@ -174,10 +168,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testCollectionWithKvPairSection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", null, false, true,
@@ -212,10 +205,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testSingleWithKvPairSection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", null, false, false,
@@ -241,10 +233,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testRequiredWithKvPairSection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = universe.getObjectType(PersonType.class).createObject();
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", null, true, false,
@@ -260,10 +251,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testEnclosedCollectionWithKvPairSection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", "item", false, true,
@@ -298,10 +288,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testRequiredTrueWithEmptyCollection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = universe.getObjectType(PersonType.class).createObject();
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", "item", true, true,
@@ -319,10 +308,9 @@ public class OutputComplexPropertyTest {
 
     @Test
     public void testRequiredFalseWithEmptyCollection() throws IOException {
-        // Given (values)
+        // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = universe.getObjectType(PersonType.class).createObject();
-        // Given (mapping)
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
         final OutputComplexProperty<ItemType> complexProperty = new OutputComplexProperty<>("items", "item", false, true,

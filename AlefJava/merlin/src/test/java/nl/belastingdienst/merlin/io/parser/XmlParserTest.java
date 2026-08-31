@@ -28,6 +28,19 @@ public class XmlParserTest {
     }
 
     @Test
+    public void parseEmptyObjectWithPeeking() throws IOException {
+        final ContentParser parser = new XmlParser(asInputStream(EMPTY_ELEMENT_XML), null);
+        parser.beginObject();
+        parseAndAssertFieldName(parser, "element");
+        parser.beginObject();
+        assertEquals(ContentToken.END_OBJECT, parser.peek());
+        assertEquals(ContentToken.END_OBJECT, parser.peek()); // uses currentToken
+        parser.endObject();
+        parser.endObject();
+    }
+
+
+    @Test
     public void parseEmptyCollection() throws IOException {
         final ContentParser parser = new XmlParser(asInputStream(EMPTY_ELEMENT_XML), null);
         parser.beginObject();

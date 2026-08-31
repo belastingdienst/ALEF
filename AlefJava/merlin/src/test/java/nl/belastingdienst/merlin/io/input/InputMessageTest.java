@@ -483,10 +483,13 @@ public class InputMessageTest {
         mock.addElement(new InputAttribute<>("age", false, BigRational.valueOf(21), PersonType.age, new DecimalToRationalReader()));
         mock.addElement(new InputFeature<>("carOwner", false, true, PersonType.carOwner, new BooleanToBooleanReader()));
         // when
-        final String json = "{ }";
+        final String json = """
+            {
+                "forName" : "testName2"
+            }""";
         final MObject alefObject = mock.parse(new MUniverse(true), new JsonParser(asInputStream(json)));
         // then
-        assertEquals("testName", alefObject.getProperty(PersonType.name).get());
+        assertEquals("testName2", alefObject.getProperty(PersonType.name).get());
         assertEquals("testAddress", alefObject.getProperty(PersonType.address).get());
         assertEquals(BigRational.valueOf(21), alefObject.getProperty(PersonType.age).get());
         assertEquals(true, alefObject.getProperty(PersonType.carOwner).get());

@@ -70,7 +70,8 @@ public class RestServiceTest {
                       "serviceversie" : ""
                     },
                     "person" : [ {
-                      "forName" : "test"
+                      "forName" : "test",
+                      "items" : [ ]
                     } ]
                   }
                 }""";
