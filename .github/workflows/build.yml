@@ -29,7 +29,7 @@ jobs:
     - name: Set version
       run: bash scripts/set-version.sh "${BRANCH_NAME}"
     - name: Build with Maven
-      run: xvfb-run -- mvn -B package
+      run: xvfb-run -- mvn -B -U package
     - name: Upload logs
       uses: actions/upload-artifact@v7
       if: ${{ !cancelled() }}
