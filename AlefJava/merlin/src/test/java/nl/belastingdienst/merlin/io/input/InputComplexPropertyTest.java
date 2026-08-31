@@ -58,7 +58,7 @@ public class InputComplexPropertyTest {
     public void testParsingSingleElement() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
-        final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.SINGLE,
+        final InputComplexProperty inputProperty = new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE,
                 FactSide.LEFT, FactParentHasChildren.class);
         final MUniverse universe = new MUniverse(true);
         final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
@@ -139,18 +139,18 @@ public class InputComplexPropertyTest {
                 FactSide.LEFT, FactParentHasChildren.class);
         final MUniverse universe = new MUniverse(true);
         final String json = """
-            <root>
-                <KeyValuePairs>
-                    <key>person</key>
-                    <valueSet>
-                        <KeyValuePairs>
-                            <key>name</key>
-                            <valueString>test1</valueString>
-                        </KeyValuePairs>
-                    </valueSet>
-                </KeyValuePairs>
-            </root>
-            """;
+                <root>
+                    <KeyValuePairs>
+                        <key>person</key>
+                        <valueSet>
+                            <KeyValuePairs>
+                                <key>name</key>
+                                <valueString>test1</valueString>
+                            </KeyValuePairs>
+                        </valueSet>
+                    </KeyValuePairs>
+                </root>
+                """;
         final KvPairParser kvPairParser = new KvPairParser(asInputStream(json));
         kvPairParser.beginObject();
         kvPairParser.enterKvPairSection();
@@ -187,6 +187,56 @@ public class InputComplexPropertyTest {
         sortByFactType(children, PersonType.name);
         assertEquals("test1", children.get(0).getProperty(PersonType.name).get());
         assertEquals("test2", children.get(1).getProperty(PersonType.name).get());
+        final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
+        inputProperty.process(universe, alefObject, children);
+    }
+
+    @Test
+    public void testSingleCardinalityWithEnclosingElement() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
+        final InputComplexProperty inputProperty = new InputComplexProperty("persons", "person", false, mockPerson, Cardinality.SINGLE,
+                FactSide.LEFT, FactParentHasChildren.class);
+        final MUniverse universe = new MUniverse(true);
+        final String xml = """
+                <root>
+                    <persons>
+                        <person>
+                            <name>test1</name>
+                        </person>
+                    </persons>
+                </root>
+                """;
+        final XmlParser xmlParser = new XmlParser(asInputStream(xml));
+        xmlParser.beginObject();
+        xmlParser.nextName();
+        final List<MObject> children = inputProperty.parse(universe, xmlParser);
+        assertEquals(1, children.size());
+        assertEquals("test1", children.get(0).getProperty(PersonType.name).get());
+        final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
+        inputProperty.process(universe, alefObject, children);
+    }
+
+    @Test
+    public void testSingleCardinalityWithEnclosingElementForJson() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
+        final InputComplexProperty inputProperty = new InputComplexProperty("persons", "person", false, mockPerson, Cardinality.SINGLE,
+                FactSide.LEFT, FactParentHasChildren.class);
+        final MUniverse universe = new MUniverse(true);
+        final String json = """
+                {
+                   "persons" : [ {
+                        "name" : "test1"
+                   }]
+                }
+                """;
+        final JsonParser jsonParser = new JsonParser(asInputStream(json));
+        jsonParser.beginObject();
+        jsonParser.nextName();
+        final List<MObject> children = inputProperty.parse(universe, jsonParser);
+        assertEquals(1, children.size());
+        assertEquals("test1", children.get(0).getProperty(PersonType.name).get());
         final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
         inputProperty.process(universe, alefObject, children);
     }

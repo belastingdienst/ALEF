@@ -95,10 +95,19 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyTimedValue() throws IOException {
+    public void testNullTimedValue() throws IOException {
         final OutputAttribute<ITimed<BigRational>> attribute = new OutputAttribute<>("mortgageAmount", false, PersonType.mortgageAmount,
                 new TimedWriter<>(new TimelineInfo(true), new RationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, null);
+        final String expectedJson = "{ }";
+        assertEquals(expectedJson, actualJson);
+    }
+
+    @Test
+    public void testEmptyTimedValue() throws IOException {
+        final OutputAttribute<ITimed<BigRational>> attribute = new OutputAttribute<>("mortgageAmount", false, PersonType.mortgageAmount,
+                new TimedWriter<>(new TimelineInfo(true), new RationalToDecimalWriter()));
+        final String actualJson = generate(attribute, PersonType.mortgageAmount, Timed.of(TimeBox.make(null, Period.ALWAYS)));
         final String expectedJson = "{ }";
         assertEquals(expectedJson, actualJson);
     }
