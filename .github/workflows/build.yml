@@ -8,7 +8,7 @@ env:
   BUILD_NUMBER: ${{ github.run_number }}
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
       issues: read
