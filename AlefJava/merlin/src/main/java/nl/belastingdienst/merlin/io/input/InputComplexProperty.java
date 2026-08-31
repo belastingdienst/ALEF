@@ -77,10 +77,9 @@ public final class InputComplexProperty implements InputElement {
     }
 
     private void internalParse(MUniverse universe, ContentParser parser, MObject parentObject, Consumer<MObject> consumer) throws IOException {
-        if (cardinality == Cardinality.SINGLE) {
+        if (!shouldBeParsedAsCollection(parser)) {
             internalParseMessage(universe, parser, parentObject, consumer);
-        }
-        else {
+        } else {
             parseBeginCollection(parser);
             while (parser.peek() != ContentToken.END_COLLECTION) {
                 internalParseMessage(universe, parser, parentObject, consumer);
