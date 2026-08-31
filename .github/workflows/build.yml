@@ -8,7 +8,7 @@ env:
   BUILD_NUMBER: ${{ github.run_number }}
 jobs:
   build:
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       issues: read
@@ -16,11 +16,11 @@ jobs:
       pull-requests: write
     steps:
     - uses: actions/checkout@v5
-    - name: JDK 21
-      uses: actions/setup-java@v5
+    - name: JDK 25
+      uses: actions/setup-java@v6
       with:
         java-version: '25'
-        distribution: 'temurin'
+        distribution: 'jetbrains'
     - uses: actions/setup-python@v5
       with:
         python-version: 3.x
