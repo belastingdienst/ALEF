@@ -7093,7 +7093,7 @@
                 </node>
                 <node concept="21noJN" id="6OISXMHYORP" role="2OqNvi">
                   <node concept="21nZrQ" id="6OISXMHYORR" role="21noJM">
-                    <ref role="21nZrZ" to="ku5w:6OISXMHQQUM" resolve="aanwezig" />
+                    <ref role="21nZrZ" to="ku5w:6OISXMHQQUM" resolve="komtVoorIn" />
                   </node>
                 </node>
               </node>
