@@ -57,8 +57,8 @@ public abstract class InputMessage<T extends MObjectType> {
 
     private MObject parseWithoutIdentifier(MUniverse universe, ContentParser parser, MObject inputAlefObject) throws IOException {
         final List<String> encounteredFieldNames = new ArrayList<>();
-        final MObject alefObject = inputAlefObject == null ? createAlefObject(universe) : inputAlefObject;
         parser.beginObject();
+        final MObject alefObject = parser.peek() == ContentToken.END_OBJECT ? null : inputAlefObject == null ? createAlefObject(universe) : inputAlefObject;
         while (parser.peek() != ContentToken.END_OBJECT) {
             parseElement(universe, parser, alefObject, encounteredFieldNames);
         }

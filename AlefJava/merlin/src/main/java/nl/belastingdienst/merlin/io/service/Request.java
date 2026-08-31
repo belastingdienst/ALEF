@@ -88,11 +88,7 @@ public abstract class Request {
             }
         }
         parser.endObject();
-        if (rootObject != null) {
-            return rootObject;
-        } else {
-            return universe.getObjectType(mainObjectType).createObject();
-        }
+        return rootObject;
     }
 
     private void processCalculationMoment(MUniverse universe, ContentParser parser) throws IOException {
