@@ -7,6 +7,7 @@ import nl.belastingdienst.merlin.io.Cardinality;
 import nl.belastingdienst.merlin.io.FactSide;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
+import nl.belastingdienst.merlin.io.parser.JsonParser;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -76,14 +77,15 @@ public final class InputComplexProperty implements InputElement {
     }
 
     private void internalParse(MUniverse universe, ContentParser parser, MObject parentObject, Consumer<MObject> consumer) throws IOException {
-        if (shouldBeParsedAsCollection(parser)) {
+        if (cardinality == Cardinality.SINGLE) {
+            internalParseMessage(universe, parser, parentObject, consumer);
+        }
+        else {
             parseBeginCollection(parser);
             while (parser.peek() != ContentToken.END_COLLECTION) {
                 internalParseMessage(universe, parser, parentObject, consumer);
             }
             parser.endCollection();
-        } else {
-            internalParseMessage(universe, parser, parentObject, consumer);
         }
     }
 

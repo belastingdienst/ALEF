@@ -59,7 +59,7 @@ public class OutputAttribute<TAlef> implements OutputField {
     }
 
     private boolean shouldWriteValue(TAlef value) {
-        return value != null || required;
+        return writer.shouldWriteValue(value) || required;
     }
 
     private boolean isDimensional(MPropertyKey<TAlef> property) {

@@ -5,6 +5,7 @@ import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
+import java.util.List;
 
 public class ValidityWriter extends AbstractTimedWriter<IValidity> implements FeatureSupport<IValidity> {
     public ValidityWriter(TimelineInfo timelineInfo) {
@@ -28,6 +29,11 @@ public class ValidityWriter extends AbstractTimedWriter<IValidity> implements Fe
             }
         }
         contentGenerator.endCollection();
+    }
+
+    @Override
+    public boolean shouldWriteValue(IValidity value) {
+        return value != null && value.evaluate().boxes(Period.ALWAYS).findAny().isPresent();
     }
 
     private static void writeValue(ContentGenerator contentGenerator, TimeBox<Valid> box) throws IOException {

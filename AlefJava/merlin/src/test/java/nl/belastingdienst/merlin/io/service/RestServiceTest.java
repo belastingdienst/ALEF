@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RestServiceTest {
     @Test
-    public void testRestService() throws IOException {
+    public void testRestService2() throws IOException {
         final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
         mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
         mockItem.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
@@ -70,8 +70,7 @@ public class RestServiceTest {
                       "serviceversie" : ""
                     },
                     "person" : [ {
-                      "forName" : "test",
-                      "items" : [ ]
+                      "forName" : "test"
                     } ]
                   }
                 }""";
