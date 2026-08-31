@@ -9,17 +9,17 @@
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="j0w7" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind.json(MPS.ThirdParty/)" />
-    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
-    <import index="1eof" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core.json(MPS.ThirdParty/)" />
-    <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(MPS.ThirdParty/)" />
-    <import index="udk5" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind.cfg(MPS.ThirdParty/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
     <import index="ctzw" ref="r:74f223ba-ead2-455d-852d-25e8cdeee4d3(json.structure)" />
+    <import index="7k8f" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind(MPS.IDEA.Modules/)" />
+    <import index="j0w7" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind.json(MPS.IDEA.Modules/)" />
+    <import index="1eof" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.core.json(MPS.IDEA.Modules/)" />
+    <import index="i4mf" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.core(MPS.IDEA.Modules/)" />
+    <import index="udk5" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind.cfg(MPS.IDEA.Modules/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -412,57 +412,57 @@
                             </node>
                             <node concept="liA8E" id="6a_xAytzXX4" role="2OqNvi">
                               <ref role="37wK5l" to="j0w7:~JsonMapper$Builder.enable(com.fasterxml.jackson.core.json.JsonReadFeature...)" resolve="enable" />
-                              <node concept="Rm8GO" id="6a_xAyt$6qS" role="37wK5m">
-                                <ref role="1Px2BO" to="1eof:~JsonReadFeature" resolve="JsonReadFeature" />
+                              <node concept="Rm8GO" id="7TuSft3GEnQ" role="37wK5m">
                                 <ref role="Rm8GQ" to="1eof:~JsonReadFeature.ALLOW_LEADING_ZEROS_FOR_NUMBERS" resolve="ALLOW_LEADING_ZEROS_FOR_NUMBERS" />
+                                <ref role="1Px2BO" to="1eof:~JsonReadFeature" resolve="JsonReadFeature" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="6a_xAytzZe3" role="2OqNvi">
                             <ref role="37wK5l" to="udk5:~MapperBuilder.enable(com.fasterxml.jackson.core.JsonGenerator$Feature...)" resolve="enable" />
-                            <node concept="Rm8GO" id="6a_xAyt$lob" role="37wK5m">
-                              <ref role="1Px2BO" to="i4mf:~JsonGenerator$Feature" resolve="JsonGenerator.Feature" />
+                            <node concept="Rm8GO" id="7TuSft3GJIg" role="37wK5m">
                               <ref role="Rm8GQ" to="i4mf:~JsonGenerator$Feature.WRITE_BIGDECIMAL_AS_PLAIN" resolve="WRITE_BIGDECIMAL_AS_PLAIN" />
+                              <ref role="1Px2BO" to="i4mf:~JsonGenerator$Feature" resolve="JsonGenerator.Feature" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="6a_xAytzZtD" role="2OqNvi">
                           <ref role="37wK5l" to="j0w7:~JsonMapper$Builder.enable(com.fasterxml.jackson.core.json.JsonReadFeature...)" resolve="enable" />
-                          <node concept="Rm8GO" id="6a_xAyt$6qW" role="37wK5m">
-                            <ref role="1Px2BO" to="1eof:~JsonReadFeature" resolve="JsonReadFeature" />
+                          <node concept="Rm8GO" id="7TuSft3GLaY" role="37wK5m">
                             <ref role="Rm8GQ" to="1eof:~JsonReadFeature.ALLOW_LEADING_PLUS_SIGN_FOR_NUMBERS" resolve="ALLOW_LEADING_PLUS_SIGN_FOR_NUMBERS" />
+                            <ref role="1Px2BO" to="1eof:~JsonReadFeature" resolve="JsonReadFeature" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="6a_xAytzZLh" role="2OqNvi">
                         <ref role="37wK5l" to="udk5:~MapperBuilder.enable(com.fasterxml.jackson.databind.DeserializationFeature...)" resolve="enable" />
-                        <node concept="Rm8GO" id="6a_xAyt$3ra" role="37wK5m">
-                          <ref role="1Px2BO" to="7k8f:~DeserializationFeature" resolve="DeserializationFeature" />
+                        <node concept="Rm8GO" id="7TuSft3GMx6" role="37wK5m">
                           <ref role="Rm8GQ" to="7k8f:~DeserializationFeature.USE_BIG_DECIMAL_FOR_FLOATS" resolve="USE_BIG_DECIMAL_FOR_FLOATS" />
+                          <ref role="1Px2BO" to="7k8f:~DeserializationFeature" resolve="DeserializationFeature" />
                         </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="6a_xAyt$08O" role="2OqNvi">
                       <ref role="37wK5l" to="udk5:~MapperBuilder.disable(com.fasterxml.jackson.databind.SerializationFeature...)" resolve="disable" />
-                      <node concept="Rm8GO" id="6a_xAyt$3re" role="37wK5m">
-                        <ref role="1Px2BO" to="7k8f:~SerializationFeature" resolve="SerializationFeature" />
+                      <node concept="Rm8GO" id="7TuSft3GT2s" role="37wK5m">
                         <ref role="Rm8GQ" to="7k8f:~SerializationFeature.WRITE_DATES_AS_TIMESTAMPS" resolve="WRITE_DATES_AS_TIMESTAMPS" />
+                        <ref role="1Px2BO" to="7k8f:~SerializationFeature" resolve="SerializationFeature" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="6a_xAyt$0$$" role="2OqNvi">
                     <ref role="37wK5l" to="udk5:~MapperBuilder.disable(com.fasterxml.jackson.databind.DeserializationFeature...)" resolve="disable" />
-                    <node concept="Rm8GO" id="6a_xAyt$3rm" role="37wK5m">
-                      <ref role="1Px2BO" to="7k8f:~DeserializationFeature" resolve="DeserializationFeature" />
+                    <node concept="Rm8GO" id="7TuSft3GUu0" role="37wK5m">
                       <ref role="Rm8GQ" to="7k8f:~DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE" resolve="ADJUST_DATES_TO_CONTEXT_TIME_ZONE" />
+                      <ref role="1Px2BO" to="7k8f:~DeserializationFeature" resolve="DeserializationFeature" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="6a_xAyt$14z" role="2OqNvi">
                   <ref role="37wK5l" to="udk5:~MapperBuilder.disable(com.fasterxml.jackson.databind.DeserializationFeature...)" resolve="disable" />
-                  <node concept="Rm8GO" id="6a_xAyt$3ri" role="37wK5m">
-                    <ref role="1Px2BO" to="7k8f:~DeserializationFeature" resolve="DeserializationFeature" />
+                  <node concept="Rm8GO" id="7TuSft3GWw5" role="37wK5m">
                     <ref role="Rm8GQ" to="7k8f:~DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES" resolve="FAIL_ON_UNKNOWN_PROPERTIES" />
+                    <ref role="1Px2BO" to="7k8f:~DeserializationFeature" resolve="DeserializationFeature" />
                   </node>
                 </node>
               </node>

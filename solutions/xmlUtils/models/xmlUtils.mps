@@ -8,7 +8,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -191,16 +191,10 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -256,6 +250,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -327,9 +329,27 @@
     <node concept="2tJIrI" id="3SRuTMLIcT8" role="jymVt" />
     <node concept="3Tm1VV" id="7aA_bQ$UU81" role="1B3o_S" />
     <node concept="3UR2Jj" id="m3uqoBpWfZ" role="lGtFl">
-      <node concept="TZ5HA" id="m3uqoBpWg0" role="TZ5H$">
-        <node concept="1dT_AC" id="m3uqoBpWg1" role="1dT_Ay">
-          <property role="1dT_AB" value="Translator wordt gebruikt in de BMG Plugin" />
+      <node concept="1PaTwC" id="5JOGi5SkDIY" role="1Vez_I">
+        <node concept="3oM_SD" id="5JOGi5SkDIZ" role="1PaTwD">
+          <property role="3oM_SC" value="Translator" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkDJ0" role="1PaTwD">
+          <property role="3oM_SC" value="wordt" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkDJ1" role="1PaTwD">
+          <property role="3oM_SC" value="gebruikt" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkDJ2" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkDJ3" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkDJ4" role="1PaTwD">
+          <property role="3oM_SC" value="BMG" />
+        </node>
+        <node concept="3oM_SD" id="5JOGi5SkDJ5" role="1PaTwD">
+          <property role="3oM_SC" value="Plugin" />
         </node>
       </node>
     </node>
@@ -1019,24 +1039,81 @@
         <property role="Xl_RC" value="a-z_A-Z\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u02ff\\u0370-\\u037d\\u037f-\\u1fff" />
       </node>
       <node concept="z59LJ" id="7GC2X1Saw4t" role="lGtFl">
-        <node concept="TZ5HA" id="7GC2X1Saw4u" role="TZ5H$">
-          <node concept="1dT_AC" id="7GC2X1Saw4v" role="1dT_Ay">
-            <property role="1dT_AB" value="Zie https://www.w3.org/TR/xml/#NT-Name" />
+        <node concept="1PaTwC" id="5JOGi5SkDJ6" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkDJ7" role="1PaTwD">
+            <property role="3oM_SC" value="Zie" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJ8" role="1PaTwD">
+            <property role="3oM_SC" value="https://www.w3.org/TR/xml/#NT-Name" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7GC2X1SczaD" role="TZ5H$">
-          <node concept="1dT_AC" id="7GC2X1SczaE" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="5JOGi5SkDJ9" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkDJa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7GC2X1SczaF" role="TZ5H$">
-          <node concept="1dT_AC" id="7GC2X1SczaG" role="1dT_Ay">
-            <property role="1dT_AB" value="Een dubbele punt (:) wordt normaliter ondersteund, maar wordt vaak gebruikt voor namespaces, " />
+        <node concept="1PaTwC" id="5JOGi5SkDJb" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkDJc" role="1PaTwD">
+            <property role="3oM_SC" value="Een" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJd" role="1PaTwD">
+            <property role="3oM_SC" value="dubbele" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJe" role="1PaTwD">
+            <property role="3oM_SC" value="punt" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJf" role="1PaTwD">
+            <property role="3oM_SC" value="(:)" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJg" role="1PaTwD">
+            <property role="3oM_SC" value="wordt" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJh" role="1PaTwD">
+            <property role="3oM_SC" value="normaliter" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJi" role="1PaTwD">
+            <property role="3oM_SC" value="ondersteund," />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJj" role="1PaTwD">
+            <property role="3oM_SC" value="maar" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJk" role="1PaTwD">
+            <property role="3oM_SC" value="wordt" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJl" role="1PaTwD">
+            <property role="3oM_SC" value="vaak" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJm" role="1PaTwD">
+            <property role="3oM_SC" value="gebruikt" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJn" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJo" role="1PaTwD">
+            <property role="3oM_SC" value="namespaces," />
           </node>
         </node>
-        <node concept="TZ5HA" id="7GC2X1SczPu" role="TZ5H$">
-          <node concept="1dT_AC" id="7GC2X1SczPv" role="1dT_Ay">
-            <property role="1dT_AB" value="vandaar dat we hem hier niet accepteren." />
+        <node concept="1PaTwC" id="5JOGi5SkDJp" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkDJq" role="1PaTwD">
+            <property role="3oM_SC" value="vandaar" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJr" role="1PaTwD">
+            <property role="3oM_SC" value="dat" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJs" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJt" role="1PaTwD">
+            <property role="3oM_SC" value="hem" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJu" role="1PaTwD">
+            <property role="3oM_SC" value="hier" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJv" role="1PaTwD">
+            <property role="3oM_SC" value="niet" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkDJw" role="1PaTwD">
+            <property role="3oM_SC" value="accepteren." />
           </node>
         </node>
       </node>

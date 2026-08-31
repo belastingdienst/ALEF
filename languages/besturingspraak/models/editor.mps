@@ -17,6 +17,9 @@
     <import index="uebl" ref="r:7c3c54f3-0e18-41e4-91a7-0d3b7574522d(interpreter.debug.editor)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -165,7 +168,6 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -276,14 +278,14 @@
               <node concept="1Wc70l" id="3QGxVpUAx8u" role="3clFbG">
                 <node concept="2OqwBi" id="3QGxVpUAx$Y" role="3uHU7w">
                   <node concept="pncrf" id="3QGxVpUAx8J" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="3QGxVpUAz82" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkAeG" role="2OqNvi">
                     <ref role="37wK5l" to="hxzo:2MIymflfAvR" resolve="heeftConditioneleSplits" />
                   </node>
                 </node>
                 <node concept="3fqX7Q" id="3QGxVpUAwgm" role="3uHU7B">
                   <node concept="2OqwBi" id="3QGxVpUAwgo" role="3fr31v">
                     <node concept="pncrf" id="3QGxVpUAwgp" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3QGxVpUAwgq" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkAeI" role="2OqNvi">
                       <ref role="37wK5l" to="hxzo:2MIymflg13y" resolve="heeftLoops" />
                     </node>
                   </node>
@@ -451,7 +453,7 @@
                     <node concept="3fqX7Q" id="7$o$pbHeM9I" role="3uHU7w">
                       <node concept="2OqwBi" id="7$o$pbHeMwm" role="3fr31v">
                         <node concept="pncrf" id="7$o$pbHeMlv" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="7$o$pbHeNck" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5SkAeK" role="2OqNvi">
                           <ref role="37wK5l" to="8l26:1W9gcBSvt8E" resolve="altijdGeldig" />
                         </node>
                       </node>
@@ -481,7 +483,7 @@
                     <node concept="3fqX7Q" id="7$o$pbHa$7s" role="3uHU7w">
                       <node concept="2OqwBi" id="7$o$pbHa$qt" role="3fr31v">
                         <node concept="pncrf" id="7$o$pbHa$f_" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="7$o$pbHa$Ch" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5SkAeM" role="2OqNvi">
                           <ref role="37wK5l" to="8l26:1W9gcBSvt8E" resolve="altijdGeldig" />
                         </node>
                       </node>

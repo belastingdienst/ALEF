@@ -512,7 +512,7 @@
                 </node>
               </node>
               <node concept="3ygNvl" id="5_MG8Us2Y$K" role="39821P">
-                <ref role="3ygNvj" node="5_MG8Us2Yvd" resolve="jbr-21.0.6-osx-aarch64-b631.39" />
+                <ref role="3ygNvj" node="5_MG8Us2Yvd" resolve="jbr-25.0.3-osx-aarch64-b329.124" />
                 <node concept="3LWZYq" id="1RvDHsErCBf" role="1juEy9">
                   <property role="3LWZYl" value="Contents/Home/bin/*" />
                 </node>
@@ -523,7 +523,7 @@
               <node concept="yKbIv" id="1RvDHsErCBs" role="39821P">
                 <property role="yKbIr" value="555" />
                 <node concept="3ygNvl" id="1RvDHsErCBt" role="39821P">
-                  <ref role="3ygNvj" node="5_MG8Us2Yvd" resolve="jbr-21.0.6-osx-aarch64-b631.39" />
+                  <ref role="3ygNvj" node="5_MG8Us2Yvd" resolve="jbr-25.0.3-osx-aarch64-b329.124" />
                   <node concept="3LWZYx" id="1RvDHsErCBu" role="1juEy9">
                     <property role="3LWZYw" value="Contents/Home/bin/*" />
                   </node>
@@ -676,31 +676,6 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="398223" id="1KgkM5Nv5mR" role="39821P">
-              <node concept="3_J27D" id="1KgkM5Nv5mS" role="Nbhlr">
-                <node concept="3Mxwew" id="1KgkM5Nv5mT" role="3MwsjC">
-                  <property role="3MwjfP" value="plugins" />
-                </node>
-              </node>
-              <node concept="398223" id="1KgkM5Nv5mU" role="39821P">
-                <node concept="2HvfSZ" id="1KgkM5Nv5mV" role="39821P">
-                  <node concept="398BVA" id="1KgkM5Nv5mW" role="2HvfZ0">
-                    <ref role="398BVh" node="3Djj9GDehSS" resolve="mps.home" />
-                    <node concept="2Ry0Ak" id="1KgkM5Nv5mX" role="iGT6I">
-                      <property role="2Ry0Am" value="plugins" />
-                      <node concept="2Ry0Ak" id="1KgkM5Nv5mY" role="2Ry0An">
-                        <property role="2Ry0Am" value="laf-macos" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3_J27D" id="1KgkM5Nv5mZ" role="Nbhlr">
-                  <node concept="3Mxwew" id="1KgkM5Nv5n0" role="3MwsjC">
-                    <property role="3MwjfP" value="laf-macos" />
                   </node>
                 </node>
               </node>
@@ -972,7 +947,7 @@
               </node>
             </node>
             <node concept="3ygNvl" id="5_MG8Us2Yxf" role="39821P">
-              <ref role="3ygNvj" node="5_MG8Us2Yvl" resolve="jbr-21.0.6-windows-x64-b631.39" />
+              <ref role="3ygNvj" node="5_MG8Us2Yvl" resolve="jbr-25.0.3-windows-x64-b329.124" />
             </node>
           </node>
           <node concept="398223" id="3jfGfLdW5$Y" role="39821P">
@@ -1279,7 +1254,7 @@
               </node>
             </node>
             <node concept="3ygNvl" id="50YR2IVDOEf" role="39821P">
-              <ref role="3ygNvj" node="5_MG8Us2YuZ" resolve="jbr-21.0.6-linux-x64-b631.39" />
+              <ref role="3ygNvj" node="5_MG8Us2YuZ" resolve="jbr-25.0.3-linux-x64-b329.124" />
               <node concept="3LWZYq" id="1sP6EvvIR9i" role="1juEy9">
                 <property role="3LWZYl" value="bin/*" />
               </node>
@@ -1290,7 +1265,7 @@
             <node concept="yKbIv" id="yAc6i3ZvbI" role="39821P">
               <property role="yKbIr" value="744" />
               <node concept="3ygNvl" id="1sP6EvvIRb3" role="39821P">
-                <ref role="3ygNvj" node="5_MG8Us2YuZ" resolve="jbr-21.0.6-linux-x64-b631.39" />
+                <ref role="3ygNvj" node="5_MG8Us2YuZ" resolve="jbr-25.0.3-linux-x64-b329.124" />
                 <node concept="3LWZYx" id="1sP6EvvIRb5" role="1juEy9">
                   <property role="3LWZYw" value="bin/*" />
                 </node>
@@ -1299,7 +1274,7 @@
             <node concept="yKbIv" id="3lxzYwwNS5P" role="39821P">
               <property role="yKbIr" value="744" />
               <node concept="3ygNvl" id="3lxzYwwNS60" role="39821P">
-                <ref role="3ygNvj" node="5_MG8Us2YuZ" resolve="jbr-21.0.6-linux-x64-b631.39" />
+                <ref role="3ygNvj" node="5_MG8Us2YuZ" resolve="jbr-25.0.3-linux-x64-b329.124" />
                 <node concept="3LWZYx" id="3lxzYwwNS62" role="1juEy9">
                   <property role="3LWZYw" value="lib/jspawnhelper" />
                 </node>
@@ -2713,11 +2688,6 @@
               <ref role="3bR37D" to="kwfd:50VLgx6Dl$7" resolve="linguistics.runtime" />
             </node>
           </node>
-          <node concept="1SiIV0" id="LxvEVM_Nwa" role="3bR37C">
-            <node concept="3bR9La" id="LxvEVM_Nwb" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="LxvEVM_Nwc" role="3bR37C">
             <node concept="3bR9La" id="LxvEVM_Nwd" role="1SiIV1">
               <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
@@ -3554,11 +3524,6 @@
           <node concept="1SiIV0" id="AB9hHerdxO" role="3bR37C">
             <node concept="3bR9La" id="AB9hHerdxP" role="1SiIV1">
               <ref role="3bR37D" node="5QGe9fCFL1" resolve="contexts" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="LxvEVM_N$s" role="3bR37C">
-            <node concept="3bR9La" id="LxvEVM_N$t" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
             </node>
           </node>
           <node concept="1SiIV0" id="LxvEVM_N$u" role="3bR37C">
@@ -8477,11 +8442,6 @@
             <ref role="3bR37D" to="ffeo:5xwbQ0eEV3B" resolve="jetbrains.mps.java.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="LxvEVM_NSi" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVM_NSj" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="4QkdwhQzYu7" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9100,11 +9060,6 @@
               <ref role="3bR37D" node="4wvGeDpkGR9" resolve="mpsUtils" />
             </node>
           </node>
-          <node concept="1SiIV0" id="LxvEVM_NV0" role="3bR37C">
-            <node concept="3bR9La" id="LxvEVM_NV1" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="LxvEVM_NV2" role="3bR37C">
             <node concept="3bR9La" id="LxvEVM_NV3" role="1SiIV1">
               <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
@@ -9563,11 +9518,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="LxvEVM_NVC" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVM_NVD" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
@@ -10447,11 +10397,6 @@
             <ref role="3bR37D" to="ffeo:39HJr_hyEzS" resolve="jetbrains.mps.ide.vcs.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="LxvEVM_O12" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVM_O13" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="LxvEVM_O14" role="3bR37C">
           <node concept="3bR9La" id="LxvEVM_O15" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
@@ -11015,16 +10960,6 @@
             <ref role="3bR37D" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="LxvEVRXxrL" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVRXxrM" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:5cCcm$KATVz" resolve="jetbrains.mps.lang.migration.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="LxvEVRXxrN" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVRXxrO" role="1SiIV1">
-            <ref role="3bR37D" node="3PgQ0IMyhub" resolve="migrationUtils" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="4wvGeDpkGRx" role="2G$12L">
         <property role="TrG5h" value="servicespraak" />
@@ -11559,11 +11494,6 @@
         <node concept="1SiIV0" id="1xcssItYtjV" role="3bR37C">
           <node concept="3bR9La" id="1xcssItYtjW" role="1SiIV1">
             <ref role="3bR37D" node="FIR4Z1mRgB" resolve="immutable" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="LxvEVM_O2c" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVM_O2d" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
         <node concept="1SiIV0" id="LxvEVM_O2e" role="3bR37C">
@@ -13134,6 +13064,11 @@
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5JOGi5JA3Z5" role="3bR37C">
+          <node concept="3bR9La" id="5JOGi5JA3Z6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:6IrEpWwbD4R" resolve="jetbrains.mps.vcs.idea.stubs" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5qlw_qNL1oh" role="2G$12L">
         <property role="TrG5h" value="strings" />
@@ -13514,9 +13449,9 @@
             <ref role="3bR37D" to="4a8c:7nCo6uzk30U" resolve="json" />
           </node>
         </node>
-        <node concept="1SiIV0" id="LxvEVM_O7e" role="3bR37C">
-          <node concept="3bR9La" id="LxvEVM_O7f" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+        <node concept="1SiIV0" id="7TuSft3UzWw" role="3bR37C">
+          <node concept="3bR9La" id="7TuSft3UzWx" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:uqqfP8JWSl" resolve="MPS.IDEA.Modules" />
           </node>
         </node>
       </node>
@@ -15958,7 +15893,7 @@
       <node concept="398223" id="5_MG8Us2YuZ" role="39821P">
         <node concept="3_J27D" id="5_MG8Us2Yv0" role="Nbhlr">
           <node concept="3Mxwew" id="5_MG8Us2Yv3" role="3MwsjC">
-            <property role="3MwjfP" value="jbr-21.0.6-linux-x64-b631.39" />
+            <property role="3MwjfP" value="jbr-25.0.3-linux-x64-b329.124" />
           </node>
         </node>
       </node>
@@ -15973,7 +15908,7 @@
       <node concept="398223" id="5_MG8Us2Yvd" role="39821P">
         <node concept="3_J27D" id="5_MG8Us2Yvf" role="Nbhlr">
           <node concept="3Mxwew" id="5_MG8Us2Yvj" role="3MwsjC">
-            <property role="3MwjfP" value="jbr-21.0.6-osx-aarch64-b631.39" />
+            <property role="3MwjfP" value="jbr-25.0.3-osx-aarch64-b329.124" />
           </node>
         </node>
       </node>
@@ -15988,7 +15923,7 @@
       <node concept="398223" id="5_MG8Us2Yvl" role="39821P">
         <node concept="3_J27D" id="5_MG8Us2Yvm" role="Nbhlr">
           <node concept="3Mxwew" id="5_MG8Us2Yvp" role="3MwsjC">
-            <property role="3MwjfP" value="jbr-21.0.6-windows-x64-b631.39" />
+            <property role="3MwjfP" value="jbr-25.0.3-windows-x64-b329.124" />
           </node>
         </node>
       </node>
@@ -16959,228 +16894,1143 @@
       <property role="2eq24a" value="true" />
       <property role="26Ea6C" value="MPS no longer uses 32-bit version of mps.vmoptions" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BLW" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2A" role="26Ea7d">
       <property role="26EafJ" value="lib/annotations.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BLX" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2B" role="26Ea7d">
+      <property role="26EafJ" value="lib/app-backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2C" role="26Ea7d">
       <property role="26EafJ" value="lib/app.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BLY" role="26Ea7d">
-      <property role="26EafJ" value="lib/bouncy-castle.jar" />
-    </node>
-    <node concept="26EafG" id="2sQUbSH_BLZ" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2D" role="26Ea7d">
       <property role="26EafJ" value="lib/branding.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM0" role="26Ea7d">
-      <property role="26EafJ" value="lib/byte-buddy-agent.jar" />
-    </node>
-    <node concept="26EafG" id="2sQUbSH_BM1" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2E" role="26Ea7d">
       <property role="26EafJ" value="lib/eclipse.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM2" role="26Ea7d">
-      <property role="26EafJ" value="lib/error-prone-annotations.jar" />
-    </node>
-    <node concept="26EafG" id="2sQUbSH_BM3" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2F" role="26Ea7d">
       <property role="26EafJ" value="lib/external-system-rt.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM4" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2G" role="26Ea7d">
       <property role="26EafJ" value="lib/externalProcess-rt.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM5" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2H" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.andel.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2I" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.bifurcan.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2J" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.fastutil.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2K" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.kernel.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2L" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.multiplatform.shims.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2M" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.reporting.api.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2N" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.reporting.shared.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2O" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.rhizomedb.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2P" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.rhizomedb.transactor.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2Q" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.rhizomedb.transactor.rebase.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2R" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.rpc.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2S" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.rpc.server.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2T" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.util.codepoints.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2U" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.util.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2V" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.util.logging.api.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2W" role="26Ea7d">
+      <property role="26EafJ" value="lib/fleet.util.serialization.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom2X" role="26Ea7d">
       <property role="26EafJ" value="lib/forms_rt.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM6" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom2Y" role="26Ea7d">
       <property role="26EafJ" value="lib/groovy.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM7" role="26Ea7d">
-      <property role="26EafJ" value="lib/grpc.jar" />
+    <node concept="26EafG" id="4oXW46Xom2Z" role="26Ea7d">
+      <property role="26EafJ" value="lib/hamcrest.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM8" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom30" role="26Ea7d">
       <property role="26EafJ" value="lib/idea_rt.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM9" role="26Ea7d">
-      <property role="26EafJ" value="lib/intellij-coverage-agent-1.0.723.jar" />
+    <node concept="26EafG" id="4oXW46Xom31" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.emojipicker.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMa" role="26Ea7d">
-      <property role="26EafJ" value="lib/intellij-test-discovery.jar" />
+    <node concept="26EafG" id="4oXW46Xom32" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.grid.core.impl.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMb" role="26Ea7d">
-      <property role="26EafJ" value="lib/java-frontback.jar" />
+    <node concept="26EafG" id="4oXW46Xom33" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.grid.csv.core.impl.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMc" role="26Ea7d">
-      <property role="26EafJ" value="lib/java-impl.jar" />
+    <node concept="26EafG" id="4oXW46Xom34" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.grid.impl.ide.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMd" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom35" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.grid.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom36" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.grid.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom37" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.grid.types.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom38" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.ide.startup.importSettings.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom39" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.java.aetherDependencyResolver.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3a" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.aalto.xml.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3b" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.asm.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3c" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.asm.tools.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3d" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.automaton.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3e" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.batik.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3f" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.blockmap.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3g" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.bouncy.castle.pgp.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3h" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.bouncy.castle.provider.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3i" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.caffeine.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3j" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.cglib.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3k" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.classgraph.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3l" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.cli.parser.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3m" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.coil.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3n" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.cli.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3o" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.codec.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3p" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.compress.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.imaging.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3r" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.io.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3s" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.lang3.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3t" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.logging.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3u" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.commons.text.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3v" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.compose.foundation.desktop.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3w" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.compose.runtime.desktop.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3x" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.fastutil.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.grpc.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.grpc.netty.shaded.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3$" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.gson.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3_" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.guava.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3A" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.hash4j.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3B" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.hdr.histogram.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3C" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.http.client.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3D" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.icu4j.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3E" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.imgscalr.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3F" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ini4j.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3G" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ion.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3H" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jackson.databind.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3I" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jackson.dataformat.yaml.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3J" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jackson.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3K" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jackson.jr.objects.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3L" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jackson.module.kotlin.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3M" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.java.websocket.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3N" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.javax.activation.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3O" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.javax.annotation.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3P" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jaxen.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3Q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jbr.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3R" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jcef.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3S" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jcip.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3T" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jediterm.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3U" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jediterm.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3V" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jettison.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3W" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jgoodies.common.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3X" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jgoodies.forms.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3Y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jsonpath.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom3Z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jsoup.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom40" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jspecify.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom41" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jsvg.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom42" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jvm.native.trusted.roots.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom43" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.jzlib.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom44" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlin.reflect.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom45" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom46" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom47" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.coroutines.debug.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom48" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.coroutines.guava.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom49" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.coroutines.slf4j.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4a" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.datetime.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4b" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.document.store.mvstore.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4c" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.html.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4d" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.io.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4e" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.serialization.cbor.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4f" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.serialization.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4g" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.serialization.json.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4h" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kotlinx.serialization.protobuf.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4i" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.kryo5.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4j" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ktor.client.cio.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4k" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ktor.client.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4l" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ktor.io.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4m" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ktor.network.tls.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4n" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ktor.server.cio.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4o" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.ktor.utils.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4p" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.lucene.common.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.lz4.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4r" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.markdown.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4s" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.maven.resolver.provider.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4t" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.microba.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4u" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.miglayout.swing.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4v" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.mvstore.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4w" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.netty.buffer.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4x" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.netty.codec.compression.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.netty.codec.http.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.netty.handler.proxy.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4$" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.opencsv.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4_" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.opentelemetry.exporter.sender.jdk.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4A" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.opentelemetry.sdk.autoconfigure.spi.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4B" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.oro.matcher.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4C" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.plexus.utils.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4D" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.protobuf.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4E" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.proxy.vole.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4F" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.pty4j.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4G" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.rd.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4H" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.rd.framework.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4I" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.rd.swing.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4J" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.rd.text.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4K" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.rhino.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4L" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.skiko.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4M" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.snakeyaml.engine.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4N" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.snakeyaml.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4O" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.sshj.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4P" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.stream.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4Q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.swingx.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4R" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.velocity.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4S" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.winp.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4T" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.xerces.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4U" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.xml.rpc.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4V" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.xstream.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4W" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.xtext.xbase.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4X" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.libraries.xz.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4Y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.analysis.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom4Z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.analysis.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom50" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom51" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.bookmarks.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom52" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.bookmarks.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom53" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.buildView.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom54" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.buildView.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom55" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.buildView.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom56" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.builtInServer.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom57" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.builtInServer.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom58" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.clouds.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom59" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.collaborationTools.auth.base.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5a" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.collaborationTools.auth.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5b" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.collaborationTools.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5c" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.completion.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5d" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.completion.common.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5e" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.completion.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5f" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.compose.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5g" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.compose.markdown.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5h" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.core.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5i" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5j" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.core.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5k" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.credentialStore.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5l" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.credentialStore.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5m" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.impl.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5n" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.impl.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5o" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5p" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.impl.rpc.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.impl.shared.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5r" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.impl.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5s" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.debugger.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5t" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.diagnostic.freezeAnalyzer.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5u" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.diagnostic.freezes.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5v" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.diagnostic.telemetry.agent.extension.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5w" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.diff.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5x" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.diff.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.duplicates.analysis.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.editor.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5$" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.editor.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5_" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.editor.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5A" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.eel.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5B" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.eel.tcp.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5C" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.dashboard.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5D" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.dashboard.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5E" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.dashboard.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5F" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.impl.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5G" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.impl.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5H" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.serviceView.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5I" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.serviceView.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5J" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.execution.serviceView.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5K" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.externalProcessAuthHelper.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5L" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.externalSystem.dependencyUpdater.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5M" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.externalSystem.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5N" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.externalSystem.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5O" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.find.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5P" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.find.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5Q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5R" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.ide.concurrency.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5S" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.ide.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5T" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.ide.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5U" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.ide.impl.wsl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5V" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.ide.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5W" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.inline.completion.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5X" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.inspect.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5Y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.foundation.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom5Z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.ideLafBridge.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom60" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom61" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.extensions.autolink.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom62" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.extensions.gfmAlerts.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom63" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.extensions.gfmStrikethrough.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom64" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.extensions.gfmTables.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom65" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.extensions.images.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom66" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.markdown.ideLafBridgeStyling.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom67" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.jewel.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom68" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.kernel.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom69" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.kernel.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6a" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.kernel.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6b" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.lang.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6c" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.lang.impl.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6d" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.lang.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6e" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.lang.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6f" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.langInjection.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6g" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.langInjection.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6h" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.locking.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6i" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.lvcs.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6j" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.managed.cache.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6k" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.managed.cache.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6l" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.ml.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6m" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.monolith.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6n" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.navbar.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6o" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.navbar.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6p" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.navbar.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.navbar.monolith.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6r" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.pluginManager.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6s" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.pluginManager.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6t" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.pluginManager.shared.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6u" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.polySymbols.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6v" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.polySymbols.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6w" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.progress.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6x" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.project.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.projectFrame.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.projectModel.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6$" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.projectModel.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6_" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.recentFiles.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6A" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.recentFiles.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6B" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.recentFiles.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6C" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.rpc.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6D" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.rpc.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6E" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.rpc.topics.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6F" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.rpc.topics.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6G" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.rpc.topics.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6H" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.scopes.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6I" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.scopes.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6J" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.scriptDebugger.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6K" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.scriptDebugger.protocolReaderRuntime.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6L" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.scriptDebugger.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6M" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.searchEverywhere.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6N" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.searchEverywhere.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6O" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.searchEverywhere.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6P" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.settings.local.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6Q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.smRunner.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6R" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.smRunner.vcs.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6S" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.structuralSearch.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6T" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.tasks.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6U" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.tasks.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6V" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.tips.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6W" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.todo.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6X" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.todo.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6Y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.util.ex.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom6Z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.util.ui.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom70" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom71" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.dvcs.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom72" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.dvcs.impl.shared.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom73" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.dvcs.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom74" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.impl.exec.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom75" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.impl.frontend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom76" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom77" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.impl.lang.actions.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom78" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.impl.lang.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom79" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.impl.shared.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7a" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7b" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.log.graph.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7c" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.log.graph.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7d" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.log.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7e" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.log.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7f" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.vcs.shared.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7g" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.warmup.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7h" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.welcomeScreen.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7i" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.platform.welcomeScreen.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7j" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.regexp.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7k" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.relaxng.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7l" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.settingsSync.core.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7m" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.analysis.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7n" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.analysis.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7o" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.dom.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7p" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.dom.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7q" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.emmet.backend.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7r" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.emmet.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7s" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7t" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.langInjection.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7u" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.langInjection.xpath.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7v" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.parser.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7w" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.psi.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7x" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.psi.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7y" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.structureView.impl.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7z" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.structureView.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7$" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.syntax.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7_" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij.xml.ui.common.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7A" role="26Ea7d">
       <property role="26EafJ" value="lib/javac2.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMe" role="26Ea7d">
-      <property role="26EafJ" value="lib/jetbrains-annotations.jar" />
+    <node concept="26EafG" id="4oXW46Xom7B" role="26Ea7d">
+      <property role="26EafJ" value="lib/javax.activation.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMf" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7C" role="26Ea7d">
+      <property role="26EafJ" value="lib/javax.annotation-api.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7D" role="26Ea7d">
+      <property role="26EafJ" value="lib/jaxb-api.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7E" role="26Ea7d">
+      <property role="26EafJ" value="lib/jaxb-runtime.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7F" role="26Ea7d">
       <property role="26EafJ" value="lib/jps-model.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMg" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7G" role="26Ea7d">
       <property role="26EafJ" value="lib/junit4.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMh" role="26Ea7d">
-      <property role="26EafJ" value="lib/kotlin-compiler-client-embeddable-2.1.0.jar" />
+    <node concept="26EafG" id="4oXW46Xom7H" role="26Ea7d">
+      <property role="26EafJ" value="lib/kotlin-compiler-client-embeddable-2.3.0.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMi" role="26Ea7d">
-      <property role="26EafJ" value="lib/kotlin-metadata-jvm-2.1.0.jar" />
+    <node concept="26EafG" id="4oXW46Xom7I" role="26Ea7d">
+      <property role="26EafJ" value="lib/kotlin-metadata-jvm-2.3.0-mps.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMj" role="26Ea7d">
-      <property role="26EafJ" value="lib/kotlinx-metadata-klib-0.0.6.jar" />
+    <node concept="26EafG" id="4oXW46Xom7J" role="26Ea7d">
+      <property role="26EafJ" value="lib/kotlinx-metadata-klib-2.3.0-mps.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMk" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7K" role="26Ea7d">
       <property role="26EafJ" value="lib/lib.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMl" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7L" role="26Ea7d">
+      <property role="26EafJ" value="lib/maven-resolver-provider.jar" />
+    </node>
+    <node concept="26EafG" id="4oXW46Xom7M" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-annotations.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMm" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7N" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-behavior-api.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMn" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7O" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-behavior-runtime.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMo" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7P" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-boot-util.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMp" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7Q" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-boot.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMq" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7R" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-closures.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMr" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7S" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-collections.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMs" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7T" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-constraints-runtime.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMt" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7U" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-context.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMu" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7V" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-core.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMv" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7W" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-editor-api.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMw" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7X" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-editor-runtime.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMx" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7Y" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-editor.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMy" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom7Z" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-environment.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMz" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom80" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-feedback-api.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM$" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom81" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-generator.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BM_" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom82" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-icons.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMA" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom83" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-messages-api.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMB" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom84" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-messages-for-legacy-constraints.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMC" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom85" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-messages-for-rules.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMD" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom86" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-messages-for-structure.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BME" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom87" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-openapi.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMF" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom88" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-persistence.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMG" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom89" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-platform.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMH" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8a" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-problem.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMI" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8b" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-project-check.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMJ" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8c" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-references.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMK" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8d" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-resources.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BML" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8e" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-resources_en.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMM" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8f" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-scripts-rt.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMN" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8g" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-test.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMO" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8h" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-textgen.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMP" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8i" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-tips.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMQ" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8j" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-tuples.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMR" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8k" role="26Ea7d">
       <property role="26EafJ" value="lib/mps-workbench.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMS" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8l" role="26Ea7d">
       <property role="26EafJ" value="lib/nio-fs.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMT" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8m" role="26Ea7d">
       <property role="26EafJ" value="lib/opentelemetry.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMU" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8n" role="26Ea7d">
       <property role="26EafJ" value="lib/platform-loader.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMV" role="26Ea7d">
-      <property role="26EafJ" value="lib/protobuf.jar" />
+    <node concept="26EafG" id="4oXW46Xom8o" role="26Ea7d">
+      <property role="26EafJ" value="lib/rd-gen.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMW" role="26Ea7d">
-      <property role="26EafJ" value="lib/pty4j.jar" />
-    </node>
-    <node concept="26EafG" id="2sQUbSH_BMX" role="26Ea7d">
-      <property role="26EafJ" value="lib/rd.jar" />
-    </node>
-    <node concept="26EafG" id="2sQUbSH_BMY" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8p" role="26Ea7d">
       <property role="26EafJ" value="lib/stats.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BMZ" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8q" role="26Ea7d">
       <property role="26EafJ" value="lib/testFramework.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BN0" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8r" role="26Ea7d">
       <property role="26EafJ" value="lib/trove.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BN1" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8s" role="26Ea7d">
       <property role="26EafJ" value="lib/util-8.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BN2" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8t" role="26Ea7d">
       <property role="26EafJ" value="lib/util.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BN3" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8u" role="26Ea7d">
       <property role="26EafJ" value="lib/util_rt.jar" />
     </node>
-    <node concept="26EafG" id="2sQUbSH_BN4" role="26Ea7d">
+    <node concept="26EafG" id="4oXW46Xom8v" role="26Ea7d">
       <property role="26EafJ" value="lib/ant/lib/ant.jar" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BN5" role="2hID6k">
-      <property role="2eq24a" value="true" />
+    <node concept="26Ea6D" id="4oXW46Xom8w" role="2hID6k">
       <property role="26Ea6C" value="Common IntelliJ Platform options:" />
+      <property role="2eq24a" value="true" />
     </node>
     <node concept="26Ea6D" id="1KgkM5Nv6ta" role="2hID6k">
       <property role="26Ea6C" value="-Xms256m" />
@@ -17191,86 +18041,95 @@
     <node concept="26Ea6D" id="1KgkM5Nypa1" role="2hID6k">
       <property role="26Ea6C" value="-Xss8m" />
     </node>
-    <node concept="26Ea6D" id="1KgkM5Nv6tc" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8z" role="2hID6k">
       <property role="26Ea6C" value="-XX:ReservedCodeCacheSize=512m" />
     </node>
-    <node concept="26Ea6D" id="1KgkM5Nv6td" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8$" role="2hID6k">
       <property role="26Ea6C" value="-XX:+UseG1GC" />
     </node>
-    <node concept="26Ea6D" id="1KgkM5Nv6te" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8_" role="2hID6k">
       <property role="26Ea6C" value="-XX:SoftRefLRUPolicyMSPerMB=50" />
     </node>
-    <node concept="26Ea6D" id="1KgkM5Nv6tf" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8A" role="2hID6k">
       <property role="26Ea6C" value="-XX:CICompilerCount=2" />
     </node>
-    <node concept="26Ea6D" id="1KgkM5Nv6th" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8B" role="2hID6k">
+      <property role="26Ea6C" value="-XX:+HeapDumpOnOutOfMemoryError" />
+    </node>
+    <node concept="26Ea6D" id="4oXW46Xom8C" role="2hID6k">
       <property role="26Ea6C" value="-XX:-OmitStackTraceInFastThrow" />
     </node>
-    <node concept="26Ea6D" id="1KgkM5Nv6ti" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8D" role="2hID6k">
       <property role="26Ea6C" value="-XX:+IgnoreUnrecognizedVMOptions" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNf" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8E" role="2hID6k">
       <property role="26Ea6C" value="-ea" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNg" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8F" role="2hID6k">
       <property role="26Ea6C" value="-Djava.system.class.loader=com.intellij.util.lang.PathClassLoader" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNh" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8G" role="2hID6k">
       <property role="26Ea6C" value="-Dsun.io.useCanonCaches=false" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNi" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8H" role="2hID6k">
       <property role="26Ea6C" value="-Dintellij.platform.load.app.info.from.resources=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNj" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8I" role="2hID6k">
+      <property role="26Ea6C" value="-Dmps.eua.document.name=" />
+    </node>
+    <node concept="26Ea6D" id="4oXW46Xom8J" role="2hID6k">
       <property role="26Ea6C" value="-Dsun.java2d.metal=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNk" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8K" role="2hID6k">
       <property role="26Ea6C" value="-Djdk.http.auth.tunneling.disabledSchemes=&quot;&quot;" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNl" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8L" role="2hID6k">
       <property role="26Ea6C" value="-Djdk.attach.allowAttachSelf=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNm" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8M" role="2hID6k">
       <property role="26Ea6C" value="-Djdk.module.illegalAccess.silent=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNn" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8N" role="2hID6k">
       <property role="26Ea6C" value="-Dkotlinx.coroutines.debug=off" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNo" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8O" role="2hID6k">
       <property role="26Ea6C" value="-Dsun.tools.attach.tmp.only=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNp" role="2hID6k">
-      <property role="2eq24a" value="true" />
+    <node concept="26Ea6D" id="4oXW46Xom8P" role="2hID6k">
       <property role="26Ea6C" value="Additional MPS options:" />
+      <property role="2eq24a" value="true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNq" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8Q" role="2hID6k">
       <property role="26Ea6C" value="-client" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNr" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8R" role="2hID6k">
       <property role="26Ea6C" value="-Dfile.encoding=UTF-8" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNs" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8S" role="2hID6k">
       <property role="26Ea6C" value="-Dapple.awt.graphics.UseQuartz=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNt" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8T" role="2hID6k">
       <property role="26Ea6C" value="-Dide.mac.message.dialogs.as.sheets=false" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNu" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8U" role="2hID6k">
       <property role="26Ea6C" value="-Didea.invalidate.caches.invalidates.vfs=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNv" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8V" role="2hID6k">
       <property role="26Ea6C" value="-Didea.trust.disabled=false" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNw" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8W" role="2hID6k">
       <property role="26Ea6C" value="-Dfreeze.reporter.enabled=false" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNx" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8X" role="2hID6k">
       <property role="26Ea6C" value="-Didea.indices.psi.dependent.default=false" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNy" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8Y" role="2hID6k">
       <property role="26Ea6C" value="-Didea.disable.collect.statistics=true" />
     </node>
-    <node concept="26Ea6D" id="2sQUbSH_BNz" role="2hID6k">
+    <node concept="26Ea6D" id="4oXW46Xom8Z" role="2hID6k">
+      <property role="26Ea6C" value="-Dawt.toolkit.name=auto" />
+    </node>
+    <node concept="26Ea6D" id="4oXW46Xom90" role="2hID6k">
       <property role="2eq24a" value="true" />
       <property role="26Ea6C" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5071" />
     </node>

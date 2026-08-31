@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -41,6 +41,9 @@
       <concept id="4070820740695140043" name="jetbrains.mps.baseLanguage.tuples.structure.LocalVariableDeclarationInTuple" flags="ng" index="1T4PcI">
         <child id="4070820740695140184" name="variable" index="1T4PaX" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
@@ -196,7 +199,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -204,11 +206,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -295,7 +294,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -431,7 +429,7 @@
                   <ref role="3Tt5mk" to="6ldf:6IMif0FhMOW" resolve="eigenschap" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="1Mi6Q0H93LH" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5SkCE2" role="2OqNvi">
                 <ref role="37wK5l" to="8l26:2noOFp_6pJO" resolve="type" />
               </node>
             </node>
@@ -570,7 +568,7 @@
                     <ref role="3Tt5mk" to="6ldf:36NN4BkwM1l" resolve="eigenschap" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="1dwEYKRfhd2" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCE4" role="2OqNvi">
                   <ref role="37wK5l" to="8l26:1dwEYKRbLMw" resolve="zonderDimensies" />
                 </node>
               </node>
@@ -734,9 +732,9 @@
                       <node concept="Jnkvi" id="22QPgrb_jd" role="2Oq$k0">
                         <ref role="1M0zk5" node="22QPgrb_jr" resolve="list" />
                       </node>
-                      <node concept="2qgKlT" id="22QPgrb_je" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCE6" role="2OqNvi">
                         <ref role="37wK5l" to="8l26:22QPgr4bgW" resolve="checkObjectReferences" />
-                        <node concept="37vLTw" id="7Cfdn4bhA1w" role="37wK5m">
+                        <node concept="37vLTw" id="5JOGi5SkCE8" role="37wK5m">
                           <ref role="3cqZAo" node="7Cfdn4bgWXU" resolve="eigenschapZonderDimensies" />
                         </node>
                       </node>
@@ -826,30 +824,30 @@
           <node concept="35c_gC" id="3S7ul9WKIfu" role="2Oq$k0">
             <ref role="35c_gD" to="sshz:3S7ul9WImHZ" resolve="IPeriode" />
           </node>
-          <node concept="2qgKlT" id="3S7ul9WKJIS" role="2OqNvi">
+          <node concept="3zqWPK" id="5JOGi5SkCE9" role="2OqNvi">
             <ref role="37wK5l" to="aoeo:3S7ul9WKC01" resolve="checkVolgorde" />
-            <node concept="2OqwBi" id="3S7ul9WKK6R" role="37wK5m">
-              <node concept="1YBJjd" id="3S7ul9WKJQx" role="2Oq$k0">
+            <node concept="2OqwBi" id="5JOGi5SkCEb" role="37wK5m">
+              <node concept="1YBJjd" id="5JOGi5SkCEc" role="2Oq$k0">
                 <ref role="1YBMHb" node="3S7ul9WqSFh" resolve="node" />
               </node>
-              <node concept="3Tsc0h" id="3S7ul9WKLgA" role="2OqNvi">
+              <node concept="3Tsc0h" id="5JOGi5SkCEd" role="2OqNvi">
                 <ref role="3TtcxE" to="sshz:2NLb_hn_3a4" resolve="periode" />
               </node>
             </node>
-            <node concept="1bVj0M" id="3S7ul9WKLox" role="37wK5m">
-              <node concept="3clFbS" id="3S7ul9WKLoz" role="1bW5cS">
-                <node concept="Dpp1Q" id="3S7ul9WGbYo" role="3cqZAp">
-                  <node concept="Xl_RD" id="3S7ul9WGbYq" role="Dpw9R">
+            <node concept="1bVj0M" id="5JOGi5SkCEe" role="37wK5m">
+              <node concept="3clFbS" id="5JOGi5SkCEf" role="1bW5cS">
+                <node concept="Dpp1Q" id="5JOGi5SkCEg" role="3cqZAp">
+                  <node concept="Xl_RD" id="5JOGi5SkCEh" role="Dpw9R">
                     <property role="Xl_RC" value="Perioden staan niet in chronologische volgorde" />
                   </node>
-                  <node concept="37vLTw" id="3S7ul9WKMaD" role="1urrMF">
-                    <ref role="3cqZAo" node="3S7ul9WKLv7" resolve="p" />
+                  <node concept="37vLTw" id="5JOGi5SkCEi" role="1urrMF">
+                    <ref role="3cqZAo" node="5JOGi5SkCEj" resolve="p" />
                   </node>
                 </node>
               </node>
-              <node concept="37vLTG" id="3S7ul9WKLv7" role="1bW2Oz">
+              <node concept="37vLTG" id="5JOGi5SkCEj" role="1bW2Oz">
                 <property role="TrG5h" value="p" />
-                <node concept="3Tqbb2" id="3S7ul9WKLv6" role="1tU5fm">
+                <node concept="3Tqbb2" id="5JOGi5SkCEk" role="1tU5fm">
                   <ref role="ehGHo" to="sshz:3S7ul9WImHZ" resolve="IPeriode" />
                 </node>
               </node>
@@ -872,30 +870,30 @@
           <node concept="35c_gC" id="3S7ul9WKMk5" role="2Oq$k0">
             <ref role="35c_gD" to="sshz:3S7ul9WImHZ" resolve="IPeriode" />
           </node>
-          <node concept="2qgKlT" id="3S7ul9WKMk6" role="2OqNvi">
+          <node concept="3zqWPK" id="5JOGi5SkCEl" role="2OqNvi">
             <ref role="37wK5l" to="aoeo:3S7ul9WKC01" resolve="checkVolgorde" />
-            <node concept="2OqwBi" id="3S7ul9WKMk7" role="37wK5m">
-              <node concept="1YBJjd" id="3S7ul9WKMk8" role="2Oq$k0">
+            <node concept="2OqwBi" id="5JOGi5SkCEn" role="37wK5m">
+              <node concept="1YBJjd" id="5JOGi5SkCEo" role="2Oq$k0">
                 <ref role="1YBMHb" node="3S7ul9WEPg2" resolve="node" />
               </node>
-              <node concept="3Tsc0h" id="3S7ul9WKMk9" role="2OqNvi">
+              <node concept="3Tsc0h" id="5JOGi5SkCEp" role="2OqNvi">
                 <ref role="3TtcxE" to="sshz:5stYSUdc960" resolve="periode" />
               </node>
             </node>
-            <node concept="1bVj0M" id="3S7ul9WKMka" role="37wK5m">
-              <node concept="3clFbS" id="3S7ul9WKMkb" role="1bW5cS">
-                <node concept="2MkqsV" id="3S7ul9WKM_R" role="3cqZAp">
-                  <node concept="Xl_RD" id="3S7ul9WKM_T" role="2MkJ7o">
+            <node concept="1bVj0M" id="5JOGi5SkCEq" role="37wK5m">
+              <node concept="3clFbS" id="5JOGi5SkCEr" role="1bW5cS">
+                <node concept="2MkqsV" id="5JOGi5SkCEs" role="3cqZAp">
+                  <node concept="Xl_RD" id="5JOGi5SkCEt" role="2MkJ7o">
                     <property role="Xl_RC" value="Perioden staan niet in chronologische volgorde" />
                   </node>
-                  <node concept="37vLTw" id="3S7ul9WKM_U" role="1urrMF">
-                    <ref role="3cqZAo" node="3S7ul9WKMkf" resolve="p" />
+                  <node concept="37vLTw" id="5JOGi5SkCEu" role="1urrMF">
+                    <ref role="3cqZAo" node="5JOGi5SkCEv" resolve="p" />
                   </node>
                 </node>
               </node>
-              <node concept="37vLTG" id="3S7ul9WKMkf" role="1bW2Oz">
+              <node concept="37vLTG" id="5JOGi5SkCEv" role="1bW2Oz">
                 <property role="TrG5h" value="p" />
-                <node concept="3Tqbb2" id="3S7ul9WKMkg" role="1tU5fm">
+                <node concept="3Tqbb2" id="5JOGi5SkCEw" role="1tU5fm">
                   <ref role="ehGHo" to="sshz:3S7ul9WImHZ" resolve="IPeriode" />
                 </node>
               </node>
@@ -923,7 +921,7 @@
             <node concept="1YBJjd" id="3S7ul9WKixb" role="2Oq$k0">
               <ref role="1YBMHb" node="3S7ul9WGmX$" resolve="node" />
             </node>
-            <node concept="2qgKlT" id="3S7ul9WLPkp" role="2OqNvi">
+            <node concept="3zqWPK" id="5JOGi5SkCEx" role="2OqNvi">
               <ref role="37wK5l" to="aoeo:3S7ul9WKsBb" resolve="begin" />
             </node>
           </node>
@@ -938,7 +936,7 @@
                   <node concept="1YBJjd" id="1rArOT_7Oxt" role="2Oq$k0">
                     <ref role="1YBMHb" node="3S7ul9WGmX$" resolve="node" />
                   </node>
-                  <node concept="2qgKlT" id="1rArOT_7Oxu" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCEz" role="2OqNvi">
                     <ref role="37wK5l" to="aoeo:3S7ul9WKk7j" resolve="datumOfJaartal" />
                   </node>
                 </node>
@@ -975,7 +973,7 @@
             <node concept="1YBJjd" id="3S7ul9WKoLf" role="2Oq$k0">
               <ref role="1YBMHb" node="3S7ul9WGmX$" resolve="node" />
             </node>
-            <node concept="2qgKlT" id="3S7ul9WLPM1" role="2OqNvi">
+            <node concept="3zqWPK" id="5JOGi5SkCE_" role="2OqNvi">
               <ref role="37wK5l" to="aoeo:3S7ul9WKuk7" resolve="eind" />
             </node>
           </node>
@@ -990,7 +988,7 @@
                   <node concept="1YBJjd" id="1rArOT_7P5f" role="2Oq$k0">
                     <ref role="1YBMHb" node="3S7ul9WGmX$" resolve="node" />
                   </node>
-                  <node concept="2qgKlT" id="1rArOT_7P5g" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCEB" role="2OqNvi">
                     <ref role="37wK5l" to="aoeo:3S7ul9WKk7j" resolve="datumOfJaartal" />
                   </node>
                 </node>
@@ -1193,7 +1191,7 @@
               <node concept="37vLTw" id="1wV0BXkYhZZ" role="2Oq$k0">
                 <ref role="3cqZAo" node="1wV0BXkYhY$" resolve="veld" />
               </node>
-              <node concept="2qgKlT" id="1wV0BXkYi00" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5SkCED" role="2OqNvi">
                 <ref role="37wK5l" to="8l26:1XN84VJ3liw" resolve="basisType" />
               </node>
             </node>
@@ -1226,7 +1224,7 @@
             <node concept="1YBJjd" id="3S7ul9WKw5S" role="2Oq$k0">
               <ref role="1YBMHb" node="3S7ul9WFpTj" resolve="node" />
             </node>
-            <node concept="2qgKlT" id="3S7ul9WKxLi" role="2OqNvi">
+            <node concept="3zqWPK" id="5JOGi5SkCEF" role="2OqNvi">
               <ref role="37wK5l" to="aoeo:3S7ul9WKsBb" resolve="begin" />
             </node>
           </node>
@@ -1241,7 +1239,7 @@
                   <node concept="1YBJjd" id="3S7ul9WKAzR" role="2Oq$k0">
                     <ref role="1YBMHb" node="3S7ul9WFpTj" resolve="node" />
                   </node>
-                  <node concept="2qgKlT" id="3S7ul9WKB_o" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCEH" role="2OqNvi">
                     <ref role="37wK5l" to="aoeo:3S7ul9WKk7j" resolve="datumOfJaartal" />
                   </node>
                 </node>
@@ -1278,7 +1276,7 @@
             <node concept="1YBJjd" id="3S7ul9WKyMU" role="2Oq$k0">
               <ref role="1YBMHb" node="3S7ul9WFpTj" resolve="node" />
             </node>
-            <node concept="2qgKlT" id="3S7ul9WKyZ2" role="2OqNvi">
+            <node concept="3zqWPK" id="5JOGi5SkCEJ" role="2OqNvi">
               <ref role="37wK5l" to="aoeo:3S7ul9WKuk7" resolve="eind" />
             </node>
           </node>
@@ -1293,7 +1291,7 @@
                   <node concept="1YBJjd" id="3S7ul9WKADP" role="2Oq$k0">
                     <ref role="1YBMHb" node="3S7ul9WFpTj" resolve="node" />
                   </node>
-                  <node concept="2qgKlT" id="3S7ul9WKBEg" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkCEL" role="2OqNvi">
                     <ref role="37wK5l" to="aoeo:3S7ul9WKk7j" resolve="datumOfJaartal" />
                   </node>
                 </node>
@@ -1330,7 +1328,7 @@
             <node concept="1YBJjd" id="3S7ul9WK_BD" role="2Oq$k0">
               <ref role="1YBMHb" node="3S7ul9WFpTj" resolve="node" />
             </node>
-            <node concept="2qgKlT" id="3S7ul9WK_BE" role="2OqNvi">
+            <node concept="3zqWPK" id="5JOGi5SkCEN" role="2OqNvi">
               <ref role="37wK5l" to="aoeo:3S7ul9WJW3B" resolve="asPeriod" />
             </node>
           </node>
@@ -1489,7 +1487,7 @@
               <node concept="37vLTw" id="1GBKUHOs0rD" role="2Oq$k0">
                 <ref role="3cqZAo" node="1GBKUHOrTMR" resolve="veld" />
               </node>
-              <node concept="2qgKlT" id="1GBKUHOs1sS" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5SkCEP" role="2OqNvi">
                 <ref role="37wK5l" to="8l26:1XN84VJ3liw" resolve="basisType" />
               </node>
             </node>
@@ -2096,18 +2094,18 @@
                     <node concept="35c_gC" id="15$y1ibY_M5" role="2Oq$k0">
                       <ref role="35c_gD" to="ku5w:6Ylaq4hKVce" resolve="DefaultMapping" />
                     </node>
-                    <node concept="2qgKlT" id="15$y1ibY_M6" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkCER" role="2OqNvi">
                       <ref role="37wK5l" to="txb8:4BCNQxW8G6J" resolve="internalizeTo" />
-                      <node concept="2pJPEk" id="15$y1ibY_M7" role="37wK5m">
-                        <node concept="2pJPED" id="15$y1ibY_M8" role="2pJPEn">
+                      <node concept="2pJPEk" id="5JOGi5SkCET" role="37wK5m">
+                        <node concept="2pJPED" id="5JOGi5SkCEU" role="2pJPEn">
                           <ref role="2pJxaS" to="3ic2:58tBIcSIKRh" resolve="BooleanType" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="15$y1ibY_M9" role="37wK5m">
-                        <node concept="37vLTw" id="15$y1ibY_Ma" role="2Oq$k0">
+                      <node concept="2OqwBi" id="5JOGi5SkCEV" role="37wK5m">
+                        <node concept="37vLTw" id="5JOGi5SkCEW" role="2Oq$k0">
                           <ref role="3cqZAo" node="15$y1ibY_Dt" resolve="elem" />
                         </node>
-                        <node concept="3TrcHB" id="15$y1ibY_Mb" role="2OqNvi">
+                        <node concept="3TrcHB" id="5JOGi5SkCEX" role="2OqNvi">
                           <ref role="3TsBF5" to="6ldf:7CG9sYRRZNi" resolve="waarde" />
                         </node>
                       </node>
@@ -2306,18 +2304,18 @@
                     <node concept="35c_gC" id="15$y1ibYx0r" role="2Oq$k0">
                       <ref role="35c_gD" to="ku5w:6Ylaq4hKVce" resolve="DefaultMapping" />
                     </node>
-                    <node concept="2qgKlT" id="15$y1ibYx0s" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkCEY" role="2OqNvi">
                       <ref role="37wK5l" to="txb8:4BCNQxW8G6J" resolve="internalizeTo" />
-                      <node concept="2pJPEk" id="15$y1ibYx0t" role="37wK5m">
-                        <node concept="2pJPED" id="15$y1ibYx0u" role="2pJPEn">
+                      <node concept="2pJPEk" id="5JOGi5SkCF0" role="37wK5m">
+                        <node concept="2pJPED" id="5JOGi5SkCF1" role="2pJPEn">
                           <ref role="2pJxaS" to="3ic2:58tBIcSIKRh" resolve="BooleanType" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="15$y1ibYx0v" role="37wK5m">
-                        <node concept="37vLTw" id="15$y1ibYx0w" role="2Oq$k0">
+                      <node concept="2OqwBi" id="5JOGi5SkCF2" role="37wK5m">
+                        <node concept="37vLTw" id="5JOGi5SkCF3" role="2Oq$k0">
                           <ref role="3cqZAo" node="15$y1ibYwYI" resolve="elem" />
                         </node>
-                        <node concept="3TrcHB" id="15$y1ibYx0x" role="2OqNvi">
+                        <node concept="3TrcHB" id="5JOGi5SkCF4" role="2OqNvi">
                           <ref role="3TsBF5" to="6ldf:5zxIGKO3QD6" resolve="waarde" />
                         </node>
                       </node>
@@ -2615,7 +2613,7 @@
                       <node concept="37vLTw" id="7uBbOJFoOXy" role="2Oq$k0">
                         <ref role="3cqZAo" node="7uBbOJFoOXe" resolve="eigenschap" />
                       </node>
-                      <node concept="2qgKlT" id="7uBbOJFoOXz" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCF5" role="2OqNvi">
                         <ref role="37wK5l" to="8l26:2noOFp_6pJO" resolve="type" />
                       </node>
                     </node>
@@ -2631,7 +2629,7 @@
                 </node>
                 <node concept="1uHKPH" id="7uBbOJFoOXB" role="2OqNvi" />
               </node>
-              <node concept="2qgKlT" id="7uBbOJFoOXC" role="2OqNvi">
+              <node concept="3zqWPK" id="5JOGi5SkCF7" role="2OqNvi">
                 <ref role="37wK5l" to="3ph8:JN8gpVbNdl" resolve="tijdlijn" />
               </node>
             </node>
@@ -2891,7 +2889,7 @@
                                   <node concept="2GrUjf" id="7uBbOJFrtQu" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="7uBbOJFrjRP" resolve="dtl" />
                                   </node>
-                                  <node concept="2qgKlT" id="7uBbOJFrtQv" role="2OqNvi">
+                                  <node concept="3zqWPK" id="5JOGi5SkCF9" role="2OqNvi">
                                     <ref role="37wK5l" to="kv4l:12Tz9pj4qbS" resolve="getDate" />
                                   </node>
                                 </node>
@@ -2989,32 +2987,218 @@
       </node>
       <node concept="3Tm1VV" id="7uBbOJFq1rf" role="1B3o_S" />
       <node concept="P$JXv" id="7uBbOJFrXPY" role="lGtFl">
-        <node concept="TZ5HA" id="7uBbOJFrXPZ" role="TZ5H$">
-          <node concept="1dT_AC" id="7uBbOJFrXQ0" role="1dT_Ay">
-            <property role="1dT_AB" value="Check of de datums die genoemd worden in een tijdsafhankelijke literal overeenkomen met toegestane knipmomenten van de tijdlijn van de eigenschap." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7uBbOJFsssQ" role="TZ5H$">
-          <node concept="1dT_AC" id="7uBbOJFsssR" role="1dT_Ay">
-            <property role="1dT_AB" value="Voor tijdlijnen met een variabele startdatum wordt tevens gecheckt de startdatums voor alle calls naar de methode overeenkomen." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7uBbOJFrXQ1" role="3nqlJM">
-          <property role="TUZQ4" value="De instantie waarvan de eigenschap wordt gezet of voorspeld" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7uBbOJFrXQ3" role="zr_5Q">
             <ref role="zr_51" node="7uBbOJFoOXc" resolve="object" />
           </node>
+          <node concept="1PaTwC" id="5JOGi5SkFv4" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkFv5" role="1PaTwD">
+              <property role="3oM_SC" value="De" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFv6" role="1PaTwD">
+              <property role="3oM_SC" value="instantie" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFv7" role="1PaTwD">
+              <property role="3oM_SC" value="waarvan" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFv8" role="1PaTwD">
+              <property role="3oM_SC" value="de" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFv9" role="1PaTwD">
+              <property role="3oM_SC" value="eigenschap" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFva" role="1PaTwD">
+              <property role="3oM_SC" value="wordt" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvb" role="1PaTwD">
+              <property role="3oM_SC" value="gezet" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvc" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvd" role="1PaTwD">
+              <property role="3oM_SC" value="voorspeld" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="7uBbOJFrXQ4" role="3nqlJM">
-          <property role="TUZQ4" value="De eigenschap wiens tijdlijn de toegestane datums bepaald" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7uBbOJFrXQ6" role="zr_5Q">
             <ref role="zr_51" node="7uBbOJFoOXe" resolve="eigenschap" />
           </node>
+          <node concept="1PaTwC" id="5JOGi5SkFve" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkFvf" role="1PaTwD">
+              <property role="3oM_SC" value="De" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvg" role="1PaTwD">
+              <property role="3oM_SC" value="eigenschap" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvh" role="1PaTwD">
+              <property role="3oM_SC" value="wiens" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvi" role="1PaTwD">
+              <property role="3oM_SC" value="tijdlijn" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvj" role="1PaTwD">
+              <property role="3oM_SC" value="de" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvk" role="1PaTwD">
+              <property role="3oM_SC" value="toegestane" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvl" role="1PaTwD">
+              <property role="3oM_SC" value="datums" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvm" role="1PaTwD">
+              <property role="3oM_SC" value="bepaald" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="7uBbOJFrXQ7" role="3nqlJM">
-          <property role="TUZQ4" value="De expressie die mogelijk knipmomenten bevat" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7uBbOJFrXQ9" role="zr_5Q">
             <ref role="zr_51" node="7uBbOJFoOXg" resolve="waarde" />
+          </node>
+          <node concept="1PaTwC" id="5JOGi5SkFvn" role="1Vez_I">
+            <node concept="3oM_SD" id="5JOGi5SkFvo" role="1PaTwD">
+              <property role="3oM_SC" value="De" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvp" role="1PaTwD">
+              <property role="3oM_SC" value="expressie" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvq" role="1PaTwD">
+              <property role="3oM_SC" value="die" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvr" role="1PaTwD">
+              <property role="3oM_SC" value="mogelijk" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvs" role="1PaTwD">
+              <property role="3oM_SC" value="knipmomenten" />
+            </node>
+            <node concept="3oM_SD" id="5JOGi5SkFvt" role="1PaTwD">
+              <property role="3oM_SC" value="bevat" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkFur" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFus" role="1PaTwD">
+            <property role="3oM_SC" value="Check" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFut" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuu" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuv" role="1PaTwD">
+            <property role="3oM_SC" value="datums" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuw" role="1PaTwD">
+            <property role="3oM_SC" value="die" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFux" role="1PaTwD">
+            <property role="3oM_SC" value="genoemd" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuy" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuz" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFu$" role="1PaTwD">
+            <property role="3oM_SC" value="een" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFu_" role="1PaTwD">
+            <property role="3oM_SC" value="tijdsafhankelijke" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuA" role="1PaTwD">
+            <property role="3oM_SC" value="literal" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuB" role="1PaTwD">
+            <property role="3oM_SC" value="overeenkomen" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuC" role="1PaTwD">
+            <property role="3oM_SC" value="met" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuD" role="1PaTwD">
+            <property role="3oM_SC" value="toegestane" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuE" role="1PaTwD">
+            <property role="3oM_SC" value="knipmomenten" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuF" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuG" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuH" role="1PaTwD">
+            <property role="3oM_SC" value="tijdlijn" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuI" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuJ" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuK" role="1PaTwD">
+            <property role="3oM_SC" value="eigenschap." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5JOGi5SkFuL" role="1Vez_I">
+          <node concept="3oM_SD" id="5JOGi5SkFuM" role="1PaTwD">
+            <property role="3oM_SC" value="Voor" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuN" role="1PaTwD">
+            <property role="3oM_SC" value="tijdlijnen" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuO" role="1PaTwD">
+            <property role="3oM_SC" value="met" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuP" role="1PaTwD">
+            <property role="3oM_SC" value="een" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuQ" role="1PaTwD">
+            <property role="3oM_SC" value="variabele" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuR" role="1PaTwD">
+            <property role="3oM_SC" value="startdatum" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuS" role="1PaTwD">
+            <property role="3oM_SC" value="wordt" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuT" role="1PaTwD">
+            <property role="3oM_SC" value="tevens" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuU" role="1PaTwD">
+            <property role="3oM_SC" value="gecheckt" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuV" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuW" role="1PaTwD">
+            <property role="3oM_SC" value="startdatums" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuX" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuY" role="1PaTwD">
+            <property role="3oM_SC" value="alle" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFuZ" role="1PaTwD">
+            <property role="3oM_SC" value="calls" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFv0" role="1PaTwD">
+            <property role="3oM_SC" value="naar" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFv1" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFv2" role="1PaTwD">
+            <property role="3oM_SC" value="methode" />
+          </node>
+          <node concept="3oM_SD" id="5JOGi5SkFv3" role="1PaTwD">
+            <property role="3oM_SC" value="overeenkomen." />
           </node>
         </node>
       </node>
@@ -3156,7 +3340,7 @@
                           <ref role="3Tt5mk" to="lxx5:3SYd9_w_FPq" resolve="tijdlijn" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="7uBbOJFoY5W" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCFb" role="2OqNvi">
                         <ref role="37wK5l" to="3ph8:JN8gpVhlSL" resolve="tijdlijn" />
                       </node>
                     </node>
@@ -3166,7 +3350,7 @@
                         <node concept="37vLTw" id="7uBbOJFoY5Z" role="2Oq$k0">
                           <ref role="3cqZAo" node="7uBbOJFoY57" resolve="startDate" />
                         </node>
-                        <node concept="2qgKlT" id="7uBbOJFoY60" role="2OqNvi">
+                        <node concept="3zqWPK" id="5JOGi5SkCFd" role="2OqNvi">
                           <ref role="37wK5l" to="kv4l:12Tz9pj4qbS" resolve="getDate" />
                         </node>
                       </node>
@@ -3248,7 +3432,7 @@
                     <node concept="37vLTw" id="4KT01SaBaMD" role="2Oq$k0">
                       <ref role="3cqZAo" node="7uBbOJFoY57" resolve="startDate" />
                     </node>
-                    <node concept="2qgKlT" id="4KT01SaBdBj" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkCFf" role="2OqNvi">
                       <ref role="37wK5l" to="kv4l:12Tz9pj4qbS" resolve="getDate" />
                     </node>
                   </node>
@@ -3258,7 +3442,7 @@
                       <node concept="37vLTw" id="4KT01SaBhxV" role="2Oq$k0">
                         <ref role="3cqZAo" node="7uBbOJFoY6f" resolve="date" />
                       </node>
-                      <node concept="2qgKlT" id="4KT01SaBlwu" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JOGi5SkCFh" role="2OqNvi">
                         <ref role="37wK5l" to="kv4l:12Tz9pj4qbS" resolve="getDate" />
                       </node>
                     </node>
@@ -3280,7 +3464,7 @@
                 <node concept="37vLTw" id="7uBbOJFoY6p" role="2Oq$k0">
                   <ref role="3cqZAo" node="7uBbOJFoY57" resolve="startDate" />
                 </node>
-                <node concept="2qgKlT" id="7uBbOJFoY6q" role="2OqNvi">
+                <node concept="3zqWPK" id="5JOGi5SkCFj" role="2OqNvi">
                   <ref role="37wK5l" to="kv4l:12Tz9pj4qbS" resolve="getDate" />
                 </node>
               </node>

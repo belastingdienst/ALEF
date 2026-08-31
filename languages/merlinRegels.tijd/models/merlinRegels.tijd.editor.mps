@@ -13,6 +13,9 @@
     <import index="yyf0" ref="r:a5c2f1df-c30c-419f-91cf-40430017b8bf(merlinRegels.tijd.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -90,7 +93,6 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
     </language>
     <language id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips">
@@ -132,7 +134,7 @@
                 <node concept="3clFbF" id="5wHM1oJGB77" role="3cqZAp">
                   <node concept="2OqwBi" id="5wHM1oJHCi1" role="3clFbG">
                     <node concept="pncrf" id="5wHM1oJHBX9" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5wHM1oJHCRX" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JOGi5SkC1r" role="2OqNvi">
                       <ref role="37wK5l" to="yyf0:5wHM1oJH5Y9" resolve="name" />
                     </node>
                   </node>
@@ -154,7 +156,7 @@
               <node concept="3clFbF" id="5wHM1oJGLkJ" role="3cqZAp">
                 <node concept="2OqwBi" id="5wHM1oJHD_y" role="3clFbG">
                   <node concept="pncrf" id="5wHM1oJHDe$" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="5wHM1oJHEmi" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JOGi5SkC1t" role="2OqNvi">
                     <ref role="37wK5l" to="yyf0:5wHM1oJH5Y9" resolve="name" />
                   </node>
                 </node>

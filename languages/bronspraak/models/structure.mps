@@ -2,7 +2,7 @@
 <model ref="r:57bbe3fc-bd7c-495c-b829-0fc2a7cfe592(bronspraak.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
@@ -150,6 +151,20 @@
       <node concept="1irPie" id="1ZRO99pgLce" role="1irR9h">
         <property role="1irPi9" value="W" />
         <node concept="3PKj8D" id="1ZRO99pgLcf" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="5JOGi5SkCL5" role="2rmM5M">
+        <node concept="3PKj8D" id="5JOGi5SkCL6" role="3PKjn_">
+          <property role="3PKj8l" value="fdb5c5" />
+        </node>
+        <node concept="3PKj8D" id="5JOGi5SkCL7" role="3PKjnB">
+          <property role="3PKj8l" value="b17e89" />
+        </node>
+      </node>
+      <node concept="1irPie" id="5JOGi5SkCL8" role="2rmM5M">
+        <property role="1irPi9" value="W" />
+        <node concept="3PKj8D" id="5JOGi5SkCL9" role="3PKjny">
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
@@ -404,6 +419,17 @@
       <node concept="1irPie" id="7U5yBDqQZG$" role="1irR9h">
         <property role="1irPi9" value="T" />
         <node concept="3PKj8D" id="7U5yBDqQZGF" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="5JOGi5SkCLa" role="2rmM5M">
+        <node concept="3PKj8D" id="5JOGi5SkCLb" role="3PKjn_">
+          <property role="3PKj8l" value="F1F1F1" />
+        </node>
+      </node>
+      <node concept="1irPie" id="5JOGi5SkCLc" role="2rmM5M">
+        <property role="1irPi9" value="T" />
+        <node concept="3PKj8D" id="5JOGi5SkCLd" role="3PKjny">
           <property role="3PKj8l" value="000000" />
         </node>
       </node>

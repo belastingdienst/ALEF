@@ -1,6 +1,6 @@
 name: Build
 run-name: Build '${{ github.ref_name }}'
-on: [push, pull_request]
+on: [pull_request]
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
   GIT_COMMIT: ${{ github.sha }}
@@ -16,12 +16,11 @@ jobs:
       pull-requests: write
     steps:
     - uses: actions/checkout@v5
-    - name: JDK 21
-      uses: actions/setup-java@v5
+    - name: JDK 25
+      uses: actions/setup-java@v6
       with:
-        java-version: '21'
-        distribution: 'temurin'
-        cache: maven
+        java-version: '25'
+        distribution: 'jetbrains'
     - uses: actions/setup-python@v5
       with:
         python-version: 3.x
@@ -30,7 +29,7 @@ jobs:
     - name: Set version
       run: bash scripts/set-version.sh "${BRANCH_NAME}"
     - name: Build with Maven
-      run: xvfb-run -- mvn -B package
+      run: xvfb-run -- mvn -B -U package
     - name: Upload logs
       uses: actions/upload-artifact@v7
       if: ${{ !cancelled() }}

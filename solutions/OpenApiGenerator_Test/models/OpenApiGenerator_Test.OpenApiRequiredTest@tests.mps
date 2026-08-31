@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
@@ -84,6 +84,9 @@
       </concept>
     </language>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
+      <concept id="2332321114124261810" name="jetbrains.mps.lang.generator.plan.structure.GeneratorModulePointer" flags="ng" index="lQKw0">
+        <child id="2332321114124261812" name="module" index="lQKw6" />
+      </concept>
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
@@ -95,6 +98,10 @@
       <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
         <reference id="7256306938026143658" name="target" index="2aWVGs" />
       </concept>
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
         <child id="679099339649067980" name="name" index="1j$8Uc" />
@@ -104,10 +111,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
-      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -123,9 +126,6 @@
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="3648723375513868532" name="jetbrains.mps.lang.smodel.structure.NodePointer_ResolveOperation" flags="ng" index="Vyspw" />
-      <concept id="8296877263936075789" name="jetbrains.mps.lang.smodel.structure.GeneratorModulePointer" flags="ng" index="3uMdn$">
-        <child id="8296877263936075892" name="module" index="3uMdmt" />
-      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -145,10 +145,10 @@
   <node concept="2VgMpV" id="13hZ3ODOnYz">
     <property role="TrG5h" value="OpenApiGeneratorPlan" />
     <node concept="3uMcMo" id="13hZ3ODOnYA" role="2VgMA7">
-      <node concept="3uMdn$" id="13hZ3ODOnYD" role="3uOsAP">
-        <node concept="20RdaH" id="13hZ3ODOnYE" role="3uMdmt">
-          <property role="20Rdg5" value="92208dc5-459b-4c5b-9829-c89c80bffc93" />
-          <property role="20Rdg7" value="serviceNaarOpenApiGen" />
+      <node concept="lQKw0" id="5JOGi5SkCMX" role="3uOsAP">
+        <node concept="1dCxOk" id="5JOGi5SkCMY" role="lQKw6">
+          <property role="1XweGW" value="92208dc5-459b-4c5b-9829-c89c80bffc93" />
+          <property role="1XxBO9" value="serviceNaarOpenApiGen" />
         </node>
       </node>
     </node>
