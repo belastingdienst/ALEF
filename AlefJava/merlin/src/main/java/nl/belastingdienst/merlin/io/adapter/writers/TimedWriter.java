@@ -8,6 +8,7 @@ import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
+import java.util.List;
 
 public class TimedWriter<TAlef> extends AbstractTimedWriter<ITimed<TAlef>> {
     private final ContentWriter<TAlef> valueWriter;
@@ -34,6 +35,15 @@ public class TimedWriter<TAlef> extends AbstractTimedWriter<ITimed<TAlef>> {
             }
         }
         contentGenerator.endCollection();
+    }
+
+    @Override
+    public boolean shouldWriteValue(ITimed<TAlef> value) {
+        if (value == null) {
+            return false;
+        }
+        final List<TimeBox<TAlef>> boxes = value.evaluate().boxes(Period.ALWAYS).toList();
+        return (boxes.size() == 1 && boxes.get(0).hasValue()) || boxes.size() > 1;
     }
 
     private void writeValue(ContentGenerator contentGenerator, TimeBox<TAlef> box) throws IOException {

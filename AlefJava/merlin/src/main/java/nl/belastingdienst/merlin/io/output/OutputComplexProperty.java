@@ -76,7 +76,7 @@ public class OutputComplexProperty<T extends MObjectType> implements OutputField
     }
 
     private void generateElements(MUniverse universe, ContentGenerator generator, MElementList<MObject> elements) throws IOException {
-        if (!elements.isEmpty() || required || generator instanceof JsonGenerator) {
+        if (!elements.isEmpty() || required) {
             generator.writeFieldName(getRelevantFieldName(generator));
             generateBeginCollection(generator);
             for (MObject childObject : elements) {

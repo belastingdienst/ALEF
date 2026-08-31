@@ -9,6 +9,7 @@ import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.FactSide;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
 import nl.belastingdienst.merlin.io.adapter.readers.StringToStringReader;
+import nl.belastingdienst.merlin.io.parser.KvPairParser;
 import nl.belastingdienst.merlin.io.parser.XmlParser;
 import org.junit.jupiter.api.Test;
 
@@ -63,9 +64,7 @@ public class InputComplexPropertyTest {
         final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
         final String json = """
                 {
-                    "person" : [
-                        { "name" : "test2" }
-                    ]
+                    "person" : { "name" : "test2" }
                 }
                 """;
         final JsonParser jsonParser = new JsonParser(asInputStream(json));
@@ -107,16 +106,17 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testReadAndThenProcessForSingle() throws IOException {
+    public void testReadAndThenProcessForMultiple() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
-        final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.SINGLE,
+        final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.MULTIPLE,
                 FactSide.LEFT, FactParentHasChildren.class);
         final MUniverse universe = new MUniverse(true);
         final String json = """
                 {
                     "person" : [
-                        { "name" : "test1" }
+                        { "name" : "test1" },
+                        { "name" : "test2" }
                     ]
                 }
                 """;
@@ -124,8 +124,9 @@ public class InputComplexPropertyTest {
         jsonParser.beginObject();
         jsonParser.nextName();
         final List<MObject> children = inputProperty.parse(universe, jsonParser);
-        assertEquals(1, children.size());
+        assertEquals(2, children.size());
         assertEquals("test1", children.get(0).getProperty(PersonType.name).get());
+        assertEquals("test2", children.get(1).getProperty(PersonType.name).get());
         final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
         inputProperty.process(universe, alefObject, children);
     }
@@ -138,16 +139,23 @@ public class InputComplexPropertyTest {
                 FactSide.LEFT, FactParentHasChildren.class);
         final MUniverse universe = new MUniverse(true);
         final String json = """
-                {
-                    "person" : [
-                        { "name" : "test1" }
-                    ]
-                }
-                """;
-        final JsonParser jsonParser = new JsonParser(asInputStream(json));
-        jsonParser.beginObject();
-        jsonParser.nextName();
-        final List<MObject> children = inputProperty.parse(universe, jsonParser);
+            <root>
+                <KeyValuePairs>
+                    <key>person</key>
+                    <valueSet>
+                        <KeyValuePairs>
+                            <key>name</key>
+                            <valueString>test1</valueString>
+                        </KeyValuePairs>
+                    </valueSet>
+                </KeyValuePairs>
+            </root>
+            """;
+        final KvPairParser kvPairParser = new KvPairParser(asInputStream(json));
+        kvPairParser.beginObject();
+        kvPairParser.enterKvPairSection();
+        kvPairParser.nextName();
+        final List<MObject> children = inputProperty.parse(universe, kvPairParser);
         assertEquals(1, children.size());
         assertEquals("test1", children.get(0).getProperty(PersonType.name).get());
         final MObject alefObject = universe.getObjectType(PersonType.class).createObject();

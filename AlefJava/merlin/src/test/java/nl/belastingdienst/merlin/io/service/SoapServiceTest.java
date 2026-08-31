@@ -139,6 +139,7 @@ public class SoapServiceTest {
                             <resultaatmelding>SERVICE_OK</resultaatmelding>
                             <serviceversie>1.0.0</serviceversie>
                           </serviceResultaat>
+                          <person></person>
                         </response>
                       </return>
                     </alef:berekenEnkelvoudigerelatieResponse>

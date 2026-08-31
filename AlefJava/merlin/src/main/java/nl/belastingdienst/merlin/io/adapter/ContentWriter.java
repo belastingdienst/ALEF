@@ -6,4 +6,8 @@ import java.io.IOException;
 
 public interface ContentWriter<TAlef> {
     void write(ContentGenerator contentGenerator, TAlef value) throws IOException;
+
+    default boolean shouldWriteValue(TAlef value) {
+        return value != null;
+    }
 }
