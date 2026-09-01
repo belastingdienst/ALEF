@@ -8058,6 +8058,140 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="3PS2nND$shL" role="2G$12L">
+        <property role="TrG5h" value="modelNaarJson" />
+        <property role="3LESm3" value="421e69be-2491-4702-be1c-bfd5ff22ca14" />
+        <property role="BnDLt" value="true" />
+        <node concept="398BVA" id="3PS2nND$tqX" role="3LF7KH">
+          <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+          <node concept="2Ry0Ak" id="3PS2nND$t$9" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3PS2nND$u8J" role="2Ry0An">
+              <property role="2Ry0Am" value="modelNaarJson" />
+              <node concept="2Ry0Ak" id="3PS2nND$u$c" role="2Ry0An">
+                <property role="2Ry0Am" value="modelNaarJson.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="3PS2nND$xd3" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3PS2nND$xd4" role="1HemKq">
+            <node concept="398BVA" id="3PS2nND$xcR" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="3PS2nND$xcS" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3PS2nND$xcT" role="2Ry0An">
+                  <property role="2Ry0Am" value="modelNaarJson" />
+                  <node concept="2Ry0Ak" id="3PS2nND$xcU" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3PS2nND$xd5" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3PS2nND$xd6" role="1TViLv">
+          <property role="TrG5h" value="modelNaarJson.generator" />
+          <property role="3LESm3" value="0abaf1a6-e07e-409b-8e44-ca4c9ad12e30" />
+          <node concept="1SiIV0" id="3PS2nND$xd7" role="3bR37C">
+            <node concept="3bR9La" id="3PS2nND$xd8" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3PS2nND$xd9" role="3bR37C">
+            <node concept="3bR9La" id="3PS2nND$xda" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3PS2nND$xdf" role="3bR37C">
+            <node concept="3bR9La" id="3PS2nND$xdg" role="1SiIV1">
+              <ref role="3bR37D" node="4wvGeDpkGS5" resolve="regelspraak" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3PS2nND$xdh" role="3bR37C">
+            <node concept="3bR9La" id="3PS2nND$xdi" role="1SiIV1">
+              <ref role="3bR37D" to="kwfd:50VLgx6Dl$7" resolve="linguistics.runtime" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3PS2nND$xdj" role="3bR37C">
+            <node concept="3bR9La" id="3PS2nND$xdk" role="1SiIV1">
+              <ref role="3bR37D" node="4wvGeDpkGRB" resolve="gegevensspraak" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="3PS2nND$xd$" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="3PS2nND$xd_" role="1HemKq">
+              <node concept="398BVA" id="3PS2nND$xdl" role="3LXTmr">
+                <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+                <node concept="2Ry0Ak" id="3PS2nND$xdm" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3PS2nND$xdn" role="2Ry0An">
+                    <property role="2Ry0Am" value="modelNaarJson" />
+                    <node concept="2Ry0Ak" id="3PS2nND$xdo" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="3PS2nND$xdp" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="3PS2nND$xdA" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="45zh8u3hBRa" role="3bR37C">
+            <node concept="3bR9La" id="45zh8u3hBRb" role="1SiIV1">
+              <ref role="3bR37D" node="2dDYc38FXUd" resolve="vrijspraak" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="1fV9qvc45DK" role="3bR37C">
+            <node concept="3bR9La" id="1fV9qvc45DL" role="1SiIV1">
+              <ref role="3bR37D" to="4a8c:7nCo6uzk30U" resolve="json" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="582PD76IFYp" role="3bR37C">
+            <node concept="3bR9La" id="582PD76IFYq" role="1SiIV1">
+              <ref role="3bR37D" node="4wvGeDpkGRx" resolve="servicespraak" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="QB0O2wzEme" role="3bR37C">
+            <node concept="3bR9La" id="QB0O2wzEmf" role="1SiIV1">
+              <ref role="3bR37D" node="4wvGeDpkGRZ" resolve="besturingspraak" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3sHmhseSUeH" role="3bR37C">
+            <node concept="3bR9La" id="3sHmhseSUeI" role="1SiIV1">
+              <ref role="3bR37D" node="R8Em0KzlRk" resolve="servicespraak.tijd" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3PS2nNDDth8" role="3bR31x">
+          <node concept="3LXTmp" id="3PS2nNDDth9" role="3rtmxm">
+            <node concept="398BVA" id="3PS2nNDDtha" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="3PS2nNDDthb" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3PS2nNDDthc" role="2Ry0An">
+                  <property role="2Ry0Am" value="modelNaarJson" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3PS2nNDDthe" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="2VBiwiz2PH5" role="3989C9">
       <property role="TrG5h" value="alef-mps-extensions" />
@@ -9375,6 +9509,9 @@
         </node>
         <node concept="3LEDTy" id="6wD_ptgnAPK" role="3LEDUa">
           <ref role="3LEDTV" node="4wvGeDpkGRN" resolve="xml.schema" />
+        </node>
+        <node concept="3LEDTy" id="3dhFmnEu3ZZ" role="3LEDUa">
+          <ref role="3LEDTV" node="3PS2nND$shL" resolve="modelNaarJson" />
         </node>
       </node>
       <node concept="3LEwk6" id="1AGpiHw9d8K" role="2G$12L">

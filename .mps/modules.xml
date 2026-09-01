@@ -45,6 +45,7 @@
       <modulePath path="$PROJECT_DIR$/languages/merlinTabellen/merlinTabellen.mpl" folder="alef.generator.merlin" />
       <modulePath path="$PROJECT_DIR$/languages/merlinTests.tijd/merlinTests.tijd.mpl" folder="alef.generator.merlin.tijd" />
       <modulePath path="$PROJECT_DIR$/languages/merlinTests/merlinTests.mpl" folder="alef.generator.merlin" />
+      <modulePath path="$PROJECT_DIR$/languages/modelNaarJson/modelNaarJson.mpl" folder="alef.generator.json" />
       <modulePath path="$PROJECT_DIR$/languages/objecten/gegevensspraak.mpl" folder="alef.spraken" />
       <modulePath path="$PROJECT_DIR$/languages/rapporten/rapporten.mpl" folder="alef.ide" />
       <modulePath path="$PROJECT_DIR$/languages/regelspraak.tijd/regelspraak.tijd.mpl" folder="alef.spraken.tijd" />
