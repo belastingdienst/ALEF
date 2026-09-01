@@ -139,15 +139,20 @@ public abstract class InputMessage<T extends MObjectType> {
         return alefObject;
     }
 
-    private MObject createAlefObject(MUniverse universe) {
-        return alefObjectType != null ? universe.getObjectType(alefObjectType).createObject() : null;
+    private MObject getOrCreateObject(MUniverse universe, String identifier) {
+        if (alefObjectType == null) {
+            return null;
+        }
+        if (identifierElement == null || identifier == null) {
+            return createAlefObject(universe);
+        }
+        final MObjectType objectType = universe.getObjectType(alefObjectType);
+        final MObject result = objectType.getObjectById(identifier);
+        return result != null ? result : objectType.createObject(identifier);
     }
 
-    private MObject getOrCreateObject(MUniverse universe, String identifier) {
-        if (identifierElement != null) {
-            return universe.getOrCreate(identifier, alefObjectType);
-        }
-        return universe.getObjectType(alefObjectType).createObject();
+    private MObject createAlefObject(MUniverse universe) {
+        return alefObjectType == null ? null : universe.getObjectType(alefObjectType).createObject();
     }
 
     private void handleDefaultValues(MUniverse universe, MObject alefObject, List<String> encounteredFieldNames) {
