@@ -476,6 +476,7 @@
 								<BRANCH_NAME>${env.BRANCH_NAME}</BRANCH_NAME>
 								<VERSION_NUMBER>${project.version}</VERSION_NUMBER>
 								<BUILD_NUMBER>${env.BUILD_NUMBER}</BUILD_NUMBER>
+								<SKIP_TEST>${skipTests}</SKIP_TEST>
 							</environmentVariables>
 							<executable>bash</executable>
 							<arguments>
@@ -490,7 +491,7 @@
 						<id>build-services</id>
 						<phase>test</phase>
 						<configuration>
-							<skip>${alef.install-deps}</skip>
+							<skip>${alef.skip.build-services}</skip>							
 							<workingDirectory>${project.basedir}</workingDirectory>
 							<executable>${env.JAVA_HOME}/bin/java</executable>
 							<workingDirectory>${project.basedir}</workingDirectory>
@@ -583,6 +584,7 @@
 			<activation><activeByDefault>true</activeByDefault></activation>
 			<properties>
 				<alef.install-deps>false</alef.install-deps>
+				<alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<jbr.classifier>linux-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
 			</properties>
@@ -591,7 +593,7 @@
 			<id>install-deps</id>
 			<properties>
 				<alef.install-deps>true</alef.install-deps>
-				<maven.test.skip>true</maven.test.skip>
+				<alef.skip.build-services>true</alef.skip.build-services>
 			</properties>
 		</profile>
 		<profile>
@@ -602,6 +604,7 @@
 				</os>
 			</activation>
 			<properties>
+			    <alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<mps.platform>linux</mps.platform>
 				<jbr.classifier>linux-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
@@ -615,6 +618,7 @@
 				</os>
 			</activation>
 			<properties>
+			    <alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<mps.platform>windows</mps.platform>
 				<jbr.classifier>windows-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
@@ -630,9 +634,9 @@
 				</os>
 			</activation>
 			<properties>
+				<alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<jbr.classifier>osx-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}/Contents/Home</java.home>
-				<maven.test.skip>true</maven.test.skip>
 			</properties>
 		</profile>
 		<profile>
@@ -645,9 +649,9 @@
 				</os>
 			</activation>
 			<properties>
+			    <alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<jbr.classifier>osx-aarch64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}/Contents/Home</java.home>
-				<maven.test.skip>true</maven.test.skip>
 			</properties>
 		</profile>
 	</profiles>
