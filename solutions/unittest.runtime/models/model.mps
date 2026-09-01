@@ -837,7 +837,7 @@
               </node>
             </node>
             <node concept="liA8E" id="766_TODzMMy" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteInEDT(java.lang.Runnable)" resolve="runWriteInEDT" />
               <node concept="1bVj0M" id="766_TODzSUX" role="37wK5m">
                 <node concept="3clFbS" id="766_TODzSV0" role="1bW5cS">
                   <node concept="3cpWs8" id="1viLdVQdTAG" role="3cqZAp">

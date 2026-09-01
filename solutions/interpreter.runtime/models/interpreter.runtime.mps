@@ -9841,7 +9841,7 @@
                       <ref role="3cqZAo" node="5u3omT4jCDk" resolve="modelAccess" />
                     </node>
                     <node concept="liA8E" id="3zW3CFQxP_I" role="2OqNvi">
-                      <ref role="37wK5l" to="lui2:~ModelAccess.isCommandAction()" resolve="isCommandAction" />
+                      <ref role="37wK5l" to="lui2:~ModelAccess.canWrite()" resolve="canWrite" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="3zW3CFQt3OC" role="3clFbx">
