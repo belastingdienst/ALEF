@@ -17,8 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class OutputIdentifierTest extends AbstractOutputTest {
     @Test
     public void testStringIdentifier() throws IOException {
-        final OutputIdentifier identifier = new OutputIdentifier("identifier", new StringToStringWriter());
-        final String actualJson = generateOutput(identifier, "123");
+        final OutputIdentifier identifier = new OutputIdentifier("identifier", "string");
+        final String actualJson = generateOutput(identifier, "123", ContentType.JSON);
         final String expectedJson = """
                 {
                   "identifier" : "123"
@@ -28,19 +28,36 @@ public class OutputIdentifierTest extends AbstractOutputTest {
 
     @Test
     public void testEmptyIdentifier() throws IOException {
-        final OutputIdentifier identifier = new OutputIdentifier("identifier", new StringToStringWriter());
-        final String actualJson = generateOutput(identifier, null);
+        final OutputIdentifier identifier = new OutputIdentifier("identifier", "string");
+        final String actualJson = generateOutput(identifier, null, ContentType.JSON);
         assertEquals("{ }", actualJson);
     }
 
-    private String generateOutput(OutputIdentifier element, String identifier) throws IOException {
+    @Test
+    public void testKVPairIdentifier() throws IOException {
+        final OutputIdentifier identifier = new OutputIdentifier("identifier", "integer");
+        final String actualOutput = generateOutput(identifier, "1", ContentType.KV_PAIR);
+        String expected = """
+                <root>
+                  <KeyValuePairs>
+                    <key>identifier</key>
+                    <valueInteger>1</valueInteger>
+                  </KeyValuePairs>
+                </root>
+                """;
+        assertEquals(expected, actualOutput);
+    }
+
+    private String generateOutput(OutputIdentifier element, String identifier, ContentType contentType) throws IOException {
         final MUniverse universe = new MUniverse(true);
         final OutputStream outputStream = new ByteArrayOutputStream();
         final MObject alefObject = universe.getObjectType(TypeContextMock.PersonType.class).createObject(identifier);
-        final ContentGenerator generator = createGenerator(ContentType.JSON, outputStream);
+        final ContentGenerator generator = createGenerator(contentType, outputStream);
         generator.writeRootFieldName("root");
         generator.beginObject();
+        generator.enterKvPairSection();
         element.generate(universe, generator, alefObject);
+        generator.exitKvPairSection();
         generator.endObject();
         generator.flush();
         return outputStream.toString();
