@@ -267,7 +267,6 @@ public class InputMessageTest {
         )));
         // when
         final MUniverse universe = new MUniverse(true);
-        mockPerson.initialize(null);
         final String json = """
                 {
                     "id" : "id1",
@@ -292,7 +291,6 @@ public class InputMessageTest {
         mockPerson.addElement(new InputFeature<>("carOwner", true, null, PersonType.carOwner, new BooleanToBooleanReader()));
         // when
         final MUniverse universe = new MUniverse(true);
-        mockPerson.initialize(null);
         final String json = """
                 {
                     "id" : "id1",
@@ -318,7 +316,6 @@ public class InputMessageTest {
                 """;
         // when
         final MUniverse universe = new MUniverse(true);
-        mockPerson.initialize(null);
         mockPerson.parse(universe, new JsonParser(asInputStream(json)));
         // then
         final List<Violation> violations = universe.getViolations();
@@ -336,7 +333,6 @@ public class InputMessageTest {
         // when
         assertDoesNotThrow(() -> {
             final MUniverse universe = new MUniverse(true);
-            mockPerson.initialize(null);
             mockPerson.parse(universe, new XmlParser(asInputStream(json)));
         });
     }
@@ -352,7 +348,6 @@ public class InputMessageTest {
         // when
         assertDoesNotThrow(() -> {
             final MUniverse universe = new MUniverse(true);
-            mockPerson.initialize(null);
             mockPerson.parse(universe, new XmlParser(asInputStream(json)));
         });
     }
@@ -387,7 +382,6 @@ public class InputMessageTest {
                 """;
         // when
         final MUniverse universe = new MUniverse(true);
-        mockPerson.initialize(null);
         final ContentParser parser = new KvPairParser(asInputStream(kvPair));
         parser.beginObject(); //root
         parser.enterKvPairSection();
@@ -484,9 +478,9 @@ public class InputMessageTest {
         mock.addElement(new InputFeature<>("carOwner", false, true, PersonType.carOwner, new BooleanToBooleanReader()));
         // when
         final String json = """
-            {
-                "forName" : "testName2"
-            }""";
+                {
+                    "forName" : "testName2"
+                }""";
         final MObject alefObject = mock.parse(new MUniverse(true), new JsonParser(asInputStream(json)));
         // then
         assertEquals("testName2", alefObject.getProperty(PersonType.name).get());
@@ -613,6 +607,37 @@ public class InputMessageTest {
         assertTrue(violations.get(0).toString().contains("Invalid choice selection"));
         assertTrue(violations.get(0).toString().contains("name"));
         assertTrue(violations.get(0).toString().contains("address"));
+    }
+
+    @Test
+    public void testMultipleCollectionsFollowedByAttribute() throws IOException {
+        final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
+        mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputComplexProperty("itemUit", null, false, mockItem, Cardinality.MULTIPLE, FactSide.LEFT, FactPersonHasItems.class));
+        mockPerson.addElement(new InputComplexProperty("itemIn", null, false, mockItem, Cardinality.MULTIPLE, FactSide.LEFT, FactPersonHasItems.class));
+        mockPerson.addElement(new InputAttribute<>("personName", false, null, PersonType.name, new StringToStringReader()));
+        // when
+        final String xml = """
+                <root>
+                    <itemUit>
+                        <name>test1</name>
+                    </itemUit>
+                    <itemIn>
+                        <name>test3</name>
+                    </itemIn>
+                    <personName>test5</personName>
+                </root>
+                """;
+        final MUniverse universe = new MUniverse(true);
+        final MObject alefObject = mockPerson.parse(universe, new XmlParser(asInputStream(xml)));
+        // then
+        assertEquals("test5", alefObject.getProperty(PersonType.name).get());
+        final List<MObject> items = alefObject.getRoleNRelations(FactPersonHasItems.person).toList();
+        sortByFactType(items, ItemType.name);
+        assertEquals(2, items.size());
+        assertEquals("test1", items.get(0).getProperty(ItemType.name).get());
+        assertEquals("test3", items.get(1).getProperty(ItemType.name).get());
     }
 
     private void sortByFactType(List<MObject> objects, MPropertyKey<String> property) {

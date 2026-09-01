@@ -12,12 +12,6 @@ import java.util.List;
 public abstract class OutputMessage {
     private final List<OutputField> fields = new ArrayList<>();
 
-    public OutputMessage(AdapterRegistry registry) {
-        initialize(registry);
-    }
-
-    public abstract void initialize(AdapterRegistry registry);
-
     public void addField(OutputField field) {
         fields.add(field);
     }

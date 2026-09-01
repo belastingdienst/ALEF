@@ -24,13 +24,10 @@ public abstract class InputMessage<T extends MObjectType> {
     private InputIdentifier identifierElement;
     private boolean fieldsShouldBeOrdered = false;
 
-    public InputMessage(AdapterRegistry registry, Class<T> alefObjectType, boolean fieldsShouldBeOrdered) {
+    public InputMessage(Class<T> alefObjectType, boolean fieldsShouldBeOrdered) {
         this.alefObjectType = alefObjectType;
         this.fieldsShouldBeOrdered = fieldsShouldBeOrdered;
-        initialize(registry);
     }
-
-    public abstract void initialize(AdapterRegistry registry);
 
     public void addElement(InputElement node) {
         inputElements.add(node);
