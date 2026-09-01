@@ -1,5 +1,6 @@
 package nl.belastingdienst.merlin.io.output;
 
+import nl.belastingdienst.alef_runtime.Violation;
 import nl.belastingdienst.merlin.base.MDimensionalPropertyKey;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MPropertyKey;
@@ -36,7 +37,11 @@ public class OutputAttribute<TAlef> implements OutputField {
 
     @Override
     public void evaluate(MUniverse universe, MObject alefObject) {
-        getValue(alefObject);
+        try {
+            getValue(alefObject);
+        } catch (RuntimeException e) {
+            universe.add(Violation.of("The following error occurred while evaluating " + fieldName + ": " + e.getMessage()));
+        }
     }
 
     @Override

@@ -11,49 +11,49 @@ public final class Validators {
 
     public static void required(ViolationCollector collector, Object value, LocationInfoProvider locationInfoProvider) {
         if (value == null || value instanceof String s && s.trim().isEmpty()) {
-            collector.add(Violation.of("required", withLocation("Waarde is verplicht", locationInfoProvider)));
+            collector.add(Violation.of("required", withLocation("Waarde is verplicht voor", locationInfoProvider)));
         }
     }
 
     public static void pattern(ViolationCollector collector, String value, String regex, LocationInfoProvider locationInfoProvider) {
         if (value != null && !Pattern.matches(regex, value)) {
-            collector.add(Violation.of("pattern", withLocation("Waarde voldoet niet aan het vereiste patroon", locationInfoProvider)));
+            collector.add(Violation.of("pattern", withLocation("Waarde voldoet niet aan het vereiste patroon voor", locationInfoProvider)));
         }
     }
 
     public static void minSize(ViolationCollector collector, Collection<?> value, int min, LocationInfoProvider locationInfoProvider) {
         if (value != null && value.size() < min) {
-            collector.add(Violation.of("minSize", withLocation("Aantal elementen moet ≥ " + min + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("minSize", withLocation("Aantal elementen moet ≥ " + min + " zijn voor", locationInfoProvider)));
         }
     }
 
     public static void maxSize(ViolationCollector collector, Collection<?> value, int max, LocationInfoProvider locationInfoProvider) {
         if (value != null && value.size() > max) {
-            collector.add(Violation.of("maxSize", withLocation("Aantal elementen moet ≤ " + max + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("maxSize", withLocation("Aantal elementen moet ≤ " + max + " zijn voor", locationInfoProvider)));
         }
     }
 
     public static void minLength(ViolationCollector collector, String value, int min, LocationInfoProvider locationInfoProvider) {
         if (value != null && value.length() < min) {
-            collector.add(Violation.of("minLength", withLocation("Lengte moet ≥ " + min + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("minLength", withLocation("Lengte moet ≥ " + min + " zijn voor", locationInfoProvider)));
         }
     }
 
     public static void maxLength(ViolationCollector collector, String value, int max, LocationInfoProvider locationInfoProvider) {
         if (value != null && value.length() > max) {
-            collector.add(Violation.of("maxLength", withLocation("Lengte moet ≤ " + max + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("maxLength", withLocation("Lengte moet ≤ " + max + " zijn voor", locationInfoProvider)));
         }
     }
 
     public static <T extends Comparable<T>> void min(ViolationCollector collector, T value, T min, LocationInfoProvider locationInfoProvider) {
         if (value != null && value.compareTo(min) < 0) {
-            collector.add(Violation.of("min", withLocation("Waarde moet ≥ " + min + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("min", withLocation("Waarde moet ≥ " + min + " zijn voor", locationInfoProvider)));
         }
     }
 
     public static <T extends Comparable<T>> void max(ViolationCollector collector, T value, T max, LocationInfoProvider locationInfoProvider) {
         if (value != null && value.compareTo(max) > 0) {
-            collector.add(Violation.of("max", withLocation("Waarde moet ≤ " + max + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("max", withLocation("Waarde moet ≤ " + max + " zijn voor", locationInfoProvider)));
         }
     }
 
@@ -74,13 +74,13 @@ public final class Validators {
             }
         }
         if (totalDigits > maxDigits) {
-            collector.add(Violation.of("totalDigits", withLocation("Totaal aantal cijfers moet ≤ " + maxDigits + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("totalDigits", withLocation("Totaal aantal cijfers moet ≤ " + maxDigits + " zijn voor", locationInfoProvider)));
         }
     }
 
     public static void fractionDigits(ViolationCollector collector, BigDecimal value, int maxFraction, LocationInfoProvider locationInfoProvider) {
         if (value != null && Math.max(0, value.stripTrailingZeros().scale()) > maxFraction) {
-            collector.add(Violation.of("fractionDigits", withLocation("Aantal decimalen moet ≤ " + maxFraction + " zijn", locationInfoProvider)));
+            collector.add(Violation.of("fractionDigits", withLocation("Aantal decimalen moet ≤ " + maxFraction + " zijn voor", locationInfoProvider)));
         }
     }
 

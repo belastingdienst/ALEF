@@ -35,9 +35,9 @@ public abstract class AbstractService<T extends MObjectType> {
 
     public final ByteArrayOutputStream process(final InputStream inputStream) throws IOException {
         final long messageId = this.counter.getAndIncrement();
-       // try {
+        try {
             return processRequest(messageId, inputStream);
-       /* } catch (Exception e) {
+        } catch (Exception e) {
             try {
                 logError(messageId, e, inputStream);
                 return returnError(inputStream, e);
@@ -48,7 +48,7 @@ public abstract class AbstractService<T extends MObjectType> {
                 logError(messageId, x, inputStream);
                 throw new RuntimeException(x);
             }
-        } */
+        }
     }
 
     private ByteArrayOutputStream processRequest(long messageId, InputStream inputStream) throws IOException {
@@ -57,9 +57,9 @@ public abstract class AbstractService<T extends MObjectType> {
         final ContentGenerator generator = beginResponse(outputStream);
         prepareUniverseForParsing(universe);
         final MObject mainObject = parseRequest(universe, inputStream, generator);
+        setupUniverseForCalculation(universe);
+        response.evaluate(universe, mainObject);
         if (universe.getViolations().isEmpty() || !enableValidation) {
-            setupUniverseForCalculation(universe);
-            response.evaluate(universe, mainObject);
             generateResponse(universe, mainObject, generator);
         } else {
             generator.writeFieldName("response");

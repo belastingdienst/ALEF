@@ -102,6 +102,7 @@ public class XmlParser extends JacksonParser {
                         // reuse the token when a normal collection is ended.
                         if (currentToken() == ContentToken.FIELD_NAME) {
                             peekedToken = ContentToken.FIELD_NAME;
+                            expectedXmlState = null;
                             setXmlState(XmlState.DETERMINE_OUTSIDE_OR_INSIDE, isPeeking);
                         } else {
                             if (isInsideCollection()) {

@@ -23,8 +23,12 @@ public class DigitsRule<T> extends AbstractRule<T> {
         }
         try {
             final BigDecimal valueAsDecimal = new BigDecimal(value.trim()).stripTrailingZeros();
-            Validators.fractionDigits(collector, valueAsDecimal, maxFractionDigits, locationInfoProvider);
-            Validators.totalDigits(collector, valueAsDecimal, maxTotalDigits, locationInfoProvider);
+            if (maxFractionDigits != null) {
+                Validators.fractionDigits(collector, valueAsDecimal, maxFractionDigits, locationInfoProvider);
+            }
+            if (maxTotalDigits != null) {
+                Validators.totalDigits(collector, valueAsDecimal, maxTotalDigits, locationInfoProvider);
+                }
         } catch (NumberFormatException e) {
             collector.add(Violation.of("numberFormat", "Waarde voldoet niet aan het vereiste decimale formaat."));
         }
