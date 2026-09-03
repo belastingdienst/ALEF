@@ -1,6 +1,5 @@
 package nl.belastingdienst.merlin.base;
 
-import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.alef_runtime.Violation;
 import nl.belastingdienst.alef_runtime.ViolationCollector;
 

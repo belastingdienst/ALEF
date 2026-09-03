@@ -30,9 +30,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class InputMessageTest {
+ class InputMessageTest {
     @Test
-    public void testSimpleProperties() throws IOException {
+    void testSimpleProperties() throws IOException {
         final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
         mock.addElement(new InputAttribute<>("forName", false, null, PersonType.name, new StringToStringReader()));
         mock.addElement(new InputAttribute<>("address", false, null, PersonType.address, new StringToStringReader()));
@@ -53,7 +53,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testTextSpecificProperty() throws IOException {
+    void testTextSpecificProperty() throws IOException {
         final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
         mock.addElement(new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("house", SubStringCondition.CONTAINS, true, false, PersonType.houseOwner),
@@ -73,7 +73,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testCompositeProperty() throws IOException {
+    void testCompositeProperty() throws IOException {
         final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
         mock.addElement(new InputComposite("details", false, new StringToStringReader(), List.of(
                 new AttributePart(PersonType.weight),
@@ -93,7 +93,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testComplexProperties() throws IOException {
+    void testComplexProperties() throws IOException {
         final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
         mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
         mockItem.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
@@ -159,7 +159,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testMessageWithIdentifierAsFirstItem() throws IOException {
+    void testMessageWithIdentifierAsFirstItem() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
@@ -177,7 +177,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testMessageWithIdentifierAsLastItem() throws IOException {
+    void testMessageWithIdentifierAsLastItem() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
@@ -195,7 +195,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testMessageWithIdentifierWithComplexProperties() throws IOException {
+    void testMessageWithIdentifierWithComplexProperties() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
@@ -222,7 +222,7 @@ public class InputMessageTest {
         assertEquals("test", alefObject.getProperty(PersonType.name).get());
         final List<MObject> children = alefObject.getRoleNRelations(FactParentHasChildren.parent).toList();
         sortByFactType(children, PersonType.name);
-        assertTrue(children.size() == 2);
+        assertEquals(2, children.size());
         final MObject child1 = children.get(0);
         assertEquals("id2", child1.getExternalId());
         assertEquals("child1", child1.getProperty(PersonType.name).get());
@@ -233,7 +233,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testValidationOfOrdering() throws IOException {
+    void testValidationOfOrdering() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
@@ -252,12 +252,12 @@ public class InputMessageTest {
         mockPerson.parse(universe, new JsonParser(asInputStream(json)));
         // then
         final List<Violation> violations = universe.getViolations();
-        assertTrue(violations.size() == 1);
+        assertEquals(1, violations.size());
         assertTrue(violations.get(0).toString().contains("out of order"));
     }
 
     @Test
-    public void testValidationOfChoiceElement() throws IOException {
+    void testValidationOfChoiceElement() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputChoice(List.of(
@@ -277,12 +277,12 @@ public class InputMessageTest {
         mockPerson.parse(universe, new JsonParser(asInputStream(json)));
         // then
         final List<Violation> violations = universe.getViolations();
-        assertTrue(violations.size() == 1);
+        assertEquals(1, violations.size());
         assertTrue(violations.get(0).toString().contains("Invalid choice selection"));
     }
 
     @Test
-    public void testValidationOfRequiredFields() throws IOException {
+    void testValidationOfRequiredFields() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
@@ -300,13 +300,13 @@ public class InputMessageTest {
         mockPerson.parse(universe, new JsonParser(asInputStream(json)));
         // then
         final List<Violation> violations = universe.getViolations();
-        assertTrue(violations.size() == 2);
+        assertEquals(2, violations.size());
         assertTrue(violations.get(0).toString().contains("required field"));
         assertTrue(violations.get(1).toString().contains("required field"));
     }
 
     @Test
-    public void testValidationOfUnexpectedFields() throws IOException {
+    void testValidationOfUnexpectedFields() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final String json = """
@@ -319,12 +319,12 @@ public class InputMessageTest {
         mockPerson.parse(universe, new JsonParser(asInputStream(json)));
         // then
         final List<Violation> violations = universe.getViolations();
-        assertTrue(violations.size() == 1);
+        assertEquals(1, violations.size());
         assertTrue(violations.get(0).toString().contains("is not allowed"));
     }
 
     @Test
-    public void testEmptyMessage() throws IOException {
+    void testEmptyMessage() {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final String json = """
@@ -338,7 +338,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testEmptyMessageWithIdentifier() {
+    void testEmptyMessageWithIdentifier() {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
@@ -353,7 +353,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testKeyValuePairMessage() throws IOException {
+    void testKeyValuePairMessage() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
@@ -395,7 +395,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testKeyValuePairMessageWithComplexProperties() throws IOException {
+    void testKeyValuePairMessageWithComplexProperties() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
         mockPerson.addElement(new InputComplexProperty("children", "child", true, mockPerson, Cardinality.MULTIPLE, FactSide.LEFT, FactParentHasChildren.class));
@@ -442,7 +442,7 @@ public class InputMessageTest {
         assertEquals("test", alefObject.getProperty(PersonType.name).get());
         final List<MObject> children = alefObject.getRoleNRelations(FactParentHasChildren.parent).toList();
         sortByFactType(children, PersonType.name);
-        assertTrue(children.size() == 2);
+        assertEquals(2, children.size());
         final MObject child1 = children.get(0);
         assertEquals("child1", child1.getProperty(PersonType.name).get());
         final MObject child2 = children.get(1);
@@ -450,7 +450,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testParametersAsInput() throws IOException {
+    void testParametersAsInput() throws IOException {
         final InputMessageMock<PersonType> mockParameters = new InputMessageMock<>(null);
         mockParameters.addElement(new InputParameter<>("fieldName", "paramName", true, new StringToStringReader()));
         mockParameters.addElement(new InputParameter<>("param1", "param1", true, new StringToStringReader()));
@@ -470,7 +470,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testDefaultValues() throws IOException {
+    void testDefaultValues() throws IOException {
         final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
         mock.addElement(new InputAttribute<>("forName", false, "testName", PersonType.name, new StringToStringReader()));
         mock.addElement(new InputAttribute<>("address", false, "testAddress", PersonType.address, new StringToStringReader()));
@@ -490,7 +490,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testExpectingIdWithNoIdGiven() throws IOException {
+    void testExpectingIdWithNoIdGiven() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
@@ -514,7 +514,7 @@ public class InputMessageTest {
         assertEquals("test", alefObject.getProperty(PersonType.name).get());
         final List<MObject> children = alefObject.getRoleNRelations(FactParentHasChildren.parent).toList();
         sortByFactType(children, PersonType.name);
-        assertTrue(children.size() == 2);
+        assertEquals(2, children.size());
         final MObject child1 = children.get(0);
         assertEquals("child1", child1.getProperty(PersonType.name).get());
         final MObject child2 = children.get(1);
@@ -522,7 +522,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testUnexpectedFieldsValidation() throws IOException {
+    void testUnexpectedFieldsValidation() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         // when
@@ -542,7 +542,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testRequiredFieldsValidation() throws IOException {
+    void testRequiredFieldsValidation() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", true, null, PersonType.name, new StringToStringReader()));
         mockPerson.addElement(new InputAttribute<>("address", true, null, PersonType.address, new StringToStringReader()));
@@ -563,7 +563,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testInvalidOrderingValidation() throws IOException {
+    void testInvalidOrderingValidation() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         mockPerson.addElement(new InputAttribute<>("address", false, null, PersonType.address, new StringToStringReader()));
@@ -585,7 +585,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testChoiceValidation() throws IOException {
+    void testChoiceValidation() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputChoice(List.of(
                 new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()),
@@ -610,7 +610,7 @@ public class InputMessageTest {
     }
 
     @Test
-    public void testMultipleCollectionsFollowedByAttribute() throws IOException {
+    void testMultipleCollectionsFollowedByAttribute() throws IOException {
         final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
         mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);

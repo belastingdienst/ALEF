@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public abstract class RestService<T extends MObjectType> extends AbstractService<T> {
-    public RestService(boolean useLazyEval, String serviceVersion, Class<T> mainObjectType, boolean enableValidation) {
+    protected RestService(boolean useLazyEval, String serviceVersion, Class<T> mainObjectType, boolean enableValidation) {
         super(useLazyEval, serviceVersion, mainObjectType, enableValidation);
     }
 
@@ -39,7 +39,7 @@ public abstract class RestService<T extends MObjectType> extends AbstractService
     protected void generateResponse(MUniverse universe, MObject alefObject, ContentGenerator generator) throws IOException {
         generator.writeFieldName("response");
         generator.beginObject();
-        generateServiceResult(universe, generator, "1", "SERVICE_OK");
+        generateServiceResult(generator, "1", "SERVICE_OK");
         response.process(universe, generator, alefObject);
         generator.endObject();
     }

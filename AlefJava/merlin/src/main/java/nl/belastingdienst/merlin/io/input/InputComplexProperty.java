@@ -7,7 +7,6 @@ import nl.belastingdienst.merlin.io.Cardinality;
 import nl.belastingdienst.merlin.io.FactSide;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
-import nl.belastingdienst.merlin.io.parser.JsonParser;
 
 import java.io.IOException;
 import java.util.ArrayList;

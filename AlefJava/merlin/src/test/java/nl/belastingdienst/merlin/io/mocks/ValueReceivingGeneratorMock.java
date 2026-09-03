@@ -12,34 +12,42 @@ public class ValueReceivingGeneratorMock implements ContentGenerator {
 
     @Override
     public void writeRootFieldName(String fieldName) throws IOException {
+        // mock
     }
 
     @Override
     public void beginObject() throws IOException {
+        // mock
     }
 
     @Override
     public void endObject() throws IOException {
+        // mock
     }
 
     @Override
     public void beginCollection() throws IOException {
+        // mock
     }
 
     @Override
     public void beginEnclosedCollection(String collectionItemFieldName) throws IOException {
+        // mock
     }
 
     @Override
     public void endCollection() throws IOException {
+        // mock
     }
 
     @Override
     public void enterKvPairSection() throws IOException {
+        // mock
     }
 
     @Override
     public void exitKvPairSection() throws IOException {
+        // mock
     }
 
     @Override
@@ -49,10 +57,12 @@ public class ValueReceivingGeneratorMock implements ContentGenerator {
 
     @Override
     public void setNextIsAttribute(boolean value) {
+        // mock
     }
 
     @Override
     public void writeFieldName(String fieldName) throws IOException {
+        // mock
     }
 
     @Override
@@ -142,6 +152,7 @@ public class ValueReceivingGeneratorMock implements ContentGenerator {
 
     @Override
     public void flush() throws IOException {
+        // mock
     }
 
     @Override

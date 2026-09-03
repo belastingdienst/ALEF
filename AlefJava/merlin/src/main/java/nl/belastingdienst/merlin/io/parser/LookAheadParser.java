@@ -11,8 +11,7 @@ public abstract class LookAheadParser extends AbstractParser {
     @Override
     public final ContentToken peek() throws IOException {
         final ContentToken peekedToken = hasPeeked ? internalCurrentToken() : doPeek();
-        ContentToken token = endsCollectionOrObject(peekedToken) ? peekedToken : ContentToken.UNKNOWN;
-        return token;
+        return endsCollectionOrObject(peekedToken) ? peekedToken : ContentToken.UNKNOWN;
     }
 
     @Override
@@ -58,6 +57,7 @@ public abstract class LookAheadParser extends AbstractParser {
 
     protected abstract void internalClose() throws IOException;
 
+    @SuppressWarnings("java:S1130") // exception is used in overrides
     protected ContentToken postProcessPeekedToken(ContentToken peekedToken) throws IOException {
         return peekedToken;
     }

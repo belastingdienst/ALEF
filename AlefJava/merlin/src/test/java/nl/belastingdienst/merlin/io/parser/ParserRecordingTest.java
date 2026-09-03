@@ -17,9 +17,9 @@ import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.asInputStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class ParserRecordingTest {
+class ParserRecordingTest {
     @Test
-    public void testRecordingJsonRequest() throws IOException {
+    void testRecordingJsonRequest() throws IOException {
         final String json = """
                 {
                     "request" : {
@@ -50,7 +50,7 @@ public class ParserRecordingTest {
     }
 
     @Test
-    public void testRecordingXmlRequest() throws IOException {
+    void testRecordingXmlRequest() throws IOException {
         final String xml = """
                 <root>
                     <request>
@@ -85,7 +85,7 @@ public class ParserRecordingTest {
     }
 
     @Test
-    public void testRecordingKvPairRequest() throws IOException {
+    void testRecordingKvPairRequest() throws IOException {
         final String kvPairs = """
                 <root>
                     <request>
@@ -133,24 +133,22 @@ public class ParserRecordingTest {
     }
 
     @Test
-    public void testStartRecordingWhilePeeking() throws IOException {
+    void testStartRecordingWhilePeeking() throws IOException {
         final String xml = "<root><request><value>1</value></request></root>";
-        assertThrows(IllegalStateException.class, () -> {
-            final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-            final ToXmlGenerator generator = XmlFactory.builder().build().createGenerator(outputStream);
-            generator.setNextName(new QName("response"));
-            generator.writeStartObject();
-            final XmlParser parser = new XmlParser(asInputStream(xml), generator);
-            parser.beginObject();
-            parser.nextName();
-            parser.beginObject();
-            parser.peek();
-            parser.startRecording();
-        });
+        final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        final ToXmlGenerator generator = XmlFactory.builder().build().createGenerator(outputStream);
+        generator.setNextName(new QName("response"));
+        generator.writeStartObject();
+        final XmlParser parser = new XmlParser(asInputStream(xml), generator);
+        parser.beginObject();
+        parser.nextName();
+        parser.beginObject();
+        parser.peek();
+        assertThrows(IllegalStateException.class, parser::startRecording);
     }
 
     @Test
-    public void testRecordingAttribute() throws IOException {
+    void testRecordingAttribute() throws IOException {
         final String xml = "<root><entity name=\"person\"><age>21</age></entity></root>";
 
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -175,7 +173,7 @@ public class ParserRecordingTest {
     }
 
     @Test
-    public void testRecordingWhileXmlParserReusesTokens() throws IOException {
+    void testRecordingWhileXmlParserReusesTokens() throws IOException {
         String xml = """
                 <message>
                     <request>

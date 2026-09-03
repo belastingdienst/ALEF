@@ -5,6 +5,6 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
 
-public interface FeatureSupport<TAlef> extends ContentWriter<TAlef> {
-    public void featureWrite(ContentGenerator contentGenerator, TAlef value) throws IOException;
+public interface FeatureSupport<T> extends ContentWriter<T> {
+    public void featureWrite(ContentGenerator contentGenerator, T value) throws IOException;
 }

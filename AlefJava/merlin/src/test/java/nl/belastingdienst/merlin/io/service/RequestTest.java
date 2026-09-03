@@ -22,9 +22,9 @@ import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RequestTest {
+class RequestTest {
     @Test
-    public void testRequest() throws IOException {
+    void testRequest() throws IOException {
         final InputMessageMock<TypeContextMock.PersonType> mock = new InputMessageMock<>(TypeContextMock.PersonType.class);
         mock.addElement(new InputAttribute<>("forName", false, null, TypeContextMock.PersonType.name, new StringToStringReader()));
         mock.addElement(new InputAttribute<>("address", false, null, TypeContextMock.PersonType.address, new StringToStringReader()));

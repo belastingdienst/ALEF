@@ -19,9 +19,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TimedReaderTest {
+class TimedReaderTest {
     @Test
-    public void testTimedReader() throws IOException {
+    void testTimedReader() throws IOException {
         final String xml = """
                 {
                     "values" : [
@@ -40,7 +40,7 @@ public class TimedReaderTest {
     }
 
     @Test
-    public void testTimedReaderWithOverlappingPeriods() throws IOException {
+    void testTimedReaderWithOverlappingPeriods() throws IOException {
         final String xml = """
                 {
                     "values" : [
@@ -63,7 +63,7 @@ public class TimedReaderTest {
     }
 
     @Test
-    public void testTimedReaderWithNoFromTo() throws IOException {
+    void testTimedReaderWithNoFromTo() throws IOException {
         final String xml = """
                 {
                     "values" : [
@@ -80,7 +80,7 @@ public class TimedReaderTest {
     }
 
     @Test
-    public void testTimedReaderWithNoItems() throws IOException {
+    void testTimedReaderWithNoItems() throws IOException {
         final String xml = """
                 {
                     "values" : []
@@ -93,7 +93,7 @@ public class TimedReaderTest {
     }
 
     @Test
-    public void testTimedReaderWithMultipleItems() throws IOException {
+    void testTimedReaderWithMultipleItems() throws IOException {
         final String xml = """
                 {
                     "values" : [
@@ -120,7 +120,7 @@ public class TimedReaderTest {
     }
 
     @Test
-    public void testTimedReaderWithMissingFields() throws IOException {
+    void testTimedReaderWithMissingFields() throws IOException {
         final String xml = """
                 {
                     "values" : [

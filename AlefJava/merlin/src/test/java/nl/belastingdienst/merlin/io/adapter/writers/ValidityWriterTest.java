@@ -4,7 +4,6 @@ import nl.belastingdienst.alef_runtime.time.*;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -13,9 +12,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ValidityWriterTest {
+class ValidityWriterTest {
     @Test
-    public void testValidityWriter() throws IOException {
+    void testValidityWriter() throws IOException {
         final IValidity values = IValidity.of(Timed.of(List.of(
                 TimeBox.make(Valid.TRUE, new Period(Period.OPEN_BEGIN, Time.fromYMD(2020, 1, 1))),
                 TimeBox.make(Valid.TRUE, new Period(Time.fromYMD(2020, 2, 2), Time.fromYMD(2020, 3, 3)))
@@ -35,7 +34,7 @@ public class ValidityWriterTest {
     }
 
     @Test
-    public void testValidityWriterWithNullAsInput() throws IOException {
+    void testValidityWriterWithNullAsInput() throws IOException {
         final IValidity values = IValidity.of(Timed.of(List.of(
                 TimeBox.make(Valid.TRUE, new Period(null, Time.fromYMD(2021, 1, 1))),
                 TimeBox.make(Valid.TRUE, new Period(Time.fromYMD(2021, 2, 2), null))

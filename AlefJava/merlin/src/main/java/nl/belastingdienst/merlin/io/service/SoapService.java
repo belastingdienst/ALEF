@@ -21,7 +21,7 @@ public abstract class SoapService<T extends MObjectType> extends AbstractService
     private final String methodName;
     private final String messageName;
 
-    public SoapService(boolean useLazyEval, String serviceVersion, ContentType contentType,
+    protected SoapService(boolean useLazyEval, String serviceVersion, ContentType contentType,
             Class<T> mainObjectType, String methodName, String messageName, boolean enableValidation) {
         super(useLazyEval, serviceVersion, mainObjectType, enableValidation);
         this.contentType = contentType;
@@ -46,7 +46,7 @@ public abstract class SoapService<T extends MObjectType> extends AbstractService
     protected void generateResponse(MUniverse universe, MObject alefObject, ContentGenerator generator) throws IOException {
         generator.writeFieldName("response");
         generator.beginObject();
-        generateServiceResult(universe, generator, "1", "SERVICE_OK");
+        generateServiceResult(generator, "1", "SERVICE_OK");
         response.process(universe, generator, alefObject);
         generator.exitKvPairSection();
         generator.endObject();

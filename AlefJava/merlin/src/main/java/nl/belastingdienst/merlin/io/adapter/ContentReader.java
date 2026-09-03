@@ -5,6 +5,6 @@ import nl.belastingdienst.merlin.io.parser.ContentParser;
 
 import java.io.IOException;
 
-public interface ContentReader<TAlef> {
-    TAlef read(MUniverse universe, ContentParser parser) throws IOException;
+public interface ContentReader<T> {
+    T read(MUniverse universe, ContentParser parser) throws IOException;
 }

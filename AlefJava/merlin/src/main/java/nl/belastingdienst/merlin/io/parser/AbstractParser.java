@@ -10,7 +10,7 @@ public abstract class AbstractParser implements ContentParser {
     private final Deque<LocationNode> locationNodeDeque = new ArrayDeque<>();
     private String lastEncounteredFieldName = null;
     private boolean gatherLocationInfo;
-    private int skipCounter = 0;
+
 
     @Override
     public void beginObject() throws IOException {
@@ -88,6 +88,7 @@ public abstract class AbstractParser implements ContentParser {
                 case END_OBJECT, END_COLLECTION -> popLocationNode();
                 case VALUE_STRING -> pushLocationNode(getLastEncounteredName(), LocationNodeType.VALUE);
                 case FIELD_NAME -> lastEncounteredFieldName = rawCurrentName();
+                case UNKNOWN -> pushLocationNode("UNKNOWN", LocationNodeType.VALUE);
             }
         }
         return token;
@@ -123,7 +124,7 @@ public abstract class AbstractParser implements ContentParser {
 
     @Override
     public void skipValue() throws IOException {
-        skipCounter = 0;
+        int skipCounter = 0;
         do {
             final ContentToken token = nextToken();
             switch (token) {
@@ -228,7 +229,7 @@ public abstract class AbstractParser implements ContentParser {
         }
     }
 
-    private void expectToken(ContentToken expectedToken, ContentToken actualToken) throws IOException {
+    private void expectToken(ContentToken expectedToken, ContentToken actualToken) {
         if (actualToken != expectedToken) {
             throw new IllegalStateException(String.format("Expected token: %s, but found: %s", expectedToken, actualToken));
         }

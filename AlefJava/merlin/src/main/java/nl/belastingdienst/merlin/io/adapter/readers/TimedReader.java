@@ -10,16 +10,16 @@ import nl.belastingdienst.merlin.io.parser.ContentParser;
 import java.io.IOException;
 import java.util.Collections;
 
-public class TimedReader<TAlef> extends AbstractTimedReader<TAlef> implements ContentReader<ITimed<TAlef>> {
-    private final ContentReader<TAlef> valueReader;
+public class TimedReader<T> extends AbstractTimedReader<T> implements ContentReader<ITimed<T>> {
+    private final ContentReader<T> valueReader;
 
-    public TimedReader(TimelineInfo timelineInfo, ContentReader<TAlef> valueReader) {
+    public TimedReader(TimelineInfo timelineInfo, ContentReader<T> valueReader) {
         super(timelineInfo);
         this.valueReader = valueReader;
     }
 
     @Override
-    public ITimed<TAlef> read(MUniverse universe, ContentParser parser) throws IOException {
+    public ITimed<T> read(MUniverse universe, ContentParser parser) throws IOException {
         try {
             return Timed.of(readTimeboxes(universe, parser));
         } catch (OverlappingPeriodsException e) {
@@ -30,11 +30,11 @@ public class TimedReader<TAlef> extends AbstractTimedReader<TAlef> implements Co
     }
 
     @Override
-    protected TAlef readValue(MUniverse universe, ContentParser parser) throws IOException {
+    protected T readValue(MUniverse universe, ContentParser parser) throws IOException {
         return valueReader.read(universe, parser);
     }
 
-    public static <TValue> ITimed<TValue> wrapDefaultValue(TValue defaultValue) {
+    public static <V> ITimed<V> wrapDefaultValue(V defaultValue) {
         return Timed.of(TimeBox.make(defaultValue, new Period(Period.OPEN_BEGIN, Period.OPEN_END)));
     }
 }

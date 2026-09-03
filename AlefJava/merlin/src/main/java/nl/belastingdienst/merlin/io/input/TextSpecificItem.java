@@ -19,10 +19,8 @@ public final class TextSpecificItem {
     }
 
     public void parse(String inputValue, IMPropertyHolder propertyHolder) {
-        if (!Boolean.TRUE.equals(propertyHolder.getPropertyValue(propertyKey))) {
-            if (negation != checkCondition(inputValue)) {
-                propertyHolder.setPropertyValueDirect(propertyKey, Boolean.TRUE);
-            }
+        if (!Boolean.TRUE.equals(propertyHolder.getPropertyValue(propertyKey)) && negation != checkCondition(inputValue)) {
+            propertyHolder.setPropertyValueDirect(propertyKey, Boolean.TRUE);
         }
     }
 

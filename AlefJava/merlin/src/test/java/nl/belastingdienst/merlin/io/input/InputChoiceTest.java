@@ -13,26 +13,26 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class InputChoiceTest {
+class InputChoiceTest {
     @Test
-    public void testGetNodesMethod() {
+    void testGetNodesMethod() {
         final InputAttribute<String> attribute1 = new InputAttribute<>("name", true, "test", TypeContextMock.PersonType.name, new StringToStringReader());
         final InputAttribute<BigRational> attribute2 = new InputAttribute<>("age", true, BigRational.valueOf(20), TypeContextMock.PersonType.age, new IntegerToRationalReader());
         final InputChoice choice = new InputChoice(List.of(attribute1, attribute2));
-        assertEquals(choice.getNodes().size(), 2);
+        assertEquals(2, choice.getNodes().size());
         assertTrue(choice.getNodes().get(0) instanceof InputAttribute<?>);
         assertTrue(choice.getNodes().get(1) instanceof InputAttribute<?>);
         assertFalse(choice.isRequired());
     }
 
     @Test
-    public void testIsRequiredMethod() {
+    void testIsRequiredMethod() {
         final InputChoice choice = new InputChoice(Collections.emptyList());
         assertFalse(choice.isRequired());
     }
 
     @Test
-    public void testHandlingDefaultValues() {
+    void testHandlingDefaultValues() {
         final InputAttribute<String> attribute1 = new InputAttribute<>("name", true, "test", TypeContextMock.PersonType.name, new StringToStringReader());
         final InputAttribute<BigRational> attribute2 = new InputAttribute<>("age", true, BigRational.valueOf(20), TypeContextMock.PersonType.age, new IntegerToRationalReader());
         final InputChoice choice = new InputChoice(List.of(attribute1, attribute2));

@@ -38,7 +38,7 @@ public abstract class Request {
     private final HashMap<String, InputComplexProperty> complexPropertyByName = new HashMap<>();
     private final HashMap<String, InputComplexProperty> complexPropertyByCollectionItemFieldName = new HashMap();
 
-    public Request(AdapterRegistry registry, String calculationMomentFieldName, CalculationMoment calculationMoment) {
+    protected Request(AdapterRegistry registry, String calculationMomentFieldName, CalculationMoment calculationMoment) {
         super();
         this.calculationMomentFieldName = calculationMomentFieldName;
         this.calculationMoment = calculationMoment;
@@ -65,20 +65,7 @@ public abstract class Request {
         while (parser.peek() != ContentToken.END_OBJECT) {
             final String fieldName = parser.nextName();
             if (isComplexProperty(parser, fieldName)) {
-                final InputComplexProperty complexProperty = getComplexProperty(parser, fieldName);
-                if (rootObject == null) {
-                    if (complexProperty.getFactTypeClass() == null) {
-                        final List<MObject> objects = complexProperty.parse(universe, parser);
-                        if (!objects.isEmpty()) {
-                            rootObject = objects.get(0);
-                        }
-                    } else {
-                        rootObject = rootObject == null ? universe.getObjectType(mainObjectType).createObject() : rootObject;
-                        complexProperty.parseAndProcess(universe, parser, rootObject);
-                    }
-                } else {
-                    complexProperty.parseAndProcess(universe, parser, rootObject);
-                }
+                rootObject = processComplexProperty(universe, parser, mainObjectType, fieldName, rootObject);
             } else if ("velden".equals(fieldName) && parser instanceof KvPairParser) {
                 rootObject = process(universe, parser, true, mainObjectType); // for key value pairs
             } else if (MESSAGE_ID_FIELDNAME.equals(fieldName)) {
@@ -95,13 +82,30 @@ public abstract class Request {
         }
     }
 
+    private MObject processComplexProperty(MUniverse universe, ContentParser parser, Class<? extends MObjectType> mainObjectType, String fieldName, MObject rootObject) throws IOException {
+        final InputComplexProperty complexProperty = getComplexProperty(parser, fieldName);
+        if (rootObject == null) {
+            if (complexProperty.getFactTypeClass() == null) {
+                final List<MObject> objects = complexProperty.parse(universe, parser);
+                if (!objects.isEmpty()) {
+                    rootObject = objects.get(0);
+                }
+            } else {
+                rootObject = universe.getObjectType(mainObjectType).createObject();
+                complexProperty.parseAndProcess(universe, parser, rootObject);
+            }
+        } else {
+            complexProperty.parseAndProcess(universe, parser, rootObject);
+        }
+        return rootObject;
+    }
+
     private void processCalculationMoment(MUniverse universe, ContentParser parser) throws IOException {
         if (calculationMoment == CalculationMoment.YEAR) {
             final int year = Integer.parseInt(parser.nextValue());
             universe.setWorkingDate(LocalDateTime.of(year, 7, 1, 0, 0, 0));
         } else {
             final String date = parser.nextValue();
-            System.out.println(date);
             if (date != null && !date.isEmpty()) {
                 XMLGregorianCalendar xmlGregorianCalendar = DT_FACTORY.newXMLGregorianCalendar(date);
                 universe.setWorkingDate(SoapConversion.fromInputXMLGregorianCalender(xmlGregorianCalendar));

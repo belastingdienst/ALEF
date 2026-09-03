@@ -55,7 +55,7 @@ public class MeldingSet {
     public List<String> getActXml() {
         if (actDoc != null) {
             String content = renderOrError(actDoc, false);
-            return Arrays.stream(content.split("\\r?\\n")).collect(Collectors.toList()); // List moet modifiable zijn.
+            return Arrays.stream(content.split("\\r?\\n")).toList(); // List moet modifiable zijn.
         }
         return Collections.emptyList();
     }
@@ -63,7 +63,7 @@ public class MeldingSet {
     public List<String> getExpXml() {
         if (expDoc != null) {
             String content = renderOrError(expDoc, true);
-            return Arrays.stream(content.split("\\r?\\n")).collect(Collectors.toList()); // List moet modifiable zijn.
+            return Arrays.stream(content.split("\\r?\\n")).toList(); // List moet modifiable zijn.
         }
         return Collections.emptyList();
     }

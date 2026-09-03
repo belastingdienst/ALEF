@@ -8,7 +8,6 @@ import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 
 import java.io.IOException;
-import java.util.Collections;
 
 public class ValidityReader extends AbstractTimedReader<Valid> implements ContentReader<IValidity> {
     public ValidityReader(TimelineInfo timelineInfo) {

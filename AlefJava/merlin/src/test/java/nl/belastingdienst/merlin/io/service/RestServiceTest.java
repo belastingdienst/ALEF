@@ -23,9 +23,9 @@ import java.nio.charset.StandardCharsets;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RestServiceTest {
+class RestServiceTest {
     @Test
-    public void testRestService2() throws IOException {
+    void testRestService2() throws IOException {
         final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
         mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
         mockItem.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));

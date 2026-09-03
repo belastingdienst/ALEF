@@ -21,4 +21,8 @@ public final class Violation {
     public String toString() {
         return message;
     }
+
+    public String getCode() {
+        return code;
+    }
 }

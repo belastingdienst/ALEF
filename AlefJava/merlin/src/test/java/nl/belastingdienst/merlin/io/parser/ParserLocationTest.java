@@ -9,19 +9,19 @@ import java.io.IOException;
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.createParser;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ParserLocationTest {
+class ParserLocationTest {
     @Test
-    public void testLocationInfoForEnclosedCollectionWithXml() throws IOException {
+    void testLocationInfoForEnclosedCollectionWithXml() throws IOException {
         parseEnclosedCollectionWithLocationInfoChecks(ContentType.XML, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_XML_CONTENT);
     }
 
     @Test
-    public void testLocationInfoForEnclosedCollectionWithJson() throws IOException {
+    void testLocationInfoForEnclosedCollectionWithJson() throws IOException {
         parseEnclosedCollectionWithLocationInfoChecks(ContentType.JSON, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_JSON_CONTENT);
     }
 
     @Test
-    public void testLocationInfoForEnclosedCollectionWithKvPair() throws IOException {
+    void testLocationInfoForEnclosedCollectionWithKvPair() throws IOException {
         parseEnclosedCollectionWithLocationInfoChecks(ContentType.KV_PAIR, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_KV_PAIR_CONTENT);
     }
 
@@ -68,7 +68,7 @@ public class ParserLocationTest {
     }
 
     @Test
-    public void testLocationInfoWithNestedCollections() throws IOException {
+    void testLocationInfoWithNestedCollections() throws IOException {
         final ContentParser parser = createParser(ContentType.XML, Content.COMPLEX_NESTED_STRUCTURE_XML_CONTENT);
         parser.startGatheringLocationInfo();
         assertLocationInfo("/", parser);
@@ -121,7 +121,7 @@ public class ParserLocationTest {
     }
 
     @Test
-    public void testLocationInfoWithPeeking() throws IOException {
+    void testLocationInfoWithPeeking() throws IOException {
         final String xml = """
                     <root>
                         <items>
@@ -184,7 +184,7 @@ public class ParserLocationTest {
     }
 
     @Test
-    public void testLocationInfoWithNextToken() throws IOException {
+    void testLocationInfoWithNextToken() throws IOException {
         final String xml = """
                     <root>
                         <items>

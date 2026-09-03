@@ -3,13 +3,11 @@ package nl.belastingdienst.merlin.io.adapter.writers;
 import nl.belastingdienst.merlin.io.adapter.ContentWriter;
 import nl.belastingdienst.merlin.io.adapter.converters.Converter;
 
-import java.io.IOException;
-
-public abstract class AbstractWriter<TAlef> implements ContentWriter<TAlef> {
+public abstract class AbstractWriter<T> implements ContentWriter<T> {
     private final String valueTypeName;
-    private final Converter<TAlef> converter;
+    private final Converter<T> converter;
 
-    public AbstractWriter(String valueTypeName, Converter<TAlef> converter) {
+    protected AbstractWriter(String valueTypeName, Converter<T> converter) {
         this.valueTypeName = valueTypeName;
         this.converter = converter;
     }
@@ -18,8 +16,8 @@ public abstract class AbstractWriter<TAlef> implements ContentWriter<TAlef> {
         return valueTypeName;
     }
 
-    protected TAlef toOutputValue(TAlef value) throws IOException {
-        TAlef outputValue;
+    protected T toOutputValue(T value) {
+        T outputValue;
         if (converter != null) {
             outputValue = converter.convert(value);
         } else {

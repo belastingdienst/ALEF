@@ -9,14 +9,14 @@ import nl.belastingdienst.merlin.io.parser.ContentParser;
 
 import java.io.IOException;
 
-public final class InputFeature<TAlef> implements InputField {
+public final class InputFeature<T> implements InputField {
     private final String fieldName;
-    private final MKenmerkKey<TAlef> featureKey;
-    private final ContentReader<TAlef> reader;
+    private final MKenmerkKey<T> featureKey;
+    private final ContentReader<T> reader;
     private final boolean required;
-    private final TAlef defaultValue;
+    private final T defaultValue;
 
-    public InputFeature(String fieldName, boolean required, TAlef defaultValue, MKenmerkKey<TAlef> featureKey, ContentReader<TAlef> reader) {
+    public InputFeature(String fieldName, boolean required, T defaultValue, MKenmerkKey<T> featureKey, ContentReader<T> reader) {
         this.featureKey = featureKey;
         this.required = required;
         this.defaultValue = defaultValue;
@@ -43,8 +43,8 @@ public final class InputFeature<TAlef> implements InputField {
 
     @Override
     public void parse(MUniverse universe, IMPropertyHolder propertyHolder, ContentParser parser) throws IOException {
-        final TAlef inputValue = reader.read(universe, parser);
-        final TAlef value = inputValue == null ? defaultValue : inputValue;
+        final T inputValue = reader.read(universe, parser);
+        final T value = inputValue == null ? defaultValue : inputValue;
         if (featureKey.isTimed()) {
             propertyHolder.setPropertyValueDirect(featureKey, value);
         } else {

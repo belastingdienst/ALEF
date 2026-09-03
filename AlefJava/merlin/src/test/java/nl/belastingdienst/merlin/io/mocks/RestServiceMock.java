@@ -19,30 +19,37 @@ public class RestServiceMock<T extends MObjectType> extends RestService<T> {
 
     @Override
     protected void initialize(AdapterRegistry registry) {
+        // mock
     }
 
     @Override
     protected void prepareUniverseForParsing(MUniverse universe) {
+        // mock
     }
 
     @Override
     protected void setupUniverseForCalculation(MUniverse universe) {
+        // mock
     }
 
     @Override
     protected void addRuleSets(MUniverse universe) {
+        // mock
     }
 
     @Override
     protected void addExtensions(MUniverse universe) {
+        // mock
     }
 
     @Override
     protected void addParameterSets(MUniverse universe) {
+        // mock
     }
 
     @Override
     protected void logError(long messageId, Exception x, InputStream inputStream) {
+        // mock
     }
 
     @Override

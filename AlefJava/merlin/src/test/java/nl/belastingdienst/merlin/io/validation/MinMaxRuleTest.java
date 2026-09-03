@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
+@SuppressWarnings("java:S5976") // using Parameterized would complicate this class
 class MinMaxRuleTest {
     private final LocationInfoProvider locationInfoProvider = () -> "/root/age";
 

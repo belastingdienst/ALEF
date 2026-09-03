@@ -8,13 +8,13 @@ import nl.belastingdienst.merlin.io.parser.ContentParser;
 
 import java.io.IOException;
 
-public class InputParameter<TAlef> implements InputField {
+public class InputParameter<T> implements InputField {
     private final String fieldName;
     private final String parameterName;
-    private final ContentReader<TAlef> reader;
+    private final ContentReader<T> reader;
     private final boolean required;
 
-    public InputParameter(String fieldName, String parameterName, boolean required, ContentReader<TAlef> reader) {
+    public InputParameter(String fieldName, String parameterName, boolean required, ContentReader<T> reader) {
         this.fieldName = fieldName;
         this.parameterName = parameterName;
         this.required = required;

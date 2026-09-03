@@ -15,7 +15,7 @@ public abstract class JacksonParser extends LookAheadParser {
     private final JsonParser jsonParser;
     private final JsonGenerator recorder;
 
-    public JacksonParser(JsonParser jsonParser, JsonGenerator recorder) {
+    protected JacksonParser(JsonParser jsonParser, JsonGenerator recorder) {
         this.jsonParser = jsonParser;
         this.recorder = recorder;
     }
@@ -44,8 +44,8 @@ public abstract class JacksonParser extends LookAheadParser {
 
     @Override
     protected String getRootName() {
-        if (jsonParser instanceof FromXmlParser) {
-            return ((FromXmlParser) jsonParser).getStaxReader().getLocalName();
+        if (jsonParser instanceof FromXmlParser fromXmlParser) {
+            return fromXmlParser.getStaxReader().getLocalName();
         }
         return null;
     }
@@ -78,8 +78,8 @@ public abstract class JacksonParser extends LookAheadParser {
     protected ContentToken retrieveNextToken(boolean isPeeking) throws IOException {
         final JsonToken jsonToken = jsonParser.nextToken();
         if (recording && jsonToken != null) {
-            if (jsonToken == JsonToken.FIELD_NAME && jsonParser instanceof FromXmlParser && ((FromXmlParser) jsonParser).getStaxReader().getEventType() == XMLStreamConstants.START_ELEMENT) {
-                final XMLStreamReader staxReader = ((FromXmlParser) jsonParser).getStaxReader();
+            if (jsonToken == JsonToken.FIELD_NAME && jsonParser instanceof FromXmlParser fromXmlParser && fromXmlParser.getStaxReader().getEventType() == XMLStreamConstants.START_ELEMENT) {
+                final XMLStreamReader staxReader = fromXmlParser.getStaxReader();
                 ((ToXmlGenerator) recorder).setNextIsAttribute(staxReader.getAttributeCount() > 0);
             } else if (jsonToken == JsonToken.FIELD_NAME && jsonParser instanceof FromXmlParser) {
                 ((ToXmlGenerator) recorder).setNextIsAttribute(false);
@@ -89,6 +89,7 @@ public abstract class JacksonParser extends LookAheadParser {
         return asMessageToken(jsonToken);
     }
 
+    @SuppressWarnings("java:S1130") // exception is used in overrides
     protected ContentToken retrieveCurrentToken() throws IOException {
         return asMessageToken(jsonParser.currentToken());
     }

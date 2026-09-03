@@ -4,10 +4,10 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
 
-public interface ContentWriter<TAlef> {
-    void write(ContentGenerator contentGenerator, TAlef value) throws IOException;
+public interface ContentWriter<T> {
+    void write(ContentGenerator contentGenerator, T value) throws IOException;
 
-    default boolean shouldWriteValue(TAlef value) {
+    default boolean shouldWriteValue(T value) {
         return value != null;
     }
 }

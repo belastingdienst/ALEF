@@ -8,14 +8,14 @@ import nl.belastingdienst.merlin.io.parser.ContentParser;
 
 import java.io.IOException;
 
-public final class InputAttribute<TAlef> extends InputProperty<TAlef> {
-    private final ContentReader<TAlef> reader;
+public final class InputAttribute<T> extends InputProperty<T> {
+    private final ContentReader<T> reader;
 
-    public InputAttribute(String fieldName, boolean isRequired, TAlef defaultValue, MPropertyKey<TAlef> propertyKey, ContentReader<TAlef> reader) {
+    public InputAttribute(String fieldName, boolean isRequired, T defaultValue, MPropertyKey<T> propertyKey, ContentReader<T> reader) {
         this(fieldName, isRequired, defaultValue, propertyKey, null, reader);
     }
 
-    public InputAttribute(String fieldName, boolean isRequired, TAlef defaultValue, MPropertyKey<TAlef> propertyKey, Integer dimensionKey, ContentReader<TAlef> reader) {
+    public InputAttribute(String fieldName, boolean isRequired, T defaultValue, MPropertyKey<T> propertyKey, Integer dimensionKey, ContentReader<T> reader) {
         super(fieldName, isRequired, defaultValue, propertyKey, dimensionKey);
         this.reader = reader;
     }

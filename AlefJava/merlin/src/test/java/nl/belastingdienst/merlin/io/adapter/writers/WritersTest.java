@@ -13,7 +13,7 @@ import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class WritersTest {
+class WritersTest {
     @Test
     void testBooleanToBooleanWriter() throws IOException {
         final ValueReceivingGeneratorMock generator = new ValueReceivingGeneratorMock();

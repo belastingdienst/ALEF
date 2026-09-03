@@ -20,9 +20,10 @@ import java.io.OutputStream;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class OutputComplexPropertyTest {
+@SuppressWarnings("java:S5976") // Parameterized won't make it more clear.
+class OutputComplexPropertyTest {
     @Test
-    public void testCollection() throws IOException {
+    void testCollection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
@@ -47,7 +48,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testSingle() throws IOException {
+    void testSingle() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
@@ -69,7 +70,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testEnclosedCollection() throws IOException {
+    void testEnclosedCollection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
@@ -96,7 +97,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testWithNoRole() throws IOException {
+    void testWithNoRole() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefObjectItem1 = universe.getObjectType(ItemType.class).createObject();
@@ -120,7 +121,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testWithNoObjectType() throws IOException {
+    void testWithNoObjectType() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         universe.setParameter("paramName", "value");
@@ -141,12 +142,12 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testWithObjectTypeNoRoleKeyAndMainObject() throws IOException {
+    void testWithObjectTypeNoRoleKeyAndMainObject() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson1 = universe.getObjectType(PersonType.class).createObject();
         alefPerson1.getProperty(PersonType.name).setValueDirect("test");
-        final MObject alefPerson2 = setupAlefObjects(universe);
+        universe.getObjectType(PersonType.class).createObject();
         final OutputMessage mockPerson = new OutputMessageMock();
         mockPerson.addField(new OutputAttribute<>("name", true, PersonType.name, new StringToStringWriter()));
         final OutputComplexProperty<PersonType> complexProperty = new OutputComplexProperty<>("person", null, false, true, null, PersonType.class, mockPerson);
@@ -167,7 +168,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testCollectionWithKvPairSection() throws IOException {
+    void testCollectionWithKvPairSection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
@@ -204,7 +205,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testSingleWithKvPairSection() throws IOException {
+    void testSingleWithKvPairSection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
@@ -232,7 +233,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testRequiredWithKvPairSection() throws IOException {
+    void testRequiredWithKvPairSection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = universe.getObjectType(PersonType.class).createObject();
@@ -250,7 +251,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testEnclosedCollectionWithKvPairSection() throws IOException {
+    void testEnclosedCollectionWithKvPairSection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = setupAlefObjects(universe);
@@ -287,7 +288,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testRequiredTrueWithEmptyCollection() throws IOException {
+    void testRequiredTrueWithEmptyCollection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = universe.getObjectType(PersonType.class).createObject();
@@ -307,7 +308,7 @@ public class OutputComplexPropertyTest {
     }
 
     @Test
-    public void testRequiredFalseWithEmptyCollection() throws IOException {
+    void testRequiredFalseWithEmptyCollection() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final MObject alefPerson = universe.getObjectType(PersonType.class).createObject();

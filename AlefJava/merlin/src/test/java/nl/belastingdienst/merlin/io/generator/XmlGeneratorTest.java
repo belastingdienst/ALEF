@@ -12,9 +12,9 @@ import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.createGe
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.getOutput;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class XmlGeneratorTest {
+class XmlGeneratorTest {
     @Test
-    public void testGeneratingTwoCollectionsInSuccession() throws IOException {
+    void testGeneratingTwoCollectionsInSuccession() throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = createGenerator(ContentType.XML, outputStream);
         generator.writeRootFieldName("root");
@@ -48,7 +48,7 @@ public class XmlGeneratorTest {
     }
 
     @Test
-    public void testValueTypeMethods() throws IOException {
+    void testValueTypeMethods() throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = createGenerator(ContentType.XML, outputStream);
         generator.writeRootFieldName("root");
@@ -84,7 +84,7 @@ public class XmlGeneratorTest {
     }
 
     @Test
-    public void testNormalValueMethods() throws IOException {
+    void testNormalValueMethods() throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = createGenerator(ContentType.XML, outputStream);
         generator.writeRootFieldName("root");
@@ -118,7 +118,7 @@ public class XmlGeneratorTest {
     }
 
     @Test
-    public void testValueMethodsWhileProvidingFieldName() throws IOException {
+    void testValueMethodsWhileProvidingFieldName() throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = createGenerator(ContentType.XML, outputStream);
         generator.writeRootFieldName("root");

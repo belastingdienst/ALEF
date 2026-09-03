@@ -14,22 +14,27 @@ public class ValueReturningParserMock implements ContentParser {
 
     @Override
     public void beginObject() throws IOException {
+        // mock
     }
 
     @Override
     public void endObject() throws IOException {
+        // mock
     }
 
     @Override
     public void beginCollection() throws IOException {
+        // mock
     }
 
     @Override
     public void beginEnclosedCollection(String collectionItemFieldName) throws IOException {
+        // mock
     }
 
     @Override
     public void endCollection() throws IOException {
+        // mock
     }
 
     @Override
@@ -49,10 +54,12 @@ public class ValueReturningParserMock implements ContentParser {
 
     @Override
     public void expectName(String expectedFieldName) throws IOException {
+        // mock
     }
 
     @Override
     public void skipValue() throws IOException {
+        // mock
     }
 
     @Override
@@ -77,6 +84,7 @@ public class ValueReturningParserMock implements ContentParser {
 
     @Override
     public void enterKvPairSection() throws IOException {
+        // mock
     }
 
     @Override
@@ -86,22 +94,27 @@ public class ValueReturningParserMock implements ContentParser {
 
     @Override
     public void startRecording() {
+        // mock
     }
 
     @Override
     public void stopRecording() {
+        // mock
     }
 
     @Override
     public void startGatheringLocationInfo() {
+        // mock
     }
 
     @Override
     public void stopGatheringLocationInfo() {
+        // mock
     }
 
     @Override
     public void close() throws IOException {
+        // mock
     }
 
     @Override

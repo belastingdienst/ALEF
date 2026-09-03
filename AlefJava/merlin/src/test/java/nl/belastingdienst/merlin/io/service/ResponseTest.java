@@ -20,9 +20,9 @@ import java.io.OutputStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ResponseTest {
+class ResponseTest {
     @Test
-    public void testComplexProperties() throws IOException {
+    void testComplexProperties() throws IOException {
         final OutputMessage mockItem = new OutputMessageMock();
         mockItem.addField(new OutputAttribute<>("name", false, TypeContextMock.ItemType.name, new StringToStringWriter()));
         mockItem.addField(new OutputAttribute<>("price", false, TypeContextMock.ItemType.price, new RationalToDecimalWriter()));

@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ReadersTest {
+class ReadersTest {
     @Test
     void testBooleanToBooleanReader() throws IOException {
         final ValueReturningParserMock parserMock = new ValueReturningParserMock("true");

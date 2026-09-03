@@ -26,6 +26,7 @@ public class InputIdentifier implements InputField {
 
     @Override
     public void handleDefaultValue(MObject alefObject) {
+        // identifiers originate always external, and have no default value.
     }
 
     @Override

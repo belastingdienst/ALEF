@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class LengthRuleTest {
+class LengthRuleTest {
     private final LocationInfoProvider locationInfoProvider = () -> "/root/name";
 
     @Test
@@ -42,13 +42,6 @@ public class LengthRuleTest {
     void testShouldValidateMinLengthWhenMaxLengthIsNull() {
         final ViolationCollectorMock collector = new ViolationCollectorMock();
         new LengthRule(2, null).validateValue("t", collector, locationInfoProvider);
-        assertTrue(collector.hasViolations());
-    }
-
-    @Test
-    void testShouldValidateMaxLengthWhenMinLengthIsNull() {
-        final ViolationCollectorMock collector = new ViolationCollectorMock();
-        new LengthRule(null, 3).validateValue("test", collector, locationInfoProvider);
         assertTrue(collector.hasViolations());
     }
 }

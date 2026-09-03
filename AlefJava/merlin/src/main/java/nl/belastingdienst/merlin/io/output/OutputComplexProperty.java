@@ -2,7 +2,6 @@ package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.merlin.base.*;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
-import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 
 import java.io.IOException;
 

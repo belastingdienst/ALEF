@@ -9,26 +9,26 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StringToEnumReader<TAlef extends Enum<?> & Labeled> extends AbstractReader<String, TAlef> {
-    private final Map<String, TAlef> lookupMap = new HashMap<>();
+public class StringToEnumReader<T extends Enum<?> & Labeled> extends AbstractReader<String, T> {
+    private final Map<String, T> lookupMap = new HashMap<>();
     private final Map<String, String> mappings;
-    private final Class<TAlef> enumType;
+    private final Class<T> enumType;
 
-    public StringToEnumReader(Class<TAlef> enumType) {
+    public StringToEnumReader(Class<T> enumType) {
         this(enumType, Collections.emptyMap());
     }
 
-    public StringToEnumReader(Class<TAlef> enumType, Map<String, String> mappings) {
+    public StringToEnumReader(Class<T> enumType, Map<String, String> mappings) {
         super(Collections.emptyList(), null);
         this.enumType = enumType;
         this.mappings = mappings;
-        for (TAlef enumConstant : enumType.getEnumConstants()) {
+        for (T enumConstant : enumType.getEnumConstants()) {
             lookupMap.put(enumConstant.getLabel(), enumConstant);
         }
     }
 
     @Override
-    public TAlef read(MUniverse universe, ContentParser parser) throws IOException {
+    public T read(MUniverse universe, ContentParser parser) throws IOException {
         final String lexicalValue = parser.nextValue();
         validateLexical(universe, parser, lexicalValue);
         try {

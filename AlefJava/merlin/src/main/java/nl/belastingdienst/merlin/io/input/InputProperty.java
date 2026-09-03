@@ -4,15 +4,15 @@ import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.alef_runtime.Violation;
 import nl.belastingdienst.merlin.base.*;
 
-public abstract class InputProperty<TAlef> implements InputField {
+public abstract class InputProperty<T> implements InputField {
     private final String fieldName;
-    protected final MPropertyKey<TAlef> propertyKey;
-    protected final MDimensionalPropertyKey<TAlef> dimensionalPropertyKey;
+    protected final MPropertyKey<T> propertyKey;
+    protected final MDimensionalPropertyKey<T> dimensionalPropertyKey;
     protected final Integer dimensionKey;
     private final boolean required;
-    private final TAlef defaultValue;
+    private final T defaultValue;
 
-    public InputProperty(String fieldName, boolean required, TAlef defaultValue, MPropertyKey<TAlef> propertyKey, Integer dimensionKey) {
+    protected InputProperty(String fieldName, boolean required, T defaultValue, MPropertyKey<T> propertyKey, Integer dimensionKey) {
         this.required = required;
         this.fieldName = fieldName;
         this.defaultValue = defaultValue;
@@ -30,7 +30,7 @@ public abstract class InputProperty<TAlef> implements InputField {
         return required;
     }
 
-    public TAlef getDefaultValue() {
+    public T getDefaultValue() {
         return defaultValue;
     }
 
@@ -41,7 +41,6 @@ public abstract class InputProperty<TAlef> implements InputField {
                 alefObject.setPropertyValueOnce(dimensionalPropertyKey, dimensionKey, defaultValue);
             }
         } else if (defaultValue != null && alefObject.getPropertyValue(propertyKey) == null) {
-            //TODO: also support timeboxes to set the value there.
             alefObject.setPropertyValueOnce(propertyKey, defaultValue);
         }
     }
@@ -50,12 +49,12 @@ public abstract class InputProperty<TAlef> implements InputField {
         return propertyKey != null || dimensionalPropertyKey != null;
     }
 
-    protected void setPropertyValueOnce(MUniverse universe, IMPropertyHolder propertyHolder, TAlef inputValue, LocationInfoProvider locationInfoProvider) {
-        final TAlef value = inputValue == null ? defaultValue : inputValue;
+    protected void setPropertyValueOnce(MUniverse universe, IMPropertyHolder propertyHolder, T inputValue, LocationInfoProvider locationInfoProvider) {
+        final T value = inputValue == null ? defaultValue : inputValue;
         if (dimensionalPropertyKey != null) {
             propertyHolder.setPropertyValueOnce(dimensionalPropertyKey, dimensionKey, value);
         } else {
-            final TAlef currentValue = propertyHolder.getPropertyValue(propertyKey);
+            final T currentValue = propertyHolder.getPropertyValue(propertyKey);
             if (currentValue == null || currentValue.equals(value)) {
                 propertyHolder.setPropertyValueOnce(propertyKey, value);
             } else {
@@ -64,8 +63,8 @@ public abstract class InputProperty<TAlef> implements InputField {
         }
     }
 
-    protected void setPropertyValueDirect(IMPropertyHolder propertyHolder, TAlef inputValue) {
-        final TAlef value = inputValue == null ? defaultValue : inputValue;
+    protected void setPropertyValueDirect(IMPropertyHolder propertyHolder, T inputValue) {
+        final T value = inputValue == null ? defaultValue : inputValue;
         if (dimensionalPropertyKey != null) {
             propertyHolder.setPropertyValueDirect(dimensionalPropertyKey, dimensionKey, value);
         } else {
@@ -73,11 +72,11 @@ public abstract class InputProperty<TAlef> implements InputField {
         }
     }
 
-    private boolean isDimensional(MPropertyKey<TAlef> property) {
-        return property instanceof MDimensionalPropertyKey<TAlef>;
+    private boolean isDimensional(MPropertyKey<T> property) {
+        return property instanceof MDimensionalPropertyKey<T>;
     }
 
-    private MDimensionalPropertyKey<TAlef> asDimensionalProperty(MPropertyKey<TAlef> property) {
-        return (MDimensionalPropertyKey<TAlef>) property;
+    private MDimensionalPropertyKey<T> asDimensionalProperty(MPropertyKey<T> property) {
+        return (MDimensionalPropertyKey<T>) property;
     }
 }
