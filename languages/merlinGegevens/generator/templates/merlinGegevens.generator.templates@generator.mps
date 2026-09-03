@@ -26,6 +26,7 @@
     <import index="hqp3" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.eager(alef.runtime/)" />
     <import index="qcmd" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.lazy(alef.runtime/)" />
     <import index="rzok" ref="r:a8fb563d-47c7-4600-a897-619c6d2de4c5(contexts.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -3381,26 +3382,86 @@
         <node concept="3Tm1VV" id="2auzsYho_pO" role="1B3o_S" />
         <node concept="3uibUv" id="2auzsYho_wh" role="1tU5fm">
           <ref role="3uigEE" to="jyki:~MPropertyKey" resolve="MPropertyKey" />
+          <node concept="3uibUv" id="428QPkFUQvn" role="11_B2D">
+            <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+          </node>
         </node>
         <node concept="10Nm6u" id="2auzsYkhJ5f" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEUEb_A" role="jymVt">
+        <property role="TrG5h" value="attrKey2" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm1VV" id="1dZ4qEUEb_B" role="1B3o_S" />
+        <node concept="3uibUv" id="1dZ4qEUEb_C" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MPropertyKey" resolve="MPropertyKey" />
+          <node concept="3uibUv" id="1dZ4qEUEb_D" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+        <node concept="10Nm6u" id="1dZ4qEUEb_E" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEX3KJF" role="jymVt">
+        <property role="TrG5h" value="attrKey3" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm1VV" id="1dZ4qEX3KJG" role="1B3o_S" />
+        <node concept="3uibUv" id="1dZ4qEX3KJH" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MPropertyKey" resolve="MPropertyKey" />
+          <node concept="3uibUv" id="1dZ4qEX3KJI" role="11_B2D">
+            <ref role="3uigEE" to="nhsg:~ITimed" resolve="ITimed" />
+            <node concept="3uibUv" id="1dZ4qEX3Lln" role="11_B2D">
+              <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+            </node>
+          </node>
+        </node>
+        <node concept="10Nm6u" id="1dZ4qEX3KJJ" role="33vP2m" />
       </node>
       <node concept="Wx3nA" id="2auzsYks9mF" role="jymVt">
         <property role="TrG5h" value="kenmerkKey" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="2auzsYks9mG" role="1tU5fm">
           <ref role="3uigEE" to="jyki:~MKenmerkKey" resolve="MKenmerkKey" />
+          <node concept="3uibUv" id="428QPkFUQLr" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+          </node>
         </node>
         <node concept="3Tm1VV" id="2auzsYks9n2" role="1B3o_S" />
         <node concept="10Nm6u" id="2auzsYksFV9" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEX3ETE" role="jymVt">
+        <property role="TrG5h" value="kenmerkKey2" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="1dZ4qEX3ETF" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MKenmerkKey" resolve="MKenmerkKey" />
+          <node concept="3uibUv" id="1dZ4qEX3ETG" role="11_B2D">
+            <ref role="3uigEE" to="nhsg:~IValidity" resolve="IValidity" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1dZ4qEX3ETH" role="1B3o_S" />
+        <node concept="10Nm6u" id="1dZ4qEX3ETI" role="33vP2m" />
       </node>
       <node concept="Wx3nA" id="2auzsYksaSG" role="jymVt">
         <property role="TrG5h" value="dimensionalAttrKey" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="2auzsYksaSH" role="1tU5fm">
           <ref role="3uigEE" to="jyki:~MDimensionalPropertyKey" resolve="MDimensionalPropertyKey" />
+          <node concept="3uibUv" id="428QPkFURf1" role="11_B2D">
+            <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+          </node>
         </node>
         <node concept="3Tm1VV" id="2auzsYksaSK" role="1B3o_S" />
         <node concept="10Nm6u" id="2auzsYksbmw" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEWURE6" role="jymVt">
+        <property role="TrG5h" value="dimensionalAttrKey2" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="1dZ4qEWURE7" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MDimensionalPropertyKey" resolve="MDimensionalPropertyKey" />
+          <node concept="3uibUv" id="1dZ4qEWURE8" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1dZ4qEWURE9" role="1B3o_S" />
+        <node concept="10Nm6u" id="1dZ4qEWUREa" role="33vP2m" />
       </node>
       <node concept="3Tm1VV" id="10UkTy6dGAF" role="1B3o_S" />
       <node concept="3uibUv" id="2auzsYho$JC" role="1zkMxy">

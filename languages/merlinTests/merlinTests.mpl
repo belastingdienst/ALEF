@@ -23,7 +23,9 @@
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="275c6f39-896d-4050-9470-394cb099be3b(merlinGegevens.generator)" />
+      </external-templates>
       <dependencies>
         <dependency reexport="false">8bc962c0-cb3c-49f0-aa03-23c3bc0304b0(testspraak)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>

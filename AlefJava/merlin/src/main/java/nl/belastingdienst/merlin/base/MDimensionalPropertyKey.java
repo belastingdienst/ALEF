@@ -45,4 +45,14 @@ public class MDimensionalPropertyKey<T> extends MPropertyKey<T> {
         return true;
     }
 
+    public T get(MObject object, int dimKey) {
+        if (object == null) return null;
+        return object.getProperty(this, dimKey).get();
+    }
+    
+    public Vectorspace<MProperty<T>> getVectorspace(MObject object) {
+        if (object == null) return new Vectorspace<>(getDimensionss());
+        return object.getProperty(this).get();
+    }
+
 }

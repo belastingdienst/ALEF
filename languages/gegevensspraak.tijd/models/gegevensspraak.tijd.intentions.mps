@@ -451,7 +451,7 @@
         <node concept="3clFbF" id="78k2JWEPWq4" role="3cqZAp">
           <node concept="3cpWs3" id="78k2JWEPWq5" role="3clFbG">
             <node concept="Xl_RD" id="78k2JWEPWq6" role="3uHU7w">
-              <property role="Xl_RC" value=" Tijdsafhankelijk (Voorproef Versie)" />
+              <property role="Xl_RC" value=" Tijdsafhankelijk" />
             </node>
             <node concept="3cpWs3" id="78k2JWEPWq7" role="3uHU7B">
               <node concept="Xl_RD" id="78k2JWEPWq8" role="3uHU7B">

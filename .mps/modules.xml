@@ -129,6 +129,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/JSONParse_Test/JSONParse_Test.msd" folder="test.alef.plugins" />
       <modulePath path="$PROJECT_DIR$/solutions/Literal_Test/Literal_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/MeerdereObjecten_Test/MeerdereObjecten_Test.msd" folder="test.alef" />
+      <modulePath path="$PROJECT_DIR$/solutions/MerlinTests/MerlinTests.msd" folder="test.alef.spraken" />
       <modulePath path="$PROJECT_DIR$/solutions/ModelChecks_Test/ModelChecks_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/MpsUtils/mpsUtils.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/ObjExtensies/ObjExtensies.msd" folder="test.alef.hergebruik" />

@@ -37,4 +37,10 @@ public class MPropertyKey<T> extends MBaseKey {
     public boolean isRol() {
         return false;
     }
+
+    public T get(MObject object) {
+        if (object == null) return null;
+        return object.getProperty(this).get();
+    }
+
 }
