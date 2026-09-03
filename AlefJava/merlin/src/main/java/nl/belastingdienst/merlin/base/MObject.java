@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class MObject extends MBase implements IMDelegatedExecution {
+public class MObject extends MBase implements IMDelegatedExecution, IMPropertyHolder {
     public static class NoObject extends MObject {
         public NoObject(MUniverse universe) {
             super(universe);
@@ -143,6 +143,31 @@ public class MObject extends MBase implements IMDelegatedExecution {
     public <T> MProperty<T> getProperty(MDimensionalPropertyKey<T> key, int sleutel) {
         MVectorSpaceProperty<T> property = (MVectorSpaceProperty<T>) getProperty(key);
         return property.getPropertyByKey(sleutel);
+    }
+
+    @Override
+    public <T> T getPropertyValue(MPropertyKey<T> propertyKey) {
+        return getProperty(propertyKey).getValueDirect();
+    }
+
+    @Override
+    public <T> void setPropertyValueDirect(MPropertyKey<T> propertyKey, T value) {
+        getProperty(propertyKey).setValueDirect(value);
+    }
+
+    @Override
+    public <T> void setPropertyValueDirect(MDimensionalPropertyKey<T> propertyKey, Integer dimensionKey, T value) {
+        getProperty(propertyKey, dimensionKey).setValueDirect(value);
+    }
+
+    @Override
+    public <T> void setPropertyValueOnce(MPropertyKey<T> propertyKey, T value) {
+        getProperty(propertyKey).setValueOnce(value);
+    }
+
+    @Override
+    public <T> void setPropertyValueOnce(MDimensionalPropertyKey<T> propertyKey, Integer dimensionKey, T value) {
+        getProperty(propertyKey, dimensionKey).setValueOnce(value);
     }
 
     public <T> MProperty<T> getPropertyByIndex(MDimensionalPropertyKey<T> key, int ... index) {
