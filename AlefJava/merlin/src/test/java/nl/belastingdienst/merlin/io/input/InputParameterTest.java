@@ -11,9 +11,9 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-public class InputParameterTest {
+class InputParameterTest {
     @Test
-    public void testParameter() throws IOException {
+    void testParameter() throws IOException {
         final InputParameter<String> inputParameter = new InputParameter<>("testParam", "paramname", false, new StringToStringReader());
         final MUniverse universe = new MUniverse(true);
         final ContentParser parser = new ValueReturningParserMock("test");
@@ -22,7 +22,7 @@ public class InputParameterTest {
     }
 
     @Test
-    public void testSmallMethods() {
+    void testSmallMethods() {
         final InputParameter<String> inputParameter = new InputParameter<>("testParam", "paramname", false, new StringToStringReader());
         assertFalse(inputParameter.isRequired());
         assertEquals("testParam", inputParameter.getFieldName());

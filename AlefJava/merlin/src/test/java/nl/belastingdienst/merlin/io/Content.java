@@ -7,19 +7,19 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Simple Attribute Content
     // -----------------------------------------------------------------------------
-    public final static String SIMPLE_ATTRIBUTE_JSON_CONTENT = """
+    public static final String SIMPLE_ATTRIBUTE_JSON_CONTENT = """
             {
-                "value" : "test"
+                "value" : "10"
             }
             """;
-    public final static String SIMPLE_ATTRIBUTE_XML_CONTENT = """
-            <root value="test"/>
+    public static final String SIMPLE_ATTRIBUTE_XML_CONTENT = """
+            <root value="10"/>
             """;
-    public final static String SIMPLE_ATTRIBUTE_KV_PAIR_CONTENT = """
+    public static final String SIMPLE_ATTRIBUTE_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>value</key>
-                    <valueString>test</valueString>
+                    <valueString>10</valueString>
                 </KeyValuePairs>
             </root>
             """;
@@ -27,17 +27,17 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Simple Object Content
     // -----------------------------------------------------------------------------
-    public final static String SIMPLE_OBJECT_JSON_CONTENT = """
+    public static final String SIMPLE_OBJECT_JSON_CONTENT = """
             {
                 "value" : "test"
             }
             """;
-    public final static String SIMPLE_OBJECT_XML_CONTENT = """
+    public static final String SIMPLE_OBJECT_XML_CONTENT = """
             <root>
                 <value>test</value>
             </root>
             """;
-    public final static String SIMPLE_OBJECT_KV_PAIR_CONTENT = """
+    public static final String SIMPLE_OBJECT_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>value</key>
@@ -49,19 +49,19 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Simple Collection Content
     // -----------------------------------------------------------------------------
-    public final static String SIMPLE_COLLECTION_JSON_CONTENT = """
+    public static final String SIMPLE_COLLECTION_JSON_CONTENT = """
             {
                 "values" : [1, 2, 3]
             }
             """;
-    public final static String SIMPLE_COLLECTION_XML_CONTENT = """
+    public static final String SIMPLE_COLLECTION_XML_CONTENT = """
             <root>
                 <values>1</values>
                 <values>2</values>
                 <values>3</values>
             </root>
             """;
-    public final static String SIMPLE_COLLECTION_KV_PAIR_CONTENT = """
+    public static final String SIMPLE_COLLECTION_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>values</key>
@@ -81,7 +81,7 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Enclosed Collection With Objects Content
     // -----------------------------------------------------------------------------
-    public final static String ENCLOSED_COLLECTION_WITH_OBJECTS_JSON_CONTENT = """
+    public static final String ENCLOSED_COLLECTION_WITH_OBJECTS_JSON_CONTENT = """
             {
                 "persons" : [
                     { "name": "test1" },
@@ -90,7 +90,7 @@ public final class Content {
                 ]
             }
             """;
-    public final static String ENCLOSED_COLLECTION_WITH_OBJECTS_XML_CONTENT = """
+    public static final String ENCLOSED_COLLECTION_WITH_OBJECTS_XML_CONTENT = """
             <root>
                 <persons>
                     <person>
@@ -105,7 +105,7 @@ public final class Content {
                 </persons>
             </root>
             """;
-    public final static String ENCLOSED_COLLECTION_WITH_OBJECTS_KV_PAIR_CONTENT = """
+    public static final String ENCLOSED_COLLECTION_WITH_OBJECTS_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>persons</key>
@@ -145,7 +145,7 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Nested Enclosed Collection Content
     // -----------------------------------------------------------------------------
-    public final static String NESTED_ENCLOSED_COLLECTION_JSON_CONTENT = """
+    public static final String NESTED_ENCLOSED_COLLECTION_JSON_CONTENT = """
             {
                 "persons" : [
                     [1, 2],
@@ -153,7 +153,7 @@ public final class Content {
                 ]
             }
             """;
-    public final static String NESTED_ENCLOSED_COLLECTION_XML_CONTENT = """
+    public static final String NESTED_ENCLOSED_COLLECTION_XML_CONTENT = """
             <root>
                 <persons>
                     <items>
@@ -167,7 +167,7 @@ public final class Content {
                 </persons>
             </root>
             """;
-    public final static String NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT = """
+    public static final String NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>persons</key>
@@ -206,7 +206,7 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Nested Objects In Collection Content
     // -----------------------------------------------------------------------------
-    public final static String NESTED_OBJECTS_IN_COLLECTION_JSON_CONTENT = """
+    public static final String NESTED_OBJECTS_IN_COLLECTION_JSON_CONTENT = """
             {
                 "persons" : [
                     {
@@ -219,7 +219,7 @@ public final class Content {
             }
             """;
 
-    public final static String NESTED_OBJECTS_IN_COLLECTION_XML_CONTENT = """
+    public static final String NESTED_OBJECTS_IN_COLLECTION_XML_CONTENT = """
             <root>
                 <persons>
                     <person>
@@ -233,7 +233,7 @@ public final class Content {
             </root>
             """;
 
-    public final static String NESTED_OBJECTS_IN_COLLECTION_KV_PAIR_CONTENT = """
+    public static final String NESTED_OBJECTS_IN_COLLECTION_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>persons</key>
@@ -268,7 +268,7 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Complex Nested Structure Content
     // -----------------------------------------------------------------------------
-    public final static String COMPLEX_NESTED_STRUCTURE_JSON_CONTENT = """
+    public static final String COMPLEX_NESTED_STRUCTURE_JSON_CONTENT = """
             {
                 "persons" : [
                     {
@@ -281,7 +281,7 @@ public final class Content {
             }
             """;
 
-    public final static String COMPLEX_NESTED_STRUCTURE_XML_CONTENT = """
+    public static final String COMPLEX_NESTED_STRUCTURE_XML_CONTENT = """
             <root>
                 <persons>
                     <person>
@@ -300,7 +300,7 @@ public final class Content {
             </root>
             """;
 
-    public final static String COMPLEX_NESTED_STRUCTURE_KV_PAIR_CONTENT = """
+    public static final String COMPLEX_NESTED_STRUCTURE_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>persons</key>
@@ -348,7 +348,7 @@ public final class Content {
     // -----------------------------------------------------------------------------
     // Values content
     // -----------------------------------------------------------------------------
-    public final static String VALUES_JSON_CONTENT = """
+    public static final String VALUES_JSON_CONTENT = """
             {
                 "age" : 18,
                 "salary" : 1300.12,
@@ -358,7 +358,7 @@ public final class Content {
             }
             """;
 
-    public final static String VALUES_XML_CONTENT = """
+    public static final String VALUES_XML_CONTENT = """
             <root>
                 <age>18</age>
                 <salary>1300.12</salary>
@@ -368,7 +368,7 @@ public final class Content {
             </root>
             """;
 
-    public final static String VALUES_KV_PAIR_CONTENT = """
+    public static final String VALUES_KV_PAIR_CONTENT = """
             <root>
                 <KeyValuePairs>
                     <key>age</key>

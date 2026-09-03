@@ -18,9 +18,9 @@ import java.io.OutputStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class OutputMessageTest {
+class OutputMessageTest {
     @Test
-    public void testSimpleFields() throws IOException {
+    void testSimpleFields() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final OutputMessage mock = new OutputMessageMock();
@@ -43,7 +43,7 @@ public class OutputMessageTest {
     }
 
     @Test
-    public void testComplexFields() throws IOException {
+    void testComplexFields() throws IOException {
         // Given
         final MUniverse universe = new MUniverse(true);
         final OutputMessage mockItem = new OutputMessageMock();

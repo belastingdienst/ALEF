@@ -8,21 +8,22 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class JsonGenerator extends AbstractGenerator {
-    private final com.fasterxml.jackson.core.JsonGenerator jsonGenerator;
+    private final com.fasterxml.jackson.core.JsonGenerator internalGenerator;
 
     public JsonGenerator(final OutputStream outputStream) throws IOException {
         final JsonFactory factory = JsonFactory.builder().build();
-        jsonGenerator = factory.createGenerator(outputStream);
-        jsonGenerator.useDefaultPrettyPrinter();
+        internalGenerator = factory.createGenerator(outputStream);
+        internalGenerator.useDefaultPrettyPrinter();
     }
 
     @Override
     protected com.fasterxml.jackson.core.JsonGenerator getGenerator() {
-        return jsonGenerator;
+        return internalGenerator;
     }
 
     @Override
     public void writeRootFieldName(String fieldName) throws IOException {
+        // only necessary for XML implementation
     }
 
     @Override

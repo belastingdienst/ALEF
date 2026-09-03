@@ -64,6 +64,7 @@ public class XmlParser extends JacksonParser {
     }
 
     @Override
+    @SuppressWarnings({"java:S135", "java:S3776"}) // STATE machine
     protected final ContentToken internalNextToken(boolean isPeeking) throws IOException {
         if (isPeeking) {
             return internalNextTokenWhilePeeking();
@@ -158,11 +159,7 @@ public class XmlParser extends JacksonParser {
                         if (expectedXmlState == XmlState.END_COLLECTION) {
                             expectedXmlState = null;
                         }
-                        if (collections.peek().isEnclosedCollection()) {
-                            setXmlState(XmlState.END_COLLECTION_WITH_REUSE, isPeeking);
-                        } else {
-                            setXmlState(XmlState.END_COLLECTION_WITH_REUSE, isPeeking);
-                        }
+                        setXmlState(XmlState.END_COLLECTION_WITH_REUSE, isPeeking);
                         continue;
                     } else if (nextToken == ContentToken.VALUE_STRING) {
                         // happens at the begin of a collection
@@ -218,6 +215,7 @@ public class XmlParser extends JacksonParser {
         return internalNextToken(false);
     }
 
+    @Override
     protected ContentToken retrieveCurrentToken() throws IOException {
         return peekedToken == null ? super.retrieveCurrentToken() : peekedToken;
     }
@@ -245,8 +243,7 @@ public class XmlParser extends JacksonParser {
             peekedToken = null;
             return result;
         }
-        ContentToken token = retrieveNextToken(false);
-        return token;
+        return retrieveNextToken(false);
     }
 
     private boolean isInsideCollection() {

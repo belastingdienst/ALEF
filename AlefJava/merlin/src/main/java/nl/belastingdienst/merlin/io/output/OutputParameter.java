@@ -7,13 +7,13 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
 
-public class OutputParameter<TAlef, TMessage> implements OutputField {
+public class OutputParameter<A, M> implements OutputField {
     private final String fieldName;
     private final String parameterName;
     private final boolean onlyOutputWhenEvaluated;
-    private final ContentWriter<TAlef> writer;
+    private final ContentWriter<A> writer;
 
-    public OutputParameter(String fieldName, String parameterName, boolean onlyOutputWhenEvaluated, ContentWriter<TAlef> writer) {
+    public OutputParameter(String fieldName, String parameterName, boolean onlyOutputWhenEvaluated, ContentWriter<A> writer) {
         this.fieldName = fieldName;
         this.parameterName = parameterName;
         this.onlyOutputWhenEvaluated = onlyOutputWhenEvaluated;
@@ -31,7 +31,7 @@ public class OutputParameter<TAlef, TMessage> implements OutputField {
         if (onlyOutputWhenEvaluated && !universe.isParameterEvaluated(parameterName)) {
             return;
         }
-        final TAlef value = (TAlef) universe.getParameter(parameterName);
+        final A value = (A) universe.getParameter(parameterName);
         if (value != null) {
             contentGenerator.writeFieldName(fieldName);
             writer.write(contentGenerator, value);

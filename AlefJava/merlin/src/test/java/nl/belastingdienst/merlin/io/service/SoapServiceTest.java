@@ -26,9 +26,9 @@ import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SoapServiceTest {
+class SoapServiceTest {
     @Test
-    public void testSoapService() throws IOException {
+    void testSoapService() throws IOException {
         final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
         mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
         mockItem.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
@@ -95,7 +95,7 @@ public class SoapServiceTest {
     }
 
     @Test
-    public void testSoapService2() throws IOException {
+    void testSoapService2() throws IOException {
         final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
         mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
         mockItem.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));

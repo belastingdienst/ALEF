@@ -7,9 +7,10 @@ import java.io.IOException;
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.asInputStream;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ParserOtherTest {
+@SuppressWarnings("java:S5976") // using Parameterized would complicate this class
+class ParserOtherTest {
     @Test
-    public void testIsInsideKvPairSection() throws IOException {
+    void testIsInsideKvPairSection() throws IOException {
         final String xml = """
                 <message></message>
                 """;
@@ -22,7 +23,7 @@ public class ParserOtherTest {
     }
 
     @Test
-    public void testExpectNameMethod() throws IOException {
+    void testExpectNameMethod() throws IOException {
         final String xml = """
                 <message><value1></value1><value2></value2></message>
                 """;
@@ -32,47 +33,33 @@ public class ParserOtherTest {
         parser.nextValue();
         assertThrows(IllegalStateException.class, () -> {
             parser.expectName("wrongName");
-            parser.nextValue();
-            parser.endObject();
         });
     }
 
     @Test
-    public void testSkipEmptyValue() throws IOException {
+    void testSkipEmptyValue() throws IOException {
         final String xml = """
                 <message>
                     <skip></skip>
                     <value>expected</value>
                 </message>
                 """;
-        final ContentParser parser = new XmlParser(asInputStream(xml), null);
-        parser.beginObject();
-        parser.expectName("skip");
-        parser.skipValue();
-        parser.expectName("value");
-        assertEquals("expected", parser.nextValue());
-        parser.endObject();
+        parseXml(xml);
     }
 
     @Test
-    public void testSkipPrimitiveValue() throws IOException {
+    void testSkipPrimitiveValue() throws IOException {
         final String xml = """
                 <message>
                     <skip>ignored</skip>
                     <value>expected</value>
                 </message>
                 """;
-        final ContentParser parser = new XmlParser(asInputStream(xml), null);
-        parser.beginObject();
-        parser.expectName("skip");
-        parser.skipValue();
-        parser.expectName("value");
-        assertEquals("expected", parser.nextValue());
-        parser.endObject();
+        parseXml(xml);
     }
 
     @Test
-    public void testSkipObject() throws IOException {
+    void testSkipObject() throws IOException {
         final String xml = """
                 <message>
                     <skip>
@@ -83,17 +70,11 @@ public class ParserOtherTest {
                 </message>
                 """;
 
-        final ContentParser parser = new XmlParser(asInputStream(xml), null);
-        parser.beginObject();
-        parser.expectName("skip");
-        parser.skipValue();
-        parser.expectName("value");
-        assertEquals("expected", parser.nextValue());
-        parser.endObject();
+        parseXml(xml);
     }
 
     @Test
-    public void testSkipNestedObject() throws IOException {
+    void testSkipNestedObject() throws IOException {
         final String xml = """
                 <message>
                     <skip>
@@ -108,17 +89,11 @@ public class ParserOtherTest {
                     <value>expected</value>
                 </message>
                 """;
-        final ContentParser parser = new XmlParser(asInputStream(xml), null);
-        parser.beginObject();
-        parser.expectName("skip");
-        parser.skipValue();
-        parser.expectName("value");
-        assertEquals("expected", parser.nextValue());
-        parser.endObject();
+        parseXml(xml);
     }
 
     @Test
-    public void testSkipObjectWithMultipleNestedObjects() throws IOException {
+    void testSkipObjectWithMultipleNestedObjects() throws IOException {
         final String xml = """
                 <message>
                     <skip>
@@ -137,6 +112,10 @@ public class ParserOtherTest {
                     <value>expected</value>
                 </message>
                 """;
+        parseXml(xml);
+    }
+
+    private static void parseXml(String xml) throws IOException {
         final ContentParser parser = new XmlParser(asInputStream(xml), null);
         parser.beginObject();
         parser.expectName("skip");
@@ -147,7 +126,7 @@ public class ParserOtherTest {
     }
 
     @Test
-    public void testSkipJsonObject() throws IOException {
+    void testSkipJsonObject() throws IOException {
         final String json = """
                 {
                     "skip": {
@@ -169,7 +148,7 @@ public class ParserOtherTest {
     }
 
     @Test
-    public void testSkipJsonCollection() throws IOException {
+    void testSkipJsonCollection() throws IOException {
         final String json = """
                 {
                     "skip": [

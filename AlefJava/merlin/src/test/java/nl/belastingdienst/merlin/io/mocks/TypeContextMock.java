@@ -8,7 +8,7 @@ import nl.belastingdienst.merlin.base.*;
 import java.time.LocalDateTime;
 
 public class TypeContextMock extends MTypeContext {
-    public TypeContextMock(MUniverse universe) {
+    public TypeContextMock() {
         super();
     }
 

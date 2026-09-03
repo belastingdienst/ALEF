@@ -5,18 +5,16 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
 
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.createGenerator;
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.getOutput;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class KvPairGeneratorTest {
+class KvPairGeneratorTest {
     @Test
-    public void testValueTypes() throws IOException {
+    void testValueTypes() throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = createGenerator(ContentType.KV_PAIR, outputStream);
         generator.writeRootFieldName("root");
@@ -81,7 +79,7 @@ public class KvPairGeneratorTest {
     }
 
     @Test
-    public void testOutsideKvPairSection() throws IOException {
+    void testOutsideKvPairSection() throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = createGenerator(ContentType.KV_PAIR, outputStream);
         generator.writeRootFieldName("root");

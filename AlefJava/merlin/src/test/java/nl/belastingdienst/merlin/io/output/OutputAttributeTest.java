@@ -16,9 +16,9 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class OutputAttributeTest extends AbstractOutputTest {
+class OutputAttributeTest extends AbstractOutputTest {
     @Test
-    public void testStringValue() throws IOException {
+    void testStringValue() throws IOException {
         final OutputAttribute<String> attribute = new OutputAttribute<>("forName", false, PersonType.name, new StringToStringWriter());
         final String actualJson = generate(attribute, PersonType.name, "testName");
         final String expectedJson = """
@@ -29,7 +29,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testNumberValue() throws IOException {
+    void testNumberValue() throws IOException {
         final OutputAttribute<BigRational> attribute = new OutputAttribute<>("age", false, PersonType.age, new RationalToDecimalWriter());
         final String actualJson = generate(attribute, PersonType.age, BigRational.valueOf(45));
         final String expectedJson = """
@@ -40,7 +40,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testBooleanValue() throws IOException {
+    void testBooleanValue() throws IOException {
         final OutputAttribute<Boolean> attribute = new OutputAttribute<>("bikeOwner", false, PersonType.bikeOwner, new BooleanToBooleanWriter());
         final String actualJson = generate(attribute, PersonType.bikeOwner, true);
         final String expectedJson = """
@@ -51,7 +51,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testDateValue() throws IOException {
+    void testDateValue() throws IOException {
         final OutputAttribute<LocalDateTime> attribute = new OutputAttribute<>("birthDate", false, PersonType.birthDate, new DateTimeToDateWriter());
         final String actualJson = generate(attribute, PersonType.birthDate, LocalDateTime.of(2020, 1, 1, 0, 0));
         final String expectedJson = """
@@ -62,7 +62,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testTimedValue() throws IOException {
+    void testTimedValue() throws IOException {
         final OutputAttribute<ITimed<BigRational>> attribute = new OutputAttribute<>("mortgageAmount", false, PersonType.mortgageAmount,
                 new TimedWriter<>(new TimelineInfo(true), new RationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, Timed.of(TimeBox.make(BigRational.valueOf(100), Period.ALWAYS)));
@@ -76,7 +76,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testDimensions() throws IOException {
+    void testDimensions() throws IOException {
         final OutputAttribute<BigRational> attribute = new OutputAttribute<>("salary", false, PersonType.salary, 1, new RationalToDecimalWriter());
         final String actualJson = generate(attribute, PersonType.salary, 1, BigRational.valueOf(45));
         final String expectedJson = """
@@ -87,7 +87,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyValue() throws IOException {
+    void testEmptyValue() throws IOException {
         final OutputAttribute<Boolean> attribute = new OutputAttribute<>("bikeOwner", false, PersonType.bikeOwner, new BooleanToBooleanWriter());
         final String actualJson = generate(attribute, PersonType.bikeOwner, null);
         final String expectedJson = "{ }";
@@ -95,7 +95,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testNullTimedValue() throws IOException {
+    void testNullTimedValue() throws IOException {
         final OutputAttribute<ITimed<BigRational>> attribute = new OutputAttribute<>("mortgageAmount", false, PersonType.mortgageAmount,
                 new TimedWriter<>(new TimelineInfo(true), new RationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, null);
@@ -104,7 +104,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyTimedValue() throws IOException {
+    void testEmptyTimedValue() throws IOException {
         final OutputAttribute<ITimed<BigRational>> attribute = new OutputAttribute<>("mortgageAmount", false, PersonType.mortgageAmount,
                 new TimedWriter<>(new TimelineInfo(true), new RationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, Timed.of(TimeBox.make(null, Period.ALWAYS)));
@@ -113,7 +113,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyValueWhileRequired() throws IOException {
+    void testEmptyValueWhileRequired() throws IOException {
         final OutputAttribute<Boolean> attribute = new OutputAttribute<>("bikeOwner", true, PersonType.bikeOwner, new BooleanToBooleanWriter());
         final String actualJson = generate(attribute, PersonType.bikeOwner, null);
         final String expectedJson = """
@@ -124,7 +124,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyTimedValueWhileRequired() throws IOException {
+    void testEmptyTimedValueWhileRequired() throws IOException {
         final OutputAttribute<ITimed<BigRational>> attribute = new OutputAttribute<>("mortgageAmount", true, PersonType.mortgageAmount,
                 new TimedWriter<>(new TimelineInfo(true), new RationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, null);
@@ -136,7 +136,7 @@ public class OutputAttributeTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyValueWhileRequiredWithXml() throws IOException {
+    void testEmptyValueWhileRequiredWithXml() throws IOException {
         final OutputAttribute<Boolean> attribute = new OutputAttribute<>("bikeOwner", true, PersonType.bikeOwner, new BooleanToBooleanWriter());
         final String actualJson = generate(attribute, PersonType.bikeOwner, null, ContentType.XML);
         final String expectedJson = """

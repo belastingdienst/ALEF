@@ -16,7 +16,7 @@ public abstract class Response {
     private final String serviceVersion;
     private final boolean useConsistencyFlag;
 
-    public Response(AdapterRegistry registry, String serviceVersion, boolean useConsistencyFlag) {
+    protected Response(AdapterRegistry registry, String serviceVersion, boolean useConsistencyFlag) {
         this.serviceVersion = serviceVersion;
         this.useConsistencyFlag = useConsistencyFlag;
         initialize(registry);

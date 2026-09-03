@@ -5,6 +5,7 @@ import java.time.format.DateTimeParseException;
 import java.util.Collection;
 import java.util.regex.Pattern;
 
+@SuppressWarnings("java:S1192") // introducing constants voor "Waarde " will make the error messages less clear
 public final class Validators {
     private Validators() {
     }
@@ -96,11 +97,14 @@ public final class Validators {
     }
 
     public static void parseBooleanError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value) {
+        violationCollector.add(Violation.of("boolean", withLocation("Waarde '" + value + "' is geen geldige boolean voor", locationInfoProvider)));
     }
 
     public static void parseNumberError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value, NumberFormatException e) {
+        violationCollector.add(Violation.of("number", withLocation("Waarde '" + value + "' is geen geldig getal voor", locationInfoProvider)));
     }
 
     public static void parseDateTimeError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value, DateTimeParseException e) {
+        violationCollector.add(Violation.of("dateTime", withLocation("Waarde '" + value + "' is geen geldige datum/tijd voor", locationInfoProvider)));
     }
 }

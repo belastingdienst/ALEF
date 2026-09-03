@@ -16,9 +16,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ValidityReaderTest {
+class ValidityReaderTest {
     @Test
-    public void testTimedReader() throws IOException {
+    void testTimedReader() throws IOException {
         final String xml = """
                 {
                     "values" : [
@@ -37,7 +37,7 @@ public class ValidityReaderTest {
 
 
     @Test
-    public void testTimedReaderWithMultipleItems() throws IOException {
+    void testTimedReaderWithMultipleItems() throws IOException {
         final String xml = """
                 {
                     "values" : [
@@ -60,7 +60,7 @@ public class ValidityReaderTest {
     }
 
     @Test
-    public void testTimedReaderWithMissingFields() throws IOException {
+    void testTimedReaderWithMissingFields() throws IOException {
         final String xml = """
                 {
                     "values" : [

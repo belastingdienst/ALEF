@@ -29,6 +29,7 @@ public class KvPairGenerator extends XmlGenerator {
         return insideKvPairSection;
     }
 
+    @Override
     public final void internalBeginObject() throws IOException {
         if (insideKvPairSection) {
             writeBeginKeyValuePair(getCurrentFieldName());
@@ -40,6 +41,7 @@ public class KvPairGenerator extends XmlGenerator {
         }
     }
 
+    @Override
     public final void internalEndObject() throws IOException {
         if (insideKvPairSection) {
             getGenerator().writeEndObject();

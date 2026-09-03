@@ -1,11 +1,13 @@
 package nl.belastingdienst.merlin.io.adapter.writers;
 
-import nl.belastingdienst.alef_runtime.time.*;
+import nl.belastingdienst.alef_runtime.time.IValidity;
+import nl.belastingdienst.alef_runtime.time.Period;
+import nl.belastingdienst.alef_runtime.time.TimeBox;
+import nl.belastingdienst.alef_runtime.time.Valid;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
-import java.util.List;
 
 public class ValidityWriter extends AbstractTimedWriter<IValidity> implements FeatureSupport<IValidity> {
     public ValidityWriter(TimelineInfo timelineInfo) {

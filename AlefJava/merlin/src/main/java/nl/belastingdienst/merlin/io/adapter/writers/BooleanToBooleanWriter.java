@@ -29,10 +29,10 @@ public class BooleanToBooleanWriter implements FeatureSupport<Boolean> {
 
     @Override
     public void featureWrite(ContentGenerator contentGenerator, Boolean value) throws IOException {
-        contentGenerator.writeBoolean(valueTypeName, toOutputValue(value == null ? false : value));
+        contentGenerator.writeBoolean(valueTypeName, toOutputValue(Boolean.TRUE.equals(value)));
     }
 
-    protected Boolean toOutputValue(Boolean value) throws IOException {
+    protected Boolean toOutputValue(Boolean value) {
         Boolean outputValue;
         if (converter != null) {
             outputValue = converter.convert(value);

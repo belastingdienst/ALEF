@@ -10,5 +10,6 @@ public class ResponseMock extends Response {
 
     @Override
     public void initialize(AdapterRegistry registry) {
+        // is initialized in tests
     }
 }

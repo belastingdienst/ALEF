@@ -23,9 +23,9 @@ import java.util.List;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class InputComplexPropertyTest {
+class InputComplexPropertyTest {
     @Test
-    public void testParsingCollectionOfElements() throws IOException {
+    void testParsingCollectionOfElements() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.MULTIPLE,
@@ -55,7 +55,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testParsingSingleElement() throws IOException {
+    void testParsingSingleElement() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE,
@@ -78,7 +78,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testReadAndThenProcessForCollectionOfElements() throws IOException {
+    void testReadAndThenProcessForCollectionOfElements() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.MULTIPLE,
@@ -106,7 +106,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testReadAndThenProcessForMultiple() throws IOException {
+    void testReadAndThenProcessForMultiple() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.MULTIPLE,
@@ -132,7 +132,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testReadAndThenProcessForKeyValuePairs() throws IOException {
+    void testReadAndThenProcessForKeyValuePairs() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", "name", false, mockPerson, Cardinality.SINGLE,
@@ -163,7 +163,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testWithNoEnclosingElement() throws IOException {
+    void testWithNoEnclosingElement() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", null, false, mockPerson, Cardinality.MULTIPLE,
@@ -192,7 +192,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testSingleCardinalityWithEnclosingElement() throws IOException {
+    void testSingleCardinalityWithEnclosingElement() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("persons", "person", false, mockPerson, Cardinality.SINGLE,
@@ -218,7 +218,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testSingleCardinalityWithEnclosingElementForJson() throws IOException {
+    void testSingleCardinalityWithEnclosingElementForJson() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("persons", "person", false, mockPerson, Cardinality.SINGLE,
@@ -242,7 +242,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testWithNoEnclosingElementForSingleElement() throws IOException {
+    void testWithNoEnclosingElementForSingleElement() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
         final InputComplexProperty inputProperty = new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE,
@@ -266,7 +266,7 @@ public class InputComplexPropertyTest {
     }
 
     @Test
-    public void testWithNoFactType() throws IOException {
+    void testWithNoFactType() throws IOException {
         final InputMessageMock<PersonType> mockPersonPart1 = new InputMessageMock<>(PersonType.class);
         mockPersonPart1.addElement(new InputAttribute<>("address", false, null, PersonType.address, new StringToStringReader()));
         final InputMessageMock<PersonType> mockPersonPart2 = new InputMessageMock<>(PersonType.class);
@@ -288,8 +288,8 @@ public class InputComplexPropertyTest {
         xmlParser.nextName();
         final MObject alefObject = mockPersonPart2.parse(universe, xmlParser);
         xmlParser.endObject();
-        //check for name
-        //check for address
+        assertEquals("test", alefObject.getProperty(PersonType.name).get());
+        assertEquals("address", alefObject.getProperty(PersonType.address).get());
     }
 
     private void sortByFactType(List<MObject> objects, MPropertyKey<String> nameProperty) {

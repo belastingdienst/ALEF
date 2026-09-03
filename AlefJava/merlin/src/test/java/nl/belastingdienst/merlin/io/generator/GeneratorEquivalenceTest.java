@@ -8,27 +8,25 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.charset.StandardCharsets;
 
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.createGenerator;
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.getOutput;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
-public class GeneratorEquivalenceTest {
+class GeneratorEquivalenceTest {
     @Test
-    public void generateSimpleObjectJson() throws IOException {
+    void generateSimpleObjectJson() throws IOException {
         assertGeneratedContentSimpleObject(ContentType.JSON, Content.SIMPLE_OBJECT_JSON_CONTENT);
     }
 
     @Test
-    public void generateSimpleObjectXml() throws IOException {
+    void generateSimpleObjectXml() throws IOException {
         assertGeneratedContentSimpleObject(ContentType.XML, Content.SIMPLE_OBJECT_XML_CONTENT);
     }
 
     @Test
-    public void generateSimpleObjectKvPair() throws IOException {
+    void generateSimpleObjectKvPair() throws IOException {
         assertGeneratedContentSimpleObject(ContentType.KV_PAIR, Content.SIMPLE_OBJECT_KV_PAIR_CONTENT);
     }
 
@@ -47,17 +45,17 @@ public class GeneratorEquivalenceTest {
     }
 
     @Test
-    public void generateSimpleCollectionJson() throws IOException {
+    void generateSimpleCollectionJson() throws IOException {
         assertGeneratedContentSimpleCollection(ContentType.JSON, Content.SIMPLE_COLLECTION_JSON_CONTENT);
     }
 
     @Test
-    public void generateSimpleCollectionXml() throws IOException {
+    void generateSimpleCollectionXml() throws IOException {
         assertGeneratedContentSimpleCollection(ContentType.XML, Content.SIMPLE_COLLECTION_XML_CONTENT);
     }
 
     @Test
-    public void generateSimpleCollectionKvPair() throws IOException {
+    void generateSimpleCollectionKvPair() throws IOException {
         assertGeneratedContentSimpleCollection(ContentType.KV_PAIR, Content.SIMPLE_COLLECTION_KV_PAIR_CONTENT);
     }
 
@@ -81,17 +79,17 @@ public class GeneratorEquivalenceTest {
     }
 
     @Test
-    public void generateEnclosedCollectionJson() throws IOException {
+    void generateEnclosedCollectionJson() throws IOException {
         assertGeneratedContentEnclosedCollection(ContentType.JSON, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_JSON_CONTENT);
     }
 
     @Test
-    public void generateEnclosedCollectionXml() throws IOException {
+    void generateEnclosedCollectionXml() throws IOException {
         assertGeneratedContentEnclosedCollection(ContentType.XML, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_XML_CONTENT);
     }
 
     @Test
-    public void generateEnclosedCollectionKvPair() throws IOException {
+    void generateEnclosedCollectionKvPair() throws IOException {
         assertGeneratedContentEnclosedCollection(ContentType.KV_PAIR, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_KV_PAIR_CONTENT);
     }
 
@@ -121,17 +119,17 @@ public class GeneratorEquivalenceTest {
     }
 
     @Test
-    public void generateNestedCollectionJson() throws IOException {
+    void generateNestedCollectionJson() throws IOException {
         assertGeneratedContentNestedCollection(ContentType.JSON, Content.NESTED_ENCLOSED_COLLECTION_JSON_CONTENT);
     }
 
     @Test
-    public void generateNestedCollectionXml() throws IOException {
+    void generateNestedCollectionXml() throws IOException {
         assertGeneratedContentNestedCollection(ContentType.XML, Content.NESTED_ENCLOSED_COLLECTION_XML_CONTENT);
     }
 
     @Test
-    public void generateNestedCollectionKvPair() throws IOException {
+    void generateNestedCollectionKvPair() throws IOException {
         assertGeneratedContentNestedCollection(ContentType.KV_PAIR, Content.NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT);
     }
 
@@ -160,17 +158,17 @@ public class GeneratorEquivalenceTest {
     }
 
     @Test
-    public void generateNestedObjectAndCollectionJson() throws IOException {
+    void generateNestedObjectAndCollectionJson() throws IOException {
         assertGeneratedContentNestedObjectAndCollection(ContentType.JSON, Content.NESTED_OBJECTS_IN_COLLECTION_JSON_CONTENT);
     }
 
     @Test
-    public void generateNestedObjectAndCollectionXml() throws IOException {
+    void generateNestedObjectAndCollectionXml() throws IOException {
         assertGeneratedContentNestedObjectAndCollection(ContentType.XML, Content.NESTED_OBJECTS_IN_COLLECTION_XML_CONTENT);
     }
 
     @Test
-    public void generateNestedObjectAndCollectionKvPair() throws IOException {
+    void generateNestedObjectAndCollectionKvPair() throws IOException {
         assertGeneratedContentNestedObjectAndCollection(ContentType.KV_PAIR, Content.NESTED_OBJECTS_IN_COLLECTION_KV_PAIR_CONTENT);
     }
 
@@ -204,17 +202,17 @@ public class GeneratorEquivalenceTest {
     }
 
     @Test
-    public void generateComplexNestedStructureJson() throws IOException {
+    void generateComplexNestedStructureJson() throws IOException {
         assertGeneratedContentComplexNestedStructure(ContentType.JSON, Content.COMPLEX_NESTED_STRUCTURE_JSON_CONTENT);
     }
 
     @Test
-    public void generateComplexNestedStructureXml() throws IOException {
+    void generateComplexNestedStructureXml() throws IOException {
         assertGeneratedContentComplexNestedStructure(ContentType.XML, Content.COMPLEX_NESTED_STRUCTURE_XML_CONTENT);
     }
 
     @Test
-    public void generateComplexNestedStructureKvPair() throws IOException {
+    void generateComplexNestedStructureKvPair() throws IOException {
         assertGeneratedContentComplexNestedStructure(ContentType.KV_PAIR, Content.COMPLEX_NESTED_STRUCTURE_KV_PAIR_CONTENT);
     }
 
@@ -248,17 +246,17 @@ public class GeneratorEquivalenceTest {
     }
 
     @Test
-    public void generateValuesJson() throws IOException {
+    void generateValuesJson() throws IOException {
         assertGeneratedContentValues(ContentType.JSON, Content.VALUES_JSON_CONTENT);
     }
 
     @Test
-    public void generateValuesXml() throws IOException {
+    void generateValuesXml() throws IOException {
         assertGeneratedContentValues(ContentType.XML, Content.VALUES_XML_CONTENT);
     }
 
     @Test
-    public void generateValuesKvPair() throws IOException {
+    void generateValuesKvPair() throws IOException {
         assertGeneratedContentValues(ContentType.KV_PAIR, Content.VALUES_KV_PAIR_CONTENT);
     }
 
@@ -284,5 +282,4 @@ public class GeneratorEquivalenceTest {
         final String output = getOutput(outputStream);
         assertEquals(expected.replaceAll("\\s", ""), output.replaceAll("\\s", ""));
     }
-
 }

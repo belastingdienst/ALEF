@@ -13,9 +13,9 @@ import static nl.belastingdienst.merlin.io.input.SubStringCondition.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-public class InputTextSpecificTest extends InputElementTest {
+class InputTextSpecificTest extends InputElementTest {
     @Test
-    public void testContainsCondition() throws IOException {
+    void testContainsCondition() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("house", CONTAINS, true, false, PersonType.houseOwner),
                 new TextSpecificItem("car", CONTAINS, true, false, PersonType.carOwner)
@@ -27,7 +27,7 @@ public class InputTextSpecificTest extends InputElementTest {
     }
 
     @Test
-    public void testStartsWithCondition() throws IOException {
+    void testStartsWithCondition() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("house", STARTS_WITH, true, false, PersonType.houseOwner),
                 new TextSpecificItem("car", STARTS_WITH, true, false, PersonType.carOwner)
@@ -39,7 +39,7 @@ public class InputTextSpecificTest extends InputElementTest {
     }
 
     @Test
-    public void testEndsWithCondition() throws IOException {
+    void testEndsWithCondition() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("house", ENDS_WITH, true, false, PersonType.houseOwner),
                 new TextSpecificItem("car", ENDS_WITH, true, false, PersonType.carOwner)
@@ -51,7 +51,7 @@ public class InputTextSpecificTest extends InputElementTest {
     }
 
     @Test
-    public void testNegation() throws IOException {
+    void testNegation() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("house", CONTAINS, true, true, PersonType.houseOwner),
                 new TextSpecificItem("car", CONTAINS, true, true, PersonType.carOwner)
@@ -62,7 +62,7 @@ public class InputTextSpecificTest extends InputElementTest {
     }
 
     @Test
-    public void testCaseSensitive1() throws IOException {
+    void testCaseSensitive1() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("House", CONTAINS, true, false, PersonType.houseOwner),
                 new TextSpecificItem("Car", CONTAINS, true, false, PersonType.carOwner)
@@ -74,7 +74,7 @@ public class InputTextSpecificTest extends InputElementTest {
     }
 
     @Test
-    public void testCaseSensitive2() throws IOException {
+    void testCaseSensitive2() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
                 new TextSpecificItem("House", CONTAINS, true, false, PersonType.houseOwner),
                 new TextSpecificItem("Car", CONTAINS, true, false, PersonType.carOwner)
@@ -86,7 +86,7 @@ public class InputTextSpecificTest extends InputElementTest {
     }
 
     @Test
-    public void testDimensions() throws IOException {
+    void testDimensions() throws IOException {
         final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.tags, 1,
                 new StringToStringReader(), Collections.emptyList());
         final MObject alefObject = process(textSpecificItem, "house");

@@ -16,9 +16,9 @@ import java.io.IOException;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class InputFeatureTest extends InputElementTest {
+class InputFeatureTest extends InputElementTest {
     @Test
-    public void testSetFeatureToTrue() throws IOException {
+    void testSetFeatureToTrue() throws IOException {
         final InputFeature<Boolean> inputFeature = new InputFeature<>(
                 "value", false, null, PersonType.carOwner, new BooleanToBooleanReader());
         final MObject alefObject = process(inputFeature, "true");
@@ -26,7 +26,7 @@ public class InputFeatureTest extends InputElementTest {
     }
 
     @Test
-    public void testSetFeatureToFalse() throws IOException {
+    void testSetFeatureToFalse() throws IOException {
         final InputFeature<Boolean> inputFeature = new InputFeature<>(
                 "value", false, null, PersonType.carOwner, new BooleanToBooleanReader());
         final MObject alefObject = process(inputFeature, "false");
@@ -34,7 +34,7 @@ public class InputFeatureTest extends InputElementTest {
     }
 
     @Test
-    public void testSetFeatureToFalseWhileAlreadyBeingTrue() throws IOException {
+    void testSetFeatureToFalseWhileAlreadyBeingTrue() throws IOException {
         final InputFeature<Boolean> inputFeature = new InputFeature<>(
                 "value", false, null, PersonType.carOwner, new BooleanToBooleanReader());
         final MUniverse universe = new MUniverse(true);
@@ -48,7 +48,7 @@ public class InputFeatureTest extends InputElementTest {
     }
 
     @Test
-    public void testTimedDefaultValue() throws IOException {
+    void testTimedDefaultValue() {
         final InputFeature<IValidity> inputFeature = new InputFeature<>(
                 "value", false, ValidityReader.wrapDefaultValue(Valid.TRUE), PersonType.hasChildren, new ValidityReader(new TimelineInfo(true)));
         final MUniverse universe = new MUniverse(true);

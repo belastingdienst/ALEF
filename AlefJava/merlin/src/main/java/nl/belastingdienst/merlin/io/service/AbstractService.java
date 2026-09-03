@@ -24,7 +24,7 @@ public abstract class AbstractService<T extends MObjectType> {
 
     private final AtomicLong counter = new AtomicLong(ThreadLocalRandom.current().nextLong(10000, Long.MAX_VALUE));
 
-    public AbstractService(boolean useLazyEval, String serviceVersion, Class<T> mainObjectType, boolean enableValidation) {
+    protected AbstractService(boolean useLazyEval, String serviceVersion, Class<T> mainObjectType, boolean enableValidation) {
         this.useLazyEval = useLazyEval;
         this.mainObjectType = mainObjectType;
         this.serviceVersion = serviceVersion;
@@ -64,7 +64,7 @@ public abstract class AbstractService<T extends MObjectType> {
         } else {
             generator.writeFieldName("response");
             generator.beginObject();
-            generateServiceResult(universe, generator, "0",
+            generateServiceResult(generator, "0",
                     universe.getViolations().stream()
                             .map(Object::toString)
                             .collect(Collectors.joining(System.lineSeparator())));
@@ -75,7 +75,7 @@ public abstract class AbstractService<T extends MObjectType> {
         return outputStream;
     }
 
-    protected void generateServiceResult(MUniverse universe, ContentGenerator generator, String resultCode, String resultMessage) throws IOException {
+    protected void generateServiceResult(ContentGenerator generator, String resultCode, String resultMessage) throws IOException {
         generator.writeFieldName("serviceResultaat");
         generator.beginObject();
         generator.writeStringField("resultaatcode", resultCode);

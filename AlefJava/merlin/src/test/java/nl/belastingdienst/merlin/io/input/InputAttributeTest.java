@@ -16,9 +16,9 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class InputAttributeTest extends InputElementTest {
+class InputAttributeTest extends InputElementTest {
     @Test
-    public void testBigRationalValue() throws IOException {
+    void testBigRationalValue() throws IOException {
         final InputAttribute<BigRational> inputAttribute = new InputAttribute<>(
                 "value", false, null, PersonType.age, new DecimalToRationalReader());
         final MObject alefObject = process(inputAttribute, "50");
@@ -26,7 +26,7 @@ public class InputAttributeTest extends InputElementTest {
     }
 
     @Test
-    public void testStringValue() throws IOException {
+    void testStringValue() throws IOException {
         final InputAttribute<String> inputAttribute = new InputAttribute<>(
                 "value", false, null, PersonType.name, new StringToStringReader());
         final MObject alefObject = process(inputAttribute, "test");
@@ -34,7 +34,7 @@ public class InputAttributeTest extends InputElementTest {
     }
 
     @Test
-    public void testBooleanValue() throws IOException {
+    void testBooleanValue() throws IOException {
         final InputAttribute<Boolean> inputAttribute = new InputAttribute<>(
                 "value", false, null, PersonType.carOwner, new BooleanToBooleanReader());
         final MObject alefObject = process(inputAttribute, "true");
@@ -42,7 +42,7 @@ public class InputAttributeTest extends InputElementTest {
     }
 
     @Test
-    public void testDimensionalAttribute() throws IOException {
+    void testDimensionalAttribute() throws IOException {
         final InputAttribute<BigRational> inputAttribute = new InputAttribute<>(
                 "value", false, null, PersonType.salary, 1, new DecimalToRationalReader());
         final MObject alefObject = process(inputAttribute, "100.0");
@@ -50,7 +50,7 @@ public class InputAttributeTest extends InputElementTest {
     }
 
     @Test
-    public void testHandleNonExistentValue() {
+    void testHandleNonExistentValue() {
         final InputAttribute<BigRational> inputAttribute = new InputAttribute<>(
                 "value", false, BigRational.ONE, PersonType.length, 1, new DecimalToRationalReader());
         final MUniverse universe = new MUniverse(true);
@@ -60,7 +60,7 @@ public class InputAttributeTest extends InputElementTest {
     }
 
     @Test
-    public void testHandleNullValue() throws IOException {
+    void testHandleNullValue() throws IOException {
         final InputAttribute<BigRational> inputAttribute = new InputAttribute<>(
                 "value", false, BigRational.ONE, PersonType.length, new DecimalToRationalReader());
         final MObject alefObject = process(inputAttribute, null);
@@ -68,7 +68,7 @@ public class InputAttributeTest extends InputElementTest {
     }
 
     @Test
-    void testDefaultTimedValue() throws IOException {
+    void testDefaultTimedValue() {
         final InputAttribute<ITimed<BigRational>> inputAttribute = new InputAttribute<>(
                 "value", false, TimedReader.wrapDefaultValue(BigRational.ONE), PersonType.mortgageAmount,
                 new TimedReader<>(new TimelineInfo(true), new DecimalToRationalReader()));

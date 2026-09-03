@@ -13,7 +13,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class XmlGenerator extends AbstractGenerator {
-    private final ToXmlGenerator xmlGenerator;
+    private final ToXmlGenerator internalGenerator;
     private final Deque<CollectionInfo> collections = new ArrayDeque<>();
     private String currentFieldName = null;
 
@@ -23,13 +23,13 @@ public class XmlGenerator extends AbstractGenerator {
         final XmlFactory factory = XmlFactory.builder()
                 .xmlOutputFactory(staxFactory)
                 .build();
-        xmlGenerator = factory.createGenerator(outputStream);
-        xmlGenerator.useDefaultPrettyPrinter();
+        internalGenerator = factory.createGenerator(outputStream);
+        internalGenerator.useDefaultPrettyPrinter();
     }
 
     @Override
     public ToXmlGenerator getGenerator() {
-        return xmlGenerator;
+        return internalGenerator;
     }
 
     @Override
@@ -68,12 +68,12 @@ public class XmlGenerator extends AbstractGenerator {
 
     @Override
     public void setNextIsAttribute(boolean value) {
-        xmlGenerator.setNextIsAttribute(value);
+        internalGenerator.setNextIsAttribute(value);
     }
 
     @Override
     public final void writeRootFieldName(String fieldName) throws IOException {
-        xmlGenerator.setNextName(new QName(fieldName));
+        internalGenerator.setNextName(new QName(fieldName));
     }
 
     @Override
@@ -97,7 +97,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteStringField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeString(value);
+            internalGenerator.writeString(value);
         }
     }
 
@@ -113,7 +113,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteNumberField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeNumber(value);
+            internalGenerator.writeNumber(value);
         }
     }
 
@@ -129,7 +129,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteNumberField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeNumber(value);
+            internalGenerator.writeNumber(value);
         }
     }
 
@@ -145,7 +145,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteNumberField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeNumber(value);
+            internalGenerator.writeNumber(value);
         }
     }
 
@@ -161,7 +161,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteBooleanField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeBoolean(value);
+            internalGenerator.writeBoolean(value);
         }
     }
 
@@ -187,7 +187,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteNumberField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeNumber(value);
+            internalGenerator.writeNumber(value);
         }
     }
 
@@ -203,7 +203,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteNumberField(fieldName, valueTypeName, value);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeNumber(value);
+            internalGenerator.writeNumber(value);
         }
     }
 
@@ -214,7 +214,7 @@ public class XmlGenerator extends AbstractGenerator {
             internalWriteNullField(fieldName, valueTypeName);
             resetCurrentFieldName();
         } else {
-            xmlGenerator.writeNull();
+            internalGenerator.writeNull();
         }
     }
 
@@ -231,15 +231,16 @@ public class XmlGenerator extends AbstractGenerator {
     protected void internalBeginObject() throws IOException {
         final String fieldName = getCurrentFieldName();
         if (fieldName != null) {
-            xmlGenerator.writeFieldName(fieldName);
+            internalGenerator.writeFieldName(fieldName);
             resetCurrentFieldName();
         }
-        xmlGenerator.writeStartObject();
+        internalGenerator.writeStartObject();
     }
 
     protected void internalEndObject() throws IOException {
-        xmlGenerator.writeEndObject();
+        internalGenerator.writeEndObject();
     }
+
 
     protected void internalWriteStringField(String fieldName, String valueTypeName, String value) throws IOException {
         getGenerator().writeStringField(fieldName, value);

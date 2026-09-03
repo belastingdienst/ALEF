@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
-public class ParserPeekingTest {
+class ParserPeekingTest {
     @Test
-    public void testPeekingWithJson() throws IOException {
+    void testPeekingWithJson() throws IOException {
         final String json = """
                 {
                     "root" : {
@@ -36,7 +36,7 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testPeekWithKvPairs() throws IOException {
+    void testPeekWithKvPairs() throws IOException {
         final String kvPair = """
                 <root>
                     <KeyValuePairs>
@@ -65,7 +65,7 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testPeekingWithXml() throws IOException {
+    void testPeekingWithXml() throws IOException {
         final String xml = """
                 <root>
                     <values>1</values>
@@ -85,7 +85,7 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testPeekingEnclosedCollectionWithXml() throws IOException {
+    void testPeekingEnclosedCollectionWithXml() throws IOException {
         final String xml = """
                 <root>
                     <list>
@@ -107,7 +107,7 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testPeekingNestedCollections() throws IOException {
+    void testPeekingNestedCollections() throws IOException {
         final String xml = """
                 <root>
                     <lists>
@@ -137,7 +137,7 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testPeekingWithNestedObjects() throws IOException {
+    void testPeekingWithNestedObjects() throws IOException {
         final String xml = """
                 <root>
                     <persons>
@@ -185,18 +185,16 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testCloseWhilePeeking() {
+    void testCloseWhilePeeking() throws IOException {
         final String xml = "<root></root>";
-        assertThrows(IllegalStateException.class, () -> {
-            final XmlParser xmlParser = new XmlParser(asInputStream(xml));
-            peekAndBeginObject(xmlParser);
-            xmlParser.peek();
-            xmlParser.close();
-        });
+        final XmlParser xmlParser = new XmlParser(asInputStream(xml));
+        peekAndBeginObject(xmlParser);
+        xmlParser.peek();
+        assertThrows(IllegalStateException.class, xmlParser::close);
     }
 
     @Test
-    public void testPeekingTwice() throws IOException {
+    void testPeekingTwice() throws IOException {
         final String xml = "<root></root>";
         final XmlParser xmlParser = new XmlParser(asInputStream(xml));
         peekAndBeginObject(xmlParser);
@@ -207,7 +205,7 @@ public class ParserPeekingTest {
     }
 
     @Test
-    public void testCurrentNameValueAndTokenWhilePeeking() throws IOException {
+    void testCurrentNameValueAndTokenWhilePeeking() throws IOException {
         final String xml = """
                 <root>
                     <value>test</value>

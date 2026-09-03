@@ -33,39 +33,39 @@ public class AdapterRegistry {
         return timelineInfoMap.get(granularity);
     }
 
-    public <TAlef> void registerReader(String internalTypeName, ContentReader<TAlef> reader) {
+    public <T> void registerReader(String internalTypeName, ContentReader<T> reader) {
         readers.put(internalTypeName, reader);
     }
 
-    public <TAlef> ContentReader<TAlef> getReader(Class<TAlef> alefJavaType, String internalTypeName) {
+    public <T> ContentReader<T> getReader(Class<T> alefJavaType, String internalTypeName) {
         return getReader(alefJavaType, List.of(internalTypeName));
     }
 
     @SuppressWarnings("unchecked")
-    public <TAlef> ContentReader<TAlef> getReader(Class<TAlef> alefJavaType, List<String> internalTypeNames) {
+    public <T> ContentReader<T> getReader(Class<T> alefJavaType, List<String> internalTypeNames) {
         for (String internalTypeName : internalTypeNames) {
             ContentReader<?> reader = readers.get(internalTypeName);
             if (reader != null) {
-                return (ContentReader<TAlef>) reader;
+                return (ContentReader<T>) reader;
             }
         }
         throw new IllegalStateException("No reader registered for any of the internal type names: " + internalTypeNames);
     }
 
-    public <TAlef, TMessage> void registerWriter(String internalTypeName, ContentWriter<TAlef> writer) {
+    public <T> void registerWriter(String internalTypeName, ContentWriter<T> writer) {
         writers.put(internalTypeName, writer);
     }
 
-    public <TAlef> ContentWriter<TAlef> getWriter(Class<TAlef> alefJavaType, String internalTypeName) {
+    public <T> ContentWriter<T> getWriter(Class<T> alefJavaType, String internalTypeName) {
         return getWriter(alefJavaType, List.of(internalTypeName));
     }
 
     @SuppressWarnings("unchecked")
-    public <TAlef> ContentWriter<TAlef> getWriter(Class<TAlef> alefJavaType, List<String> internalTypeNames) {
+    public <T> ContentWriter<T> getWriter(Class<T> alefJavaType, List<String> internalTypeNames) {
         for (String internalTypeName : internalTypeNames) {
             ContentWriter<?> writer = writers.get(internalTypeName);
             if (writer != null) {
-                return (ContentWriter<TAlef>) writer;
+                return (ContentWriter<T>) writer;
             }
         }
         throw new IllegalStateException("No writer registered for any of the internal type names: " + internalTypeNames);
@@ -83,8 +83,5 @@ public class AdapterRegistry {
         registerWriter("Boolean", new BooleanToBooleanWriter());
         registerWriter("Numerical", new RationalToDecimalWriter());
         registerWriter("String", new StringToStringWriter());
-    }
-
-    private record AdapterKey(Class<?> alefType, Class<?> messageType) {
     }
 }

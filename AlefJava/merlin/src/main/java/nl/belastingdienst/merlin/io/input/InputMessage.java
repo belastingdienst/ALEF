@@ -4,7 +4,6 @@ import nl.belastingdienst.alef_runtime.Violation;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
-import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
 
@@ -24,20 +23,20 @@ public abstract class InputMessage<T extends MObjectType> {
     private InputIdentifier identifierElement;
     private boolean fieldsShouldBeOrdered = false;
 
-    public InputMessage(Class<T> alefObjectType, boolean fieldsShouldBeOrdered) {
+    protected InputMessage(Class<T> alefObjectType, boolean fieldsShouldBeOrdered) {
         this.alefObjectType = alefObjectType;
         this.fieldsShouldBeOrdered = fieldsShouldBeOrdered;
     }
 
     public void addElement(InputElement node) {
         inputElements.add(node);
-        if (node instanceof InputComplexProperty) {
-            addComplexProperty((InputComplexProperty) node);
-        } else if (node instanceof InputField) {
-            addSimpleProperty((InputField) node);
-        } else if (node instanceof InputChoice) {
-            choiceElements.add((InputChoice) node);
-            unpackChoiceElement((InputChoice) node);
+        if (node instanceof InputComplexProperty inputComplexProperty) {
+            addComplexProperty(inputComplexProperty);
+        } else if (node instanceof InputField inputField) {
+            addSimpleProperty(inputField);
+        } else if (node instanceof InputChoice inputChoice) {
+            choiceElements.add(inputChoice);
+            unpackChoiceElement(inputChoice);
         }
     }
 
@@ -61,7 +60,7 @@ public abstract class InputMessage<T extends MObjectType> {
         }
         parser.endObject();
         validateMessageStructure(universe, parser, encounteredFieldNames);
-        handleDefaultValues(universe, alefObject, encounteredFieldNames);
+        handleDefaultValues(alefObject, encounteredFieldNames);
         return alefObject;
     }
 
@@ -83,7 +82,7 @@ public abstract class InputMessage<T extends MObjectType> {
         parser.endObject();
         validateMessageStructure(universe, parser, encounteredFieldNames);
         final MObject alefObject = createAlefObject(universe, null, propertyBasket, objectsByFieldName, parser);
-        handleDefaultValues(universe, alefObject, encounteredFieldNames);
+        handleDefaultValues(alefObject, encounteredFieldNames);
         return alefObject;
     }
 
@@ -93,7 +92,7 @@ public abstract class InputMessage<T extends MObjectType> {
         }
         parser.endObject();
         validateMessageStructure(universe, parser, encounteredFieldNames);
-        handleDefaultValues(universe, alefObject, encounteredFieldNames);
+        handleDefaultValues(alefObject, encounteredFieldNames);
         return alefObject;
     }
 
@@ -155,7 +154,7 @@ public abstract class InputMessage<T extends MObjectType> {
         return alefObjectType == null ? null : universe.getObjectType(alefObjectType).createObject();
     }
 
-    private void handleDefaultValues(MUniverse universe, MObject alefObject, List<String> encounteredFieldNames) {
+    private void handleDefaultValues(MObject alefObject, List<String> encounteredFieldNames) {
         for (InputElement node : inputElements) {
             node.handleDefaultValue(alefObject);
         }
@@ -230,14 +229,14 @@ public abstract class InputMessage<T extends MObjectType> {
         elementOrderMap = new HashMap<>();
         for (int i = 0; i < inputElements.size(); i++) {
             final InputElement node = inputElements.get(i);
-            if (node instanceof InputField) {
-                elementOrderMap.put(((InputField) node).getFieldName(), i);
-            } else if (node instanceof InputChoice) {
-                for (InputElement choiceNode : ((InputChoice) node).getNodes()) {
-                    if (choiceNode instanceof InputField) {
-                        elementOrderMap.put(((InputField) choiceNode).getFieldName(), i);
-                    } else if (choiceNode instanceof InputComplexProperty) {
-                        elementOrderMap.put(((InputComplexProperty) choiceNode).getFieldName(), i);
+            if (node instanceof InputField inputField) {
+                elementOrderMap.put(inputField.getFieldName(), i);
+            } else if (node instanceof InputChoice inputChoice) {
+                for (InputElement choiceNode : (inputChoice.getNodes())) {
+                    if (choiceNode instanceof InputField inputField) {
+                        elementOrderMap.put(inputField.getFieldName(), i);
+                    } else if (choiceNode instanceof InputComplexProperty inputComplexProperty) {
+                        elementOrderMap.put(inputComplexProperty.getFieldName(), i);
                     }
                 }
             }
@@ -265,11 +264,11 @@ public abstract class InputMessage<T extends MObjectType> {
         if (simpleProperty.isRequired()) {
             requiredFieldNames.add(simpleProperty.getFieldName());
         }
-        if (simpleProperty instanceof InputIdentifier) {
-            identifierElement = (InputIdentifier) simpleProperty;
-        } else if (simpleProperty instanceof InputChoice) {
-            unpackChoiceElement((InputChoice) simpleProperty);
-            choiceElements.add((InputChoice) simpleProperty);
+        if (simpleProperty instanceof InputIdentifier inputIdentifier) {
+            identifierElement = inputIdentifier;
+        } else if (simpleProperty instanceof InputChoice inputChoice) {
+            unpackChoiceElement(inputChoice);
+            choiceElements.add(inputChoice);
         } else {
             simplePropertyByName.put(simpleProperty.getFieldName(), simpleProperty);
         }
@@ -277,8 +276,8 @@ public abstract class InputMessage<T extends MObjectType> {
 
     private void unpackChoiceElement(InputChoice simpleProperty) {
         for (InputElement node : simpleProperty.getNodes()) {
-            if (node instanceof InputComplexProperty) {
-                addComplexProperty((InputComplexProperty) node);
+            if (node instanceof InputComplexProperty inputComplexProperty) {
+                addComplexProperty(inputComplexProperty);
             } else {
                 addSimpleProperty((InputField) node);
             }

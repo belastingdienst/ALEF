@@ -13,15 +13,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class AbstractTimedReader<TAlef> {
+public abstract class AbstractTimedReader<A> {
     private final TimelineInfo timelineInfo;
 
     protected AbstractTimedReader(TimelineInfo timelineInfo) {
         this.timelineInfo = timelineInfo;
     }
 
-    protected @NotNull List<TimeBox<TAlef>> readTimeboxes(MUniverse universe, ContentParser parser) throws IOException {
-        final List<TimeBox<TAlef>> timeBoxes = new ArrayList<>();
+    protected @NotNull List<TimeBox<A>> readTimeboxes(MUniverse universe, ContentParser parser) throws IOException {
+        final List<TimeBox<A>> timeBoxes = new ArrayList<>();
         parser.beginEnclosedCollection("periode");
         while (parser.peek() != ContentToken.END_COLLECTION) {
             timeBoxes.add(readTimeBox(universe, parser));
@@ -30,9 +30,10 @@ public abstract class AbstractTimedReader<TAlef> {
         return timeBoxes;
     }
 
-    protected TimeBox<TAlef> readTimeBox(MUniverse universe, ContentParser parser) throws IOException {
-        Time from = null, till = null;
-        TAlef value = null;
+    protected TimeBox<A> readTimeBox(MUniverse universe, ContentParser parser) throws IOException {
+        Time from = null;
+        Time till = null;
+        A value = null;
         parser.beginObject();
         while (parser.peek() != ContentToken.END_OBJECT) {
             switch (parser.nextName()) {
@@ -55,10 +56,10 @@ public abstract class AbstractTimedReader<TAlef> {
         return timelineInfo.includeDayAndMonth() ? Time.fromDateStr(value) : Time.fromYMD(Integer.parseInt(value), 1, 1);
     }
 
-    protected TAlef defaultValue() {
+    protected A defaultValue() {
         return null;
     }
 
-    protected abstract TAlef readValue(MUniverse universe, ContentParser parser) throws IOException;
+    protected abstract A readValue(MUniverse universe, ContentParser parser) throws IOException;
 }
 

@@ -12,9 +12,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TimedWriterTest {
+class TimedWriterTest {
     @Test
-    public void testTimedWriter() throws IOException {
+    void testTimedWriter() throws IOException {
         final String actual = generateXML(Timed.of(List.of(
                 TimeBox.make("Test", new Period(Period.OPEN_BEGIN, Time.fromYMD(2020, 1, 1))),
                 TimeBox.make("Test", new Period(Time.fromYMD(2020, 2, 2), Time.fromYMD(2020, 3, 3)))
@@ -34,7 +34,7 @@ public class TimedWriterTest {
     }
 
     @Test
-    public void testTimedWriterWithNullAsTime() throws IOException {
+    void testTimedWriterWithNullAsTime() throws IOException {
         final String actual = generateXML(Timed.of(List.of(
                 TimeBox.make("Test", new Period(null, Time.fromYMD(2021, 1, 1))),
                 TimeBox.make("Test", new Period(Time.fromYMD(2021, 2, 2), null))
@@ -53,7 +53,7 @@ public class TimedWriterTest {
     }
 
     @Test
-    public void testTimedWriteWithNullValue() throws IOException {
+    void testTimedWriteWithNullValue() throws IOException {
         final String actual = generateXML(Timed.of(List.of(
                 TimeBox.make(null, new Period(Time.START_OF_TIME, Time.END_OF_TIME))
         )));
@@ -65,7 +65,7 @@ public class TimedWriterTest {
     }
 
     @Test
-    public void testTimedWriteWithNoValues() throws IOException {
+    void testTimedWriteWithNoValues() throws IOException {
         final String actual = generateXML(Timed.of(List.of()));
         final String expected = """
                 {

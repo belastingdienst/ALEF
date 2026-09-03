@@ -3,7 +3,6 @@ package nl.belastingdienst.merlin.io.output;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.ContentType;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
 import org.junit.jupiter.api.Test;
@@ -14,9 +13,9 @@ import java.io.OutputStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class OutputIdentifierTest extends AbstractOutputTest {
+class OutputIdentifierTest extends AbstractOutputTest {
     @Test
-    public void testStringIdentifier() throws IOException {
+    void testStringIdentifier() throws IOException {
         final OutputIdentifier identifier = new OutputIdentifier("identifier", "string");
         final String actualJson = generateOutput(identifier, "123", ContentType.JSON);
         final String expectedJson = """
@@ -27,14 +26,14 @@ public class OutputIdentifierTest extends AbstractOutputTest {
     }
 
     @Test
-    public void testEmptyIdentifier() throws IOException {
+    void testEmptyIdentifier() throws IOException {
         final OutputIdentifier identifier = new OutputIdentifier("identifier", "string");
         final String actualJson = generateOutput(identifier, null, ContentType.JSON);
         assertEquals("{ }", actualJson);
     }
 
     @Test
-    public void testKVPairIdentifier() throws IOException {
+    void testKVPairIdentifier() throws IOException {
         final OutputIdentifier identifier = new OutputIdentifier("identifier", "integer");
         final String actualOutput = generateOutput(identifier, "1", ContentType.KV_PAIR);
         String expected = """

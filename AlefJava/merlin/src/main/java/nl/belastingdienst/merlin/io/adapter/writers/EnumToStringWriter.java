@@ -7,7 +7,7 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 import java.util.Map;
 
-public class EnumToStringWriter<TAlef extends Enum<?> & Labeled> implements ContentWriter<TAlef> {
+public class EnumToStringWriter<T extends Enum<?> & Labeled> implements ContentWriter<T> {
     private final String valueTypeName;
     private final Map<String, String> mappings;
 
@@ -21,7 +21,7 @@ public class EnumToStringWriter<TAlef extends Enum<?> & Labeled> implements Cont
     }
 
     @Override
-    public void write(ContentGenerator contentGenerator, TAlef value) throws IOException {
+    public void write(ContentGenerator contentGenerator, T value) throws IOException {
         contentGenerator.writeString(valueTypeName, mappings.getOrDefault(value.getLabel(), value.getLabel()));
     }
 }

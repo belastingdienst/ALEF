@@ -11,5 +11,6 @@ public class RequestMock extends Request {
 
     @Override
     public void initialize(AdapterRegistry registry) {
+        // is initialized in test.
     }
 }

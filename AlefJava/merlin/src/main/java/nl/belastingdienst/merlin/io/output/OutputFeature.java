@@ -9,17 +9,17 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
 
-public class OutputFeature<TAlef> implements OutputField {
+public class OutputFeature<T> implements OutputField {
     private final String fieldName;
     private final boolean required;
-    private final MKenmerkKey<TAlef> featureKey;
-    private final FeatureSupport<TAlef> writer;
+    private final MKenmerkKey<T> featureKey;
+    private final FeatureSupport<T> writer;
 
-    public OutputFeature(String fieldName, boolean required, MKenmerkKey<TAlef> featureKey, ContentWriter<TAlef> writer) {
+    public OutputFeature(String fieldName, boolean required, MKenmerkKey<T> featureKey, ContentWriter<T> writer) {
         this.featureKey = featureKey;
         this.fieldName = fieldName;
         this.required = required;
-        this.writer = (FeatureSupport<TAlef>) writer;
+        this.writer = (FeatureSupport<T>) writer;
     }
 
     public boolean isRequired() {
@@ -33,7 +33,7 @@ public class OutputFeature<TAlef> implements OutputField {
 
     @Override
     public void generate(MUniverse universe, ContentGenerator contentGenerator, MObject alefObject) throws IOException {
-        final TAlef value = alefObject.getProperty(featureKey).get();
+        final T value = alefObject.getProperty(featureKey).get();
         contentGenerator.writeFieldName(fieldName);
         writer.featureWrite(contentGenerator, value);
     }

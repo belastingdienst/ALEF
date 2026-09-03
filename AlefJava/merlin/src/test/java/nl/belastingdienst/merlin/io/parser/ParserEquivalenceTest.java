@@ -10,23 +10,24 @@ import java.io.IOException;
 
 import static nl.belastingdienst.merlin.io.ContentType.*;
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
-public class ParserEquivalenceTest {
+class ParserEquivalenceTest {
     @Test
-    public void parseSimpleAttributeJson() throws IOException {
-        readSimpleAttribute(JSON, Content.SIMPLE_ATTRIBUTE_JSON_CONTENT);
+    void parseSimpleAttributeJson() {
+        assertDoesNotThrow(() -> readSimpleAttribute(JSON, Content.SIMPLE_ATTRIBUTE_JSON_CONTENT));
     }
 
     @Test
-    public void parseSimpleAttributeXml() throws IOException {
-        readSimpleAttribute(XML, Content.SIMPLE_ATTRIBUTE_XML_CONTENT);
+    void parseSimpleAttributeXml() {
+        assertDoesNotThrow(() -> readSimpleAttribute(XML, Content.SIMPLE_ATTRIBUTE_XML_CONTENT));
     }
 
     @Test
-    public void parseSimpleAttributeKvPair() throws IOException {
-        readSimpleAttribute(KV_PAIR, Content.SIMPLE_ATTRIBUTE_KV_PAIR_CONTENT);
+    void parseSimpleAttributeKvPair() {
+        assertDoesNotThrow(() -> readSimpleAttribute(KV_PAIR, Content.SIMPLE_ATTRIBUTE_KV_PAIR_CONTENT));
     }
 
     private void readSimpleAttribute(ContentType type, String input) throws IOException {
@@ -34,23 +35,23 @@ public class ParserEquivalenceTest {
         parser.beginObject();
         enterKvPairSectionIfNecessary(parser, type);
         parseAndAssertFieldName(parser, "value");
-        parseAndAssertValue(parser, "test");
+        parseAndAssertValue(parser, "10");
         parser.endObject();
     }
 
     @Test
-    public void parseSimpleObjectJson() throws IOException {
-        readSimpleObject(JSON, Content.SIMPLE_OBJECT_JSON_CONTENT);
+    void parseSimpleObjectJson() {
+        assertDoesNotThrow(() -> readSimpleObject(JSON, Content.SIMPLE_OBJECT_JSON_CONTENT));
     }
 
     @Test
-    public void parseSimpleObjectXml() throws IOException {
-        readSimpleObject(XML, Content.SIMPLE_OBJECT_XML_CONTENT);
+    void parseSimpleObjectXml() {
+        assertDoesNotThrow(() -> readSimpleObject(XML, Content.SIMPLE_OBJECT_XML_CONTENT));
     }
 
     @Test
-    public void parseSimpleObjectKvPair() throws IOException {
-        readSimpleObject(KV_PAIR, Content.SIMPLE_OBJECT_KV_PAIR_CONTENT);
+    void parseSimpleObjectKvPair() {
+        assertDoesNotThrow(() -> readSimpleObject(KV_PAIR, Content.SIMPLE_OBJECT_KV_PAIR_CONTENT));
     }
 
     private void readSimpleObject(ContentType type, String input) throws IOException {
@@ -63,18 +64,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseSimpleCollectionJson() throws IOException {
-        readSimpleCollection(JSON, Content.SIMPLE_COLLECTION_JSON_CONTENT);
+    void parseSimpleCollectionJson() {
+        assertDoesNotThrow(() -> readSimpleCollection(JSON, Content.SIMPLE_COLLECTION_JSON_CONTENT));
     }
 
     @Test
-    public void parseSimpleCollectionXml() throws IOException {
-        readSimpleCollection(XML, Content.SIMPLE_COLLECTION_XML_CONTENT);
+    void parseSimpleCollectionXml() {
+        assertDoesNotThrow(() -> readSimpleCollection(XML, Content.SIMPLE_COLLECTION_XML_CONTENT));
     }
 
     @Test
-    public void parseSimpleCollectionKvPair() throws IOException {
-        readSimpleCollection(KV_PAIR, Content.SIMPLE_COLLECTION_KV_PAIR_CONTENT);
+    void parseSimpleCollectionKvPair() {
+        assertDoesNotThrow(() -> readSimpleCollection(KV_PAIR, Content.SIMPLE_COLLECTION_KV_PAIR_CONTENT));
     }
 
     private void readSimpleCollection(ContentType type, String input) throws IOException {
@@ -91,18 +92,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseSimpleCollectionWithWhileLoopJson() throws IOException {
-        readSimpleCollectionWithWhileLoop(JSON, Content.SIMPLE_COLLECTION_JSON_CONTENT);
+    void parseSimpleCollectionWithWhileLoopJson() {
+        assertDoesNotThrow(() -> readSimpleCollectionWithWhileLoop(JSON, Content.SIMPLE_COLLECTION_JSON_CONTENT));
     }
 
     @Test
-    public void parseSimpleCollectionWithWhileLoopXml() throws IOException {
-        readSimpleCollectionWithWhileLoop(XML, Content.SIMPLE_COLLECTION_XML_CONTENT);
+    void parseSimpleCollectionWithWhileLoopXml() {
+        assertDoesNotThrow(() -> readSimpleCollectionWithWhileLoop(XML, Content.SIMPLE_COLLECTION_XML_CONTENT));
     }
 
     @Test
-    public void parseSimpleCollectionWithWhileLoopKvPair() throws IOException {
-        readSimpleCollectionWithWhileLoop(KV_PAIR, Content.SIMPLE_COLLECTION_KV_PAIR_CONTENT);
+    void parseSimpleCollectionWithWhileLoopKvPair() {
+        assertDoesNotThrow(() -> readSimpleCollectionWithWhileLoop(KV_PAIR, Content.SIMPLE_COLLECTION_KV_PAIR_CONTENT));
     }
 
     private void readSimpleCollectionWithWhileLoop(ContentType type, String input) throws IOException {
@@ -120,18 +121,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseEnclosedCollectionWithObjectsJson() throws IOException {
-        readEnclosedCollectionWithObjects(JSON, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_JSON_CONTENT);
+    void parseEnclosedCollectionWithObjectsJson() {
+        assertDoesNotThrow(() -> readEnclosedCollectionWithObjects(JSON, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_JSON_CONTENT));
     }
 
     @Test
-    public void parseEnclosedCollectionWithObjectsXml() throws IOException {
-        readEnclosedCollectionWithObjects(XML, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_XML_CONTENT);
+    void parseEnclosedCollectionWithObjectsXml() {
+        assertDoesNotThrow(() -> readEnclosedCollectionWithObjects(XML, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_XML_CONTENT));
     }
 
     @Test
-    public void parseEnclosedCollectionWithObjectsKvPair() throws IOException {
-        readEnclosedCollectionWithObjects(KV_PAIR, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_KV_PAIR_CONTENT);
+    void parseEnclosedCollectionWithObjectsKvPair() {
+        assertDoesNotThrow(() -> readEnclosedCollectionWithObjects(KV_PAIR, Content.ENCLOSED_COLLECTION_WITH_OBJECTS_KV_PAIR_CONTENT));
     }
 
     private void readEnclosedCollectionWithObjects(ContentType type, String input) throws IOException {
@@ -157,18 +158,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseNestedEnclosedCollectionJson() throws IOException {
-        readNestedEnclosedCollection(JSON, Content.NESTED_ENCLOSED_COLLECTION_JSON_CONTENT);
+    void parseNestedEnclosedCollectionJson() {
+        assertDoesNotThrow(() -> readNestedEnclosedCollection(JSON, Content.NESTED_ENCLOSED_COLLECTION_JSON_CONTENT));
     }
 
     @Test
-    public void parseNestedEnclosedCollectionXml() throws IOException {
-        readNestedEnclosedCollection(XML, Content.NESTED_ENCLOSED_COLLECTION_XML_CONTENT);
+    void parseNestedEnclosedCollectionXml() {
+        assertDoesNotThrow(() -> readNestedEnclosedCollection(XML, Content.NESTED_ENCLOSED_COLLECTION_XML_CONTENT));
     }
 
     @Test
-    public void parseNestedEnclosedCollectionKvPair() throws IOException {
-        readNestedEnclosedCollection(KV_PAIR, Content.NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT);
+    void parseNestedEnclosedCollectionKvPair() {
+        assertDoesNotThrow(() -> readNestedEnclosedCollection(KV_PAIR, Content.NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT));
     }
 
     private void readNestedEnclosedCollection(ContentType type, String input) throws IOException {
@@ -190,18 +191,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseNestedEnclosedCollectionWithWhileLoopJson() throws IOException {
-        readNestedEnclosedCollectionWithWhileLoop(JSON, Content.NESTED_ENCLOSED_COLLECTION_JSON_CONTENT);
+    void parseNestedEnclosedCollectionWithWhileLoopJson() {
+        assertDoesNotThrow(() -> readNestedEnclosedCollectionWithWhileLoop(JSON, Content.NESTED_ENCLOSED_COLLECTION_JSON_CONTENT));
     }
 
     @Test
-    public void parseNestedEnclosedCollectionWithWhileLoopXml() throws IOException {
-        readNestedEnclosedCollectionWithWhileLoop(XML, Content.NESTED_ENCLOSED_COLLECTION_XML_CONTENT);
+    void parseNestedEnclosedCollectionWithWhileLoopXml() {
+        assertDoesNotThrow(() -> readNestedEnclosedCollectionWithWhileLoop(XML, Content.NESTED_ENCLOSED_COLLECTION_XML_CONTENT));
     }
 
     @Test
-    public void parseNestedEnclosedCollectionWithWhileLoopKvPair() throws IOException {
-        readNestedEnclosedCollectionWithWhileLoop(KV_PAIR, Content.NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT);
+    void parseNestedEnclosedCollectionWithWhileLoopKvPair() {
+        assertDoesNotThrow(() -> readNestedEnclosedCollectionWithWhileLoop(KV_PAIR, Content.NESTED_ENCLOSED_COLLECTION_KV_PAIR_CONTENT));
     }
 
     private void readNestedEnclosedCollectionWithWhileLoop(ContentType type, String input) throws IOException {
@@ -223,18 +224,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseNestedObjectsInCollectionJson() throws IOException {
-        readNestedObjectsInCollection(JSON, Content.NESTED_OBJECTS_IN_COLLECTION_JSON_CONTENT);
+    void parseNestedObjectsInCollectionJson() {
+        assertDoesNotThrow(() -> readNestedObjectsInCollection(JSON, Content.NESTED_OBJECTS_IN_COLLECTION_JSON_CONTENT));
     }
 
     @Test
-    public void parseNestedObjectsInCollectionXml() throws IOException {
-        readNestedObjectsInCollection(XML, Content.NESTED_OBJECTS_IN_COLLECTION_XML_CONTENT);
+    void parseNestedObjectsInCollectionXml() {
+        assertDoesNotThrow(() -> readNestedObjectsInCollection(XML, Content.NESTED_OBJECTS_IN_COLLECTION_XML_CONTENT));
     }
 
     @Test
-    public void parseNestedObjectsInCollectionKvPair() throws IOException {
-        readNestedObjectsInCollection(KV_PAIR, Content.NESTED_OBJECTS_IN_COLLECTION_KV_PAIR_CONTENT);
+    void parseNestedObjectsInCollectionKvPair() {
+        assertDoesNotThrow(() -> readNestedObjectsInCollection(KV_PAIR, Content.NESTED_OBJECTS_IN_COLLECTION_KV_PAIR_CONTENT));
     }
 
     private void readNestedObjectsInCollection(ContentType type, String input) throws IOException {
@@ -261,18 +262,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseComplexNestedStructureJson() throws IOException {
-        readComplexNestedStructure(JSON, Content.COMPLEX_NESTED_STRUCTURE_JSON_CONTENT);
+    void parseComplexNestedStructureJson() {
+        assertDoesNotThrow(() -> readComplexNestedStructure(JSON, Content.COMPLEX_NESTED_STRUCTURE_JSON_CONTENT));
     }
 
     @Test
-    public void parseComplexNestedStructureXml() throws IOException {
-        readComplexNestedStructure(XML, Content.COMPLEX_NESTED_STRUCTURE_XML_CONTENT);
+    void parseComplexNestedStructureXml() {
+        assertDoesNotThrow(() -> readComplexNestedStructure(XML, Content.COMPLEX_NESTED_STRUCTURE_XML_CONTENT));
     }
 
     @Test
-    public void parseComplexNestedStructureKvPair() throws IOException {
-        readComplexNestedStructure(KV_PAIR, Content.COMPLEX_NESTED_STRUCTURE_KV_PAIR_CONTENT);
+    void parseComplexNestedStructureKvPair() {
+        assertDoesNotThrow(() -> readComplexNestedStructure(KV_PAIR, Content.COMPLEX_NESTED_STRUCTURE_KV_PAIR_CONTENT));
     }
 
     private void readComplexNestedStructure(ContentType type, String input) throws IOException {
@@ -303,18 +304,18 @@ public class ParserEquivalenceTest {
     }
 
     @Test
-    public void parseValuesJson() throws IOException {
-        readValues(JSON, Content.VALUES_JSON_CONTENT);
+    void parseValuesJson() {
+        assertDoesNotThrow(() -> readValues(JSON, Content.VALUES_JSON_CONTENT));
     }
 
     @Test
-    public void parseValuesXml() throws IOException {
-        readValues(XML, Content.VALUES_XML_CONTENT);
+    void parseValuesXml() {
+        assertDoesNotThrow(() -> readValues(XML, Content.VALUES_XML_CONTENT));
     }
 
     @Test
-    public void parseValuesKvPair() throws IOException {
-        readValues(KV_PAIR, Content.VALUES_KV_PAIR_CONTENT);
+    void parseValuesKvPair() {
+        assertDoesNotThrow(() -> readValues(KV_PAIR, Content.VALUES_KV_PAIR_CONTENT));
     }
 
     private void readValues(ContentType type, String input) throws IOException {

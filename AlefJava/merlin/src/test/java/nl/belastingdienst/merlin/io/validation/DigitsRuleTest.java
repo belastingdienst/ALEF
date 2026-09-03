@@ -3,45 +3,28 @@ package nl.belastingdienst.merlin.io.validation;
 import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.merlin.io.mocks.ViolationCollectorMock;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DigitsRuleTest {
+@SuppressWarnings("java:S5976") // Parameterized won't make it more clear.
+class DigitsRuleTest {
     private final LocationInfoProvider locationInfoProvider = () -> "/root/amount";
+
+    @ParameterizedTest
+    @ValueSource(strings = {"   ", "  123.45  ", "123.45000", "123.45"})
+    void testShouldAcceptValue(String value) {
+        final ViolationCollectorMock collector = new ViolationCollectorMock();
+        new DigitsRule<>(5, 2).validateLexical(value, collector, locationInfoProvider);
+        assertFalse(collector.hasViolations());
+    }
 
     @Test
     void testShouldAcceptNullValue() {
         final ViolationCollectorMock collector = new ViolationCollectorMock();
         new DigitsRule<>(5, 2).validateLexical(null, collector, locationInfoProvider);
-        assertFalse(collector.hasViolations());
-    }
-
-    @Test
-    void testShouldAcceptBlankValue() {
-        final ViolationCollectorMock collector = new ViolationCollectorMock();
-        new DigitsRule<>(5, 2).validateLexical("   ", collector, locationInfoProvider);
-        assertFalse(collector.hasViolations());
-    }
-
-    @Test
-    void testShouldAcceptValidDecimalValue() {
-        ViolationCollectorMock collector = new ViolationCollectorMock();
-        new DigitsRule<>(5, 2).validateLexical("123.45", collector, locationInfoProvider);
-        assertFalse(collector.hasViolations());
-    }
-
-    @Test
-    void testShouldTrimValueBeforeValidating() {
-        final ViolationCollectorMock collector = new ViolationCollectorMock();
-        new DigitsRule<>(5, 2).validateLexical("  123.45  ", collector, locationInfoProvider);
-        assertFalse(collector.hasViolations());
-    }
-
-    @Test
-    void testShouldIgnoreTrailingZerosWhenValidatingFractionDigits() {
-        final ViolationCollectorMock collector = new ViolationCollectorMock();
-        new DigitsRule<>(5, 2).validateLexical("123.45000", collector, locationInfoProvider);
         assertFalse(collector.hasViolations());
     }
 

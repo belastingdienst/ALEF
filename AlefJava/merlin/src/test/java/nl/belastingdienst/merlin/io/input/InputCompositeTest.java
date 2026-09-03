@@ -11,9 +11,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class InputCompositeTest extends InputElementTest {
+class InputCompositeTest extends InputElementTest {
     @Test
-    public void testCompositeProperty() throws IOException {
+    void testCompositeProperty() throws IOException {
         final InputComposite compositeItem = new InputComposite("values", false, new StringToStringReader(), List.of(
                 new AttributePart(PersonType.age),
                 new TextPart(","),
@@ -26,7 +26,7 @@ public class InputCompositeTest extends InputElementTest {
 
 
     @Test
-    public void testTrailingTextPart() throws IOException {
+    void testTrailingTextPart() throws IOException {
         final InputComposite compositeItem = new InputComposite("values", false, new StringToStringReader(), List.of(
                 new AttributePart(PersonType.age),
                 new TextPart(",")
@@ -36,7 +36,7 @@ public class InputCompositeTest extends InputElementTest {
     }
 
     @Test
-    public void testLeadingTextPart() throws IOException {
+    void testLeadingTextPart() throws IOException {
         final InputComposite compositeItem = new InputComposite("values", false, new StringToStringReader(), List.of(
                 new TextPart(","),
                 new AttributePart(PersonType.age)
@@ -46,7 +46,7 @@ public class InputCompositeTest extends InputElementTest {
     }
 
     @Test
-    public void testSpecialCharacters() throws IOException {
+    void testSpecialCharacters() throws IOException {
         final InputComposite compositeItem = new InputComposite("values", false, new StringToStringReader(), List.of(
                 new TextPart("!@#$%^&*()~`"),
                 new AttributePart(PersonType.age)
@@ -56,7 +56,7 @@ public class InputCompositeTest extends InputElementTest {
     }
 
     @Test
-    public void testDimensions() throws IOException {
+    void testDimensions() throws IOException {
         final InputComposite compositeItem = new InputComposite("values", false, new StringToStringReader(), List.of(
                 new AttributePart(PersonType.salary, 0),
                 new TextPart(","),

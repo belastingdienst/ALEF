@@ -10,24 +10,24 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
 
-public class OutputAttribute<TAlef> implements OutputField {
-    private final MPropertyKey<TAlef> propertyKey;
-    private final MDimensionalPropertyKey<TAlef> dimensionalPropertyKey;
+public class OutputAttribute<T> implements OutputField {
+    private final MPropertyKey<T> propertyKey;
+    private final MDimensionalPropertyKey<T> dimensionalPropertyKey;
     private final boolean required;
     private final Integer dimensionKey;
     private final String fieldName;
-    private final ContentWriter<TAlef> writer;
+    private final ContentWriter<T> writer;
 
-    public OutputAttribute(String fieldName, boolean required, MPropertyKey<TAlef> propertyKey, ContentWriter<TAlef> writer) {
+    public OutputAttribute(String fieldName, boolean required, MPropertyKey<T> propertyKey, ContentWriter<T> writer) {
         this(fieldName, required, propertyKey, null, writer);
     }
 
-    public OutputAttribute(String fieldName, boolean required, MPropertyKey<TAlef> propertyKey, Integer dimensionKey, ContentWriter<TAlef> writer) {
+    public OutputAttribute(String fieldName, boolean required, MPropertyKey<T> propertyKey, Integer dimensionKey, ContentWriter<T> writer) {
         this.fieldName = fieldName;
         this.required = required;
         this.writer = writer;
         this.propertyKey = isDimensional(propertyKey) ? null : propertyKey;
-        this.dimensionalPropertyKey = isDimensional(propertyKey) ? (MDimensionalPropertyKey<TAlef>) propertyKey : null;
+        this.dimensionalPropertyKey = isDimensional(propertyKey) ? (MDimensionalPropertyKey<T>) propertyKey : null;
         this.dimensionKey = dimensionKey;
     }
 
@@ -46,15 +46,15 @@ public class OutputAttribute<TAlef> implements OutputField {
 
     @Override
     public void generate(MUniverse universe, ContentGenerator generator, MObject alefObject) throws IOException {
-        final TAlef value = getValue(alefObject);
+        final T value = getValue(alefObject);
         if (shouldWriteValue(value)) {
             generator.writeFieldName(fieldName);
             writer.write(generator, value);
         }
     }
 
-    private TAlef getValue(MObject alefObject) {
-        TAlef value;
+    private T getValue(MObject alefObject) {
+        T value;
         if (dimensionalPropertyKey != null) {
             value = alefObject.getProperty(dimensionalPropertyKey, dimensionKey).get();
         } else {
@@ -63,11 +63,11 @@ public class OutputAttribute<TAlef> implements OutputField {
         return value;
     }
 
-    private boolean shouldWriteValue(TAlef value) {
+    private boolean shouldWriteValue(T value) {
         return writer.shouldWriteValue(value) || required;
     }
 
-    private boolean isDimensional(MPropertyKey<TAlef> property) {
-        return property instanceof MDimensionalPropertyKey<TAlef>;
+    private boolean isDimensional(MPropertyKey<T> property) {
+        return property instanceof MDimensionalPropertyKey<T>;
     }
 }

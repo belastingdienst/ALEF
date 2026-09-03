@@ -64,8 +64,8 @@ public final class InputComposite implements InputField {
         parts.forEach(part -> {
             if (part instanceof AttributePart) {
                 regexBuilder.append("(-?\\d+)");
-            } else if (part instanceof TextPart) {
-                final String text = ((TextPart) part).getText();
+            } else if (part instanceof TextPart textPart) {
+                final String text = textPart.text();
                 regexBuilder.append(text.isEmpty() ? text : Pattern.quote(text));
             } else {
                 throw new IllegalStateException("Unexpected CompositePart type in createRegex. " +

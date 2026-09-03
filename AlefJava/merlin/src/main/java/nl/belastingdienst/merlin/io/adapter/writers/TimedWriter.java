@@ -10,23 +10,23 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 import java.util.List;
 
-public class TimedWriter<TAlef> extends AbstractTimedWriter<ITimed<TAlef>> {
-    private final ContentWriter<TAlef> valueWriter;
+public class TimedWriter<T> extends AbstractTimedWriter<ITimed<T>> {
+    private final ContentWriter<T> valueWriter;
 
-    public TimedWriter(TimelineInfo timelineInfo, ContentWriter<TAlef> valueWriter) {
+    public TimedWriter(TimelineInfo timelineInfo, ContentWriter<T> valueWriter) {
         super(timelineInfo);
         this.valueWriter = valueWriter;
     }
 
     @Override
-    public void write(ContentGenerator contentGenerator, ITimed<TAlef> value) throws IOException {
+    public void write(ContentGenerator contentGenerator, ITimed<T> value) throws IOException {
         if (value == null) {
             contentGenerator.beginCollection();
             contentGenerator.endCollection();
             return;
         }
         contentGenerator.beginEnclosedCollection("periode");
-        for (TimeBox<TAlef> box : value.evaluate().boxes(Period.ALWAYS).toList()) {
+        for (TimeBox<T> box : value.evaluate().boxes(Period.ALWAYS).toList()) {
             if (box.hasValue()) {
                 contentGenerator.beginObject();
                 writePeriod(contentGenerator, box);
@@ -38,15 +38,15 @@ public class TimedWriter<TAlef> extends AbstractTimedWriter<ITimed<TAlef>> {
     }
 
     @Override
-    public boolean shouldWriteValue(ITimed<TAlef> value) {
+    public boolean shouldWriteValue(ITimed<T> value) {
         if (value == null) {
             return false;
         }
-        final List<TimeBox<TAlef>> boxes = value.evaluate().boxes(Period.ALWAYS).toList();
+        final List<TimeBox<T>> boxes = value.evaluate().boxes(Period.ALWAYS).toList();
         return (boxes.size() == 1 && boxes.get(0).hasValue()) || boxes.size() > 1;
     }
 
-    private void writeValue(ContentGenerator contentGenerator, TimeBox<TAlef> box) throws IOException {
+    private void writeValue(ContentGenerator contentGenerator, TimeBox<T> box) throws IOException {
         if (box.hasValue()) {
             contentGenerator.writeFieldName("waarde");
             valueWriter.write(contentGenerator, box.value());

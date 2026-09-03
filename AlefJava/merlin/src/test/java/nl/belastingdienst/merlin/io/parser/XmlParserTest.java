@@ -2,33 +2,31 @@ package nl.belastingdienst.merlin.io.parser;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class XmlParserTest {
-    final String EMPTY_ELEMENT_XML = """
+class XmlParserTest {
+    private static final String EMPTY_ELEMENT_XML = """
             <message>
                 <element></element>
             </message>
             """;
 
     @Test
-    public void parseEmptyObject() throws IOException {
+    void parseEmptyObject() throws IOException {
         final ContentParser parser = new XmlParser(asInputStream(EMPTY_ELEMENT_XML), null);
         parser.beginObject();
         parseAndAssertFieldName(parser, "element");
         parser.beginObject();
         parser.endObject();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 
     @Test
-    public void parseEmptyObjectWithPeeking() throws IOException {
+    void parseEmptyObjectWithPeeking() throws IOException {
         final ContentParser parser = new XmlParser(asInputStream(EMPTY_ELEMENT_XML), null);
         parser.beginObject();
         parseAndAssertFieldName(parser, "element");
@@ -37,11 +35,12 @@ public class XmlParserTest {
         assertEquals(ContentToken.END_OBJECT, parser.peek()); // uses currentToken
         parser.endObject();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 
 
     @Test
-    public void parseEmptyCollection() throws IOException {
+    void parseEmptyCollection() throws IOException {
         final ContentParser parser = new XmlParser(asInputStream(EMPTY_ELEMENT_XML), null);
         parser.beginObject();
         parseAndAssertFieldName(parser, "element");
@@ -49,20 +48,22 @@ public class XmlParserTest {
         parseAndAssertValue(parser, "");
         parser.endCollection();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 
     @Test
-    public void parseEmptyEnclosedCollection() throws IOException {
+    void parseEmptyEnclosedCollection() throws IOException {
         final ContentParser parser = new XmlParser(asInputStream(EMPTY_ELEMENT_XML), null);
         parser.beginObject();
         parseAndAssertFieldName(parser, "element");
         parser.beginEnclosedCollection("inner");
         parser.endCollection();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 
     @Test
-    public void parseEmptyObjectInCollection() throws IOException {
+    void parseEmptyObjectInCollection() throws IOException {
         final String xml = """
                 <message>
                     <root>
@@ -81,10 +82,11 @@ public class XmlParserTest {
         parser.endObject();
         parser.endCollection();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 
     @Test
-    public void parseEmptyEnclosedCollectionInCollection() throws IOException {
+    void parseEmptyEnclosedCollectionInCollection() throws IOException {
         final String xml = """
                 <message>
                     <rootCollection>
@@ -100,10 +102,11 @@ public class XmlParserTest {
         parser.endObject();
         parser.endCollection();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 
     @Test
-    public void parseCollectionEndingDueToFieldNameChange() throws IOException {
+    void parseCollectionEndingDueToFieldNameChange() throws IOException {
         final String xml = """
                 <message>
                     <rootCollection>
@@ -146,5 +149,6 @@ public class XmlParserTest {
         }
         parser.endCollection();
         parser.endObject();
+        assertEquals(null, parser.nextToken());
     }
 }
