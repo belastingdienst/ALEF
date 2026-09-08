@@ -621,21 +621,6 @@
 			</properties>
 		</profile>
 		<profile>
-			<!-- MacOS: Intel -->
-			<id>MacOSx64</id>
-			<activation>
-				<os>
-					<family>mac</family>
-					<arch>x64</arch>
-				</os>
-			</activation>
-			<properties>
-				<jbr.classifier>osx-x64</jbr.classifier>
-				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}/Contents/Home</java.home>
-				<maven.test.skip>true</maven.test.skip>
-			</properties>
-		</profile>
-		<profile>
 			<!-- MacOS: Apple Silicon -->
 			<id>MacOSaarch64</id>
 			<activation>
