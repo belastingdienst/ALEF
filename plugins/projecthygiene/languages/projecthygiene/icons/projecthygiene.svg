@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="projecthygiene.svg"
+   inkscape:export-filename="record.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="51.3125"
+     inkscape:cx="7.8440926"
+     inkscape:cy="8.3313033"
+     inkscape:window-width="2288"
+     inkscape:window-height="1036"
+     inkscape:window-x="3597"
+     inkscape:window-y="120"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1"
+     showgrid="false" />
+  <rect
+     style="fill:none;stroke:#254265;stroke-width:0.821244;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     id="rect1"
+     width="9.4763107"
+     height="8.4434252"
+     x="1.4689087"
+     y="1.4494203" />
+  <path
+     style="fill:none;stroke:#3aa058;stroke-width:0.895048;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3.8249893,5.7987715 c 2.294612,2.1818069 2.3121281,2.1818069 2.3121281,2.1818069 L 8.764536,3.513069 v 0"
+     id="path1" />
+  <ellipse
+     style="fill:none;stroke:#3a66a0;stroke-width:1.10221;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     id="path2"
+     cx="10.533496"
+     cy="9.9683313"
+     rx="2.9411523"
+     ry="2.6488261" />
+  <path
+     style="fill:none;stroke:#3a66a0;stroke-width:1.00157;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 12.180268,12.16078 2.3581,2.611449"
+     id="path3" />
+</svg>

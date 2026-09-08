@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="hygieneFolder.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="63.0625"
+     inkscape:cx="10.410307"
+     inkscape:cy="6.9375619"
+     inkscape:window-width="2720"
+     inkscape:window-height="1252"
+     inkscape:window-x="2943"
+     inkscape:window-y="81"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 7.1955371,3.2695481 0.1261346,0.1133696 h 0.1759922 3.8991921 c 0.717798,0 1.299731,0.5375291 1.299731,1.2006099 v 4.9091336 c 0,0.6288798 -0.510881,1.0939158 -1.083109,1.0939158 H 2.5153623 c -0.5722715,0 -1.0831091,-0.465036 -1.0831091,-1.0939158 v -6.616665 c 0,-0.6288635 0.5108376,-1.0938917 1.0831091,-1.0938917 h 2.8492093 c 0.1128513,0 0.2212488,0.040677 0.3021268,0.1133696 z"
+     fill="#f2fcf3"
+     stroke="#208A3C"
+     id="path1"
+     style="stroke:#834dff;stroke-width:0.832792;stroke-opacity:1;fill:#faf5ff;fill-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-size:9.34053px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;stroke:#f9f9f9;stroke-width:0.268318;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.99;paint-order:fill markers stroke"
+     x="6.5791173"
+     y="14.710344"
+     id="text2"
+     transform="scale(1.0410548,0.96056423)"><tspan
+       sodipodi:role="line"
+       id="tspan2"
+       x="6.5791173"
+       y="14.710344"
+       style="stroke:#f9f9f9;stroke-width:0.268318;stroke-dasharray:none">H</tspan></text>
+</svg>

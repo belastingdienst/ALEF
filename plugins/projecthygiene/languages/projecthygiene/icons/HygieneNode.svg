@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="HygieneNode.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="63.0625"
+     inkscape:cx="8.0951437"
+     inkscape:cy="8.4122894"
+     inkscape:window-width="1728"
+     inkscape:window-height="1186"
+     inkscape:window-x="4209"
+     inkscape:window-y="155"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <circle
+     cx="8"
+     cy="8"
+     r="6.5"
+     fill="#FAF5FF"
+     stroke="#834DF0"
+     id="circle1" />
+  <text
+     xml:space="preserve"
+     style="font-size:9.98482px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#834df0;fill-opacity:1;stroke:#ffffff;stroke-width:0.059077;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.99;paint-order:fill markers stroke"
+     x="3.8650832"
+     y="12.084367"
+     id="text1"
+     transform="scale(1.0697586,0.93479032)"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="3.8650832"
+       y="12.084367"
+       style="stroke-width:0.059077">H</tspan></text>
+</svg>

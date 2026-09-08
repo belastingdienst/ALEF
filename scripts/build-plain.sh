@@ -75,7 +75,6 @@ runBuild plugins/json/json-test.xml clean generate assemble build test
 
 runBuild plugins/projecthygiene/hygiene-mpsplugin.xml clean generate assemble
 cp -rp plugins/projecthygiene/build/artifacts/hygiene-plugin/* target/extra-mps-plugins
-
 runBuild build_alef_about.xml clean generate assemble run patch-app-jar
 
 runBuild plugins/translator/translator-mpsplugin.xml clean generate assemble
