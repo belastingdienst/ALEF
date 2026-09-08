@@ -99,7 +99,11 @@ for buildXml in alef-standalone.xml alef-distribution.xml; do
   runBuild $buildXml clean assemble
 done
 
-runBuild alef-test.xml clean generate build test
+if [ "${SKIP_TEST}" != "true" ]; then
+    runBuild alef-test.xml clean generate build test
+else
+    echo "Skipping alef-test as requested"
+fi
 
 if [ "${NO_ARTIFACTS_CLEAN:0}" != "1" ]; then
   echo "[ALEF] clean artifacts"
