@@ -2074,7 +2074,7 @@
       <node concept="3clFbS" id="2EMyvouF16D" role="2VODD2">
         <node concept="3cpWs6" id="2EMyvouF1TE" role="3cqZAp">
           <node concept="Xl_RD" id="2EMyvouF1Un" role="3cqZAk">
-            <property role="Xl_RC" value="Zet om in zijn negatie" />
+            <property role="Xl_RC" value="Zet Om in zijn Negatie" />
           </node>
         </node>
       </node>
