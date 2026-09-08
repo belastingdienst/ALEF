@@ -99,7 +99,7 @@ for buildXml in alef-standalone.xml alef-distribution.xml; do
   runBuild $buildXml clean assemble
 done
 
-if [ "${SKIP_TEST}" != "true" ]; then
+if [ "${SKIP_TEST:-}" != "true" ]; then
     runBuild alef-test.xml clean generate build test
 else
     echo "Skipping alef-test as requested"
