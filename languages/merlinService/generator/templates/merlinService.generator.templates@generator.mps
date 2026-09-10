@@ -2585,31 +2585,6 @@
     </node>
     <node concept="3uibUv" id="4q$adHBbQGg" role="1zkMxy">
       <ref role="3uigEE" to="nzn:~InputMessage" resolve="InputMessage" />
-      <node concept="3uibUv" id="79aBNE6SStC" role="11_B2D">
-        <ref role="3uigEE" to="jyki:~MObjectType" resolve="MObjectType" />
-        <node concept="1ZhdrF" id="79aBNE6SSXr" role="lGtFl">
-          <property role="2qtEX8" value="classifier" />
-          <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
-          <node concept="3$xsQk" id="79aBNE6SSXs" role="3$ytzL">
-            <node concept="3clFbS" id="79aBNE6SSXt" role="2VODD2">
-              <node concept="3clFbF" id="79aBNE6STg8" role="3cqZAp">
-                <node concept="2OqwBi" id="79aBNE6STga" role="3clFbG">
-                  <node concept="1iwH7S" id="79aBNE6STgb" role="2Oq$k0" />
-                  <node concept="1iwH70" id="79aBNE6STgc" role="2OqNvi">
-                    <ref role="1iwH77" to="suo0:10UkTy6dBXj" resolve="m_objectType" />
-                    <node concept="2OqwBi" id="79aBNE6STgd" role="1iwH7V">
-                      <node concept="30H73N" id="79aBNE6STge" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="79aBNE6STgf" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ku5w:2jxTcXaCoQk" resolve="object" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="1ps_y7" id="2L0M$HhH3PV" role="lGtFl">
       <node concept="1ps_xZ" id="2L0M$HhH3PW" role="1ps_xO">

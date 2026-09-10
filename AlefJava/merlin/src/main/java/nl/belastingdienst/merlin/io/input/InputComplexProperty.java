@@ -22,7 +22,7 @@ public final class InputComplexProperty implements InputElement {
     private final Class<? extends MFactType> factTypeClass;
     private final boolean required;
 
-    public InputComplexProperty(String fieldName, String itemFieldName, boolean required, InputMessage<?> messageAdapter,
+    public InputComplexProperty(String fieldName, String itemFieldName, boolean required, InputMessage messageAdapter,
             Cardinality cardinality, FactSide factSide, Class<? extends MFactType> factTypeClass) {
         this.messageAdapter = messageAdapter;
         this.fieldName = fieldName;
