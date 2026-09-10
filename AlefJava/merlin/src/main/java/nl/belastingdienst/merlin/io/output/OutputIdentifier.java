@@ -32,22 +32,26 @@ public class OutputIdentifier implements OutputField {
         if (value != null) {
             contentGenerator.writeFieldName(fieldName);
             try {
-                switch (xsdType) {
-                    case BOOLEAN -> contentGenerator.writeBoolean(xsdType.getValueTypeName(), Boolean.parseBoolean(value));
-                    case BYTE -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Byte.parseByte(value));
-                    case SHORT -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Short.parseShort(value));
-                    case DOUBLE -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Double.parseDouble(value));
-                    case FLOAT -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Float.parseFloat(value));
-                    case INT -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Integer.parseInt(value));
-                    case LONG -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Long.parseLong(value));
-                    case DECIMAL -> contentGenerator.writeNumber(xsdType.getValueTypeName(), new BigDecimal(value));
-                    case DATE, STRING, TIME, DURATION, DATETIME -> contentGenerator.writeString(xsdType.getValueTypeName(), value);
-                    case INTEGER, NEGATIVE_INTEGER, NON_NEGATIVE_INTEGER,
-                         POSITIVE_INTEGER, NON_POSITIVE_INTEGER -> contentGenerator.writeNumber(xsdType.getValueTypeName(), new BigInteger(value));
-                }
+                generateValue(contentGenerator, value);
             } catch (Exception e) {
                 contentGenerator.writeString("valueString", value);
             }
+        }
+    }
+
+    private void generateValue(ContentGenerator contentGenerator, String value) throws IOException {
+        switch (xsdType) {
+            case BOOLEAN -> contentGenerator.writeBoolean(xsdType.getValueTypeName(), Boolean.parseBoolean(value));
+            case BYTE -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Byte.parseByte(value));
+            case SHORT -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Short.parseShort(value));
+            case DOUBLE -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Double.parseDouble(value));
+            case FLOAT -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Float.parseFloat(value));
+            case INT -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Integer.parseInt(value));
+            case LONG -> contentGenerator.writeNumber(xsdType.getValueTypeName(), Long.parseLong(value));
+            case DECIMAL -> contentGenerator.writeNumber(xsdType.getValueTypeName(), new BigDecimal(value));
+            case DATE, STRING, TIME, DURATION, DATETIME -> contentGenerator.writeString(xsdType.getValueTypeName(), value);
+            case INTEGER, NEGATIVE_INTEGER, NON_NEGATIVE_INTEGER,
+                 POSITIVE_INTEGER, NON_POSITIVE_INTEGER -> contentGenerator.writeNumber(xsdType.getValueTypeName(), new BigInteger(value));
         }
     }
 

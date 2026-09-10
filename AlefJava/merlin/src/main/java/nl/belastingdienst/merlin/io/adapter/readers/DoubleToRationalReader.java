@@ -33,7 +33,7 @@ public class DoubleToRationalReader extends AbstractReader<Double, BigRational> 
         try {
             return Double.parseDouble(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return 0.0;
     }

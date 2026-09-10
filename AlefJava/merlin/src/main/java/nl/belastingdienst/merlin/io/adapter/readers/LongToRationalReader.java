@@ -33,7 +33,7 @@ public class LongToRationalReader extends AbstractReader<Long, BigRational> {
         try {
             return Long.parseLong(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return 0L;
     }

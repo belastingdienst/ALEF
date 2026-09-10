@@ -12,24 +12,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Response {
-    private final List<OutputComplexProperty> complexProperties = new ArrayList<>();
-    private final String serviceVersion;
+    private final List<OutputComplexProperty<?>> complexProperties = new ArrayList<>();
     private final boolean useConsistencyFlag;
 
-    protected Response(AdapterRegistry registry, String serviceVersion, boolean useConsistencyFlag) {
-        this.serviceVersion = serviceVersion;
+    protected Response(AdapterRegistry registry, boolean useConsistencyFlag) {
         this.useConsistencyFlag = useConsistencyFlag;
         initialize(registry);
     }
 
     public abstract void initialize(AdapterRegistry registry);
 
-    public void addElement(OutputComplexProperty property) {
+    public void addElement(OutputComplexProperty<?> property) {
         complexProperties.add(property);
     }
 
     public void evaluate(MUniverse universe, MObject mainObject) {
-        for (OutputComplexProperty property : complexProperties) {
+        for (OutputComplexProperty<?> property : complexProperties) {
             property.evaluate(universe, mainObject);
         }
     }
@@ -48,7 +46,7 @@ public abstract class Response {
             contentGenerator.beginObject();
             contentGenerator.enterKvPairSection();
         }
-        for (OutputComplexProperty property : complexProperties) {
+        for (OutputComplexProperty<?> property : complexProperties) {
             property.generate(universe, contentGenerator, mainObject);
         }
         if (contentGenerator instanceof KvPairGenerator) {

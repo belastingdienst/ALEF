@@ -41,7 +41,7 @@ public class AdapterRegistry {
         return getReader(alefJavaType, List.of(internalTypeName));
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "java:S1172"}) // alefJavaType is used for type information, to make generics work
     public <T> ContentReader<T> getReader(Class<T> alefJavaType, List<String> internalTypeNames) {
         for (String internalTypeName : internalTypeNames) {
             ContentReader<?> reader = readers.get(internalTypeName);

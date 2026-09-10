@@ -241,35 +241,42 @@ public class XmlGenerator extends AbstractGenerator {
         internalGenerator.writeEndObject();
     }
 
-
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteStringField(String fieldName, String valueTypeName, String value) throws IOException {
         getGenerator().writeStringField(fieldName, value);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteNumberField(String fieldName, String valueTypeName, double number) throws IOException {
         getGenerator().writeNumberField(fieldName, number);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteNumberField(String fieldName, String valueTypeName, long number) throws IOException {
         getGenerator().writeNumberField(fieldName, number);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteNumberField(String fieldName, String valueTypeName, int number) throws IOException {
         getGenerator().writeNumberField(fieldName, number);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteNumberField(String fieldName, String valueTypeName, BigDecimal number) throws IOException {
         getGenerator().writeNumberField(fieldName, number);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteNumberField(String fieldName, String valueTypeName, BigInteger number) throws IOException {
         getGenerator().writeNumberField(fieldName, number);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteBooleanField(String fieldName, String valueTypeName, boolean number) throws IOException {
         getGenerator().writeBooleanField(fieldName, number);
     }
 
+    @SuppressWarnings("java:S1172") // parameter valueTypeName is used by the subclass KvPairGenerator
     protected void internalWriteNullField(String fieldName, String valueTypeName) throws IOException {
         getGenerator().writeNullField(fieldName);
     }

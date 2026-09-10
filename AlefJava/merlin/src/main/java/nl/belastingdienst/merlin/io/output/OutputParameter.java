@@ -7,7 +7,7 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
 
-public class OutputParameter<A, M> implements OutputField {
+public class OutputParameter<A> implements OutputField {
     private final String fieldName;
     private final String parameterName;
     private final boolean onlyOutputWhenEvaluated;

@@ -34,7 +34,7 @@ public class IntegerToRationalReader extends AbstractReader<BigInteger, BigRatio
         try {
             return new BigInteger(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return BigInteger.ZERO;
     }

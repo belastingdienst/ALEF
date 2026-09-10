@@ -64,7 +64,7 @@ public class XmlParser extends JacksonParser {
     }
 
     @Override
-    @SuppressWarnings({"java:S135", "java:S3776"}) // STATE machine
+    @SuppressWarnings({"java:S135", "java:S138", "java:S3776", "java:S1541"}) // STATE machine
     protected final ContentToken internalNextToken(boolean isPeeking) throws IOException {
         if (isPeeking) {
             return internalNextTokenWhilePeeking();

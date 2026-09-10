@@ -33,7 +33,7 @@ public class IntToRationalReader extends AbstractReader<Integer, BigRational> {
         try {
             return Integer.parseInt(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return 0;
     }

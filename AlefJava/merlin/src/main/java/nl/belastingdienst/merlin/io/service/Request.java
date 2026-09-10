@@ -36,7 +36,7 @@ public abstract class Request {
     private final CalculationMoment calculationMoment;
     private final List<InputComplexProperty> complexProperties = new ArrayList<>();
     private final HashMap<String, InputComplexProperty> complexPropertyByName = new HashMap<>();
-    private final HashMap<String, InputComplexProperty> complexPropertyByCollectionItemFieldName = new HashMap();
+    private final HashMap<String, InputComplexProperty> complexPropertyByCollectionItemFieldName = new HashMap<>();
 
     protected Request(AdapterRegistry registry, String calculationMomentFieldName, CalculationMoment calculationMoment) {
         super();

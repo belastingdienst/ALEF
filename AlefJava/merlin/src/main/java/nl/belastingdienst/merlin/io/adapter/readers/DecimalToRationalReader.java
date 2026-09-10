@@ -37,7 +37,7 @@ public class DecimalToRationalReader extends AbstractReader<BigDecimal, BigRatio
         try {
             return new BigDecimal(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return null;
     }

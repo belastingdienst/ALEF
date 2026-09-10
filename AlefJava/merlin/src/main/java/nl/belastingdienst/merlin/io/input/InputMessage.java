@@ -60,7 +60,7 @@ public abstract class InputMessage<T extends MObjectType> {
         }
         parser.endObject();
         validateMessageStructure(universe, parser, encounteredFieldNames);
-        handleDefaultValues(alefObject, encounteredFieldNames);
+        handleDefaultValues(alefObject);
         return alefObject;
     }
 
@@ -82,7 +82,7 @@ public abstract class InputMessage<T extends MObjectType> {
         parser.endObject();
         validateMessageStructure(universe, parser, encounteredFieldNames);
         final MObject alefObject = createAlefObject(universe, null, propertyBasket, objectsByFieldName, parser);
-        handleDefaultValues(alefObject, encounteredFieldNames);
+        handleDefaultValues(alefObject);
         return alefObject;
     }
 
@@ -92,7 +92,7 @@ public abstract class InputMessage<T extends MObjectType> {
         }
         parser.endObject();
         validateMessageStructure(universe, parser, encounteredFieldNames);
-        handleDefaultValues(alefObject, encounteredFieldNames);
+        handleDefaultValues(alefObject);
         return alefObject;
     }
 
@@ -154,7 +154,7 @@ public abstract class InputMessage<T extends MObjectType> {
         return alefObjectType == null ? null : universe.getObjectType(alefObjectType).createObject();
     }
 
-    private void handleDefaultValues(MObject alefObject, List<String> encounteredFieldNames) {
+    private void handleDefaultValues(MObject alefObject) {
         for (InputElement node : inputElements) {
             node.handleDefaultValue(alefObject);
         }

@@ -46,7 +46,7 @@ public abstract class AbstractService<T extends MObjectType> {
                 throw x;
             } catch (Exception x) {
                 logError(messageId, x, inputStream);
-                throw new RuntimeException(x);
+                throw new ServiceException(x.getMessage(), x);
             }
         }
     }
@@ -94,7 +94,7 @@ public abstract class AbstractService<T extends MObjectType> {
     }
 
     protected ByteArrayOutputStream returnError(InputStream inputStream, Exception e) {
-        return null;
+        throw new ServiceException(e.getMessage(), e);
     }
 
     protected abstract ContentGenerator beginResponse(OutputStream outputStream) throws IOException;
