@@ -41,6 +41,7 @@
         <dependency reexport="false">09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)</dependency>
         <dependency reexport="false">73790f24-2f5f-4a73-ac29-aed1b764b1a9(generatorUtils)</dependency>
         <dependency reexport="false">26c003b8-2642-44b1-8d28-63f478da851b(servicespraak.tijd)</dependency>
+        <dependency reexport="false">f9691538-2073-4733-bc82-884c4fd5e827(TempModule6)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
