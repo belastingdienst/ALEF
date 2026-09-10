@@ -280,6 +280,7 @@
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
+      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
@@ -6959,6 +6960,42 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4UoDyp0Aeow" role="3cqZAp">
+          <node concept="2OqwBi" id="4UoDyp0Aeox" role="3clFbG">
+            <node concept="37vLTw" id="4UoDyp0Aeoy" role="2Oq$k0">
+              <ref role="3cqZAo" node="1qJhPmiB9HL" resolve="universe" />
+            </node>
+            <node concept="liA8E" id="4UoDyp0Aeoz" role="2OqNvi">
+              <ref role="37wK5l" to="jyki:~MUniverse.addExtensions(java.lang.Object)" resolve="addExtensions" />
+              <node concept="10Nm6u" id="4UoDyp0Aeo$" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="1WS0z7" id="4UoDyp0Aeo_" role="lGtFl">
+            <node concept="3JmXsc" id="4UoDyp0AeoA" role="3Jn$fo">
+              <node concept="3clFbS" id="4UoDyp0AeoB" role="2VODD2">
+                <node concept="3clFbF" id="4UoDyp0ATEi" role="3cqZAp">
+                  <node concept="2OqwBi" id="4UoDyp0ATEk" role="3clFbG">
+                    <node concept="35c_gC" id="4UoDyp0ATEl" role="2Oq$k0">
+                      <ref role="35c_gD" to="3ic2:y87BIjIbP1" resolve="INeedUniverseExtensie" />
+                    </node>
+                    <node concept="2qgKlT" id="4UoDyp0ATEm" role="2OqNvi">
+                      <ref role="37wK5l" to="8l26:y87BIlGWny" resolve="needs" />
+                      <node concept="2OqwBi" id="4UoDyp0ATEn" role="37wK5m">
+                        <node concept="2qgKlT" id="4UoDyp0ATEr" role="2OqNvi">
+                          <ref role="37wK5l" to="txb8:7BFdRvteIjR" resolve="gebruikteRegelversies" />
+                        </node>
+                        <node concept="30H73N" id="4UoDyp0ATEq" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1sPUBX" id="4UoDyp0AeoL" role="lGtFl">
+            <ref role="v9R2y" node="79aBNE6uiDN" resolve="serviceExtensies" />
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="1qJhPmiB9Id" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -10011,6 +10048,14 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="79aBNE6uiDN">
+    <property role="TrG5h" value="serviceExtensies" />
+    <node concept="3aamgX" id="2snWCwpKmQq" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="3ic2:y87BIjIbP1" resolve="INeedUniverseExtensie" />
+      <node concept="b5Tf3" id="2snWCwpKmQu" role="1lVwrX" />
     </node>
   </node>
 </model>
