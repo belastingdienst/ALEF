@@ -2585,6 +2585,31 @@
     </node>
     <node concept="3uibUv" id="4q$adHBbQGg" role="1zkMxy">
       <ref role="3uigEE" to="nzn:~InputMessage" resolve="InputMessage" />
+      <node concept="3uibUv" id="79aBNE6SStC" role="11_B2D">
+        <ref role="3uigEE" to="jyki:~MObjectType" resolve="MObjectType" />
+        <node concept="1ZhdrF" id="79aBNE6SSXr" role="lGtFl">
+          <property role="2qtEX8" value="classifier" />
+          <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
+          <node concept="3$xsQk" id="79aBNE6SSXs" role="3$ytzL">
+            <node concept="3clFbS" id="79aBNE6SSXt" role="2VODD2">
+              <node concept="3clFbF" id="79aBNE6STg8" role="3cqZAp">
+                <node concept="2OqwBi" id="79aBNE6STga" role="3clFbG">
+                  <node concept="1iwH7S" id="79aBNE6STgb" role="2Oq$k0" />
+                  <node concept="1iwH70" id="79aBNE6STgc" role="2OqNvi">
+                    <ref role="1iwH77" to="suo0:10UkTy6dBXj" resolve="m_objectType" />
+                    <node concept="2OqwBi" id="79aBNE6STgd" role="1iwH7V">
+                      <node concept="30H73N" id="79aBNE6STge" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="79aBNE6STgf" role="2OqNvi">
+                        <ref role="3Tt5mk" to="ku5w:2jxTcXaCoQk" resolve="object" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1ps_y7" id="2L0M$HhH3PV" role="lGtFl">
       <node concept="1ps_xZ" id="2L0M$HhH3PW" role="1ps_xO">
@@ -5982,33 +6007,9 @@
       <node concept="3Tm1VV" id="HdyRULSeH2" role="1B3o_S" />
       <node concept="3clFbS" id="HdyRULSeH3" role="3clF47">
         <node concept="XkiVB" id="HdyRULSeN9" role="3cqZAp">
-          <ref role="37wK5l" to="n8da:~Response.&lt;init&gt;(nl.belastingdienst.merlin.io.adapter.AdapterRegistry,java.lang.String,boolean)" resolve="Response" />
+          <ref role="37wK5l" to="n8da:~Response.&lt;init&gt;(nl.belastingdienst.merlin.io.adapter.AdapterRegistry,boolean)" resolve="Response" />
           <node concept="37vLTw" id="637xZI1sra2" role="37wK5m">
             <ref role="3cqZAo" node="637xZI1sqIa" resolve="registry" />
-          </node>
-          <node concept="Xl_RD" id="HdyRULSeOA" role="37wK5m">
-            <property role="Xl_RC" value="version" />
-            <node concept="17Uvod" id="HdyRULSeSE" role="lGtFl">
-              <property role="2qtEX9" value="value" />
-              <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-              <node concept="3zFVjK" id="HdyRULSeSF" role="3zH0cK">
-                <node concept="3clFbS" id="HdyRULSeSG" role="2VODD2">
-                  <node concept="3clFbF" id="HdyRULSf0O" role="3cqZAp">
-                    <node concept="2OqwBi" id="HdyRULSgUd" role="3clFbG">
-                      <node concept="2OqwBi" id="HdyRULSfsA" role="2Oq$k0">
-                        <node concept="30H73N" id="HdyRULSf0N" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="HdyRULSgwU" role="2OqNvi">
-                          <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="HdyRULShFb" role="2OqNvi">
-                        <ref role="3TsBF5" to="ku5w:9iP$0QfOiZ" resolve="versienummer" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="3clFbT" id="6Ov5ijl$bft" role="37wK5m">
             <node concept="17Uvod" id="6Ov5ijl$c1k" role="lGtFl">
