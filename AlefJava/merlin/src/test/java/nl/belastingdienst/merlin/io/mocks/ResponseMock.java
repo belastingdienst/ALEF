@@ -5,7 +5,7 @@ import nl.belastingdienst.merlin.io.service.Response;
 
 public class ResponseMock extends Response {
     public ResponseMock() {
-        super(null, "version", false);
+        super(null, false);
     }
 
     @Override
