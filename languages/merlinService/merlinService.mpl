@@ -40,6 +40,7 @@
         <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
         <dependency reexport="false">09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)</dependency>
         <dependency reexport="false">73790f24-2f5f-4a73-ac29-aed1b764b1a9(generatorUtils)</dependency>
+        <dependency reexport="false">26c003b8-2642-44b1-8d28-63f478da851b(servicespraak.tijd)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -60,7 +61,6 @@
         <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
         <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
-        <language slang="l:f21369f7-7e7f-4a03-a372-565160d29d2b:merlinBaseExt" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -76,9 +76,11 @@
         <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
         <module reference="09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)" version="0" />
         <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="5" />
+        <module reference="c40e126b-a0e9-42bb-b903-9b5fd0b050d2(gegevensspraak.tijd)" version="0" />
         <module reference="73790f24-2f5f-4a73-ac29-aed1b764b1a9(generatorUtils)" version="0" />
         <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
         <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />
+        <module reference="8af387a4-2ad4-4680-9888-6e523ff2ae0a(interpreter.timed.debug)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
@@ -101,7 +103,9 @@
         <module reference="71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)" version="0" />
         <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
         <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
+        <module reference="e107d4b4-25d4-42be-99db-ec5b2643464c(serviceNaarXsd)" version="0" />
         <module reference="d8af31be-1847-4d5b-8686-78e232d4e0f8(servicespraak)" version="0" />
+        <module reference="26c003b8-2642-44b1-8d28-63f478da851b(servicespraak.tijd)" version="0" />
         <module reference="8270cb09-651a-458a-9f4e-86e3e4423c92(standaardFuncties)" version="0" />
         <module reference="caef3229-d6fe-4ba8-b3e3-cf13cc4a9119(strings)" version="0" />
         <module reference="de859d7b-3967-4dc6-800a-c7f85c414239(translator.runtime)" version="0" />

@@ -155,9 +155,13 @@ public final class Util {
     }
 
     public static BigRational[] matchRegExToBigRationals(String s, String regex, int length) {
+        return matchRegExToBigRationals(s, Pattern.compile(regex), length);
+    }
+
+    public static BigRational[] matchRegExToBigRationals(String s, Pattern regexPattern, int length) {
         BigRational[] bigRationals = new BigRational[length];
         if (s != null) {
-            Matcher m = Pattern.compile(regex).matcher(s);
+            Matcher m = regexPattern.matcher(s);
             if (m.find() && m.groupCount() == bigRationals.length) {
                 for (int i = 1; i <= m.groupCount(); i++) {
                     try {
@@ -169,7 +173,7 @@ public final class Util {
                 }
                 return bigRationals;
             }
-            throw new ArithmeticException("Invoer '" + s + "' voldoet niet aan de regex '" + regex + "'.");
+            throw new ArithmeticException("Invoer '" + s + "' voldoet niet aan de regex '" + regexPattern + "'.");
         }
         return new BigRational[0];
     }

@@ -272,4 +272,7 @@ public class Period implements Comparable<Period> {
 		return LocalDateTime.ofInstant(Instant.ofEpochMilli(d), ZoneId.of("UTC")).toLocalDate().format(DATE_FORMAT);
 	}
 
+	public boolean hasOpenEndOrBeginning() {
+		return hasOpenEnd() || hasOpenBegin();
+	}
 }
