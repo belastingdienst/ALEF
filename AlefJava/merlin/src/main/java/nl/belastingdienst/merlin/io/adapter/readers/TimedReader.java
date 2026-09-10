@@ -19,6 +19,7 @@ public class TimedReader<T> extends AbstractTimedReader<T> implements ContentRea
     }
 
     @Override
+    @SuppressWarnings("java:S1166") // a violation is recorded for the exception
     public ITimed<T> read(MUniverse universe, ContentParser parser) throws IOException {
         try {
             return Timed.of(readTimeboxes(universe, parser));

@@ -33,7 +33,7 @@ public class ShortToRationalReader extends AbstractReader<Short, BigRational> {
         try {
             return Short.parseShort(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return 0;
     }

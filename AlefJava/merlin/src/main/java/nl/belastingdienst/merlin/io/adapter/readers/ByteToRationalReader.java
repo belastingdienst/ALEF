@@ -33,7 +33,7 @@ public class ByteToRationalReader extends AbstractReader<Byte, BigRational> {
         try {
             return Byte.parseByte(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return 0;
     }

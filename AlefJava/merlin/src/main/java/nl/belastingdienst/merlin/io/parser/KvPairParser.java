@@ -76,7 +76,7 @@ public class KvPairParser extends XmlParser {
         return super.retrieveNextToken(isPeeking);
     }
 
-    @SuppressWarnings("java:S3776") // STATE machine
+    @SuppressWarnings({"java:S3776", "java:S1541", "java:S1541"}) // STATE machine
     private ContentToken retrieveNextRelevantTokenInKeyValuePair(boolean isPeeking) throws IOException {
         while (true) {
             switch (kvPairState) {

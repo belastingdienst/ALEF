@@ -35,7 +35,7 @@ public class DateToDateTimeReader extends AbstractReader<String, LocalDateTime> 
         try {
             return LocalDate.parse(value, DateTimeFormatter.ISO_DATE).atStartOfDay();
         } catch (DateTimeParseException e) {
-            Validators.parseDateTimeError(universe, parser, value, e);
+            Validators.parseDateTimeError(universe, parser, value);
         }
         return LocalDateTime.MIN;
     }

@@ -33,7 +33,7 @@ public class FloatToRationalReader extends AbstractReader<Float, BigRational> {
         try {
             return Float.parseFloat(value);
         } catch (NumberFormatException e) {
-            Validators.parseNumberError(universe, parser, value, e);
+            Validators.parseNumberError(universe, parser, value);
         }
         return 0.0F;
     }

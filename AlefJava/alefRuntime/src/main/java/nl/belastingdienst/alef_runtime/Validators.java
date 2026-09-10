@@ -100,11 +100,11 @@ public final class Validators {
         violationCollector.add(Violation.of("boolean", withLocation("Waarde '" + value + "' is geen geldige boolean voor", locationInfoProvider)));
     }
 
-    public static void parseNumberError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value, NumberFormatException e) {
+    public static void parseNumberError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value) {
         violationCollector.add(Violation.of("number", withLocation("Waarde '" + value + "' is geen geldig getal voor", locationInfoProvider)));
     }
 
-    public static void parseDateTimeError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value, DateTimeParseException e) {
+    public static void parseDateTimeError(ViolationCollector violationCollector, LocationInfoProvider locationInfoProvider, String value) {
         violationCollector.add(Violation.of("dateTime", withLocation("Waarde '" + value + "' is geen geldige datum/tijd voor", locationInfoProvider)));
     }
 }
