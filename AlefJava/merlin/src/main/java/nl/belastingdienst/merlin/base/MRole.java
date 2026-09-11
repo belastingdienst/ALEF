@@ -1,5 +1,10 @@
 package nl.belastingdienst.merlin.base;
 
+import nl.belastingdienst.alef_runtime.time.*;
+import nl.belastingdienst.merlin.time.MTimedObject;
+import nl.belastingdienst.merlin.time.MTimedObjectSet;
+import nl.belastingdienst.merlin.time.MTimedObjectSingleton;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -44,19 +49,19 @@ public class MRole extends MBase implements IHasAKey{
         facts.add(fact);
         changed = true;
     }
+
     public void add(MConstructionRule ruleBase) {
         rules.add(ruleBase);
         createDone = false;
     }
 
-    public Stream<MFact> getFactStream() {
+    private Stream<MFact> getFactStream() {
         return getFacts().stream();
     }
 
     private Stream<MObject> getStream() {
         return getFactStream().map(r -> r.getOpposite(parent));
     }
-
 
     private List<MObject> getList() {
         createFacts();
@@ -68,7 +73,26 @@ public class MRole extends MBase implements IHasAKey{
         createFacts();
         if (changed) oppositeMlist = MElementList.of(getList());
         return oppositeMlist;
+    }
 
+    /**
+     * Get the timed opposites.
+     * @return Per time period the opposites.
+     * Example: ... until 01-01-2000 : {}, 01-01-2000 until ... : { child1, child2 }
+     */
+    public MTimedObjectSet getTimedMList() {
+        final List<MTimedObject> tOpposite = getFactStream().map(fact -> MTimedObject.of(fact.getOpposite(parent), fact.getPeriod())).toList();
+        return MTimedObjectSet.of(tOpposite);
+    }
+
+    /**
+     * Get the timed opposite (one and maximally one)
+     * @return Per time period the opposite.
+     * Example: ... until 01-01-2000 : {}, 01-01-2000 until ... : { parent }
+     */
+    public MTimedObjectSingleton getTimedSingle() {
+        final List<MTimedObject> tOpposite = getFactStream().map(fact -> MTimedObject.of(fact.getOpposite(parent), fact.getPeriod())).toList();
+        return MTimedObjectSingleton.of(tOpposite);
     }
 
     public Set<MFact> getFacts() {
@@ -85,15 +109,9 @@ public class MRole extends MBase implements IHasAKey{
         return !isEmpty();
     }
 
-    public int count() {
-        createFacts();
-        return facts.size();
-    }
-
     public boolean isCreateDone() {
         return createDone;
     }
-
 
     private void createFacts() {
         if (isCreateDone()) return;

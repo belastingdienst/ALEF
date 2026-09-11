@@ -216,6 +216,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -2222,6 +2223,7 @@
   </node>
   <node concept="2bQVlO" id="7T7Fn5RE5x$">
     <property role="TrG5h" value="Consistentie_MeerdereVoorwaarden" />
+    <property role="3GE5qa" value="" />
     <node concept="1HSql3" id="7T7Fn5RE5x_" role="1HSqhF">
       <property role="TrG5h" value="1 of 3 Kinderen is goed" />
       <node concept="1wO7pt" id="7T7Fn5RE5xA" role="kiesI">

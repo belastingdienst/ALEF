@@ -7,8 +7,8 @@ import nl.belastingdienst.merlin.lazy.MLazyProperty;
 public class MDimensionalPropertyKey<T> extends MPropertyKey<T> {
     private final int[] dimensions;
 
-    public MDimensionalPropertyKey(int[] dimensions) {
-        super(false);
+    public MDimensionalPropertyKey(String name, int[] dimensions) {
+        super(name, false);
         this.dimensions = dimensions;
 
     }
@@ -43,6 +43,16 @@ public class MDimensionalPropertyKey<T> extends MPropertyKey<T> {
 
     @Override public boolean hasDimensions() {
         return true;
+    }
+
+    public T get(MObject object, int dimKey) {
+        if (object == null) return null;
+        return object.getProperty(this, dimKey).get();
+    }
+    
+    public Vectorspace<MProperty<T>> getVectorspace(MObject object) {
+        if (object == null) return new Vectorspace<>(getDimensionss());
+        return object.getProperty(this).get();
     }
 
 }

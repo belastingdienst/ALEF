@@ -3,6 +3,8 @@ package nl.belastingdienst.merlin.base;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
+import java.util.function.Function;
 
 public abstract class MDistributionRule extends MCreationRule {
     private MElementList<MObject> verdelers = MElementList.empty();
@@ -18,6 +20,7 @@ public abstract class MDistributionRule extends MCreationRule {
         fireOnlyOnce();
         return verdelers;
     }
+
     public MElementList<MObject> getOntvangers() {
         fireOnlyOnce();
         return ontvangers;
@@ -26,6 +29,7 @@ public abstract class MDistributionRule extends MCreationRule {
     public Comparator<MObject> getOntvangerCriteria() {
         return ontvangerCriteria;
     }
+
     public Comparator<MObject> getVerdelerCriteria() {
         return verdelerCriteria;
     }
@@ -42,26 +46,26 @@ public abstract class MDistributionRule extends MCreationRule {
     protected void setOntvangers(List<MObject> result) {
         this.ontvangers = MElementList.of(result);
     }
+
     protected void setVerdelers(MElementList<MObject> result) {
         this.verdelers = result;
     }
-    protected void setVerdelerCriteria(Comparator<MObject> criteria) {
-        this.verdelerCriteria = criteria;
-    }
-    public boolean hebbenVerdelersGroupen() {
+
+    public boolean hebbenVerdelersGroepen() {
         return heeftGroepen(verdelers, verdelerCriteria);
     }
+
     public boolean hebbenOntvangersGroepen() {
         return heeftGroepen(ontvangers, ontvangerCriteria);
     }
 
     private boolean heeftGroepen(MElementList<MObject> objects, Comparator<MObject> sorter) {
-        List<MObject> copy = new ArrayList<>(objects.getElementList());
+        List<MObject> copy = new ArrayList<>(objects.withoutNull().getElementList());
         copy.sort(sorter);
         objects.elementList = copy;
-        if(copy.size() >= 2) {
-                for(int i = 1; i < copy.size(); i++) {
-                    if(sorter.compare(copy.get(i -1), copy.get(i)) == 0) {
+        if (copy.size() >= 2) {
+                for (int i = 1; i < copy.size(); i++) {
+                    if (sorter.compare(copy.get(i - 1), copy.get(i)) == 0) {
                         return true;
                     }
             }
@@ -69,10 +73,24 @@ public abstract class MDistributionRule extends MCreationRule {
         return false;
     }
 
-    protected void setOntvangerCriteria(Comparator<MObject> criteria) {
-        this.ontvangerCriteria = criteria;
+    protected <T extends Comparable<? super T>> void addVerdelerCriterium(MPropertyKey<T> p, boolean ascending) {
+        Function<MObject, T> crit = (MObject m) -> Objects.requireNonNull(p.get(m), "volgorde-attribuut '" + p.getName() + "' mag niet leeg zijn.");
+        Comparator<? super T> cmp = ascending ? Comparator.naturalOrder() : Comparator.reverseOrder();
+        if (this.verdelerCriteria == null) {
+            this.verdelerCriteria = Comparator.comparing(crit, cmp);
+        } else {
+            this.verdelerCriteria = this.verdelerCriteria.thenComparing(crit, cmp);
+        }
     }
-    protected void setVerdelers(List<MObject> result) {
-        this.verdelers = MElementList.of(result);
+
+    protected <T extends Comparable<? super T>> void addOntvangerCriterium(MPropertyKey<T> p, boolean ascending) {
+        Function<MObject, T> crit = (MObject m) -> Objects.requireNonNull(p.get(m), "volgorde-attribuut '" + p.getName() + "' mag niet leeg zijn.");
+        Comparator<? super T> cmp = ascending ? Comparator.naturalOrder() : Comparator.reverseOrder();
+        if (this.ontvangerCriteria == null) {
+            this.ontvangerCriteria = Comparator.comparing(crit, cmp);
+        } else {
+            this.ontvangerCriteria = this.ontvangerCriteria.thenComparing(crit, cmp);
+        }
     }
+
 }

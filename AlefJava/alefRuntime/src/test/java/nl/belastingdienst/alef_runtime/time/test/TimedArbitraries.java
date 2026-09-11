@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 public abstract class TimedArbitraries {
 
-    private static abstract class ITimeds<T> implements ArbitrarySupplier<ITimed<T>> {
+    private abstract static class ITimeds<T> implements ArbitrarySupplier<ITimed<T>> {
 
         Arbitrary<T> base;
         @Override public Arbitrary<ITimed<T>> get() {

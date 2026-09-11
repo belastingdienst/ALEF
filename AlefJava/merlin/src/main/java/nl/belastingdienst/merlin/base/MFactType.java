@@ -1,23 +1,11 @@
 package nl.belastingdienst.merlin.base;
 
-import java.util.HashSet;
-import java.util.Set;
+import nl.belastingdienst.alef_runtime.time.*;
 
 public class MFactType extends MType<MFact> {
 
-    private  Set<MObject> objectsRoleA;
-    private  Set<MObject> objectsRoleB;
     private final MRoleKey roleA;
     private final MRoleKey roleB;
-    private boolean collectA=true;
-    private boolean collectB=true;
-
-    @Override
-    protected void add(MFact object) {
-        super.add(object);
-        collectA = true;
-        collectB = true;
-    }
 
     public MFactType(MUniverse universe, MRoleKey roleA, MRoleKey roleB) {
         super(universe);
@@ -32,17 +20,21 @@ public class MFactType extends MType<MFact> {
     }
 
     public void createFact(MObject roleInstanceA,MObject roleInstanceB) {
-        MFact fact = new MFact(this,roleInstanceA,roleInstanceB);
+        createFact(roleInstanceA, roleInstanceB, IValidity.ALWAYS);
+    }
+
+    public void createFact(MObject roleInstanceA, MObject roleInstanceB, IValidity period) {
+        MFact fact = new MFact(this, roleInstanceA, roleInstanceB, period);
         roleInstanceA.add(fact, getRoleB());
         roleInstanceB.add(fact, getRoleA());
         this.add(fact);
     }
 
-    public MRoleKey getRoleA() {
+    private MRoleKey getRoleA() {
         return roleA;
     }
 
-    public MRoleKey getRoleB() {
+    private MRoleKey getRoleB() {
         return roleB;
     }
 
@@ -50,23 +42,6 @@ public class MFactType extends MType<MFact> {
         if (key == roleA) return roleB;
         if (key == roleB) return roleA;
         throw new IllegalArgumentException("Key: " + key.getName() + " is not part of the fact: " + getClass().getName() + " can't determine opposite" );
-    }
-
-    public Set<MObject> getObjectsRoleA() {
-        if (collectA) {
-            collectA = false;
-            objectsRoleA = new HashSet<>();
-            objectsRoleA.addAll(getInstances().map(MFact::getRolA).getElementList());
-        }
-        return objectsRoleA;
-    }
-    public Set<MObject> getObjectsRoleB() {
-        if (collectB) {
-            collectB = false;
-            objectsRoleB = new HashSet<>();
-            objectsRoleB.addAll(getInstances().map(MFact::getRolB).getElementList());
-        }
-        return objectsRoleB;
     }
 
 }

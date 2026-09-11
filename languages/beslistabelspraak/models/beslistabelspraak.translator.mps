@@ -11135,63 +11135,15 @@
               </node>
             </node>
           </node>
-          <node concept="2Gpval" id="7wE_vwchd0R" role="3cqZAp">
-            <node concept="2GrKxI" id="7wE_vwchd0S" role="2Gsz3X">
-              <property role="TrG5h" value="selectie" />
-            </node>
-            <node concept="3clFbS" id="7wE_vwchd0T" role="2LFqv$">
-              <node concept="3cpWs8" id="7wE_vwchd0U" role="3cqZAp">
-                <node concept="3cpWsn" id="7wE_vwchd0V" role="3cpWs9">
-                  <property role="TrG5h" value="vervanging" />
-                  <node concept="3Tqbb2" id="7wE_vwchd0W" role="1tU5fm">
-                    <ref role="ehGHo" to="m234:6Cw8uHx$_hB" resolve="Onderwerp" />
-                  </node>
-                  <node concept="2OqwBi" id="7wE_vwchd0X" role="33vP2m">
-                    <node concept="2OqwBi" id="7wE_vwchd0Y" role="2Oq$k0">
-                      <node concept="2GrUjf" id="7wE_vwchd0Z" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="7wE_vwchd0S" resolve="selectie" />
-                      </node>
-                      <node concept="2qgKlT" id="7wE_vwchd10" role="2OqNvi">
-                        <ref role="37wK5l" to="u5to:333w2JStBwH" resolve="kanVervangenWordenDoor" />
-                      </node>
-                    </node>
-                    <node concept="1uHKPH" id="7wE_vwchd11" role="2OqNvi" />
-                  </node>
-                </node>
+          <node concept="3clFbF" id="7I2GI8pC1td" role="3cqZAp">
+            <node concept="2OqwBi" id="7I2GI8pCaOr" role="3clFbG">
+              <node concept="35c_gC" id="7I2GI8pC1tb" role="2Oq$k0">
+                <ref role="35c_gD" to="m234:SQYpBFr2ns" resolve="Selectie" />
               </node>
-              <node concept="3clFbJ" id="7wE_vwchd12" role="3cqZAp">
-                <node concept="3clFbS" id="7wE_vwchd13" role="3clFbx">
-                  <node concept="3clFbF" id="7wE_vwchd14" role="3cqZAp">
-                    <node concept="2OqwBi" id="7wE_vwchd15" role="3clFbG">
-                      <node concept="2GrUjf" id="7wE_vwchd16" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="7wE_vwchd0S" resolve="selectie" />
-                      </node>
-                      <node concept="2qgKlT" id="7wE_vwchd17" role="2OqNvi">
-                        <ref role="37wK5l" to="u5to:333w2JSuEkz" resolve="vervangDoorOnderwerpRef" />
-                        <node concept="37vLTw" id="7wE_vwchd18" role="37wK5m">
-                          <ref role="3cqZAo" node="7wE_vwchd0V" resolve="vervanging" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3y3z36" id="7wE_vwchd19" role="3clFbw">
-                  <node concept="10Nm6u" id="7wE_vwchd1a" role="3uHU7w" />
-                  <node concept="37vLTw" id="7wE_vwchd1b" role="3uHU7B">
-                    <ref role="3cqZAo" node="7wE_vwchd0V" resolve="vervanging" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7wE_vwchd1c" role="2GsD0m">
-              <node concept="37vLTw" id="7wE_vwchd1d" role="2Oq$k0">
-                <ref role="3cqZAo" node="7wE_vwchd1j" resolve="statement" />
-              </node>
-              <node concept="2Rf3mk" id="7wE_vwchd1e" role="2OqNvi">
-                <node concept="1xMEDy" id="7wE_vwchd1f" role="1xVPHs">
-                  <node concept="chp4Y" id="7wE_vwchd1g" role="ri$Ld">
-                    <ref role="cht4Q" to="m234:SQYpBFr2ns" resolve="Selectie" />
-                  </node>
+              <node concept="2qgKlT" id="7I2GI8pCeZ$" role="2OqNvi">
+                <ref role="37wK5l" to="u5to:7I2GI8pz4tE" resolve="vervangSelectiesDoorOnderwerpRefs" />
+                <node concept="37vLTw" id="7I2GI8pCjez" role="37wK5m">
+                  <ref role="3cqZAo" node="7wE_vwchd1j" resolve="statement" />
                 </node>
               </node>
             </node>

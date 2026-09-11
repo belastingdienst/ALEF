@@ -31,10 +31,25 @@ public class MElementList<E> implements Iterable<E> {
         return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.<Q>makeTimed(mlist.elementList));
     }
 
+    public static <Q> ITimed<MElementList<Q>> makeTimed( List<ITimed<Q>> mlist) {
+        return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.<Q>makeTimed(mlist));
+    }
+
     public static <T> MElementList<T> empty() {
         MElementList<T> l = new MElementList<>();
         l.elementList = new ArrayList<>();
         return l;
+    }
+
+    public static <T> MElementList<T> ofElements(List<MElement<T>> elements) {
+      if (elements == null) return MElementList.empty();
+      MElementList<T> ml = new MElementList<>();
+      List<T> list = new ArrayList<>();
+      for (MElement<T> elem: elements) {
+          list.add(elem.element);
+      }
+      ml.elementList = list;
+      return ml;
     }
 
     public static <T> MElementList<T> of(List<T> list) {
