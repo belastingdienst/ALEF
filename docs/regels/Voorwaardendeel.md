@@ -33,7 +33,7 @@ Voorbeeld met voorwaarden aan rol 'reis' in onderwerp van een regel:
 
 ![Voorwaardendeel met voorwaarden aan rol reis in onderwerp regel](img/Voorwaarden_RolInOnderwerp3.png)
 
-Let op: Omdat het objecttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
+Let op: Omdat het objecttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is, zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
 
 ### Rol aan voorwaarde voldoet   
 Optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan een rol worden één of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
