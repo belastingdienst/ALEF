@@ -8234,6 +8234,42 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="79aBNE90U04" role="3cqZAp">
+          <node concept="2OqwBi" id="79aBNE90U05" role="3clFbG">
+            <node concept="37vLTw" id="79aBNE90U06" role="2Oq$k0">
+              <ref role="3cqZAo" node="1qJhPmiB5m8" resolve="universe" />
+            </node>
+            <node concept="liA8E" id="79aBNE90U07" role="2OqNvi">
+              <ref role="37wK5l" to="jyki:~MUniverse.addExtensions(java.lang.Object)" resolve="addExtensions" />
+              <node concept="10Nm6u" id="79aBNE90U08" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="1WS0z7" id="79aBNE90U09" role="lGtFl">
+            <node concept="3JmXsc" id="79aBNE90U0a" role="3Jn$fo">
+              <node concept="3clFbS" id="79aBNE90U0b" role="2VODD2">
+                <node concept="3clFbF" id="79aBNE90U0c" role="3cqZAp">
+                  <node concept="2OqwBi" id="79aBNE90U0d" role="3clFbG">
+                    <node concept="35c_gC" id="79aBNE90U0e" role="2Oq$k0">
+                      <ref role="35c_gD" to="3ic2:y87BIjIbP1" resolve="INeedUniverseExtensie" />
+                    </node>
+                    <node concept="2qgKlT" id="79aBNE90U0f" role="2OqNvi">
+                      <ref role="37wK5l" to="8l26:y87BIlGWny" resolve="needs" />
+                      <node concept="2OqwBi" id="79aBNE90U0g" role="37wK5m">
+                        <node concept="2qgKlT" id="79aBNE90U0h" role="2OqNvi">
+                          <ref role="37wK5l" to="txb8:7BFdRvteIjR" resolve="gebruikteRegelversies" />
+                        </node>
+                        <node concept="30H73N" id="79aBNE90U0i" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1sPUBX" id="79aBNE90U0j" role="lGtFl">
+            <ref role="v9R2y" node="79aBNE6uiDN" resolve="serviceExtensies" />
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="1qJhPmiB5me" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
