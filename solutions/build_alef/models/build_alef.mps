@@ -207,8 +207,13 @@
     <language id="de3cc6fa-d12e-43b7-a674-50c5e4dbb6c8" name="checkproject">
       <concept id="7843519150426697084" name="checkproject.structure.BuildAspect_CheckProject" flags="ng" index="yWuDw">
         <reference id="2251231824714202341" name="doNotLoad" index="3s6guf" />
+        <child id="7618608062908188008" name="systemProperties" index="1xaRV3" />
       </concept>
       <concept id="3757496338002397221" name="checkproject.structure.BuildCheckPlugin" flags="ng" index="3jkSsB" />
+      <concept id="7618608062908188009" name="checkproject.structure.SystemProperty" flags="ng" index="1xaRV2">
+        <property id="7618608062908188011" name="value" index="1xaRV0" />
+        <property id="7618608062908188010" name="property" index="1xaRV1" />
+      </concept>
     </language>
     <language id="427a473d-5177-432c-9905-bcbceb71b996" name="jetbrains.mps.build.mps.runner">
       <concept id="4173297143638832582" name="jetbrains.mps.build.mps.runner.structure.BuildSolutionRunnerPlugin" flags="ng" index="_l39y" />
@@ -14974,6 +14979,10 @@
     </node>
     <node concept="yWuDw" id="5i00LOfARGZ" role="1hWBAP">
       <ref role="3s6guf" to="1rlr:57FUaq1slGB" resolve="build_extensions" />
+      <node concept="1xaRV2" id="Wggo6HU1F7" role="1xaRV3">
+        <property role="1xaRV1" value="projecthygiene.check" />
+        <property role="1xaRV0" value="false" />
+      </node>
       <node concept="24cAiW" id="5i00LOfARQj" role="24cAkG">
         <node concept="NbPM2" id="5i00LOfASsC" role="1psgkv">
           <node concept="3Mxwew" id="5i00LOfAS_V" role="3MwsjC">

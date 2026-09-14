@@ -248,7 +248,6 @@
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
-      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -10825,10 +10824,10 @@
         <ref role="3uigEE" node="3yruEpuB8Ll" resolve="HygieneResultPanel" />
       </node>
     </node>
+    <node concept="2tJIrI" id="EOKZlivhmN" role="jymVt" />
     <node concept="3clFb_" id="37P9wf1Zftp" role="jymVt">
       <property role="TrG5h" value="buildControlPanel" />
       <node concept="3clFbS" id="37P9wf1Zftq" role="3clF47">
-        <node concept="3clFbH" id="37P9wf1Zftw" role="3cqZAp" />
         <node concept="3cpWs8" id="37P9wf1Zftx" role="3cqZAp">
           <node concept="3cpWsn" id="37P9wf1Zfty" role="3cpWs9">
             <property role="TrG5h" value="scanButton" />
@@ -10941,6 +10940,15 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="EOKZliwb_n" role="3cqZAp">
+          <node concept="2YIFZM" id="EOKZliwlH9" role="3clFbG">
+            <ref role="37wK5l" node="EOKZlivBsT" resolve="bindEnterToClick" />
+            <ref role="1Pybhc" node="37P9wf1Z6NH" resolve="HygieneControlPanel" />
+            <node concept="37vLTw" id="EOKZliwqiN" role="37wK5m">
+              <ref role="3cqZAo" node="37P9wf1Zfty" resolve="scanButton" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="37P9wf1ZfvH" role="3cqZAp" />
         <node concept="3cpWs8" id="37P9wf1ZfvI" role="3cqZAp">
           <node concept="3cpWsn" id="37P9wf1ZfvJ" role="3cpWs9">
@@ -11011,6 +11019,15 @@
               <node concept="37vLTw" id="37P9wf1Zfyr" role="37wK5m">
                 <ref role="3cqZAo" node="37P9wf1ZfvJ" resolve="prefsButton" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="EOKZliwwXM" role="3cqZAp">
+          <node concept="2YIFZM" id="EOKZliwwXN" role="3clFbG">
+            <ref role="37wK5l" node="EOKZlivBsT" resolve="bindEnterToClick" />
+            <ref role="1Pybhc" node="37P9wf1Z6NH" resolve="HygieneControlPanel" />
+            <node concept="37vLTw" id="EOKZliwwXO" role="37wK5m">
+              <ref role="3cqZAo" node="37P9wf1ZfvJ" resolve="prefsButton" />
             </node>
           </node>
         </node>
@@ -12613,6 +12630,107 @@
       <node concept="3Tm6S6" id="7QO5CfFGL3w" role="1B3o_S" />
       <node concept="3cqZAl" id="7QO5CfFGLXE" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="EOKZlivvuO" role="jymVt" />
+    <node concept="2YIFZL" id="EOKZlivBsT" role="jymVt">
+      <property role="TrG5h" value="bindEnterToClick" />
+      <node concept="37vLTG" id="EOKZlivBsU" role="3clF46">
+        <property role="TrG5h" value="button" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="EOKZlivBsV" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="EOKZlivBsW" role="3clF47">
+        <node concept="3clFbF" id="EOKZlivBsX" role="3cqZAp">
+          <node concept="2OqwBi" id="EOKZlivM7m" role="3clFbG">
+            <node concept="2OqwBi" id="EOKZlivIY8" role="2Oq$k0">
+              <node concept="37vLTw" id="EOKZlivFQx" role="2Oq$k0">
+                <ref role="3cqZAo" node="EOKZlivBsU" resolve="button" />
+              </node>
+              <node concept="liA8E" id="EOKZlivIY9" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.getInputMap(int)" resolve="getInputMap" />
+                <node concept="10M0yZ" id="EOKZlivIYa" role="37wK5m">
+                  <ref role="1PxDUh" to="dxuu:~JComponent" resolve="JComponent" />
+                  <ref role="3cqZAo" to="dxuu:~JComponent.WHEN_FOCUSED" resolve="WHEN_FOCUSED" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="EOKZlivM7n" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~InputMap.put(javax.swing.KeyStroke,java.lang.Object)" resolve="put" />
+              <node concept="2YIFZM" id="EOKZlivM7o" role="37wK5m">
+                <ref role="1Pybhc" to="dxuu:~KeyStroke" resolve="KeyStroke" />
+                <ref role="37wK5l" to="dxuu:~KeyStroke.getKeyStroke(int,int)" resolve="getKeyStroke" />
+                <node concept="10M0yZ" id="EOKZlivM7p" role="37wK5m">
+                  <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                  <ref role="3cqZAo" to="hyam:~KeyEvent.VK_ENTER" resolve="VK_ENTER" />
+                </node>
+                <node concept="3cmrfG" id="EOKZlivM7q" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="EOKZlivM7r" role="37wK5m">
+                <property role="Xl_RC" value="click" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="EOKZlivBt5" role="3cqZAp">
+          <node concept="2OqwBi" id="EOKZlivM2f" role="3clFbG">
+            <node concept="2OqwBi" id="EOKZlivISY" role="2Oq$k0">
+              <node concept="37vLTw" id="EOKZlivFRh" role="2Oq$k0">
+                <ref role="3cqZAo" node="EOKZlivBsU" resolve="button" />
+              </node>
+              <node concept="liA8E" id="EOKZlivISZ" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.getActionMap()" resolve="getActionMap" />
+              </node>
+            </node>
+            <node concept="liA8E" id="EOKZlivM2g" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~ActionMap.put(java.lang.Object,javax.swing.Action)" resolve="put" />
+              <node concept="Xl_RD" id="EOKZlivM2h" role="37wK5m">
+                <property role="Xl_RC" value="click" />
+              </node>
+              <node concept="2ShNRf" id="EOKZlivM2i" role="37wK5m">
+                <node concept="YeOm9" id="EOKZlivM2j" role="2ShVmc">
+                  <node concept="1Y3b0j" id="EOKZlivM2k" role="YeSDq">
+                    <ref role="1Y3XeK" to="dxuu:~AbstractAction" resolve="AbstractAction" />
+                    <ref role="37wK5l" to="dxuu:~AbstractAction.&lt;init&gt;()" resolve="AbstractAction" />
+                    <node concept="3clFb_" id="EOKZlivM2l" role="jymVt">
+                      <property role="TrG5h" value="actionPerformed" />
+                      <node concept="2AHcQZ" id="EOKZlivM2m" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
+                      <node concept="37vLTG" id="EOKZlivM2n" role="3clF46">
+                        <property role="TrG5h" value="e" />
+                        <node concept="3uibUv" id="EOKZlivM2o" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="EOKZlivM2p" role="3clF47">
+                        <node concept="3clFbF" id="EOKZlivM2q" role="3cqZAp">
+                          <node concept="2OqwBi" id="EOKZlivM2r" role="3clFbG">
+                            <node concept="37vLTw" id="EOKZlivM2s" role="2Oq$k0">
+                              <ref role="3cqZAo" node="EOKZlivBsU" resolve="button" />
+                            </node>
+                            <node concept="liA8E" id="EOKZlivM2t" role="2OqNvi">
+                              <ref role="37wK5l" to="dxuu:~AbstractButton.doClick()" resolve="doClick" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="EOKZlivM2u" role="1B3o_S" />
+                      <node concept="3cqZAl" id="EOKZlivM2v" role="3clF45" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="EOKZlivBtl" role="1B3o_S" />
+      <node concept="3cqZAl" id="EOKZlivBtm" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="EOKZlivwJ2" role="jymVt" />
   </node>
   <node concept="312cEu" id="5nWRbsw3hrp">
     <property role="TrG5h" value="HygienePrefsOptionPane" />
@@ -13731,20 +13849,22 @@
                     </node>
                   </node>
                   <node concept="1Wc70l" id="6TDyi7g1pIL" role="3clFbw">
-                    <node concept="3fqX7Q" id="7DJ8opg_3mM" role="3uHU7B">
-                      <node concept="37vLTw" id="7DJ8opg_3mN" role="3fr31v">
+                    <node concept="3fqX7Q" id="5Irx5FIFE4C" role="3uHU7B">
+                      <node concept="37vLTw" id="5Irx5FIFE4E" role="3fr31v">
                         <ref role="3cqZAo" node="49oFkN$bML2" resolve="hasChecker" />
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="6TDyi7fYDUK" role="3uHU7w">
-                      <node concept="2YIFZM" id="6TDyi7fYuTJ" role="2Oq$k0">
+                    <node concept="17QLQc" id="EOKZlhoKHq" role="3uHU7w">
+                      <node concept="Xl_RD" id="EOKZlhoL2X" role="3uHU7w">
+                        <property role="Xl_RC" value="false" />
+                      </node>
+                      <node concept="2YIFZM" id="6TDyi7fYuTJ" role="3uHU7B">
                         <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                         <node concept="Xl_RD" id="6TDyi7fYvlm" role="37wK5m">
                           <property role="Xl_RC" value="projecthygiene.check" />
                         </node>
                       </node>
-                      <node concept="17RvpY" id="6TDyi7fYH6l" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
