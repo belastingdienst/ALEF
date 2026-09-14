@@ -65,7 +65,7 @@ Berichtformaat waarbij de data via key-value pairs worden doorgegeven:
 * **Naam**  
 Naam van het entrypoint.
 * **Regels**  
-Bepaalt de scope van de regels die voor het entrypoint worden uitgevoerd. Dit kan een of meerdere regelgroepen zijn of een [regelgroepbundel](../besturing/regelgroepbundel.md).
+Bepaalt de scope van de regels die voor het entrypoint worden uitgevoerd. Dit kunnen een of meerdere regelgroepen zijn of een [regelgroepbundel](../besturing/regelgroepbundel.md).
 * **Parametersets**  
 Alle parametersets opnemen die mogelijk gebruikt moeten worden op basis van opgegeven rekenjaar/rekendatum. Indien niet gevuld, dan parameters meegegeven bij invoer (via intention "Voeg Parameters toe aan Invoer").
 * **Consistentievlag**  
