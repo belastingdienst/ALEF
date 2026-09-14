@@ -7746,6 +7746,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="1H1Oc_JGsh2" role="3bR37C">
+            <node concept="3bR9La" id="1H1Oc_JGsh3" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="rqW0lb47DO" role="2G$12L">
@@ -9594,6 +9599,9 @@
         </node>
         <node concept="3LEDTy" id="23TMVG5PR$Q" role="3LEDUa">
           <ref role="3LEDTV" node="23TMVG5PMSW" resolve="modelNaarJson" />
+        </node>
+        <node concept="3LEDTy" id="1H1Oc_JGsmK" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
         </node>
       </node>
       <node concept="3LEwk6" id="1AGpiHw9d8K" role="2G$12L">
