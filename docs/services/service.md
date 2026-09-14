@@ -7,11 +7,11 @@ ALEF services ondersteunen twee data communicatie formaten:
 * SOAP
 * REST
 
-![Deploument meta-informatie en xml](img/service.png)
+![Deployment meta-informatie en xml](img/service.png)
 
 ## Deployment meta-informatie
 
-Gegevens die worden gebruikt bij het bouwen van de servce.
+Gegevens die worden gebruikt bij het bouwen van de service.
 **projectnaam** en **componentnaam** worden gebruikt in de naam van de service. 
 
 * **projectnaam**  
@@ -27,13 +27,13 @@ Voor de [SOAP](https://nl.wikipedia.org/wiki/SOAP_(protocol)) endpoint van de se
 
 * **acroniem**  
 * **service namespace**  
-Namespace van de service die wordt gebruikt in de WSDL. Geef hier een unieke URL op waarmee de service is te indentificeren. Bijvoorbeeld `mijn-service-naam.organisatie.ext`. 
+Namespace van de service die wordt gebruikt in de WSDL. Geef hier een unieke URL op waarmee de service is te identificeren. Bijvoorbeeld `mijn-service-naam.organisatie.ext`. 
 * **XSD prefix**  
 In de XSD kan een korte notatie voor een namespace worden gebruikt in XML prefix genoemd. Deze prefix mag bestaan uit de volgende tekens: `A-Z a-z 0-9 -_`. Er mogen geen spaties in de prefix voorkomen.
 * **XSD namespace**  
-Elk XSD heeft een unieke namespace waarmee deze kan worden geindentificeerd. Deze namespace wordt als URL opgegeven. Bijvoorbeeld `mijn-bericht-specificatie.organisatie.ext`. 
+Elk XSD heeft een unieke namespace waarmee deze kan worden geïdentificeerd. Deze namespace wordt als URL opgegeven. Bijvoorbeeld `mijn-bericht-specificatie.organisatie.ext`. 
 * **berichtformaat**  
-ALEF ondersteund twee bericht formaten:
+ALEF ondersteunt twee berichtformaten:
     * Complex type per berichttype
     * Key-value pairs
 * **schema versie**
@@ -65,13 +65,13 @@ Berichtformaat waarbij de data via key-value pairs worden doorgegeven:
 * **Naam**  
 Naam van het entrypoint.
 * **Regels**  
-Bepaalt de scope van de regels die voor het entrypoint worden uitgevoerd. Dit kan een of meedere regelgroepen zijn of een [regelgroepbundel](../besturing/regelgroepbundel.md).
+Bepaalt de scope van de regels die voor het entrypoint worden uitgevoerd. Dit kan een of meerdere regelgroepen zijn of een [regelgroepbundel](../besturing/regelgroepbundel.md).
 * **Parametersets**  
 Alle parametersets opnemen die mogelijk gebruikt moeten worden op basis van opgegeven rekenjaar/rekendatum. Indien niet gevuld, dan parameters meegegeven bij invoer (via intention "Voeg Parameters toe aan Invoer").
 * **Consistentievlag**  
 Uit (in geval van uitsluitend een rekenservice) of Aan (ook resultaat van consistentiecontroles wordt teruggegeven). In de response in de XSD ziet dat er zo uit:
 
-![XML response bij gebruik van consistetievlag](../img/ALEF220_ServiceXMLResponseConsistentievlag.png)
+![XML response bij gebruik van consistentievlag](../img/ALEF220_ServiceXMLResponseConsistentievlag.png)
 
 ### Bericht -Invoer
 * **Rekenjaar/rekendatum**   
@@ -88,7 +88,7 @@ Instellen via intention.
 * **Verstekwaarde**  
 Deze waarde wordt gebruikt als een veld in de invoer leeg is.
 * **Koppeling naamgeving**  
-Bij het toevoegen van een attribuut, kenmerk of parameter aan een bericht wordt automatisch de veldnaam voor het bericht automatisch gegenereerd. Wijzigingen van namen van attribuut, kenmerk of parameter leiden ook automatisch tot aanpassing van de veldnaam. Tenzij de veldnaam handmatig is gewijzigd.
+Bij het toevoegen van een attribuut, kenmerk of parameter aan een bericht wordt de veldnaam voor het bericht automatisch gegenereerd. Wijzigingen van namen van attribuut, kenmerk of parameter leiden ook automatisch tot aanpassing van de veldnaam. Tenzij de veldnaam handmatig is gewijzigd.
 * **Identificerend veld**  
 In een invoerbericht kan een identificerend veld worden toegevoegd. Dit veld kent geen mapping op een element in het gegevensmodel, maar is uitsluitend bedoeld ter identificatie van een instantie. Door dit veld ook op te nemen in het uitvoerbericht kan in de uitvoer de betreffende instantie worden geïdentificeerd.
 * **Invoer van numerieke codes met separatoren**  

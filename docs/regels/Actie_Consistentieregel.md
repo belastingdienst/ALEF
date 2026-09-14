@@ -30,7 +30,7 @@ een controle of voorkomens met een bepaalde rol of kenmerk aan een enkelvoudig c
 
 of
 
-een controle van voorkomens met een bepaalde rol of kenmerk aan een meerdere criteria voldoen.
+een controle van voorkomens met een bepaalde rol of kenmerk aan meerdere criteria voldoen.
 
 ![Consistentieregel: een controle van voorkomens met meerdere criteria](../img/ALEF200_Consistentieregel2.png)
 
