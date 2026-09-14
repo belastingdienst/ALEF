@@ -14,19 +14,19 @@ Dit houdt in dat voorkomens van objecten in groepen worden ingedeeld op basis va
 Ontvangers hebben daarbij ook de volgende opties extra
 
 * Verdelen in **gelijke delen** of **naar rato** van een attribuut.
-Verdeeld op basis van het aandeel van een ontvangers gedeeld door het totale aandeel van de ontvangers in de groep (bijvoorbeeld 1/3 voor 1 ontvanger binnen een groep van 3). Naar rato stelt een gebruiker in staat om zelf het aandeel per ontvanger in te stellen. Beide opties kunnen gebruikt worden zonder de **rangorde** optie of in combinatie met de rangorde optie voor groepen groter dan 1. N.B. verdelers hebben deze optie niet dus een verdeling met meerdere verdelers mag nooit groepen groter dan 1 hebben, groepen groter dan 1 worden als inconsistent gemarkeerd.
+Verdeeld op basis van het aandeel van een ontvanger gedeeld door het totale aandeel van de ontvangers in de groep (bijvoorbeeld 1/3 voor 1 ontvanger binnen een groep van 3). Naar rato stelt een gebruiker in staat om zelf het aandeel per ontvanger in te stellen. Beide opties kunnen gebruikt worden zonder de **rangorde** optie of in combinatie met de rangorde optie voor groepen groter dan 1. N.B. verdelers hebben deze optie niet dus een verdeling met meerdere verdelers mag nooit groepen groter dan 1 hebben, groepen groter dan 1 worden als inconsistent gemarkeerd.
 * De te ontvangen hoeveelheid kan worden beperkt door een **aanspraak**.
 De aanspraak bevat de maximale hoeveelheid die een ontvanger toegewezen kan krijgen. Het is alleen mogelijk om een aanspraak op te nemen voor de situatie waarin verdeeld wordt naar rato.
 
 ## Transacties
 
-Een Verdeling die verdeeld vanuit meerdere verdelers heeft ook de optie om transacties toe te voegen via de intentie ***voeg transacties toe***. Dit zijn objecten die gecreëerd worden tijdens de verdeling waarin bekeken kan worden hoeveel een verdeler heeft verdeeld naar een ontvanger. Transacties zijn niet beschikbaar als de verdeling verdeeld vanuit een enkele verdeler.
+Een Verdeling die verdeelt vanuit meerdere verdelers heeft ook de optie om transacties toe te voegen via de intentie ***voeg transacties toe***. Dit zijn objecten die gecreëerd worden tijdens de verdeling waarin bekeken kan worden hoeveel een verdeler heeft verdeeld naar een ontvanger. Transacties zijn niet beschikbaar als de verdeling verdeelt vanuit een enkele verdeler.
 
 ![Verdeling transacties uitvoer](img/VerdelingTransacties.png)
 
 ## Relatiemodel voor één of meerdere verdelers
 
-Een enkele verdeler verdeeld over zijn ontvangers. De relatie is één op meer.
+Een enkele verdeler verdeelt over zijn ontvangers. De relatie is één op meer.
 
 ![Verdeling enkele verdeler relatiemodel](img/VerdelingRelatieEnkeleVerdelers.png)
 
@@ -46,10 +46,10 @@ In dit geval wordt de hoeveelheid die door de Verdeler verdeeld wordt (verdeelpl
 
 De aanspraak die een Ontvanger kan hebben wordt bepaald door het aanspraak-attribuut en bepaalt het maximale aandeel in het verdeelplafond voor de Ontvanger. Tenslotte wordt door een rato-attribuut bepaald wat de verdeling moet zijn bij een gelijk criterium.
 
-![Verdeling verdeelplafond met groepen, nar rato verdeeld binnen groep](../img/ALEF201_VerdelingMetGroepen.png)
+![Verdeling verdeelplafond met groepen, naar rato verdeeld binnen groep](../img/ALEF201_VerdelingMetGroepen.png)
 
 ## Voorbeeld 3 - Verdeling met meerdere verdelers
 
-In dit geval wordt de hoeveelheid die door de Verdelers verdeeld wordt toegewezen aandelen Ontvangers. Ieder deel wordt vastgelegd in een transactie object
+In dit geval wordt de hoeveelheid die door de Verdelers verdeeld wordt toegewezen aan de Ontvangers. Ieder deel wordt vastgelegd in een transactie object
 
 ![Verdeling meerdere verdelers relatiemodel](img/VerdelingMeerdereVerdelers.png)

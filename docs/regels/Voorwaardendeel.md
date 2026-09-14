@@ -33,7 +33,7 @@ Voorbeeld met voorwaarden aan rol 'reis' in onderwerp van een regel:
 
 ![Voorwaardendeel met voorwaarden aan rol reis in onderwerp regel](img/Voorwaarden_RolInOnderwerp3.png)
 
-Let op: Omdat het objectttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
+Let op: Omdat het objecttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
 
 ### Rol aan voorwaarde voldoet   
 Optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan een rol worden één of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
@@ -41,9 +41,9 @@ Optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan
 ![Voorwaardendeel met voorwaarden aan rol passagier](img/Voorwaarden_Rol.png)
 
 ### Aggregaties 
-Diverse mogelijkheden om een voorwaarde te stellen aan een verzameling voorkomens van een objecttype die middels een rol te berieken zijn.
+Diverse mogelijkheden om een voorwaarde te stellen aan een verzameling voorkomens van een objecttype die middels een rol te bereiken zijn.
 
-![Voorwaardendeel met verschilende voorwaarden aan verzameling voorkomens via een rol](img/Voorwaarden_Aggregaties.png)
+![Voorwaardendeel met verschillende voorwaarden aan verzameling voorkomens via een rol](img/Voorwaarden_Aggregaties.png)
 
 ### Regel gevuurd  
 Voorwaarde dat de opgegeven versie van een regel tot een toekenning heeft geleid.
@@ -53,11 +53,11 @@ Voorwaarde dat de opgegeven versie van een regel tot een toekenning heeft geleid
 ### Regel inconsistent  
 Voorwaarde dat de opgegeven versie van een regel een inconsistentie heeft vastgesteld.
 
-![Voorwaardendeel met voorwaarde dat regel is gevuurd](img/Voorwaarden_RegelInconsistent.png)
+![Voorwaardendeel met voorwaarde dat regel inconsistent is](img/Voorwaarden_RegelInconsistent.png)
 
 **Let op:** Het onderwerp van beide regels moet gelijk zijn.
 
 ### Concatenatie (en/of)
 Samenvoegen meerdere "literals" in één voorwaarde.
 
-![Voorwaardendeel met meeerde literals in 1 voorwaarde](img/Voorwaarden_Concatenatie.png)
+![Voorwaardendeel met meerdere literals in 1 voorwaarde](img/Voorwaarden_Concatenatie.png)
