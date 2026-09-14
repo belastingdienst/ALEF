@@ -474,6 +474,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
         <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1205598340672" name="jetbrains.mps.baseLanguage.collections.structure.DisjunctOperation" flags="nn" index="2NgGto" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
@@ -8073,6 +8074,14 @@
                   <node concept="2jxLKc" id="2_HNuzXRFSC" role="1tU5fm" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="43IEK1oi9jh" role="3cqZAp">
+            <node concept="2OqwBi" id="43IEK1oieOH" role="3clFbG">
+              <node concept="37vLTw" id="43IEK1oi9jf" role="2Oq$k0">
+                <ref role="3cqZAo" node="2_HNuzXRFRK" resolve="choices" />
+              </node>
+              <node concept="2Kehj3" id="43IEK1oio6j" role="2OqNvi" />
             </node>
           </node>
         </node>
