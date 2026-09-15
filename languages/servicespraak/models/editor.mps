@@ -7915,13 +7915,10 @@
         <node concept="3clFbS" id="2raDMRMwzlQ" role="2VODD2">
           <node concept="3clFbF" id="3pi5fOdaUAN" role="3cqZAp">
             <node concept="2OqwBi" id="3pi5fOdaVk5" role="3clFbG">
-              <node concept="35c_gC" id="3pi5fOdaUAM" role="2Oq$k0">
-                <ref role="35c_gD" to="ku5w:6TDyi7ggYgU" resolve="SelectableBerichtType" />
-              </node>
+              <node concept="0IXxy" id="21xSlnkEOlE" role="2Oq$k0" />
               <node concept="2qgKlT" id="3pi5fOdaWDH" role="2OqNvi">
                 <ref role="37wK5l" to="txb8:6TDyi7gjzWv" resolve="toggleFilteredMessageFields" />
                 <node concept="1Q80Hx" id="3pi5fOdaWV8" role="37wK5m" />
-                <node concept="0IXxy" id="3pi5fOdaXid" role="37wK5m" />
               </node>
             </node>
           </node>
