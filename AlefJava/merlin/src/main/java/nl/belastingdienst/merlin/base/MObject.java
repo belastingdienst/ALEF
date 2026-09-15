@@ -2,10 +2,14 @@ package nl.belastingdienst.merlin.base;
 
 
 import nl.belastingdienst.alef_runtime.Vectorspace;
+import nl.belastingdienst.alef_runtime.time.IValidity;
+import nl.belastingdienst.merlin.time.MTimedObjectSet;
+import nl.belastingdienst.merlin.time.MTimedObjectSingleton;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class MObject extends MBase implements IMDelegatedExecution {
@@ -19,8 +23,8 @@ public class MObject extends MBase implements IMDelegatedExecution {
     private final List<MDelegateeRule> delegateeRules = new ArrayList<>();
     private final List<MRuleBase> callbackRulesList = new ArrayList<>();
     private final MObjectType objectType;
-    private final HashMap<MPropertyKey, MProperty> propertyInstances = new HashMap<>();
-    private final HashMap<MRoleKey, MRole> roles = new HashMap<>();
+    private final Map<MPropertyKey, MProperty> propertyInstances = new HashMap<>();
+    private final Map<MRoleKey, MRole> roles = new HashMap<>();
 
     private Boolean consistent;
     private final String externalId;
@@ -53,7 +57,7 @@ public class MObject extends MBase implements IMDelegatedExecution {
 
     @Override
     public MElementList<MDistributionRule> getDistributionRules() {
-        return (distributionRules.isEmpty()) ? MElementList.empty() : MElementList.of(distributionRules);
+        return distributionRules.isEmpty() ? MElementList.<MDistributionRule>empty() : MElementList.of(distributionRules);
     }
 
     public MDistributionRule getDistributionRule(Class<? extends MDistributionRule> ruleClass) {
@@ -150,8 +154,18 @@ public class MObject extends MBase implements IMDelegatedExecution {
         return property.gePropertyByIndex(index);
     }
 
+    public static boolean hasKenmerk(MObject object, MKenmerkKey<Boolean> kenmerk, boolean ifObjectNull) {
+        if (object == null) return ifObjectNull;
+        return Boolean.TRUE.equals(object.getProperty(kenmerk).get());
+    }
+
     public MRole getRole(MRoleKey roleKey) {
         return roles.computeIfAbsent(roleKey, k -> k.createRole(this));
+    }
+
+    public static boolean isRole(MObject object, MRoleKey role) {
+        if (object == null) return false;
+        return object.isRole(role);
     }
 
     public boolean isRole(MRoleKey roleKey) {
@@ -162,6 +176,17 @@ public class MObject extends MBase implements IMDelegatedExecution {
         MProperty<Boolean> kenmerk = getProperty(roleKey);
         final Boolean b = kenmerk.get();
         return (b != null) && b;
+    }
+
+    /**
+     * Get the validity of a role. For not timed relation this is Always if the role exists.
+     * Of timed relations this is the periods that the relation contains at least one member.
+     * @param roleKey Relation key
+     * @return IValidity with the period that the relation has at least one member.
+     */
+    public IValidity validityOfRole(final MRoleKey roleKey) {
+        final MTimedObjectSet objs = getRole(roleKey.getOpposite(getUniverse())).getTimedMList();
+        return objs.atLeastOne();
     }
 
     public MElementList<MObject> getRoleNRelations(MRoleKey roleKey) {
@@ -175,13 +200,35 @@ public class MObject extends MBase implements IMDelegatedExecution {
 
     public MObject getRoleOneRelation(MRoleKey roleKey) {
         final MElementList<MObject> mList = getRole(roleKey).getMList();
-        if (mList.count() > 1) throw new RuntimeException("Single relation role access on  manny relation role");
+        if (mList.count() > 1) throw new RoleCardinalityException("Single relation role access on many relation role");
         return mList.first();
+    }
 
+    public MTimedObjectSingleton getTimedRoleOneRelation(final MRoleKey roleKey) {
+        return getRole(roleKey).getTimedSingle();
+    }
+
+    public MTimedObjectSet getTimedRoleNRelations(final MRoleKey roleKey) {
+        return getRole(roleKey).getTimedMList();
     }
 
     public boolean isObjectType(Class<? extends MObjectType> ot) {
         return ot.equals(getObjectType().getClass());
     }
-}
+
+    @Override
+    public String toString() {
+        final StringBuilder b = new StringBuilder();
+        b.append(this.objectType.getClass().getSimpleName());
+        b.append("{\n");
+        for (Map.Entry<MPropertyKey, MProperty> p : this.propertyInstances.entrySet()) {
+            b.append("  ");
+            b.append(p.getKey().getName());
+            b.append(" ");
+            b.append(p.getValue());
+            b.append("\n");
+        }
+        b.append("}");
+        return b.toString();
+    }}
 
