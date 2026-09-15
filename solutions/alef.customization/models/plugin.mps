@@ -79,6 +79,10 @@
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
+      </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1211298967294" name="outsideCommandExecution" index="72QZ$" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
@@ -105,6 +109,12 @@
       </concept>
       <concept id="1205679047295" name="jetbrains.mps.lang.plugin.structure.ActionParameterDeclaration" flags="ig" index="2S4$dB" />
       <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
+      <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
+        <child id="1562714432501166206" name="keystroke" index="Zd501" />
+      </concept>
+      <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
+        <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
       <concept id="1203680534665" name="jetbrains.mps.lang.plugin.structure.GroupAnchor" flags="ng" index="10WQ6h" />
       <concept id="1210179134063" name="jetbrains.mps.lang.plugin.structure.PreferencesComponentDeclaration" flags="ng" index="34j2dQ">
         <child id="1210179829398" name="persistenPropertyDeclaration" index="34lFYf" />
@@ -113,6 +123,9 @@
       </concept>
       <concept id="1210179190070" name="jetbrains.mps.lang.plugin.structure.PersistentPropertyDeclaration" flags="ng" index="34jfKJ" />
       <concept id="1210180874794" name="jetbrains.mps.lang.plugin.structure.PersistentPropertyReference" flags="nn" index="34pFcN" />
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ngI" index="1bYyw_">
+        <reference id="6193305307616734326" name="action" index="1bYAoF" />
+      </concept>
       <concept id="5891121763832969496" name="jetbrains.mps.lang.plugin.structure.IsInstanceCondition" flags="ng" index="1c5O4g">
         <reference id="5891121763832971425" name="cls" index="1c5NyD" />
       </concept>
@@ -7657,6 +7670,30 @@
     <node concept="ftmFs" id="5akV7tBVQit" role="ftER_">
       <node concept="tCFHf" id="5akV7tBVQiv" role="ftvYc">
         <ref role="tCJdB" node="5akV7tBTLQV" resolve="Documentation" />
+      </node>
+    </node>
+  </node>
+  <node concept="Zd50a" id="6jiBIvUsMe1">
+    <property role="TrG5h" value="Default" />
+    <node concept="Zd509" id="5glEovcH15s" role="Zd508">
+      <ref role="1bYAoF" node="5aaarhB8SBw" resolve="RebuildAlefProject" />
+      <node concept="pLAjd" id="5glEovcH15t" role="Zd501">
+        <property role="pLAjf" value="VK_1" />
+        <property role="pLAjc" value="alt+shift" />
+      </node>
+    </node>
+    <node concept="Zd509" id="5glEovcH0ON" role="Zd508">
+      <ref role="1bYAoF" node="5aaarhB8S_Y" resolve="MakeAlefProject" />
+      <node concept="pLAjd" id="5glEovcH0OO" role="Zd501">
+        <property role="pLAjc" value="alt+shift" />
+        <property role="pLAjf" value="VK_2" />
+      </node>
+    </node>
+    <node concept="Zd509" id="6jiBIvUsMe2" role="Zd508">
+      <ref role="1bYAoF" node="28$JJ6pS2mL" resolve="RunProjectHygieneOnProject" />
+      <node concept="pLAjd" id="6jiBIvUsMe3" role="Zd501">
+        <property role="pLAjc" value="alt+shift" />
+        <property role="pLAjf" value="VK_3" />
       </node>
     </node>
   </node>
