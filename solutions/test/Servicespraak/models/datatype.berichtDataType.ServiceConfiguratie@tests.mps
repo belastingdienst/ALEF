@@ -87,7 +87,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -222,7 +221,6 @@
       </concept>
     </language>
     <language id="d8af31be-1847-4d5b-8686-78e232d4e0f8" name="servicespraak">
-      <concept id="1482961590271922263" name="servicespraak.structure.BerichtVeld" flags="ngI" index="2785By" />
       <concept id="1482961590271922253" name="servicespraak.structure.BerichtType" flags="ng" index="2785BS">
         <reference id="2657656834086768020" name="object" index="1Ig6_r" />
         <child id="1482961590271922261" name="veld" index="2785Bw" />
@@ -1081,11 +1079,10 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="577gZFjQ$D0" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="IBPrFhSbBm" role="1SL9yI">
-      <property role="TrG5h" value="testAddAllMessageFieldsInlineToBerichtType" />
+      <property role="TrG5h" value="testAddAllMessageFieldsInlineToBerichtType1" />
       <node concept="3cqZAl" id="IBPrFhSbBn" role="3clF45" />
       <node concept="3clFbS" id="IBPrFhSbBo" role="3clF47">
         <node concept="3cpWs8" id="IBPrFhSbBp" role="3cqZAp">
@@ -1104,7 +1101,9 @@
                 <node concept="3xONca" id="IBPrFhSbBv" role="37wK5m">
                   <ref role="3xOPvv" node="IBPrFhSfIe" resolve="before2" />
                 </node>
-                <node concept="10Nm6u" id="IBPrFhSbBw" role="37wK5m" />
+                <node concept="3xONca" id="nGtMzfUKEY" role="37wK5m">
+                  <ref role="3xOPvv" node="nGtMzfUaV$" resolve="veld2" />
+                </node>
               </node>
             </node>
           </node>
@@ -1175,7 +1174,7 @@
               <ref role="3cqZAo" node="IBPrFhSbBq" resolve="selectableBerichtType" />
             </node>
             <node concept="3xONca" id="IBPrFhSeCH" role="37wK5m">
-              <ref role="3xOPvv" node="IBPrFhSjSb" resolve="veld" />
+              <ref role="3xOPvv" node="nGtMzfUaV$" resolve="veld2" />
             </node>
           </node>
         </node>
@@ -1280,7 +1279,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="IBPrFhSbCz" role="3cqZAp" />
       </node>
     </node>
     <node concept="1qefOq" id="577gZFjQtCV" role="1SKRRt">
@@ -1712,13 +1710,11 @@
         <node concept="1IH5HN" id="IBPrFhSgb5" role="2785Bw">
           <ref role="1IJyWM" to="s1a9:4cyDsonoSlW" resolve="invoer_geheelGetal" />
         </node>
-        <node concept="2785By" id="IBPrFhSjSa" role="2785Bw">
-          <node concept="3xLA65" id="IBPrFhSjSb" role="lGtFl">
-            <property role="TrG5h" value="veld" />
-          </node>
-        </node>
         <node concept="1IH5HN" id="IBPrFhSgb6" role="2785Bw">
           <ref role="1IJyWM" to="s1a9:1v8mUrxe9wc" resolve="invoer_negatief_GeheelGetal" />
+          <node concept="3xLA65" id="nGtMzfUaV$" role="lGtFl">
+            <property role="TrG5h" value="veld2" />
+          </node>
         </node>
         <node concept="1IH5HN" id="IBPrFhSgb7" role="2785Bw">
           <ref role="1IJyWM" to="s1a9:1v8mUrxe9OT" resolve="invoer_positief_GeheelGetal" />
