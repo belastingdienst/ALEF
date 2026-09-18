@@ -29,6 +29,7 @@
     <import index="ivtb" ref="r:25091019-42b3-4abf-873c-094c1af46a65(regelspraak.translator)" />
     <import index="df4k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.deletionApprover(MPS.Editor/)" />
     <import index="b3he" ref="r:450f3072-302f-4926-a072-11cf949c7ff9(RekenkundigeFuncties_Test.Afronden.Afronden)" />
+    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="kv4l" ref="r:333ffe06-45a6-4a2f-9f2c-e32da362f291(interpreter.debug.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" implicit="true" />
@@ -56,6 +57,12 @@
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
+      <concept id="1228934484974" name="jetbrains.mps.lang.test.structure.PressKeyStatement" flags="nn" index="yd1bK">
+        <child id="1228934507814" name="keyStrokes" index="yd6KS" />
+      </concept>
+      <concept id="7011073693661765739" name="jetbrains.mps.lang.test.structure.InvokeActionStatement" flags="nn" index="2HxZob">
+        <child id="1101347953350127927" name="actionReference" index="3iKnsn" />
+      </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
         <property id="1883175908513350760" name="description" index="3YCmrE" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
@@ -78,6 +85,9 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
+        <reference id="4239542196496929559" name="action" index="1iFR8X" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -99,6 +109,11 @@
       </concept>
       <concept id="5266358701722203952" name="jetbrains.mps.lang.test.structure.ApplyQuickFix" flags="ng" index="1MTqDA">
         <reference id="7668795378453884311" name="quickfix" index="1DyUlj" />
+      </concept>
+    </language>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242774" name="keycode" index="pLAjf" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -369,6 +384,7 @@
       <concept id="4697074533531412717" name="gegevensspraak.structure.TekstLiteral" flags="ng" index="2JwNib">
         <property id="4697074533531412721" name="waarde" index="2JwNin" />
       </concept>
+      <concept id="9162738810171800275" name="gegevensspraak.structure.Expressie" flags="ng" index="2MOiMP" />
       <concept id="1788186806698835690" name="gegevensspraak.structure.EenheidMacht" flags="ng" index="Pwxi7">
         <property id="1788186806698835691" name="exponent" index="Pwxi6" />
         <reference id="1788186806698835693" name="basis" index="Pwxi0" />
@@ -4290,6 +4306,144 @@
           </node>
         </node>
         <node concept="1uxNW$" id="4RiI2$4wga$" role="1HSqhF" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="2FrD_$fN4HK">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_WisselTallenNaarDecimalen" />
+    <node concept="1qefOq" id="2FrD_$fN4JN" role="25YQCW">
+      <node concept="29kKyO" id="2FrD_$fN4JL" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2FrD_$fN4JM" role="29kKy2" />
+        <node concept="LIFWc" id="3JRruOfKu4E" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ReadOnlyModelAccessor_6rwag2_b0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2FrD_$fN4KB" role="25YQFr">
+      <node concept="29kKyO" id="2FrD_$fN4K_" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="0" />
+        <node concept="2MOiMP" id="2FrD_$fN4KA" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="2FrD_$fN4Ql" role="LjaKd">
+      <node concept="2HxZob" id="2FrD_$fN4Qj" role="3cqZAp">
+        <node concept="1iFQzN" id="2FrD_$fN4QA" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3JRruOfKua7" role="3cqZAp">
+        <node concept="pLAjd" id="3JRruOfKua9" role="yd6KS">
+          <property role="pLAjf" value="VK_DOWN" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="2FrD_$fN52e" role="3cqZAp">
+        <node concept="pLAjd" id="2FrD_$fN52g" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="2FrD_$fNkNF">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_VulOngeldigeCijferInVoorTallen" />
+    <node concept="1qefOq" id="2FrD_$fNkUe" role="25YQCW">
+      <node concept="29kKyO" id="2FrD_$fNkUc" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2FrD_$fNkUd" role="29kKy2" />
+        <node concept="LIFWc" id="3JRruOfKEeC" role="lGtFl">
+          <property role="LIFWa" value="1" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="1" />
+          <property role="p6zMs" value="1" />
+          <property role="LIFWd" value="ASEC_property_powerOf10" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2FrD_$fNkV1" role="25YQFr">
+      <node concept="29kKyO" id="2FrD_$fNkUZ" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2FrD_$fNkV0" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="2FrD_$fNlpm" role="LjaKd">
+      <node concept="2TK7Tu" id="2FrD_$fNlpl" role="3cqZAp">
+        <property role="2TTd_B" value="2" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3JRruOfKM3_">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_WisselDecimalenNaarTallen" />
+    <node concept="1qefOq" id="3JRruOfKM58" role="25YQCW">
+      <node concept="29kKyO" id="3JRruOfKM56" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <node concept="2MOiMP" id="3JRruOfKM57" role="29kKy2" />
+        <node concept="LIFWc" id="3JRruOfKM6d" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ReadOnlyModelAccessor_6rwag2_b0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3JRruOfKM5p" role="25YQFr">
+      <node concept="29kKyO" id="3JRruOfKM5F" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="3JRruOfKM5G" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3JRruOfKMbr" role="LjaKd">
+      <node concept="2HxZob" id="3JRruOfKMbp" role="3cqZAp">
+        <node concept="1iFQzN" id="3JRruOfKMbG" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3JRruOfKMhq" role="3cqZAp">
+        <node concept="pLAjd" id="3JRruOfKMhs" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3JRruOfLg7Q">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_VulGeldigeCijferInVoorTallen" />
+    <node concept="1qefOq" id="3JRruOfLg7R" role="25YQCW">
+      <node concept="29kKyO" id="3JRruOfLg7S" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="3JRruOfLg7T" role="29kKy2" />
+        <node concept="LIFWc" id="3JRruOfLgEx" role="lGtFl">
+          <property role="LIFWa" value="1" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="1" />
+          <property role="p6zMs" value="1" />
+          <property role="LIFWd" value="ASEC_property_powerOf10" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3JRruOfLg7V" role="25YQFr">
+      <node concept="29kKyO" id="3JRruOfLg7W" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-2" />
+        <node concept="2MOiMP" id="3JRruOfLg7X" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3JRruOfLg7Y" role="LjaKd">
+      <node concept="2TK7Tu" id="3JRruOfLg7Z" role="3cqZAp">
+        <property role="2TTd_B" value="0" />
       </node>
     </node>
   </node>

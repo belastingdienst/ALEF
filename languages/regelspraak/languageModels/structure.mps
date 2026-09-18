@@ -618,6 +618,11 @@
       <property role="TrG5h" value="aantalDecimalen" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="4qjyQx6yO0q" role="1TKVEl">
+      <property role="IQ2nx" value="5085561684207812634" />
+      <property role="TrG5h" value="powerOf10" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="pK7zf3$hoB" role="1TKVEl">
       <property role="IQ2nx" value="463903969292391975" />
       <property role="TrG5h" value="isGemigreerdVoorPercentages" />
@@ -3074,6 +3079,26 @@
       <property role="20kJfa" value="transfer" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ic2:$infi2rzcc" resolve="Attribuut" />
+    </node>
+  </node>
+  <node concept="25R3W" id="17_iMLLkpuh">
+    <property role="3F6X1D" value="1289519522563331985" />
+    <property role="TrG5h" value="AfrondingPositie" />
+    <ref role="1H5jkz" node="17_iMLLkq2a" resolve="decimalen" />
+    <node concept="25R33" id="17_iMLLkpui" role="25R1y">
+      <property role="3tVfz5" value="1289519522563331986" />
+      <property role="TrG5h" value="decimaal" />
+      <property role="1L1pqM" value="decimaal" />
+    </node>
+    <node concept="25R33" id="17_iMLLkq2a" role="25R1y">
+      <property role="3tVfz5" value="1289519522563334282" />
+      <property role="TrG5h" value="decimalen" />
+      <property role="1L1pqM" value="decimalen" />
+    </node>
+    <node concept="25R33" id="17_iMLLkqe8" role="25R1y">
+      <property role="3tVfz5" value="1289519522563335048" />
+      <property role="TrG5h" value="tallen" />
+      <property role="1L1pqM" value="tallen" />
     </node>
   </node>
 </model>
