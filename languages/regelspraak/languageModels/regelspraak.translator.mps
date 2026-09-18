@@ -26308,21 +26308,21 @@
                 </node>
               </node>
               <node concept="3clFbS" id="3AIL2QLUcXC" role="Jncv$">
-                <node concept="3clFbF" id="3AIL2QLUe0l" role="3cqZAp">
-                  <node concept="37vLTI" id="3AIL2QLUeKQ" role="3clFbG">
-                    <node concept="2OqwBi" id="3AIL2QLUfaM" role="37vLTx">
-                      <node concept="Jnkvi" id="3AIL2QLUeSA" role="2Oq$k0">
+                <node concept="3clFbF" id="2Bo1A47X93K" role="3cqZAp">
+                  <node concept="37vLTI" id="2Bo1A47X93L" role="3clFbG">
+                    <node concept="2OqwBi" id="2Bo1A47X93M" role="37vLTx">
+                      <node concept="Jnkvi" id="2Bo1A47X93N" role="2Oq$k0">
                         <ref role="1M0zk5" node="3AIL2QLUcXE" resolve="afronding" />
                       </node>
-                      <node concept="3TrcHB" id="3AIL2QLUfD6" role="2OqNvi">
-                        <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                      <node concept="2qgKlT" id="2Bo1A48pzsw" role="2OqNvi">
+                        <ref role="37wK5l" to="u5to:2Bo1A47tmW3" resolve="resultaatDecimalen" />
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="3AIL2QM0Q0W" role="37vLTJ">
-                      <node concept="37vLTw" id="3AIL2QLUe0k" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2Bo1A47X93P" role="37vLTJ">
+                      <node concept="37vLTw" id="2Bo1A47X93Q" role="2Oq$k0">
                         <ref role="3cqZAo" node="3AIL2QM0Phi" resolve="numeriekType" />
                       </node>
-                      <node concept="3TrcHB" id="3AIL2QM0Qv9" role="2OqNvi">
+                      <node concept="3TrcHB" id="2Bo1A47X93R" role="2OqNvi">
                         <ref role="3TsBF5" to="3ic2:2ONNSf1O5qe" resolve="decimalen" />
                       </node>
                     </node>
@@ -26405,8 +26405,8 @@
                       <node concept="Jnkvi" id="4kQjiF$TZGt" role="2Oq$k0">
                         <ref role="1M0zk5" node="4kQjiF$TZGy" resolve="afronding" />
                       </node>
-                      <node concept="3TrcHB" id="4kQjiF$TZGu" role="2OqNvi">
-                        <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                      <node concept="2qgKlT" id="2Bo1A48pFSQ" role="2OqNvi">
+                        <ref role="37wK5l" to="u5to:2Bo1A47tmW3" resolve="resultaatDecimalen" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="4kQjiF$TZGv" role="37vLTJ">
@@ -29146,8 +29146,8 @@
                 <node concept="37vLTw" id="LyZwym5uIf" role="2Oq$k0">
                   <ref role="3cqZAo" node="LyZwylYkSH" resolve="afronden" />
                 </node>
-                <node concept="3TrcHB" id="LyZwym5yTV" role="2OqNvi">
-                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                <node concept="2qgKlT" id="2Bo1A48pV_8" role="2OqNvi">
+                  <ref role="37wK5l" to="u5to:2Bo1A47tmW3" resolve="resultaatDecimalen" />
                 </node>
               </node>
             </node>
