@@ -1128,38 +1128,106 @@
       <node concept="2xS9Ii" id="25vcn1H1RC6" role="23GdfP">
         <property role="23G6sU" value="op" />
       </node>
-      <node concept="2xS9Io" id="25vcn1H1RCm" role="23GdfP">
-        <ref role="2xS9Ip" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-      </node>
-      <node concept="3TRWRN" id="19qDpgVWx4_" role="23GdfP">
-        <node concept="DxGyO" id="19qDpgVWx4A" role="3TRWRL">
-          <property role="TrG5h" value="decimaal" />
-          <property role="Dxyl8" value="decimalen" />
-        </node>
-        <node concept="1qK_aW" id="19qDpgVWx4B" role="2Cuaq2">
-          <node concept="1qK$xc" id="19qDpgVWx4C" role="1qNoHs">
-            <node concept="1qwsLN" id="19qDpgVW$b3" role="1qIng$" />
-            <node concept="2358bp" id="19qDpgVWx4K" role="1qNoHl">
-              <node concept="234$WW" id="19qDpgVWx4M" role="2358aa">
-                <node concept="3clFbS" id="19qDpgVWx4O" role="2VODD2">
-                  <node concept="3clFbF" id="19qDpgVWx9E" role="3cqZAp">
-                    <node concept="3clFbC" id="19qDpgVW$ci" role="3clFbG">
-                      <node concept="2OqwBi" id="19qDpgVWxw0" role="3uHU7B">
-                        <node concept="236Rlm" id="19qDpgVWx9D" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="19qDpgVWyci" role="2OqNvi">
-                          <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+      <node concept="23JKdb" id="15d$3CtqMws" role="23GdfP">
+        <node concept="23JKde" id="15d$3CtqMwt" role="23JKd8">
+          <node concept="23GdfO" id="15d$3CtqMwu" role="23JKdf">
+            <node concept="2xS9Io" id="25vcn1H1RCm" role="23GdfP">
+              <ref role="2xS9Ip" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+            </node>
+            <node concept="3TRWRN" id="19qDpgVWx4_" role="23GdfP">
+              <node concept="DxGyO" id="19qDpgVWx4A" role="3TRWRL">
+                <property role="TrG5h" value="decimaal" />
+                <property role="Dxyl8" value="decimalen" />
+              </node>
+              <node concept="1qK_aW" id="19qDpgVWx4B" role="2Cuaq2">
+                <node concept="1qK$xc" id="19qDpgVWx4C" role="1qNoHs">
+                  <node concept="1qwsLN" id="19qDpgVW$b3" role="1qIng$" />
+                  <node concept="2358bp" id="19qDpgVWx4K" role="1qNoHl">
+                    <node concept="234$WW" id="19qDpgVWx4M" role="2358aa">
+                      <node concept="3clFbS" id="19qDpgVWx4O" role="2VODD2">
+                        <node concept="3clFbF" id="19qDpgVWx9E" role="3cqZAp">
+                          <node concept="2OqwBi" id="3jTTg$AssL5" role="3clFbG">
+                            <node concept="236Rlm" id="3jTTg$AssqE" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="3jTTg$Astc5" role="2OqNvi">
+                              <ref role="37wK5l" to="u5to:3jTTg$ArFJa" resolve="isAantalDecimalenSingular" />
+                            </node>
+                          </node>
                         </node>
-                      </node>
-                      <node concept="3cmrfG" id="19qDpgVWzVL" role="3uHU7w">
-                        <property role="3cmrfH" value="1" />
                       </node>
                     </node>
                   </node>
                 </node>
+                <node concept="1qwtZH" id="19qDpgVW$a4" role="3i2ZaD" />
               </node>
             </node>
           </node>
-          <node concept="1qwtZH" id="19qDpgVW$a4" role="3i2ZaD" />
+          <node concept="23mlFo" id="15d$3CtqXkx" role="23J4uA">
+            <ref role="23mlFp" node="15d$3CtqNPh" resolve="decimalen" />
+          </node>
+        </node>
+        <node concept="23JKde" id="2FAlTNDJaJv" role="23JKd8">
+          <node concept="23GdfO" id="2FAlTNDJaJw" role="23JKdf">
+            <node concept="2xS9Ii" id="2caUlitYwvj" role="23GdfP">
+              <property role="23G6sU" value="een" />
+            </node>
+            <node concept="2xS9Ii" id="2FAlTNGhcra" role="23GdfP">
+              <property role="23G6sU" value="geheel" />
+            </node>
+            <node concept="2xS9Ii" id="2FAlTNDJcNU" role="23GdfP">
+              <property role="23G6sU" value="getal" />
+            </node>
+          </node>
+          <node concept="23mlFo" id="2FAlTNDJb4h" role="23J4uA">
+            <ref role="23mlFp" node="2FAlTNDJ9l2" resolve="geheelGetal" />
+          </node>
+        </node>
+        <node concept="23JKde" id="15d$3CtqZJP" role="23JKd8">
+          <node concept="23GdfO" id="15d$3CtqZJQ" role="23JKdf">
+            <node concept="2xS9Ii" id="B05gQP9TgB" role="23GdfP">
+              <property role="23G6sU" value="een" />
+            </node>
+            <node concept="2xS9Io" id="15d$3Ctr$n2" role="23GdfP">
+              <ref role="2xS9Ip" to="m234:4qjyQx6yO0q" resolve="powerOf10" />
+            </node>
+            <node concept="2xS9Ii" id="2FrD_$b$4eo" role="23GdfP">
+              <property role="23G6sU" value="-tal" />
+              <property role="2DMUbn" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="23mcil" id="15d$3CtqNPh" role="23mchj">
+      <property role="TrG5h" value="decimalen" />
+      <node concept="2358bp" id="15d$3CtqQ33" role="23mciC">
+        <node concept="234$WW" id="15d$3CtqQ34" role="2358aa">
+          <node concept="3clFbS" id="15d$3CtqQ35" role="2VODD2">
+            <node concept="3clFbF" id="15d$3CtqQNl" role="3cqZAp">
+              <node concept="2OqwBi" id="B05gQPy4sE" role="3clFbG">
+                <node concept="236Rlm" id="B05gQPy46f" role="2Oq$k0" />
+                <node concept="2qgKlT" id="B05gQPy4Vr" role="2OqNvi">
+                  <ref role="37wK5l" to="u5to:2FAlTNNtdSL" resolve="isDecimalenGeselecteerd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="23mcil" id="2FAlTNDJ9l2" role="23mchj">
+      <property role="TrG5h" value="geheelGetal" />
+      <node concept="2358bp" id="2FAlTNDJ9l3" role="23mciC">
+        <node concept="234$WW" id="2FAlTNDJ9l4" role="2358aa">
+          <node concept="3clFbS" id="2FAlTNDJ9l5" role="2VODD2">
+            <node concept="3clFbF" id="2FAlTNDJ9l6" role="3cqZAp">
+              <node concept="2OqwBi" id="B05gQPy6OX" role="3clFbG">
+                <node concept="236Rlm" id="2FAlTNDJ9l9" role="2Oq$k0" />
+                <node concept="2qgKlT" id="B05gQPy7Q3" role="2OqNvi">
+                  <ref role="37wK5l" to="u5to:2FAlTN$JsW3" resolve="isGeheelGetalGeselecteerd" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

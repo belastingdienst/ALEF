@@ -618,6 +618,11 @@
       <property role="TrG5h" value="aantalDecimalen" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="4qjyQx6yO0q" role="1TKVEl">
+      <property role="IQ2nx" value="5085561684207812634" />
+      <property role="TrG5h" value="powerOf10" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="pK7zf3$hoB" role="1TKVEl">
       <property role="IQ2nx" value="463903969292391975" />
       <property role="TrG5h" value="isGemigreerdVoorPercentages" />
