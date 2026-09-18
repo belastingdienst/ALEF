@@ -26,6 +26,7 @@
     <import index="hqp3" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.eager(alef.runtime/)" />
     <import index="qcmd" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.lazy(alef.runtime/)" />
     <import index="rzok" ref="r:a8fb563d-47c7-4600-a897-619c6d2de4c5(contexts.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -2635,7 +2636,7 @@
             </node>
             <node concept="2ShNRf" id="10UkTy69CyR" role="33vP2m">
               <node concept="1pGfFk" id="10UkTy69Cyw" role="2ShVmc">
-                <ref role="37wK5l" to="jyki:~MPropertyKey.&lt;init&gt;()" resolve="MPropertyKey" />
+                <ref role="37wK5l" to="jyki:~MPropertyKey.&lt;init&gt;(java.lang.String)" resolve="MPropertyKey" />
                 <node concept="3uibUv" id="10UkTy69Cyx" role="1pMfVU">
                   <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
                   <node concept="1sPUBX" id="10UkTy69Cyy" role="lGtFl">
@@ -2647,6 +2648,25 @@
                             <node concept="30H73N" id="10UkTy69CyB" role="2Oq$k0" />
                             <node concept="3TrEf2" id="10UkTy69CyC" role="2OqNvi">
                               <ref role="3Tt5mk" to="3ic2:58tBIcSIKRJ" resolve="type" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="ZIZnXxXb7r" role="37wK5m">
+                  <property role="Xl_RC" value="name" />
+                  <node concept="17Uvod" id="ZIZnXxXbZC" role="lGtFl">
+                    <property role="2qtEX9" value="value" />
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <node concept="3zFVjK" id="ZIZnXxXbZD" role="3zH0cK">
+                      <node concept="3clFbS" id="ZIZnXxXbZE" role="2VODD2">
+                        <node concept="3clFbF" id="ZIZnXxXcee" role="3cqZAp">
+                          <node concept="2OqwBi" id="ZIZnXxXcLL" role="3clFbG">
+                            <node concept="30H73N" id="ZIZnXxXced" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="ZIZnXxXdy$" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
                           </node>
                         </node>
@@ -2798,7 +2818,7 @@
             </node>
             <node concept="2ShNRf" id="10UkTy69Enk" role="33vP2m">
               <node concept="1pGfFk" id="10UkTy69Enl" role="2ShVmc">
-                <ref role="37wK5l" to="jyki:~MDimensionalPropertyKey.&lt;init&gt;(int[])" resolve="MDimensionalPropertyKey" />
+                <ref role="37wK5l" to="jyki:~MDimensionalPropertyKey.&lt;init&gt;(java.lang.String,int[])" resolve="MDimensionalPropertyKey" />
                 <node concept="3uibUv" id="10UkTy69Enm" role="1pMfVU">
                   <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
                   <node concept="1sPUBX" id="10UkTy69Enn" role="lGtFl">
@@ -2810,6 +2830,25 @@
                             <node concept="30H73N" id="10UkTy69Ens" role="2Oq$k0" />
                             <node concept="3TrEf2" id="10UkTy69Ent" role="2OqNvi">
                               <ref role="3Tt5mk" to="3ic2:58tBIcSIKRJ" resolve="type" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="ZIZnXxXeNs" role="37wK5m">
+                  <property role="Xl_RC" value="name" />
+                  <node concept="17Uvod" id="ZIZnXxXfqD" role="lGtFl">
+                    <property role="2qtEX9" value="value" />
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <node concept="3zFVjK" id="ZIZnXxXfqE" role="3zH0cK">
+                      <node concept="3clFbS" id="ZIZnXxXfqF" role="2VODD2">
+                        <node concept="3clFbF" id="ZIZnXxXfJk" role="3cqZAp">
+                          <node concept="2OqwBi" id="ZIZnXxXgiR" role="3clFbG">
+                            <node concept="30H73N" id="ZIZnXxXfJj" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="ZIZnXxXgXL" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
                           </node>
                         </node>
@@ -2955,9 +2994,28 @@
             <node concept="2ShNRf" id="2auzsYhouzt" role="33vP2m">
               <node concept="1pGfFk" id="2auzsYhouzu" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="jyki:~MKenmerkKey.&lt;init&gt;()" resolve="MKenmerkKey" />
+                <ref role="37wK5l" to="jyki:~MKenmerkKey.&lt;init&gt;(java.lang.String)" resolve="MKenmerkKey" />
                 <node concept="3uibUv" id="533$emhCHLR" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                </node>
+                <node concept="Xl_RD" id="ZIZnXxXhw8" role="37wK5m">
+                  <property role="Xl_RC" value="name" />
+                  <node concept="17Uvod" id="ZIZnXxXi0F" role="lGtFl">
+                    <property role="2qtEX9" value="value" />
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <node concept="3zFVjK" id="ZIZnXxXi0G" role="3zH0cK">
+                      <node concept="3clFbS" id="ZIZnXxXi0H" role="2VODD2">
+                        <node concept="3clFbF" id="ZIZnXxXi5L" role="3cqZAp">
+                          <node concept="2OqwBi" id="ZIZnXxXiG0" role="3clFbG">
+                            <node concept="30H73N" id="ZIZnXxXi5K" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="ZIZnXxXjrQ" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -3381,26 +3439,86 @@
         <node concept="3Tm1VV" id="2auzsYho_pO" role="1B3o_S" />
         <node concept="3uibUv" id="2auzsYho_wh" role="1tU5fm">
           <ref role="3uigEE" to="jyki:~MPropertyKey" resolve="MPropertyKey" />
+          <node concept="3uibUv" id="428QPkFUQvn" role="11_B2D">
+            <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+          </node>
         </node>
         <node concept="10Nm6u" id="2auzsYkhJ5f" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEUEb_A" role="jymVt">
+        <property role="TrG5h" value="attrKey2" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm1VV" id="1dZ4qEUEb_B" role="1B3o_S" />
+        <node concept="3uibUv" id="1dZ4qEUEb_C" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MPropertyKey" resolve="MPropertyKey" />
+          <node concept="3uibUv" id="1dZ4qEUEb_D" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+        <node concept="10Nm6u" id="1dZ4qEUEb_E" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEX3KJF" role="jymVt">
+        <property role="TrG5h" value="attrKey3" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm1VV" id="1dZ4qEX3KJG" role="1B3o_S" />
+        <node concept="3uibUv" id="1dZ4qEX3KJH" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MPropertyKey" resolve="MPropertyKey" />
+          <node concept="3uibUv" id="1dZ4qEX3KJI" role="11_B2D">
+            <ref role="3uigEE" to="nhsg:~ITimed" resolve="ITimed" />
+            <node concept="3uibUv" id="1dZ4qEX3Lln" role="11_B2D">
+              <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+            </node>
+          </node>
+        </node>
+        <node concept="10Nm6u" id="1dZ4qEX3KJJ" role="33vP2m" />
       </node>
       <node concept="Wx3nA" id="2auzsYks9mF" role="jymVt">
         <property role="TrG5h" value="kenmerkKey" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="2auzsYks9mG" role="1tU5fm">
           <ref role="3uigEE" to="jyki:~MKenmerkKey" resolve="MKenmerkKey" />
+          <node concept="3uibUv" id="428QPkFUQLr" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+          </node>
         </node>
         <node concept="3Tm1VV" id="2auzsYks9n2" role="1B3o_S" />
         <node concept="10Nm6u" id="2auzsYksFV9" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEX3ETE" role="jymVt">
+        <property role="TrG5h" value="kenmerkKey2" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="1dZ4qEX3ETF" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MKenmerkKey" resolve="MKenmerkKey" />
+          <node concept="3uibUv" id="1dZ4qEX3ETG" role="11_B2D">
+            <ref role="3uigEE" to="nhsg:~IValidity" resolve="IValidity" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1dZ4qEX3ETH" role="1B3o_S" />
+        <node concept="10Nm6u" id="1dZ4qEX3ETI" role="33vP2m" />
       </node>
       <node concept="Wx3nA" id="2auzsYksaSG" role="jymVt">
         <property role="TrG5h" value="dimensionalAttrKey" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="2auzsYksaSH" role="1tU5fm">
           <ref role="3uigEE" to="jyki:~MDimensionalPropertyKey" resolve="MDimensionalPropertyKey" />
+          <node concept="3uibUv" id="428QPkFURf1" role="11_B2D">
+            <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+          </node>
         </node>
         <node concept="3Tm1VV" id="2auzsYksaSK" role="1B3o_S" />
         <node concept="10Nm6u" id="2auzsYksbmw" role="33vP2m" />
+      </node>
+      <node concept="Wx3nA" id="1dZ4qEWURE6" role="jymVt">
+        <property role="TrG5h" value="dimensionalAttrKey2" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="1dZ4qEWURE7" role="1tU5fm">
+          <ref role="3uigEE" to="jyki:~MDimensionalPropertyKey" resolve="MDimensionalPropertyKey" />
+          <node concept="3uibUv" id="1dZ4qEWURE8" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="1dZ4qEWURE9" role="1B3o_S" />
+        <node concept="10Nm6u" id="1dZ4qEWUREa" role="33vP2m" />
       </node>
       <node concept="3Tm1VV" id="10UkTy6dGAF" role="1B3o_S" />
       <node concept="3uibUv" id="2auzsYho$JC" role="1zkMxy">
