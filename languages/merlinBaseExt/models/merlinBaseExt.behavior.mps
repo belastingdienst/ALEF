@@ -365,7 +365,7 @@
                 <node concept="3cpWs6" id="35JztfL39T7" role="3cqZAp" />
               </node>
               <node concept="BsUDl" id="35JztfL39nQ" role="3clFbw">
-                <ref role="37wK5l" node="35JztfL2Xp$" resolve="checkIfLoop" />
+                <ref role="37wK5l" node="35JztfL2Xp$" resolve="checkIfWhileLoop" />
                 <node concept="37vLTw" id="35JztfL39AD" role="37wK5m">
                   <ref role="3cqZAo" node="5_kzpqZ3F_n" resolve="prev" />
                 </node>
@@ -496,7 +496,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="35JztfL2Xp$" role="13h7CS">
-      <property role="TrG5h" value="checkIfLoop" />
+      <property role="TrG5h" value="checkIfWhileLoop" />
       <node concept="37vLTG" id="35JztfL2XpC" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="35JztfL33cu" role="1tU5fm" />

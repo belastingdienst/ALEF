@@ -194,10 +194,6 @@ public class MObject extends MBase implements IMDelegatedExecution {
         return role.getMList();
     }
 
-    public MElement<MObject> getRoleOneRelationElement(MRoleKey roleKey) {
-        return MElement.of(getRoleOneRelation(roleKey));
-    }
-
     public MObject getRoleOneRelation(MRoleKey roleKey) {
         final MElementList<MObject> mList = getRole(roleKey).getMList();
         if (mList.count() > 1) throw new RoleCardinalityException("Single relation role access on many relation role");

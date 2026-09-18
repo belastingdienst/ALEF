@@ -4733,18 +4733,6 @@
     <property role="TrG5h" value="MaakWaardeOnderdeelVanVoorwaarde" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="vuki:42_2FftMOqx" resolve="BtExpressieCase" />
-    <node concept="2XrIbr" id="ljHQwkflSK" role="32lrUH">
-      <property role="TrG5h" value="mergeTerms" />
-      <node concept="3cqZAl" id="ljHQwkfmMB" role="3clF45" />
-      <node concept="3clFbS" id="ljHQwkflSM" role="3clF47" />
-      <node concept="3Tm6S6" id="ljHQwkflSN" role="1B3o_S" />
-      <node concept="37vLTG" id="ljHQwkfmPi" role="3clF46">
-        <property role="TrG5h" value="terms" />
-        <node concept="2I9FWS" id="ljHQwkfmPh" role="1tU5fm">
-          <ref role="2I9WkF" to="vuki:42_2FftMOqu" resolve="BtTerm" />
-        </node>
-      </node>
-    </node>
     <node concept="2S6ZIM" id="bb198azOSA" role="2ZfVej">
       <node concept="3clFbS" id="bb198azOSB" role="2VODD2">
         <node concept="3clFbF" id="bb198azP1i" role="3cqZAp">
