@@ -6,10 +6,6 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 
 public class StringToStringWriter extends AbstractWriter<String> {
-    public StringToStringWriter() {
-        super("valueString", null);
-    }
-
     public StringToStringWriter(String valueTypeName, Converter<String> converter) {
         super(valueTypeName, converter);
     }

@@ -9,10 +9,6 @@ public class BooleanToBooleanWriter implements FeatureSupport<Boolean> {
     private final String valueTypeName;
     private final Converter<Boolean> converter;
 
-    public BooleanToBooleanWriter() {
-        this("valueBoolean", null);
-    }
-
     public BooleanToBooleanWriter(String valueTypeName, Converter<Boolean> converter) {
         this.valueTypeName = valueTypeName;
         this.converter = converter;

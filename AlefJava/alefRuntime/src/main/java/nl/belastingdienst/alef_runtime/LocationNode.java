@@ -1,4 +1,4 @@
-package nl.belastingdienst.merlin.io.parser;
+package nl.belastingdienst.alef_runtime;
 
 public class LocationNode {
     private final String name;

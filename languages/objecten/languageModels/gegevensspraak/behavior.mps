@@ -60,6 +60,7 @@
     <import index="9eha" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:jetbrains.mps.annotations(Annotations/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="o2rs" ref="r:e831b84d-120c-4b09-9c04-3971beeb563d(linguistics.behavior)" />
+    <import index="thp" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.base.types(alef.runtime/)" />
     <import index="f6cw" ref="r:57bbe3fc-bd7c-495c-b829-0fc2a7cfe592(bronspraak.structure)" implicit="true" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" implicit="true" />
     <import index="ggaa" ref="r:20adf19a-9fac-4720-b234-a3e5bc9d522d(linguistics.structure)" implicit="true" />
@@ -25959,6 +25960,108 @@
         </node>
         <node concept="x79VA" id="3sUzTECTalV" role="3nqlJM">
           <property role="x79VB" value="node&lt;Type&gt;" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="79aBNEbD2pH" role="13h7CS">
+      <property role="TrG5h" value="getNumberRangeConstant" />
+      <node concept="3Tm1VV" id="79aBNEbD2pI" role="1B3o_S" />
+      <node concept="2sp9CU" id="79aBNEbD4bI" role="3clF45">
+        <ref role="2sp9C9" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
+      </node>
+      <node concept="3clFbS" id="79aBNEbD2pK" role="3clF47">
+        <node concept="3clFbJ" id="79aBNEhdwUk" role="3cqZAp">
+          <node concept="3clFbS" id="79aBNEhdwUm" role="3clFbx">
+            <node concept="3cpWs6" id="79aBNEhdz0K" role="3cqZAp">
+              <node concept="2tJFMh" id="79aBNEhdzKE" role="3cqZAk">
+                <node concept="ZC_QK" id="79aBNEhdzKF" role="2tJFKM">
+                  <ref role="2aWVGs" to="thp:~MNumberRange" resolve="MNumberRange" />
+                  <node concept="ZC_QK" id="79aBNEhdzKG" role="2aWVGa">
+                    <ref role="2aWVGs" to="thp:~MNumberRange.ANY" resolve="ANY" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="79aBNEhdynz" role="3clFbw">
+            <node concept="10Nm6u" id="79aBNEhdyyw" role="3uHU7w" />
+            <node concept="2OqwBi" id="79aBNEhdxwK" role="3uHU7B">
+              <node concept="13iPFW" id="79aBNEhdxej" role="2Oq$k0" />
+              <node concept="3TrcHB" id="79aBNEhdybn" role="2OqNvi">
+                <ref role="3TsBF5" to="3ic2:2ONNSf1Xtnq" resolve="range" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="79aBNEbDMNW" role="3cqZAp">
+          <node concept="3X5UdL" id="79aBNEbDnzG" role="3cqZAk">
+            <node concept="2OqwBi" id="79aBNEbDohL" role="3X5Ude">
+              <node concept="13iPFW" id="79aBNEbDo1f" role="2Oq$k0" />
+              <node concept="3TrcHB" id="79aBNEbDAiQ" role="2OqNvi">
+                <ref role="3TsBF5" to="3ic2:2ONNSf1Xtnq" resolve="range" />
+              </node>
+            </node>
+            <node concept="3X5Udd" id="79aBNEbDAXE" role="3X5gkp">
+              <node concept="21nZrQ" id="79aBNEbDAXD" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUD" resolve="ANY" />
+              </node>
+              <node concept="3X5gDF" id="79aBNEbDBTV" role="3X5gFO">
+                <node concept="2tJFMh" id="79aBNEbDBTS" role="3X5gDC">
+                  <node concept="ZC_QK" id="79aBNEbDFCI" role="2tJFKM">
+                    <ref role="2aWVGs" to="thp:~MNumberRange" resolve="MNumberRange" />
+                    <node concept="ZC_QK" id="79aBNEbDFZa" role="2aWVGa">
+                      <ref role="2aWVGs" to="thp:~MNumberRange.ANY" resolve="ANY" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="79aBNEbDGNn" role="3X5gkp">
+              <node concept="21nZrQ" id="79aBNEbDGNo" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUF" resolve="NEGATIVE" />
+              </node>
+              <node concept="3X5gDF" id="79aBNEbDJYj" role="3X5gFO">
+                <node concept="2tJFMh" id="79aBNEbDJYk" role="3X5gDC">
+                  <node concept="ZC_QK" id="79aBNEbDJYl" role="2tJFKM">
+                    <ref role="2aWVGs" to="thp:~MNumberRange" resolve="MNumberRange" />
+                    <node concept="ZC_QK" id="79aBNEbDJYm" role="2aWVGa">
+                      <ref role="2aWVGs" to="thp:~MNumberRange.NEGATIVE" resolve="NEGATIVE" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="79aBNEbDHu1" role="3X5gkp">
+              <node concept="21nZrQ" id="79aBNEbDHu2" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUG" resolve="NON_NEGATIVE" />
+              </node>
+              <node concept="3X5gDF" id="79aBNEbDK3s" role="3X5gFO">
+                <node concept="2tJFMh" id="79aBNEbDK3t" role="3X5gDC">
+                  <node concept="ZC_QK" id="79aBNEbDK3u" role="2tJFKM">
+                    <ref role="2aWVGs" to="thp:~MNumberRange" resolve="MNumberRange" />
+                    <node concept="ZC_QK" id="79aBNEbDK3v" role="2aWVGa">
+                      <ref role="2aWVGs" to="thp:~MNumberRange.NON_NEGATIVE" resolve="NON_NEGATIVE" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="79aBNEbDIn_" role="3X5gkp">
+              <node concept="21nZrQ" id="79aBNEbDInA" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUE" resolve="POSITIVE" />
+              </node>
+              <node concept="3X5gDF" id="79aBNEbDK3w" role="3X5gFO">
+                <node concept="2tJFMh" id="79aBNEbDK3x" role="3X5gDC">
+                  <node concept="ZC_QK" id="79aBNEbDK3y" role="2tJFKM">
+                    <ref role="2aWVGs" to="thp:~MNumberRange" resolve="MNumberRange" />
+                    <node concept="ZC_QK" id="79aBNEbDK3z" role="2aWVGa">
+                      <ref role="2aWVGs" to="thp:~MNumberRange.POSITIVE" resolve="POSITIVE" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

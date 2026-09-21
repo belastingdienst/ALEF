@@ -3,6 +3,7 @@ package nl.belastingdienst.merlin.io.adapter.writers;
 import nl.belastingdienst.alef_runtime.time.ITimed;
 import nl.belastingdienst.alef_runtime.time.Period;
 import nl.belastingdienst.alef_runtime.time.TimeBox;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.ContentWriter;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
@@ -25,7 +26,7 @@ public class TimedWriter<T> extends AbstractTimedWriter<ITimed<T>> {
             contentGenerator.endCollection();
             return;
         }
-        contentGenerator.beginEnclosedCollection("periode");
+        contentGenerator.beginEnclosedCollection(ALEFConstants.PERIOD);
         for (TimeBox<T> box : value.evaluate().boxes(Period.ALWAYS).toList()) {
             if (box.hasValue()) {
                 contentGenerator.beginObject();
@@ -48,7 +49,7 @@ public class TimedWriter<T> extends AbstractTimedWriter<ITimed<T>> {
 
     private void writeValue(ContentGenerator contentGenerator, TimeBox<T> box) throws IOException {
         if (box.hasValue()) {
-            contentGenerator.writeFieldName("waarde");
+            contentGenerator.writeFieldName(ALEFConstants.VALUE);
             valueWriter.write(contentGenerator, box.value());
         }
     }

@@ -3,6 +3,7 @@ package nl.belastingdienst.merlin.io.service;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
@@ -37,9 +38,9 @@ public abstract class RestService<T extends MObjectType> extends AbstractService
     }
 
     protected void generateResponse(MUniverse universe, MObject alefObject, ContentGenerator generator) throws IOException {
-        generator.writeFieldName("response");
+        generator.writeFieldName(ALEFConstants.RESPONSE);
         generator.beginObject();
-        generateServiceResult(generator, "1", "SERVICE_OK");
+        generateServiceResult(generator, ALEFConstants.SERVICE_SUCCESS_CODE, ALEFConstants.SERVICE_SUCCESS_MESSAGE);
         response.process(universe, generator, alefObject);
         generator.endObject();
     }

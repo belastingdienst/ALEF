@@ -11,10 +11,6 @@ public class EnumToStringWriter<T extends Enum<?> & Labeled> implements ContentW
     private final String valueTypeName;
     private final Map<String, String> mappings;
 
-    public EnumToStringWriter(Map<String, String> mappings) {
-        this("valueString", mappings);
-    }
-
     public EnumToStringWriter(String valueTypeName, Map<String, String> mappings) {
         this.valueTypeName = valueTypeName;
         this.mappings = mappings;

@@ -13,6 +13,7 @@ public abstract class AbstractReader<M, A> implements ContentReader<A> {
     private final Converter<A> converter;
 
     protected AbstractReader(List<MValidationRule<M>> validationRules, Converter<A> converter) {
+        assert converter != null : "A converter must be provided.";
         this.converter = converter;
         this.validationRules = validationRules;
     }
@@ -26,12 +27,6 @@ public abstract class AbstractReader<M, A> implements ContentReader<A> {
     }
 
     protected A toInputValue(A value) {
-        A inputValue;
-        if (converter != null) {
-            inputValue = converter.convert(value);
-        } else {
-            inputValue = value;
-        }
-        return inputValue;
+        return converter.convert(value);
     }
 }

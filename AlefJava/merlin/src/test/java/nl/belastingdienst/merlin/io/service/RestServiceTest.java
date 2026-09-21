@@ -20,6 +20,7 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -36,10 +37,10 @@ class RestServiceTest {
         final Request request = new RequestMock();
         request.addComplexProperty(new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE, FactSide.LEFT, null));
         final OutputMessage outputMockItem = new OutputMessageMock();
-        outputMockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
-        outputMockItem.addField(new OutputAttribute<>("price", false, ItemType.price, new RationalToDecimalWriter()));
+        outputMockItem.addField(new OutputAttribute<>("name", false, ItemType.name, newStringToStringWriter()));
+        outputMockItem.addField(new OutputAttribute<>("price", false, ItemType.price, newRationalToDecimalWriter()));
         final OutputMessage outputMockPerson = new OutputMessageMock();
-        outputMockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, new StringToStringWriter()));
+        outputMockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
         outputMockPerson.addField(new OutputComplexProperty<>("items", null, false, true, FactPersonHasItems.items, ItemType.class, outputMockItem));
         final Response response = new ResponseMock();
         response.addElement(new OutputComplexProperty("person", null, false, true, null, PersonType.class, outputMockPerson));
@@ -54,7 +55,7 @@ class RestServiceTest {
                     }
                 }
                 """;
-        final ByteArrayOutputStream outputStream = restService.process(toInputStream(input));
+        final ByteArrayOutputStream outputStream = restService.process(toInputStream(input), input);
         //then
         final String expectedOutput = """
                 {

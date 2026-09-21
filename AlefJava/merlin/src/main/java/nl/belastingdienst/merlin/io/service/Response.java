@@ -2,6 +2,7 @@ package nl.belastingdienst.merlin.io.service;
 
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.KvPairGenerator;
@@ -38,11 +39,11 @@ public abstract class Response {
 
     private void writeOutputProperties(MUniverse universe, ContentGenerator contentGenerator, MObject mainObject) throws IOException {
         if (useConsistencyFlag) {
-            contentGenerator.writeFieldName("consistent");
+            contentGenerator.writeFieldName(ALEFConstants.CONSISTENT);
             contentGenerator.writeBoolean(universe.isConsistent());
         }
         if (contentGenerator instanceof KvPairGenerator) {
-            contentGenerator.writeFieldName("velden");
+            contentGenerator.writeFieldName(ALEFConstants.FIELDS);
             contentGenerator.beginObject();
             contentGenerator.enterKvPairSection();
         }

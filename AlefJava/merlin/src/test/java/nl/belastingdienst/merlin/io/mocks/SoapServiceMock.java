@@ -26,27 +26,22 @@ public class SoapServiceMock<T extends MObjectType> extends SoapService<T> {
     }
 
     @Override
-    protected void addRuleSets(MUniverse universe) {
-        // mock
-    }
-
-    @Override
-    protected void addExtensions(MUniverse universe) {
-        // mock
-    }
-
-    @Override
-    protected void addParameterSets(MUniverse universe) {
-        // mock
-    }
-
-    @Override
     protected void setupUniverseForCalculation(MUniverse universe) {
         // mock
     }
 
     @Override
-    protected void logError(long messageId, Exception x, InputStream inputStream) {
+    protected void logOnStart(String messageId, String input) {
+        // mock
+    }
+
+    @Override
+    protected void logOnSuccess(String messageId, String input) {
+        // mock
+    }
+
+    @Override
+    protected void logOnError(String messageId, Exception x, String input) {
         // mock
     }
 

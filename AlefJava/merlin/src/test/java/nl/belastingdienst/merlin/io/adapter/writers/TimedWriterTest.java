@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.adapter.writers;
 
 import nl.belastingdienst.alef_runtime.time.*;
+import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
@@ -77,7 +78,7 @@ class TimedWriterTest {
     private static String generateXML(ITimed<String> values) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = new JsonGenerator(outputStream);
-        final TimedWriter<String> writer = new TimedWriter<>(new TimelineInfo(true), new StringToStringWriter());
+        final TimedWriter<String> writer = new TimedWriter<>(new TimelineInfo(true), TestUtils.newStringToStringWriter());
         generator.beginObject();
         generator.writeFieldName("values");
         writer.write(generator, values);

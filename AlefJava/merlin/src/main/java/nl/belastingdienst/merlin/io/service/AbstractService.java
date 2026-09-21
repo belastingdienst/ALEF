@@ -3,6 +3,7 @@ package nl.belastingdienst.merlin.io.service;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
@@ -33,38 +34,39 @@ public abstract class AbstractService<T extends MObjectType> {
 
     protected abstract void initialize(AdapterRegistry registry);
 
-    public final ByteArrayOutputStream process(final InputStream inputStream) throws IOException {
+    public final ByteArrayOutputStream process(InputStream inputStream, String input) throws IOException {
         final long messageId = this.counter.getAndIncrement();
+        final MUniverse universe = createUniverse(messageId);
         try {
-            return processRequest(messageId, inputStream);
+            return processRequest(universe, inputStream, input);
         } catch (Exception e) {
             try {
-                logError(messageId, e, inputStream);
+                logOnError(universe.getMessageId(), e, input);
                 return returnError(inputStream, e);
             } catch (RuntimeException x) {
-                logError(messageId, x, inputStream);
+                logOnError(universe.getMessageId(), e, input);
                 throw x;
             } catch (Exception x) {
-                logError(messageId, x, inputStream);
+                logOnError(universe.getMessageId(), e, input);
                 throw new ServiceException(x.getMessage(), x);
             }
         }
     }
 
-    private ByteArrayOutputStream processRequest(long messageId, InputStream inputStream) throws IOException {
-        final MUniverse universe = createUniverse(messageId);
+    private ByteArrayOutputStream processRequest(MUniverse universe, InputStream inputStream, String input) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = beginResponse(outputStream);
         prepareUniverseForParsing(universe);
         final MObject mainObject = parseRequest(universe, inputStream, generator);
+        logOnStart(universe.getMessageId(), input);
         setupUniverseForCalculation(universe);
         response.evaluate(universe, mainObject);
         if (universe.getViolations().isEmpty() || !enableValidation) {
             generateResponse(universe, mainObject, generator);
         } else {
-            generator.writeFieldName("response");
+            generator.writeFieldName(ALEFConstants.RESPONSE);
             generator.beginObject();
-            generateServiceResult(generator, "0",
+            generateServiceResult(generator, ALEFConstants.SERVICE_ERROR_CODE,
                     universe.getViolations().stream()
                             .map(Object::toString)
                             .collect(Collectors.joining(System.lineSeparator())));
@@ -72,32 +74,28 @@ public abstract class AbstractService<T extends MObjectType> {
         }
         endResponse(universe, generator);
         generator.flush();
+        logOnSuccess(universe.getMessageId(), input);
         return outputStream;
     }
 
     protected void generateServiceResult(ContentGenerator generator, String resultCode, String resultMessage) throws IOException {
-        generator.writeFieldName("serviceResultaat");
+        generator.writeFieldName(ALEFConstants.SERVICE_RESULT);
         generator.beginObject();
-        generator.writeStringField("resultaatcode", resultCode);
-        generator.writeStringField("resultaatmelding", resultMessage);
-        generator.writeStringField("serviceversie", serviceVersion);
+        generator.writeStringField(ALEFConstants.RESULT_CODE, resultCode);
+        generator.writeStringField(ALEFConstants.RESULT_MESSAGE, resultMessage);
+        generator.writeStringField(ALEFConstants.SERVICE_VERSION, serviceVersion);
         generator.endObject();
     }
 
     private MUniverse createUniverse(long messageId) {
         final MUniverse universe = new MUniverse(useLazyEval);
         universe.setMessageId(String.valueOf(messageId));
-        addRuleSets(universe);
-        addExtensions(universe);
-        addParameterSets(universe);
         return universe;
     }
 
     protected ByteArrayOutputStream returnError(InputStream inputStream, Exception e) {
         throw new ServiceException(e.getMessage(), e);
     }
-
-    protected abstract ContentGenerator beginResponse(OutputStream outputStream) throws IOException;
 
     protected abstract MObject parseRequest(MUniverse universe, InputStream inputStream, ContentGenerator generator) throws IOException;
 
@@ -107,15 +105,15 @@ public abstract class AbstractService<T extends MObjectType> {
 
     protected abstract void generateResponse(MUniverse universe, MObject alefObject, ContentGenerator generator) throws IOException;
 
+    protected abstract ContentGenerator beginResponse(OutputStream outputStream) throws IOException;
+
     protected abstract void endResponse(MUniverse universe, ContentGenerator generator) throws IOException;
 
-    protected abstract void addRuleSets(MUniverse universe);
+    protected abstract void logOnStart(String messageId, String input);
 
-    protected abstract void addExtensions(MUniverse universe);
+    protected abstract void logOnSuccess(String messageId, String input);
 
-    protected abstract void addParameterSets(MUniverse universe);
-
-    protected abstract void logError(long messageId, Exception x, InputStream inputStream);
+    protected abstract void logOnError(String messageId, Exception x, String input);
 
     public Class<T> getMainObjectType() {
         return mainObjectType;

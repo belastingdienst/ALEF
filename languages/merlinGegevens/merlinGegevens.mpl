@@ -34,6 +34,7 @@
         <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
         <dependency reexport="false">09737df8-57b5-428f-9399-89f414a94263(alef.runtime)</dependency>
         <dependency reexport="true">09737df8-57b5-428f-9399-89f414a94263(alef.runtime)</dependency>
+        <dependency reexport="false">7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -57,8 +58,10 @@
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+        <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="09737df8-57b5-428f-9399-89f414a94263(alef.runtime)" version="0" />
         <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
         <module reference="09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)" version="0" />
@@ -80,6 +83,8 @@
         <module reference="791c06c1-c87e-4991-88e7-e437bfd20b32(merlinUtil)" version="0" />
         <module reference="71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)" version="0" />
         <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
+        <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
+        <module reference="8270cb09-651a-458a-9f4e-86e3e4423c92(standaardFuncties)" version="0" />
         <module reference="caef3229-d6fe-4ba8-b3e3-cf13cc4a9119(strings)" version="0" />
         <module reference="de859d7b-3967-4dc6-800a-c7f85c414239(translator.runtime)" version="0" />
       </dependencyVersions>

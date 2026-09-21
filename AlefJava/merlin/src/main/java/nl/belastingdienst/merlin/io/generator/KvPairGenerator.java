@@ -1,6 +1,6 @@
 package nl.belastingdienst.merlin.io.generator;
 
-import nl.belastingdienst.merlin.io.Constants;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -34,7 +34,7 @@ public class KvPairGenerator extends XmlGenerator {
         if (insideKvPairSection) {
             writeBeginKeyValuePair(getCurrentFieldName());
             resetCurrentFieldName();
-            getGenerator().writeFieldName(Constants.VALUE_SET_FIELD_NAME);
+            getGenerator().writeFieldName(ALEFConstants.VALUE_SET_FIELD_NAME);
             getGenerator().writeStartObject();
         } else {
             super.internalBeginObject();
@@ -140,9 +140,9 @@ public class KvPairGenerator extends XmlGenerator {
     }
 
     private void writeBeginKeyValuePair(String fieldName) throws IOException {
-        getGenerator().writeFieldName(Constants.KEY_VALUE_PAIRS_FIELD_NAME);
+        getGenerator().writeFieldName(ALEFConstants.KEY_VALUE_PAIRS_FIELD_NAME);
         getGenerator().writeStartObject();
-        getGenerator().writeStringField(Constants.KEY_FIELD_NAME, fieldName);
+        getGenerator().writeStringField(ALEFConstants.KEY_FIELD_NAME, fieldName);
     }
 
     private void writeEndKeyValuePair() throws IOException {

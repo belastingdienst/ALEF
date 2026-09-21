@@ -1,5 +1,6 @@
 package nl.belastingdienst.merlin.io.service;
 
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.alef_runtime.SoapConversion;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
@@ -21,7 +22,6 @@ import java.util.List;
 import java.util.Objects;
 
 public abstract class Request {
-    private static final String MESSAGE_ID_FIELDNAME = "berichtId";
     private static final DatatypeFactory DT_FACTORY;
 
     static {
@@ -36,7 +36,7 @@ public abstract class Request {
     private final CalculationMoment calculationMoment;
     private final List<InputComplexProperty> complexProperties = new ArrayList<>();
     private final HashMap<String, InputComplexProperty> complexPropertyByName = new HashMap<>();
-    private final HashMap<String, InputComplexProperty> complexPropertyByCollectionItemFieldName = new HashMap<>();
+    private final HashMap<String, InputComplexProperty> complexPropertyByCollectionItemFieldName = new HashMap();
 
     protected Request(AdapterRegistry registry, String calculationMomentFieldName, CalculationMoment calculationMoment) {
         super();
@@ -66,9 +66,9 @@ public abstract class Request {
             final String fieldName = parser.nextName();
             if (isComplexProperty(parser, fieldName)) {
                 rootObject = processComplexProperty(universe, parser, mainObjectType, fieldName, rootObject);
-            } else if ("velden".equals(fieldName) && parser instanceof KvPairParser) {
+            } else if (ALEFConstants.FIELDS.equals(fieldName) && parser instanceof KvPairParser) {
                 rootObject = process(universe, parser, true, mainObjectType); // for key value pairs
-            } else if (MESSAGE_ID_FIELDNAME.equals(fieldName)) {
+            } else if (ALEFConstants.MESSAGE_ID.equals(fieldName)) {
                 processMessageId(universe, parser);
             } else if (Objects.equals(calculationMomentFieldName, fieldName)) {
                 processCalculationMoment(universe, parser);

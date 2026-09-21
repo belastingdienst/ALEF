@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.BigRational;
+import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -16,6 +17,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputMessageTest {
@@ -24,9 +26,9 @@ class OutputMessageTest {
         // Given
         final MUniverse universe = new MUniverse(true);
         final OutputMessage mock = new OutputMessageMock();
-        mock.addField(new OutputAttribute<>("forName", false, PersonType.name, new StringToStringWriter()));
-        mock.addField(new OutputAttribute<>("address", false, PersonType.address, new StringToStringWriter()));
-        mock.addField(new OutputAttribute<>("age", false, PersonType.age, new RationalToDecimalWriter()));
+        mock.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
+        mock.addField(new OutputAttribute<>("address", false, PersonType.address, newStringToStringWriter()));
+        mock.addField(new OutputAttribute<>("age", false, PersonType.age, newRationalToDecimalWriter()));
         // When
         final MObject alefObject = universe.getObjectType(PersonType.class).createObject();
         alefObject.getProperty(PersonType.name).setValueDirect("testName");
@@ -47,10 +49,10 @@ class OutputMessageTest {
         // Given
         final MUniverse universe = new MUniverse(true);
         final OutputMessage mockItem = new OutputMessageMock();
-        mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, new StringToStringWriter()));
-        mockItem.addField(new OutputAttribute<>("price", false, ItemType.price, new RationalToDecimalWriter()));
+        mockItem.addField(new OutputAttribute<>("name", false, ItemType.name, newStringToStringWriter()));
+        mockItem.addField(new OutputAttribute<>("price", false, ItemType.price, newRationalToDecimalWriter()));
         final OutputMessage mockPerson = new OutputMessageMock();
-        mockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, new StringToStringWriter()));
+        mockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
         mockPerson.addField(new OutputComplexProperty<>("items", null, false, true, FactPersonHasItems.items, ItemType.class, mockItem));
         // When
         final MObject alefObjectItem = universe.getObjectType(PersonType.class).createObject();

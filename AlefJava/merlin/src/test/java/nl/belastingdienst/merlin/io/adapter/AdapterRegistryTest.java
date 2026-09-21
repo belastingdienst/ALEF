@@ -1,5 +1,6 @@
 package nl.belastingdienst.merlin.io.adapter;
 
+import nl.belastingdienst.merlin.base.types.MNumericType;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Proxy;
@@ -12,8 +13,8 @@ class AdapterRegistryTest {
     void testRetrievalOfRegisteredReader() {
         final AdapterRegistry registry = new AdapterRegistry(false);
         final ContentReader<Integer> reader = createReaderProxy();
-        registry.registerReader("Integer", reader);
-        final ContentReader<Integer> result = (ContentReader<Integer>) registry.getReader(Integer.class, "Integer");
+        registry.registerReader(MNumericType.wholeNumber(), reader);
+        final ContentReader<Integer> result = (ContentReader<Integer>) registry.getReader(Integer.class, MNumericType.wholeNumber());
         assertSame(reader, result);
     }
 
@@ -21,7 +22,7 @@ class AdapterRegistryTest {
     void testThrowingErrorForUnknownReader() {
         final AdapterRegistry registry = new AdapterRegistry(false);
         assertThrows(IllegalStateException.class,
-                () -> registry.getReader(Integer.class, "Integer")
+                () -> registry.getReader(Integer.class, MNumericType.wholeNumber())
         );
     }
 
@@ -29,8 +30,8 @@ class AdapterRegistryTest {
     void testRetrievalOfRegisteredWriter() {
         final AdapterRegistry registry = new AdapterRegistry(false);
         final ContentWriter<Integer> writer = createWriterProxy();
-        registry.registerWriter("Integer", writer);
-        final ContentWriter<Integer> result = registry.getWriter(Integer.class, "Integer");
+        registry.registerWriter(MNumericType.wholeNumber(), writer);
+        final ContentWriter<Integer> result = registry.getWriter(Integer.class, MNumericType.wholeNumber());
         assertSame(writer, result);
     }
 
@@ -38,7 +39,7 @@ class AdapterRegistryTest {
     void testThrowingErrorForUnknownWriter() {
         final AdapterRegistry registry = new AdapterRegistry(false);
         assertThrows(IllegalStateException.class,
-                () -> registry.getWriter(Integer.class, "Integer")
+                () -> registry.getWriter(Integer.class, MNumericType.wholeNumber())
         );
     }
 

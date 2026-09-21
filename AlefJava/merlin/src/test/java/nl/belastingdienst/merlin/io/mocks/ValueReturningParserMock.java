@@ -1,5 +1,6 @@
 package nl.belastingdienst.merlin.io.mocks;
 
+import nl.belastingdienst.alef_runtime.LocationInfo;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
 
@@ -118,8 +119,8 @@ public class ValueReturningParserMock implements ContentParser {
     }
 
     @Override
-    public String getLocationInfo() {
-        return "";
+    public LocationInfo getLocationInfo() {
+        return null;
     }
 
     public void setValue(String value) {

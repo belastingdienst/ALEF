@@ -7,10 +7,6 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 
 public class RationalToDoubleWriter extends AbstractWriter<BigRational> {
-    public RationalToDoubleWriter() {
-        super("valueDouble", null);
-    }
-
     public RationalToDoubleWriter(String valueTypeName, Converter<BigRational> converter) {
         super(valueTypeName, converter);
     }

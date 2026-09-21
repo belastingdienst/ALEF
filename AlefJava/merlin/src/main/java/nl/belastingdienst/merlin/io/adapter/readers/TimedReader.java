@@ -25,7 +25,7 @@ public class TimedReader<T> extends AbstractTimedReader<T> implements ContentRea
             return Timed.of(readTimeboxes(universe, parser));
         } catch (OverlappingPeriodsException e) {
             universe.add(Violation.of(String.format("Overlapping periods were found for the period %s at %s.",
-                    e.period(), parser.getLocationInfo())));
+                    e.period(), parser.getLocationInfo().asString())));
             return Timed.of(Collections.emptyList());
         }
     }

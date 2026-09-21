@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.KvPairGenerator;
 import nl.belastingdienst.merlin.io.generator.XmlGenerator;
@@ -44,9 +45,9 @@ public abstract class SoapService<T extends MObjectType> extends AbstractService
 
     @Override
     protected void generateResponse(MUniverse universe, MObject alefObject, ContentGenerator generator) throws IOException {
-        generator.writeFieldName("response");
+        generator.writeFieldName(ALEFConstants.RESPONSE);
         generator.beginObject();
-        generateServiceResult(generator, "1", "SERVICE_OK");
+        generateServiceResult(generator, ALEFConstants.SERVICE_SUCCESS_CODE, ALEFConstants.SERVICE_SUCCESS_MESSAGE);
         response.process(universe, generator, alefObject);
         generator.exitKvPairSection();
         generator.endObject();
@@ -84,7 +85,7 @@ public abstract class SoapService<T extends MObjectType> extends AbstractService
         parser.beginObject();
         parser.startGatheringLocationInfo();
         parser.startRecording();
-        expectFieldName("request", parser);
+        expectFieldName(ALEFConstants.REQUEST, parser);
         final MObject rootObject = requestHandler.process(universe, parser, false, getMainObjectType());
         parser.stopRecording();
         parser.stopGatheringLocationInfo();

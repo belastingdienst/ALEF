@@ -2,6 +2,7 @@ package nl.belastingdienst.merlin.io.adapter.writers;
 
 import nl.belastingdienst.alef_runtime.time.Time;
 import nl.belastingdienst.alef_runtime.time.TimeBox;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.ContentWriter;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
@@ -17,11 +18,11 @@ public abstract class AbstractTimedWriter<T> implements ContentWriter<T> {
 
     protected void writePeriod(ContentGenerator contentGenerator, TimeBox<?> box) throws IOException {
         if (!box.valid().hasOpenBegin()) {
-            contentGenerator.writeFieldName("van");
+            contentGenerator.writeFieldName(ALEFConstants.FROM);
             contentGenerator.writeString(timeToString(box.valid().begin()));
         }
         if (!box.valid().hasOpenEnd()) {
-            contentGenerator.writeFieldName("tot");
+            contentGenerator.writeFieldName(ALEFConstants.TILL);
             contentGenerator.writeString(timeToString(box.valid().end()));
         }
     }

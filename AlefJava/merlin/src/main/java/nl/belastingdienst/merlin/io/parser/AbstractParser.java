@@ -1,10 +1,13 @@
 package nl.belastingdienst.merlin.io.parser;
 
+import nl.belastingdienst.alef_runtime.LocationInfo;
+import nl.belastingdienst.alef_runtime.LocationNode;
+import nl.belastingdienst.alef_runtime.LocationNodeType;
+
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public abstract class AbstractParser implements ContentParser {
     private final Deque<LocationNode> locationNodeDeque = new ArrayDeque<>();
@@ -181,16 +184,8 @@ public abstract class AbstractParser implements ContentParser {
     }
 
     @Override
-    public String getLocationInfo() {
-        return locationNodeDeque.stream()
-                .filter(node -> node.getName() != null)
-                .map(node -> {
-                    if (node.isCollection()) {
-                        return node.getName() + "[" + (node.getIndex()) + "]";
-                    }
-                    return node.getName();
-                })
-                .collect(Collectors.joining("/", "/", ""));
+    public LocationInfo getLocationInfo() {
+        return new LocationInfo(locationNodeDeque);
     }
 
     protected void pushLocationNode(String name, LocationNodeType type) {

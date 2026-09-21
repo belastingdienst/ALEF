@@ -41,6 +41,7 @@
         <dependency reexport="false">09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)</dependency>
         <dependency reexport="false">73790f24-2f5f-4a73-ac29-aed1b764b1a9(generatorUtils)</dependency>
         <dependency reexport="false">26c003b8-2642-44b1-8d28-63f478da851b(servicespraak.tijd)</dependency>
+        <dependency reexport="false">9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -74,6 +75,7 @@
         <module reference="7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3(beslistabelspraak)" version="0" />
         <module reference="65239ca4-9057-41f8-999d-97fa1a60b298(besturingspraak)" version="0" />
         <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
+        <module reference="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" version="0" />
         <module reference="09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)" version="0" />
         <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="5" />
         <module reference="c40e126b-a0e9-42bb-b903-9b5fd0b050d2(gegevensspraak.tijd)" version="0" />

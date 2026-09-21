@@ -487,6 +487,7 @@
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
         <reference id="7256306938026143658" name="target" index="2aWVGs" />
+        <child id="7256306938026143676" name="child" index="2aWVGa" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -503,7 +504,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
         <reference id="7400021826771268269" name="concept" index="2sp9C9" />
@@ -3788,147 +3788,6 @@
       </node>
       <node concept="3uibUv" id="6Ylaq4ftoOi" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="6sHBsOBJN9v" role="13h7CS">
-      <property role="TrG5h" value="valueVeldNaam" />
-      <property role="2Ki8OM" value="true" />
-      <node concept="3Tm1VV" id="6sHBsOBJN9w" role="1B3o_S" />
-      <node concept="17QB3L" id="6sHBsOBJSZG" role="3clF45" />
-      <node concept="3clFbS" id="6sHBsOBJN9y" role="3clF47">
-        <node concept="Jncv_" id="6sHBsOBJT2h" role="3cqZAp">
-          <ref role="JncvD" to="ku5w:30CduGMXBOG" resolve="PredefinedBerichtDataType" />
-          <node concept="37vLTw" id="6sHBsOBJT33" role="JncvB">
-            <ref role="3cqZAo" node="6sHBsOBJT0L" resolve="type" />
-          </node>
-          <node concept="3clFbS" id="6sHBsOBJT2r" role="Jncv$">
-            <node concept="3cpWs6" id="2RltFknmu1_" role="3cqZAp">
-              <node concept="3cpWs3" id="2RltFknmw8N" role="3cqZAk">
-                <node concept="2YIFZM" id="2RltFknmy2K" role="3uHU7w">
-                  <ref role="37wK5l" to="5iz4:6$MroCqfFoz" resolve="upperFirst" />
-                  <ref role="1Pybhc" to="5iz4:5vjARXKnVvl" resolve="StringUtil" />
-                  <node concept="2OqwBi" id="2RltFknmAcJ" role="37wK5m">
-                    <node concept="2OqwBi" id="2RltFknmzVB" role="2Oq$k0">
-                      <node concept="Jnkvi" id="2RltFknmyU4" role="2Oq$k0">
-                        <ref role="1M0zk5" node="6sHBsOBJT2w" resolve="pdt" />
-                      </node>
-                      <node concept="3TrcHB" id="2RltFknm$ZD" role="2OqNvi">
-                        <ref role="3TsBF5" to="ku5w:30CduGMXHOD" resolve="predef" />
-                      </node>
-                    </node>
-                    <node concept="24Tkf9" id="2RltFknmBhf" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="2RltFknmuSB" role="3uHU7B">
-                  <property role="Xl_RC" value="value" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="JncvC" id="6sHBsOBJT2w" role="JncvA">
-            <property role="TrG5h" value="pdt" />
-            <node concept="2jxLKc" id="6sHBsOBJT2x" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="Jncv_" id="6sHBsOBJW0B" role="3cqZAp">
-          <ref role="JncvD" to="ku5w:3bLHA7jYuQy" resolve="BerichtDataTypeRef" />
-          <node concept="37vLTw" id="6sHBsOBJW7Q" role="JncvB">
-            <ref role="3cqZAo" node="6sHBsOBJT0L" resolve="type" />
-          </node>
-          <node concept="3clFbS" id="6sHBsOBJW0F" role="Jncv$">
-            <node concept="3cpWs6" id="2RltFknmDPs" role="3cqZAp">
-              <node concept="BsUDl" id="2RltFknnMEB" role="3cqZAk">
-                <ref role="37wK5l" node="2RltFknnHI9" resolve="valueVeldNaam" />
-                <node concept="2OqwBi" id="2RltFknnNnj" role="37wK5m">
-                  <node concept="Jnkvi" id="2RltFknnMVK" role="2Oq$k0">
-                    <ref role="1M0zk5" node="6sHBsOBJW0H" resolve="bdt" />
-                  </node>
-                  <node concept="3TrEf2" id="2RltFknnNMG" role="2OqNvi">
-                    <ref role="3Tt5mk" to="ku5w:3bLHA7jYvKj" resolve="ref" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="JncvC" id="6sHBsOBJW0H" role="JncvA">
-            <property role="TrG5h" value="bdt" />
-            <node concept="2jxLKc" id="6sHBsOBJW0I" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="YS8fn" id="2RltFknmXGN" role="3cqZAp">
-          <node concept="2ShNRf" id="2RltFknmY0r" role="YScLw">
-            <node concept="1pGfFk" id="2RltFknnk7$" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
-              <node concept="3cpWs3" id="2RltFknnl34" role="37wK5m">
-                <node concept="2OqwBi" id="2RltFknnleF" role="3uHU7w">
-                  <node concept="37vLTw" id="2RltFknnl6y" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6sHBsOBJT0L" resolve="type" />
-                  </node>
-                  <node concept="2yIwOk" id="2RltFknnlz9" role="2OqNvi" />
-                </node>
-                <node concept="Xl_RD" id="2RltFknnkd$" role="3uHU7B">
-                  <property role="Xl_RC" value="Onverwacht berichtdatatype: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6sHBsOBJT0L" role="3clF46">
-        <property role="TrG5h" value="type" />
-        <node concept="3Tqbb2" id="6sHBsOBJT0K" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:30CduGNAqP1" resolve="BerichtDataType" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="2RltFknnHI9" role="13h7CS">
-      <property role="TrG5h" value="valueVeldNaam" />
-      <property role="2Ki8OM" value="true" />
-      <node concept="3Tm1VV" id="2RltFknnHIa" role="1B3o_S" />
-      <node concept="17QB3L" id="2RltFknnLIv" role="3clF45" />
-      <node concept="3clFbS" id="2RltFknnHIc" role="3clF47">
-        <node concept="Jncv_" id="27Xi6Vhoz9c" role="3cqZAp">
-          <ref role="JncvD" to="ku5w:659DFnwIiy5" resolve="Enumeratiemapping" />
-          <node concept="37vLTw" id="27Xi6Vhozzf" role="JncvB">
-            <ref role="3cqZAo" node="2RltFknnLIV" resolve="bdtd" />
-          </node>
-          <node concept="3clFbS" id="27Xi6Vhoz9g" role="Jncv$">
-            <node concept="3cpWs6" id="27Xi6Vho$KU" role="3cqZAp">
-              <node concept="Xl_RD" id="27Xi6Vho_aM" role="3cqZAk">
-                <property role="Xl_RC" value="valueString" />
-              </node>
-            </node>
-          </node>
-          <node concept="JncvC" id="27Xi6Vhoz9i" role="JncvA">
-            <property role="TrG5h" value="e" />
-            <node concept="2jxLKc" id="27Xi6Vhoz9j" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="2RltFknnLJL" role="3cqZAp">
-          <node concept="3cpWs3" id="2RltFknnLJM" role="3cqZAk">
-            <node concept="Xl_RD" id="2RltFknnLJN" role="3uHU7B">
-              <property role="Xl_RC" value="value" />
-            </node>
-            <node concept="2YIFZM" id="2RltFknnLJO" role="3uHU7w">
-              <ref role="1Pybhc" to="5iz4:5vjARXKnVvl" resolve="StringUtil" />
-              <ref role="37wK5l" to="5iz4:6$MroCqfFoz" resolve="upperFirst" />
-              <node concept="2OqwBi" id="2RltFknnLJP" role="37wK5m">
-                <node concept="37vLTw" id="2RltFknnMgk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2RltFknnLIV" resolve="bdtd" />
-                </node>
-                <node concept="3TrcHB" id="2RltFknnLJT" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="2RltFknnLIV" role="3clF46">
-        <property role="TrG5h" value="bdtd" />
-        <node concept="3Tqbb2" id="2RltFknnLIU" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:30CduGMXAdx" resolve="BerichtDatatypeDefinitie" />
-        </node>
       </node>
     </node>
     <node concept="13i0hz" id="2RltFknmQhK" role="13h7CS">
@@ -18393,11 +18252,11 @@
         <node concept="3clFbJ" id="5zXQHzS0YXz" role="3cqZAp">
           <node concept="3clFbS" id="5zXQHzS0YX_" role="3clFbx">
             <node concept="3cpWs6" id="5zXQHzS11Pz" role="3cqZAp">
-              <node concept="BsUDl" id="5zXQHzS16c$" role="3cqZAk">
-                <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                <node concept="2tJFMh" id="5zXQHzS16c_" role="37wK5m">
-                  <node concept="ZC_QK" id="5zXQHzS16cA" role="2tJFKM">
-                    <ref role="2aWVGs" to="628q:~DecimalToRationalReader" resolve="DecimalToRationalReader" />
+              <node concept="2tJFMh" id="5zXQHzS16c_" role="3cqZAk">
+                <node concept="ZC_QK" id="5zXQHzS16cA" role="2tJFKM">
+                  <ref role="2aWVGs" to="628q:~DecimalToRationalReader" resolve="DecimalToRationalReader" />
+                  <node concept="ZC_QK" id="79aBNE9CvME" role="2aWVGa">
+                    <ref role="2aWVGs" to="628q:~DecimalToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DecimalToRationalReader" />
                   </node>
                 </node>
               </node>
@@ -18425,12 +18284,12 @@
               <node concept="21nZrQ" id="1qJhPmfL2xu" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLPq6jJ" resolve="integer" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLgpU" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLgpS" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLhFl" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLhFm" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~IntegerToRationalReader" resolve="IntegerToRationalReader" />
+              <node concept="3X5gDF" id="79aBNE9CFex" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLhFl" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLhFm" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~IntegerToRationalReader" resolve="IntegerToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9CJNg" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~IntegerToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="IntegerToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18441,11 +18300,11 @@
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2dhg" resolve="byte" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfLxNI" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLxNJ" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLxNK" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLxNL" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~ByteToRationalReader" resolve="ByteToRationalReader" />
+                <node concept="2tJFMh" id="1qJhPmfLxNK" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLxNL" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~ByteToRationalReader" resolve="ByteToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9B7vi" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~ByteToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="ByteToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18456,11 +18315,11 @@
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2dcY" resolve="short" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfLyuS" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLyuT" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLyuU" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLyuV" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~ShortToRationalReader" resolve="ShortToRationalReader" />
+                <node concept="2tJFMh" id="1qJhPmfLyuU" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLyuV" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~ShortToRationalReader" resolve="ShortToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9Bega" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~ShortToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="ShortToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18470,12 +18329,12 @@
               <node concept="21nZrQ" id="1qJhPmfL8wd" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2daI" resolve="int" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLzag" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLzah" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLzai" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLzaj" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~IntToRationalReader" resolve="IntToRationalReader" />
+              <node concept="3X5gDF" id="79aBNE9Bhc4" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLzai" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLzaj" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~IntToRationalReader" resolve="IntToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9BlFM" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~IntToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="IntToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18485,12 +18344,12 @@
               <node concept="21nZrQ" id="1qJhPmfLa9G" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLPq63b" resolve="long" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLz$1" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLz$2" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLz$3" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLz$4" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~LongToRationalReader" resolve="LongToRationalReader" />
+              <node concept="3X5gDF" id="79aBNE9BnWi" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLz$3" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLz$4" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~LongToRationalReader" resolve="LongToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9BsTJ" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~LongToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="LongToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18500,12 +18359,12 @@
               <node concept="21nZrQ" id="1qJhPmfLblu" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2c2r" resolve="float" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLzHR" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLzHS" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLzHT" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLzHU" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~FloatToRationalReader" resolve="FloatToRationalReader" />
+              <node concept="3X5gDF" id="79aBNE9BuVZ" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLzHT" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLzHU" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~FloatToRationalReader" resolve="FloatToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9BzNW" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~FloatToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="FloatToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18516,11 +18375,11 @@
                 <ref role="21nZrZ" to="ku5w:9VpsLPq6bs" resolve="double" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfL$On" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfL$Oo" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfL$Op" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfL$Oq" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~DoubleToRationalReader" resolve="DoubleToRationalReader" />
+                <node concept="2tJFMh" id="1qJhPmfL$Op" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfL$Oq" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~DoubleToRationalReader" resolve="DoubleToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9BF7e" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~DoubleToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DoubleToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18531,11 +18390,11 @@
                 <ref role="21nZrZ" to="ku5w:30CduGMXE5a" resolve="decimal" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfL$Or" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfL$Os" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfL$Ot" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfL$Ou" role="2tJFKM">
-                      <ref role="2aWVGs" to="628q:~DecimalToRationalReader" resolve="DecimalToRationalReader" />
+                <node concept="2tJFMh" id="1qJhPmfL$Ot" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfL$Ou" role="2tJFKM">
+                    <ref role="2aWVGs" to="628q:~DecimalToRationalReader" resolve="DecimalToRationalReader" />
+                    <node concept="ZC_QK" id="79aBNE9BL6P" role="2aWVGa">
+                      <ref role="2aWVGs" to="628q:~DecimalToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DecimalToRationalReader" />
                     </node>
                   </node>
                 </node>
@@ -18686,12 +18545,12 @@
         </node>
         <node concept="3clFbJ" id="5zXQHzS19tV" role="3cqZAp">
           <node concept="3clFbS" id="5zXQHzS19tX" role="3clFbx">
-            <node concept="3cpWs6" id="5zXQHzS1c8T" role="3cqZAp">
-              <node concept="BsUDl" id="5zXQHzS1dX_" role="3cqZAk">
-                <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                <node concept="2tJFMh" id="5zXQHzS1dXA" role="37wK5m">
-                  <node concept="ZC_QK" id="5zXQHzS1dXB" role="2tJFKM">
-                    <ref role="2aWVGs" to="b31m:~RationalToDecimalWriter" resolve="RationalToDecimalWriter" />
+            <node concept="3cpWs6" id="79aBNE9CxQT" role="3cqZAp">
+              <node concept="2tJFMh" id="5zXQHzS1dXA" role="3cqZAk">
+                <node concept="ZC_QK" id="5zXQHzS1dXB" role="2tJFKM">
+                  <ref role="2aWVGs" to="b31m:~RationalToDecimalWriter" resolve="RationalToDecimalWriter" />
+                  <node concept="ZC_QK" id="79aBNE9Czjq" role="2aWVGa">
+                    <ref role="2aWVGs" to="b31m:~RationalToDecimalWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToDecimalWriter" />
                   </node>
                 </node>
               </node>
@@ -18720,11 +18579,11 @@
                 <ref role="21nZrZ" to="ku5w:9VpsLPq6jJ" resolve="integer" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfLY8f" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8g" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8h" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8i" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToIntegerWriter" resolve="RationalToIntegerWriter" />
+                <node concept="2tJFMh" id="1qJhPmfLY8h" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8i" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToIntegerWriter" resolve="RationalToIntegerWriter" />
+                    <node concept="ZC_QK" id="79aBNE9CDZx" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToIntegerWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToIntegerWriter" />
                     </node>
                   </node>
                 </node>
@@ -18734,12 +18593,12 @@
               <node concept="21nZrQ" id="1qJhPmfLY8k" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2dhg" resolve="byte" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLY8l" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8m" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8n" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8o" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToByteWriter" resolve="RationalToByteWriter" />
+              <node concept="3X5gDF" id="79aBNE9BO_K" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLY8n" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8o" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToByteWriter" resolve="RationalToByteWriter" />
+                    <node concept="ZC_QK" id="79aBNE9BSvA" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToByteWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToByteWriter" />
                     </node>
                   </node>
                 </node>
@@ -18749,12 +18608,12 @@
               <node concept="21nZrQ" id="1qJhPmfLY8q" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2dcY" resolve="short" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLY8r" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8s" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8t" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8u" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToShortWriter" resolve="RationalToShortWriter" />
+              <node concept="3X5gDF" id="79aBNE9BU6o" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLY8t" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8u" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToShortWriter" resolve="RationalToShortWriter" />
+                    <node concept="ZC_QK" id="79aBNE9BYKr" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToShortWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToShortWriter" />
                     </node>
                   </node>
                 </node>
@@ -18765,11 +18624,11 @@
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2daI" resolve="int" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfLY8x" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8y" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8z" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8$" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToIntWriter" resolve="RationalToIntWriter" />
+                <node concept="2tJFMh" id="1qJhPmfLY8z" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8$" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToIntWriter" resolve="RationalToIntWriter" />
+                    <node concept="ZC_QK" id="79aBNE9C43b" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToIntWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToIntWriter" />
                     </node>
                   </node>
                 </node>
@@ -18779,12 +18638,12 @@
               <node concept="21nZrQ" id="1qJhPmfLY8A" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLPq63b" resolve="long" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLY8B" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8C" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8D" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8E" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToLongWriter" resolve="RationalToLongWriter" />
+              <node concept="3X5gDF" id="79aBNE9C5Iy" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLY8D" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8E" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToLongWriter" resolve="RationalToLongWriter" />
+                    <node concept="ZC_QK" id="79aBNE9Cafh" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToLongWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToLongWriter" />
                     </node>
                   </node>
                 </node>
@@ -18794,12 +18653,12 @@
               <node concept="21nZrQ" id="1qJhPmfLY8G" role="3X5Uda">
                 <ref role="21nZrZ" to="ku5w:9VpsLQ2c2r" resolve="float" />
               </node>
-              <node concept="3X5gDF" id="1qJhPmfLY8H" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8I" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8J" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8K" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToFloatWriter" resolve="RationalToFloatWriter" />
+              <node concept="3X5gDF" id="79aBNE9CbUq" role="3X5gFO">
+                <node concept="2tJFMh" id="1qJhPmfLY8J" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8K" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToFloatWriter" resolve="RationalToFloatWriter" />
+                    <node concept="ZC_QK" id="79aBNE9CfLb" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToFloatWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToFloatWriter" />
                     </node>
                   </node>
                 </node>
@@ -18810,11 +18669,11 @@
                 <ref role="21nZrZ" to="ku5w:9VpsLPq6bs" resolve="double" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfLY8N" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8O" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8P" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8Q" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToDoubleWriter" resolve="RationalToDoubleWriter" />
+                <node concept="2tJFMh" id="1qJhPmfLY8P" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8Q" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToDoubleWriter" resolve="RationalToDoubleWriter" />
+                    <node concept="ZC_QK" id="79aBNE9ClKA" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToDoubleWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToDoubleWriter" />
                     </node>
                   </node>
                 </node>
@@ -18825,11 +18684,11 @@
                 <ref role="21nZrZ" to="ku5w:30CduGMXE5a" resolve="decimal" />
               </node>
               <node concept="3X5gDF" id="1qJhPmfLY8T" role="3X5gFO">
-                <node concept="BsUDl" id="1qJhPmfLY8U" role="3X5gDC">
-                  <ref role="37wK5l" node="4uZKzvljXNB" resolve="getConstructor" />
-                  <node concept="2tJFMh" id="1qJhPmfLY8V" role="37wK5m">
-                    <node concept="ZC_QK" id="1qJhPmfLY8W" role="2tJFKM">
-                      <ref role="2aWVGs" to="b31m:~RationalToDecimalWriter" resolve="RationalToDecimalWriter" />
+                <node concept="2tJFMh" id="1qJhPmfLY8V" role="3X5gDC">
+                  <node concept="ZC_QK" id="1qJhPmfLY8W" role="2tJFKM">
+                    <ref role="2aWVGs" to="b31m:~RationalToDecimalWriter" resolve="RationalToDecimalWriter" />
+                    <node concept="ZC_QK" id="79aBNE9Cs9L" role="2aWVGa">
+                      <ref role="2aWVGs" to="b31m:~RationalToDecimalWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="RationalToDecimalWriter" />
                     </node>
                   </node>
                 </node>
@@ -18878,45 +18737,6 @@
       <node concept="37vLTG" id="5zXQHzS18ai" role="3clF46">
         <property role="TrG5h" value="forceDecimal" />
         <node concept="10P_77" id="5zXQHzS18ah" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="4uZKzvljXNB" role="13h7CS">
-      <property role="TrG5h" value="getConstructor" />
-      <node concept="3Tm1VV" id="4uZKzvljXNC" role="1B3o_S" />
-      <node concept="2sp9CU" id="4uZKzvljYeX" role="3clF45">
-        <ref role="2sp9C9" to="tpee:fzclF84" resolve="ConstructorDeclaration" />
-      </node>
-      <node concept="3clFbS" id="4uZKzvljXNE" role="3clF47">
-        <node concept="3cpWs6" id="1qJhPmfKd1X" role="3cqZAp">
-          <node concept="2OqwBi" id="1qJhPmfKapl" role="3cqZAk">
-            <node concept="2OqwBi" id="1qJhPmfK8Xp" role="2Oq$k0">
-              <node concept="2OqwBi" id="1qJhPmfK53b" role="2Oq$k0">
-                <node concept="2OqwBi" id="1qJhPmfrSkg" role="2Oq$k0">
-                  <node concept="37vLTw" id="1qJhPmfK3$J" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1qJhPmfJVMr" resolve="classPointer" />
-                  </node>
-                  <node concept="Vyspw" id="1qJhPmfrU7c" role="2OqNvi">
-                    <node concept="2YIFZM" id="1qJhPmfsC0a" role="Vysub">
-                      <ref role="37wK5l" to="n5dx:6rWXOBlKB06" resolve="moduleRepository" />
-                      <ref role="1Pybhc" to="n5dx:61IHcBPjP9r" resolve="MPSUtil" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="1qJhPmfK8jC" role="2OqNvi">
-                  <ref role="37wK5l" to="tpek:4_LVZ3pCvsd" resolve="constructors" />
-                </node>
-              </node>
-              <node concept="1uHKPH" id="1qJhPmfK9I7" role="2OqNvi" />
-            </node>
-            <node concept="iZEcu" id="1qJhPmfKc1$" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="1qJhPmfJVMr" role="3clF46">
-        <property role="TrG5h" value="classPointer" />
-        <node concept="2sp9CU" id="1qJhPmfJVMq" role="1tU5fm">
-          <ref role="2sp9C9" to="tpee:fz12cDA" resolve="ClassConcept" />
-        </node>
       </node>
     </node>
     <node concept="13i0hz" id="51eYot_vNkW" role="13h7CS">

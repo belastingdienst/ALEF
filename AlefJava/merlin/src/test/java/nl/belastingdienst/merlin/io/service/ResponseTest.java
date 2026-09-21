@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.service;
 
 import nl.belastingdienst.alef_runtime.BigRational;
+import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -18,14 +19,15 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ResponseTest {
     @Test
     void testComplexProperties() throws IOException {
         final OutputMessage mockItem = new OutputMessageMock();
-        mockItem.addField(new OutputAttribute<>("name", false, TypeContextMock.ItemType.name, new StringToStringWriter()));
-        mockItem.addField(new OutputAttribute<>("price", false, TypeContextMock.ItemType.price, new RationalToDecimalWriter()));
+        mockItem.addField(new OutputAttribute<>("name", false, TypeContextMock.ItemType.name, newStringToStringWriter()));
+        mockItem.addField(new OutputAttribute<>("price", false, TypeContextMock.ItemType.price, newRationalToDecimalWriter()));
         final Response response = new ResponseMock();
         response.addElement(new OutputComplexProperty<>("items", null, false, true, TypeContextMock.FactPersonHasItems.items, TypeContextMock.ItemType.class, mockItem));
         final MUniverse universe = new MUniverse(true);

@@ -89,7 +89,7 @@ public final class Validators {
         if (locationInfoProvider == null) {
             return message + ".";
         }
-        final String locationInfo = locationInfoProvider.getLocationInfo();
+        final String locationInfo = locationInfoProvider.getLocationInfo().asString();
         if (locationInfo == null || locationInfo.isBlank()) {
             return message + ".";
         }

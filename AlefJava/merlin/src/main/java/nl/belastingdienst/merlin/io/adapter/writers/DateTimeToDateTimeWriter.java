@@ -12,10 +12,6 @@ import java.time.format.DateTimeFormatter;
 public class DateTimeToDateTimeWriter extends AbstractWriter<LocalDateTime> {
     private boolean withTimeZoneOffset = false;
 
-    public DateTimeToDateTimeWriter(boolean withTimeZoneOffset) {
-        this(withTimeZoneOffset, "valueDateTime", null);
-    }
-
     public DateTimeToDateTimeWriter(boolean withTimeZoneOffset, String valueTypeName, Converter<LocalDateTime> converter) {
         super(valueTypeName, converter);
         this.withTimeZoneOffset = withTimeZoneOffset;

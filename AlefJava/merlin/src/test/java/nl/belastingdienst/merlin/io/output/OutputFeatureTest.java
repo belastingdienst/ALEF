@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.time.IValidity;
+import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.adapter.writers.ValidityWriter;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
@@ -9,12 +10,13 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
+import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputFeatureTest extends AbstractOutputTest {
     @Test
     void testFeatureSetToTrue() throws IOException {
-        final OutputFeature feature = new OutputFeature("carOwner", false, TypeContextMock.PersonType.carOwner, new BooleanToBooleanWriter());
+        final OutputFeature feature = new OutputFeature("carOwner", false, TypeContextMock.PersonType.carOwner, newBooleanToBooleanWriter());
         final String actualJson = generate(feature, TypeContextMock.PersonType.carOwner, true);
         final String expectedJson = """
                 {
@@ -25,7 +27,7 @@ class OutputFeatureTest extends AbstractOutputTest {
 
     @Test
     void testFeatureSetToFalse() throws IOException {
-        final OutputFeature feature = new OutputFeature("carOwner", false, TypeContextMock.PersonType.carOwner, new BooleanToBooleanWriter());
+        final OutputFeature feature = new OutputFeature("carOwner", false, TypeContextMock.PersonType.carOwner, newBooleanToBooleanWriter());
         final String actualJson = generate(feature, TypeContextMock.PersonType.carOwner, false);
         final String expectedJson = """
                 {
@@ -36,7 +38,7 @@ class OutputFeatureTest extends AbstractOutputTest {
 
     @Test
     void testEmptyFeature() throws IOException {
-        final OutputFeature feature = new OutputFeature("carOwner", false, TypeContextMock.PersonType.carOwner, new BooleanToBooleanWriter());
+        final OutputFeature feature = new OutputFeature("carOwner", false, TypeContextMock.PersonType.carOwner, newBooleanToBooleanWriter());
         final String actualJson = generate(feature, TypeContextMock.PersonType.carOwner, null);
         final String expectedJson = """
                 {

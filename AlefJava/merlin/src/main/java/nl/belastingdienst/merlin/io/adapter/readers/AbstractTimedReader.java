@@ -4,6 +4,7 @@ import nl.belastingdienst.alef_runtime.time.Period;
 import nl.belastingdienst.alef_runtime.time.Time;
 import nl.belastingdienst.alef_runtime.time.TimeBox;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
@@ -22,7 +23,7 @@ public abstract class AbstractTimedReader<A> {
 
     protected @NotNull List<TimeBox<A>> readTimeboxes(MUniverse universe, ContentParser parser) throws IOException {
         final List<TimeBox<A>> timeBoxes = new ArrayList<>();
-        parser.beginEnclosedCollection("periode");
+        parser.beginEnclosedCollection(ALEFConstants.PERIOD);
         while (parser.peek() != ContentToken.END_COLLECTION) {
             timeBoxes.add(readTimeBox(universe, parser));
         }
@@ -37,9 +38,9 @@ public abstract class AbstractTimedReader<A> {
         parser.beginObject();
         while (parser.peek() != ContentToken.END_OBJECT) {
             switch (parser.nextName()) {
-                case "van" -> from = toTime(parser.nextValue(), Period.OPEN_BEGIN);
-                case "tot" -> till = toTime(parser.nextValue(), Period.OPEN_END);
-                case "waarde" -> value = readValue(universe, parser);
+                case ALEFConstants.FROM -> from = toTime(parser.nextValue(), Period.OPEN_BEGIN);
+                case ALEFConstants.TILL -> till = toTime(parser.nextValue(), Period.OPEN_END);
+                case ALEFConstants.VALUE -> value = readValue(universe, parser);
                 default -> throw new IllegalStateException("Unexpected field");
             }
         }

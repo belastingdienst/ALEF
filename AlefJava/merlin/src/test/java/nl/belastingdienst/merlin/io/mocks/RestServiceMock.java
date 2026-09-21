@@ -33,23 +33,18 @@ public class RestServiceMock<T extends MObjectType> extends RestService<T> {
     }
 
     @Override
-    protected void addRuleSets(MUniverse universe) {
-        // mock
+    protected void logOnStart(String messageId, String input) {
+
     }
 
     @Override
-    protected void addExtensions(MUniverse universe) {
-        // mock
+    protected void logOnSuccess(String messageId, String input) {
+
     }
 
     @Override
-    protected void addParameterSets(MUniverse universe) {
-        // mock
-    }
+    protected void logOnError(String messageId, Exception x, String input) {
 
-    @Override
-    protected void logError(long messageId, Exception x, InputStream inputStream) {
-        // mock
     }
 
     @Override

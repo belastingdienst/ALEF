@@ -1,17 +1,20 @@
 package nl.belastingdienst.merlin.io.validation;
 
+import nl.belastingdienst.alef_runtime.LocationInfo;
 import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.merlin.io.mocks.ViolationCollectorMock;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.Collections;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings("java:S5976") // Parameterized won't make it more clear.
 class DigitsRuleTest {
-    private final LocationInfoProvider locationInfoProvider = () -> "/root/amount";
+    private final LocationInfoProvider locationInfoProvider = () -> new LocationInfo(Collections.emptyList());;
 
     @ParameterizedTest
     @ValueSource(strings = {"   ", "  123.45  ", "123.45000", "123.45"})

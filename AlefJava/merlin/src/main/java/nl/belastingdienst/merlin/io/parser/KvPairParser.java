@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Objects;
 
-import static nl.belastingdienst.merlin.io.Constants.*;
+import static nl.belastingdienst.alef_runtime.ALEFConstants.*;
 
 public class KvPairParser extends XmlParser {
     private boolean insideKvPairSection = false;

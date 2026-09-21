@@ -226,14 +226,14 @@ class ParserLocationTest {
     }
 
     private void assertLocationInfo(String location, ContentParser parser) {
-        assertEquals(location, parser.getLocationInfo());
+        assertEquals(location, parser.getLocationInfo().asString());
     }
 
     private void assertLocationInfo(String xmlPrefix, String jsonPrefix, String location, ContentParser parser) {
         if (parser instanceof JsonParser) {
-            assertEquals(jsonPrefix + location, parser.getLocationInfo());
+            assertEquals(jsonPrefix + location, parser.getLocationInfo().asString());
         } else {
-            assertEquals(xmlPrefix + location, parser.getLocationInfo());
+            assertEquals(xmlPrefix + location, parser.getLocationInfo().asString());
         }
     }
 }

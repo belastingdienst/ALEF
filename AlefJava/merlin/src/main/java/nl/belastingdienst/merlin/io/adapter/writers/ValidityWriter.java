@@ -4,6 +4,7 @@ import nl.belastingdienst.alef_runtime.time.IValidity;
 import nl.belastingdienst.alef_runtime.time.Period;
 import nl.belastingdienst.alef_runtime.time.TimeBox;
 import nl.belastingdienst.alef_runtime.time.Valid;
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
@@ -21,7 +22,7 @@ public class ValidityWriter extends AbstractTimedWriter<IValidity> implements Fe
             contentGenerator.endCollection();
             return;
         }
-        contentGenerator.beginEnclosedCollection("periode");
+        contentGenerator.beginEnclosedCollection(ALEFConstants.PERIOD);
         for (TimeBox<Valid> box : value.evaluate().boxes(Period.ALWAYS).toList()) {
             if (!box.valid().hasOpenEndOrBeginning()) {
                 contentGenerator.beginObject();
@@ -40,7 +41,7 @@ public class ValidityWriter extends AbstractTimedWriter<IValidity> implements Fe
 
     private static void writeValue(ContentGenerator contentGenerator, TimeBox<Valid> box) throws IOException {
         if (box.hasValue() && !Valid.is(box.value())) {
-            contentGenerator.writeFieldName("waarde");
+            contentGenerator.writeFieldName(ALEFConstants.VALUE);
             contentGenerator.writeBoolean(false);
         }
     }

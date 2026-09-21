@@ -1,14 +1,17 @@
 package nl.belastingdienst.merlin.io.validation;
 
+import nl.belastingdienst.alef_runtime.LocationInfo;
 import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.merlin.io.mocks.ViolationCollectorMock;
 import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class LengthRuleTest {
-    private final LocationInfoProvider locationInfoProvider = () -> "/root/name";
+    private final LocationInfoProvider locationInfoProvider = () -> new LocationInfo(Collections.emptyList());
 
     @Test
     void testShouldAcceptValueEqualToMinLength() {

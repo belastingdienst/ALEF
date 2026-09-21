@@ -8,6 +8,7 @@ public abstract class AbstractWriter<T> implements ContentWriter<T> {
     private final Converter<T> converter;
 
     protected AbstractWriter(String valueTypeName, Converter<T> converter) {
+        assert converter != null : "A converter must be provided.";
         this.valueTypeName = valueTypeName;
         this.converter = converter;
     }
@@ -17,12 +18,6 @@ public abstract class AbstractWriter<T> implements ContentWriter<T> {
     }
 
     protected T toOutputValue(T value) {
-        T outputValue;
-        if (converter != null) {
-            outputValue = converter.convert(value);
-        } else {
-            outputValue = value;
-        }
-        return outputValue;
+        return converter.convert(value);
     }
 }
