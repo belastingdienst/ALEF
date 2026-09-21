@@ -5756,18 +5756,12 @@
           </node>
           <node concept="1SiIV0" id="6MgTy$6vobF" role="3bR37C">
             <node concept="3bR9La" id="6MgTy$6vobG" role="1SiIV1">
-              <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="6MgTy$6vmNL" resolve="alef.runtime" />
             </node>
           </node>
           <node concept="1SiIV0" id="AB9hHerdBL" role="3bR37C">
             <node concept="3bR9La" id="AB9hHerdBM" role="1SiIV1">
               <ref role="3bR37D" node="4wvGeDpkGR9" resolve="mpsUtils" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="79aBNElUAaL" role="3bR37C">
-            <node concept="3bR9La" id="79aBNElUAaM" role="1SiIV1">
-              <ref role="3bR37D" node="4wvGeDpkGS5" resolve="regelspraak" />
             </node>
           </node>
         </node>
