@@ -4,6 +4,7 @@ import nl.belastingdienst.alef_runtime.BigRational;
 import nl.belastingdienst.alef_runtime.Validators;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.converters.Converter;
+import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.validation.MValidationRule;
 
@@ -13,7 +14,7 @@ import java.util.List;
 
 public class DoubleToRationalReader extends AbstractReader<Double, BigRational> {
     public DoubleToRationalReader() {
-        super(Collections.emptyList(), null);
+        super(Collections.emptyList(), new IdentityConverter<>());
     }
 
     public DoubleToRationalReader(List<MValidationRule<Double>> mValidationRules, Converter<BigRational> converter) {

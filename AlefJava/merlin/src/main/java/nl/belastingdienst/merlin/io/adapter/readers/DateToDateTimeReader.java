@@ -3,6 +3,7 @@ package nl.belastingdienst.merlin.io.adapter.readers;
 import nl.belastingdienst.alef_runtime.Validators;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.converters.Converter;
+import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.validation.MValidationRule;
 
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class DateToDateTimeReader extends AbstractReader<String, LocalDateTime> {
     public DateToDateTimeReader() {
-        super(Collections.emptyList(), null);
+        super(Collections.emptyList(), new IdentityConverter<>());
     }
 
     public DateToDateTimeReader(List<MValidationRule<String>> mValidationRules, Converter<LocalDateTime> converter) {

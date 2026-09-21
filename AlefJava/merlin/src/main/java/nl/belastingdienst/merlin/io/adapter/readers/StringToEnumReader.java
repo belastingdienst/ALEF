@@ -2,6 +2,7 @@ package nl.belastingdienst.merlin.io.adapter.readers;
 
 import nl.belastingdienst.alef_runtime.Labeled;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 
 import java.io.IOException;
@@ -19,7 +20,7 @@ public class StringToEnumReader<T extends Enum<?> & Labeled> extends AbstractRea
     }
 
     public StringToEnumReader(Class<T> enumType, Map<String, String> mappings) {
-        super(Collections.emptyList(), null);
+        super(Collections.emptyList(), new IdentityConverter<>());
         this.enumType = enumType;
         this.mappings = mappings;
         for (T enumConstant : enumType.getEnumConstants()) {
