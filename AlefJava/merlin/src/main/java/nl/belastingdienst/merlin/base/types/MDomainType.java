@@ -27,4 +27,12 @@ public class MDomainType implements IMDataType {
     public int hashCode() {
         return Objects.hash(name, base);
     }
+
+    @Override
+    public String toString() {
+        return "MDomainType{" +
+                "name='" + name + '\'' +
+                ", base=" + base +
+                '}';
+    }
 }

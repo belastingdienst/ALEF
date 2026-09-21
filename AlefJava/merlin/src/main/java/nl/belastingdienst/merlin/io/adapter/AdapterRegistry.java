@@ -32,7 +32,7 @@ public class AdapterRegistry {
     public <T> ContentReader<T> getReader(Class<T> alefJavaType, IMDataType dataType) {
         IMDataType currentDataType = dataType;
         while (currentDataType != null) {
-            ContentReader<?> reader = readers.get(dataType);
+            ContentReader<?> reader = readers.get(currentDataType);
             if (reader != null) {
                 return (ContentReader<T>) reader;
             }
@@ -49,7 +49,7 @@ public class AdapterRegistry {
     public <T> ContentWriter<T> getWriter(Class<T> alefJavaType, IMDataType dataType) {
         IMDataType currentDataType = dataType;
         while (currentDataType != null) {
-            ContentWriter<?> writer = writers.get(dataType);
+            ContentWriter<?> writer = writers.get(currentDataType);
             if (writer != null) {
                 return (ContentWriter<T>) writer;
             }

@@ -16,4 +16,13 @@ public class MNumericType extends MAbstractNumericType {
     public MNumericType(int decimals, MNumberRange numberRange, MUnit unit) {
         super(decimals, numberRange, unit);
     }
+
+    @Override
+    public String toString() {
+        return "MNumericType{" +
+                "decimals=" + decimals +
+                ", numberRange=" + numberRange +
+                ", unit=" + unit +
+                '}';
+    }
 }

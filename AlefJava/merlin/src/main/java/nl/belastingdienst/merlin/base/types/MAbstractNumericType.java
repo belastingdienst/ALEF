@@ -3,9 +3,9 @@ package nl.belastingdienst.merlin.base.types;
 import java.util.Objects;
 
 public abstract class MAbstractNumericType implements IMDataType {
-    private final int decimals;
-    private final MNumberRange numberRange;
-    private final MUnit unit;
+    protected final int decimals;
+    protected final MNumberRange numberRange;
+    protected final MUnit unit;
 
     public MAbstractNumericType(int decimals, MNumberRange numberRange, MUnit unit) {
         this.decimals = decimals;

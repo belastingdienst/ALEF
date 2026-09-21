@@ -22,4 +22,11 @@ public class MDateTimeType implements IMDataType {
     public int hashCode() {
         return Objects.hashCode(timeGranularity);
     }
+
+    @Override
+    public String toString() {
+        return "MDateTimeType{" +
+                "timeGranularity=" + timeGranularity +
+                '}';
+    }
 }

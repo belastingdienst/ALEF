@@ -22,4 +22,12 @@ public class MUnitPart {
     public int hashCode() {
         return Objects.hash(exponent, name);
     }
+
+    @Override
+    public String toString() {
+        return "MUnitPart{" +
+                "exponent=" + exponent +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

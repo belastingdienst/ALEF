@@ -24,4 +24,12 @@ public class MUnit {
     public int hashCode() {
         return Objects.hash(numerator, denominator);
     }
+
+    @Override
+    public String toString() {
+        return "MUnit{" +
+                "numerator=" + numerator +
+                ", denominator=" + denominator +
+                '}';
+    }
 }
