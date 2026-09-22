@@ -13,6 +13,10 @@ public class RationalToIntegerWriter extends AbstractWriter<BigRational> {
 
     @Override
     public void write(ContentGenerator contentGenerator, BigRational value) throws IOException {
-        contentGenerator.writeNumber(getValueTypeName(), toOutputValue(value).toBigInteger());
+        if (value == null) {
+            contentGenerator.writeNull(getValueTypeName());
+        } else {
+            contentGenerator.writeNumber(getValueTypeName(), toOutputValue(value).toBigInteger());
+        }
     }
 }

@@ -16,7 +16,7 @@ public class RationalToDoubleWriter extends AbstractWriter<BigRational> {
         if (value == null) {
             contentGenerator.writeNull(getValueTypeName());
         } else {
-            contentGenerator.writeNumber(getValueTypeName(), value.toDouble());
+            contentGenerator.writeNumber(getValueTypeName(), toOutputValue(value).toDouble());
         }
     }
 }

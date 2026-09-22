@@ -13,6 +13,10 @@ public class RationalToByteWriter extends AbstractWriter<BigRational> {
 
     @Override
     public void write(ContentGenerator contentGenerator, BigRational value) throws IOException {
-        contentGenerator.writeNumber(getValueTypeName(), toOutputValue(value).toByte());
+        if (value == null) {
+            contentGenerator.writeNull(getValueTypeName());
+        } else {
+            contentGenerator.writeNumber(getValueTypeName(), toOutputValue(value).toByte());
+        }
     }
 }

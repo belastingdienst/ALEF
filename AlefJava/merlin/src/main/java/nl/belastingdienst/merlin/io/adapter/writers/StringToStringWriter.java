@@ -12,6 +12,10 @@ public class StringToStringWriter extends AbstractWriter<String> {
 
     @Override
     public void write(ContentGenerator contentGenerator, String value) throws IOException {
-        contentGenerator.writeString(getValueTypeName(), toOutputValue(value));
+        if (value == null) {
+            contentGenerator.writeNull(getValueTypeName());
+        } else {
+            contentGenerator.writeString(getValueTypeName(), toOutputValue(value));
+        }
     }
 }

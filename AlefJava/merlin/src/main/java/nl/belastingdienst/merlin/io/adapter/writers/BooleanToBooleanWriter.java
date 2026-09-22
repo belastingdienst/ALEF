@@ -10,6 +10,7 @@ public class BooleanToBooleanWriter implements FeatureSupport<Boolean> {
     private final Converter<Boolean> converter;
 
     public BooleanToBooleanWriter(String valueTypeName, Converter<Boolean> converter) {
+        assert converter != null : "A converter must be provided.";
         this.valueTypeName = valueTypeName;
         this.converter = converter;
     }
@@ -25,16 +26,10 @@ public class BooleanToBooleanWriter implements FeatureSupport<Boolean> {
 
     @Override
     public void featureWrite(ContentGenerator contentGenerator, Boolean value) throws IOException {
-        contentGenerator.writeBoolean(valueTypeName, toOutputValue(Boolean.TRUE.equals(value)));
+        contentGenerator.writeBoolean(valueTypeName, Boolean.TRUE.equals(toOutputValue(value)));
     }
 
     protected Boolean toOutputValue(Boolean value) {
-        Boolean outputValue;
-        if (converter != null) {
-            outputValue = converter.convert(value);
-        } else {
-            outputValue = value;
-        }
-        return outputValue;
+        return converter.convert(value);
     }
 }

@@ -18,6 +18,10 @@ public class EnumToStringWriter<T extends Enum<?> & Labeled> implements ContentW
 
     @Override
     public void write(ContentGenerator contentGenerator, T value) throws IOException {
-        contentGenerator.writeString(valueTypeName, mappings.getOrDefault(value.getLabel(), value.getLabel()));
+        if (value == null) {
+            contentGenerator.writeNull(valueTypeName);
+        } else {
+            contentGenerator.writeString(valueTypeName, mappings.getOrDefault(value.getLabel(), value.getLabel()));
+        }
     }
 }

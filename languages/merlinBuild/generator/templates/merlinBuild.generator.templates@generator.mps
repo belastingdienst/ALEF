@@ -1490,69 +1490,6 @@
               </node>
             </node>
           </node>
-          <node concept="2pNNFK" id="6YQ42gk3ZqD" role="3o6s8t">
-            <property role="2pNNFO" value="dependency" />
-            <node concept="2pNNFK" id="6YQ42gk3Zr5" role="3o6s8t">
-              <property role="2pNNFO" value="groupId" />
-              <node concept="3o6iSG" id="6YQ42gk3Zr6" role="3o6s8t">
-                <property role="3o6i5n" value="jakarta.activation" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42gk3Zr8" role="3o6s8t">
-              <property role="2pNNFO" value="artifactId" />
-              <node concept="3o6iSG" id="6YQ42gk3Zr9" role="3o6s8t">
-                <property role="3o6i5n" value="jakarta.activation-api" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42gk3Zra" role="3o6s8t">
-              <property role="2pNNFO" value="version" />
-              <node concept="3o6iSG" id="6YQ42gk3Zrb" role="3o6s8t">
-                <property role="3o6i5n" value="2.1.3" />
-              </node>
-            </node>
-          </node>
-          <node concept="2pNNFK" id="6YQ42gltuJ1" role="3o6s8t">
-            <property role="2pNNFO" value="dependency" />
-            <node concept="2pNNFK" id="6YQ42gltuJ2" role="3o6s8t">
-              <property role="2pNNFO" value="groupId" />
-              <node concept="3o6iSG" id="6YQ42gltuJ3" role="3o6s8t">
-                <property role="3o6i5n" value="jakarta.servlet" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42gltuJ4" role="3o6s8t">
-              <property role="2pNNFO" value="artifactId" />
-              <node concept="3o6iSG" id="6YQ42gltuJ5" role="3o6s8t">
-                <property role="3o6i5n" value="jakarta.servlet-api" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42gltuJ6" role="3o6s8t">
-              <property role="2pNNFO" value="version" />
-              <node concept="3o6iSG" id="6YQ42gltuJ7" role="3o6s8t">
-                <property role="3o6i5n" value="6.0.0" />
-              </node>
-            </node>
-          </node>
-          <node concept="2pNNFK" id="6YQ42gmSjaC" role="3o6s8t">
-            <property role="2pNNFO" value="dependency" />
-            <node concept="2pNNFK" id="6YQ42gmSjaD" role="3o6s8t">
-              <property role="2pNNFO" value="groupId" />
-              <node concept="3o6iSG" id="6YQ42gmSjaE" role="3o6s8t">
-                <property role="3o6i5n" value="jakarta.annotation" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42gmSjaF" role="3o6s8t">
-              <property role="2pNNFO" value="artifactId" />
-              <node concept="3o6iSG" id="6YQ42gmSjaG" role="3o6s8t">
-                <property role="3o6i5n" value="jakarta.annotation-api" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42gmSjaH" role="3o6s8t">
-              <property role="2pNNFO" value="version" />
-              <node concept="3o6iSG" id="6YQ42gmSjaI" role="3o6s8t">
-                <property role="3o6i5n" value="2.1.1" />
-              </node>
-            </node>
-          </node>
           <node concept="3o6iSG" id="6YwrqIbxvDe" role="3o6s8t" />
           <node concept="3o6iSG" id="3r0zJz1NUGO" role="3o6s8t" />
           <node concept="2pNm8U" id="3r0zJz1NUKU" role="3o6s8t">
@@ -1682,8 +1619,22 @@
             </node>
             <node concept="2pNNFK" id="6YQ42gofaLG" role="3o6s8t">
               <property role="2pNNFO" value="version" />
-              <node concept="3o6iSG" id="6YQ42gofaLH" role="3o6s8t">
-                <property role="3o6i5n" value="2.17.2" />
+              <node concept="3o6iSG" id="79aBNElOgki" role="3o6s8t">
+                <property role="3o6i5n" value="1.0.0" />
+                <node concept="17Uvod" id="79aBNElOgkj" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                  <node concept="3zFVjK" id="79aBNElOgkk" role="3zH0cK">
+                    <node concept="3clFbS" id="79aBNElOgkl" role="2VODD2">
+                      <node concept="3clFbF" id="79aBNElOgkm" role="3cqZAp">
+                        <node concept="2YIFZM" id="79aBNElQgNU" role="3clFbG">
+                          <ref role="37wK5l" to="r5jx:79aBNElQb1r" resolve="jacksonDataFormat" />
+                          <ref role="1Pybhc" to="r5jx:3r0zJz5Wxj3" resolve="DependencyVersions" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
