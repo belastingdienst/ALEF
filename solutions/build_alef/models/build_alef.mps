@@ -8499,6 +8499,26 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
+        <node concept="1SiIV0" id="61469K8RuXp" role="3bR37C">
+          <node concept="3bR9La" id="61469K8RuXq" role="1SiIV1">
+            <ref role="3bR37D" node="5xoVUqn26Fd" resolve="build_alef" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61469K8RuXr" role="3bR37C">
+          <node concept="3bR9La" id="61469K8RuXs" role="1SiIV1">
+            <ref role="3bR37D" to="1rlr:61469K8R5NO" resolve="AlefProject.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61469K8RuXt" role="3bR37C">
+          <node concept="3bR9La" id="61469K8RuXu" role="1SiIV1">
+            <ref role="3bR37D" to="1rlr:7GFgM0zKFX1" resolve="build_extensions.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61469K8RuXv" role="3bR37C">
+          <node concept="3bR9La" id="61469K8RuXw" role="1SiIV1">
+            <ref role="3bR37D" to="1rlr:2pUEfbEamR1" resolve="build_extensions.plugin" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7OkYYjSM5iA" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -11920,7 +11940,7 @@
             <ref role="3bR37D" node="4wvGeDpkGR9" resolve="mpsUtils" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7E49IyxhnOF" role="3bR37C">
+        <node concept="1SiIV0" id="1VHIOeoemDq" role="3bR37C">
           <node concept="3bR9La" id="7E49IyxhnOG" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
           </node>

@@ -66,15 +66,23 @@
       <modulePath path="$PROJECT_DIR$/languages/vrijspraak/vrijspraak.mpl" folder="alef.spraken" />
       <modulePath path="$PROJECT_DIR$/languages/xml.extensies/xml.extensies.mpl" folder="platform" />
       <modulePath path="$PROJECT_DIR$/languages/xml.schema/xml.schema.mpl" folder="platform" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/Sisyphus.build.mps.patch/Sisyphus.build.mps.patch.mpl" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/Sisyphus.build.mps.runner/Sisyphus.build.mps.runner.mpl" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/artifacts/artifacts.mpl" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/buildAlefProject/buildAlefProject.mpl" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/checkproject/checkproject.mpl" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/projectbuild/projectbuild.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/AlefProject.boot/AlefProject.boot.msd" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/AlefProject.build/AlefProject.build.msd" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/Sisyphus.boot/Sisyphus.boot.msd" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/Sisyphus.run/Sisyphus.run.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.build/build_extensions.build.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.build_build/build_extensions.build_build.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.plugin/build_extensions.plugin.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.runtime.test/build_extensions.runtime.test.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.runtime/build_extensions.runtime.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.test.build/build_extensions.test.build.msd" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/empty/empty.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/json/languages/json/json.mpl" folder="plugins.json" />
       <modulePath path="$PROJECT_DIR$/plugins/json/solutions/json.build/json.build.msd" folder="plugins.json" />
       <modulePath path="$PROJECT_DIR$/plugins/json/solutions/json.test.build/json.test.build.msd" folder="plugins.json.test" />

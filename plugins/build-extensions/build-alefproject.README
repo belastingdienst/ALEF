@@ -1,0 +1,20 @@
+Bouw een alefproject (genereer buidscripts en voer deze uit) benodigde input: alef-versie en coordinaat, pad naar project, pad naar resultaat artifacts?
+
+Prerequisites: JRE 1.8 or higher.
+
+Usage: sh build-alefproject.sh <target>
+
+Available targets:
+
+* build
+    sisphus.project= sisyphus.run=AlefProject.build.OpenAlefProjectAndBuild
+
+* deps
+    Retrieve dependencies and copy them to appropriate locations. Might be useful to setup a development workspace.
+
+Optional:
+  * set ANT_HOME to an Ant installation (otherwise it downloads an Ant distribution)
+  * set JAVA_HOME to a JRE (1.8 or higher) 
+  * set MAVEN_OPTS or MAVEN_ARGS or MAVEN_CONFIG to specify a maven settings file
+
+Warning: mvn resolver for ant only uses a profile when it is explicitely activated in the settings.xml using the <activeProfile> tag. 

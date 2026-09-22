@@ -37,6 +37,10 @@
     <dependency reexport="false">8f6725be-608d-433b-98fd-844f816eb05f(jetbrains.mps.ide.make)</dependency>
     <dependency reexport="false">215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
+    <dependency reexport="false">bd448ffd-c394-4ad7-835d-f4f4fd062333(build_extensions.plugin)</dependency>
+    <dependency reexport="false">1fc41867-980a-4b05-8e58-ecab42f97613(build_alef)</dependency>
+    <dependency reexport="false">388d9dd1-b013-4858-a1e4-5e17aa2e7c3e(build_extensions.runtime)</dependency>
+    <dependency reexport="false">6098d4db-d49b-4b8c-ba6c-b7c70d0525a4(AlefProject.build)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -44,6 +48,7 @@
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
@@ -57,6 +62,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3594b560-e69d-4d62-bb63-f7c17d4c1441(AlefExtensionRegistry)" version="0" />
+    <module reference="6098d4db-d49b-4b8c-ba6c-b7c70d0525a4(AlefProject.build)" version="0" />
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="3a8d80d2-32d9-f1f2-4443-6a1111e12ef3(MPS.Boot)" version="0" />
@@ -71,6 +77,9 @@
     <module reference="3ea0ff8b-be16-4cc9-8f8a-d8cec13f47fc(alef.menus)" version="0" />
     <module reference="4a6bb6ab-de63-4605-8a60-a06fda7893a8(alef.tools)" version="0" />
     <module reference="9a244687-dfa9-4fe1-be0a-b7a1c754e930(buildAlefProject)" version="0" />
+    <module reference="1fc41867-980a-4b05-8e58-ecab42f97613(build_alef)" version="0" />
+    <module reference="bd448ffd-c394-4ad7-835d-f4f4fd062333(build_extensions.plugin)" version="0" />
+    <module reference="388d9dd1-b013-4858-a1e4-5e17aa2e7c3e(build_extensions.runtime)" version="0" />
     <module reference="9998cc6e-c037-49ca-8952-a06209a23d94(editorUtils)" version="0" />
     <module reference="798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)" version="0" />
     <module reference="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" version="0" />

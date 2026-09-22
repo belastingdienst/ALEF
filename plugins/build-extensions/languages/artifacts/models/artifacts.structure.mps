@@ -96,6 +96,7 @@
       <property role="IQ2ns" value="3648270659724841999" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="bootstrap" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3axgHnHohge" resolve="BootstrapInfo" />
     </node>
     <node concept="1TJgyj" id="6OOrV8bykCD" role="1TKVEi">
@@ -136,23 +137,8 @@
     <property role="EcuMT" value="7869037259411507750" />
     <property role="TrG5h" value="RepoDependency" />
     <property role="34LRSv" value="dependency in repository" />
-    <property role="3GE5qa" value="repository" />
+    <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" node="3axgHnH04a3" resolve="Dependency" />
-    <node concept="1TJgyi" id="3axgHnHrMCk" role="1TKVEl">
-      <property role="IQ2nx" value="3648270659725765140" />
-      <property role="TrG5h" value="providesJbr" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="3axgHnHrMCl" role="1TKVEl">
-      <property role="IQ2nx" value="3648270659725765141" />
-      <property role="TrG5h" value="providesMpsAnt" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="3axgHnHxCaU" role="1TKVEl">
-      <property role="IQ2nx" value="3648270659727295162" />
-      <property role="TrG5h" value="os" />
-      <ref role="AX2Wp" node="3axgHnHxCaW" resolve="OSPicker" />
-    </node>
     <node concept="1TJgyj" id="7RKIODIGT0J" role="1TKVEi">
       <property role="IQ2ns" value="9074959177510785071" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -160,24 +146,22 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7RKIODIGT0v" resolve="RepoCoordinates" />
     </node>
-    <node concept="1TJgyj" id="2Vrx8AbBlXO" role="1TKVEi">
-      <property role="IQ2ns" value="3376438071932051316" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="extractPlugins" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2Vrx8AbBlOP" resolve="ExtractPlugin" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6OOrV8bypZr">
     <property role="EcuMT" value="7869037259411529691" />
     <property role="TrG5h" value="BuildProjectCall" />
     <property role="R4oN_" value="call buildproject" />
     <property role="3GE5qa" value="scripting" />
+    <property role="34LRSv" value="bouw alef project" />
     <ref role="1TJDcQ" node="2Vrx8AbNxiu" resolve="ScriptCall" />
+    <node concept="1TJgyi" id="5RT8kYi_siS" role="1TKVEl">
+      <property role="IQ2nx" value="6771480140373673144" />
+      <property role="TrG5h" value="filename" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="6OOrV8bypZt" role="1TKVEi">
       <property role="IQ2ns" value="7869037259411529693" />
       <property role="20kJfa" value="buildproject" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
     </node>
     <node concept="1TJgyj" id="7RKIODIGAGW" role="1TKVEi">
@@ -191,7 +175,7 @@
       <property role="IQ2ns" value="3648270659719790965" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="targets" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3axgHnH505Q" resolve="BuildProjectCallTarget" />
     </node>
   </node>
@@ -224,26 +208,49 @@
   <node concept="1TIwiD" id="7RKIODIGT0i">
     <property role="EcuMT" value="9074959177510785042" />
     <property role="TrG5h" value="Publish" />
-    <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="repository" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7RKIODIH2kG" role="1TKVEi">
-      <property role="IQ2ns" value="9074959177510823212" />
-      <property role="20kJfa" value="artifact" />
-      <ref role="20lvS9" to="3ior:6qcrfIJF4M5" resolve="BuildLayout_Node" />
+    <node concept="1TJgyi" id="6w72tjW5l6l" role="1TKVEl">
+      <property role="IQ2nx" value="7495970915148452245" />
+      <property role="TrG5h" value="repoURL" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6w72tjW5l6k" role="1TKVEl">
+      <property role="IQ2nx" value="7495970915148452244" />
+      <property role="TrG5h" value="repoID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3taFeU0qJOb" role="1TKVEi">
+      <property role="IQ2ns" value="3984186960719314187" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="artifacts" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7RKIODIGT0l" resolve="PublishArtifact" />
     </node>
   </node>
   <node concept="1TIwiD" id="7RKIODIGT0l">
     <property role="EcuMT" value="9074959177510785045" />
-    <property role="TrG5h" value="PublishRepo" />
+    <property role="TrG5h" value="PublishArtifact" />
     <property role="3GE5qa" value="repository" />
-    <ref role="1TJDcQ" node="7RKIODIGT0i" resolve="Publish" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RKIODIGT0L" role="1TKVEi">
       <property role="IQ2ns" value="9074959177510785073" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="coordinates" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7RKIODIGT0v" resolve="RepoCoordinates" />
+    </node>
+    <node concept="1TJgyj" id="6w72tk6VQdQ" role="1TKVEi">
+      <property role="IQ2ns" value="7495970915330515830" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="artifactPath" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
+    </node>
+    <node concept="1TJgyj" id="5gyicAstHzW" role="1TKVEi">
+      <property role="IQ2ns" value="6062488079144769788" />
+      <property role="20kJfa" value="sourceDep" />
+      <ref role="20lvS9" node="6eA5cqwEKWl" resolve="SourceDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="7RKIODIGT0v">
@@ -303,7 +310,7 @@
     <property role="TrG5h" value="Dependency" />
     <property role="EcuMT" value="7869037259411507749" />
     <property role="R5$K7" value="true" />
-    <property role="3GE5qa" value="repository" />
+    <property role="3GE5qa" value="dependencies" />
     <node concept="1TJgyj" id="6qcrfIJFv3E" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="toPath" />
@@ -339,6 +346,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2Vrx8AbNxiu" resolve="ScriptCall" />
     </node>
+    <node concept="1TJgyj" id="7j3Qc8cZ1wE" role="1TKVEi">
+      <property role="IQ2ns" value="8413806856811321386" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dependency" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7j3Qc8cZaX2" resolve="BootstrapDependency" />
+    </node>
     <node concept="1TJgyi" id="3axgHnHohgg" role="1TKVEl">
       <property role="IQ2nx" value="3648270659724842000" />
       <property role="TrG5h" value="repoURL" />
@@ -366,8 +380,8 @@
   <node concept="1TIwiD" id="2Vrx8AbyL$6">
     <property role="EcuMT" value="3376438071930853638" />
     <property role="TrG5h" value="ShCall" />
-    <property role="34LRSv" value="call shell script" />
     <property role="3GE5qa" value="scripting" />
+    <property role="34LRSv" value="voer shell script uit" />
     <ref role="1TJDcQ" node="2Vrx8AbNxiu" resolve="ScriptCall" />
     <node concept="1TJgyi" id="2Vrx8AbyLI6" role="1TKVEl">
       <property role="IQ2nx" value="3376438071930854278" />
@@ -440,6 +454,18 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="scripting" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7OYeOsQslT2" role="1TKVEi">
+      <property role="IQ2ns" value="9024715880339168834" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dir" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
+    </node>
+    <node concept="1TJgyj" id="lnR0sftUbh" role="1TKVEi">
+      <property role="IQ2ns" value="385018216045847249" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="relativedir" />
+      <ref role="20lvS9" to="3ior:7usrAn056vL" resolve="BuildCompositePath" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6g0r7eS1Bg1">
     <property role="EcuMT" value="7205878648057263105" />
@@ -465,6 +491,97 @@
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" to="iuxj:5M4a$b5ikxF" resolve="XmlContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6eA5cqwEKWl">
+    <property role="EcuMT" value="7180449499220479765" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="SourceDependency" />
+    <property role="34LRSv" value="dependency op een ander project" />
+    <ref role="1TJDcQ" node="3axgHnH04a3" resolve="Dependency" />
+    <node concept="1TJgyi" id="6eA5cqwEObP" role="1TKVEl">
+      <property role="IQ2nx" value="7180449499220493045" />
+      <property role="TrG5h" value="gitRepo" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6eA5cqwEObQ" role="1TKVEl">
+      <property role="IQ2nx" value="7180449499220493046" />
+      <property role="TrG5h" value="gitBranch" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="uE3FKznvkG" role="1TKVEl">
+      <property role="IQ2nx" value="552270105516307756" />
+      <property role="TrG5h" value="cloneDir" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2JYD$_z0lvg" role="1TKVEi">
+      <property role="IQ2ns" value="3170154021839263696" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="clonePath" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
+    </node>
+    <node concept="1TJgyj" id="2JYD$_z0lv8" role="1TKVEi">
+      <property role="IQ2ns" value="3170154021839263688" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="artifact" />
+      <ref role="20lvS9" to="3ior:7usrAn056vL" resolve="BuildCompositePath" />
+    </node>
+    <node concept="1TJgyj" id="3hKywhUW4bz" role="1TKVEi">
+      <property role="IQ2ns" value="3778671839210914531" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="buildstep" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2Vrx8AbNxiu" resolve="ScriptCall" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UHAeiJ818x">
+    <property role="EcuMT" value="3363512604673708577" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="HybridDependency" />
+    <property role="34LRSv" value="hybride dependency" />
+    <ref role="1TJDcQ" node="3axgHnH04a3" resolve="Dependency" />
+    <node concept="1TJgyj" id="12Lkl9d87Jt" role="1TKVEi">
+      <property role="IQ2ns" value="1202831989407775709" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="repoDependency" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6OOrV8bykCA" resolve="RepoDependency" />
+    </node>
+    <node concept="1TJgyj" id="12Lkl9d87Ju" role="1TKVEi">
+      <property role="IQ2ns" value="1202831989407775710" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sourceDependency" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6eA5cqwEKWl" resolve="SourceDependency" />
+    </node>
+    <node concept="1TJgyi" id="5gyicAszEwu" role="1TKVEl">
+      <property role="IQ2nx" value="6062488079146330142" />
+      <property role="TrG5h" value="repoId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5gyicAszEwv" role="1TKVEl">
+      <property role="IQ2nx" value="6062488079146330143" />
+      <property role="TrG5h" value="repoUrl" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7j3Qc8cZaX2">
+    <property role="EcuMT" value="8413806856811360066" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="BootstrapDependency" />
+    <property role="34LRSv" value="dependency tbv MPS bootstrap" />
+    <ref role="1TJDcQ" node="6OOrV8bykCA" resolve="RepoDependency" />
+    <node concept="1TJgyi" id="3axgHnHxCaU" role="1TKVEl">
+      <property role="IQ2nx" value="3648270659727295162" />
+      <property role="TrG5h" value="os" />
+      <ref role="AX2Wp" node="3axgHnHxCaW" resolve="OSPicker" />
+    </node>
+    <node concept="1TJgyj" id="2fRsQIz3QUL" role="1TKVEi">
+      <property role="IQ2ns" value="2591667016709402289" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="extractPlugins" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2Vrx8AbBlOP" resolve="ExtractPlugin" />
     </node>
   </node>
 </model>
