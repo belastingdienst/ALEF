@@ -1506,22 +1506,9 @@
                       <node concept="3VsKOn" id="6Ov5ijkAQgx" role="37wK5m">
                         <ref role="3VsUkX" to="wyt6:~String" resolve="String" />
                       </node>
-                      <node concept="10Nm6u" id="79aBNEaEpz7" role="37wK5m">
-                        <node concept="1sPUBX" id="79aBNEaEpz8" role="lGtFl">
-                          <ref role="v9R2y" node="79aBNEaAyyQ" resolve="dataTypes" />
-                          <node concept="3NFfHV" id="79aBNEaEpz9" role="1sPUBK">
-                            <node concept="3clFbS" id="79aBNEaEpza" role="2VODD2">
-                              <node concept="3clFbF" id="79aBNEaEpzb" role="3cqZAp">
-                                <node concept="2OqwBi" id="79aBNEaEpzc" role="3clFbG">
-                                  <node concept="30H73N" id="79aBNEaEpzd" role="2Oq$k0" />
-                                  <node concept="2qgKlT" id="79aBNEaEpze" role="2OqNvi">
-                                    <ref role="37wK5l" to="8l26:2noOFp_6pJO" resolve="type" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                      <node concept="10M0yZ" id="79aBNEDXiHJ" role="37wK5m">
+                        <ref role="3cqZAo" to="thp:~MTextType.INSTANCE" resolve="INSTANCE" />
+                        <ref role="1PxDUh" to="thp:~MTextType" resolve="MTextType" />
                       </node>
                     </node>
                   </node>

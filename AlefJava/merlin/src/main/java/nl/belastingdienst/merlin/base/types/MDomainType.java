@@ -13,7 +13,7 @@ public class MDomainType implements IMDataType {
 
     @Override
     public IMDataType getBase() {
-        return null;
+        return base;
     }
 
     @Override

@@ -1,9 +1,10 @@
 package nl.belastingdienst.merlin.io.adapter;
 
-import nl.belastingdienst.merlin.base.types.MNumericType;
+import nl.belastingdienst.merlin.base.types.*;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Proxy;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -15,6 +16,15 @@ class AdapterRegistryTest {
         final ContentReader<Integer> reader = createReaderProxy();
         registry.registerReader(MNumericType.wholeNumber(), reader);
         final ContentReader<Integer> result = (ContentReader<Integer>) registry.getReader(Integer.class, MNumericType.wholeNumber());
+        assertSame(reader, result);
+    }
+
+    @Test
+    void testDomainTypeReaderRetrieval() {
+        final AdapterRegistry registry = new AdapterRegistry(false);
+        final ContentReader<Integer> reader = createReaderProxy();
+        registry.registerReader(new MNumericType(2, MNumberRange.ANY, null), reader);
+        final ContentReader<Integer> result = (ContentReader<Integer>) registry.getReader(Integer.class, new MDomainType("Bedrag", new MNumericType(2, MNumberRange.ANY, new MUnit(List.of(new MUnitPart(1, "euro")), List.of()))));
         assertSame(reader, result);
     }
 

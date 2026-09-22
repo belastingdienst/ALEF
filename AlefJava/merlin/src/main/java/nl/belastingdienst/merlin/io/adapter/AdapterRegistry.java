@@ -36,7 +36,7 @@ public class AdapterRegistry {
             if (reader != null) {
                 return (ContentReader<T>) reader;
             }
-            currentDataType = dataType.getBase();
+            currentDataType = currentDataType.getBase();
         }
         throw new IllegalStateException("No reader registered for the following data type: " + dataType);
     }
@@ -53,7 +53,7 @@ public class AdapterRegistry {
             if (writer != null) {
                 return (ContentWriter<T>) writer;
             }
-            currentDataType = dataType.getBase();
+            currentDataType = currentDataType.getBase();
         }
         throw new IllegalStateException("No writer registered for any of the internal type names: " + dataType);
     }
