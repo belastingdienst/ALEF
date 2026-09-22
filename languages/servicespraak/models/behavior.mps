@@ -10711,6 +10711,146 @@
   <node concept="13h7C7" id="9VpsLQ00Ai">
     <property role="3GE5qa" value="datatype.restrictie" />
     <ref role="13h7C2" to="ku5w:30CduGMYALz" resolve="NumeriekeWaardeRestrictie" />
+    <node concept="13i0hz" id="4KvrJCBlERl" role="13h7CS">
+      <property role="TrG5h" value="min" />
+      <node concept="3Tm1VV" id="4KvrJCBlERm" role="1B3o_S" />
+      <node concept="3uibUv" id="4KvrJCBlYvL" role="3clF45">
+        <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+      </node>
+      <node concept="3clFbS" id="4KvrJCBlERo" role="3clF47">
+        <node concept="3clFbJ" id="4KvrJCBm6XG" role="3cqZAp">
+          <node concept="3clFbS" id="4KvrJCBm6XI" role="3clFbx">
+            <node concept="3cpWs6" id="4KvrJCBm8Mo" role="3cqZAp">
+              <node concept="10Nm6u" id="4KvrJCBm8VB" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="4KvrJCBm8g9" role="3clFbw">
+            <node concept="10Nm6u" id="4KvrJCBm8Ci" role="3uHU7w" />
+            <node concept="2OqwBi" id="4KvrJCBm7r5" role="3uHU7B">
+              <node concept="13iPFW" id="4KvrJCBm7fG" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4KvrJCBm7YE" role="2OqNvi">
+                <ref role="3Tt5mk" to="ku5w:30CduGNDawD" resolve="min" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4KvrJCBm9od" role="3cqZAp">
+          <node concept="3clFbS" id="4KvrJCBm9of" role="3clFbx">
+            <node concept="3cpWs6" id="4KvrJCBmbr5" role="3cqZAp">
+              <node concept="2OqwBi" id="4KvrJCBmcyj" role="3cqZAk">
+                <node concept="2OqwBi" id="4KvrJCBm0_j" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4KvrJCBlZGT" role="2Oq$k0">
+                    <node concept="13iPFW" id="4KvrJCBlZvJ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4KvrJCBm0h8" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ku5w:30CduGNDawD" resolve="min" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="4KvrJCBm1Y_" role="2OqNvi">
+                    <ref role="37wK5l" to="8l26:44Jn6rIHpBP" resolve="alsBigRational" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4KvrJCBmefb" role="2OqNvi">
+                  <ref role="37wK5l" to="2vij:~BigRational.add(nl.belastingdienst.alef_runtime.BigRational)" resolve="add" />
+                  <node concept="10M0yZ" id="4KvrJCBmf0f" role="37wK5m">
+                    <ref role="3cqZAo" to="2vij:~BigRational.ONE" resolve="ONE" />
+                    <ref role="1PxDUh" to="2vij:~BigRational" resolve="BigRational" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4KvrJCBm9Is" role="3clFbw">
+            <node concept="13iPFW" id="4KvrJCBm9yB" role="2Oq$k0" />
+            <node concept="3TrcHB" id="4KvrJCBmarz" role="2OqNvi">
+              <ref role="3TsBF5" to="ku5w:30CduGMYEXQ" resolve="minIncl" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4KvrJCBmfuj" role="3cqZAp">
+          <node concept="2OqwBi" id="4KvrJCBmhB8" role="3cqZAk">
+            <node concept="2OqwBi" id="4KvrJCBmfPN" role="2Oq$k0">
+              <node concept="13iPFW" id="4KvrJCBmfDs" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4KvrJCBmgqz" role="2OqNvi">
+                <ref role="3Tt5mk" to="ku5w:30CduGNDawD" resolve="min" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4KvrJCBmiOB" role="2OqNvi">
+              <ref role="37wK5l" to="8l26:44Jn6rIHpBP" resolve="alsBigRational" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4KvrJCBmj0l" role="13h7CS">
+      <property role="TrG5h" value="max" />
+      <node concept="3Tm1VV" id="4KvrJCBmj0m" role="1B3o_S" />
+      <node concept="3uibUv" id="4KvrJCBmkEj" role="3clF45">
+        <ref role="3uigEE" to="2vij:~BigRational" resolve="BigRational" />
+      </node>
+      <node concept="3clFbS" id="4KvrJCBmj0o" role="3clF47">
+        <node concept="3clFbJ" id="4KvrJCBmlfl" role="3cqZAp">
+          <node concept="3clFbC" id="4KvrJCBmm5I" role="3clFbw">
+            <node concept="10Nm6u" id="4KvrJCBmm5L" role="3uHU7w" />
+            <node concept="2OqwBi" id="4KvrJCBmlqm" role="3uHU7B">
+              <node concept="13iPFW" id="4KvrJCBmlfI" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4KvrJCBmlNw" role="2OqNvi">
+                <ref role="3Tt5mk" to="ku5w:30CduGNDaTr" resolve="max" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4KvrJCBmlfn" role="3clFbx">
+            <node concept="3cpWs6" id="4KvrJCBmmqB" role="3cqZAp">
+              <node concept="10Nm6u" id="4KvrJCBmmqL" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4KvrJCBmmKv" role="3cqZAp">
+          <node concept="3clFbS" id="4KvrJCBmmKx" role="3clFbx">
+            <node concept="3cpWs6" id="4KvrJCBmn$M" role="3cqZAp">
+              <node concept="2OqwBi" id="4KvrJCBmwsl" role="3cqZAk">
+                <node concept="2OqwBi" id="4KvrJCBmocy" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4KvrJCBmnDQ" role="2Oq$k0">
+                    <node concept="13iPFW" id="4KvrJCBmn$X" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4KvrJCBmo5H" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ku5w:30CduGNDaTr" resolve="max" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="4KvrJCBmoS6" role="2OqNvi">
+                    <ref role="37wK5l" to="8l26:44Jn6rIHpBP" resolve="alsBigRational" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4KvrJCBmxze" role="2OqNvi">
+                  <ref role="37wK5l" to="2vij:~BigRational.subtract(nl.belastingdienst.alef_runtime.BigRational)" resolve="subtract" />
+                  <node concept="10M0yZ" id="4KvrJCBmyly" role="37wK5m">
+                    <ref role="3cqZAo" to="2vij:~BigRational.ONE" resolve="ONE" />
+                    <ref role="1PxDUh" to="2vij:~BigRational" resolve="BigRational" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4KvrJCBmmZ7" role="3clFbw">
+            <node concept="13iPFW" id="4KvrJCBmmLo" role="2Oq$k0" />
+            <node concept="3TrcHB" id="4KvrJCBmnoE" role="2OqNvi">
+              <ref role="3TsBF5" to="ku5w:30CduGMYFmE" resolve="maxIncl" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4KvrJCBmrXX" role="3cqZAp">
+          <node concept="2OqwBi" id="4KvrJCBmsxr" role="3cqZAk">
+            <node concept="2OqwBi" id="4KvrJCBmscJ" role="2Oq$k0">
+              <node concept="13iPFW" id="4KvrJCBmrY8" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4KvrJCBmspW" role="2OqNvi">
+                <ref role="3Tt5mk" to="ku5w:30CduGNDaTr" resolve="max" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4KvrJCBmte7" role="2OqNvi">
+              <ref role="37wK5l" to="8l26:44Jn6rIHpBP" resolve="alsBigRational" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="9VpsLQ00Aj" role="13h7CW">
       <node concept="3clFbS" id="9VpsLQ00Ak" role="2VODD2" />
     </node>
