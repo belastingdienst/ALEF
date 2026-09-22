@@ -6,11 +6,22 @@ public abstract class MAbstractNumericType implements IMDataType {
     protected final int decimals;
     protected final MNumberRange numberRange;
     protected final MUnit unit;
+    private final MNumericType base;
 
     public MAbstractNumericType(int decimals, MNumberRange numberRange, MUnit unit) {
         this.decimals = decimals;
         this.numberRange = numberRange;
         this.unit = unit;
+        if (unit != null) {
+            base = new MNumericType(decimals, numberRange, null);
+        } else {
+            base = null;
+        }
+    }
+
+    @Override
+    public IMDataType getBase() {
+        return base;
     }
 
     @Override
