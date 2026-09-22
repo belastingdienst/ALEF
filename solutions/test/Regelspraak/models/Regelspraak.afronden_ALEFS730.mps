@@ -8,6 +8,9 @@
   <registry>
     <language id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts">
       <concept id="4485080112264973245" name="contexts.structure.Witruimte" flags="ng" index="1uxNW$" />
+      <concept id="159216743683133206" name="contexts.structure.Commentaar" flags="ng" index="3FGEBu">
+        <child id="159216743683133207" name="text" index="3FGEBv" />
+      </concept>
     </language>
     <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
       <concept id="7850059172684106637" name="regelspraak.structure.Afronden" flags="ng" index="29kKyO">
@@ -149,9 +152,92 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="1rXTK1" id="1NieCjCxD_m">
     <property role="TrG5h" value="AfrondenALEFS730" />
+    <node concept="210ffa" id="6x6EVNEIrcG" role="10_$IM">
+      <property role="TrG5h" value="Afronden op 100-tallen" />
+      <node concept="4Oh8J" id="6x6EVNEIrcH" role="4Ohb1">
+        <ref role="4Oh8G" node="1NieCjCxTRP" resolve="Voertuig" />
+        <ref role="3teO_M" node="6x6EVNEIrcI" resolve="v" />
+        <node concept="3mzBic" id="6x6EVNEIt3a" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6x6EVNEIpwD" resolve="gewicht rekenkundig afgerond  op 100 tallen " />
+          <node concept="1EQTEq" id="6x6EVNEIt3m" role="3mzBi6">
+            <property role="3e6Tb2" value="1500" />
+            <node concept="PwxsY" id="6x6EVNEItuM" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEItuL" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="6x6EVNEIrcI" role="4Ohaa">
+        <property role="TrG5h" value="v" />
+        <ref role="4OhPH" node="1NieCjCxTRP" resolve="Voertuig" />
+        <node concept="3_ceKt" id="6x6EVNEIrdV" role="4OhPJ">
+          <ref role="3_ceKs" node="1NieCjCxVau" resolve="gewicht" />
+          <node concept="1EQTEq" id="6x6EVNEIrdW" role="3_ceKu">
+            <property role="3e6Tb2" value="1451" />
+            <node concept="PwxsY" id="6x6EVNEIsp8" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIsp7" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="6x6EVNEIum2" role="10_$IM">
+      <property role="TrG5h" value="Afronden op 1000-tallen" />
+      <node concept="4Oh8J" id="6x6EVNEIum3" role="4Ohb1">
+        <ref role="4Oh8G" node="1NieCjCxTRP" resolve="Voertuig" />
+        <ref role="3teO_M" node="6x6EVNEIum8" resolve="v" />
+        <node concept="3mzBic" id="6x6EVNEIum4" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6x6EVNEIqvL" resolve="gewicht rekenkundig afgerond  op 1000 tallen " />
+          <node concept="1EQTEq" id="6x6EVNEIum5" role="3mzBi6">
+            <property role="3e6Tb2" value="1000" />
+            <node concept="PwxsY" id="6x6EVNEIum6" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIum7" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="6x6EVNEIum8" role="4Ohaa">
+        <property role="TrG5h" value="v" />
+        <ref role="4OhPH" node="1NieCjCxTRP" resolve="Voertuig" />
+        <node concept="3_ceKt" id="6x6EVNEIum9" role="4OhPJ">
+          <ref role="3_ceKs" node="1NieCjCxVau" resolve="gewicht" />
+          <node concept="1EQTEq" id="6x6EVNEIuma" role="3_ceKu">
+            <property role="3e6Tb2" value="1411" />
+            <node concept="PwxsY" id="6x6EVNEIumb" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIumc" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2ljwA5" id="1NieCjCxD_n" role="3Na4y7">
       <node concept="2ljiaL" id="1NieCjCxD_o" role="2ljwA6">
         <property role="2ljiaO" value="2026" />
@@ -175,7 +261,7 @@
       </node>
     </node>
     <node concept="210ffa" id="1NieCjCyT4K" role="10_$IM">
-      <property role="TrG5h" value="Afronden op 100" />
+      <property role="TrG5h" value="Afronden op 100 1450 -&gt; 1500" />
       <node concept="4Oh8J" id="1NieCjCyT4L" role="4Ohb1">
         <ref role="4Oh8G" node="1NieCjCxTRP" resolve="Voertuig" />
         <ref role="3teO_M" node="1NieCjCyT4M" resolve="v" />
@@ -228,6 +314,68 @@
             <property role="3e6Tb2" value="1450" />
             <node concept="PwxsY" id="1NieCjCyUDQ" role="1jdwn1">
               <node concept="Pwxi7" id="1NieCjCyUDP" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="6x6EVNEIl_M" role="10_$IM">
+      <property role="TrG5h" value="Afronden op 100  1440 -&gt; 1400" />
+      <node concept="4Oh8J" id="6x6EVNEIl_N" role="4Ohb1">
+        <ref role="4Oh8G" node="1NieCjCxTRP" resolve="Voertuig" />
+        <ref role="3teO_M" node="6x6EVNEIlA0" resolve="v" />
+        <node concept="3mzBic" id="6x6EVNEIl_O" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1NieCjCxWVr" resolve="gewicht rekenkundig afgerond" />
+          <node concept="1EQTEq" id="6x6EVNEIl_P" role="3mzBi6">
+            <property role="3e6Tb2" value="1400" />
+            <node concept="PwxsY" id="6x6EVNEIl_Q" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIl_R" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3mzBic" id="6x6EVNEIl_S" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1NieCjCxYSZ" resolve="gewicht afgerond half richting nul" />
+          <node concept="1EQTEq" id="6x6EVNEIl_T" role="3mzBi6">
+            <property role="3e6Tb2" value="1400" />
+            <node concept="PwxsY" id="6x6EVNEIl_U" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIl_V" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3mzBic" id="6x6EVNEIl_W" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1NieCjCy0S8" resolve="gewicht afgerond via work around" />
+          <node concept="1EQTEq" id="6x6EVNEIl_X" role="3mzBi6">
+            <property role="3e6Tb2" value="1400" />
+            <node concept="PwxsY" id="6x6EVNEIl_Y" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIl_Z" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="6x6EVNEIlA0" role="4Ohaa">
+        <property role="TrG5h" value="v" />
+        <ref role="4OhPH" node="1NieCjCxTRP" resolve="Voertuig" />
+        <node concept="3_ceKt" id="6x6EVNEIlA1" role="4OhPJ">
+          <ref role="3_ceKs" node="1NieCjCxVau" resolve="gewicht" />
+          <node concept="1EQTEq" id="6x6EVNEIlA2" role="3_ceKu">
+            <property role="3e6Tb2" value="1440" />
+            <node concept="PwxsY" id="6x6EVNEIlA3" role="1jdwn1">
+              <node concept="Pwxi7" id="6x6EVNEIlA4" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
               </node>
@@ -599,7 +747,11 @@
             </node>
           </node>
         </node>
-        <node concept="2ljwA5" id="1NieCjCxP8n" role="1nvPAL" />
+        <node concept="2ljwA5" id="1NieCjCxP8n" role="1nvPAL">
+          <node concept="2ljiaL" id="34UQTGkw5BM" role="2ljwA6">
+            <property role="2ljiaO" value="2026" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1HSql3" id="1NieCjCyqpi" role="1HSqhF">
@@ -618,8 +770,8 @@
             <node concept="3aUx8u" id="1NieCjCyBEa" role="2bokzm">
               <node concept="29kKyO" id="1NieCjCyBQQ" role="2C$i6h">
                 <property role="35Sgwk" value="true" />
-                <property role="29kKyf" value="0" />
                 <property role="29kKyC" value="1xc7I8pR_fX/afgerond_half_richting_nul" />
+                <property role="29kKyf" value="0" />
                 <node concept="2E1DPt" id="1NieCjCyDq8" role="29kKy2">
                   <node concept="3IOlpp" id="1NieCjCyElq" role="2CAJk9">
                     <node concept="1EQTEq" id="1NieCjCyEuS" role="2C$i6l">
@@ -642,7 +794,11 @@
             </node>
           </node>
         </node>
-        <node concept="2ljwA5" id="1NieCjCy_yX" role="1nvPAL" />
+        <node concept="2ljwA5" id="1NieCjCy_yX" role="1nvPAL">
+          <node concept="2ljiaL" id="34UQTGkw60A" role="2ljwA6">
+            <property role="2ljiaO" value="2026" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1HSql3" id="1NieCjCyETc" role="1HSqhF">
@@ -662,8 +818,8 @@
               <node concept="3aUx8u" id="1NieCjCyJyQ" role="2CAJk9">
                 <node concept="29kKyO" id="1NieCjCyJJE" role="2C$i6h">
                   <property role="35Sgwk" value="true" />
-                  <property role="29kKyf" value="0" />
                   <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                  <property role="29kKyf" value="0" />
                   <node concept="2E1DPt" id="1NieCjCyM41" role="29kKy2">
                     <node concept="3IOlpp" id="1NieCjCyOnC" role="2CAJk9">
                       <node concept="1EQTEq" id="1NieCjCyOs4" role="2C$i6l">
@@ -700,7 +856,86 @@
             </node>
           </node>
         </node>
-        <node concept="2ljwA5" id="1NieCjCyETh" role="1nvPAL" />
+        <node concept="2ljwA5" id="1NieCjCyETh" role="1nvPAL">
+          <node concept="2ljiaL" id="34UQTGkw5qW" role="2ljwA6">
+            <property role="2ljiaO" value="2026" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3FGEBu" id="2vB8w$l2HH9" role="1HSqhF">
+      <node concept="1Pa9Pv" id="2vB8w$l2HHa" role="3FGEBv">
+        <node concept="1PaTwC" id="2vB8w$l2HHb" role="1PaQFQ">
+          <node concept="3oM_SD" id="2vB8w$l2HHc" role="1PaTwD">
+            <property role="3oM_SC" value="-----------------------nieuwe" />
+          </node>
+          <node concept="3oM_SD" id="2vB8w$l2HQK" role="1PaTwD">
+            <property role="3oM_SC" value="syntax----------------------" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="2vB8w$l2HQL" role="1HSqhF" />
+    <node concept="1HSql3" id="r02qGuD95E" role="1HSqhF">
+      <property role="TrG5h" value="Rekenkundig afronden op 100-tallen" />
+      <node concept="1wO7pt" id="r02qGuD95G" role="kiesI">
+        <node concept="2boe1W" id="r02qGuD95H" role="1wO7pp">
+          <node concept="2boe1X" id="r02qGuD9SP" role="1wO7i6">
+            <node concept="3_mHL5" id="r02qGuD9SU" role="2bokzF">
+              <node concept="c2t0s" id="r02qGuDacl" role="eaaoM">
+                <ref role="Qu8KH" node="6x6EVNEIpwD" resolve="gewicht rekenkundig afgerond  op 100 tallen " />
+              </node>
+              <node concept="3_kdyS" id="r02qGuDack" role="pQQuc">
+                <ref role="Qu8KH" node="1NieCjCxTRP" resolve="Voertuig" />
+              </node>
+            </node>
+            <node concept="29kKyO" id="r02qGuDaTD" role="2bokzm">
+              <property role="35Sgwk" value="true" />
+              <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+              <property role="29kKyf" value="-2" />
+              <node concept="3_mHL5" id="34UQTGkvHhB" role="29kKy2">
+                <node concept="c2t0s" id="34UQTGkvHnv" role="eaaoM">
+                  <ref role="Qu8KH" node="1NieCjCxVau" resolve="gewicht" />
+                </node>
+                <node concept="3yS1BT" id="34UQTGkvHnu" role="pQQuc">
+                  <ref role="3yS1Ki" node="r02qGuDack" resolve="Voertuig" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="r02qGuD95J" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1HSql3" id="6x6EVNEIuUw" role="1HSqhF">
+      <property role="TrG5h" value="Rekenkundig afronden op 1000-tallen" />
+      <node concept="1wO7pt" id="6x6EVNEIuUx" role="kiesI">
+        <node concept="2boe1W" id="6x6EVNEIuUy" role="1wO7pp">
+          <node concept="2boe1X" id="6x6EVNEIuUz" role="1wO7i6">
+            <node concept="3_mHL5" id="6x6EVNEIuU$" role="2bokzF">
+              <node concept="c2t0s" id="6x6EVNEIvto" role="eaaoM">
+                <ref role="Qu8KH" node="6x6EVNEIqvL" resolve="gewicht rekenkundig afgerond  op 1000 tallen " />
+              </node>
+              <node concept="3_kdyS" id="6x6EVNEIuUA" role="pQQuc">
+                <ref role="Qu8KH" node="1NieCjCxTRP" resolve="Voertuig" />
+              </node>
+            </node>
+            <node concept="29kKyO" id="2vB8w$l2G9v" role="2bokzm">
+              <property role="35Sgwk" value="true" />
+              <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+              <property role="29kKyf" value="-3" />
+              <node concept="3_mHL5" id="2vB8w$l2GaV" role="29kKy2">
+                <node concept="c2t0s" id="2vB8w$l2Gfu" role="eaaoM">
+                  <ref role="Qu8KH" node="1NieCjCxVau" resolve="gewicht" />
+                </node>
+                <node concept="3yS1BT" id="2vB8w$l2Gft" role="pQQuc">
+                  <ref role="3yS1Ki" node="6x6EVNEIuUA" resolve="Voertuig" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="6x6EVNEIuUK" role="1nvPAL" />
       </node>
     </node>
     <node concept="1uxNW$" id="1NieCjCyEWI" role="1HSqhF" />
@@ -736,6 +971,32 @@
           <property role="3GST$d" value="-1" />
           <node concept="PwxsY" id="1NieCjCxYqn" role="PyN7z">
             <node concept="Pwxi7" id="1NieCjCxYAg" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="6x6EVNEIpwD" role="2bv01j">
+        <property role="16Ztxt" value="true" />
+        <property role="TrG5h" value="gewicht rekenkundig afgerond  op 100 tallen " />
+        <node concept="1EDDeX" id="6x6EVNEIpFn" role="1EDDcc">
+          <property role="3GST$d" value="-1" />
+          <node concept="PwxsY" id="6x6EVNEIpFv" role="PyN7z">
+            <node concept="Pwxi7" id="6x6EVNEIpFG" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="6x6EVNEIqvL" role="2bv01j">
+        <property role="16Ztxt" value="true" />
+        <property role="TrG5h" value="gewicht rekenkundig afgerond  op 1000 tallen " />
+        <node concept="1EDDeX" id="6x6EVNEIqvM" role="1EDDcc">
+          <property role="3GST$d" value="-1" />
+          <node concept="PwxsY" id="6x6EVNEIqvN" role="PyN7z">
+            <node concept="Pwxi7" id="6x6EVNEIqvO" role="Pwxi2">
               <property role="Pwxi6" value="1" />
               <ref role="Pwxi0" node="1NieCjCxSWX" resolve="kg" />
             </node>
