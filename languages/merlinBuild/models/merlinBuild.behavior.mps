@@ -2813,40 +2813,12 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2o5GrWrndVP" role="jymVt" />
-    <node concept="2YIFZL" id="3r0zJz5WybE" role="jymVt">
-      <property role="TrG5h" value="jacksonDatabind" />
-      <node concept="3clFbS" id="3r0zJz5WybF" role="3clF47">
-        <node concept="3cpWs6" id="3r0zJz5WybG" role="3cqZAp">
-          <node concept="Xl_RD" id="3r0zJz5WybH" role="3cqZAk">
-            <property role="Xl_RC" value="2.21.5" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3r0zJz5WybI" role="1B3o_S" />
-      <node concept="17QB3L" id="3r0zJz5WybJ" role="3clF45" />
-      <node concept="P$JXv" id="3r0zJz5WQgB" role="lGtFl">
-        <node concept="TZ5HA" id="3r0zJz5WQgC" role="TZ5H$">
-          <node concept="1dT_AC" id="3r0zJz5WQgD" role="1dT_Ay">
-            <property role="1dT_AB" value="Jackson" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3r0zJz5WQhT" role="TZ5H$">
-          <node concept="1dT_AC" id="3r0zJz5WQhU" role="1dT_Ay">
-            <property role="1dT_AB" value="https://github.com/FasterXML/jackson-core" />
-          </node>
-        </node>
-        <node concept="x79VA" id="3r0zJz5WQgE" role="3nqlJM">
-          <property role="x79VB" value="Full version of jackson (major.minor.bugfix)" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="79aBNElQb1i" role="jymVt" />
     <node concept="2YIFZL" id="79aBNElQb1r" role="jymVt">
-      <property role="TrG5h" value="jacksonDataFormat" />
+      <property role="TrG5h" value="jacksonImplementation" />
       <node concept="3clFbS" id="79aBNElQb1s" role="3clF47">
         <node concept="3cpWs6" id="79aBNElQb1t" role="3cqZAp">
           <node concept="Xl_RD" id="79aBNElQb1u" role="3cqZAk">
-            <property role="Xl_RC" value="2.22.2" />
+            <property role="Xl_RC" value="2.22.3" />
           </node>
         </node>
       </node>
@@ -2855,12 +2827,12 @@
       <node concept="P$JXv" id="79aBNElQb1x" role="lGtFl">
         <node concept="TZ5HA" id="79aBNElQb1y" role="TZ5H$">
           <node concept="1dT_AC" id="79aBNElQb1z" role="1dT_Ay">
-            <property role="1dT_AB" value="Jackson dataformat" />
+            <property role="1dT_AB" value="Jackson" />
           </node>
         </node>
-        <node concept="TZ5HA" id="79aBNElQb1$" role="TZ5H$">
-          <node concept="1dT_AC" id="79aBNElQb1_" role="1dT_Ay">
-            <property role="1dT_AB" value="https://github.com/FasterXML/jackson-dataformat-xml" />
+        <node concept="TZ5HA" id="4KvrJCDBH5v" role="TZ5H$">
+          <node concept="1dT_AC" id="4KvrJCDBH5w" role="1dT_Ay">
+            <property role="1dT_AB" value="https://github.com/FasterXML/jackson-core" />
           </node>
         </node>
         <node concept="x79VA" id="79aBNElQb1A" role="3nqlJM">
@@ -2868,7 +2840,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="79aBNElQb1j" role="jymVt" />
     <node concept="2tJIrI" id="3r0zJz5WJss" role="jymVt" />
     <node concept="2YIFZL" id="3r0zJz5W$4c" role="jymVt">
       <property role="TrG5h" value="slf4jSimple" />

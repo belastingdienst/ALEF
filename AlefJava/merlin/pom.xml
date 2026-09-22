@@ -30,7 +30,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
-            <version>${jackson-dataformat-xml.version}</version>
+            <version>${jackson-implementation.version}</version>
         </dependency>
         <dependency>
             <groupId>nl.belastingdienst.brm.alef</groupId>

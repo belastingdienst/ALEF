@@ -1557,8 +1557,8 @@
                   <node concept="3zFVjK" id="3r0zJz5WGoU" role="3zH0cK">
                     <node concept="3clFbS" id="3r0zJz5WGoV" role="2VODD2">
                       <node concept="3clFbF" id="3r0zJz5WGoW" role="3cqZAp">
-                        <node concept="2YIFZM" id="3r0zJz5WGoX" role="3clFbG">
-                          <ref role="37wK5l" to="r5jx:3r0zJz5WybE" resolve="jacksonDatabind" />
+                        <node concept="2YIFZM" id="4KvrJCDBPtA" role="3clFbG">
+                          <ref role="37wK5l" to="r5jx:79aBNElQb1r" resolve="jacksonImplementation" />
                           <ref role="1Pybhc" to="r5jx:3r0zJz5Wxj3" resolve="DependencyVersions" />
                         </node>
                       </node>
@@ -1592,8 +1592,8 @@
                   <node concept="3zFVjK" id="3r0zJz5WGqa" role="3zH0cK">
                     <node concept="3clFbS" id="3r0zJz5WGqb" role="2VODD2">
                       <node concept="3clFbF" id="3r0zJz5WGqc" role="3cqZAp">
-                        <node concept="2YIFZM" id="3r0zJz5WGqd" role="3clFbG">
-                          <ref role="37wK5l" to="r5jx:3r0zJz5WybE" resolve="jacksonDatabind" />
+                        <node concept="2YIFZM" id="4KvrJCDBVni" role="3clFbG">
+                          <ref role="37wK5l" to="r5jx:79aBNElQb1r" resolve="jacksonImplementation" />
                           <ref role="1Pybhc" to="r5jx:3r0zJz5Wxj3" resolve="DependencyVersions" />
                         </node>
                       </node>
@@ -1627,8 +1627,8 @@
                   <node concept="3zFVjK" id="79aBNElOgkk" role="3zH0cK">
                     <node concept="3clFbS" id="79aBNElOgkl" role="2VODD2">
                       <node concept="3clFbF" id="79aBNElOgkm" role="3cqZAp">
-                        <node concept="2YIFZM" id="79aBNElQgNU" role="3clFbG">
-                          <ref role="37wK5l" to="r5jx:79aBNElQb1r" resolve="jacksonDataFormat" />
+                        <node concept="2YIFZM" id="4KvrJCDC1ya" role="3clFbG">
+                          <ref role="37wK5l" to="r5jx:79aBNElQb1r" resolve="jacksonImplementation" />
                           <ref role="1Pybhc" to="r5jx:3r0zJz5Wxj3" resolve="DependencyVersions" />
                         </node>
                       </node>
@@ -4464,8 +4464,8 @@
                   <node concept="3zFVjK" id="3r0zJz5Wzro" role="3zH0cK">
                     <node concept="3clFbS" id="3r0zJz5Wzrp" role="2VODD2">
                       <node concept="3clFbF" id="3r0zJz5WzxF" role="3cqZAp">
-                        <node concept="2YIFZM" id="3r0zJz5Wzyu" role="3clFbG">
-                          <ref role="37wK5l" to="r5jx:3r0zJz5WybE" resolve="jacksonDatabind" />
+                        <node concept="2YIFZM" id="4KvrJCDEvi2" role="3clFbG">
+                          <ref role="37wK5l" to="r5jx:79aBNElQb1r" resolve="jacksonImplementation" />
                           <ref role="1Pybhc" to="r5jx:3r0zJz5Wxj3" resolve="DependencyVersions" />
                         </node>
                       </node>
