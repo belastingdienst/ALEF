@@ -8,9 +8,9 @@
     <use id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -58,6 +58,9 @@
       </concept>
       <concept id="7459370737647652607" name="jetbrains.mps.lang.plugin.structure.ConceptsBlock" flags="in" index="1YUSNl" />
       <concept id="7459370737647652609" name="jetbrains.mps.lang.plugin.structure.CreateBlock" flags="in" index="1YUSOF" />
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -192,16 +195,10 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage">
       <concept id="6171083915388330090" name="jetbrains.mps.lang.slanguage.structure.AspectModelRefExpression" flags="ng" index="1qvjxa">
@@ -216,7 +213,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -413,9 +409,9 @@
             <node concept="X8dFx" id="4regIjEO9Hg" role="2OqNvi">
               <node concept="2OqwBi" id="74j1j8ZLTzf" role="25WWJ7">
                 <node concept="1beSmn" id="74j1j8ZLTzg" role="2Oq$k0" />
-                <node concept="2qgKlT" id="74j1j8ZLTzh" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$Lhp7g" role="2OqNvi">
                   <ref role="37wK5l" to="tpcn:4G9PD8$NvPM" resolve="findConceptAspects" />
-                  <node concept="37vLTw" id="74j1j8ZLTzi" role="37wK5m">
+                  <node concept="37vLTw" id="3yV49$Lhp7i" role="37wK5m">
                     <ref role="3cqZAo" node="74j1j8ZLTyW" resolve="aspectModel" />
                   </node>
                 </node>
@@ -625,7 +621,7 @@
                   <ref role="3cqZAo" node="7POWRVZMxfJ" resolve="baseNode" />
                 </node>
                 <node concept="2OqwBi" id="7POWRVZMxfY" role="37vLTx">
-                  <node concept="2qgKlT" id="7POWRVZMxg1" role="2OqNvi">
+                  <node concept="3zqWPK" id="3yV49$Lhp7j" role="2OqNvi">
                     <ref role="37wK5l" to="tpcn:2hxg_BDjKM8" resolve="getBaseConcept" />
                   </node>
                   <node concept="1PxgMI" id="7POWRVZMxfZ" role="2Oq$k0">
@@ -1441,9 +1437,57 @@
     </node>
     <node concept="3Tm1VV" id="7POWRVZMxfD" role="1B3o_S" />
     <node concept="3UR2Jj" id="5iECv1_d9KX" role="lGtFl">
-      <node concept="TZ5HA" id="5iECv1_d9KY" role="TZ5H$">
-        <node concept="1dT_AC" id="5iECv1_d9KZ" role="1dT_Ay">
-          <property role="1dT_AB" value="Verbatim (but renamed) copy of class jetbrains.mps.ide.devkit.actions.ConceptEditorOpenHelper from module jetbrains.mps.ide.mpsdevkit, to avoid compilation problems during standalone build." />
+      <node concept="1PaTwC" id="3yV49$Lht4j" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lht4k" role="1PaTwD">
+          <property role="3oM_SC" value="Verbatim" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4l" role="1PaTwD">
+          <property role="3oM_SC" value="(but" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4m" role="1PaTwD">
+          <property role="3oM_SC" value="renamed)" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4n" role="1PaTwD">
+          <property role="3oM_SC" value="copy" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4o" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4p" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4q" role="1PaTwD">
+          <property role="3oM_SC" value="jetbrains.mps.ide.devkit.actions.ConceptEditorOpenHelper" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4r" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4s" role="1PaTwD">
+          <property role="3oM_SC" value="module" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4t" role="1PaTwD">
+          <property role="3oM_SC" value="jetbrains.mps.ide.mpsdevkit," />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4u" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4v" role="1PaTwD">
+          <property role="3oM_SC" value="avoid" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4w" role="1PaTwD">
+          <property role="3oM_SC" value="compilation" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4x" role="1PaTwD">
+          <property role="3oM_SC" value="problems" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4y" role="1PaTwD">
+          <property role="3oM_SC" value="during" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4z" role="1PaTwD">
+          <property role="3oM_SC" value="standalone" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lht4$" role="1PaTwD">
+          <property role="3oM_SC" value="build." />
         </node>
       </node>
     </node>
