@@ -173,7 +173,7 @@
         <ref role="3teO_M" node="6x6EVNEIrcI" resolve="v" />
         <node concept="3mzBic" id="6x6EVNEIt3a" role="4Ohbj">
           <property role="V2jGk" value="-1" />
-          <ref role="10Xmnc" node="6x6EVNEIpwD" resolve="gewicht rekenkundig afgerond  op 100 tallen " />
+          <ref role="10Xmnc" node="6x6EVNEIpwD" resolve="gewicht rekenkundig afgerond  op hondredtallen " />
           <node concept="1EQTEq" id="6x6EVNEIt3m" role="3mzBi6">
             <property role="3e6Tb2" value="1500" />
             <node concept="PwxsY" id="6x6EVNEItuM" role="1jdwn1">
@@ -209,7 +209,7 @@
         <ref role="3teO_M" node="6x6EVNEIum8" resolve="v" />
         <node concept="3mzBic" id="6x6EVNEIum4" role="4Ohbj">
           <property role="V2jGk" value="-1" />
-          <ref role="10Xmnc" node="6x6EVNEIqvL" resolve="gewicht rekenkundig afgerond  op 1000 tallen " />
+          <ref role="10Xmnc" node="6x6EVNEIqvL" resolve="gewicht rekenkundig afgerond  op duizendtallen " />
           <node concept="1EQTEq" id="6x6EVNEIum5" role="3mzBi6">
             <property role="3e6Tb2" value="1000" />
             <node concept="PwxsY" id="6x6EVNEIum6" role="1jdwn1">
@@ -707,53 +707,6 @@
   </node>
   <node concept="2bQVlO" id="1NieCjCxE2R">
     <property role="TrG5h" value="RegelsALEFS730" />
-    <node concept="1HSql3" id="1NieCjCxP8i" role="1HSqhF">
-      <property role="TrG5h" value="Afronden op 100" />
-      <node concept="1wO7pt" id="1NieCjCxP8k" role="kiesI">
-        <node concept="2boe1W" id="1NieCjCxP8l" role="1wO7pp">
-          <node concept="2boe1X" id="1NieCjCy7GF" role="1wO7i6">
-            <node concept="3_mHL5" id="1NieCjCy7GK" role="2bokzF">
-              <node concept="c2t0s" id="1NieCjCy8BM" role="eaaoM">
-                <ref role="Qu8KH" node="1NieCjCxWVr" resolve="gewicht rekenkundig afgerond" />
-              </node>
-              <node concept="3_kdyS" id="1NieCjCy8BL" role="pQQuc">
-                <ref role="Qu8KH" node="1NieCjCxTRP" resolve="Voertuig" />
-              </node>
-            </node>
-            <node concept="3aUx8u" id="1NieCjCygFL" role="2bokzm">
-              <node concept="29kKyO" id="1NieCjCykTk" role="2C$i6h">
-                <property role="35Sgwk" value="true" />
-                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
-                <property role="29kKyf" value="0" />
-                <node concept="2E1DPt" id="1NieCjCylc6" role="29kKy2">
-                  <node concept="3IOlpp" id="1NieCjCymzs" role="2CAJk9">
-                    <node concept="1EQTEq" id="1NieCjCyn9B" role="2C$i6l">
-                      <property role="3e6Tb2" value="100" />
-                    </node>
-                    <node concept="3_mHL5" id="1NieCjCylEw" role="2C$i6h">
-                      <node concept="c2t0s" id="1NieCjCylV9" role="eaaoM">
-                        <ref role="Qu8KH" node="1NieCjCxVau" resolve="gewicht" />
-                      </node>
-                      <node concept="3yS1BT" id="1NieCjCylV8" role="pQQuc">
-                        <ref role="3yS1Ki" node="1NieCjCy8BL" resolve="Voertuig" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1EQTEq" id="1NieCjCyoe6" role="2C$i6l">
-                <property role="3e6Tb2" value="100" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2ljwA5" id="1NieCjCxP8n" role="1nvPAL">
-          <node concept="2ljiaL" id="34UQTGkw5BM" role="2ljwA6">
-            <property role="2ljiaO" value="2026" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1HSql3" id="1NieCjCyqpi" role="1HSqhF">
       <property role="TrG5h" value="Afronden op 100 half richting nul (0,5 -&gt; 0, 0,51 -&gt; 1)" />
       <node concept="1wO7pt" id="1NieCjCy_yU" role="kiesI">
@@ -863,27 +816,527 @@
         </node>
       </node>
     </node>
-    <node concept="3FGEBu" id="2vB8w$l2HH9" role="1HSqhF">
-      <node concept="1Pa9Pv" id="2vB8w$l2HHa" role="3FGEBv">
-        <node concept="1PaTwC" id="2vB8w$l2HHb" role="1PaQFQ">
-          <node concept="3oM_SD" id="2vB8w$l2HHc" role="1PaTwD">
-            <property role="3oM_SC" value="-----------------------nieuwe" />
+    <node concept="1uxNW$" id="FblgSz5Fyc" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz7INS" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz7INT" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz7INU" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz7IYL" role="1PaTwD">
+            <property role="3oM_SC" value="GH" />
           </node>
-          <node concept="3oM_SD" id="2vB8w$l2HQK" role="1PaTwD">
-            <property role="3oM_SC" value="syntax----------------------" />
+          <node concept="3oM_SD" id="FblgSz7Jf$" role="1PaTwD">
+            <property role="3oM_SC" value="issue" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7Jmf" role="1PaTwD">
+            <property role="3oM_SC" value="112" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7Jn_" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz8Drq" role="1PaTwD">
+            <property role="3oM_SC" value="ALEFS-730" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz8DsK" role="1PaTwD">
+            <property role="3oM_SC" value="story" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz7Jbz" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz7Jby" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz7Jd$" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz7Jdz" role="1PaTwD">
+            <property role="3oM_SC" value="Om" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYM" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYN" role="1PaTwD">
+            <property role="3oM_SC" value="afronding" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYO" role="1PaTwD">
+            <property role="3oM_SC" value="uit" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYP" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYQ" role="1PaTwD">
+            <property role="3oM_SC" value="wetsartikel" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYR" role="1PaTwD">
+            <property role="3oM_SC" value="makkelijker" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYS" role="1PaTwD">
+            <property role="3oM_SC" value="uit" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYT" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYU" role="1PaTwD">
+            <property role="3oM_SC" value="kunnen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYV" role="1PaTwD">
+            <property role="3oM_SC" value="voeren," />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYW" role="1PaTwD">
+            <property role="3oM_SC" value="zou" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYX" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYY" role="1PaTwD">
+            <property role="3oM_SC" value="prettig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IYZ" role="1PaTwD">
+            <property role="3oM_SC" value="zijn" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ0" role="1PaTwD">
+            <property role="3oM_SC" value="om" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ1" role="1PaTwD">
+            <property role="3oM_SC" value="direct" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ2" role="1PaTwD">
+            <property role="3oM_SC" value="af" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ3" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ4" role="1PaTwD">
+            <property role="3oM_SC" value="kunnen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ5" role="1PaTwD">
+            <property role="3oM_SC" value="ronden" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ6" role="1PaTwD">
+            <property role="3oM_SC" value="op" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ7" role="1PaTwD">
+            <property role="3oM_SC" value="100tallen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ8" role="1PaTwD">
+            <property role="3oM_SC" value="en" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZ9" role="1PaTwD">
+            <property role="3oM_SC" value="1000tallen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZa" role="1PaTwD">
+            <property role="3oM_SC" value="i.p.v." />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZb" role="1PaTwD">
+            <property role="3oM_SC" value="eerst" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZc" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZd" role="1PaTwD">
+            <property role="3oM_SC" value="moeten" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZe" role="1PaTwD">
+            <property role="3oM_SC" value="delen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZf" role="1PaTwD">
+            <property role="3oM_SC" value="door" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZg" role="1PaTwD">
+            <property role="3oM_SC" value="100(0)," />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZh" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZi" role="1PaTwD">
+            <property role="3oM_SC" value="afronden," />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZj" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZk" role="1PaTwD">
+            <property role="3oM_SC" value="weer" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZl" role="1PaTwD">
+            <property role="3oM_SC" value="vermenigvuldigen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZm" role="1PaTwD">
+            <property role="3oM_SC" value="met" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7IZn" role="1PaTwD">
+            <property role="3oM_SC" value="100(0)." />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1uxNW$" id="2vB8w$l2HQL" role="1HSqhF" />
+    <node concept="1uxNW$" id="FblgSz7ID3" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz5EW6" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz5EW7" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz5GPq" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5Zh2" role="1PaTwD">
+            <property role="3oM_SC" value="(rekenkundig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5X3T" role="1PaTwD">
+            <property role="3oM_SC" value="afronden" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Fnn" role="1PaTwD">
+            <property role="3oM_SC" value="(waarde" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5F63" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5F65" role="1PaTwD">
+            <property role="3oM_SC" value="100))" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Fu2" role="1PaTwD">
+            <property role="3oM_SC" value="*" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7TAq" role="1PaTwD">
+            <property role="3oM_SC" value="100" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3FGEBu" id="FblgSz7TRT" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz7TRU" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz7TRV" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz7U3A" role="1PaTwD">
+            <property role="3oM_SC" value="4" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7UUH" role="1PaTwD">
+            <property role="3oM_SC" value="expressies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz5J2N" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz5Ey2" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz5Ey3" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz5Ey4" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5YG1" role="1PaTwD">
+            <property role="3oM_SC" value="-----------------------------" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5YbF" role="1PaTwD">
+            <property role="3oM_SC" value="Huidige" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5EFZ" role="1PaTwD">
+            <property role="3oM_SC" value="syntax" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Yml" role="1PaTwD">
+            <property role="3oM_SC" value="--------------------------" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz5YKb" role="1HSqhF" />
+    <node concept="1HSql3" id="1NieCjCxP8i" role="1HSqhF">
+      <property role="TrG5h" value="Afronden op 100 (hondredtallen)" />
+      <node concept="1wO7pt" id="1NieCjCxP8k" role="kiesI">
+        <node concept="2boe1W" id="1NieCjCxP8l" role="1wO7pp">
+          <node concept="2boe1X" id="1NieCjCy7GF" role="1wO7i6">
+            <node concept="3_mHL5" id="1NieCjCy7GK" role="2bokzF">
+              <node concept="c2t0s" id="1NieCjCy8BM" role="eaaoM">
+                <ref role="Qu8KH" node="1NieCjCxWVr" resolve="gewicht rekenkundig afgerond" />
+              </node>
+              <node concept="3_kdyS" id="1NieCjCy8BL" role="pQQuc">
+                <ref role="Qu8KH" node="1NieCjCxTRP" resolve="Voertuig" />
+              </node>
+            </node>
+            <node concept="3aUx8u" id="1NieCjCygFL" role="2bokzm">
+              <node concept="29kKyO" id="1NieCjCykTk" role="2C$i6h">
+                <property role="35Sgwk" value="true" />
+                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                <property role="29kKyf" value="0" />
+                <node concept="2E1DPt" id="1NieCjCylc6" role="29kKy2">
+                  <node concept="3IOlpp" id="1NieCjCymzs" role="2CAJk9">
+                    <node concept="1EQTEq" id="1NieCjCyn9B" role="2C$i6l">
+                      <property role="3e6Tb2" value="100" />
+                    </node>
+                    <node concept="3_mHL5" id="1NieCjCylEw" role="2C$i6h">
+                      <node concept="c2t0s" id="1NieCjCylV9" role="eaaoM">
+                        <ref role="Qu8KH" node="1NieCjCxVau" resolve="gewicht" />
+                      </node>
+                      <node concept="3yS1BT" id="1NieCjCylV8" role="pQQuc">
+                        <ref role="3yS1Ki" node="1NieCjCy8BL" resolve="Voertuig" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1EQTEq" id="1NieCjCyoe6" role="2C$i6l">
+                <property role="3e6Tb2" value="100" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="1NieCjCxP8n" role="1nvPAL">
+          <node concept="2ljiaL" id="34UQTGkw5BM" role="2ljwA6">
+            <property role="2ljiaO" value="2026" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3FGEBu" id="FblgSz5WbB" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz5WbC" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz5WbD" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5WbE" role="1PaTwD">
+            <property role="3oM_SC" value="rekenkundig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Xpb" role="1PaTwD">
+            <property role="3oM_SC" value="afronden" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Xqy" role="1PaTwD">
+            <property role="3oM_SC" value="...." />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5WCv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3FGEBu" id="FblgSz7UrK" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz7UrL" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz7UrM" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz7UrN" role="1PaTwD">
+            <property role="3oM_SC" value="1" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7US1" role="1PaTwD">
+            <property role="3oM_SC" value="expressie" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz5VPb" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz5yku" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz5ykv" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz5zpp" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5Dh8" role="1PaTwD">
+            <property role="3oM_SC" value="x" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7S7Y" role="1PaTwD">
+            <property role="3oM_SC" value="decimalen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Dh9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz5Dhb" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5Dhc" role="1PaTwD">
+            <property role="3oM_SC" value="tientallen" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz5Dhd" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5Dhe" role="1PaTwD">
+            <property role="3oM_SC" value="hondredtallen" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz5Dhf" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5Dhg" role="1PaTwD">
+            <property role="3oM_SC" value="duizendtallen" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz5Dhh" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5Dhi" role="1PaTwD">
+            <property role="3oM_SC" value="miljoenen" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSza2$$" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSza2$z" role="1PaTwD">
+            <property role="3oM_SC" value="...." />
+          </node>
+          <node concept="3oM_SD" id="FblgSza2Jh" role="1PaTwD">
+            <property role="3oM_SC" value="tallen" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz5BY0" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz5LKh" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz5LKi" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz5LKj" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5LKk" role="1PaTwD">
+            <property role="3oM_SC" value="-----------------------------" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5XS9" role="1PaTwD">
+            <property role="3oM_SC" value="Nieuwe" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5MCb" role="1PaTwD">
+            <property role="3oM_SC" value="syntax" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5XUP" role="1PaTwD">
+            <property role="3oM_SC" value="---------------------------" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz7G7C" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz5O9$" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz5O9_" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz5O9A" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5O9B" role="1PaTwD">
+            <property role="3oM_SC" value="Het" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OCE" role="1PaTwD">
+            <property role="3oM_SC" value="gewicht" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OCF" role="1PaTwD">
+            <property role="3oM_SC" value="rekenkundig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OFm" role="1PaTwD">
+            <property role="3oM_SC" value="afgerond" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Sj1" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OJn" role="1PaTwD">
+            <property role="3oM_SC" value="een" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OJo" role="1PaTwD">
+            <property role="3oM_SC" value="Voertuig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OM3" role="1PaTwD">
+            <property role="3oM_SC" value="moet" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5ONp" role="1PaTwD">
+            <property role="3oM_SC" value="gesteld" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OOJ" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OOK" role="1PaTwD">
+            <property role="3oM_SC" value="op" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OQ6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz5PZI" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz5PZH" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OU8" role="1PaTwD">
+            <property role="3oM_SC" value="gewicht" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OWN" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OY9" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Q2X" role="1PaTwD">
+            <property role="3oM_SC" value="Voertuig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Q5C" role="1PaTwD">
+            <property role="3oM_SC" value="rekenkundig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Q9C" role="1PaTwD">
+            <property role="3oM_SC" value="afgerond" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5QaY" role="1PaTwD">
+            <property role="3oM_SC" value="op" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5Qck" role="1PaTwD">
+            <property role="3oM_SC" value="hondredtallen." />
+          </node>
+          <node concept="3oM_SD" id="FblgSz5OZv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz5QM3" role="1HSqhF" />
+    <node concept="3FGEBu" id="FblgSz60rv" role="1HSqhF">
+      <node concept="1Pa9Pv" id="FblgSz60rw" role="3FGEBv">
+        <node concept="1PaTwC" id="FblgSz60rx" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz9L2f" role="1PaTwD">
+            <property role="3oM_SC" value="Geen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2g" role="1PaTwD">
+            <property role="3oM_SC" value="aanpassingen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2h" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2i" role="1PaTwD">
+            <property role="3oM_SC" value="nodig" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2j" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2k" role="1PaTwD">
+            <property role="3oM_SC" value="interpreter" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2l" role="1PaTwD">
+            <property role="3oM_SC" value="en" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L2m" role="1PaTwD">
+            <property role="3oM_SC" value="generator," />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9L52" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz9Lio" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz9Lin" role="1PaTwD">
+            <property role="3oM_SC" value="huidige" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7XVC" role="1PaTwD">
+            <property role="3oM_SC" value="onderliggende" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7DDn" role="1PaTwD">
+            <property role="3oM_SC" value="Java-methode" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7E7q" role="1PaTwD">
+            <property role="3oM_SC" value="wordt" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7E7r" role="1PaTwD">
+            <property role="3oM_SC" value="aangeroept" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7Ei6" role="1PaTwD">
+            <property role="3oM_SC" value="met" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz7Ejs" role="1PaTwD">
+            <property role="3oM_SC" value="verschillende" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9Len" role="1PaTwD">
+            <property role="3oM_SC" value="argumenten." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz9Llv" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz9Llu" role="1PaTwD">
+            <property role="3oM_SC" value="hondredtallen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9Lwv" role="1PaTwD">
+            <property role="3oM_SC" value="=&gt;" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9Lr9" role="1PaTwD">
+            <property role="3oM_SC" value="-2" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9Lsv" role="1PaTwD">
+            <property role="3oM_SC" value="decimalen" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="FblgSz9L$w" role="1PaQFQ">
+          <node concept="3oM_SD" id="FblgSz9L$v" role="1PaTwD">
+            <property role="3oM_SC" value="duizendtallen" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9LBl" role="1PaTwD">
+            <property role="3oM_SC" value="=&gt;" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9LCG" role="1PaTwD">
+            <property role="3oM_SC" value="-3" />
+          </node>
+          <node concept="3oM_SD" id="FblgSz9LE2" role="1PaTwD">
+            <property role="3oM_SC" value="decimalen" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="FblgSz60VH" role="1HSqhF" />
     <node concept="1HSql3" id="r02qGuD95E" role="1HSqhF">
-      <property role="TrG5h" value="Rekenkundig afronden op 100-tallen" />
+      <property role="TrG5h" value="Rekenkundig afronden op hondredtallen" />
       <node concept="1wO7pt" id="r02qGuD95G" role="kiesI">
         <node concept="2boe1W" id="r02qGuD95H" role="1wO7pp">
           <node concept="2boe1X" id="r02qGuD9SP" role="1wO7i6">
             <node concept="3_mHL5" id="r02qGuD9SU" role="2bokzF">
               <node concept="c2t0s" id="r02qGuDacl" role="eaaoM">
-                <ref role="Qu8KH" node="6x6EVNEIpwD" resolve="gewicht rekenkundig afgerond  op 100 tallen " />
+                <ref role="Qu8KH" node="6x6EVNEIpwD" resolve="gewicht rekenkundig afgerond  op hondredtallen " />
               </node>
               <node concept="3_kdyS" id="r02qGuDack" role="pQQuc">
                 <ref role="Qu8KH" node="1NieCjCxTRP" resolve="Voertuig" />
@@ -908,13 +1361,13 @@
       </node>
     </node>
     <node concept="1HSql3" id="6x6EVNEIuUw" role="1HSqhF">
-      <property role="TrG5h" value="Rekenkundig afronden op 1000-tallen" />
+      <property role="TrG5h" value="Rekenkundig afronden op duizendtallen" />
       <node concept="1wO7pt" id="6x6EVNEIuUx" role="kiesI">
         <node concept="2boe1W" id="6x6EVNEIuUy" role="1wO7pp">
           <node concept="2boe1X" id="6x6EVNEIuUz" role="1wO7i6">
             <node concept="3_mHL5" id="6x6EVNEIuU$" role="2bokzF">
               <node concept="c2t0s" id="6x6EVNEIvto" role="eaaoM">
-                <ref role="Qu8KH" node="6x6EVNEIqvL" resolve="gewicht rekenkundig afgerond  op 1000 tallen " />
+                <ref role="Qu8KH" node="6x6EVNEIqvL" resolve="gewicht rekenkundig afgerond  op duizendtallen " />
               </node>
               <node concept="3_kdyS" id="6x6EVNEIuUA" role="pQQuc">
                 <ref role="Qu8KH" node="1NieCjCxTRP" resolve="Voertuig" />
@@ -979,7 +1432,7 @@
       </node>
       <node concept="2bv6ZS" id="6x6EVNEIpwD" role="2bv01j">
         <property role="16Ztxt" value="true" />
-        <property role="TrG5h" value="gewicht rekenkundig afgerond  op 100 tallen " />
+        <property role="TrG5h" value="gewicht rekenkundig afgerond  op hondredtallen " />
         <node concept="1EDDeX" id="6x6EVNEIpFn" role="1EDDcc">
           <property role="3GST$d" value="-1" />
           <node concept="PwxsY" id="6x6EVNEIpFv" role="PyN7z">
@@ -992,7 +1445,7 @@
       </node>
       <node concept="2bv6ZS" id="6x6EVNEIqvL" role="2bv01j">
         <property role="16Ztxt" value="true" />
-        <property role="TrG5h" value="gewicht rekenkundig afgerond  op 1000 tallen " />
+        <property role="TrG5h" value="gewicht rekenkundig afgerond  op duizendtallen " />
         <node concept="1EDDeX" id="6x6EVNEIqvM" role="1EDDcc">
           <property role="3GST$d" value="-1" />
           <node concept="PwxsY" id="6x6EVNEIqvN" role="PyN7z">
