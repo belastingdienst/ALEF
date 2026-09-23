@@ -858,14 +858,19 @@
                             <node concept="2YIFZM" id="5gex7HYyJyq" role="37vLTx">
                               <ref role="37wK5l" to="3fkn:~FileChooser.chooseFile(com.intellij.openapi.fileChooser.FileChooserDescriptor,com.intellij.openapi.project.Project,com.intellij.openapi.vfs.VirtualFile)" resolve="chooseFile" />
                               <ref role="1Pybhc" to="3fkn:~FileChooser" resolve="FileChooser" />
-                              <node concept="2YIFZM" id="5gex7HYyJyt" role="37wK5m">
-                                <ref role="37wK5l" to="3fkn:~FileChooserDescriptorFactory.createSingleFileDescriptor(java.lang.String)" resolve="createSingleFileDescriptor" />
-                                <ref role="1Pybhc" to="3fkn:~FileChooserDescriptorFactory" resolve="FileChooserDescriptorFactory" />
-                                <node concept="2OqwBi" id="5gex7HYyJyu" role="37wK5m">
-                                  <node concept="2WthIp" id="5gex7HYyJyv" role="2Oq$k0" />
-                                  <node concept="2BZ7hE" id="5gex7HYyJyw" role="2OqNvi">
-                                    <ref role="2WH_rO" node="4Pr_19Kr4gb" resolve="baseDescription" />
+                              <node concept="2OqwBi" id="69x65VHZdz_" role="37wK5m">
+                                <node concept="2YIFZM" id="5gex7HYyJyt" role="2Oq$k0">
+                                  <ref role="37wK5l" to="3fkn:~FileChooserDescriptorFactory.createSingleFileDescriptor(java.lang.String)" resolve="createSingleFileDescriptor" />
+                                  <ref role="1Pybhc" to="3fkn:~FileChooserDescriptorFactory" resolve="FileChooserDescriptorFactory" />
+                                  <node concept="2OqwBi" id="5gex7HYyJyu" role="37wK5m">
+                                    <node concept="2WthIp" id="5gex7HYyJyv" role="2Oq$k0" />
+                                    <node concept="2BZ7hE" id="5gex7HYyJyw" role="2OqNvi">
+                                      <ref role="2WH_rO" node="4Pr_19Kr4gb" resolve="baseDescription" />
+                                    </node>
                                   </node>
+                                </node>
+                                <node concept="liA8E" id="69x65VHZegG" role="2OqNvi">
+                                  <ref role="37wK5l" to="3fkn:~FileChooserDescriptor.withoutExtensionFilter()" resolve="withoutExtensionFilter" />
                                 </node>
                               </node>
                               <node concept="2YIFZM" id="5gex7HYyJyB" role="37wK5m">
