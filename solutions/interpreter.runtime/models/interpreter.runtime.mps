@@ -9369,36 +9369,24 @@
             </node>
             <node concept="3clFbJ" id="5u3omT4jDwA" role="3cqZAp">
               <node concept="3clFbS" id="5u3omT4jDwC" role="3clFbx">
-                <node concept="3clFbJ" id="1Of8kFW2BYJ" role="3cqZAp">
-                  <node concept="2OqwBi" id="3zW3CFQxP_G" role="3clFbw">
-                    <node concept="37vLTw" id="3zW3CFQxP_H" role="2Oq$k0">
+                <node concept="3clFbF" id="I0uujYICIB" role="3cqZAp">
+                  <node concept="2OqwBi" id="I0uujYIDEK" role="3clFbG">
+                    <node concept="37vLTw" id="5u3omT4jCDq" role="2Oq$k0">
                       <ref role="3cqZAo" node="5u3omT4jCDk" resolve="modelAccess" />
                     </node>
-                    <node concept="liA8E" id="3zW3CFQxP_I" role="2OqNvi">
-                      <ref role="37wK5l" to="lui2:~ModelAccess.isCommandAction()" resolve="isCommandAction" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="3zW3CFQt3OC" role="3clFbx">
-                    <node concept="3clFbF" id="I0uujYICIB" role="3cqZAp">
-                      <node concept="2OqwBi" id="I0uujYIDEK" role="3clFbG">
-                        <node concept="37vLTw" id="5u3omT4jCDq" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5u3omT4jCDk" resolve="modelAccess" />
-                        </node>
-                        <node concept="liA8E" id="I0uujYIE48" role="2OqNvi">
-                          <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
-                          <node concept="1bVj0M" id="I0uujYIE9U" role="37wK5m">
-                            <node concept="3clFbS" id="I0uujYIE9V" role="1bW5cS">
-                              <node concept="3clFbF" id="16a3Qt5eOeB" role="3cqZAp">
-                                <node concept="2OqwBi" id="16a3Qt5eOeC" role="3clFbG">
-                                  <node concept="37vLTw" id="16a3Qt5eOeD" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="16a3Qt5ew5I" resolve="tmpModel" />
-                                  </node>
-                                  <node concept="liA8E" id="16a3Qt5eOeE" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
-                                    <node concept="37vLTw" id="6nechdRvKsJ" role="37wK5m">
-                                      <ref role="3cqZAo" node="6nechdRvHKO" resolve="node" />
-                                    </node>
-                                  </node>
+                    <node concept="liA8E" id="I0uujYIE48" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
+                      <node concept="1bVj0M" id="I0uujYIE9U" role="37wK5m">
+                        <node concept="3clFbS" id="I0uujYIE9V" role="1bW5cS">
+                          <node concept="3clFbF" id="16a3Qt5eOeB" role="3cqZAp">
+                            <node concept="2OqwBi" id="16a3Qt5eOeC" role="3clFbG">
+                              <node concept="37vLTw" id="16a3Qt5eOeD" role="2Oq$k0">
+                                <ref role="3cqZAo" node="16a3Qt5ew5I" resolve="tmpModel" />
+                              </node>
+                              <node concept="liA8E" id="16a3Qt5eOeE" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode)" resolve="addRootNode" />
+                                <node concept="37vLTw" id="6nechdRvKsJ" role="37wK5m">
+                                  <ref role="3cqZAo" node="6nechdRvHKO" resolve="node" />
                                 </node>
                               </node>
                             </node>
