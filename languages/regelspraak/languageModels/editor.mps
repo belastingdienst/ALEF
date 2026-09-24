@@ -4137,51 +4137,6 @@
         </node>
         <node concept="3F0A7n" id="15d$3Ctswhe" role="3EZMnx">
           <ref role="1NtTu8" to="m234:15d$3Ctr5yv" resolve="tientallen" />
-          <node concept="pkWqt" id="15d$3D6hCe8" role="pqm2j">
-            <node concept="3clFbS" id="15d$3D6hCe9" role="2VODD2">
-              <node concept="3clFbF" id="15d$3D6hCt3" role="3cqZAp">
-                <node concept="3eOVzh" id="15d$3D6hH37" role="3clFbG">
-                  <node concept="3cmrfG" id="15d$3D6hHbY" role="3uHU7w">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                  <node concept="2OqwBi" id="15d$3D6hCNn" role="3uHU7B">
-                    <node concept="pncrf" id="15d$3D6hCt2" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="15d$3D6hDLo" role="2OqNvi">
-                      <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1QoScp" id="15d$3D6hB94" role="3EZMnx">
-          <property role="1QpmdY" value="true" />
-          <node concept="3F0ifn" id="15d$3D6hB95" role="1QoS34">
-            <property role="3F0ifm" value="decimaal" />
-            <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-          </node>
-          <node concept="pkWqt" id="15d$3D6hB96" role="3e4ffs">
-            <node concept="3clFbS" id="15d$3D6hB97" role="2VODD2">
-              <node concept="3clFbF" id="15d$3D6hB98" role="3cqZAp">
-                <node concept="3clFbC" id="15d$3D6hB99" role="3clFbG">
-                  <node concept="3cmrfG" id="15d$3D6hB9a" role="3uHU7w">
-                    <property role="3cmrfH" value="1" />
-                  </node>
-                  <node concept="2OqwBi" id="15d$3D6hB9b" role="3uHU7B">
-                    <node concept="pncrf" id="15d$3D6hB9c" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="15d$3D6hB9d" role="2OqNvi">
-                      <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3F0ifn" id="15d$3D6hB9e" role="1QoVPY">
-            <property role="3F0ifm" value="decimalen" />
-            <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-          </node>
         </node>
       </node>
     </node>
