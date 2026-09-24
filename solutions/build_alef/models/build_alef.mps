@@ -10901,6 +10901,11 @@
             <ref role="3bR37D" to="90a9:2Xjt3l57bIA" resolve="de.itemis.mps.editor.math.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2gqjJO44OHa" role="3bR37C">
+          <node concept="3bR9La" id="2gqjJO44OHb" role="1SiIV1">
+            <ref role="3bR37D" node="4_O251liq0W" resolve="gegevensspraak.tijd" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4wvGeDpkGS5" role="2G$12L">
         <property role="TrG5h" value="regelspraak" />

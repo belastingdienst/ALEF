@@ -2100,5 +2100,30 @@
     <property role="TrG5h" value="FractioneleSecondeType" />
     <property role="FLfZY" value="([0-9]{1,9})?" />
   </node>
+  <node concept="25R3W" id="xwHwt_YgV2">
+    <property role="3F6X1D" value="603682492959493826" />
+    <property role="3GE5qa" value="eenheden" />
+    <property role="TrG5h" value="TijdseenheidEnum" />
+    <node concept="25R33" id="xwHwt_YgV3" role="25R1y">
+      <property role="3tVfz5" value="603682492959493827" />
+      <property role="TrG5h" value="dag" />
+    </node>
+    <node concept="25R33" id="6CsHGVpTvcM" role="25R1y">
+      <property role="3tVfz5" value="7646187266903503666" />
+      <property role="TrG5h" value="week" />
+    </node>
+    <node concept="25R33" id="xwHwt_YgV4" role="25R1y">
+      <property role="3tVfz5" value="603682492959493828" />
+      <property role="TrG5h" value="maand" />
+    </node>
+    <node concept="25R33" id="3SYd9_w$ODf" role="25R1y">
+      <property role="3tVfz5" value="4485080112262498895" />
+      <property role="TrG5h" value="kwartaal" />
+    </node>
+    <node concept="25R33" id="xwHwt_YgV7" role="25R1y">
+      <property role="3tVfz5" value="603682492959493831" />
+      <property role="TrG5h" value="jaar" />
+    </node>
+  </node>
 </model>
 

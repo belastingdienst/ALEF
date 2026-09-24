@@ -20538,6 +20538,145 @@
         <ref role="2sp9C9" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
       </node>
     </node>
+    <node concept="2tJIrI" id="XApyzgi4de" role="jymVt" />
+    <node concept="2YIFZL" id="XApyzggY68" role="jymVt">
+      <property role="TrG5h" value="toTimeGranularityEnum" />
+      <node concept="3clFbS" id="XApyzggY69" role="3clF47">
+        <node concept="3clFbF" id="XApyzggY6a" role="3cqZAp">
+          <node concept="3X5UdL" id="XApyzggY6b" role="3clFbG">
+            <node concept="37vLTw" id="XApyzggY6c" role="3X5Ude">
+              <ref role="3cqZAo" node="XApyzggY7e" resolve="gran" />
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6d" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6e" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUo" resolve="JAAR" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6f" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzgh6z0" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.YEAR" resolve="YEAR" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6j" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6k" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUp" resolve="KWARTAAL" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6l" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghb5w" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.QUARTER" resolve="QUARTER" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6p" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6q" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUq" resolve="MAAND" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6r" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghkAt" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.MONTH" resolve="MONTH" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6v" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6w" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUr" resolve="WEEK" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6x" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghr5E" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.WEEK" resolve="WEEK" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6_" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6A" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUs" resolve="DAG" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6B" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghxdI" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.DAY" resolve="DAY" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6F" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6G" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUt" resolve="UUR" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6H" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzgh_6d" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.HOUR" resolve="HOUR" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6L" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6M" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUu" resolve="MINUUT" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6N" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghGF2" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.MINUTE" resolve="MINUTE" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6R" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6S" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUv" resolve="SECONDE" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6T" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghKEF" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.SECOND" resolve="SECOND" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY6X" role="3X5gkp">
+              <node concept="21nZrQ" id="XApyzggY6Y" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUw" resolve="MILLISECONDE" />
+              </node>
+              <node concept="3X5gDF" id="XApyzggY6Z" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghTmu" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.MILLI_SECOND" resolve="MILLI_SECOND" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="XApyzggY73" role="3X5gkp">
+              <node concept="3X5gDF" id="XApyzggY74" role="3X5gFO">
+                <node concept="Rm8GO" id="XApyzghXmj" role="3X5gDC">
+                  <ref role="Rm8GQ" to="2vij:~TimeGranularity.POINT_IN_TIME" resolve="POINT_IN_TIME" />
+                  <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+                </node>
+              </node>
+              <node concept="21nZrQ" id="XApyzggY78" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
+              </node>
+            </node>
+            <node concept="3X5gDF" id="XApyzggY79" role="3XxORw">
+              <node concept="Rm8GO" id="XApyzgi2O6" role="3X5gDC">
+                <ref role="Rm8GQ" to="2vij:~TimeGranularity.DAY" resolve="DAY" />
+                <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="XApyzggY7d" role="1B3o_S" />
+      <node concept="37vLTG" id="XApyzggY7e" role="3clF46">
+        <property role="TrG5h" value="gran" />
+        <node concept="2ZThk1" id="XApyzggY7f" role="1tU5fm">
+          <ref role="2ZWj4r" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="XApyzgh1MP" role="3clF45">
+        <ref role="3uigEE" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="3RxOc3uTld4" role="jymVt" />
     <node concept="2YIFZL" id="62XJbzXeKIV" role="jymVt">
       <property role="TrG5h" value="XmlRegexVoorGranulariteit" />
@@ -56914,6 +57053,962 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="JN8gpVwPCH">
+    <property role="3GE5qa" value="tijd" />
+    <property role="TrG5h" value="Tijdseenheid" />
+    <node concept="2tJIrI" id="JN8gpVwPD_" role="jymVt" />
+    <node concept="Wx3nA" id="JN8gpVwZRC" role="jymVt">
+      <property role="TrG5h" value="DAG" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="JN8gpVwZHG" role="1B3o_S" />
+      <node concept="3Tqbb2" id="JN8gpVx0cq" role="1tU5fm">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="2OqwBi" id="JN8gpVwS6X" role="33vP2m">
+        <node concept="2tJFMh" id="JN8gpVwRKD" role="2Oq$k0">
+          <node concept="ZC_QK" id="7UdtqvxDO_t" role="2tJFKM">
+            <ref role="2aWVGs" to="ykqi:7s3jFTu43NJ" resolve="base" />
+            <node concept="ZC_QK" id="7UdtqvxDOJe" role="2aWVGa">
+              <ref role="2aWVGs" to="ykqi:7QIQ0QW4KaI" resolve="Tijd" />
+              <node concept="ZC_QK" id="7UdtqvxDP0V" role="2aWVGa">
+                <ref role="2aWVGs" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vyspw" id="JN8gpVwSmc" role="2OqNvi">
+          <node concept="10Nm6u" id="JN8gpVwSnE" role="Vysub" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3ib3KwfCYqC" role="jymVt">
+      <property role="TrG5h" value="WEEK" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3ib3KwfCYqD" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3ib3KwfCYqE" role="1tU5fm">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="2OqwBi" id="3ib3KwfCYqF" role="33vP2m">
+        <node concept="2tJFMh" id="3ib3KwfCYqG" role="2Oq$k0">
+          <node concept="ZC_QK" id="3ib3KwfCYqH" role="2tJFKM">
+            <ref role="2aWVGs" to="ykqi:7s3jFTu43NJ" resolve="base" />
+            <node concept="ZC_QK" id="3ib3KwfCYqI" role="2aWVGa">
+              <ref role="2aWVGs" to="ykqi:7QIQ0QW4KaI" resolve="Tijd" />
+              <node concept="ZC_QK" id="3ib3KwfCYqJ" role="2aWVGa">
+                <ref role="2aWVGs" to="ykqi:7QIQ0QW9Xxq" resolve="week" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vyspw" id="3ib3KwfCYqK" role="2OqNvi">
+          <node concept="10Nm6u" id="3ib3KwfCYqL" role="Vysub" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="JN8gpVx0tD" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="MAAND" />
+      <node concept="3Tm1VV" id="JN8gpVx0G$" role="1B3o_S" />
+      <node concept="3Tqbb2" id="JN8gpVx0tx" role="1tU5fm">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="2OqwBi" id="JN8gpVx0ty" role="33vP2m">
+        <node concept="Vyspw" id="JN8gpVx0tB" role="2OqNvi">
+          <node concept="10Nm6u" id="JN8gpVx0tC" role="Vysub" />
+        </node>
+        <node concept="2tJFMh" id="7UdtqvxDPiu" role="2Oq$k0">
+          <node concept="ZC_QK" id="7UdtqvxDPiv" role="2tJFKM">
+            <ref role="2aWVGs" to="ykqi:7s3jFTu43NJ" resolve="base" />
+            <node concept="ZC_QK" id="7UdtqvxDPiw" role="2aWVGa">
+              <ref role="2aWVGs" to="ykqi:7QIQ0QW4KaI" resolve="Tijd" />
+              <node concept="ZC_QK" id="7UdtqvxDPix" role="2aWVGa">
+                <ref role="2aWVGs" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="JN8gpVx0Qj" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="KWARTAAL" />
+      <node concept="3Tm1VV" id="JN8gpVx1T2" role="1B3o_S" />
+      <node concept="3Tqbb2" id="JN8gpVx0Qb" role="1tU5fm">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="2OqwBi" id="JN8gpVx0Qc" role="33vP2m">
+        <node concept="Vyspw" id="JN8gpVx0Qh" role="2OqNvi">
+          <node concept="10Nm6u" id="JN8gpVx0Qi" role="Vysub" />
+        </node>
+        <node concept="2tJFMh" id="7UdtqvxDPO$" role="2Oq$k0">
+          <node concept="ZC_QK" id="7UdtqvxDPO_" role="2tJFKM">
+            <ref role="2aWVGs" to="ykqi:7s3jFTu43NJ" resolve="base" />
+            <node concept="ZC_QK" id="7UdtqvxDPOA" role="2aWVGa">
+              <ref role="2aWVGs" to="ykqi:7QIQ0QW4KaI" resolve="Tijd" />
+              <node concept="ZC_QK" id="7UdtqvxDPOB" role="2aWVGa">
+                <ref role="2aWVGs" to="ykqi:7QIQ0QW9Xxs" resolve="kwartaal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="JN8gpVx15U" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="JAAR" />
+      <node concept="3Tm1VV" id="JN8gpVx1WA" role="1B3o_S" />
+      <node concept="3Tqbb2" id="JN8gpVx15M" role="1tU5fm">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="2OqwBi" id="JN8gpVx15N" role="33vP2m">
+        <node concept="Vyspw" id="JN8gpVx15S" role="2OqNvi">
+          <node concept="10Nm6u" id="JN8gpVx15T" role="Vysub" />
+        </node>
+        <node concept="2tJFMh" id="7UdtqvxDQqX" role="2Oq$k0">
+          <node concept="ZC_QK" id="7UdtqvxDQqY" role="2tJFKM">
+            <ref role="2aWVGs" to="ykqi:7s3jFTu43NJ" resolve="base" />
+            <node concept="ZC_QK" id="7UdtqvxDQqZ" role="2aWVGa">
+              <ref role="2aWVGs" to="ykqi:7QIQ0QW4KaI" resolve="Tijd" />
+              <node concept="ZC_QK" id="7UdtqvxDQr0" role="2aWVGa">
+                <ref role="2aWVGs" to="ykqi:7QIQ0QW9Xxt" resolve="jaar" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="JN8gpVwZDR" role="jymVt" />
+    <node concept="Wx3nA" id="JN8gpVwPN1" role="jymVt">
+      <property role="TrG5h" value="enumMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="JN8gpVwPKZ" role="1B3o_S" />
+      <node concept="3rvAFt" id="JN8gpVwPM_" role="1tU5fm">
+        <node concept="3Tqbb2" id="JN8gpVwPMY" role="3rvSg0">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+        <node concept="2ZThk1" id="JN8gpVwPMU" role="3rvQeY">
+          <ref role="2ZWj4r" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="JN8gpVwPOe" role="33vP2m">
+        <node concept="3rGOSV" id="JN8gpVwPZY" role="2ShVmc">
+          <node concept="2ZThk1" id="JN8gpVwQ7b" role="3rHrn6">
+            <ref role="2ZWj4r" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+          </node>
+          <node concept="3Tqbb2" id="JN8gpVwQf$" role="3rHtpV">
+            <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="JN8gpVwTOq" role="jymVt" />
+    <node concept="Wx3nA" id="JN8gpVwTQE" role="jymVt">
+      <property role="TrG5h" value="nodeMap" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="JN8gpVwTQF" role="1B3o_S" />
+      <node concept="3rvAFt" id="JN8gpVwTQG" role="1tU5fm">
+        <node concept="2ZThk1" id="JN8gpVwTQI" role="3rvSg0">
+          <ref role="2ZWj4r" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+        </node>
+        <node concept="3Tqbb2" id="JN8gpVwUdE" role="3rvQeY">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="JN8gpVwTQJ" role="33vP2m">
+        <node concept="3rGOSV" id="JN8gpVwTQK" role="2ShVmc">
+          <node concept="2ZThk1" id="JN8gpVwU86" role="3rHtpV">
+            <ref role="2ZWj4r" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+          </node>
+          <node concept="3Tqbb2" id="JN8gpVwUjl" role="3rHrn6">
+            <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="JN8gpVwWS$" role="jymVt" />
+    <node concept="1Pe0a1" id="JN8gpVwQll" role="jymVt">
+      <node concept="3clFbS" id="JN8gpVwQln" role="1Pe0a2">
+        <node concept="3clFbF" id="JN8gpVwQmj" role="3cqZAp">
+          <node concept="37vLTI" id="JN8gpVwRIz" role="3clFbG">
+            <node concept="3EllGN" id="JN8gpVwQGE" role="37vLTJ">
+              <node concept="2OqwBi" id="JN8gpVwReZ" role="3ElVtu">
+                <node concept="1XH99k" id="JN8gpVwQIn" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+                </node>
+                <node concept="2ViDtV" id="JN8gpVwRuS" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:xwHwt_YgV3" resolve="dag" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="2gqjJO3wS2Z" role="3ElQJh">
+                <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2gqjJO3wS3e" role="37vLTx">
+              <ref role="3cqZAo" node="JN8gpVwZRC" resolve="DAG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6CsHGVpTxaq" role="3cqZAp">
+          <node concept="37vLTI" id="6CsHGVpTxar" role="3clFbG">
+            <node concept="3EllGN" id="6CsHGVpTxas" role="37vLTJ">
+              <node concept="2OqwBi" id="6CsHGVpTxat" role="3ElVtu">
+                <node concept="1XH99k" id="6CsHGVpTxau" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+                </node>
+                <node concept="2ViDtV" id="6CsHGVpTxav" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:6CsHGVpTvcM" resolve="week" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="2gqjJO3wS3t" role="3ElQJh">
+                <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2gqjJO3wS3G" role="37vLTx">
+              <ref role="3cqZAo" node="3ib3KwfCYqC" resolve="WEEK" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="JN8gpVwSth" role="3cqZAp">
+          <node concept="37vLTI" id="JN8gpVwSti" role="3clFbG">
+            <node concept="37vLTw" id="2gqjJO3wS3V" role="37vLTx">
+              <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+            </node>
+            <node concept="3EllGN" id="JN8gpVwStq" role="37vLTJ">
+              <node concept="2OqwBi" id="JN8gpVwStr" role="3ElVtu">
+                <node concept="1XH99k" id="JN8gpVwSts" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+                </node>
+                <node concept="2ViDtV" id="JN8gpVwStt" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:xwHwt_YgV4" resolve="maand" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="2gqjJO3wS4a" role="3ElQJh">
+                <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="JN8gpVwSvt" role="3cqZAp">
+          <node concept="37vLTI" id="JN8gpVwSvu" role="3clFbG">
+            <node concept="37vLTw" id="2gqjJO3wS4p" role="37vLTx">
+              <ref role="3cqZAo" node="JN8gpVx0Qj" resolve="KWARTAAL" />
+            </node>
+            <node concept="3EllGN" id="JN8gpVwSvA" role="37vLTJ">
+              <node concept="2OqwBi" id="JN8gpVwSvB" role="3ElVtu">
+                <node concept="1XH99k" id="JN8gpVwSvC" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+                </node>
+                <node concept="2ViDtV" id="JN8gpVwSvD" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:3SYd9_w$ODf" resolve="kwartaal" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="2gqjJO3wS4C" role="3ElQJh">
+                <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="JN8gpVwSy1" role="3cqZAp">
+          <node concept="37vLTI" id="JN8gpVwSy2" role="3clFbG">
+            <node concept="37vLTw" id="2gqjJO3wS4R" role="37vLTx">
+              <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+            </node>
+            <node concept="3EllGN" id="JN8gpVwSya" role="37vLTJ">
+              <node concept="2OqwBi" id="JN8gpVwSyb" role="3ElVtu">
+                <node concept="1XH99k" id="JN8gpVwSyc" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+                </node>
+                <node concept="2ViDtV" id="JN8gpVwSyd" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:xwHwt_YgV7" resolve="jaar" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="2gqjJO3wS56" role="3ElQJh">
+                <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="JN8gpVwUqP" role="3cqZAp">
+          <node concept="2GrKxI" id="JN8gpVwUqR" role="2Gsz3X">
+            <property role="TrG5h" value="entry" />
+          </node>
+          <node concept="37vLTw" id="2gqjJO3wS5l" role="2GsD0m">
+            <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+          </node>
+          <node concept="3clFbS" id="JN8gpVwUqV" role="2LFqv$">
+            <node concept="3clFbF" id="JN8gpVwUwR" role="3cqZAp">
+              <node concept="37vLTI" id="JN8gpVwWd2" role="3clFbG">
+                <node concept="2OqwBi" id="JN8gpVwWxX" role="37vLTx">
+                  <node concept="2GrUjf" id="JN8gpVwWhA" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="JN8gpVwUqR" resolve="entry" />
+                  </node>
+                  <node concept="3AY5_j" id="JN8gpVwWNL" role="2OqNvi" />
+                </node>
+                <node concept="3EllGN" id="JN8gpVwUSg" role="37vLTJ">
+                  <node concept="2OqwBi" id="JN8gpVwVHm" role="3ElVtu">
+                    <node concept="2GrUjf" id="JN8gpVwVvc" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="JN8gpVwUqR" resolve="entry" />
+                    </node>
+                    <node concept="3AV6Ez" id="JN8gpVwW05" role="2OqNvi" />
+                  </node>
+                  <node concept="37vLTw" id="2gqjJO3wS5$" role="3ElQJh">
+                    <ref role="3cqZAo" node="JN8gpVwTQE" resolve="nodeMap" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="JN8gpVwTMb" role="jymVt" />
+    <node concept="2YIFZL" id="JN8gpVwPEJ" role="jymVt">
+      <property role="TrG5h" value="of" />
+      <node concept="3clFbS" id="JN8gpVwPEM" role="3clF47">
+        <node concept="3clFbF" id="JN8gpVwThq" role="3cqZAp">
+          <node concept="3EllGN" id="JN8gpVwTFX" role="3clFbG">
+            <node concept="37vLTw" id="JN8gpVwTIa" role="3ElVtu">
+              <ref role="3cqZAo" node="JN8gpVwPFd" resolve="eenheid" />
+            </node>
+            <node concept="37vLTw" id="2gqjJO3wS5N" role="3ElQJh">
+              <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="JN8gpVwPDZ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="JN8gpVwPEr" role="3clF45">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="37vLTG" id="JN8gpVwPFd" role="3clF46">
+        <property role="TrG5h" value="eenheid" />
+        <node concept="2ZThk1" id="JN8gpVwPFc" role="1tU5fm">
+          <ref role="2ZWj4r" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4GFbPfNhX7O" role="jymVt" />
+    <node concept="2YIFZL" id="4GFbPfNhYpH" role="jymVt">
+      <property role="TrG5h" value="fromGranulariteit" />
+      <node concept="3clFbS" id="4GFbPfNhYpK" role="3clF47">
+        <node concept="3clFbF" id="4GFbPfNi0zg" role="3cqZAp">
+          <node concept="3X5UdL" id="4GFbPfNi0z6" role="3clFbG">
+            <node concept="37vLTw" id="4GFbPfNi0J9" role="3X5Ude">
+              <ref role="3cqZAo" node="4GFbPfNhYGv" resolve="gran" />
+            </node>
+            <node concept="3X5Udd" id="4GFbPfNi0RW" role="3X5gkp">
+              <node concept="21nZrQ" id="4GFbPfNi0RV" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUs" resolve="DAG" />
+              </node>
+              <node concept="3X5gDF" id="4GFbPfNi13U" role="3X5gFO">
+                <node concept="37vLTw" id="2gqjJO3wS62" role="3X5gDC">
+                  <ref role="3cqZAo" node="JN8gpVwZRC" resolve="DAG" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="6CsHGVpjtN0" role="3X5gkp">
+              <node concept="21nZrQ" id="6CsHGVpjtN1" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUr" resolve="WEEK" />
+              </node>
+              <node concept="3X5gDF" id="6CsHGVpjukP" role="3X5gFO">
+                <node concept="37vLTw" id="2gqjJO3wS6h" role="3X5gDC">
+                  <ref role="3cqZAo" node="3ib3KwfCYqC" resolve="WEEK" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="4GFbPfNi1KJ" role="3X5gkp">
+              <node concept="21nZrQ" id="4GFbPfNi1KK" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUq" resolve="MAAND" />
+              </node>
+              <node concept="3X5gDF" id="4GFbPfNi2bE" role="3X5gFO">
+                <node concept="37vLTw" id="2gqjJO3wS6w" role="3X5gDC">
+                  <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="4GFbPfNi2pG" role="3X5gkp">
+              <node concept="21nZrQ" id="4GFbPfNi2pH" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUp" resolve="KWARTAAL" />
+              </node>
+              <node concept="3X5gDF" id="4GFbPfNi2QH" role="3X5gFO">
+                <node concept="37vLTw" id="2gqjJO3wS6J" role="3X5gDC">
+                  <ref role="3cqZAo" node="JN8gpVx0Qj" resolve="KWARTAAL" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5Udd" id="4GFbPfNi31F" role="3X5gkp">
+              <node concept="21nZrQ" id="4GFbPfNi31G" role="3X5Uda">
+                <ref role="21nZrZ" to="3ic2:4WetKT2PyUo" resolve="JAAR" />
+              </node>
+              <node concept="3X5gDF" id="4GFbPfNi3su" role="3X5gFO">
+                <node concept="37vLTw" id="2gqjJO3wS6Y" role="3X5gDC">
+                  <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+                </node>
+              </node>
+            </node>
+            <node concept="3X5gDF" id="4GFbPfNi3Za" role="3XxORw">
+              <node concept="37vLTw" id="2gqjJO3wS7d" role="3X5gDC">
+                <ref role="3cqZAo" node="JN8gpVwZRC" resolve="DAG" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4GFbPfNhXGH" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4GFbPfNhYcK" role="3clF45">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="37vLTG" id="4GFbPfNhYGv" role="3clF46">
+        <property role="TrG5h" value="gran" />
+        <node concept="2ZThk1" id="4GFbPfNhYGu" role="1tU5fm">
+          <ref role="2ZWj4r" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="JN8gpVwWVw" role="jymVt" />
+    <node concept="2YIFZL" id="JN8gpVwX8u" role="jymVt">
+      <property role="TrG5h" value="of" />
+      <node concept="3clFbS" id="JN8gpVwX8x" role="3clF47">
+        <node concept="3clFbF" id="JN8gpVwXkb" role="3cqZAp">
+          <node concept="3EllGN" id="JN8gpVwXJL" role="3clFbG">
+            <node concept="37vLTw" id="JN8gpVwXN1" role="3ElVtu">
+              <ref role="3cqZAo" node="JN8gpVwXbN" resolve="eenheid" />
+            </node>
+            <node concept="37vLTw" id="2gqjJO3wS7s" role="3ElQJh">
+              <ref role="3cqZAo" node="JN8gpVwTQE" resolve="nodeMap" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="JN8gpVwX1s" role="1B3o_S" />
+      <node concept="2ZThk1" id="JN8gpVwX5M" role="3clF45">
+        <ref role="2ZWj4r" to="3ic2:xwHwt_YgV2" resolve="TijdseenheidEnum" />
+      </node>
+      <node concept="37vLTG" id="JN8gpVwXbN" role="3clF46">
+        <property role="TrG5h" value="eenheid" />
+        <node concept="3Tqbb2" id="JN8gpVwXbM" role="1tU5fm">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6K7xhTkOI9A" role="jymVt" />
+    <node concept="2YIFZL" id="6K7xhTkOG_l" role="jymVt">
+      <property role="TrG5h" value="toGranulariteit" />
+      <node concept="3clFbS" id="6K7xhTkOG_m" role="3clF47">
+        <node concept="3clFbJ" id="6K7xhTkOK35" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="6K7xhTkOK36" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS7F" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+            </node>
+            <node concept="37vLTw" id="6K7xhTkOK38" role="3uHU7B">
+              <ref role="3cqZAo" node="6K7xhTkOG_t" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6K7xhTkOK39" role="3clFbx">
+            <node concept="3cpWs6" id="6K7xhTkOK3a" role="3cqZAp">
+              <node concept="2OqwBi" id="6K7xhTkOK3b" role="3cqZAk">
+                <node concept="1XH99k" id="6K7xhTkOK3c" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                </node>
+                <node concept="2ViDtV" id="6K7xhTkOK3d" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:4WetKT2PyUo" resolve="JAAR" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6K7xhTkOJXh" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="6K7xhTkOJXi" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS7U" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx0Qj" resolve="KWARTAAL" />
+            </node>
+            <node concept="37vLTw" id="6K7xhTkOJXk" role="3uHU7B">
+              <ref role="3cqZAo" node="6K7xhTkOG_t" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6K7xhTkOJXl" role="3clFbx">
+            <node concept="3cpWs6" id="6K7xhTkOJXm" role="3cqZAp">
+              <node concept="2OqwBi" id="6K7xhTkOJXn" role="3cqZAk">
+                <node concept="1XH99k" id="6K7xhTkOJXo" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                </node>
+                <node concept="2ViDtV" id="6K7xhTkOJXp" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:4WetKT2PyUp" resolve="KWARTAAL" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6K7xhTkOJWQ" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="6K7xhTkOJWR" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS89" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+            </node>
+            <node concept="37vLTw" id="6K7xhTkOJWT" role="3uHU7B">
+              <ref role="3cqZAo" node="6K7xhTkOG_t" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6K7xhTkOJWU" role="3clFbx">
+            <node concept="3cpWs6" id="6K7xhTkOJWV" role="3cqZAp">
+              <node concept="2OqwBi" id="6K7xhTkOJWW" role="3cqZAk">
+                <node concept="1XH99k" id="6K7xhTkOJWX" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                </node>
+                <node concept="2ViDtV" id="6K7xhTkOJWY" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:4WetKT2PyUq" resolve="MAAND" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6CsHGVpjrqE" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="6CsHGVpjrqF" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS8o" role="3uHU7w">
+              <ref role="3cqZAo" node="3ib3KwfCYqC" resolve="WEEK" />
+            </node>
+            <node concept="37vLTw" id="6CsHGVpjrqH" role="3uHU7B">
+              <ref role="3cqZAo" node="6K7xhTkOG_t" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6CsHGVpjrqI" role="3clFbx">
+            <node concept="3cpWs6" id="6CsHGVpjrqJ" role="3cqZAp">
+              <node concept="2OqwBi" id="6CsHGVpjrqK" role="3cqZAk">
+                <node concept="1XH99k" id="6CsHGVpjrqL" role="2Oq$k0">
+                  <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+                </node>
+                <node concept="2ViDtV" id="6CsHGVpjrqM" role="2OqNvi">
+                  <ref role="2ViDtZ" to="3ic2:4WetKT2PyUr" resolve="WEEK" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6K7xhTkOIQ0" role="3cqZAp">
+          <node concept="2OqwBi" id="6K7xhTkOJty" role="3cqZAk">
+            <node concept="1XH99k" id="6K7xhTkOIXW" role="2Oq$k0">
+              <ref role="1XH99l" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+            </node>
+            <node concept="2ViDtV" id="6K7xhTkOJIx" role="2OqNvi">
+              <ref role="2ViDtZ" to="3ic2:4WetKT2PyUs" resolve="DAG" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6K7xhTkOG_r" role="1B3o_S" />
+      <node concept="2ZThk1" id="6K7xhTkOG_s" role="3clF45">
+        <ref role="2ZWj4r" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
+      </node>
+      <node concept="37vLTG" id="6K7xhTkOG_t" role="3clF46">
+        <property role="TrG5h" value="eenheid" />
+        <node concept="3Tqbb2" id="6K7xhTkOG_u" role="1tU5fm">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="VE$9K3jSbU" role="jymVt" />
+    <node concept="2YIFZL" id="VE$9K3jT62" role="jymVt">
+      <property role="TrG5h" value="toGranularity" />
+      <node concept="3clFbS" id="VE$9K3jT65" role="3clF47">
+        <node concept="3clFbJ" id="VE$9K3jT_A" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="VE$9K3jT_B" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS8B" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+            </node>
+            <node concept="37vLTw" id="VE$9K3jT_C" role="3uHU7B">
+              <ref role="3cqZAo" node="VE$9K3jTos" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="VE$9K3jT_D" role="3clFbx">
+            <node concept="3cpWs6" id="VE$9K3jT_E" role="3cqZAp">
+              <node concept="Rm8GO" id="7YAg$0fzL0a" role="3cqZAk">
+                <ref role="Rm8GQ" to="2vij:~TimeGranularity.YEAR" resolve="YEAR" />
+                <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="VE$9K3jT_S" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="VE$9K3jT_T" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS8Q" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx0Qj" resolve="KWARTAAL" />
+            </node>
+            <node concept="37vLTw" id="VE$9K3jT_U" role="3uHU7B">
+              <ref role="3cqZAo" node="VE$9K3jTos" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="VE$9K3jT_V" role="3clFbx">
+            <node concept="3cpWs6" id="VE$9K3jT_W" role="3cqZAp">
+              <node concept="Rm8GO" id="7YAg$0fzLbQ" role="3cqZAk">
+                <ref role="Rm8GQ" to="2vij:~TimeGranularity.QUARTER" resolve="QUARTER" />
+                <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="VE$9K3jTAa" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="VE$9K3jTAb" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS95" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+            </node>
+            <node concept="37vLTw" id="VE$9K3jTAc" role="3uHU7B">
+              <ref role="3cqZAo" node="VE$9K3jTos" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="VE$9K3jTAd" role="3clFbx">
+            <node concept="3cpWs6" id="VE$9K3jTAe" role="3cqZAp">
+              <node concept="Rm8GO" id="7YAg$0fzLnE" role="3cqZAk">
+                <ref role="Rm8GQ" to="2vij:~TimeGranularity.MONTH" resolve="MONTH" />
+                <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6CsHGVpjouu" role="3cqZAp">
+          <node concept="3clFbS" id="6CsHGVpjouw" role="3clFbx">
+            <node concept="3cpWs6" id="6CsHGVpjqa6" role="3cqZAp">
+              <node concept="Rm8GO" id="6CsHGVpjr0V" role="3cqZAk">
+                <ref role="Rm8GQ" to="2vij:~TimeGranularity.WEEK" resolve="WEEK" />
+                <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6CsHGVpjpot" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS9k" role="3uHU7w">
+              <ref role="3cqZAo" node="3ib3KwfCYqC" resolve="WEEK" />
+            </node>
+            <node concept="37vLTw" id="6CsHGVpjoNR" role="3uHU7B">
+              <ref role="3cqZAo" node="VE$9K3jTos" resolve="eenheid" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="VE$9K3jTAs" role="3cqZAp">
+          <node concept="Rm8GO" id="7YAg$0fzLzA" role="3cqZAk">
+            <ref role="Rm8GQ" to="2vij:~TimeGranularity.DAY" resolve="DAY" />
+            <ref role="1Px2BO" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="VE$9K3jSVG" role="1B3o_S" />
+      <node concept="3uibUv" id="VE$9K3jTcJ" role="3clF45">
+        <ref role="3uigEE" to="2vij:~TimeGranularity" resolve="TimeGranularity" />
+      </node>
+      <node concept="37vLTG" id="VE$9K3jTos" role="3clF46">
+        <property role="TrG5h" value="eenheid" />
+        <node concept="3Tqbb2" id="VE$9K3jTor" role="1tU5fm">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="VE$9K3HnNa" role="jymVt" />
+    <node concept="2YIFZL" id="VE$9K3HolS" role="jymVt">
+      <property role="TrG5h" value="toUnit" />
+      <node concept="37vLTG" id="VE$9K3Houh" role="3clF46">
+        <property role="TrG5h" value="eenheid" />
+        <node concept="3Tqbb2" id="VE$9K3Houi" role="1tU5fm">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="VE$9K3HolV" role="3clF47">
+        <node concept="3clFbJ" id="VE$9K3Ho$c" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbC" id="VE$9K3Ho$d" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wS9z" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+            </node>
+            <node concept="37vLTw" id="VE$9K3Ho$e" role="3uHU7B">
+              <ref role="3cqZAo" node="VE$9K3Houh" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="VE$9K3Ho$f" role="3clFbx">
+            <node concept="3cpWs6" id="VE$9K3Ho$g" role="3cqZAp">
+              <node concept="Rm8GO" id="7YAg$0fzLJE" role="3cqZAk">
+                <ref role="Rm8GQ" to="nhsg:~TimeUnit.YEAR" resolve="YEAR" />
+                <ref role="1Px2BO" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="VE$9K3Ho$t" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbS" id="VE$9K3Ho$w" role="3clFbx">
+            <node concept="3cpWs6" id="GUV1V4PiIG" role="3cqZAp">
+              <node concept="Rm8GO" id="GUV1V4Pjgk" role="3cqZAk">
+                <ref role="Rm8GQ" to="nhsg:~TimeUnit.MONTH" resolve="MONTH" />
+                <ref role="1Px2BO" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="6CsHGVpT_1t" role="3clFbw">
+            <node concept="3clFbC" id="VE$9K3Ho$u" role="3uHU7B">
+              <node concept="37vLTw" id="VE$9K3Ho$v" role="3uHU7B">
+                <ref role="3cqZAo" node="VE$9K3Houh" resolve="eenheid" />
+              </node>
+              <node concept="37vLTw" id="2gqjJO3wS9M" role="3uHU7w">
+                <ref role="3cqZAo" node="JN8gpVx0Qj" resolve="KWARTAAL" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="VE$9K3Ho$J" role="3uHU7w">
+              <node concept="37vLTw" id="2gqjJO3wSa1" role="3uHU7w">
+                <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+              </node>
+              <node concept="37vLTw" id="VE$9K3Ho$K" role="3uHU7B">
+                <ref role="3cqZAo" node="VE$9K3Houh" resolve="eenheid" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="VE$9K3Ho$Z" role="3cqZAp">
+          <node concept="Rm8GO" id="7YAg$0fzMbJ" role="3cqZAk">
+            <ref role="Rm8GQ" to="nhsg:~TimeUnit.DAY" resolve="DAY" />
+            <ref role="1Px2BO" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="VE$9K3Ho3w" role="1B3o_S" />
+      <node concept="3uibUv" id="VE$9K3HogR" role="3clF45">
+        <ref role="3uigEE" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5Yd6Hr8NbS3" role="jymVt" />
+    <node concept="2YIFZL" id="5Yd6Hr8NdEz" role="jymVt">
+      <property role="TrG5h" value="fromUnit" />
+      <node concept="3clFbS" id="5Yd6Hr8NdEA" role="3clF47">
+        <node concept="3clFbJ" id="5Yd6Hr8Nf7j" role="3cqZAp">
+          <node concept="3clFbC" id="5Yd6Hr8Ng0w" role="3clFbw">
+            <node concept="Rm8GO" id="5Yd6Hr8NgE9" role="3uHU7w">
+              <ref role="Rm8GQ" to="nhsg:~TimeUnit.YEAR" resolve="YEAR" />
+              <ref role="1Px2BO" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+            </node>
+            <node concept="37vLTw" id="5Yd6Hr8NfkM" role="3uHU7B">
+              <ref role="3cqZAo" node="5Yd6Hr8NeFy" resolve="unit" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5Yd6Hr8Nf7l" role="3clFbx">
+            <node concept="3cpWs6" id="5Yd6Hr8NgT2" role="3cqZAp">
+              <node concept="37vLTw" id="2gqjJO3wSag" role="3cqZAk">
+                <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5Yd6Hr8Nhuk" role="3cqZAp">
+          <node concept="3clFbC" id="5Yd6Hr8Nhul" role="3clFbw">
+            <node concept="Rm8GO" id="5Yd6Hr8Ni8l" role="3uHU7w">
+              <ref role="Rm8GQ" to="nhsg:~TimeUnit.MONTH" resolve="MONTH" />
+              <ref role="1Px2BO" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+            </node>
+            <node concept="37vLTw" id="5Yd6Hr8Nhun" role="3uHU7B">
+              <ref role="3cqZAo" node="5Yd6Hr8NeFy" resolve="unit" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5Yd6Hr8Nhuo" role="3clFbx">
+            <node concept="3cpWs6" id="5Yd6Hr8Nhup" role="3cqZAp">
+              <node concept="37vLTw" id="2gqjJO3wSav" role="3cqZAk">
+                <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5Yd6Hr8NhSu" role="3cqZAp">
+          <node concept="3clFbC" id="5Yd6Hr8NhSv" role="3clFbw">
+            <node concept="Rm8GO" id="5Yd6Hr8NiCM" role="3uHU7w">
+              <ref role="Rm8GQ" to="nhsg:~TimeUnit.DAY" resolve="DAY" />
+              <ref role="1Px2BO" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+            </node>
+            <node concept="37vLTw" id="5Yd6Hr8NhSx" role="3uHU7B">
+              <ref role="3cqZAo" node="5Yd6Hr8NeFy" resolve="unit" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5Yd6Hr8NhSy" role="3clFbx">
+            <node concept="3cpWs6" id="5Yd6Hr8NhSz" role="3cqZAp">
+              <node concept="37vLTw" id="2gqjJO3wSaI" role="3cqZAk">
+                <ref role="3cqZAo" node="JN8gpVwZRC" resolve="DAG" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5Yd6Hr8NjMU" role="3cqZAp">
+          <node concept="10Nm6u" id="5Yd6Hr8Nk3f" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5Yd6Hr8Ncxy" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5Yd6Hr8Nely" role="3clF45">
+        <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+      </node>
+      <node concept="37vLTG" id="5Yd6Hr8NeFy" role="3clF46">
+        <property role="TrG5h" value="unit" />
+        <node concept="3uibUv" id="5Yd6Hr8NeFx" role="1tU5fm">
+          <ref role="3uigEE" to="nhsg:~TimeUnit" resolve="TimeUnit" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MDW8TB3xx4" role="jymVt" />
+    <node concept="2YIFZL" id="MDW8TB3AOU" role="jymVt">
+      <property role="TrG5h" value="values" />
+      <node concept="3clFbS" id="MDW8TB3zUJ" role="3clF47">
+        <node concept="3cpWs6" id="MDW8TB3$oj" role="3cqZAp">
+          <node concept="2OqwBi" id="MDW8TB3_gm" role="3cqZAk">
+            <node concept="37vLTw" id="2gqjJO3wSaX" role="2Oq$k0">
+              <ref role="3cqZAo" node="JN8gpVwPN1" resolve="enumMap" />
+            </node>
+            <node concept="T8wYR" id="MDW8TB3Amf" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="MDW8TB3zJX" role="3clF45">
+        <node concept="3Tqbb2" id="MDW8TB3zUz" role="A3Ik2">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="MDW8TB3yix" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="4$UnxqrSV2T" role="jymVt" />
+    <node concept="2YIFZL" id="4$UnxqrSWw7" role="jymVt">
+      <property role="TrG5h" value="toChronoUnit" />
+      <node concept="3clFbS" id="4$UnxqrSWwa" role="3clF47">
+        <node concept="3clFbJ" id="4$UnxqrSXHy" role="3cqZAp">
+          <node concept="3clFbC" id="4$UnxqrSYIl" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wSbc" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx15U" resolve="JAAR" />
+            </node>
+            <node concept="37vLTw" id="4$UnxqrSYcL" role="3uHU7B">
+              <ref role="3cqZAo" node="4$UnxqrSWRE" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4$UnxqrSXH$" role="3clFbx">
+            <node concept="3cpWs6" id="4$UnxqrSZqI" role="3cqZAp">
+              <node concept="1Ls8ON" id="4$UnxqrT51U" role="3cqZAk">
+                <node concept="Rm8GO" id="4$UnxqrT0hM" role="1Lso8e">
+                  <ref role="Rm8GQ" to="dzyv:~ChronoUnit.YEARS" resolve="YEARS" />
+                  <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                </node>
+                <node concept="3cmrfG" id="4$UnxqrT62w" role="1Lso8e">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4$UnxqrT0vA" role="3cqZAp">
+          <node concept="3clFbC" id="4$UnxqrT0vB" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wSbr" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx0Qj" resolve="KWARTAAL" />
+            </node>
+            <node concept="37vLTw" id="4$UnxqrT0vD" role="3uHU7B">
+              <ref role="3cqZAo" node="4$UnxqrSWRE" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4$UnxqrT0vE" role="3clFbx">
+            <node concept="3cpWs6" id="4$UnxqrT0vF" role="3cqZAp">
+              <node concept="1Ls8ON" id="4$UnxqrT6iX" role="3cqZAk">
+                <node concept="Rm8GO" id="4$UnxqrT6DC" role="1Lso8e">
+                  <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MONTHS" resolve="MONTHS" />
+                  <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                </node>
+                <node concept="3cmrfG" id="4$UnxqrT7sL" role="1Lso8e">
+                  <property role="3cmrfH" value="3" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4$UnxqrT0vV" role="3cqZAp">
+          <node concept="3clFbC" id="4$UnxqrT0vW" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wSbE" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVx0tD" resolve="MAAND" />
+            </node>
+            <node concept="37vLTw" id="4$UnxqrT0vY" role="3uHU7B">
+              <ref role="3cqZAo" node="4$UnxqrSWRE" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4$UnxqrT0vZ" role="3clFbx">
+            <node concept="3cpWs6" id="4$UnxqrT0w0" role="3cqZAp">
+              <node concept="1Ls8ON" id="4$UnxqrT7HM" role="3cqZAk">
+                <node concept="Rm8GO" id="4$UnxqrT7HN" role="1Lso8e">
+                  <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MONTHS" resolve="MONTHS" />
+                  <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                </node>
+                <node concept="3cmrfG" id="4$UnxqrT6iZ" role="1Lso8e">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6CsHGVpjjqU" role="3cqZAp">
+          <node concept="3clFbS" id="6CsHGVpjjqW" role="3clFbx">
+            <node concept="3cpWs6" id="6CsHGVpjlgr" role="3cqZAp">
+              <node concept="1Ls8ON" id="6CsHGVpjlSq" role="3cqZAk">
+                <node concept="Rm8GO" id="6CsHGVpjmRs" role="1Lso8e">
+                  <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                  <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                </node>
+                <node concept="3cmrfG" id="6CsHGVpjnuC" role="1Lso8e">
+                  <property role="3cmrfH" value="7" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6CsHGVpjkqe" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wSbT" role="3uHU7w">
+              <ref role="3cqZAo" node="3ib3KwfCYqC" resolve="WEEK" />
+            </node>
+            <node concept="37vLTw" id="6CsHGVpjjNe" role="3uHU7B">
+              <ref role="3cqZAo" node="4$UnxqrSWRE" resolve="eenheid" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4$UnxqrT0wn" role="3cqZAp">
+          <node concept="3clFbC" id="4$UnxqrT0wo" role="3clFbw">
+            <node concept="37vLTw" id="2gqjJO3wSc8" role="3uHU7w">
+              <ref role="3cqZAo" node="JN8gpVwZRC" resolve="DAG" />
+            </node>
+            <node concept="37vLTw" id="4$UnxqrT0wq" role="3uHU7B">
+              <ref role="3cqZAo" node="4$UnxqrSWRE" resolve="eenheid" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4$UnxqrT0wr" role="3clFbx">
+            <node concept="3cpWs6" id="4$UnxqrT0ws" role="3cqZAp">
+              <node concept="1Ls8ON" id="4$UnxqrT86h" role="3cqZAk">
+                <node concept="Rm8GO" id="4$UnxqrT8sd" role="1Lso8e">
+                  <ref role="Rm8GQ" to="dzyv:~ChronoUnit.DAYS" resolve="DAYS" />
+                  <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                </node>
+                <node concept="3cmrfG" id="4$UnxqrT86j" role="1Lso8e">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4$UnxqrT96d" role="3cqZAp">
+          <node concept="10Nm6u" id="4$UnxqrT9t5" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4$UnxqrSVLg" role="1B3o_S" />
+      <node concept="1LlUBW" id="4$UnxqrT2KL" role="3clF45">
+        <node concept="3uibUv" id="4$UnxqrT3uy" role="1Lm7xW">
+          <ref role="3uigEE" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+        </node>
+        <node concept="10Oyi0" id="4$UnxqrT4bc" role="1Lm7xW" />
+      </node>
+      <node concept="37vLTG" id="4$UnxqrSWRE" role="3clF46">
+        <property role="TrG5h" value="eenheid" />
+        <node concept="3Tqbb2" id="4$UnxqrSWRD" role="1tU5fm">
+          <ref role="ehGHo" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5Yd6Hr8MUHc" role="jymVt" />
+    <node concept="3Tm1VV" id="JN8gpVwPCI" role="1B3o_S" />
   </node>
 </model>
 
