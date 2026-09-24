@@ -58,7 +58,7 @@ public abstract class InputProperty<T> implements InputField {
             if (currentValue == null || currentValue.equals(value)) {
                 propertyHolder.setPropertyValueOnce(propertyKey, value);
             } else {
-                universe.add(Violation.of("Reassignment of an attribute at " + locationInfoProvider.getLocationInfo().asString() + "."));
+                universe.add(Violation.of("Reassignment of an attribute at " + locationInfoProvider.getLocationInfo() + "."));
             }
         }
     }

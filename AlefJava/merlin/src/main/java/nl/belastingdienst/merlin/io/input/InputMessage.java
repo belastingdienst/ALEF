@@ -173,7 +173,7 @@ public abstract class InputMessage<T extends MObjectType> {
         for (InputChoice choiceNode : choiceElements) {
             List<String> duplicateFields = getDuplicateChoiceElements(choiceNode, encounteredFieldNames);
             if (duplicateFields.size() > 1) {
-                universe.add(Violation.of(String.format("Invalid choice selection at %s. The following mutually exclusive fields were provided: %s", parser.getLocationInfo().asString(), String.join(", ", duplicateFields))));
+                universe.add(Violation.of(String.format("Invalid choice selection at %s. The following mutually exclusive fields were provided: %s", parser.getLocationInfo(), String.join(", ", duplicateFields))));
             }
         }
     }
@@ -184,7 +184,7 @@ public abstract class InputMessage<T extends MObjectType> {
             if (expectedFieldNames.contains(fieldName)) {
                 Integer currentIndex = getElementOrderMap().get(fieldName);
                 if (currentIndex == null || currentIndex < lastSeenIndex) {
-                    universe.add(Violation.of(String.format("Field '%s' is out of order at %s. It appears after a field that should follow it.", parser.getLocationInfo().asString(), fieldName)));
+                    universe.add(Violation.of(String.format("Field '%s' is out of order at %s. It appears after a field that should follow it.", parser.getLocationInfo(), fieldName)));
                 } else {
                     lastSeenIndex = currentIndex;
                 }
@@ -195,7 +195,7 @@ public abstract class InputMessage<T extends MObjectType> {
     private void checkRequiredFields(MUniverse universe, ContentParser parser, List<String> encounteredFieldNames) {
         for (String requiredFieldName : requiredFieldNames) {
             if (!encounteredFieldNames.contains(requiredFieldName)) {
-                universe.add(Violation.of(String.format("The required field '%s' is missing at %s.", requiredFieldName, parser.getLocationInfo().asString())));
+                universe.add(Violation.of(String.format("The required field '%s' is missing at %s.", requiredFieldName, parser.getLocationInfo())));
             }
         }
     }
@@ -203,7 +203,7 @@ public abstract class InputMessage<T extends MObjectType> {
     private void checkForUnexpectedFields(MUniverse universe, ContentParser parser, List<String> encounteredFieldNames) {
         for (String fieldName : encounteredFieldNames) {
             if (!expectedFieldNames.contains(fieldName)) {
-                universe.add(Violation.of(String.format("The field '%s' is not allowed in this message structure at %s.", fieldName, parser.getLocationInfo().asString())));
+                universe.add(Violation.of(String.format("The field '%s' is not allowed in this message structure at %s.", fieldName, parser.getLocationInfo())));
             }
         }
     }
