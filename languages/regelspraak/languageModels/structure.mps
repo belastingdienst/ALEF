@@ -623,6 +623,14 @@
       <property role="TrG5h" value="isGemigreerdVoorPercentages" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="FblgSzgnRS" role="1TKVEl">
+      <property role="IQ2nx" value="777808879860940280" />
+      <property role="TrG5h" value="aantalDecimalenAlsTekst" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="FblgSzgoqG" role="lGtFl">
+        <property role="t5JxN" value="Deze property bestaat alleen om in de editor &quot;decimalen&quot;, &quot;tientallen&quot;, &quot;hondredtallen&quot; te laten zien i.p.v. cijfers." />
+      </node>
+    </node>
     <node concept="1TJgyj" id="6NL0NB_CwIV" role="1TKVEi">
       <property role="IQ2ns" value="7850059172684106683" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

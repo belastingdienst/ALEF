@@ -5971,5 +5971,24 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="kjEOpujd9W">
+    <property role="3GE5qa" value="expressies" />
+    <ref role="1M2myG" to="m234:6NL0NB_CwId" resolve="Afronden" />
+    <node concept="EnEH3" id="kjEOpujdlF" role="1MhHOB">
+      <ref role="EomxK" to="m234:FblgSzgnRS" resolve="aantalDecimalenAlsTekst" />
+      <node concept="Eqf_E" id="kjEOpukgHL" role="EtsB7">
+        <node concept="3clFbS" id="kjEOpukgHM" role="2VODD2">
+          <node concept="3clFbF" id="kjEOpukis6" role="3cqZAp">
+            <node concept="2OqwBi" id="kjEOpukiNP" role="3clFbG">
+              <node concept="EsrRn" id="kjEOpukis5" role="2Oq$k0" />
+              <node concept="2qgKlT" id="kjEOpukjR7" role="2OqNvi">
+                <ref role="37wK5l" to="u5to:kjEOpujqd2" resolve="alsTekst" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
