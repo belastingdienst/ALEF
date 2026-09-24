@@ -16012,6 +16012,9 @@
         <node concept="3_I8Xc" id="3lxzYwwP1EA" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1nTn8MoO6pf" resolve="mps-ant-make" />
         </node>
+        <node concept="3_I8Xc" id="3yV49$NQrK5" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1KlmwaFzuoK" resolve="java" />
+        </node>
         <node concept="3_I8Xc" id="2i$QD9la2LD" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5lGJ4TaqgiR" resolve="mps-modelchecker" />
         </node>
@@ -16023,6 +16026,9 @@
         </node>
         <node concept="3_I8Xc" id="62WLrFyKszn" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3SKb_4JujwY" resolve="mps-spellcheck" />
+        </node>
+        <node concept="3_I8Xc" id="3yV49$NQsim" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:6jr5_GHtHEg" resolve="grazie" />
         </node>
         <node concept="3_I8Xc" id="2JU2xppDKiV" role="39821P">
           <ref role="3_I8Xa" to="ffeo:Ye$g8PO953" resolve="mps-kotlin" />
@@ -16042,22 +16048,31 @@
             <property role="3LWZYl" value="com.dslfoundry.langvis/**" />
           </node>
           <node concept="3LWZYq" id="1fA0$h2ysut" role="1juEy9">
-            <property role="3LWZYl" value="com.mbeddr.mpsutil.intentions/*" />
+            <property role="3LWZYl" value="com.mbeddr.mpsutil.intentions/**" />
+          </node>
+          <node concept="3LWZYq" id="3yV49$NQuku" role="1juEy9">
+            <property role="3LWZYl" value="nl.f1re.testing/**" />
+          </node>
+          <node concept="3LWZYq" id="3yV49$NQvoX" role="1juEy9">
+            <property role="3LWZYl" value="nl.f1re.mpsutil.hasher/**" />
+          </node>
+          <node concept="3LWZYq" id="3yV49$NQvJO" role="1juEy9">
+            <property role="3LWZYl" value="nl.f1re.mps.aliascustomization/**" />
           </node>
           <node concept="3LWZYq" id="1fA0$h2ysuu" role="1juEy9">
-            <property role="3LWZYl" value="com.mbeddr.mpsutil.modellisteners/*" />
+            <property role="3LWZYl" value="com.mbeddr.mpsutil.modellisteners/**" />
           </node>
           <node concept="3LWZYq" id="1fA0$h2ysuA" role="1juEy9">
-            <property role="3LWZYl" value="de.itemis.mps.nativelibs/*" />
+            <property role="3LWZYl" value="de.itemis.mps.nativelibs/**" />
           </node>
           <node concept="3LWZYq" id="1fA0$h2ysuB" role="1juEy9">
-            <property role="3LWZYl" value="de.itemis.mps.nativelibs.loader/*" />
+            <property role="3LWZYl" value="de.itemis.mps.nativelibs.loader/**" />
           </node>
           <node concept="3LWZYq" id="1fA0$h2ysuC" role="1juEy9">
-            <property role="3LWZYl" value="de.q60.shadowmodels/*" />
+            <property role="3LWZYl" value="de.q60.shadowmodels/**" />
           </node>
           <node concept="3LWZYq" id="1fA0$h2ysuD" role="1juEy9">
-            <property role="3LWZYl" value="de.q60.shadowmodels.examples/*" />
+            <property role="3LWZYl" value="de.q60.shadowmodels.examples/**" />
           </node>
         </node>
         <node concept="3ygNvl" id="23JHtZrxdjR" role="39821P">
