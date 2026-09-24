@@ -27,6 +27,7 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="mpcu" ref="r:5afbe839-fa62-437e-adcd-87c53b4be95c(servicespraak.tijd.structure)" />
     <import index="txb8" ref="r:6d537c47-71e0-4074-bdff-6df0d77b3827(servicespraak.behavior)" />
+    <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="lxx5" ref="r:fc4a1009-2df4-497d-b754-af7772a25efa(gegevensspraak.tijd.structure)" implicit="true" />
     <import index="3ph8" ref="r:1d793c6a-f9fb-4b17-9a22-dc37ef699df6(gegevensspraak.tijd.behavior)" implicit="true" />
@@ -4122,6 +4123,15 @@
       <ref role="n9lRv" to="4slc:7tX6F6eKUxs" resolve="Rapportage" />
     </node>
     <node concept="MFdtk" id="47QWs2CZ7JO" role="MFfac">
+      <node concept="MFePr" id="5PA5YHm8LPX" role="MEKKP">
+        <property role="ObZi_" value="version" />
+        <node concept="MFeIe" id="5PA5YHm8LPY" role="MFez3">
+          <property role="MEZHC" value="-1" />
+        </node>
+        <node concept="5jKBG" id="5PA5YHm8LPZ" role="lGtFl">
+          <ref role="v9R2y" node="5PA5YHm2QxM" resolve="smi_version" />
+        </node>
+      </node>
       <node concept="MFePr" id="47QWs2CZ7JP" role="MEKKP">
         <property role="ObZi_" value="rootnodes" />
         <node concept="nMP74" id="47QWs2CZ7JQ" role="MFez3">
@@ -4202,6 +4212,15 @@
     <property role="TrG5h" value="smi_service" />
     <property role="MFdFT" value="json" />
     <node concept="MFdtk" id="71Vvxsvg6uQ" role="MFfac">
+      <node concept="MFePr" id="5PA5YHm2VDD" role="MEKKP">
+        <property role="ObZi_" value="version" />
+        <node concept="MFeIe" id="5PA5YHm2WcU" role="MFez3">
+          <property role="MEZHC" value="-1" />
+        </node>
+        <node concept="5jKBG" id="5PA5YHm2WcW" role="lGtFl">
+          <ref role="v9R2y" node="5PA5YHm2QxM" resolve="smi_version" />
+        </node>
+      </node>
       <node concept="MFePr" id="582PD76uRNU" role="MEKKP">
         <property role="ObZi_" value="rootnodes" />
         <node concept="nMP74" id="582PD76uSnP" role="MFez3">
@@ -10338,6 +10357,44 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="5PA5YHm2QxM">
+    <property role="TrG5h" value="smi_version" />
+    <node concept="MFdtk" id="5PA5YHm2RvL" role="13RCb5">
+      <node concept="MFePr" id="5PA5YHm2RvP" role="MEKKP">
+        <property role="ObZi_" value="smi_version" />
+        <node concept="MFeIe" id="5PA5YHm2S2W" role="MFez3">
+          <property role="MEZHC" value="1.0" />
+        </node>
+        <node concept="raruj" id="5PA5YHm2UIt" role="lGtFl" />
+      </node>
+      <node concept="MFePr" id="5PA5YHm2RvY" role="MEKKP">
+        <property role="ObZi_" value="alef_version" />
+        <node concept="MFeIe" id="5PA5YHm2S2V" role="MFez3">
+          <property role="MEZHC" value="version" />
+          <node concept="17Uvod" id="5PA5YHm2S2Y" role="lGtFl">
+            <property role="2qtEX9" value="value" />
+            <property role="P4ACc" value="d65f6f0b-d425-4cdb-985f-4194ffdf3ab2/956750347608253649/956750347608323127" />
+            <node concept="3zFVjK" id="5PA5YHm2S2Z" role="3zH0cK">
+              <node concept="3clFbS" id="5PA5YHm2S30" role="2VODD2">
+                <node concept="3clFbF" id="5PA5YHm2T0H" role="3cqZAp">
+                  <node concept="2OqwBi" id="5PA5YHm2Tza" role="3clFbG">
+                    <node concept="2YIFZM" id="7oMSEbyPqGO" role="2Oq$k0">
+                      <ref role="37wK5l" to="n5dx:7uVlf5cRzHW" resolve="getRunningVersion" />
+                      <ref role="1Pybhc" to="n5dx:4mHXsdSBby3" resolve="AlefVersion" />
+                    </node>
+                    <node concept="liA8E" id="5PA5YHm2TY$" role="2OqNvi">
+                      <ref role="37wK5l" to="n5dx:6ARx8rAi9hX" resolve="mainVersion" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="raruj" id="5PA5YHm2UIu" role="lGtFl" />
       </node>
     </node>
   </node>
