@@ -4,11 +4,13 @@ import java.util.Objects;
 
 public class MDomainType implements IMDataType {
     private final String name;
+    private final String id;
     private final IMDataType base;
 
-    public MDomainType(String name, IMDataType base) {
+    public MDomainType(String name, String id, IMDataType base) {
         this.base = base;
         this.name = name;
+        this.id = id;
     }
 
     @Override
@@ -20,18 +22,19 @@ public class MDomainType implements IMDataType {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         MDomainType that = (MDomainType) o;
-        return Objects.equals(name, that.name) && Objects.equals(base, that.base);
+        return Objects.equals(id, that.id) && Objects.equals(base, that.base);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, base);
+        return Objects.hash(id, base);
     }
 
     @Override
     public String toString() {
         return "MDomainType{" +
                 "name='" + name + '\'' +
+                "id='" + id + '\'' +
                 ", base=" + base +
                 '}';
     }

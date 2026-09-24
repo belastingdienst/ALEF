@@ -24,7 +24,7 @@ class AdapterRegistryTest {
         final AdapterRegistry registry = new AdapterRegistry(false);
         final ContentReader<Integer> reader = createReaderProxy();
         registry.registerReader(new MNumericType(2, MNumberRange.ANY, null), reader);
-        final ContentReader<Integer> result = (ContentReader<Integer>) registry.getReader(Integer.class, new MDomainType("Bedrag", new MNumericType(2, MNumberRange.ANY, new MUnit(List.of(new MUnitPart(1, "euro")), List.of()))));
+        final ContentReader<Integer> result = (ContentReader<Integer>) registry.getReader(Integer.class, new MDomainType("Bedrag", "123123", new MNumericType(2, MNumberRange.ANY, new MUnit(List.of(new MUnitPart(1, "euro")), List.of()))));
         assertSame(reader, result);
     }
 

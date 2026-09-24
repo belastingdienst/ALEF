@@ -84,6 +84,7 @@
     <import index="nxml" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.transform(JDK/)" />
     <import index="4meo" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.io.validation(alef.runtime/)" />
     <import index="thp" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.base.types(alef.runtime/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -429,6 +430,9 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
@@ -10441,7 +10445,7 @@
         <node concept="2ShNRf" id="79aBNEaZLsg" role="gfFT$">
           <node concept="1pGfFk" id="79aBNEaZMgs" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="thp:~MDomainType.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.base.types.IMDataType)" resolve="MDomainType" />
+            <ref role="37wK5l" to="thp:~MDomainType.&lt;init&gt;(java.lang.String,java.lang.String,nl.belastingdienst.merlin.base.types.IMDataType)" resolve="MDomainType" />
             <node concept="Xl_RD" id="79aBNEaZNAt" role="37wK5m">
               <property role="Xl_RC" value="name" />
               <node concept="17Uvod" id="79aBNEaZOwl" role="lGtFl">
@@ -10490,6 +10494,39 @@
                         <node concept="30H73N" id="1JRDkcM60qA" role="2Oq$k0" />
                         <node concept="2qgKlT" id="1JRDkcM63Lj" role="2OqNvi">
                           <ref role="37wK5l" to="8l26:6Ylaq4fGYnJ" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="1JRDkcNlny8" role="37wK5m">
+              <property role="Xl_RC" value="id" />
+              <node concept="17Uvod" id="1JRDkcNloHb" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                <node concept="3zFVjK" id="1JRDkcNloHc" role="3zH0cK">
+                  <node concept="3clFbS" id="1JRDkcNloHd" role="2VODD2">
+                    <node concept="3clFbF" id="1JRDkcNloTB" role="3cqZAp">
+                      <node concept="2OqwBi" id="1JRDkcNlt3c" role="3clFbG">
+                        <node concept="2OqwBi" id="1JRDkcNlrZ7" role="2Oq$k0">
+                          <node concept="liA8E" id="1JRDkcNlsTL" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
+                          </node>
+                          <node concept="2JrnkZ" id="1JRDkcNlrZi" role="2Oq$k0">
+                            <node concept="1eOMI4" id="1JRDkcNlrGx" role="2JrQYb">
+                              <node concept="2OqwBi" id="1JRDkcNlpiw" role="1eOMHV">
+                                <node concept="30H73N" id="1JRDkcNloTA" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="1JRDkcNlqos" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="3ic2:58tBIcSIKOQ" resolve="domein" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1JRDkcNltwH" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                         </node>
                       </node>
                     </node>
