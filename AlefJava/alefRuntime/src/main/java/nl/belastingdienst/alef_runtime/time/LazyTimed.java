@@ -145,9 +145,13 @@ public class LazyTimed<T> implements ICompressed<T> {
             while (prev != null) {
                 if (!prev.hasValue) {
                     Time t = prev.period.end();
-                    TimeBox<T> box = delegate.atTimeJustBefore(t);
-                    prev.attach(box);
-                    assert prev.hasValue;
+                    try {
+                        TimeBox<T> box = delegate.atTimeJustBefore(t);
+                        prev.attach(box);
+                        assert prev.hasValue;
+                    } catch (InfinitePeriodException e) {
+                        return;
+                    }
                 }
                 TimeBox<T> mergeBox = delegate.mode().mergeBoxes(prev.asBox(), this.asBox());
                 if (mergeBox == null) return;
