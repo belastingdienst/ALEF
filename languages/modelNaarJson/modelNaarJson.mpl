@@ -34,6 +34,7 @@
         <dependency reexport="false">d8af31be-1847-4d5b-8686-78e232d4e0f8(servicespraak)</dependency>
         <dependency reexport="false">65239ca4-9057-41f8-999d-97fa1a60b298(besturingspraak)</dependency>
         <dependency reexport="false">26c003b8-2642-44b1-8d28-63f478da851b(servicespraak.tijd)</dependency>
+        <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -84,6 +85,7 @@
         <module reference="c31f3da0-0042-4ad5-b4fc-2622762fa0fe(linguistics.runtime)" version="0" />
         <module reference="421e69be-2491-4702-be1c-bfd5ff22ca14(modelNaarJson)" version="5" />
         <module reference="0abaf1a6-e07e-409b-8e44-ca4c9ad12e30(modelNaarJson.generator)" version="0" />
+        <module reference="71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)" version="0" />
         <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
         <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
         <module reference="e107d4b4-25d4-42be-99db-ec5b2643464c(serviceNaarXsd)" version="0" />
