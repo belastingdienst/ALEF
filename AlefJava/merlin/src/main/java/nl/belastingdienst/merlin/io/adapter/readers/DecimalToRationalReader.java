@@ -18,8 +18,12 @@ public class DecimalToRationalReader extends AbstractReader<BigDecimal, BigRatio
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public DecimalToRationalReader(List<MValidationRule<BigDecimal>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public DecimalToRationalReader(List<MValidationRule<BigDecimal>> validationRules) {
+        super(validationRules);
+    }
+
+    public DecimalToRationalReader(List<MValidationRule<BigDecimal>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

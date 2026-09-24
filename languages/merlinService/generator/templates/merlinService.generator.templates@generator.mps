@@ -3718,7 +3718,7 @@
         <node concept="2ShNRf" id="40HeABPsMee" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPsO3V" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="628q:~BooleanToBooleanReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="BooleanToBooleanReader" />
+            <ref role="37wK5l" to="628q:~BooleanToBooleanReader.&lt;init&gt;(java.util.List)" resolve="BooleanToBooleanReader" />
             <node concept="2YIFZM" id="40HeABPsOwb" role="37wK5m">
               <ref role="37wK5l" to="33ny:~List.of(java.lang.Object)" resolve="of" />
               <ref role="1Pybhc" to="33ny:~List" resolve="List" />
@@ -3748,12 +3748,6 @@
                     <ref role="v3LJV" node="2L0M$HhItsb" resolve="externType" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3P7Z" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3P80" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -3786,7 +3780,7 @@
         <node concept="2ShNRf" id="40HeABPqQ8B" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPqQ8C" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="628q:~StringToStringReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="StringToStringReader" />
+            <ref role="37wK5l" to="628q:~StringToStringReader.&lt;init&gt;(java.util.List)" resolve="StringToStringReader" />
             <node concept="2YIFZM" id="40HeABPsYJh" role="37wK5m">
               <ref role="37wK5l" to="33ny:~List.of(java.lang.Object)" resolve="of" />
               <ref role="1Pybhc" to="33ny:~List" resolve="List" />
@@ -3816,12 +3810,6 @@
                     <ref role="v3LJV" node="2L0M$HhItsb" resolve="externType" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3R2q" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3R2r" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -4098,7 +4086,7 @@
         <node concept="2ShNRf" id="40HeABPqQeE" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPqQeF" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="628q:~DateTimeToDateTimeReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DateTimeToDateTimeReader" />
+            <ref role="37wK5l" to="628q:~DateTimeToDateTimeReader.&lt;init&gt;(java.util.List)" resolve="DateTimeToDateTimeReader" />
             <node concept="2YIFZM" id="40HeABPuK3E" role="37wK5m">
               <ref role="37wK5l" to="33ny:~List.of(java.lang.Object)" resolve="of" />
               <ref role="1Pybhc" to="33ny:~List" resolve="List" />
@@ -4128,12 +4116,6 @@
                     <ref role="v3LJV" node="2L0M$HhItsb" resolve="externType" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3ShQ" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3ShR" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -4166,7 +4148,7 @@
         <node concept="2ShNRf" id="40HeABPqQfo" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPqQfp" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="628q:~DateToDateTimeReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DateToDateTimeReader" />
+            <ref role="37wK5l" to="628q:~DateToDateTimeReader.&lt;init&gt;(java.util.List)" resolve="DateToDateTimeReader" />
             <node concept="2YIFZM" id="40HeABPuWvX" role="37wK5m">
               <ref role="37wK5l" to="33ny:~List.of(java.lang.Object)" resolve="of" />
               <ref role="1Pybhc" to="33ny:~List" resolve="List" />
@@ -4196,12 +4178,6 @@
                     <ref role="v3LJV" node="2L0M$HhItsb" resolve="externType" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3Tlj" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3Tlk" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -4374,7 +4350,7 @@
         <node concept="2ShNRf" id="40HeABPj21Z" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPj220" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="b31m:~BooleanToBooleanWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="BooleanToBooleanWriter" />
+            <ref role="37wK5l" to="b31m:~BooleanToBooleanWriter.&lt;init&gt;(java.lang.String)" resolve="BooleanToBooleanWriter" />
             <node concept="Xl_RD" id="55kDvbI$I5k" role="37wK5m">
               <property role="Xl_RC" value="valueTypeName" />
               <node concept="17Uvod" id="55kDvbI$O2E" role="lGtFl">
@@ -4397,12 +4373,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3EdX" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3LS4" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -4435,7 +4405,7 @@
         <node concept="2ShNRf" id="40HeABPjcCV" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPjcCW" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="b31m:~StringToStringWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="StringToStringWriter" />
+            <ref role="37wK5l" to="b31m:~StringToStringWriter.&lt;init&gt;(java.lang.String)" resolve="StringToStringWriter" />
             <node concept="Xl_RD" id="55kDvbI$Vst" role="37wK5m">
               <property role="Xl_RC" value="valueTypeName" />
               <node concept="17Uvod" id="55kDvbI$Vsu" role="lGtFl">
@@ -4458,12 +4428,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3MCG" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3MCH" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -4691,7 +4655,7 @@
         <node concept="2ShNRf" id="40HeABNR9Y9" role="gfFT$">
           <node concept="1pGfFk" id="40HeABNRcKs" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="b31m:~DateTimeToDateTimeWriter.&lt;init&gt;(boolean,java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DateTimeToDateTimeWriter" />
+            <ref role="37wK5l" to="b31m:~DateTimeToDateTimeWriter.&lt;init&gt;(boolean,java.lang.String)" resolve="DateTimeToDateTimeWriter" />
             <node concept="3clFbT" id="40HeABP$dqX" role="37wK5m">
               <node concept="17Uvod" id="40HeABP$ecq" role="lGtFl">
                 <property role="2qtEX9" value="value" />
@@ -4734,12 +4698,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3Nby" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3Nbz" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -4811,7 +4769,7 @@
         <node concept="2ShNRf" id="40HeABPqkE7" role="gfFT$">
           <node concept="1pGfFk" id="40HeABPqkE8" role="2ShVmc">
             <property role="373rjd" value="true" />
-            <ref role="37wK5l" to="b31m:~DateTimeToDateWriter.&lt;init&gt;(java.lang.String,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="DateTimeToDateWriter" />
+            <ref role="37wK5l" to="b31m:~DateTimeToDateWriter.&lt;init&gt;(java.lang.String)" resolve="DateTimeToDateWriter" />
             <node concept="Xl_RD" id="55kDvbI_8nz" role="37wK5m">
               <property role="Xl_RC" value="valueTypeName" />
               <node concept="17Uvod" id="55kDvbI_8n$" role="lGtFl">
@@ -4834,12 +4792,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="79aBNEj3Nwj" role="37wK5m">
-              <node concept="1pGfFk" id="79aBNEj3Nwk" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="azt5:~IdentityConverter.&lt;init&gt;()" resolve="IdentityConverter" />
               </node>
             </node>
           </node>
@@ -10497,10 +10449,46 @@
                 <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                 <node concept="3zFVjK" id="79aBNEaZOwm" role="3zH0cK">
                   <node concept="3clFbS" id="79aBNEaZOwn" role="2VODD2">
-                    <node concept="3clFbF" id="79aBNEaZOPq" role="3cqZAp">
-                      <node concept="2OqwBi" id="79aBNEaZPej" role="3clFbG">
-                        <node concept="30H73N" id="79aBNEaZOPp" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="79aBNEaZPMj" role="2OqNvi">
+                    <node concept="Jncv_" id="1JRDkcM5H0Y" role="3cqZAp">
+                      <ref role="JncvD" to="3ic2:$infi2rzry" resolve="ObjectModel" />
+                      <node concept="2OqwBi" id="1JRDkcM5HHJ" role="JncvB">
+                        <node concept="30H73N" id="1JRDkcM5HpH" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="1JRDkcM5I9z" role="2OqNvi" />
+                      </node>
+                      <node concept="3clFbS" id="1JRDkcM5H12" role="Jncv$">
+                        <node concept="3cpWs6" id="1JRDkcM5ITk" role="3cqZAp">
+                          <node concept="3cpWs3" id="1JRDkcM5Xd3" role="3cqZAk">
+                            <node concept="2OqwBi" id="1JRDkcM5XUR" role="3uHU7w">
+                              <node concept="30H73N" id="1JRDkcM5XwP" role="2Oq$k0" />
+                              <node concept="2qgKlT" id="1JRDkcM5ZiJ" role="2OqNvi">
+                                <ref role="37wK5l" to="8l26:6Ylaq4fGYnJ" resolve="getName" />
+                              </node>
+                            </node>
+                            <node concept="3cpWs3" id="1JRDkcM5VmV" role="3uHU7B">
+                              <node concept="2OqwBi" id="1JRDkcM5LSx" role="3uHU7B">
+                                <node concept="Jnkvi" id="1JRDkcM5Jma" role="2Oq$k0">
+                                  <ref role="1M0zk5" node="1JRDkcM5H14" resolve="objectModel" />
+                                </node>
+                                <node concept="3TrcHB" id="1JRDkcM5Tl2" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="1JRDkcM5W18" role="3uHU7w">
+                                <property role="Xl_RC" value="_" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="JncvC" id="1JRDkcM5H14" role="JncvA">
+                        <property role="TrG5h" value="objectModel" />
+                        <node concept="2jxLKc" id="1JRDkcM5H15" role="1tU5fm" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="1JRDkcM5ZUo" role="3cqZAp">
+                      <node concept="2OqwBi" id="1JRDkcM62FT" role="3cqZAk">
+                        <node concept="30H73N" id="1JRDkcM60qA" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="1JRDkcM63Lj" role="2OqNvi">
                           <ref role="37wK5l" to="8l26:6Ylaq4fGYnJ" resolve="getName" />
                         </node>
                       </node>

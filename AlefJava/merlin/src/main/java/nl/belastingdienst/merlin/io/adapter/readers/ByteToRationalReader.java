@@ -17,8 +17,12 @@ public class ByteToRationalReader extends AbstractReader<Byte, BigRational> {
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public ByteToRationalReader(List<MValidationRule<Byte>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public ByteToRationalReader(List<MValidationRule<Byte>> validationRules) {
+        super(validationRules);
+    }
+
+    public ByteToRationalReader(List<MValidationRule<Byte>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

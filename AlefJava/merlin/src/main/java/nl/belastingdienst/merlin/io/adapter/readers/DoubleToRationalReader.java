@@ -17,8 +17,12 @@ public class DoubleToRationalReader extends AbstractReader<Double, BigRational> 
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public DoubleToRationalReader(List<MValidationRule<Double>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public DoubleToRationalReader(List<MValidationRule<Double>> validationRules) {
+        super(validationRules);
+    }
+
+    public DoubleToRationalReader(List<MValidationRule<Double>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

@@ -17,8 +17,12 @@ public class FloatToRationalReader extends AbstractReader<Float, BigRational> {
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public FloatToRationalReader(List<MValidationRule<Float>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public FloatToRationalReader(List<MValidationRule<Float>> validationRules) {
+        super(validationRules);
+    }
+
+    public FloatToRationalReader(List<MValidationRule<Float>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

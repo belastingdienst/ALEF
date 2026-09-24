@@ -327,7 +327,7 @@
         <property role="2RIz2" value="30CduGMXDbm/string" />
       </node>
       <node concept="1sFm6q" id="1JRDkcKLNqv" role="2OxYR">
-        <property role="1sFm72" value="^-?\d+([.,]\d+)?$" />
+        <property role="1sFm72" value="-?\d+([.,]\d+)?" />
       </node>
     </node>
     <node concept="3AW6rv" id="6Kuwjen0IXR" role="21XpMX">
@@ -580,10 +580,6 @@
               <property role="3dWX$t" value="12.34" />
               <ref role="3dWXzV" node="6Kuwjen0IRn" resolve="bedrag" />
             </node>
-            <node concept="3dWX$1" id="1JRDkcKLXZV" role="27HnPe">
-              <property role="3dWX$t" value="xyz" />
-              <ref role="3dWXzV" node="1JRDkcKLQvx" resolve="nummeralstekst" />
-            </node>
           </node>
         </node>
       </node>
@@ -595,10 +591,6 @@
             <node concept="1GVH3N" id="1JRDkcKLY06" role="27HnPh">
               <property role="1GVH2a" value="12.34" />
               <ref role="1GVH3K" node="6Kuwjen0IRt" resolve="bedrag" />
-            </node>
-            <node concept="1GVH3N" id="1JRDkcKLY07" role="27HnPh">
-              <property role="1GVH2a" value="xyz" />
-              <ref role="1GVH3K" node="1JRDkcKLRnJ" resolve="nummeralstekst" />
             </node>
           </node>
         </node>
@@ -730,6 +722,89 @@
                 <property role="3oM_SC" value="ge-escaped." />
               </node>
             </node>
+            <node concept="1PaTwC" id="1JRDkcMc2Hb" role="1PaQFQ">
+              <node concept="3oM_SD" id="1JRDkcMc2Ha" role="1PaTwD">
+                <property role="3oM_SC" value="Voor" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc2HS" role="1PaTwD">
+                <property role="3oM_SC" value="nu" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc2QY" role="1PaTwD">
+                <property role="3oM_SC" value="bevat" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc2QZ" role="1PaTwD">
+                <property role="3oM_SC" value="het" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc2R0" role="1PaTwD">
+                <property role="3oM_SC" value="nog" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc305" role="1PaTwD">
+                <property role="3oM_SC" value="even" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc306" role="1PaTwD">
+                <property role="3oM_SC" value="geen" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc39b" role="1PaTwD">
+                <property role="3oM_SC" value="tekst" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc39c" role="1PaTwD">
+                <property role="3oM_SC" value="die" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc39d" role="1PaTwD">
+                <property role="3oM_SC" value="niet" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3ii" role="1PaTwD">
+                <property role="3oM_SC" value="voldoet" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3ij" role="1PaTwD">
+                <property role="3oM_SC" value="aan" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3ro" role="1PaTwD">
+                <property role="3oM_SC" value="de" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3rp" role="1PaTwD">
+                <property role="3oM_SC" value="regex," />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3$u" role="1PaTwD">
+                <property role="3oM_SC" value="omdat" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3$v" role="1PaTwD">
+                <property role="3oM_SC" value="het" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3$w" role="1PaTwD">
+                <property role="3oM_SC" value="anders" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3H_" role="1PaTwD">
+                <property role="3oM_SC" value="de" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3HA" role="1PaTwD">
+                <property role="3oM_SC" value="SOAP" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3QH" role="1PaTwD">
+                <property role="3oM_SC" value="validatie" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc3ZM" role="1PaTwD">
+                <property role="3oM_SC" value="activeert" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc48R" role="1PaTwD">
+                <property role="3oM_SC" value="die" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc4r2" role="1PaTwD">
+                <property role="3oM_SC" value="alleen" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc4$7" role="1PaTwD">
+                <property role="3oM_SC" value="actief" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc4Hc" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc4Hd" role="1PaTwD">
+                <property role="3oM_SC" value="gedurende" />
+              </node>
+              <node concept="3oM_SD" id="1JRDkcMc4Qi" role="1PaTwD">
+                <property role="3oM_SC" value="testen." />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -746,7 +821,7 @@
               <ref role="3dWXzV" node="6Kuwjen0IRn" resolve="bedrag" />
             </node>
             <node concept="3dWX$1" id="1JRDkcKM5OB" role="27HnPe">
-              <property role="3dWX$t" value="12,3" />
+              <property role="3dWX$t" value="123" />
               <ref role="3dWXzV" node="1JRDkcKLQvx" resolve="nummeralstekst" />
             </node>
           </node>
@@ -764,7 +839,7 @@
               <ref role="1GVH3K" node="6Kuwjen0IRt" resolve="bedrag" />
             </node>
             <node concept="1GVH3N" id="1JRDkcKM6Hh" role="27HnPh">
-              <property role="1GVH2a" value="12,3" />
+              <property role="1GVH2a" value="123" />
               <ref role="1GVH3K" node="1JRDkcKLRnJ" resolve="nummeralstekst" />
             </node>
           </node>

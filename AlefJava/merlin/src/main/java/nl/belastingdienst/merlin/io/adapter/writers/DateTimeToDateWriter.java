@@ -8,6 +8,10 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeToDateWriter extends AbstractWriter<LocalDateTime> {
+    public DateTimeToDateWriter(String valueTypeName) {
+        super(valueTypeName);
+    }
+
     public DateTimeToDateWriter(String valueTypeName, Converter<LocalDateTime> converter) {
         super(valueTypeName, converter);
     }

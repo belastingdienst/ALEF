@@ -17,8 +17,12 @@ public class IntToRationalReader extends AbstractReader<Integer, BigRational> {
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public IntToRationalReader(List<MValidationRule<Integer>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public IntToRationalReader(List<MValidationRule<Integer>> validationRules) {
+        super(validationRules);
+    }
+
+    public IntToRationalReader(List<MValidationRule<Integer>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

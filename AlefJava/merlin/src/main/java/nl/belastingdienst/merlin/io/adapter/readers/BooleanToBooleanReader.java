@@ -13,11 +13,15 @@ import java.util.List;
 
 public class BooleanToBooleanReader extends AbstractReader<Boolean, Boolean> {
     public BooleanToBooleanReader() {
-        super(Collections.emptyList(), new IdentityConverter<>());
+        super(Collections.emptyList());
     }
 
-    public BooleanToBooleanReader(List<MValidationRule<Boolean>> mValidationRules, Converter<Boolean> converter) {
-        super(mValidationRules, converter);
+    public BooleanToBooleanReader(List<MValidationRule<Boolean>> validationRules) {
+        super(validationRules);
+    }
+
+    public BooleanToBooleanReader(List<MValidationRule<Boolean>> validationRules, Converter<Boolean> converter) {
+        super(validationRules, converter);
     }
 
     @Override

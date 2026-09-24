@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.adapter.writers;
 
 import nl.belastingdienst.merlin.io.adapter.converters.Converter;
+import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 
 import java.io.IOException;
@@ -8,6 +9,10 @@ import java.io.IOException;
 public class BooleanToBooleanWriter implements FeatureSupport<Boolean> {
     private final String valueTypeName;
     private final Converter<Boolean> converter;
+
+    public BooleanToBooleanWriter(String valueTypeName) {
+        this(valueTypeName, new IdentityConverter<>());
+    }
 
     public BooleanToBooleanWriter(String valueTypeName, Converter<Boolean> converter) {
         assert converter != null : "A converter must be provided.";

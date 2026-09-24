@@ -7,6 +7,10 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 
 public class RationalToDecimalWriter extends AbstractWriter<BigRational> {
+    public RationalToDecimalWriter(String valueTypeName) {
+        super(valueTypeName);
+    }
+
     public RationalToDecimalWriter(String valueTypeName, Converter<BigRational> converter) {
         super(valueTypeName, converter);
     }

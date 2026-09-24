@@ -7,6 +7,10 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 
 public class RationalToFloatWriter extends AbstractWriter<BigRational> {
+    public RationalToFloatWriter(String valueTypeName) {
+        super(valueTypeName);
+    }
+
     public RationalToFloatWriter(String valueTypeName, Converter<BigRational> converter) {
         super(valueTypeName, converter);
     }

@@ -7,6 +7,10 @@ import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import java.io.IOException;
 
 public class RationalToShortWriter extends AbstractWriter<BigRational> {
+    public RationalToShortWriter(String valueTypeName) {
+        super(valueTypeName);
+    }
+
     public RationalToShortWriter(String valueTypeName, Converter<BigRational> converter) {
         super(valueTypeName, converter);
     }

@@ -18474,7 +18474,7 @@
                   <node concept="ZC_QK" id="1qJhPmfLzaj" role="2tJFKM">
                     <ref role="2aWVGs" to="628q:~IntToRationalReader" resolve="IntToRationalReader" />
                     <node concept="ZC_QK" id="79aBNE9BlFM" role="2aWVGa">
-                      <ref role="2aWVGs" to="628q:~IntToRationalReader.&lt;init&gt;(java.util.List,nl.belastingdienst.merlin.io.adapter.converters.Converter)" resolve="IntToRationalReader" />
+                      <ref role="2aWVGs" to="628q:~IntToRationalReader.&lt;init&gt;(java.util.List)" resolve="IntToRationalReader" />
                     </node>
                   </node>
                 </node>

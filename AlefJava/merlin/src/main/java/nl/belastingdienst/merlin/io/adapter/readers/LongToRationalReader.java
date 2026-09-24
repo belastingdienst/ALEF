@@ -17,8 +17,12 @@ public class LongToRationalReader extends AbstractReader<Long, BigRational> {
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public LongToRationalReader(List<MValidationRule<Long>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public LongToRationalReader(List<MValidationRule<Long>> validationRules) {
+        super(validationRules);
+    }
+
+    public LongToRationalReader(List<MValidationRule<Long>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

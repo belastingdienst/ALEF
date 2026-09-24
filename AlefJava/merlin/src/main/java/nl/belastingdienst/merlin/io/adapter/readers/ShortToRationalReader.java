@@ -17,8 +17,12 @@ public class ShortToRationalReader extends AbstractReader<Short, BigRational> {
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public ShortToRationalReader(List<MValidationRule<Short>> mValidationRules, Converter<BigRational> converter) {
-        super(mValidationRules, converter);
+    public ShortToRationalReader(List<MValidationRule<Short>> validationRules) {
+        super(validationRules);
+    }
+
+    public ShortToRationalReader(List<MValidationRule<Short>> validationRules, Converter<BigRational> converter) {
+        super(validationRules, converter);
     }
 
     @Override

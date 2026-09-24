@@ -4,6 +4,7 @@ import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.ContentReader;
 import nl.belastingdienst.merlin.io.adapter.converters.Converter;
+import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.validation.MValidationRule;
 
 import java.util.List;
@@ -11,6 +12,10 @@ import java.util.List;
 public abstract class AbstractReader<M, A> implements ContentReader<A> {
     private final List<MValidationRule<M>> validationRules;
     private final Converter<A> converter;
+
+    protected AbstractReader(List<MValidationRule<M>> validationRules) {
+        this(validationRules, new IdentityConverter<>());
+    }
 
     protected AbstractReader(List<MValidationRule<M>> validationRules, Converter<A> converter) {
         assert converter != null : "A converter must be provided.";

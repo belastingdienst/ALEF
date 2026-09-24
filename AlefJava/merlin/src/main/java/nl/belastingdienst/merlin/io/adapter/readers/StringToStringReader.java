@@ -15,8 +15,12 @@ public class StringToStringReader extends AbstractReader<String, String> {
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public StringToStringReader(List<MValidationRule<String>> mValidationRules, Converter<String> converter) {
-        super(mValidationRules, converter);
+    public StringToStringReader(List<MValidationRule<String>> validationRules) {
+        super(validationRules);
+    }
+
+    public StringToStringReader(List<MValidationRule<String>> validationRules, Converter<String> converter) {
+        super(validationRules, converter);
     }
 
     @Override

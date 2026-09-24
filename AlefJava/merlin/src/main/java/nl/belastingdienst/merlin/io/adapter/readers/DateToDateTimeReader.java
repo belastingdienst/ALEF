@@ -20,8 +20,12 @@ public class DateToDateTimeReader extends AbstractReader<String, LocalDateTime> 
         super(Collections.emptyList(), new IdentityConverter<>());
     }
 
-    public DateToDateTimeReader(List<MValidationRule<String>> mValidationRules, Converter<LocalDateTime> converter) {
-        super(mValidationRules, converter);
+    public DateToDateTimeReader(List<MValidationRule<String>> validationRules) {
+        super(validationRules);
+    }
+
+    public DateToDateTimeReader(List<MValidationRule<String>> validationRules, Converter<LocalDateTime> converter) {
+        super(validationRules, converter);
     }
 
     @Override
