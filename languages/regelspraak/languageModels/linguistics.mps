@@ -32,6 +32,7 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -1128,38 +1129,76 @@
       <node concept="2xS9Ii" id="25vcn1H1RC6" role="23GdfP">
         <property role="23G6sU" value="op" />
       </node>
-      <node concept="2xS9Io" id="25vcn1H1RCm" role="23GdfP">
-        <ref role="2xS9Ip" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-      </node>
-      <node concept="3TRWRN" id="19qDpgVWx4_" role="23GdfP">
-        <node concept="DxGyO" id="19qDpgVWx4A" role="3TRWRL">
-          <property role="TrG5h" value="decimaal" />
-          <property role="Dxyl8" value="decimalen" />
-        </node>
-        <node concept="1qK_aW" id="19qDpgVWx4B" role="2Cuaq2">
-          <node concept="1qK$xc" id="19qDpgVWx4C" role="1qNoHs">
-            <node concept="1qwsLN" id="19qDpgVW$b3" role="1qIng$" />
-            <node concept="2358bp" id="19qDpgVWx4K" role="1qNoHl">
-              <node concept="234$WW" id="19qDpgVWx4M" role="2358aa">
-                <node concept="3clFbS" id="19qDpgVWx4O" role="2VODD2">
-                  <node concept="3clFbF" id="19qDpgVWx9E" role="3cqZAp">
-                    <node concept="3clFbC" id="19qDpgVW$ci" role="3clFbG">
-                      <node concept="2OqwBi" id="19qDpgVWxw0" role="3uHU7B">
-                        <node concept="236Rlm" id="19qDpgVWx9D" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="19qDpgVWyci" role="2OqNvi">
-                          <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+      <node concept="23JKdb" id="15d$3CtqMws" role="23GdfP">
+        <node concept="23JKde" id="15d$3CtqMwt" role="23JKd8">
+          <node concept="23GdfO" id="15d$3CtqMwu" role="23JKdf">
+            <node concept="2xS9Io" id="25vcn1H1RCm" role="23GdfP">
+              <ref role="2xS9Ip" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+            </node>
+            <node concept="3TRWRN" id="19qDpgVWx4_" role="23GdfP">
+              <node concept="DxGyO" id="19qDpgVWx4A" role="3TRWRL">
+                <property role="TrG5h" value="decimaal" />
+                <property role="Dxyl8" value="decimalen" />
+              </node>
+              <node concept="1qK_aW" id="19qDpgVWx4B" role="2Cuaq2">
+                <node concept="1qK$xc" id="19qDpgVWx4C" role="1qNoHs">
+                  <node concept="1qwsLN" id="19qDpgVW$b3" role="1qIng$" />
+                  <node concept="2358bp" id="19qDpgVWx4K" role="1qNoHl">
+                    <node concept="234$WW" id="19qDpgVWx4M" role="2358aa">
+                      <node concept="3clFbS" id="19qDpgVWx4O" role="2VODD2">
+                        <node concept="3clFbF" id="19qDpgVWx9E" role="3cqZAp">
+                          <node concept="3clFbC" id="19qDpgVW$ci" role="3clFbG">
+                            <node concept="2OqwBi" id="19qDpgVWxw0" role="3uHU7B">
+                              <node concept="236Rlm" id="19qDpgVWx9D" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="19qDpgVWyci" role="2OqNvi">
+                                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                              </node>
+                            </node>
+                            <node concept="3cmrfG" id="19qDpgVWzVL" role="3uHU7w">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                          </node>
                         </node>
-                      </node>
-                      <node concept="3cmrfG" id="19qDpgVWzVL" role="3uHU7w">
-                        <property role="3cmrfH" value="1" />
                       </node>
                     </node>
                   </node>
                 </node>
+                <node concept="1qwtZH" id="19qDpgVW$a4" role="3i2ZaD" />
               </node>
             </node>
           </node>
-          <node concept="1qwtZH" id="19qDpgVW$a4" role="3i2ZaD" />
+          <node concept="23mlFo" id="15d$3CtqXkx" role="23J4uA">
+            <ref role="23mlFp" node="15d$3CtqNPh" resolve="decimalen" />
+          </node>
+        </node>
+        <node concept="23JKde" id="15d$3CtqZJP" role="23JKd8">
+          <node concept="23GdfO" id="15d$3CtqZJQ" role="23JKdf">
+            <node concept="2xS9Io" id="15d$3Ctr$n2" role="23GdfP">
+              <ref role="2xS9Ip" to="m234:15d$3Ctr5yv" resolve="tientallen" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="23mcil" id="15d$3CtqNPh" role="23mchj">
+      <property role="TrG5h" value="decimalen" />
+      <node concept="2358bp" id="15d$3CtqQ33" role="23mciC">
+        <node concept="234$WW" id="15d$3CtqQ34" role="2358aa">
+          <node concept="3clFbS" id="15d$3CtqQ35" role="2VODD2">
+            <node concept="3clFbF" id="15d$3CtqQNl" role="3cqZAp">
+              <node concept="2d3UOw" id="15d$3CtqVS6" role="3clFbG">
+                <node concept="2OqwBi" id="15d$3CtqRTU" role="3uHU7B">
+                  <node concept="236Rlm" id="15d$3CtqQNk" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="15d$3CtqSkw" role="2OqNvi">
+                    <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="15d$3CtqW13" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -261,7 +261,6 @@
         <node concept="2ljwA5" id="15d$3Cd8$2N" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1uxNW$" id="15d$3Cp7yvn" role="1HSqhF" />
     <node concept="1HSql3" id="15d$3Cd84ow" role="1HSqhF">
       <property role="TrG5h" value="Afronden op hondredtallan" />
       <node concept="1wO7pt" id="15d$3Cd84oy" role="kiesI">
@@ -293,39 +292,38 @@
         <node concept="2ljwA5" id="15d$3Cd84o_" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1uxNW$" id="15d$3Cd8pSE" role="1HSqhF" />
-    <node concept="1HSql3" id="15d$3Cd8oM6" role="1HSqhF">
+    <node concept="1HSql3" id="7GPxZEzO7hH" role="1HSqhF">
       <property role="TrG5h" value="Afronden op duizendtallen" />
-      <node concept="1wO7pt" id="15d$3Cd8oM8" role="kiesI">
-        <node concept="2boe1W" id="15d$3Cd8oM9" role="1wO7pp">
-          <node concept="2boe1X" id="15d$3Cd8q7P" role="1wO7i6">
-            <node concept="3_mHL5" id="15d$3Cd8q7U" role="2bokzF">
-              <node concept="c2t0s" id="15d$3Cd8rgl" role="eaaoM">
+      <node concept="1wO7pt" id="7GPxZEzO7hJ" role="kiesI">
+        <node concept="2boe1W" id="7GPxZEzO7hK" role="1wO7pp">
+          <node concept="2boe1X" id="7GPxZEzO8P1" role="1wO7i6">
+            <node concept="3_mHL5" id="7GPxZEzO8P6" role="2bokzF">
+              <node concept="c2t0s" id="7GPxZEzO8TK" role="eaaoM">
                 <ref role="Qu8KH" node="15d$3Cd8qoG" resolve="gewicht rekenkundig afgerond duizendtallen" />
               </node>
-              <node concept="3_kdyS" id="15d$3Cd8rgk" role="pQQuc">
+              <node concept="3_kdyS" id="7GPxZEzO8TJ" role="pQQuc">
                 <ref role="Qu8KH" node="4QAJma9Pdn8" resolve="Voertuig" />
               </node>
             </node>
-            <node concept="29kKyO" id="15d$3Cd8rB3" role="2bokzm">
+            <node concept="29kKyO" id="7GPxZEzO9hy" role="2bokzm">
               <property role="35Sgwk" value="true" />
               <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
               <property role="29kKyf" value="-3" />
-              <node concept="3_mHL5" id="15d$3Cd8s6A" role="29kKy2">
-                <node concept="c2t0s" id="15d$3Cd8sa1" role="eaaoM">
+              <node concept="3_mHL5" id="7GPxZEzO9XN" role="29kKy2">
+                <node concept="c2t0s" id="7GPxZEzOaba" role="eaaoM">
                   <ref role="Qu8KH" node="4QAJma9Pdny" resolve="gewicht" />
                 </node>
-                <node concept="3yS1BT" id="15d$3Cd8sa0" role="pQQuc">
-                  <ref role="3yS1Ki" node="15d$3Cd8rgk" resolve="Voertuig" />
+                <node concept="3yS1BT" id="7GPxZEzOab9" role="pQQuc">
+                  <ref role="3yS1Ki" node="7GPxZEzO8TJ" resolve="Voertuig" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2ljwA5" id="15d$3Cd8oMb" role="1nvPAL" />
+        <node concept="2ljwA5" id="7GPxZEzO7hM" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1uxNW$" id="15d$3Cd8$6n" role="1HSqhF" />
+    <node concept="1uxNW$" id="7GPxZEzO7pM" role="1HSqhF" />
   </node>
   <node concept="1rXTK1" id="15d$3Cd7ljt">
     <property role="TrG5h" value="Afronden" />
