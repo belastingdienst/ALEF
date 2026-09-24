@@ -1405,6 +1405,271 @@
         </node>
       </node>
     </node>
+    <node concept="3dMsQu" id="3LBiIJUT9av" role="3dMzYz">
+      <property role="TrG5h" value="bezittelijk regex 1" />
+      <node concept="3dW_9m" id="3LBiIJUT9aw" role="3dLJhy">
+        <property role="3dWN8O" value="2020" />
+        <node concept="3dWXw4" id="3LBiIJUT9ax" role="3dWWrB">
+          <ref role="3dWXzV" to="eiom:1vTrU7qkc79" resolve="invoer_service" />
+          <node concept="27HnP5" id="3LBiIJUT9ay" role="27HnP2">
+            <node concept="3dWX$1" id="3LBiIJUT9az" role="27HnPe">
+              <property role="3dWX$t" value="bezIt" />
+              <ref role="3dWXzV" to="eiom:MVPPh7Uzoi" resolve="invoer_tekstspecifiek" />
+            </node>
+            <node concept="3dWX$1" id="3LBiIJUT9a$" role="27HnPe">
+              <property role="3dWX$t" value=" " />
+              <ref role="3dWXzV" to="eiom:4deOLhAEbSw" resolve="invoer_tekstspecifiek2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="3LBiIJUT9a_" role="1GVd_u">
+        <property role="1Axj1u" value="true" />
+        <property role="1GVIAy" value="1" />
+        <property role="1GVIVt" value="SERVICE_OK" />
+        <node concept="1GVH25" id="3LBiIJUT9aA" role="1GVH3P">
+          <ref role="1GVH3K" to="eiom:1vTrU7qkc7a" resolve="berichtUit" />
+          <node concept="27HnPa" id="3LBiIJUT9aB" role="27HnPl">
+            <node concept="1GVH3N" id="3LBiIJUT9aC" role="27HnPh">
+              <property role="1GVH2a" value=" " />
+              <ref role="1GVH3K" to="eiom:VZbs7wp0Cd" resolve="attr_tekstspecifiek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUT9aD" role="27HnPh">
+              <property role="1GVH2a" value="niets" />
+              <ref role="1GVH3K" to="eiom:32iT_6dr3Vf" resolve="attr_tekstspecifiek_verstek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUT9aE" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZC" resolve="kenmerk_bez" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUT9aF" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZD" resolve="kenmerk_bijv" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUT9aG" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZE" resolve="kenmerk_znw" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUT9aH" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZF" resolve="kenmerk_dim" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3dMsQu" id="3LBiIJUTe$k" role="3dMzYz">
+      <property role="TrG5h" value="niet bezittelijk regex 2 hoofdlettergevoelig" />
+      <node concept="3dW_9m" id="3LBiIJUTe$l" role="3dLJhy">
+        <property role="3dWN8O" value="2020" />
+        <node concept="3dWXw4" id="3LBiIJUTe$m" role="3dWWrB">
+          <ref role="3dWXzV" to="eiom:1vTrU7qkc79" resolve="invoer_service" />
+          <node concept="27HnP5" id="3LBiIJUTe$n" role="27HnP2">
+            <node concept="3dWX$1" id="3LBiIJUTe$o" role="27HnPe">
+              <property role="3dWX$t" value="bezat" />
+              <ref role="3dWXzV" to="eiom:MVPPh7Uzoi" resolve="invoer_tekstspecifiek" />
+            </node>
+            <node concept="3dWX$1" id="3LBiIJUTe$p" role="27HnPe">
+              <property role="3dWX$t" value=" " />
+              <ref role="3dWXzV" to="eiom:4deOLhAEbSw" resolve="invoer_tekstspecifiek2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="3LBiIJUTe$q" role="1GVd_u">
+        <property role="1Axj1u" value="true" />
+        <property role="1GVIAy" value="1" />
+        <property role="1GVIVt" value="SERVICE_OK" />
+        <node concept="1GVH25" id="3LBiIJUTe$r" role="1GVH3P">
+          <ref role="1GVH3K" to="eiom:1vTrU7qkc7a" resolve="berichtUit" />
+          <node concept="27HnPa" id="3LBiIJUTe$s" role="27HnPl">
+            <node concept="1GVH3N" id="3LBiIJUTe$t" role="27HnPh">
+              <property role="1GVH2a" value=" " />
+              <ref role="1GVH3K" to="eiom:VZbs7wp0Cd" resolve="attr_tekstspecifiek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTe$u" role="27HnPh">
+              <property role="1GVH2a" value="niets" />
+              <ref role="1GVH3K" to="eiom:32iT_6dr3Vf" resolve="attr_tekstspecifiek_verstek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTe$v" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZC" resolve="kenmerk_bez" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTe$w" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZD" resolve="kenmerk_bijv" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTe$x" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZE" resolve="kenmerk_znw" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTe$y" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZF" resolve="kenmerk_dim" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3dMsQu" id="3LBiIJUTKUL" role="3dMzYz">
+      <property role="TrG5h" value="bezittelijk sublijst" />
+      <node concept="3dW_9m" id="3LBiIJUTKUM" role="3dLJhy">
+        <property role="3dWN8O" value="2020" />
+        <node concept="3dWXw4" id="3LBiIJUTKUN" role="3dWWrB">
+          <ref role="3dWXzV" to="eiom:1vTrU7qkc79" resolve="invoer_service" />
+          <node concept="27HnP5" id="3LBiIJUTKUO" role="27HnP2">
+            <node concept="3dWX$1" id="3LBiIJUTKUP" role="27HnPe">
+              <property role="3dWX$t" value="d" />
+              <ref role="3dWXzV" to="eiom:MVPPh7Uzoi" resolve="invoer_tekstspecifiek" />
+            </node>
+            <node concept="3dWX$1" id="3LBiIJUTKUQ" role="27HnPe">
+              <property role="3dWX$t" value=" " />
+              <ref role="3dWXzV" to="eiom:4deOLhAEbSw" resolve="invoer_tekstspecifiek2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="3LBiIJUTKUR" role="1GVd_u">
+        <property role="1Axj1u" value="true" />
+        <property role="1GVIAy" value="1" />
+        <property role="1GVIVt" value="SERVICE_OK" />
+        <node concept="1GVH25" id="3LBiIJUTKUS" role="1GVH3P">
+          <ref role="1GVH3K" to="eiom:1vTrU7qkc7a" resolve="berichtUit" />
+          <node concept="27HnPa" id="3LBiIJUTKUT" role="27HnPl">
+            <node concept="1GVH3N" id="3LBiIJUTKUU" role="27HnPh">
+              <property role="1GVH2a" value=" " />
+              <ref role="1GVH3K" to="eiom:VZbs7wp0Cd" resolve="attr_tekstspecifiek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTKUV" role="27HnPh">
+              <property role="1GVH2a" value="niets" />
+              <ref role="1GVH3K" to="eiom:32iT_6dr3Vf" resolve="attr_tekstspecifiek_verstek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTKUW" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZC" resolve="kenmerk_bez" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTKUX" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZD" resolve="kenmerk_bijv" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTKUY" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZE" resolve="kenmerk_znw" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTKUZ" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZF" resolve="kenmerk_dim" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3dMsQu" id="3LBiIJUTRl1" role="3dMzYz">
+      <property role="TrG5h" value="bezittelijk sublijst hoofdletter" />
+      <node concept="3dW_9m" id="3LBiIJUTRl2" role="3dLJhy">
+        <property role="3dWN8O" value="2020" />
+        <node concept="3dWXw4" id="3LBiIJUTRl3" role="3dWWrB">
+          <ref role="3dWXzV" to="eiom:1vTrU7qkc79" resolve="invoer_service" />
+          <node concept="27HnP5" id="3LBiIJUTRl4" role="27HnP2">
+            <node concept="3dWX$1" id="3LBiIJUTRl5" role="27HnPe">
+              <property role="3dWX$t" value="D" />
+              <ref role="3dWXzV" to="eiom:MVPPh7Uzoi" resolve="invoer_tekstspecifiek" />
+            </node>
+            <node concept="3dWX$1" id="3LBiIJUTRl6" role="27HnPe">
+              <property role="3dWX$t" value=" " />
+              <ref role="3dWXzV" to="eiom:4deOLhAEbSw" resolve="invoer_tekstspecifiek2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="3LBiIJUTRl7" role="1GVd_u">
+        <property role="1Axj1u" value="true" />
+        <property role="1GVIAy" value="1" />
+        <property role="1GVIVt" value="SERVICE_OK" />
+        <node concept="1GVH25" id="3LBiIJUTRl8" role="1GVH3P">
+          <ref role="1GVH3K" to="eiom:1vTrU7qkc7a" resolve="berichtUit" />
+          <node concept="27HnPa" id="3LBiIJUTRl9" role="27HnPl">
+            <node concept="1GVH3N" id="3LBiIJUTRla" role="27HnPh">
+              <property role="1GVH2a" value=" " />
+              <ref role="1GVH3K" to="eiom:VZbs7wp0Cd" resolve="attr_tekstspecifiek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTRlb" role="27HnPh">
+              <property role="1GVH2a" value="niets" />
+              <ref role="1GVH3K" to="eiom:32iT_6dr3Vf" resolve="attr_tekstspecifiek_verstek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTRlc" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZC" resolve="kenmerk_bez" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTRld" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZD" resolve="kenmerk_bijv" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTRle" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZE" resolve="kenmerk_znw" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTRlf" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZF" resolve="kenmerk_dim" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3dMsQu" id="3LBiIJUTQ4x" role="3dMzYz">
+      <property role="TrG5h" value="bezittelijk buiten sublijst en hoofdlettergevoelig" />
+      <node concept="3dW_9m" id="3LBiIJUTQ4y" role="3dLJhy">
+        <property role="3dWN8O" value="2020" />
+        <node concept="3dWXw4" id="3LBiIJUTQ4z" role="3dWWrB">
+          <ref role="3dWXzV" to="eiom:1vTrU7qkc79" resolve="invoer_service" />
+          <node concept="27HnP5" id="3LBiIJUTQ4$" role="27HnP2">
+            <node concept="3dWX$1" id="3LBiIJUTQ4_" role="27HnPe">
+              <property role="3dWX$t" value="A" />
+              <ref role="3dWXzV" to="eiom:MVPPh7Uzoi" resolve="invoer_tekstspecifiek" />
+            </node>
+            <node concept="3dWX$1" id="3LBiIJUTQ4A" role="27HnPe">
+              <property role="3dWX$t" value=" " />
+              <ref role="3dWXzV" to="eiom:4deOLhAEbSw" resolve="invoer_tekstspecifiek2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="3LBiIJUTQ4B" role="1GVd_u">
+        <property role="1Axj1u" value="true" />
+        <property role="1GVIAy" value="1" />
+        <property role="1GVIVt" value="SERVICE_OK" />
+        <node concept="1GVH25" id="3LBiIJUTQ4C" role="1GVH3P">
+          <ref role="1GVH3K" to="eiom:1vTrU7qkc7a" resolve="berichtUit" />
+          <node concept="27HnPa" id="3LBiIJUTQ4D" role="27HnPl">
+            <node concept="1GVH3N" id="3LBiIJUTQ4E" role="27HnPh">
+              <property role="1GVH2a" value=" " />
+              <ref role="1GVH3K" to="eiom:VZbs7wp0Cd" resolve="attr_tekstspecifiek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTQ4F" role="27HnPh">
+              <property role="1GVH2a" value="niets" />
+              <ref role="1GVH3K" to="eiom:32iT_6dr3Vf" resolve="attr_tekstspecifiek_verstek" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTQ4G" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZC" resolve="kenmerk_bez" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTQ4H" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZD" resolve="kenmerk_bijv" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTQ4I" role="27HnPh">
+              <property role="1GVH2a" value="true" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZE" resolve="kenmerk_znw" />
+            </node>
+            <node concept="1GVH3N" id="3LBiIJUTQ4J" role="27HnPh">
+              <property role="1GVH2a" value="false" />
+              <ref role="1GVH3K" to="eiom:3kkTUFZpGZF" resolve="kenmerk_dim" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3dMsQu" id="5vY0MNyYMEr" role="3dMzYz">
       <property role="TrG5h" value="niet bezittelijk op basis van hoofdlettergevoeligheid" />
       <node concept="3dW_9m" id="5vY0MNyYMEs" role="3dLJhy">

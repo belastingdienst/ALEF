@@ -33,6 +33,7 @@
     <language slang="l:08d6f877-03cc-45d3-b03c-d6f786266853:bronspraak" version="1" />
     <language slang="l:9a244687-dfa9-4fe1-be0a-b7a1c754e930:buildAlefProject" version="0" />
     <language slang="l:09c04f52-88c5-4bd6-a481-cabab9f61ff5:contexts" version="0" />
+    <language slang="l:fc8ef9c4-06fb-45d6-9045-6f23372c27b1:csvImporter" version="0" />
     <language slang="l:471364db-8078-4933-b2ef-88232bfa34fc:gegevensspraak" version="19" />
     <language slang="l:c40e126b-a0e9-42bb-b903-9b5fd0b050d2:gegevensspraak.tijd" version="4" />
     <language slang="l:a4bbe181-88ec-4b30-b7d3-db0b30b5c709:interpreter.debug" version="0" />
