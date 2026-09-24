@@ -11492,7 +11492,7 @@
           <node concept="3clFbS" id="kjEOpwO2tu" role="3Kb1Dw">
             <node concept="3cpWs6" id="kjEOpwO2Ig" role="3cqZAp">
               <node concept="Xl_RD" id="kjEOpwO38j" role="3cqZAk">
-                <property role="Xl_RC" value="..." />
+                <property role="Xl_RC" value="type uw keuze" />
               </node>
             </node>
           </node>
