@@ -720,7 +720,7 @@
             <ref role="1NtTu8" to="ku5w:4sP75nusTVq" resolve="enableValidation" />
             <ref role="1k5W1q" to="mbb7:2RxNjHXKBDU" resolve="Naam" />
             <node concept="3$7fVu" id="4sP75nvhIOl" role="3F10Kt">
-              <property role="3$6WeP" value="4" />
+              <property role="3$6WeP" value="3.5" />
             </node>
           </node>
           <node concept="2iRfu4" id="4sP75nusUrf" role="2iSdaV" />
