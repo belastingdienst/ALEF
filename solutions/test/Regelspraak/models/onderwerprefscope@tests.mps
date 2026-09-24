@@ -6,6 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak" version="30" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
   </languages>
   <imports>
     <import index="m234" ref="r:dab861ec-284c-4992-a98c-1e3b9c9dd555(regelspraak.structure)" />
@@ -13,6 +14,10 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1211979288880" name="jetbrains.mps.lang.test.structure.AssertMatch" flags="nn" index="JA50E">
+        <child id="1211979305365" name="before" index="JA92f" />
+        <child id="1211979322383" name="after" index="JAdkl" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -45,6 +50,9 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -67,12 +75,22 @@
         <child id="6747529342265147483" name="quant" index="28AkDO" />
       </concept>
       <concept id="6747529342263092400" name="regelspraak.structure.IsLeeg" flags="ng" index="28IuUv" />
+      <concept id="6747529342263111880" name="regelspraak.structure.RolOfKenmerkCheck" flags="ng" index="28IzFB">
+        <reference id="6747529342263116998" name="rolOfKenmerk" index="28I$VD" />
+      </concept>
       <concept id="6747529342263124657" name="regelspraak.structure.Vergelijking" flags="ng" index="28IAyu">
         <child id="6747529342263128125" name="rechts" index="28IBCi" />
       </concept>
       <concept id="653687101152476296" name="regelspraak.structure.ActieIndienVoorwaarde" flags="ng" index="2boe1W">
         <child id="1480463129960504796" name="conditie" index="1wO7i3" />
         <child id="1480463129960504793" name="actie" index="1wO7i6" />
+      </concept>
+      <concept id="653687101152476297" name="regelspraak.structure.Gelijkstelling" flags="ng" index="2boe1X">
+        <child id="653687101152498722" name="rechts" index="2bokzm" />
+        <child id="653687101152498719" name="links" index="2bokzF" />
+      </concept>
+      <concept id="653687101158189440" name="regelspraak.structure.Regelgroep" flags="ng" index="2bQVlO">
+        <child id="9154144551704439187" name="inhoud" index="1HSqhF" />
       </concept>
       <concept id="347899601029311684" name="regelspraak.structure.AttribuutSelector" flags="ng" index="c2t0s" />
       <concept id="6774523643279607820" name="regelspraak.structure.RolSelector" flags="ng" index="ean_g" />
@@ -119,6 +137,22 @@
       <concept id="1024280404748412380" name="regelspraak.structure.Selectie" flags="ng" index="3_mHL5" />
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
@@ -148,6 +182,7 @@
       </concept>
       <concept id="8989128614612178023" name="gegevensspraak.structure.Naamwoord" flags="ngI" index="16ZtyY">
         <property id="8989128614612178052" name="isOnzijdig" index="16Ztxt" />
+        <property id="8989128614612178055" name="meervoudsvorm" index="16Ztxu" />
       </concept>
       <concept id="5917060184181247326" name="gegevensspraak.structure.NumeriekType" flags="ng" index="1EDDeX" />
       <concept id="3257175120315973651" name="gegevensspraak.structure.AbstractNumeriekType" flags="ng" index="3GBOYg">
@@ -161,6 +196,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -485,6 +523,194 @@
           </node>
           <node concept="2ljwA5" id="5a420JpvyUO" role="1nvPAL" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7I2GI8s_JCc">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="OverbodigeSelectieTest" />
+    <node concept="1LZb2c" id="7I2GI8sHhMk" role="1SL9yI">
+      <property role="TrG5h" value="t1" />
+      <node concept="3cqZAl" id="7I2GI8sHhMl" role="3clF45" />
+      <node concept="3clFbS" id="7I2GI8sHhMp" role="3clF47">
+        <node concept="3clFbF" id="7I2GI8sHyAz" role="3cqZAp">
+          <node concept="2OqwBi" id="7I2GI8sHyUF" role="3clFbG">
+            <node concept="3xONca" id="7I2GI8sHyAy" role="2Oq$k0">
+              <ref role="3xOPvv" node="7I2GI8sHigK" resolve="second" />
+            </node>
+            <node concept="2qgKlT" id="7I2GI8sH$ng" role="2OqNvi">
+              <ref role="37wK5l" to="u5to:333w2JSuEkz" resolve="vervangDoorOnderwerpRef" />
+              <node concept="2OqwBi" id="7I2GI8sHEFz" role="37wK5m">
+                <node concept="3xONca" id="7I2GI8sH$Hb" role="2Oq$k0">
+                  <ref role="3xOPvv" node="7I2GI8sHyaq" resolve="first" />
+                </node>
+                <node concept="2qgKlT" id="7I2GI8sHGr1" role="2OqNvi">
+                  <ref role="37wK5l" to="u5to:5_kzpqNsAXx" resolve="onderwerp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="JA50E" id="7I2GI8tcQoF" role="3cqZAp">
+          <node concept="2pJPEk" id="7I2GI8tcRe7" role="JAdkl">
+            <node concept="2pJPED" id="7I2GI8tcRe8" role="2pJPEn">
+              <ref role="2pJxaS" to="m234:SQYpBGPI1w" resolve="OnderwerpRef" />
+              <node concept="2pIpSj" id="7I2GI8tcRe9" role="2pJxcM">
+                <ref role="2pIpSl" to="m234:SQYpBGPImb" resolve="ref" />
+                <node concept="36biLy" id="7I2GI8tcRea" role="28nt2d">
+                  <node concept="2OqwBi" id="7I2GI8tcReb" role="36biLW">
+                    <node concept="2OqwBi" id="7I2GI8tcRec" role="2Oq$k0">
+                      <node concept="3xONca" id="7I2GI8tcRed" role="2Oq$k0">
+                        <ref role="3xOPvv" node="7I2GI8sHyaq" resolve="first" />
+                      </node>
+                      <node concept="3TrEf2" id="7I2GI8tcRee" role="2OqNvi">
+                        <ref role="3Tt5mk" to="m234:7O88o1$OOoc" resolve="object" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="7I2GI8tcRef" role="2OqNvi">
+                      <ref role="37wK5l" to="u5to:1xJWKvIpr9f" resolve="onderwerp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7I2GI8tcQC3" role="JA92f">
+            <node concept="3xONca" id="7I2GI8tcQpl" role="2Oq$k0">
+              <ref role="3xOPvv" node="7I2GI8sHKwO" resolve="cond" />
+            </node>
+            <node concept="3TrEf2" id="7I2GI8tcRct" role="2OqNvi">
+              <ref role="3Tt5mk" to="m234:R9Qv6IROx4" resolve="expr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7I2GI8sAfU7" role="1SKRRt">
+      <node concept="2bv6Cm" id="7I2GI8sAjpr" role="1qenE9">
+        <property role="TrG5h" value="ost" />
+        <node concept="2bvS6$" id="7I2GI8sAp7O" role="2bv6Cn">
+          <property role="TrG5h" value="Provincie" />
+        </node>
+        <node concept="2bvS6$" id="7I2GI8sAGYS" role="2bv6Cn">
+          <property role="TrG5h" value="Stad" />
+          <node concept="2bpyt6" id="7I2GI8sC_dB" role="2bv01j">
+            <property role="TrG5h" value="hoofdstad" />
+          </node>
+        </node>
+        <node concept="2bvS6$" id="7I2GI8sA$v6" role="2bv6Cn">
+          <property role="TrG5h" value="Wijk" />
+          <node concept="2bv6ZS" id="7I2GI8sBQno" role="2bv01j">
+            <property role="16Ztxt" value="true" />
+            <property role="TrG5h" value="aantal inwoners" />
+            <node concept="1EDDeX" id="7I2GI8sC4f3" role="1EDDcc">
+              <property role="3GST$d" value="0" />
+            </node>
+          </node>
+          <node concept="2bv6ZS" id="7I2GI8sCwQY" role="2bv01j">
+            <property role="TrG5h" value="grootte" />
+            <node concept="1EDDeX" id="7I2GI8sCz3a" role="1EDDcc">
+              <property role="3GST$d" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2mG0Cb" id="7I2GI8sAPBZ" role="2bv6Cn">
+          <property role="TrG5h" value="provincie-stad" />
+          <node concept="2mG0Ck" id="7I2GI8sAPC0" role="2mG0Ct">
+            <property role="u$DAK" value="true" />
+            <property role="TrG5h" value="provincie" />
+            <ref role="1fE_qF" node="7I2GI8sAp7O" resolve="Provincie" />
+          </node>
+          <node concept="2mG0Ck" id="7I2GI8sAPC1" role="2mG0Ct">
+            <property role="u$DAK" value="true" />
+            <property role="TrG5h" value="stad" />
+            <property role="16Ztxu" value="steden" />
+            <ref role="1fE_qF" node="7I2GI8sAGYS" resolve="Stad" />
+          </node>
+        </node>
+        <node concept="2mG0Cb" id="7I2GI8sBoSP" role="2bv6Cn">
+          <property role="TrG5h" value="stadswijk" />
+          <node concept="2mG0Ck" id="7I2GI8sBoSQ" role="2mG0Ct">
+            <property role="u$DAK" value="true" />
+            <property role="TrG5h" value="stad" />
+            <ref role="1fE_qF" node="7I2GI8sAGYS" resolve="Stad" />
+          </node>
+          <node concept="2mG0Ck" id="7I2GI8sBoSR" role="2mG0Ct">
+            <property role="u$DAK" value="true" />
+            <property role="TrG5h" value="wijk" />
+            <ref role="1fE_qF" node="7I2GI8sA$v6" resolve="Wijk" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="7I2GI8sAPGc" role="2bv6Cn" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="7I2GI8sCa1_" role="1SKRRt">
+      <node concept="2bQVlO" id="7I2GI8sCcXN" role="1qenE9">
+        <property role="TrG5h" value="ostr" />
+        <node concept="1HSql3" id="7I2GI8sCjWW" role="1HSqhF">
+          <property role="TrG5h" value="r" />
+          <node concept="1wO7pt" id="7I2GI8sCjWY" role="kiesI">
+            <node concept="2boe1W" id="7I2GI8sCjWZ" role="1wO7pp">
+              <node concept="2boe1X" id="7I2GI8sCpFx" role="1wO7i6">
+                <node concept="3_mHL5" id="7I2GI8sCpFA" role="2bokzF">
+                  <node concept="c2t0s" id="7I2GI8sCxoQ" role="eaaoM">
+                    <ref role="Qu8KH" node="7I2GI8sCwQY" resolve="grootte" />
+                  </node>
+                  <node concept="3_mHL5" id="7I2GI8sCw6U" role="pQQuc">
+                    <node concept="ean_g" id="7I2GI8sCw6V" role="eaaoM">
+                      <ref role="Qu8KH" node="7I2GI8sBoSR" resolve="wijk" />
+                    </node>
+                    <node concept="3_mHL5" id="7I2GI8sCwkc" role="pQQuc">
+                      <node concept="ean_g" id="7I2GI8sCwkd" role="eaaoM">
+                        <ref role="Qu8KH" node="7I2GI8sAPC1" resolve="stad" />
+                      </node>
+                      <node concept="3_kdyS" id="7I2GI8sCwke" role="pQQuc">
+                        <ref role="Qu8KH" node="7I2GI8sAp7O" resolve="Provincie" />
+                      </node>
+                    </node>
+                    <node concept="3xLA65" id="7I2GI8sHyaq" role="lGtFl">
+                      <property role="TrG5h" value="first" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3_mHL5" id="7I2GI8sCxyG" role="2bokzm">
+                  <node concept="c2t0s" id="7I2GI8sCxGH" role="eaaoM">
+                    <ref role="Qu8KH" node="7I2GI8sBQno" resolve="aantal inwoners" />
+                  </node>
+                  <node concept="3_mHL5" id="7I2GI8sCy$h" role="pQQuc">
+                    <node concept="ean_g" id="7I2GI8sCy$i" role="eaaoM">
+                      <ref role="Qu8KH" node="7I2GI8sBoSR" resolve="wijk" />
+                    </node>
+                    <node concept="3_mHL5" id="7I2GI8sCy$d" role="pQQuc">
+                      <node concept="ean_g" id="7I2GI8sCy$e" role="eaaoM">
+                        <ref role="Qu8KH" node="7I2GI8sAPC1" resolve="stad" />
+                      </node>
+                      <node concept="3yS1BT" id="7I2GI8sCy$8" role="pQQuc">
+                        <ref role="3yS1Ki" node="7I2GI8sCwke" resolve="Provincie" />
+                      </node>
+                    </node>
+                    <node concept="3xLA65" id="7I2GI8sHigK" role="lGtFl">
+                      <property role="TrG5h" value="second" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2z5Mdt" id="7I2GI8sC$sk" role="1wO7i3">
+                <node concept="3yS1BT" id="7I2GI8sC$sl" role="2z5D6P">
+                  <ref role="3yS1Ki" node="7I2GI8sCy$e" resolve="stad" />
+                </node>
+                <node concept="28IzFB" id="7I2GI8sC_yW" role="2z5HcU">
+                  <ref role="28I$VD" node="7I2GI8sC_dB" resolve="hoofdstad" />
+                </node>
+                <node concept="3xLA65" id="7I2GI8sHKwO" role="lGtFl">
+                  <property role="TrG5h" value="cond" />
+                </node>
+              </node>
+            </node>
+            <node concept="2ljwA5" id="7I2GI8sCjX1" role="1nvPAL" />
+          </node>
+        </node>
+        <node concept="1uxNW$" id="7I2GI8sCjX4" role="1HSqhF" />
       </node>
     </node>
   </node>

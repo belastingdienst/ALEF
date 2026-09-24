@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="alef.runtime" uuid="09737df8-57b5-428f-9399-89f414a94263" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}/lib/alefRuntime.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="alefRuntime.jar" />
       <sourceRoot location="jackson-annotations.jar" />
       <sourceRoot location="jackson-core.jar" />
       <sourceRoot location="jackson-databind.jar" />

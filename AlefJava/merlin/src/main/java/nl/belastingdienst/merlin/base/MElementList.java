@@ -9,8 +9,6 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 public class MElementList<E> implements Iterable<E> {
 
@@ -29,6 +27,10 @@ public class MElementList<E> implements Iterable<E> {
 
     public static <Q> ITimed<MElementList<Q>> makeTimed( MElementList<ITimed<Q>> mlist) {
         return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.<Q>makeTimed(mlist.elementList));
+    }
+
+    public static <Q> ITimed<MElementList<Q>> makeTimed( List<ITimed<Q>> mlist) {
+        return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.<Q>makeTimed(mlist));
     }
 
     public static <T> MElementList<T> empty() {
