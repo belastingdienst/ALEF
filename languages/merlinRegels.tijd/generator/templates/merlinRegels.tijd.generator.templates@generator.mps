@@ -34,7 +34,6 @@
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="qcmd" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.lazy(alef.runtime/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="r5ou" ref="r:5996bf5b-98f6-4a29-9d5a-0fa0f4da745c(merlinBaseExt.structure)" />
     <import index="pjpn" ref="r:6b8da231-ced3-4bfa-8b95-d688d63db648(merlinRegels.tijd.generator.tardis)" />
     <import index="qwe0" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime.functions(alef.runtime/)" />
     <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" />

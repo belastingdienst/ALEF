@@ -1,0 +1,38 @@
+package nl.belastingdienst.merlin.base.types;
+
+import java.util.Objects;
+
+public abstract class MAbstractNumericType implements IMDataType {
+    protected final int decimals;
+    protected final MNumberRange numberRange;
+    protected final MUnit unit;
+    private final MNumericType base;
+
+    public MAbstractNumericType(int decimals, MNumberRange numberRange, MUnit unit) {
+        this.decimals = decimals;
+        this.numberRange = numberRange;
+        this.unit = unit;
+        if (unit != null) {
+            base = new MNumericType(decimals, numberRange, null);
+        } else {
+            base = null;
+        }
+    }
+
+    @Override
+    public IMDataType getBase() {
+        return base;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        MAbstractNumericType that = (MAbstractNumericType) o;
+        return decimals == that.decimals && numberRange == that.numberRange && Objects.equals(unit, that.unit);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(decimals, numberRange, unit);
+    }
+}

@@ -33,7 +33,6 @@
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
         <dependency reexport="false">09737df8-57b5-428f-9399-89f414a94263(alef.runtime)</dependency>
-        <dependency reexport="true">09737df8-57b5-428f-9399-89f414a94263(alef.runtime)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
