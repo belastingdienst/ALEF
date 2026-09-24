@@ -12,7 +12,7 @@
   </facets>
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
-    <language slang="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" version="2" />
+    <language slang="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" version="3" />
   </languageVersions>
   <dependencyVersions>
     <module reference="203f3e07-0765-4465-8c7f-a78d3aa2f20c(html.genplan)" version="0" />

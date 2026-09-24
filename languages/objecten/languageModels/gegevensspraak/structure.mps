@@ -25,6 +25,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675105" name="jetbrains.mps.lang.resources.structure.Rect" flags="ng" index="1irR9m">
@@ -156,6 +157,18 @@
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
+      <node concept="1irR9n" id="3yV49$LhstS" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+        <node concept="3PKj8D" id="3yV49$LhstT" role="3PKjn_">
+          <property role="3PKj8l" value="FFCC00" />
+        </node>
+      </node>
+      <node concept="1irPie" id="3yV49$LhstU" role="2rmM5M">
+        <property role="1irPi9" value="o" />
+        <node concept="3PKj8D" id="3yV49$LhstV" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
     </node>
     <node concept="PrWs8" id="4aR45EWfEmo" role="PzmwI">
       <ref role="PrY4T" to="dse8:6DHtdHSCR6Y" resolve="LClass" />
@@ -202,6 +215,18 @@
       <node concept="1irPie" id="qIhn98ZSKb" role="1irR9h">
         <property role="1irPi9" value="a" />
         <node concept="3PKj8D" id="qIhn98ZSKi" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9m" id="3yV49$LhstW" role="2rmM5M">
+        <property role="1irR9l" value="1ng4Vf3UMuf/small" />
+        <node concept="3PKj8D" id="3yV49$LhstX" role="3PKjn_">
+          <property role="3PKj8l" value="EEEE00" />
+        </node>
+      </node>
+      <node concept="1irPie" id="3yV49$LhstY" role="2rmM5M">
+        <property role="1irPi9" value="a" />
+        <node concept="3PKj8D" id="3yV49$LhstZ" role="3PKjny">
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
@@ -327,6 +352,18 @@
       <node concept="1irPie" id="5evwl31eJPN" role="1irR9h">
         <property role="1irPi9" value="k" />
         <node concept="3PKj8D" id="5evwl31eJPU" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="3yV49$Lhsu0" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+        <node concept="3PKj8D" id="3yV49$Lhsu1" role="3PKjn_">
+          <property role="3PKj8l" value="CCFF00" />
+        </node>
+      </node>
+      <node concept="1irPie" id="3yV49$Lhsu2" role="2rmM5M">
+        <property role="1irPi9" value="k" />
+        <node concept="3PKj8D" id="3yV49$Lhsu3" role="3PKjny">
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
@@ -933,6 +970,18 @@
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
+      <node concept="1irR9n" id="3yV49$Lhsu4" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuf/small" />
+        <node concept="3PKj8D" id="3yV49$Lhsu5" role="3PKjn_">
+          <property role="3PKj8l" value="EEEE00" />
+        </node>
+      </node>
+      <node concept="1irPie" id="3yV49$Lhsu6" role="2rmM5M">
+        <property role="1irPi9" value="r" />
+        <node concept="3PKj8D" id="3yV49$Lhsu7" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
     </node>
     <node concept="PrWs8" id="4aR45EWddPK" role="PzmwI">
       <ref role="PrY4T" to="dse8:51QYbfBR3DV" resolve="LReference" />
@@ -1396,7 +1445,7 @@
     <node concept="1TJgyj" id="7rG9cksmX5B" role="1TKVEi">
       <property role="IQ2ns" value="8569264619982147943" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dimensies" />
+      <property role="20kJfa" value="dimensieRefs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7rG9cksmX5x" resolve="DimensieRef" />
     </node>

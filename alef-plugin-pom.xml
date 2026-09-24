@@ -18,11 +18,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<branch>feature/${project.version}</branch>
-		<jenkins.buildnumber>1</jenkins.buildnumber>
 
-		<mps.version>2025.1</mps.version>
-		<extensions.version>2025.1.3226.9d3d593</extensions.version>
-		<jbr.version>21.0.6-b631.39</jbr.version>
+		<mps.version>2026.1</mps.version>
+		<extensions.version>2026.1.3653.4220137</extensions.version>
+		<jbr.version>25.0.3-b329.124</jbr.version>
 		<jbr.type>tgz</jbr.type>
 		<jbr.classifier/>
 		<java.home/>
@@ -42,13 +41,6 @@
 			<artifactId>jbr</artifactId>
 			<version>${jbr.version}</version>
 			<classifier>windows-x64</classifier>
-			<type>tgz</type>
-		</dependency>
-		<dependency>
-			<groupId>com.jetbrains.jdk</groupId>
-			<artifactId>jbr</artifactId>
-			<version>${jbr.version}</version>
-			<classifier>osx-x64</classifier>
 			<type>tgz</type>
 		</dependency>
 		<dependency>
@@ -212,17 +204,6 @@
                                    		${project.basedir}/build/jbrs
                                 	</outputDirectory>
                                 	<destFileName>jbr-linux-x64.tar.gz</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-									<groupId>com.jetbrains.jdk</groupId>
-									<artifactId>jbr</artifactId>
-									<version>${jbr.version}</version>
-									<classifier>osx-x64</classifier>
-									<type>tgz</type>
-									<outputDirectory>
-									   ${project.basedir}/build/jbrs
-									</outputDirectory>
-                                	<destFileName>jbr-osx-x64.tar.gz</destFileName>
                                 </artifactItem>
 								<artifactItem>
 									<groupId>com.jetbrains.jdk</groupId>
@@ -618,21 +599,6 @@
 				<mps.platform>windows</mps.platform>
 				<jbr.classifier>windows-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
-			</properties>
-		</profile>
-		<profile>
-			<!-- MacOS: Intel -->
-			<id>MacOSx64</id>
-			<activation>
-				<os>
-					<family>mac</family>
-					<arch>x64</arch>
-				</os>
-			</activation>
-			<properties>
-				<jbr.classifier>osx-x64</jbr.classifier>
-				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}/Contents/Home</java.home>
-				<maven.test.skip>true</maven.test.skip>
 			</properties>
 		</profile>
 		<profile>
