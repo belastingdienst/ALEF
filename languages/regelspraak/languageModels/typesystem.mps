@@ -474,13 +474,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -2545,36 +2538,6 @@
         </node>
       </node>
       <node concept="3clFbH" id="Efmzn3Si_B" role="3cqZAp" />
-      <node concept="1X3_iC" id="kjEOpzh3CV" role="lGtFl">
-        <property role="3V$3am" value="statement" />
-        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-        <node concept="3clFbJ" id="6SCrOE2cUJ7" role="8Wnug">
-          <node concept="3eOVzh" id="6SCrOE2cWGG" role="3clFbw">
-            <node concept="3cmrfG" id="6SCrOE2cWJ7" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="2OqwBi" id="6SCrOE2cUTs" role="3uHU7B">
-              <node concept="1YBJjd" id="6SCrOE2cUJj" role="2Oq$k0">
-                <ref role="1YBMHb" node="5LRwQDnw99X" resolve="afronden" />
-              </node>
-              <node concept="3TrcHB" id="6SCrOE2cVaN" role="2OqNvi">
-                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="6SCrOE2cUJ9" role="3clFbx">
-            <node concept="2MkqsV" id="6SCrOE2cWQd" role="3cqZAp">
-              <node concept="Xl_RD" id="6SCrOE2cWQp" role="2MkJ7o">
-                <property role="Xl_RC" value="Aantal decimalen is kleiner dan 0" />
-              </node>
-              <node concept="1YBJjd" id="6SCrOE2cWRS" role="1urrMF">
-                <ref role="1YBMHb" node="5LRwQDnw99X" resolve="afronden" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="12kR7KkiM4o" role="3cqZAp" />
       <node concept="3clFbJ" id="3sUzTEtZoKr" role="3cqZAp">
         <node concept="3clFbS" id="3sUzTEtZoKt" role="3clFbx">
           <node concept="2MkqsV" id="3sUzTEtZpJN" role="3cqZAp">
