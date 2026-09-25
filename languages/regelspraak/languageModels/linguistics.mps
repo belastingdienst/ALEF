@@ -1147,15 +1147,28 @@
                     <node concept="234$WW" id="19qDpgVWx4M" role="2358aa">
                       <node concept="3clFbS" id="19qDpgVWx4O" role="2VODD2">
                         <node concept="3clFbF" id="19qDpgVWx9E" role="3cqZAp">
-                          <node concept="3clFbC" id="19qDpgVW$ci" role="3clFbG">
-                            <node concept="2OqwBi" id="19qDpgVWxw0" role="3uHU7B">
-                              <node concept="236Rlm" id="19qDpgVWx9D" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="19qDpgVWyci" role="2OqNvi">
-                                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                          <node concept="1Wc70l" id="2Xkp7G4USfi" role="3clFbG">
+                            <node concept="2d3UOw" id="2Xkp7G4UR0c" role="3uHU7B">
+                              <node concept="2OqwBi" id="19qDpgVWxw0" role="3uHU7B">
+                                <node concept="236Rlm" id="19qDpgVWx9D" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="19qDpgVWyci" role="2OqNvi">
+                                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                                </node>
+                              </node>
+                              <node concept="3cmrfG" id="2Xkp7G4UR9l" role="3uHU7w">
+                                <property role="3cmrfH" value="0" />
                               </node>
                             </node>
-                            <node concept="3cmrfG" id="19qDpgVWzVL" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
+                            <node concept="2dkUwp" id="2Xkp7G4UZAy" role="3uHU7w">
+                              <node concept="3cmrfG" id="2Xkp7G4UZFW" role="3uHU7w">
+                                <property role="3cmrfH" value="1" />
+                              </node>
+                              <node concept="2OqwBi" id="2Xkp7G4UTmP" role="3uHU7B">
+                                <node concept="236Rlm" id="2Xkp7G4UT6X" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="2Xkp7G4UVZQ" role="2OqNvi">
+                                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
