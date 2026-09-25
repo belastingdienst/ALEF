@@ -4132,28 +4132,18 @@
           <property role="3F0ifm" value="op" />
           <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
         </node>
-        <node concept="3F0A7n" id="6xRQtuHbEtz" role="3EZMnx">
-          <property role="1$x2rV" value="&lt;geef het aantal decimalen op&gt;" />
-          <property role="1O74Pk" value="true" />
+        <node concept="3F0A7n" id="15d$3CF5tMs" role="3EZMnx">
           <ref role="1NtTu8" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-          <ref role="1k5W1q" to="mbb7:5Ja52ut3X8r" resolve="Keuze" />
-        </node>
-        <node concept="1QoScp" id="5O186IMFBMG" role="3EZMnx">
-          <property role="1QpmdY" value="true" />
-          <node concept="3F0ifn" id="5O186IMFBMI" role="1QoS34">
-            <property role="3F0ifm" value="decimaal" />
-            <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-          </node>
-          <node concept="pkWqt" id="5O186IMFBMJ" role="3e4ffs">
-            <node concept="3clFbS" id="5O186IMFBML" role="2VODD2">
-              <node concept="3clFbF" id="5O186IMFBUk" role="3cqZAp">
-                <node concept="3clFbC" id="5O186IMFEk$" role="3clFbG">
-                  <node concept="3cmrfG" id="5O186IMFEsa" role="3uHU7w">
-                    <property role="3cmrfH" value="1" />
+          <node concept="pkWqt" id="3jTTg$xkPx0" role="pqm2j">
+            <node concept="3clFbS" id="3jTTg$xkPx1" role="2VODD2">
+              <node concept="3clFbF" id="3jTTg$xlqoQ" role="3cqZAp">
+                <node concept="2d3UOw" id="3jTTg$xlvXK" role="3clFbG">
+                  <node concept="3cmrfG" id="3jTTg$xlw32" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
                   </node>
-                  <node concept="2OqwBi" id="5O186IMFCbI" role="3uHU7B">
-                    <node concept="pncrf" id="5O186IMFBUj" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="5O186IMFCG6" role="2OqNvi">
+                  <node concept="2OqwBi" id="3jTTg$xlqJa" role="3uHU7B">
+                    <node concept="pncrf" id="3jTTg$xlqoP" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3jTTg$xlsK6" role="2OqNvi">
                       <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
                     </node>
                   </node>
@@ -4161,10 +4151,9 @@
               </node>
             </node>
           </node>
-          <node concept="3F0ifn" id="5O186IMFBU1" role="1QoVPY">
-            <property role="3F0ifm" value="decimalen" />
-            <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
-          </node>
+        </node>
+        <node concept="3F0A7n" id="15d$3Ctswhe" role="3EZMnx">
+          <ref role="1NtTu8" to="m234:15d$3Ctr5yv" resolve="tientallen" />
         </node>
       </node>
     </node>

@@ -2538,32 +2538,6 @@
         </node>
       </node>
       <node concept="3clFbH" id="Efmzn3Si_B" role="3cqZAp" />
-      <node concept="3clFbJ" id="6SCrOE2cUJ7" role="3cqZAp">
-        <node concept="3eOVzh" id="6SCrOE2cWGG" role="3clFbw">
-          <node concept="3cmrfG" id="6SCrOE2cWJ7" role="3uHU7w">
-            <property role="3cmrfH" value="0" />
-          </node>
-          <node concept="2OqwBi" id="6SCrOE2cUTs" role="3uHU7B">
-            <node concept="1YBJjd" id="6SCrOE2cUJj" role="2Oq$k0">
-              <ref role="1YBMHb" node="5LRwQDnw99X" resolve="afronden" />
-            </node>
-            <node concept="3TrcHB" id="6SCrOE2cVaN" role="2OqNvi">
-              <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="6SCrOE2cUJ9" role="3clFbx">
-          <node concept="2MkqsV" id="6SCrOE2cWQd" role="3cqZAp">
-            <node concept="Xl_RD" id="6SCrOE2cWQp" role="2MkJ7o">
-              <property role="Xl_RC" value="Aantal decimalen is kleiner dan 0" />
-            </node>
-            <node concept="1YBJjd" id="6SCrOE2cWRS" role="1urrMF">
-              <ref role="1YBMHb" node="5LRwQDnw99X" resolve="afronden" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="12kR7KkiM4o" role="3cqZAp" />
       <node concept="3clFbJ" id="3sUzTEtZoKr" role="3cqZAp">
         <node concept="3clFbS" id="3sUzTEtZoKt" role="3clFbx">
           <node concept="2MkqsV" id="3sUzTEtZpJN" role="3cqZAp">

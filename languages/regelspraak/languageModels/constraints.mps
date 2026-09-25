@@ -47,8 +47,12 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
+        <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -130,6 +134,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -188,6 +193,7 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
+      <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -5966,6 +5972,128 @@
           </node>
           <node concept="3cpWs6" id="eYkia68Vxm" role="3cqZAp">
             <node concept="10Nm6u" id="eYkia68W7L" role="3cqZAk" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="kjEOpujd9W">
+    <property role="3GE5qa" value="expressies" />
+    <ref role="1M2myG" to="m234:6NL0NB_CwId" resolve="Afronden" />
+    <node concept="EnEH3" id="15d$3Ctr98Z" role="1MhHOB">
+      <ref role="EomxK" to="m234:15d$3Ctr5yv" resolve="tientallen" />
+      <node concept="Eqf_E" id="15d$3Ctr9Y8" role="EtsB7">
+        <node concept="3clFbS" id="15d$3Ctr9Y9" role="2VODD2">
+          <node concept="3clFbJ" id="3jTTg$AsbWA" role="3cqZAp">
+            <node concept="3clFbS" id="3jTTg$AsbWC" role="3clFbx">
+              <node concept="3cpWs6" id="3jTTg$Asj2i" role="3cqZAp">
+                <node concept="Xl_RD" id="3jTTg$Ask3G" role="3cqZAk">
+                  <property role="Xl_RC" value="decimaal" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3jTTg$Asdrp" role="3clFbw">
+              <node concept="EsrRn" id="3jTTg$AscQp" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3jTTg$Asfwp" role="2OqNvi">
+                <ref role="37wK5l" to="u5to:3jTTg$ArFJa" resolve="isZeroOrOne" />
+                <node concept="2OqwBi" id="3jTTg$Ash4C" role="37wK5m">
+                  <node concept="EsrRn" id="3jTTg$Asgvq" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="3jTTg$AsiIH" role="2OqNvi">
+                    <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="15d$3Ctrar$" role="3cqZAp">
+            <node concept="2d3UOw" id="15d$3Ctre2q" role="3clFbw">
+              <node concept="2OqwBi" id="15d$3CtraP3" role="3uHU7B">
+                <node concept="EsrRn" id="15d$3Ctraw7" role="2Oq$k0" />
+                <node concept="3TrcHB" id="15d$3CtrbfC" role="2OqNvi">
+                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                </node>
+              </node>
+              <node concept="3cmrfG" id="3jTTg$AspdT" role="3uHU7w">
+                <property role="3cmrfH" value="2" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="15d$3CtrarA" role="3clFbx">
+              <node concept="3cpWs6" id="15d$3Ctreyg" role="3cqZAp">
+                <node concept="Xl_RD" id="15d$3CRrdm6" role="3cqZAk">
+                  <property role="Xl_RC" value="decimalen" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="15d$3Ctrg6U" role="3cqZAp">
+            <node concept="3clFbS" id="15d$3Ctrg6W" role="3clFbx">
+              <node concept="3cpWs6" id="15d$3CtrkEb" role="3cqZAp">
+                <node concept="Xl_RD" id="15d$3Ctrlwu" role="3cqZAk">
+                  <property role="Xl_RC" value="honderdtallen" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="15d$3CtrjEU" role="3clFbw">
+              <node concept="3cmrfG" id="15d$3CtrkqA" role="3uHU7w">
+                <property role="3cmrfH" value="-2" />
+              </node>
+              <node concept="2OqwBi" id="15d$3CtrgRS" role="3uHU7B">
+                <node concept="EsrRn" id="15d$3CtrgrF" role="2Oq$k0" />
+                <node concept="3TrcHB" id="15d$3CtrhKv" role="2OqNvi">
+                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="15d$3Ctrmol" role="3cqZAp">
+            <node concept="3clFbS" id="15d$3Ctrmom" role="3clFbx">
+              <node concept="3cpWs6" id="15d$3Ctrmon" role="3cqZAp">
+                <node concept="Xl_RD" id="15d$3Ctrmoo" role="3cqZAk">
+                  <property role="Xl_RC" value="duizendtallen" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="15d$3Ctrmop" role="3clFbw">
+              <node concept="3cmrfG" id="15d$3Ctrmoq" role="3uHU7w">
+                <property role="3cmrfH" value="-3" />
+              </node>
+              <node concept="2OqwBi" id="15d$3Ctrmor" role="3uHU7B">
+                <node concept="EsrRn" id="15d$3Ctrmos" role="2Oq$k0" />
+                <node concept="3TrcHB" id="15d$3Ctrmot" role="2OqNvi">
+                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="15d$3Ctro1W" role="3cqZAp">
+            <node concept="3cpWs3" id="15d$3CtrwIp" role="3cqZAk">
+              <node concept="Xl_RD" id="15d$3CtrxKH" role="3uHU7w">
+                <property role="Xl_RC" value="-tallen" />
+              </node>
+              <node concept="3cpWs3" id="15d$3CtrqTX" role="3uHU7B">
+                <node concept="Xl_RD" id="15d$3CtroZt" role="3uHU7B">
+                  <property role="Xl_RC" value="1" />
+                </node>
+                <node concept="2OqwBi" id="15d$3CtrroS" role="3uHU7w">
+                  <node concept="Xl_RD" id="15d$3Ctrra7" role="2Oq$k0">
+                    <property role="Xl_RC" value="0" />
+                  </node>
+                  <node concept="liA8E" id="15d$3CtrrWD" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.repeat(int)" resolve="repeat" />
+                    <node concept="1ZRNhn" id="7ok8J5qavts" role="37wK5m">
+                      <node concept="1eOMI4" id="12jx34GUjzs" role="2$L3a6">
+                        <node concept="2OqwBi" id="15d$3CtrtZf" role="1eOMHV">
+                          <node concept="EsrRn" id="15d$3Ctrt_7" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="15d$3Ctruy6" role="2OqNvi">
+                            <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

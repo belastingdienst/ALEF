@@ -11450,6 +11450,37 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3jTTg$ArFJa" role="13h7CS">
+      <property role="TrG5h" value="isZeroOrOne" />
+      <node concept="3Tm1VV" id="3jTTg$ArFJb" role="1B3o_S" />
+      <node concept="10P_77" id="3jTTg$ArGcJ" role="3clF45" />
+      <node concept="3clFbS" id="3jTTg$ArFJd" role="3clF47">
+        <node concept="3cpWs6" id="3jTTg$ArLD8" role="3cqZAp">
+          <node concept="2OqwBi" id="3jTTg$As37m" role="3cqZAk">
+            <node concept="2YIFZM" id="3jTTg$ArZhV" role="2Oq$k0">
+              <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+              <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+              <node concept="3cmrfG" id="3jTTg$ArZhW" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="3cmrfG" id="3jTTg$ArZhX" role="37wK5m">
+                <property role="3cmrfH" value="1" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3jTTg$As4AF" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object)" resolve="contains" />
+              <node concept="37vLTw" id="3jTTg$As4IT" role="37wK5m">
+                <ref role="3cqZAo" node="3jTTg$ArH9R" resolve="aantalDecimalen" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3jTTg$ArH9R" role="3clF46">
+        <property role="TrG5h" value="aantalDecimalen" />
+        <node concept="10Oyi0" id="3jTTg$ArH9Q" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13i0hz" id="5xmBOHl6gbg" role="13h7CS">
       <property role="TrG5h" value="getRoundingModePtr" />
       <node concept="3Tm1VV" id="5xmBOHl6gbh" role="1B3o_S" />
