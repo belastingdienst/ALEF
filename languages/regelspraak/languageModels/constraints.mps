@@ -48,7 +48,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
-      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
@@ -5993,39 +5992,40 @@
       <ref role="EomxK" to="m234:15d$3Ctr5yv" resolve="tientallen" />
       <node concept="Eqf_E" id="15d$3Ctr9Y8" role="EtsB7">
         <node concept="3clFbS" id="15d$3Ctr9Y9" role="2VODD2">
+          <node concept="3clFbJ" id="3jTTg$AsbWA" role="3cqZAp">
+            <node concept="3clFbS" id="3jTTg$AsbWC" role="3clFbx">
+              <node concept="3cpWs6" id="3jTTg$Asj2i" role="3cqZAp">
+                <node concept="Xl_RD" id="3jTTg$Ask3G" role="3cqZAk">
+                  <property role="Xl_RC" value="decimaal" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3jTTg$Asdrp" role="3clFbw">
+              <node concept="EsrRn" id="3jTTg$AscQp" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3jTTg$Asfwp" role="2OqNvi">
+                <ref role="37wK5l" to="u5to:3jTTg$ArFJa" resolve="isZeroOrOne" />
+                <node concept="2OqwBi" id="3jTTg$Ash4C" role="37wK5m">
+                  <node concept="EsrRn" id="3jTTg$Asgvq" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="3jTTg$AsiIH" role="2OqNvi">
+                    <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="15d$3Ctrar$" role="3cqZAp">
             <node concept="2d3UOw" id="15d$3Ctre2q" role="3clFbw">
-              <node concept="3cmrfG" id="15d$3Ctre7a" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
               <node concept="2OqwBi" id="15d$3CtraP3" role="3uHU7B">
                 <node concept="EsrRn" id="15d$3Ctraw7" role="2Oq$k0" />
                 <node concept="3TrcHB" id="15d$3CtrbfC" role="2OqNvi">
                   <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
                 </node>
               </node>
+              <node concept="3cmrfG" id="3jTTg$AspdT" role="3uHU7w">
+                <property role="3cmrfH" value="2" />
+              </node>
             </node>
             <node concept="3clFbS" id="15d$3CtrarA" role="3clFbx">
-              <node concept="3clFbJ" id="15d$3CRr4is" role="3cqZAp">
-                <node concept="3clFbS" id="15d$3CRr4iu" role="3clFbx">
-                  <node concept="3cpWs6" id="15d$3CRrbPG" role="3cqZAp">
-                    <node concept="Xl_RD" id="15d$3CRrcX9" role="3cqZAk">
-                      <property role="Xl_RC" value="decimaal" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2dkUwp" id="15d$3CRra1D" role="3clFbw">
-                  <node concept="3cmrfG" id="15d$3CRrab$" role="3uHU7w">
-                    <property role="3cmrfH" value="1" />
-                  </node>
-                  <node concept="2OqwBi" id="15d$3CRr5Z$" role="3uHU7B">
-                    <node concept="EsrRn" id="15d$3CRr5li" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="15d$3CRr77y" role="2OqNvi">
-                      <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs6" id="15d$3Ctreyg" role="3cqZAp">
                 <node concept="Xl_RD" id="15d$3CRrdm6" role="3cqZAk">
                   <property role="Xl_RC" value="decimalen" />
