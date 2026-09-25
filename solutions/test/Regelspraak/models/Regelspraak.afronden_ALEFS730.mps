@@ -378,6 +378,7 @@
               <property role="35Sgwk" value="true" />
               <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
               <property role="29kKyf" value="-4" />
+              <property role="c8sy_" value=" 10000-tallen" />
               <node concept="3_mHL5" id="3jTTg$zWs5N" role="29kKy2">
                 <node concept="c2t0s" id="3jTTg$zWtmp" role="eaaoM">
                   <ref role="Qu8KH" node="4QAJma9Pdny" resolve="gewicht" />
@@ -392,7 +393,7 @@
         <node concept="2ljwA5" id="3jTTg$zWr0Y" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1X3_iC" id="12jx34x2zzB" role="lGtFl">
+    <node concept="1X3_iC" id="12jx34JrBPZ" role="lGtFl">
       <property role="3V$3am" value="inhoud" />
       <property role="3V$3ak" value="7bbaf860-5f96-44b4-9731-6e00ae137ece/653687101158189440/9154144551704439187" />
       <node concept="1HSql3" id="3jTTg$zWH7s" role="8Wnug">
@@ -412,6 +413,7 @@
                 <property role="35Sgwk" value="true" />
                 <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
                 <property role="29kKyf" value="-1" />
+                <property role="c8sy_" value="0-tallen" />
                 <node concept="3_mHL5" id="3jTTg$zWHJ9" role="29kKy2">
                   <node concept="c2t0s" id="3jTTg$zWHO4" role="eaaoM">
                     <ref role="Qu8KH" node="4QAJma9Pdny" resolve="gewicht" />
