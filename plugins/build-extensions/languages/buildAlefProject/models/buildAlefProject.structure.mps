@@ -65,7 +65,7 @@
   </node>
   <node concept="1TIwiD" id="4fab9KdyWe3">
     <property role="EcuMT" value="4884765794590507907" />
-    <property role="TrG5h" value="AlefProjectDependency" />
+    <property role="TrG5h" value="ProjectDependency" />
     <property role="34LRSv" value="gebruik ander Alef project" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4fab9KdyWe9" role="1TKVEl">
@@ -81,7 +81,7 @@
   </node>
   <node concept="1TIwiD" id="7r3L53YQ4dR">
     <property role="EcuMT" value="8557899569086088055" />
-    <property role="TrG5h" value="AlefProjectBuildInfo" />
+    <property role="TrG5h" value="MPSProjectBuildInfo" />
     <property role="34LRSv" value="alef project bouw informatie" />
     <property role="R4oN_" value="bouw info" />
     <property role="19KtqR" value="true" />
@@ -101,7 +101,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4fab9KdyWe3" resolve="AlefProjectDependency" />
+      <ref role="20lvS9" node="4fab9KdyWe3" resolve="ProjectDependency" />
     </node>
   </node>
 </model>

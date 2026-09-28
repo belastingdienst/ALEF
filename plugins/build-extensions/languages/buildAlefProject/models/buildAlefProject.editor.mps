@@ -71,7 +71,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7r3L53YQ4dU">
-    <ref role="1XX52x" to="fsb1:7r3L53YQ4dR" resolve="AlefProjectBuildInfo" />
+    <ref role="1XX52x" to="fsb1:7r3L53YQ4dR" resolve="MPSProjectBuildInfo" />
     <node concept="3EZMnI" id="4fab9KdyWdU" role="2wV5jI">
       <node concept="3F0ifn" id="4fab9KdyWdY" role="3EZMnx">
         <property role="3F0ifm" value="Configuratie Alef Project" />
@@ -110,7 +110,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7r3L53YQ4dW">
-    <ref role="1XX52x" to="fsb1:4fab9KdyWe3" resolve="AlefProjectDependency" />
+    <ref role="1XX52x" to="fsb1:4fab9KdyWe3" resolve="ProjectDependency" />
     <node concept="3EZMnI" id="4fab9KdyWeh" role="2wV5jI">
       <node concept="3F0A7n" id="4fab9KdyWel" role="3EZMnx">
         <property role="1$x2rV" value="git repository" />

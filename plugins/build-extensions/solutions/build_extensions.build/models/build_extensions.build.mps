@@ -1202,15 +1202,15 @@
       <property role="TrG5h" value="alefproject-group" />
       <node concept="1E1JtA" id="61469K8R5NO" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="AlefProject.build" />
+        <property role="TrG5h" value="MPSProject.build" />
         <property role="3LESm3" value="6098d4db-d49b-4b8c-ba6c-b7c70d0525a4" />
         <node concept="55IIr" id="61469K8R5NP" role="3LF7KH">
           <node concept="2Ry0Ak" id="61469K8R5NS" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="61469K8R5NV" role="2Ry0An">
-              <property role="2Ry0Am" value="AlefProject.build" />
-              <node concept="2Ry0Ak" id="61469K8R5Qa" role="2Ry0An">
-                <property role="2Ry0Am" value="AlefProject.build.msd" />
+              <property role="2Ry0Am" value="MPSProject.build" />
+              <node concept="2Ry0Ak" id="42HzMRwTHL9" role="2Ry0An">
+                <property role="2Ry0Am" value="MPSProject.build.msd" />
               </node>
             </node>
           </node>
@@ -1279,20 +1279,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="61469K8R5SI" role="1HemKq">
-            <node concept="398BVA" id="61469K8R5S_" role="3LXTmr">
+          <node concept="3LXTmp" id="42HzMRwTHNe" role="1HemKq">
+            <node concept="398BVA" id="42HzMRwTHN6" role="3LXTmr">
               <ref role="398BVh" node="5wkx61sphl6" resolve="build-extensions.home" />
-              <node concept="2Ry0Ak" id="61469K8R5SA" role="iGT6I">
+              <node concept="2Ry0Ak" id="42HzMRwTHN7" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="61469K8R5SB" role="2Ry0An">
-                  <property role="2Ry0Am" value="AlefProject.build" />
-                  <node concept="2Ry0Ak" id="61469K8R5SC" role="2Ry0An">
+                <node concept="2Ry0Ak" id="42HzMRwTHN8" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPSProject.build" />
+                  <node concept="2Ry0Ak" id="42HzMRwTHN9" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="61469K8R5SJ" role="3LXTna">
+            <node concept="3qWCbU" id="42HzMRwTHNf" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>

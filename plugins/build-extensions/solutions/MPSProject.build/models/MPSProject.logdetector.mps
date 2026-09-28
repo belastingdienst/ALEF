@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1874f37f-92a4-4534-b62a-9ed6f6ef4aa7(AlefProject.logdetector)">
+<model ref="r:1874f37f-92a4-4534-b62a-9ed6f6ef4aa7(MPSProject.logdetector)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />

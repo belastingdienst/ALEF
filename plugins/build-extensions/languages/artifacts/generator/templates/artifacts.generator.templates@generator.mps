@@ -5043,86 +5043,64 @@
         <property role="TrG5h" value="sub" />
         <node concept="2Vbh7Z" id="6315ax8r8GC" role="2VaTZU">
           <node concept="S4ppK" id="6315ax8r8GG" role="2Vbh7K">
-            <node concept="2pNNFK" id="6315ax8r9k$" role="3m_WNW">
-              <property role="2pNNFO" value="exec" />
-              <node concept="2pNUuL" id="6315ax8r9k_" role="2pNNFR">
-                <property role="2pNUuO" value="executable" />
-                <node concept="2pMdtt" id="6315ax8r9kA" role="2pMdts">
-                  <property role="2pMdty" value="git" />
-                </node>
+            <node concept="2pNm8U" id="42HzMRwTaBe" role="3m_WNW">
+              <node concept="3o66tx" id="42HzMRwTaPi" role="3o66t8">
+                <property role="3o66tw" value="TODO: do alleen git clone als nodig ( available en &lt;if&gt;? )" />
               </node>
-              <node concept="2pNUuL" id="6315ax8r9kB" role="2pNNFR">
-                <property role="2pNUuO" value="dir" />
-                <node concept="2pMdtt" id="6315ax8r9kC" role="2pMdts">
-                  <property role="2pMdty" value="clonedir" />
-                  <node concept="17Uvod" id="6315ax8r9kD" role="lGtFl">
-                    <property role="2qtEX9" value="text" />
-                    <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
-                    <node concept="3zFVjK" id="6315ax8r9kE" role="3zH0cK">
-                      <node concept="3clFbS" id="6315ax8r9kF" role="2VODD2">
-                        <node concept="3cpWs6" id="6315ax8r9kG" role="3cqZAp">
-                          <node concept="3K4zz7" id="6315ax8r9kH" role="3cqZAk">
-                            <node concept="2OqwBi" id="6315ax8r9kI" role="3K4E3e">
-                              <node concept="2OqwBi" id="6315ax8r9kJ" role="2Oq$k0">
-                                <node concept="2OqwBi" id="6315ax8rb0L" role="2Oq$k0">
-                                  <node concept="30H73N" id="6315ax8r9kK" role="2Oq$k0" />
-                                  <node concept="3TrEf2" id="6315ax8rb2V" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
-                                  </node>
-                                </node>
-                                <node concept="3TrEf2" id="6315ax8r9kL" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="8het:2JYD$_z0lvg" resolve="clonePath" />
-                                </node>
-                              </node>
-                              <node concept="2qgKlT" id="6315ax8r9kM" role="2OqNvi">
-                                <ref role="37wK5l" to="vbkb:4Kip2_918YF" resolve="getRelativePath" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="6315ax8r9kN" role="3K4GZi">
-                              <property role="Xl_RC" value="" />
-                            </node>
-                            <node concept="2OqwBi" id="6315ax8r9kO" role="3K4Cdx">
-                              <node concept="2OqwBi" id="6315ax8r9kP" role="2Oq$k0">
-                                <node concept="2OqwBi" id="6315ax8raqH" role="2Oq$k0">
-                                  <node concept="30H73N" id="6315ax8r9kQ" role="2Oq$k0" />
-                                  <node concept="3TrEf2" id="6315ax8raGZ" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
-                                  </node>
-                                </node>
-                                <node concept="3TrEf2" id="6315ax8r9kR" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="8het:2JYD$_z0lvg" resolve="clonePath" />
-                                </node>
-                              </node>
-                              <node concept="3x8VRR" id="6315ax8r9kS" role="2OqNvi" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2pNNFK" id="6315ax8r9kT" role="3o6s8t">
-                <property role="2pNNFO" value="arg" />
-                <node concept="2pNUuL" id="6315ax8r9kU" role="2pNNFR">
-                  <property role="2pNUuO" value="line" />
-                  <node concept="2pMdtt" id="6315ax8r9kV" role="2pMdts">
-                    <property role="2pMdty" value="clone" />
-                    <node concept="17Uvod" id="6315ax8r9kW" role="lGtFl">
+            </node>
+            <node concept="2pNNFK" id="42HzMRwTbyz" role="3m_WNW">
+              <property role="2pNNFO" value="contrib:if" />
+              <node concept="2pNNFK" id="42HzMRwTcdi" role="3o6s8t">
+                <property role="2pNNFO" value="available" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="42HzMRwTdgO" role="2pNNFR">
+                  <property role="2pNUuO" value="file" />
+                  <node concept="2pMdtt" id="42HzMRwTdgR" role="2pMdts">
+                    <property role="2pMdty" value="clonedir" />
+                    <node concept="17Uvod" id="42HzMRwTdgS" role="lGtFl">
                       <property role="2qtEX9" value="text" />
                       <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
-                      <node concept="3zFVjK" id="6315ax8r9kX" role="3zH0cK">
-                        <node concept="3clFbS" id="6315ax8r9kY" role="2VODD2">
-                          <node concept="3clFbF" id="1CTM79iizgi" role="3cqZAp">
-                            <node concept="2OqwBi" id="1CTM79ii$2P" role="3clFbG">
-                              <node concept="2OqwBi" id="1CTM79iizzp" role="2Oq$k0">
-                                <node concept="30H73N" id="1CTM79iizgh" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="1CTM79iizOR" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
+                      <node concept="3zFVjK" id="42HzMRwTdgT" role="3zH0cK">
+                        <node concept="3clFbS" id="42HzMRwTdgU" role="2VODD2">
+                          <node concept="3cpWs6" id="42HzMRwTdgV" role="3cqZAp">
+                            <node concept="3K4zz7" id="42HzMRwTpYx" role="3cqZAk">
+                              <node concept="3cpWs3" id="42HzMRwTpYy" role="3K4E3e">
+                                <node concept="Xl_RD" id="42HzMRwTpYz" role="3uHU7w">
+                                  <property role="Xl_RC" value="/.git" />
+                                </node>
+                                <node concept="2OqwBi" id="42HzMRwTpY$" role="3uHU7B">
+                                  <node concept="2OqwBi" id="42HzMRwTpY_" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="42HzMRwTpYA" role="2Oq$k0">
+                                      <node concept="30H73N" id="42HzMRwTpYB" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="42HzMRwTpYC" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="42HzMRwTpYD" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8het:2JYD$_z0lvg" resolve="clonePath" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="42HzMRwTpYE" role="2OqNvi">
+                                    <ref role="37wK5l" to="vbkb:4Kip2_918YF" resolve="getRelativePath" />
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="2qgKlT" id="1CTM79ii$iw" role="2OqNvi">
-                                <ref role="37wK5l" to="de9n:1CTM79iivVh" resolve="gitCloneStatement" />
+                              <node concept="Xl_RD" id="42HzMRwTpYF" role="3K4GZi">
+                                <property role="Xl_RC" value=".git" />
+                              </node>
+                              <node concept="2OqwBi" id="42HzMRwTpYG" role="3K4Cdx">
+                                <node concept="2OqwBi" id="42HzMRwTpYH" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="42HzMRwTpYI" role="2Oq$k0">
+                                    <node concept="30H73N" id="42HzMRwTpYJ" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="42HzMRwTpYK" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="42HzMRwTpYL" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="8het:2JYD$_z0lvg" resolve="clonePath" />
+                                  </node>
+                                </node>
+                                <node concept="3x8VRR" id="42HzMRwTpYM" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
@@ -5130,6 +5108,111 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="42HzMRwTcdl" role="3o6s8t">
+                <property role="2pNNFO" value="then" />
+                <node concept="2pNNFK" id="42HzMRwTcdn" role="3o6s8t">
+                  <property role="2pNNFO" value="exec" />
+                  <node concept="2pNUuL" id="42HzMRwTcdo" role="2pNNFR">
+                    <property role="2pNUuO" value="executable" />
+                    <node concept="2pMdtt" id="42HzMRwTcdp" role="2pMdts">
+                      <property role="2pMdty" value="git" />
+                    </node>
+                  </node>
+                  <node concept="2pNUuL" id="42HzMRwTcdq" role="2pNNFR">
+                    <property role="2pNUuO" value="dir" />
+                    <node concept="2pMdtt" id="42HzMRwTcdr" role="2pMdts">
+                      <property role="2pMdty" value="clonedir" />
+                      <node concept="17Uvod" id="42HzMRwTcds" role="lGtFl">
+                        <property role="2qtEX9" value="text" />
+                        <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                        <node concept="3zFVjK" id="42HzMRwTcdt" role="3zH0cK">
+                          <node concept="3clFbS" id="42HzMRwTcdu" role="2VODD2">
+                            <node concept="3cpWs6" id="42HzMRwTcdv" role="3cqZAp">
+                              <node concept="3K4zz7" id="42HzMRwTcdw" role="3cqZAk">
+                                <node concept="2OqwBi" id="42HzMRwTcdx" role="3K4E3e">
+                                  <node concept="2OqwBi" id="42HzMRwTcdy" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="42HzMRwTcdz" role="2Oq$k0">
+                                      <node concept="30H73N" id="42HzMRwTcd$" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="42HzMRwTcd_" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="42HzMRwTcdA" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8het:2JYD$_z0lvg" resolve="clonePath" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="42HzMRwTcdB" role="2OqNvi">
+                                    <ref role="37wK5l" to="vbkb:4Kip2_918YF" resolve="getRelativePath" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="42HzMRwTcdC" role="3K4GZi">
+                                  <property role="Xl_RC" value="" />
+                                </node>
+                                <node concept="2OqwBi" id="42HzMRwTcdD" role="3K4Cdx">
+                                  <node concept="2OqwBi" id="42HzMRwTcdE" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="42HzMRwTcdF" role="2Oq$k0">
+                                      <node concept="30H73N" id="42HzMRwTcdG" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="42HzMRwTcdH" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="42HzMRwTcdI" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8het:2JYD$_z0lvg" resolve="clonePath" />
+                                    </node>
+                                  </node>
+                                  <node concept="3x8VRR" id="42HzMRwTcdJ" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pNNFK" id="42HzMRwTcdK" role="3o6s8t">
+                    <property role="2pNNFO" value="arg" />
+                    <node concept="2pNUuL" id="42HzMRwTcdL" role="2pNNFR">
+                      <property role="2pNUuO" value="line" />
+                      <node concept="2pMdtt" id="42HzMRwTcdM" role="2pMdts">
+                        <property role="2pMdty" value="clone" />
+                        <node concept="17Uvod" id="42HzMRwTcdN" role="lGtFl">
+                          <property role="2qtEX9" value="text" />
+                          <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                          <node concept="3zFVjK" id="42HzMRwTcdO" role="3zH0cK">
+                            <node concept="3clFbS" id="42HzMRwTcdP" role="2VODD2">
+                              <node concept="3clFbF" id="42HzMRwTcdQ" role="3cqZAp">
+                                <node concept="2OqwBi" id="42HzMRwTcdR" role="3clFbG">
+                                  <node concept="2OqwBi" id="42HzMRwTcdS" role="2Oq$k0">
+                                    <node concept="30H73N" id="42HzMRwTcdT" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="42HzMRwTcdU" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="8het:12Lkl9d87Ju" resolve="sourceDependency" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="42HzMRwTcdV" role="2OqNvi">
+                                    <ref role="37wK5l" to="de9n:1CTM79iivVh" resolve="gitCloneStatement" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNm8U" id="42HzMRwTqsM" role="3o6s8t">
+                <node concept="3o66tx" id="42HzMRwTqUc" role="3o66t8">
+                  <property role="3o66tw" value="TODO: else om met git bij te werken zodat hij zeker te weten uptodate is??" />
+                </node>
+              </node>
+              <node concept="3o6iSG" id="42HzMRwTqmP" role="3o6s8t" />
+              <node concept="2pNUuL" id="42HzMRwTbKB" role="2pNNFR">
+                <property role="2pNUuO" value="xmlns:contrib" />
+                <node concept="2pMdtt" id="42HzMRwTbKC" role="2pMdts">
+                  <property role="2pMdty" value="antlib:net.sf.antcontrib" />
                 </node>
               </node>
             </node>

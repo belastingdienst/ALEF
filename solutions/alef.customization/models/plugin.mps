@@ -73,6 +73,7 @@
     <import index="ctgy" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.plugins(MPS.IDEA/)" />
     <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="p05" ref="r:ded6801b-6355-449e-afaa-39708607d460(MPSProject.build)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -6090,6 +6091,12 @@
       <node concept="tCFHf" id="5aaarhB8SBY" role="ftvYc">
         <ref role="tCJdB" node="5aaarhB8SBw" resolve="RebuildAlefProject" />
       </node>
+      <node concept="tCFHf" id="69x65VHMQsM" role="ftvYc">
+        <ref role="tCJdB" node="69x65VHMPN_" resolve="GenerateBuildscript" />
+      </node>
+      <node concept="tCFHf" id="69x65VHMQsJ" role="ftvYc">
+        <ref role="tCJdB" node="69x65VHMPO0" resolve="BuildInstallDependencies" />
+      </node>
     </node>
     <node concept="tT9cl" id="5aaarhB8SAr" role="2f5YQi">
       <ref role="tU$_T" node="4d$EpHmFZUV" resolve="AlefMenu" />
@@ -7658,6 +7665,92 @@
       <node concept="tCFHf" id="5akV7tBVQiv" role="ftvYc">
         <ref role="tCJdB" node="5akV7tBTLQV" resolve="Documentation" />
       </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="69x65VHMPN_">
+    <property role="1rBW0U" value="true" />
+    <property role="TrG5h" value="GenerateBuildscript" />
+    <property role="2uzpH1" value="Generate Buildscript" />
+    <node concept="tnohg" id="69x65VHMPNA" role="tncku">
+      <node concept="3clFbS" id="69x65VHMPNB" role="2VODD2">
+        <node concept="3cpWs8" id="69x65VHNt74" role="3cqZAp">
+          <node concept="3cpWsn" id="69x65VHNt75" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="69x65VHNt76" role="1tU5fm">
+              <ref role="3uigEE" to="p05:65gwT7IWUhR" resolve="MPSProjectScriptsBuilder" />
+            </node>
+            <node concept="2ShNRf" id="69x65VHNt98" role="33vP2m">
+              <node concept="1pGfFk" id="69x65VHNt94" role="2ShVmc">
+                <ref role="37wK5l" to="p05:2mf$6zHSwV7" resolve="MPSProjectScriptsBuilder" />
+                <node concept="2OqwBi" id="69x65VHNAs$" role="37wK5m">
+                  <node concept="2WthIp" id="69x65VHNAsB" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="69x65VHNAsD" role="2OqNvi">
+                    <ref role="2WH_rO" node="69x65VHNAnt" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="69x65VHNB1J" role="3cqZAp">
+          <node concept="2OqwBi" id="69x65VHNB8d" role="3clFbG">
+            <node concept="37vLTw" id="69x65VHNB1H" role="2Oq$k0">
+              <ref role="3cqZAo" node="69x65VHNt75" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="69x65VHNBjw" role="2OqNvi">
+              <ref role="37wK5l" to="p05:37CWfe3X4mb" resolve="build" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="69x65VHNAnt" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="69x65VHNAnu" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="69x65VHMPO0">
+    <property role="1rBW0U" value="true" />
+    <property role="TrG5h" value="BuildInstallDependencies" />
+    <property role="2uzpH1" value="Build &amp; Install Dependencies" />
+    <node concept="tnohg" id="69x65VHMPO1" role="tncku">
+      <node concept="3clFbS" id="69x65VHMPO2" role="2VODD2">
+        <node concept="3cpWs8" id="69x65VHNBtf" role="3cqZAp">
+          <node concept="3cpWsn" id="69x65VHNBtg" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="69x65VHNBth" role="1tU5fm">
+              <ref role="3uigEE" to="p05:65gwT7IWUhR" resolve="MPSProjectScriptsBuilder" />
+            </node>
+            <node concept="2ShNRf" id="69x65VHNBti" role="33vP2m">
+              <node concept="1pGfFk" id="69x65VHNBtj" role="2ShVmc">
+                <ref role="37wK5l" to="p05:2mf$6zHSwV7" resolve="MPSProjectScriptsBuilder" />
+                <node concept="2OqwBi" id="69x65VHNBtk" role="37wK5m">
+                  <node concept="2WthIp" id="69x65VHNBtl" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="69x65VHNBtm" role="2OqNvi">
+                    <ref role="2WH_rO" node="69x65VHNBRJ" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="69x65VHNBtn" role="3cqZAp">
+          <node concept="2OqwBi" id="69x65VHNBto" role="3clFbG">
+            <node concept="37vLTw" id="69x65VHNBtp" role="2Oq$k0">
+              <ref role="3cqZAo" node="69x65VHNBtg" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="69x65VHNBtq" role="2OqNvi">
+              <ref role="37wK5l" to="p05:6D6fD7tse29" resolve="buildDependencies" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="69x65VHNBRJ" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="69x65VHNBRK" role="1oa70y" />
     </node>
   </node>
 </model>

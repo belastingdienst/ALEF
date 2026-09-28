@@ -54,7 +54,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2QP0kAivojf">
-    <ref role="13h7C2" to="fsb1:7r3L53YQ4dR" resolve="AlefProjectBuildInfo" />
+    <ref role="13h7C2" to="fsb1:7r3L53YQ4dR" resolve="MPSProjectBuildInfo" />
     <node concept="13hLZK" id="2QP0kAivojg" role="13h7CW">
       <node concept="3clFbS" id="2QP0kAivojh" role="2VODD2">
         <node concept="3clFbF" id="2QP0kAiLf6M" role="3cqZAp">

@@ -3,7 +3,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/proplogic/proplogic.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/buildscripts-generated-module/buildscripts-generated-module.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/testPropLogic/testPropLogic.msd" folder="" />
     </projectModules>
   </component>

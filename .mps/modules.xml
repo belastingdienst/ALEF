@@ -73,7 +73,7 @@
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/checkproject/checkproject.mpl" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/languages/projectbuild/projectbuild.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/AlefProject.boot/AlefProject.boot.msd" folder="plugins.build-extensions" />
-      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/AlefProject.build/AlefProject.build.msd" folder="plugins.build-extensions" />
+      <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/MPSProject.build/MPSProject.build.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/Sisyphus.boot/Sisyphus.boot.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/Sisyphus.run/Sisyphus.run.msd" folder="plugins.build-extensions" />
       <modulePath path="$PROJECT_DIR$/plugins/build-extensions/solutions/build_extensions.build/build_extensions.build.msd" folder="plugins.build-extensions" />
