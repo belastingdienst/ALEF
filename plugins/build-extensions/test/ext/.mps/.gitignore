@@ -1,0 +1,47 @@
+# Default ignored files
+/shelf/
+# -----------------------------------------------------------
+# general:
+.DS_Store
+workspace.xml
+junitvmwatcher*.properties
+TEST-*.xml
+junit*.properties
+*.history
+/*.log
+
+# -----------------------------------------------------------
+# MPS:
+/**/classes_gen/
+/**/source_gen/
+/**/source_gen.caches/
+/**/test_gen/
+/**/test_gen.caches/
+/**/generated/
+/**/trace.info
+/.mps/shelf/
+.mps-caches/
+
+# -----------------------------------------------------------
+# temp files:
+/**/~*
+/**/*.swp
+
+# -----------------------------------------------------------
+# specials:
+/**/build/
+/**/*-plugin.xml
+/**/*-mpsplugin.xml
+/**/*-demo.xml
+/**/*-tests.xml
+/build.properties
+/build.xml
+/logs/
+/.mps/dictionaries/**
+sbom.*
+
+# -----------------------------------------------------------
+
+/deps/
+target/
+*.versionsBackup
