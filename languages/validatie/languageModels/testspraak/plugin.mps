@@ -17,6 +17,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
+    <use id="2c2d9b89-febb-492f-94b7-f4768af79ed7" name="ide" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -91,6 +92,7 @@
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="rcv5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util.treeView(MPS.IDEA/)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -541,6 +543,9 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
+    </language>
+    <language id="2c2d9b89-febb-492f-94b7-f4768af79ed7" name="ide">
+      <concept id="650122368778693393" name="ide.structure.IsAlefIde" flags="ng" index="2q$PB8" />
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
@@ -2673,32 +2678,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="4VCVDWApQSr" role="3cqZAp">
-                  <node concept="3cpWsn" id="4VCVDWApQSs" role="3cpWs9">
-                    <property role="TrG5h" value="isAlefStandalone" />
-                    <node concept="10P_77" id="4VCVDWApQN_" role="1tU5fm" />
-                    <node concept="2OqwBi" id="4VCVDWApQSt" role="33vP2m">
-                      <node concept="liA8E" id="4VCVDWApQSu" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
-                      </node>
-                      <node concept="2JrnkZ" id="4VCVDWApQSv" role="2Oq$k0">
-                        <node concept="2OqwBi" id="4VCVDWApQSw" role="2JrQYb">
-                          <node concept="I4A8Y" id="4VCVDWApQS$" role="2OqNvi" />
-                          <node concept="2OqwBi" id="69bfnuxiePQ" role="2Oq$k0">
-                            <node concept="2tJFMh" id="69bfnuxidRx" role="2Oq$k0">
-                              <node concept="ZC_QK" id="69bfnuxielm" role="2tJFKM">
-                                <ref role="2aWVGs" to="m234:7Wa3vwiUUyV" resolve="Regel" />
-                              </node>
-                            </node>
-                            <node concept="Vyspw" id="69bfnuxifP0" role="2OqNvi">
-                              <node concept="10Nm6u" id="69bfnuxigWY" role="Vysub" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3cpWs8" id="4VCVDWApTYV" role="3cqZAp">
                   <node concept="3cpWsn" id="4VCVDWApTYW" role="3cpWs9">
                     <property role="TrG5h" value="isUnitTestConcept" />
@@ -2730,9 +2709,7 @@
                     </node>
                     <node concept="1eOMI4" id="4VCVDWApWj9" role="3uHU7w">
                       <node concept="1Wc70l" id="4VCVDWApS5T" role="1eOMHV">
-                        <node concept="37vLTw" id="4VCVDWApQS_" role="3uHU7B">
-                          <ref role="3cqZAo" node="4VCVDWApQSs" resolve="isAlefStandalone" />
-                        </node>
+                        <node concept="2q$PB8" id="$5GHAjDbkb" role="3uHU7B" />
                         <node concept="37vLTw" id="4VCVDWApTZ4" role="3uHU7w">
                           <ref role="3cqZAo" node="4VCVDWApTYW" resolve="isUnitTestConcept" />
                         </node>

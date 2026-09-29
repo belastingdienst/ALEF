@@ -7702,6 +7702,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="$5GHAjz4sz" role="3bR31x">
+          <node concept="3LXTmp" id="$5GHAjz4s$" role="3rtmxm">
+            <node concept="398BVA" id="$5GHAjz4s_" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="$5GHAjz4sA" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="$5GHAjz4sB" role="2Ry0An">
+                  <property role="2Ry0Am" value="modelNaarJson" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="$5GHAjz4sD" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="rqW0lb47DO" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8280,6 +8296,100 @@
     </node>
     <node concept="2G$12M" id="7mSdnBAXnih" role="3989C9">
       <property role="TrG5h" value="alef-ide" />
+      <node concept="1E1JtD" id="2fiNQP_ad$3" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="ide" />
+        <property role="3LESm3" value="2c2d9b89-febb-492f-94b7-f4768af79ed7" />
+        <node concept="398BVA" id="2fiNQP_adEX" role="3LF7KH">
+          <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+          <node concept="2Ry0Ak" id="2fiNQP_adHj" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="2fiNQP_adLU" role="2Ry0An">
+              <property role="2Ry0Am" value="ide" />
+              <node concept="2Ry0Ak" id="2fiNQP_adQx" role="2Ry0An">
+                <property role="2Ry0Am" value="ide.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="2fiNQP_aeiw" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="2fiNQP_aeix" role="1HemKq">
+            <node concept="398BVA" id="2fiNQP_aeig" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="2fiNQP_aeih" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="2fiNQP_aeii" role="2Ry0An">
+                  <property role="2Ry0Am" value="ide" />
+                  <node concept="2Ry0Ak" id="2fiNQP_aeij" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="2fiNQP_aeiy" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2fiNQP_aeiz" role="3bR37C">
+          <node concept="1Busua" id="2fiNQP_aei$" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="2fiNQP_aei_" role="1TViLv">
+          <property role="TrG5h" value="ide.generator" />
+          <property role="3LESm3" value="57cee3aa-6c16-47d9-a628-608529e9f3ef" />
+          <node concept="1BupzO" id="2fiNQP_aeiW" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="2fiNQP_aeiX" role="1HemKq">
+              <node concept="398BVA" id="2fiNQP_aeiC" role="3LXTmr">
+                <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+                <node concept="2Ry0Ak" id="2fiNQP_aeiD" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="2fiNQP_aeiE" role="2Ry0An">
+                    <property role="2Ry0Am" value="ide" />
+                    <node concept="2Ry0Ak" id="2fiNQP_aeiF" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="2fiNQP_aeiG" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="2fiNQP_aeiY" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1crMWVpP4_e" role="3bR31x">
+          <node concept="3LXTmp" id="1crMWVpP4_f" role="3rtmxm">
+            <node concept="398BVA" id="1crMWVpP4_g" role="3LXTmr">
+              <ref role="398BVh" node="4wvGeDpkH53" resolve="alef" />
+              <node concept="2Ry0Ak" id="1crMWVpP4_h" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1crMWVpP4_i" role="2Ry0An">
+                  <property role="2Ry0Am" value="ide" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1crMWVpP4_k" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1crMWVvgb1G" role="3bR37C">
+          <node concept="1Busua" id="1crMWVvgb1H" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="7vJ9kmUx1Xj" role="2G$12L">
         <property role="TrG5h" value="alef.customization" />
         <property role="3LESm3" value="4f3d16ac-f7e4-4b3f-a6b7-131c2b808441" />

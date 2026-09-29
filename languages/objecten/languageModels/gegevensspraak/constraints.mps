@@ -7,6 +7,7 @@
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="2c2d9b89-febb-492f-94b7-f4768af79ed7" name="ide" version="0" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -278,6 +279,9 @@
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
+    <language id="2c2d9b89-febb-492f-94b7-f4768af79ed7" name="ide">
+      <concept id="650122368778693393" name="ide.structure.IsAlefIde" flags="ng" index="2q$PB8" />
+    </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
@@ -330,10 +334,6 @@
       </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
-      </concept>
-      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
-      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
-        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -5455,27 +5455,8 @@
                   <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
                 </node>
               </node>
-              <node concept="3fqX7Q" id="4T6FiKZqqTp" role="3uHU7w">
-                <node concept="2OqwBi" id="4T6FiKZqqTr" role="3fr31v">
-                  <node concept="2JrnkZ" id="4T6FiKZqqTs" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4T6FiKZqrlo" role="2JrQYb">
-                      <node concept="1Xw6AR" id="4T6FiKZqr1Q" role="2Oq$k0">
-                        <node concept="1dCxOl" id="4T6FiKZqr51" role="1XwpL7">
-                          <property role="1XweGQ" value="r:c71b9efb-c880-476d-a07a-2493b4c1967f" />
-                          <node concept="1j_P7g" id="4T6FiKZqr52" role="1j$8Uc">
-                            <property role="1j_P7h" value="gegevensspraak.base" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2yCiCJ" id="4T6FiKZqrtl" role="2OqNvi">
-                        <node concept="10Nm6u" id="4T6FiKZqrE5" role="Vysub" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4T6FiKZqqT$" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
-                  </node>
-                </node>
+              <node concept="3fqX7Q" id="$5GHAjZ19k" role="3uHU7w">
+                <node concept="2q$PB8" id="$5GHAjZ19m" role="3fr31v" />
               </node>
             </node>
           </node>
