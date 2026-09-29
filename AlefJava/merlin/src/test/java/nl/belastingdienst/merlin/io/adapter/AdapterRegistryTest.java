@@ -31,8 +31,9 @@ class AdapterRegistryTest {
     @Test
     void testThrowingErrorForUnknownReader() {
         final AdapterRegistry registry = new AdapterRegistry(false);
+        final MNumericType numericType = MNumericType.wholeNumber();
         assertThrows(IllegalStateException.class,
-                () -> registry.getReader(Integer.class, MNumericType.wholeNumber())
+                () -> registry.getReader(Integer.class, numericType)
         );
     }
 
@@ -48,8 +49,9 @@ class AdapterRegistryTest {
     @Test
     void testThrowingErrorForUnknownWriter() {
         final AdapterRegistry registry = new AdapterRegistry(false);
+        final MNumericType numericType = MNumericType.wholeNumber();
         assertThrows(IllegalStateException.class,
-                () -> registry.getWriter(Integer.class, MNumericType.wholeNumber())
+                () -> registry.getWriter(Integer.class, numericType)
         );
     }
 

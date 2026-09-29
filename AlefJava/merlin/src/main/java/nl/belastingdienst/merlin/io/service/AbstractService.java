@@ -1,5 +1,7 @@
 package nl.belastingdienst.merlin.io.service;
 
+import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -11,6 +13,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
@@ -60,8 +63,8 @@ public abstract class AbstractService<T extends MObjectType> {
         final MObject mainObject = parseRequest(universe, inputStream, generator);
         logOnStart(universe.getMessageId(), input);
         setupUniverseForCalculation(universe);
-        response.evaluate(universe, mainObject);
-        if (universe.getViolations().isEmpty() || !enableValidation) {
+        evaluate(universe, mainObject);
+        if (canReturnSuccessfulResponse(universe)) {
             generateResponse(universe, mainObject, generator);
         } else {
             generator.writeFieldName(ALEFConstants.RESPONSE);
@@ -76,6 +79,20 @@ public abstract class AbstractService<T extends MObjectType> {
         generator.flush();
         logOnSuccess(universe.getMessageId(), input);
         return outputStream;
+    }
+
+    private boolean canReturnSuccessfulResponse(MUniverse universe) {
+        final List<Violation> violations = universe.getViolations();
+        return (violations.isEmpty() || !enableValidation) && violations.stream()
+                .filter(violation -> violation.getViolationKind().equals(ViolationKind.EVALUATION_ERROR)).count() == 0;
+    }
+
+    private void evaluate(MUniverse universe, MObject mainObject) {
+        try {
+            response.evaluate(universe, mainObject);
+        } catch (Exception e) {
+            universe.add(Violation.of(e.getMessage(), ViolationKind.EVALUATION_ERROR));
+        }
     }
 
     protected void generateServiceResult(ContentGenerator generator, String resultCode, String resultMessage) throws IOException {

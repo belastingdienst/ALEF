@@ -8,7 +8,7 @@ public abstract class MAbstractNumericType implements IMDataType {
     protected final MUnit unit;
     private final MNumericType base;
 
-    public MAbstractNumericType(int decimals, MNumberRange numberRange, MUnit unit) {
+    protected MAbstractNumericType(int decimals, MNumberRange numberRange, MUnit unit) {
         this.decimals = decimals;
         this.numberRange = numberRange;
         this.unit = unit;

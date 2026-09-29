@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.input;
 
 import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -173,7 +174,7 @@ public abstract class InputMessage<T extends MObjectType> {
         for (InputChoice choiceNode : choiceElements) {
             List<String> duplicateFields = getDuplicateChoiceElements(choiceNode, encounteredFieldNames);
             if (duplicateFields.size() > 1) {
-                universe.add(Violation.of(String.format("Invalid choice selection at %s. The following mutually exclusive fields were provided: %s", parser.getLocationInfo(), String.join(", ", duplicateFields))));
+                universe.add(Violation.of(String.format("Invalid choice selection at %s. The following mutually exclusive fields were provided: %s", parser.getLocationInfo(), String.join(", ", duplicateFields)), ViolationKind.INPUT_VALIDATION));
             }
         }
     }
@@ -184,7 +185,7 @@ public abstract class InputMessage<T extends MObjectType> {
             if (expectedFieldNames.contains(fieldName)) {
                 Integer currentIndex = getElementOrderMap().get(fieldName);
                 if (currentIndex == null || currentIndex < lastSeenIndex) {
-                    universe.add(Violation.of(String.format("Field '%s' is out of order at %s. It appears after a field that should follow it.", parser.getLocationInfo(), fieldName)));
+                    universe.add(Violation.of(String.format("Field '%s' is out of order at %s. It appears after a field that should follow it.", parser.getLocationInfo(), fieldName), ViolationKind.INPUT_VALIDATION));
                 } else {
                     lastSeenIndex = currentIndex;
                 }
@@ -195,7 +196,7 @@ public abstract class InputMessage<T extends MObjectType> {
     private void checkRequiredFields(MUniverse universe, ContentParser parser, List<String> encounteredFieldNames) {
         for (String requiredFieldName : requiredFieldNames) {
             if (!encounteredFieldNames.contains(requiredFieldName)) {
-                universe.add(Violation.of(String.format("The required field '%s' is missing at %s.", requiredFieldName, parser.getLocationInfo())));
+                universe.add(Violation.of(String.format("The required field '%s' is missing at %s.", requiredFieldName, parser.getLocationInfo()), ViolationKind.INPUT_VALIDATION));
             }
         }
     }
@@ -203,7 +204,7 @@ public abstract class InputMessage<T extends MObjectType> {
     private void checkForUnexpectedFields(MUniverse universe, ContentParser parser, List<String> encounteredFieldNames) {
         for (String fieldName : encounteredFieldNames) {
             if (!expectedFieldNames.contains(fieldName)) {
-                universe.add(Violation.of(String.format("The field '%s' is not allowed in this message structure at %s.", fieldName, parser.getLocationInfo())));
+                universe.add(Violation.of(String.format("The field '%s' is not allowed in this message structure at %s.", fieldName, parser.getLocationInfo()), ViolationKind.INPUT_VALIDATION));
             }
         }
     }
@@ -229,16 +230,18 @@ public abstract class InputMessage<T extends MObjectType> {
         elementOrderMap = new HashMap<>();
         for (int i = 0; i < inputElements.size(); i++) {
             final InputElement node = inputElements.get(i);
-            if (node instanceof InputField inputField) {
-                elementOrderMap.put(inputField.getFieldName(), i);
-            } else if (node instanceof InputChoice inputChoice) {
-                for (InputElement choiceNode : (inputChoice.getNodes())) {
+            if (node instanceof InputChoice inputChoice) {
+                for (InputElement choiceNode : inputChoice.getNodes()) {
                     if (choiceNode instanceof InputField inputField) {
                         elementOrderMap.put(inputField.getFieldName(), i);
                     } else if (choiceNode instanceof InputComplexProperty inputComplexProperty) {
                         elementOrderMap.put(inputComplexProperty.getFieldName(), i);
                     }
                 }
+            } else if (node instanceof InputComplexProperty inputComplexProperty) {
+                elementOrderMap.put(inputComplexProperty.getFieldName(), i);
+            } else if (node instanceof InputField inputField) {
+                elementOrderMap.put(inputField.getFieldName(), i);
             }
         }
     }

@@ -1,9 +1,6 @@
 package nl.belastingdienst.merlin.io.validation;
 
-import nl.belastingdienst.alef_runtime.LocationInfoProvider;
-import nl.belastingdienst.alef_runtime.Validators;
-import nl.belastingdienst.alef_runtime.Violation;
-import nl.belastingdienst.alef_runtime.ViolationCollector;
+import nl.belastingdienst.alef_runtime.*;
 
 import java.math.BigDecimal;
 
@@ -30,7 +27,7 @@ public class DigitsRule<T> extends AbstractRule<T> {
                 Validators.totalDigits(collector, valueAsDecimal, maxTotalDigits, locationInfoProvider);
                 }
         } catch (NumberFormatException e) {
-            collector.add(Violation.of("numberFormat", "Waarde voldoet niet aan het vereiste decimale formaat."));
+            collector.add(Violation.of("numberFormat", "Waarde voldoet niet aan het vereiste decimale formaat.", ViolationKind.INPUT_VALIDATION));
         }
     }
 }

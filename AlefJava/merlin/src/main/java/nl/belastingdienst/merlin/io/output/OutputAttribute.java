@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MDimensionalPropertyKey;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MPropertyKey;
@@ -40,7 +41,7 @@ public class OutputAttribute<T> implements OutputField {
         try {
             getValue(alefObject);
         } catch (RuntimeException e) {
-            universe.add(Violation.of("The following error occurred while evaluating " + fieldName + ": " + e.getMessage()));
+            universe.add(Violation.of("The following error occurred while evaluating " + fieldName + ": " + e.getMessage(), ViolationKind.INPUT_VALIDATION));
         }
     }
 

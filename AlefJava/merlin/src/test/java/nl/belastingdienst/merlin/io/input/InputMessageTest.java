@@ -584,6 +584,38 @@ import static org.junit.jupiter.api.Assertions.*;
         assertTrue(violations.get(0).toString().contains("out of order"));
     }
 
+     @Test
+     void testValidOrderingWithComplexPropertyShouldNotGiveOutOfOrderViolation() throws IOException {
+         final InputMessageMock<ItemType> itemMessage = new InputMessageMock<>(ItemType.class);
+         itemMessage.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
+         itemMessage.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
+         final InputMessageMock<PersonType> personMessage = new InputMessageMock<>(PersonType.class);
+         personMessage.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
+         personMessage.addElement(new InputComplexProperty("item", null, false, itemMessage, Cardinality.SINGLE, FactSide.LEFT, FactPersonHasItems.class));
+         personMessage.addElement(new InputAttribute<>("age", false, null, PersonType.age, new DecimalToRationalReader()));
+         // when
+         final String xml = """
+            <root>
+                <person>
+                    <name>test</name>
+                    <item>
+                        <name>test</name>
+                        <price>100</price>
+                    </item>
+                    <age>42</age>
+                </person>
+            </root>
+            """;
+         final MUniverse universe = new MUniverse(true);
+         final XmlParser xmlParser = new XmlParser(asInputStream(xml));
+         xmlParser.beginObject();
+         xmlParser.nextName();
+         personMessage.parse(universe, xmlParser);
+         xmlParser.endObject();
+         // then
+         assertTrue(universe.getViolations().isEmpty());
+     }
+
     @Test
     void testChoiceValidation() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);

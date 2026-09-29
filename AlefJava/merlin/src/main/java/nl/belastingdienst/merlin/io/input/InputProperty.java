@@ -2,6 +2,7 @@ package nl.belastingdienst.merlin.io.input;
 
 import nl.belastingdienst.alef_runtime.LocationInfoProvider;
 import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.*;
 
 public abstract class InputProperty<T> implements InputField {
@@ -58,7 +59,7 @@ public abstract class InputProperty<T> implements InputField {
             if (currentValue == null || currentValue.equals(value)) {
                 propertyHolder.setPropertyValueOnce(propertyKey, value);
             } else {
-                universe.add(Violation.of("Reassignment of an attribute at " + locationInfoProvider.getLocationInfo() + "."));
+                universe.add(Violation.of("Reassignment of an attribute at " + locationInfoProvider.getLocationInfo() + ".", ViolationKind.INPUT_VALIDATION));
             }
         }
     }
