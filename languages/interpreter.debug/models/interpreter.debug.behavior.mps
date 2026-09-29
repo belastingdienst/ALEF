@@ -5,7 +5,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -55,6 +55,7 @@
         <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -265,17 +266,11 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -313,7 +308,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
         <reference id="7400021826771268269" name="concept" index="2sp9C9" />
       </concept>
@@ -583,7 +577,7 @@
             <node concept="2OqwBi" id="5uTtVpBQNhN" role="33vP2m">
               <node concept="2OqwBi" id="5uTtVpBQNhO" role="2Oq$k0">
                 <node concept="13iPFW" id="5uTtVpBQNhP" role="2Oq$k0" />
-                <node concept="2qgKlT" id="5uTtVpBQNhQ" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrXG" role="2OqNvi">
                   <ref role="37wK5l" node="6DHtdHSCR9H" resolve="debugAction" />
                 </node>
               </node>
@@ -704,7 +698,7 @@
                         <ref role="3Tt5mk" to="dse8:6DHtdHSCR7V" resolve="slot" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="7580AHdZVY7" role="2OqNvi">
+                    <node concept="3zqWPK" id="3yV49$LhrXI" role="2OqNvi">
                       <ref role="37wK5l" node="6DHtdHSCSN_" resolve="lName" />
                     </node>
                   </node>
@@ -720,7 +714,7 @@
                     <ref role="3Tt5mk" to="dse8:6DHtdHSCR8R" resolve="value" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="7580AHiETVb" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrXK" role="2OqNvi">
                   <ref role="37wK5l" node="51QYbfAySFt" resolve="lString" />
                 </node>
               </node>
@@ -1270,7 +1264,7 @@
             </node>
             <node concept="2OqwBi" id="7cfU9ZMLMld" role="3uHU7B">
               <node concept="13iPFW" id="7cfU9ZMLLPq" role="2Oq$k0" />
-              <node concept="2qgKlT" id="7cfU9ZMLNbQ" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrXM" role="2OqNvi">
                 <ref role="37wK5l" node="7cfU9ZMLKxZ" resolve="verwachtRood" />
               </node>
             </node>
@@ -1366,15 +1360,15 @@
                   <node concept="3clFbF" id="4$o279SpV_N" role="3cqZAp">
                     <node concept="2OqwBi" id="4$o279SpV_O" role="3clFbG">
                       <node concept="13iPFW" id="4$o279SpV_P" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="4$o279SpV_Q" role="2OqNvi">
+                      <node concept="3zqWPK" id="3yV49$LhrXO" role="2OqNvi">
                         <ref role="37wK5l" node="6HHnqmMt9p" resolve="run" />
-                        <node concept="37vLTw" id="4$o279SpV_R" role="37wK5m">
+                        <node concept="37vLTw" id="3yV49$LhrXQ" role="37wK5m">
                           <ref role="3cqZAo" node="4$o279SpV_K" resolve="ctx" />
                         </node>
-                        <node concept="37vLTw" id="4$o279StxfZ" role="37wK5m">
+                        <node concept="37vLTw" id="3yV49$LhrXR" role="37wK5m">
                           <ref role="3cqZAo" node="4$o279StwmH" resolve="memoization" />
                         </node>
-                        <node concept="37vLTw" id="30SQGvnDo5Q" role="37wK5m">
+                        <node concept="37vLTw" id="3yV49$LhrXS" role="37wK5m">
                           <ref role="3cqZAo" node="30SQGvnDmo7" resolve="parameters" />
                         </node>
                       </node>
@@ -2030,9 +2024,9 @@
             <node concept="2OqwBi" id="1rebXHviuUL" role="3uHU7w">
               <node concept="2OqwBi" id="1rebXHviuUM" role="2Oq$k0">
                 <node concept="13iPFW" id="1rebXHviuUN" role="2Oq$k0" />
-                <node concept="2qgKlT" id="1rebXHviuUO" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrXT" role="2OqNvi">
                   <ref role="37wK5l" node="3fWVhlDSANJ" resolve="writtenSlotsIncludingChildren" />
-                  <node concept="37vLTw" id="1rebXHviuUP" role="37wK5m">
+                  <node concept="37vLTw" id="3yV49$LhrXV" role="37wK5m">
                     <ref role="3cqZAo" node="1KgjYn_uJGX" resolve="hints" />
                   </node>
                 </node>
@@ -2080,9 +2074,33 @@
         </node>
       </node>
       <node concept="P$JXv" id="4kUUMzkcgZG" role="lGtFl">
-        <node concept="TZ5HA" id="4kUUMzkcgZH" role="TZ5H$">
-          <node concept="1dT_AC" id="4kUUMzkcgZI" role="1dT_Ay">
-            <property role="1dT_AB" value="Moet deze in de debugger editor component getoond worden?" />
+        <node concept="1PaTwC" id="3yV49$LhuUp" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuUq" role="1PaTwD">
+            <property role="3oM_SC" value="Moet" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUr" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUs" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUt" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUu" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUv" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUw" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUx" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUy" role="1PaTwD">
+            <property role="3oM_SC" value="worden?" />
           </node>
         </node>
       </node>
@@ -2198,9 +2216,9 @@
                         <node concept="37vLTw" id="450QdnWpewa" role="2Oq$k0">
                           <ref role="3cqZAo" node="5vSJaT$FJWe" resolve="ar" />
                         </node>
-                        <node concept="2qgKlT" id="450QdnWpewb" role="2OqNvi">
+                        <node concept="3zqWPK" id="3yV49$LhrXW" role="2OqNvi">
                           <ref role="37wK5l" node="450QdnWp4Hl" resolve="actionRuns" />
-                          <node concept="37vLTw" id="450QdnWpewc" role="37wK5m">
+                          <node concept="37vLTw" id="3yV49$LhrXY" role="37wK5m">
                             <ref role="3cqZAo" node="450QdnWp5gj" resolve="action" />
                           </node>
                         </node>
@@ -2283,9 +2301,9 @@
                         <node concept="37vLTw" id="450QdnWsVK6" role="2Oq$k0">
                           <ref role="3cqZAo" node="5vSJaT$FJWg" resolve="ar" />
                         </node>
-                        <node concept="2qgKlT" id="450QdnWsVK7" role="2OqNvi">
+                        <node concept="3zqWPK" id="3yV49$LhrXZ" role="2OqNvi">
                           <ref role="37wK5l" node="450QdnWsVJO" resolve="actionRuns" />
-                          <node concept="37vLTw" id="450QdnWsXIA" role="37wK5m">
+                          <node concept="37vLTw" id="3yV49$LhrY1" role="37wK5m">
                             <ref role="3cqZAo" node="450QdnWsWD3" resolve="concept" />
                           </node>
                         </node>
@@ -2590,9 +2608,9 @@
           <node concept="3fqX7Q" id="2TOE3TVNMHM" role="3clFbw">
             <node concept="2OqwBi" id="2TOE3TVNMHO" role="3fr31v">
               <node concept="13iPFW" id="2TOE3TVNMHP" role="2Oq$k0" />
-              <node concept="2qgKlT" id="2TOE3TVNMHQ" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrY2" role="2OqNvi">
                 <ref role="37wK5l" node="1eODWE81ej$" resolve="showSubActions" />
-                <node concept="37vLTw" id="2TOE3TVNMHR" role="37wK5m">
+                <node concept="37vLTw" id="3yV49$LhrY4" role="37wK5m">
                   <ref role="3cqZAo" node="2TOE3TVNMBM" resolve="hints" />
                 </node>
               </node>
@@ -2625,9 +2643,9 @@
                           <node concept="3clFbF" id="6CxSJWi7qQP" role="3cqZAp">
                             <node concept="3fqX7Q" id="6CxSJWi7qQQ" role="3clFbG">
                               <node concept="2OqwBi" id="6CxSJWi7qQR" role="3fr31v">
-                                <node concept="2qgKlT" id="6CxSJWi7qQT" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrY5" role="2OqNvi">
                                   <ref role="37wK5l" node="3Oyo5UQ$YW$" resolve="showInDebugger" />
-                                  <node concept="37vLTw" id="6CxSJWi7qQU" role="37wK5m">
+                                  <node concept="37vLTw" id="3yV49$LhrY7" role="37wK5m">
                                     <ref role="3cqZAo" node="2TOE3TVNMBM" resolve="hints" />
                                   </node>
                                 </node>
@@ -2655,9 +2673,9 @@
                             </node>
                             <node concept="X8dFx" id="6CxSJWi7qR3" role="2OqNvi">
                               <node concept="2OqwBi" id="6CxSJWi7qR4" role="25WWJ7">
-                                <node concept="2qgKlT" id="6CxSJWi7qR6" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrY8" role="2OqNvi">
                                   <ref role="37wK5l" node="2TOE3TVNJmD" resolve="writtenSlotsIncludingHiddenChildren" />
-                                  <node concept="37vLTw" id="6CxSJWi7qR7" role="37wK5m">
+                                  <node concept="37vLTw" id="3yV49$LhrYa" role="37wK5m">
                                     <ref role="3cqZAo" node="2TOE3TVNMBM" resolve="hints" />
                                   </node>
                                 </node>
@@ -2727,7 +2745,7 @@
                                           <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                         </node>
                                       </node>
-                                      <node concept="2qgKlT" id="4wSUhdPQONA" role="2OqNvi">
+                                      <node concept="3zqWPK" id="3yV49$LhrYb" role="2OqNvi">
                                         <ref role="37wK5l" node="2TOE3TYnAkg" resolve="parentObject" />
                                       </node>
                                     </node>
@@ -2740,7 +2758,7 @@
                                           <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                         </node>
                                       </node>
-                                      <node concept="2qgKlT" id="4wSUhdPQONH" role="2OqNvi">
+                                      <node concept="3zqWPK" id="3yV49$LhrYd" role="2OqNvi">
                                         <ref role="37wK5l" node="2TOE3TYnAkg" resolve="parentObject" />
                                       </node>
                                     </node>
@@ -2834,9 +2852,51 @@
         </node>
       </node>
       <node concept="P$JXv" id="4wSUhdPRVQ8" role="lGtFl">
-        <node concept="TZ5HA" id="4wSUhdPRVQ9" role="TZ5H$">
-          <node concept="1dT_AC" id="4wSUhdPRVQa" role="1dT_Ay">
-            <property role="1dT_AB" value="Vind alle gelezen niet-hidden slots van de huidige actie en van alle hidden subacties ." />
+        <node concept="1PaTwC" id="3yV49$LhuUz" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuU$" role="1PaTwD">
+            <property role="3oM_SC" value="Vind" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuU_" role="1PaTwD">
+            <property role="3oM_SC" value="alle" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUA" role="1PaTwD">
+            <property role="3oM_SC" value="gelezen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUB" role="1PaTwD">
+            <property role="3oM_SC" value="niet-hidden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUC" role="1PaTwD">
+            <property role="3oM_SC" value="slots" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUD" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUE" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUF" role="1PaTwD">
+            <property role="3oM_SC" value="huidige" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUG" role="1PaTwD">
+            <property role="3oM_SC" value="actie" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUH" role="1PaTwD">
+            <property role="3oM_SC" value="en" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUI" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUJ" role="1PaTwD">
+            <property role="3oM_SC" value="alle" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUK" role="1PaTwD">
+            <property role="3oM_SC" value="hidden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUL" role="1PaTwD">
+            <property role="3oM_SC" value="subacties" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUM" role="1PaTwD">
+            <property role="3oM_SC" value="." />
           </node>
         </node>
       </node>
@@ -3005,9 +3065,9 @@
                         <node concept="2GrUjf" id="4nY5xQ5I$q" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="4nY5xQ4XzM" resolve="subAction" />
                         </node>
-                        <node concept="2qgKlT" id="3fWVhlDSAPN" role="2OqNvi">
+                        <node concept="3zqWPK" id="3yV49$LhrYf" role="2OqNvi">
                           <ref role="37wK5l" node="3fWVhlDSANJ" resolve="writtenSlotsIncludingChildren" />
-                          <node concept="37vLTw" id="3fWVhlDSAPO" role="37wK5m">
+                          <node concept="37vLTw" id="3yV49$LhrYh" role="37wK5m">
                             <ref role="3cqZAo" node="3fWVhlDSANK" resolve="hints" />
                           </node>
                         </node>
@@ -3104,9 +3164,9 @@
           </node>
           <node concept="2OqwBi" id="3fWVhlDSAPf" role="3clFbw">
             <node concept="13iPFW" id="3fWVhlDSAPg" role="2Oq$k0" />
-            <node concept="2qgKlT" id="3fWVhlDSAPh" role="2OqNvi">
+            <node concept="3zqWPK" id="3yV49$LhrYi" role="2OqNvi">
               <ref role="37wK5l" node="1eODWE81ej$" resolve="showSubActions" />
-              <node concept="37vLTw" id="3fWVhlDSAPi" role="37wK5m">
+              <node concept="37vLTw" id="3yV49$LhrYk" role="37wK5m">
                 <ref role="3cqZAo" node="3fWVhlDSANK" resolve="hints" />
               </node>
             </node>
@@ -3156,7 +3216,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="3fWVhlDSAQh" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrYl" role="2OqNvi">
                                   <ref role="37wK5l" node="2TOE3TYnAkg" resolve="parentObject" />
                                 </node>
                               </node>
@@ -3169,7 +3229,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="3fWVhlDSAQm" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrYn" role="2OqNvi">
                                   <ref role="37wK5l" node="2TOE3TYnAkg" resolve="parentObject" />
                                 </node>
                               </node>
@@ -3253,9 +3313,33 @@
         </node>
       </node>
       <node concept="P$JXv" id="3fWVhlDSAQP" role="lGtFl">
-        <node concept="TZ5HA" id="3fWVhlDSAQQ" role="TZ5H$">
-          <node concept="1dT_AC" id="3fWVhlDSAQR" role="1dT_Ay">
-            <property role="1dT_AB" value="Vind alle gelezen niet-hidden slots van de huidige actie " />
+        <node concept="1PaTwC" id="3yV49$LhuUN" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuUO" role="1PaTwD">
+            <property role="3oM_SC" value="Vind" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUP" role="1PaTwD">
+            <property role="3oM_SC" value="alle" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUQ" role="1PaTwD">
+            <property role="3oM_SC" value="gelezen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUR" role="1PaTwD">
+            <property role="3oM_SC" value="niet-hidden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUS" role="1PaTwD">
+            <property role="3oM_SC" value="slots" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUT" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUU" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUV" role="1PaTwD">
+            <property role="3oM_SC" value="huidige" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUW" role="1PaTwD">
+            <property role="3oM_SC" value="actie" />
           </node>
         </node>
       </node>
@@ -3426,9 +3510,9 @@
                             <node concept="37vLTw" id="4nY5xQ7ge4" role="2Oq$k0">
                               <ref role="3cqZAo" node="4nY5xQ7eyS" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="4nY5xQ7iTh" role="2OqNvi">
+                            <node concept="3zqWPK" id="3yV49$LhrYp" role="2OqNvi">
                               <ref role="37wK5l" node="3Oyo5UQ$YW$" resolve="showInDebugger" />
-                              <node concept="37vLTw" id="4nY5xQ7jvN" role="37wK5m">
+                              <node concept="37vLTw" id="3yV49$LhrYr" role="37wK5m">
                                 <ref role="3cqZAo" node="2TOE3TVSHQh" resolve="hints" />
                               </node>
                             </node>
@@ -3454,9 +3538,9 @@
                         <node concept="2GrUjf" id="4nY5xQ7vtp" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="4nY5xQ6YBo" resolve="subAction" />
                         </node>
-                        <node concept="2qgKlT" id="4nY5xQ7_Be" role="2OqNvi">
+                        <node concept="3zqWPK" id="3yV49$LhrYs" role="2OqNvi">
                           <ref role="37wK5l" node="2TOE3TVSHQg" resolve="readSlotsIncludingHiddenChildren" />
-                          <node concept="37vLTw" id="4nY5xQ7Br4" role="37wK5m">
+                          <node concept="37vLTw" id="3yV49$LhrYu" role="37wK5m">
                             <ref role="3cqZAo" node="2TOE3TVSHQh" resolve="hints" />
                           </node>
                         </node>
@@ -3557,9 +3641,9 @@
           </node>
           <node concept="2OqwBi" id="2TOE3TVSHR2" role="3clFbw">
             <node concept="13iPFW" id="2TOE3TVSHR3" role="2Oq$k0" />
-            <node concept="2qgKlT" id="2TOE3TVSHR4" role="2OqNvi">
+            <node concept="3zqWPK" id="3yV49$LhrYv" role="2OqNvi">
               <ref role="37wK5l" node="1eODWE81ej$" resolve="showSubActions" />
-              <node concept="37vLTw" id="2TOE3TVSHR5" role="37wK5m">
+              <node concept="37vLTw" id="3yV49$LhrYx" role="37wK5m">
                 <ref role="3cqZAo" node="2TOE3TVSHQh" resolve="hints" />
               </node>
             </node>
@@ -3614,7 +3698,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="2TOE3TYnFAU" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrYy" role="2OqNvi">
                                   <ref role="37wK5l" node="2TOE3TYnAkg" resolve="parentObject" />
                                 </node>
                               </node>
@@ -3632,7 +3716,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="2TOE3TYnBaS" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrY$" role="2OqNvi">
                                   <ref role="37wK5l" node="2TOE3TYnAkg" resolve="parentObject" />
                                 </node>
                               </node>
@@ -3727,9 +3811,48 @@
       </node>
       <node concept="3Tm1VV" id="4wSUhdPRNur" role="1B3o_S" />
       <node concept="P$JXv" id="4wSUhdPRQL8" role="lGtFl">
-        <node concept="TZ5HA" id="4wSUhdPRQL9" role="TZ5H$">
-          <node concept="1dT_AC" id="4wSUhdPRQLa" role="1dT_Ay">
-            <property role="1dT_AB" value="Vind alle gelezen niet-hidden slots van de huidige actie en van alle hidden subacties." />
+        <node concept="1PaTwC" id="3yV49$LhuUX" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuUY" role="1PaTwD">
+            <property role="3oM_SC" value="Vind" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuUZ" role="1PaTwD">
+            <property role="3oM_SC" value="alle" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV0" role="1PaTwD">
+            <property role="3oM_SC" value="gelezen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV1" role="1PaTwD">
+            <property role="3oM_SC" value="niet-hidden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV2" role="1PaTwD">
+            <property role="3oM_SC" value="slots" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV3" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV4" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV5" role="1PaTwD">
+            <property role="3oM_SC" value="huidige" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV6" role="1PaTwD">
+            <property role="3oM_SC" value="actie" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV7" role="1PaTwD">
+            <property role="3oM_SC" value="en" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV8" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV9" role="1PaTwD">
+            <property role="3oM_SC" value="alle" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVa" role="1PaTwD">
+            <property role="3oM_SC" value="hidden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVb" role="1PaTwD">
+            <property role="3oM_SC" value="subacties." />
           </node>
         </node>
       </node>
@@ -3772,9 +3895,9 @@
                         <ref role="3Tt5mk" to="dse8:478t0Ge3ASD" resolve="context" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="7rIROnB59pq" role="2OqNvi">
+                    <node concept="3zqWPK" id="3yV49$LhrYA" role="2OqNvi">
                       <ref role="37wK5l" node="450QdnWoYV3" resolve="get" />
-                      <node concept="37vLTw" id="7rIROnB59pr" role="37wK5m">
+                      <node concept="37vLTw" id="3yV49$LhrYC" role="37wK5m">
                         <ref role="3cqZAo" node="7rIROnB4NfU" resolve="argument" />
                       </node>
                     </node>
@@ -3878,7 +4001,7 @@
             <node concept="13iAh5" id="5uTtVpAVAZr" role="2Oq$k0">
               <ref role="3eA5LN" to="dse8:7580AHiCM_6" resolve="IDebugFocussable" />
             </node>
-            <node concept="2qgKlT" id="5uTtVpAVAZs" role="2OqNvi">
+            <node concept="3zqWPK" id="3yV49$LhrYD" role="2OqNvi">
               <ref role="37wK5l" node="6PY3Dtbb3XU" resolve="refreshEditor" />
             </node>
           </node>
@@ -3891,7 +4014,7 @@
                 <ref role="3Tt5mk" to="dse8:6DHtdHSCR80" resolve="action" />
               </node>
             </node>
-            <node concept="2qgKlT" id="6PY3Dtbdh6c" role="2OqNvi">
+            <node concept="3zqWPK" id="3yV49$LhrYF" role="2OqNvi">
               <ref role="37wK5l" node="5u3omT513gD" resolve="refreshEditor" />
             </node>
           </node>
@@ -3912,7 +4035,7 @@
             </node>
             <node concept="2OqwBi" id="24EUBo$Iecv" role="33vP2m">
               <node concept="13iPFW" id="24EUBo$Iecw" role="2Oq$k0" />
-              <node concept="2qgKlT" id="24EUBo$Iecx" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrYH" role="2OqNvi">
                 <ref role="37wK5l" node="6DHtdHSCTiQ" resolve="parentDebugAction" />
               </node>
             </node>
@@ -3961,7 +4084,7 @@
                     <ref role="3Tt5mk" to="dse8:478t0Ge3ASD" resolve="context" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="5mefrZOjMGk" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrYJ" role="2OqNvi">
                   <ref role="37wK5l" node="53VeSbaGrkr" resolve="argumentValues" />
                 </node>
               </node>
@@ -4612,7 +4735,7 @@
                   <ref role="3cqZAo" node="6CFpB9EysvJ" resolve="defaultValue" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="51QYbfBS31r" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrYL" role="2OqNvi">
                 <ref role="37wK5l" node="51QYbfBRS7W" resolve="lastValue" />
               </node>
             </node>
@@ -4941,7 +5064,7 @@
                 <ref role="3Tt5mk" to="dse8:478t0GfJzXh" resolve="construction" />
               </node>
             </node>
-            <node concept="2qgKlT" id="1m0eNP9Y5pH" role="2OqNvi">
+            <node concept="3zqWPK" id="3yV49$LhrYN" role="2OqNvi">
               <ref role="37wK5l" node="51QYbfAyH$g" resolve="lClass" />
             </node>
           </node>
@@ -4984,7 +5107,7 @@
                       <node concept="2GrUjf" id="450QdnWoV5m" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="450QdnWoV5c" resolve="debugSlot" />
                       </node>
-                      <node concept="2qgKlT" id="450QdnWoVBu" role="2OqNvi">
+                      <node concept="3zqWPK" id="3yV49$LhrYP" role="2OqNvi">
                         <ref role="37wK5l" node="51QYbfBRS7W" resolve="lastValue" />
                       </node>
                     </node>
@@ -5075,7 +5198,7 @@
                       <node concept="37vLTw" id="450QdnWvrfV" role="2Oq$k0">
                         <ref role="3cqZAo" node="5vSJaT$FJX4" resolve="s" />
                       </node>
-                      <node concept="2qgKlT" id="450QdnWvrG1" role="2OqNvi">
+                      <node concept="3zqWPK" id="3yV49$LhrYR" role="2OqNvi">
                         <ref role="37wK5l" node="51QYbfBRS7W" resolve="lastValue" />
                       </node>
                     </node>
@@ -5461,7 +5584,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="7580AHjb$Vz" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrYT" role="2OqNvi">
                                   <ref role="37wK5l" node="6DHtdHSCTAw" resolve="runtimeObject" />
                                 </node>
                               </node>
@@ -5670,7 +5793,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="2wetea4ba4_" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrYV" role="2OqNvi">
                                   <ref role="37wK5l" node="6DHtdHSCTAw" resolve="runtimeObject" />
                                 </node>
                               </node>
@@ -5731,7 +5854,7 @@
                   <node concept="37vLTw" id="5K7JCaRdk$S" role="2Oq$k0">
                     <ref role="3cqZAo" node="2wetea4ba3Z" resolve="debugAction" />
                   </node>
-                  <node concept="2qgKlT" id="5K7JCaRdllN" role="2OqNvi">
+                  <node concept="3zqWPK" id="3yV49$LhrYX" role="2OqNvi">
                     <ref role="37wK5l" node="6DHtdHSCTiQ" resolve="parentDebugAction" />
                   </node>
                 </node>
@@ -5787,7 +5910,7 @@
                                     <ref role="3Tt5mk" to="dse8:6DHtdHSCRCl" resolve="slot" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="5K7JCaRdjMD" role="2OqNvi">
+                                <node concept="3zqWPK" id="3yV49$LhrYZ" role="2OqNvi">
                                   <ref role="37wK5l" node="6DHtdHSCTAw" resolve="runtimeObject" />
                                 </node>
                               </node>
@@ -5815,7 +5938,7 @@
                 <node concept="37vLTw" id="5K7JCaRdjcS" role="2Oq$k0">
                   <ref role="3cqZAo" node="2wetea4ba3Z" resolve="debugAction" />
                 </node>
-                <node concept="2qgKlT" id="5K7JCaRdmOV" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrZ1" role="2OqNvi">
                   <ref role="37wK5l" node="6DHtdHSCTiQ" resolve="parentDebugAction" />
                 </node>
               </node>
@@ -6038,7 +6161,7 @@
                             <node concept="37vLTw" id="51QYbfBQXnh" role="2Oq$k0">
                               <ref role="3cqZAo" node="5vSJaT$FJXe" resolve="i" />
                             </node>
-                            <node concept="2qgKlT" id="51QYbfBQXHT" role="2OqNvi">
+                            <node concept="3zqWPK" id="3yV49$LhrZ3" role="2OqNvi">
                               <ref role="37wK5l" node="6DHtdHSCSN_" resolve="lName" />
                             </node>
                           </node>
@@ -6265,7 +6388,7 @@
                     <ref role="3Tt5mk" to="dse8:478t0Ge2iLE" resolve="value" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="51L6J9qvDYZ" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrZ5" role="2OqNvi">
                   <ref role="37wK5l" node="51QYbfAySFt" resolve="lString" />
                 </node>
               </node>
@@ -6285,7 +6408,7 @@
                     <ref role="3Tt5mk" to="dse8:478t0Ge2iLC" resolve="argument" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="51L6J9qvBTy" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrZ7" role="2OqNvi">
                   <ref role="37wK5l" node="6DHtdHSCSN_" resolve="lName" />
                 </node>
               </node>
@@ -6513,13 +6636,13 @@
                 <node concept="37vLTw" id="7ow3x16T1NV" role="2Oq$k0">
                   <ref role="3cqZAo" node="GV41eeAP5l" resolve="argument" />
                 </node>
-                <node concept="2qgKlT" id="7ow3x16T2dQ" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrZ9" role="2OqNvi">
                   <ref role="37wK5l" node="7ow3x16SWQ_" resolve="equal" />
-                  <node concept="2OqwBi" id="GV41eeAUFr" role="37wK5m">
-                    <node concept="2GrUjf" id="GV41eeAUBm" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3yV49$LhrZb" role="37wK5m">
+                    <node concept="2GrUjf" id="3yV49$LhrZc" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="GV41eeAQ86" resolve="value" />
                     </node>
-                    <node concept="3TrEf2" id="GV41eeAUOu" role="2OqNvi">
+                    <node concept="3TrEf2" id="3yV49$LhrZd" role="2OqNvi">
                       <ref role="3Tt5mk" to="dse8:478t0Ge2iLC" resolve="argument" />
                     </node>
                   </node>
@@ -6540,9 +6663,9 @@
                   <node concept="1mfA1w" id="GV41eeATUA" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="GV41eeAUps" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrZe" role="2OqNvi">
                 <ref role="37wK5l" node="GV41eeAP2u" resolve="value" />
-                <node concept="37vLTw" id="GV41eeAU_X" role="37wK5m">
+                <node concept="37vLTw" id="3yV49$LhrZg" role="37wK5m">
                   <ref role="3cqZAo" node="GV41eeAP5l" resolve="argument" />
                 </node>
               </node>
@@ -6608,13 +6731,13 @@
                 <node concept="37vLTw" id="450QdnWoYVo" role="2Oq$k0">
                   <ref role="3cqZAo" node="450QdnWoYV4" resolve="argument" />
                 </node>
-                <node concept="2qgKlT" id="450QdnWoYVp" role="2OqNvi">
+                <node concept="3zqWPK" id="3yV49$LhrZh" role="2OqNvi">
                   <ref role="37wK5l" node="7ow3x16SWQ_" resolve="equal" />
-                  <node concept="2OqwBi" id="450QdnWoYVq" role="37wK5m">
-                    <node concept="2GrUjf" id="450QdnWoYVr" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3yV49$LhrZj" role="37wK5m">
+                    <node concept="2GrUjf" id="3yV49$LhrZk" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="450QdnWoYVh" resolve="value" />
                     </node>
-                    <node concept="3TrEf2" id="450QdnWoYVs" role="2OqNvi">
+                    <node concept="3TrEf2" id="3yV49$LhrZl" role="2OqNvi">
                       <ref role="3Tt5mk" to="dse8:478t0Ge2iLC" resolve="argument" />
                     </node>
                   </node>
@@ -6659,9 +6782,9 @@
                   <node concept="1mfA1w" id="450QdnWp2h8" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="450QdnWp2Lx" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrZm" role="2OqNvi">
                 <ref role="37wK5l" node="450QdnWoYV3" resolve="get" />
-                <node concept="37vLTw" id="450QdnWp2QH" role="37wK5m">
+                <node concept="37vLTw" id="3yV49$LhrZo" role="37wK5m">
                   <ref role="3cqZAo" node="450QdnWoYV4" resolve="argument" />
                 </node>
               </node>
@@ -6755,9 +6878,9 @@
                       <node concept="1mfA1w" id="450QdnWuSi0" role="2OqNvi" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="450QdnWuSi1" role="2OqNvi">
+                  <node concept="3zqWPK" id="3yV49$LhrZp" role="2OqNvi">
                     <ref role="37wK5l" node="450QdnWuIxn" resolve="get" />
-                    <node concept="37vLTw" id="450QdnWuTWc" role="37wK5m">
+                    <node concept="37vLTw" id="3yV49$LhrZr" role="37wK5m">
                       <ref role="3cqZAo" node="450QdnWuIxo" resolve="concept" />
                     </node>
                   </node>
@@ -6799,7 +6922,7 @@
                     <node concept="Jnkvi" id="53VeSbaGNF0" role="2Oq$k0">
                       <ref role="1M0zk5" node="53VeSbaGJyW" resolve="parent" />
                     </node>
-                    <node concept="2qgKlT" id="53VeSbaGNF1" role="2OqNvi">
+                    <node concept="3zqWPK" id="3yV49$LhrZs" role="2OqNvi">
                       <ref role="37wK5l" node="53VeSbaGrkr" resolve="argumentValues" />
                     </node>
                   </node>
@@ -6857,7 +6980,7 @@
             </node>
             <node concept="2OqwBi" id="53VeSbbMP07" role="33vP2m">
               <node concept="13iPFW" id="53VeSbbMP08" role="2Oq$k0" />
-              <node concept="2qgKlT" id="53VeSbbMP09" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrZu" role="2OqNvi">
                 <ref role="37wK5l" node="53VeSbaGrkr" resolve="argumentValues" />
               </node>
             </node>
@@ -6876,7 +6999,7 @@
               <node concept="37vLTw" id="53VeSbbMPbN" role="2Oq$k0">
                 <ref role="3cqZAo" node="53VeSbbDEHG" resolve="other" />
               </node>
-              <node concept="2qgKlT" id="53VeSbbMPbO" role="2OqNvi">
+              <node concept="3zqWPK" id="3yV49$LhrZw" role="2OqNvi">
                 <ref role="37wK5l" node="53VeSbaGrkr" resolve="argumentValues" />
               </node>
             </node>
@@ -7076,7 +7199,7 @@
                     <node concept="Jnkvi" id="2S1UB$tHptK" role="2Oq$k0">
                       <ref role="1M0zk5" node="2S1UB$tHoWc" resolve="larg" />
                     </node>
-                    <node concept="2qgKlT" id="2S1UB$tHpPJ" role="2OqNvi">
+                    <node concept="3zqWPK" id="3yV49$LhrZy" role="2OqNvi">
                       <ref role="37wK5l" node="2S1UB$tB9Yl" resolve="toNode" />
                     </node>
                   </node>
@@ -7453,14 +7576,89 @@
       <node concept="3Tm1VV" id="1eODWE7xrIQ" role="1B3o_S" />
       <node concept="10P_77" id="1eODWE7xs7P" role="3clF45" />
       <node concept="P$JXv" id="1eODWE7xth2" role="lGtFl">
-        <node concept="TZ5HA" id="1eODWE7xth3" role="TZ5H$">
-          <node concept="1dT_AC" id="1eODWE7xth4" role="1dT_Ay">
-            <property role="1dT_AB" value="Check whether `hint` is an active editor hint anywhere in the editor hint stack." />
+        <node concept="1PaTwC" id="3yV49$LhuVc" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuVd" role="1PaTwD">
+            <property role="3oM_SC" value="Check" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVe" role="1PaTwD">
+            <property role="3oM_SC" value="whether" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVf" role="1PaTwD">
+            <property role="3oM_SC" value="`hint`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVg" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVh" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVi" role="1PaTwD">
+            <property role="3oM_SC" value="active" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVj" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVk" role="1PaTwD">
+            <property role="3oM_SC" value="hint" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVl" role="1PaTwD">
+            <property role="3oM_SC" value="anywhere" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVm" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVo" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVp" role="1PaTwD">
+            <property role="3oM_SC" value="hint" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVq" role="1PaTwD">
+            <property role="3oM_SC" value="stack." />
           </node>
         </node>
-        <node concept="TZ5HA" id="2q5_lHMDZj8" role="TZ5H$">
-          <node concept="1dT_AC" id="2q5_lHMDZj9" role="1dT_Ay">
-            <property role="1dT_AB" value="Can be used to set your own hint and tune the debug editor." />
+        <node concept="1PaTwC" id="3yV49$LhuVr" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuVs" role="1PaTwD">
+            <property role="3oM_SC" value="Can" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVt" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVu" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVv" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVw" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVx" role="1PaTwD">
+            <property role="3oM_SC" value="your" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVy" role="1PaTwD">
+            <property role="3oM_SC" value="own" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVz" role="1PaTwD">
+            <property role="3oM_SC" value="hint" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV$" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuV_" role="1PaTwD">
+            <property role="3oM_SC" value="tune" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVB" role="1PaTwD">
+            <property role="3oM_SC" value="debug" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVC" role="1PaTwD">
+            <property role="3oM_SC" value="editor." />
           </node>
         </node>
       </node>
@@ -8929,29 +9127,173 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3L1M" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3L1N" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3L1O" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3L1P" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de debugAction voor deze DebugAction in de debugger editor component getoond dient te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuVD" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuVE" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVF" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVG" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVH" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVI" role="1PaTwD">
+            <property role="3oM_SC" value="debugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVJ" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVK" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVL" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVM" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVN" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVO" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVP" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVQ" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVR" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVS" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVT" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVU" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
-        <node concept="TZ5HA" id="1kniyHK3L1Q" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3L1R" role="1dT_Ay">
-            <property role="1dT_AB" value="Als deze false is,  dan worden er geen gelezen/geschreven slots/argumenten getoond," />
+        <node concept="1PaTwC" id="3yV49$LhuVV" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuVW" role="1PaTwD">
+            <property role="3oM_SC" value="Als" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVX" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVY" role="1PaTwD">
+            <property role="3oM_SC" value="false" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuVZ" role="1PaTwD">
+            <property role="3oM_SC" value="is," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW1" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW2" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW3" role="1PaTwD">
+            <property role="3oM_SC" value="er" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW4" role="1PaTwD">
+            <property role="3oM_SC" value="geen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW5" role="1PaTwD">
+            <property role="3oM_SC" value="gelezen/geschreven" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW6" role="1PaTwD">
+            <property role="3oM_SC" value="slots/argumenten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW7" role="1PaTwD">
+            <property role="3oM_SC" value="getoond," />
           </node>
         </node>
-        <node concept="TZ5HA" id="1kniyHK3L1S" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3L1T" role="1dT_Ay">
-            <property role="1dT_AB" value="wel worden dan de subacties getoons., als `debugSubActions`  true oplevert." />
+        <node concept="1PaTwC" id="3yV49$LhuW8" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuW9" role="1PaTwD">
+            <property role="3oM_SC" value="wel" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWa" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWb" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWc" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWd" role="1PaTwD">
+            <property role="3oM_SC" value="subacties" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWe" role="1PaTwD">
+            <property role="3oM_SC" value="getoons.," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWf" role="1PaTwD">
+            <property role="3oM_SC" value="als" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWg" role="1PaTwD">
+            <property role="3oM_SC" value="`debugSubActions`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWi" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWj" role="1PaTwD">
+            <property role="3oM_SC" value="oplevert." />
           </node>
         </node>
-        <node concept="TZ5HA" id="1kniyHK3L1U" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3L1V" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="3yV49$LhuWk" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuWl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="1kniyHK3L1W" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3L1X" role="1dT_Ay">
-            <property role="1dT_AB" value="NB Default is false, dus te tonen LActions moeten deze methode overschrijven" />
+        <node concept="1PaTwC" id="3yV49$LhuWm" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuWn" role="1PaTwD">
+            <property role="3oM_SC" value="NB" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWo" role="1PaTwD">
+            <property role="3oM_SC" value="Default" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWp" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWq" role="1PaTwD">
+            <property role="3oM_SC" value="false," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWr" role="1PaTwD">
+            <property role="3oM_SC" value="dus" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWs" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWt" role="1PaTwD">
+            <property role="3oM_SC" value="tonen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWu" role="1PaTwD">
+            <property role="3oM_SC" value="LActions" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWv" role="1PaTwD">
+            <property role="3oM_SC" value="moeten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWw" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWx" role="1PaTwD">
+            <property role="3oM_SC" value="methode" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWy" role="1PaTwD">
+            <property role="3oM_SC" value="overschrijven" />
           </node>
         </node>
       </node>
@@ -9016,13 +9358,49 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="P$JXv" id="5rr9WNcEEF3" role="lGtFl">
-        <node concept="TZ5HA" id="5rr9WNcEEF4" role="TZ5H$">
-          <node concept="1dT_AC" id="5rr9WNcEEF5" role="1dT_Ay">
-            <property role="1dT_AB" value="Should this node be collapsible, so the user can open and close it?" />
-          </node>
-        </node>
         <node concept="1KehLL" id="5rr9WNcEFfF" role="lGtFl">
           <property role="1K8rM7" value="Constant_ls0i5e_f0a" />
+        </node>
+        <node concept="1PaTwC" id="3yV49$LhuWz" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuW$" role="1PaTwD">
+            <property role="3oM_SC" value="Should" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuW_" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWA" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWB" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWC" role="1PaTwD">
+            <property role="3oM_SC" value="collapsible," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWD" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWE" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWF" role="1PaTwD">
+            <property role="3oM_SC" value="user" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWG" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWH" role="1PaTwD">
+            <property role="3oM_SC" value="open" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWI" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWJ" role="1PaTwD">
+            <property role="3oM_SC" value="close" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWK" role="1PaTwD">
+            <property role="3oM_SC" value="it?" />
+          </node>
         </node>
       </node>
     </node>
@@ -9049,9 +9427,24 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="P$JXv" id="5rr9WNcEE2_" role="lGtFl">
-        <node concept="TZ5HA" id="5rr9WNcEE2A" role="TZ5H$">
-          <node concept="1dT_AC" id="5rr9WNcEE2B" role="1dT_Ay">
-            <property role="1dT_AB" value="Should this node initially be collapsed?" />
+        <node concept="1PaTwC" id="3yV49$LhuWL" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuWM" role="1PaTwD">
+            <property role="3oM_SC" value="Should" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWN" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWO" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWP" role="1PaTwD">
+            <property role="3oM_SC" value="initially" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWQ" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWR" role="1PaTwD">
+            <property role="3oM_SC" value="collapsed?" />
           </node>
         </node>
       </node>
@@ -9078,9 +9471,9 @@
                         <node concept="37vLTw" id="1kniyHK3LxN" role="2Oq$k0">
                           <ref role="3cqZAo" node="5vSJaT$FJXo" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="1kniyHK3LxO" role="2OqNvi">
+                        <node concept="3zqWPK" id="3yV49$LhrZ$" role="2OqNvi">
                           <ref role="37wK5l" node="3Oyo5UQ$YW$" resolve="showInDebugger" />
-                          <node concept="37vLTw" id="1kniyHK3LxP" role="37wK5m">
+                          <node concept="37vLTw" id="3yV49$LhrZA" role="37wK5m">
                             <ref role="3cqZAo" node="1kniyHK3Ly0" resolve="hints" />
                           </node>
                         </node>
@@ -9129,9 +9522,57 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3Ly2" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3Ly3" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3Ly4" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3Ly5" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `subActions` voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuWS" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuWT" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWU" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWV" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWW" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWX" role="1PaTwD">
+            <property role="3oM_SC" value="`subActions`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWY" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuWZ" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX0" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX1" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX2" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX3" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX4" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX5" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX6" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX7" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX8" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX9" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9164,9 +9605,57 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3Lyi" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3Lyj" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3Lyk" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3Lyl" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `readArguments` voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuXa" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuXb" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXc" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXd" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXe" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXf" role="1PaTwD">
+            <property role="3oM_SC" value="`readArguments`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXg" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXh" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXi" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXj" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXk" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXl" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXm" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXn" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXo" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXp" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXq" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXr" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9199,9 +9688,57 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3Lyy" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3Lyz" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3Ly$" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3Ly_" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `writtenArguments` voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuXs" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuXt" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXu" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXv" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXw" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXx" role="1PaTwD">
+            <property role="3oM_SC" value="`writtenArguments`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXy" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXz" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX$" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuX_" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXA" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXB" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXC" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXD" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXE" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXF" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXG" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXH" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9238,9 +9775,60 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3LyO" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3LyP" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3LyQ" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3LyR" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `readSlots`  voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuXI" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuXJ" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXK" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXL" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXM" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXN" role="1PaTwD">
+            <property role="3oM_SC" value="`readSlots`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXP" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXQ" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXR" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXS" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXT" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXU" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXV" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXW" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXX" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXY" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuXZ" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY0" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9272,9 +9860,57 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3Lz4" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3Lz5" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3Lz6" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3Lz7" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de writtenSlots voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuY1" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuY2" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY3" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY4" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY5" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY6" role="1PaTwD">
+            <property role="3oM_SC" value="writtenSlots" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY7" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY8" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY9" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYa" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYb" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYc" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYd" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYe" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYf" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYg" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYh" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYi" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9311,9 +9947,63 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3Lzm" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3Lzn" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3Lzo" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3Lzp" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `constructed`  objecten voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuYj" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuYk" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYl" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYm" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYn" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYo" role="1PaTwD">
+            <property role="3oM_SC" value="`constructed`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYq" role="1PaTwD">
+            <property role="3oM_SC" value="objecten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYr" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYs" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYt" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYu" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYv" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYw" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYx" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYy" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYz" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY$" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuY_" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYA" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9345,9 +10035,57 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3LzA" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3LzB" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3LzC" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3LzD" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of het `result` voor deze DebugAction in de debugger editor component getoond dient te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuYB" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuYC" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYD" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYE" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYF" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYG" role="1PaTwD">
+            <property role="3oM_SC" value="`result`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYH" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYI" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYJ" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYK" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYL" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYM" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYN" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYO" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYP" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYQ" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYR" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYS" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9379,9 +10117,60 @@
       </node>
       <node concept="3Tm1VV" id="1kniyHK3LzQ" role="1B3o_S" />
       <node concept="P$JXv" id="1kniyHK3LzR" role="lGtFl">
-        <node concept="TZ5HA" id="1kniyHK3LzS" role="TZ5H$">
-          <node concept="1dT_AC" id="1kniyHK3LzT" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de nam van deze DebugAction getoond dient te worden. De geschreven eigenschappen worden altijd getoond." />
+        <node concept="1PaTwC" id="3yV49$LhuYT" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuYU" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYV" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYW" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYX" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYY" role="1PaTwD">
+            <property role="3oM_SC" value="nam" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuYZ" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ0" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ1" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ2" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ3" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ4" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ5" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ6" role="1PaTwD">
+            <property role="3oM_SC" value="De" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ7" role="1PaTwD">
+            <property role="3oM_SC" value="geschreven" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ8" role="1PaTwD">
+            <property role="3oM_SC" value="eigenschappen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ9" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZa" role="1PaTwD">
+            <property role="3oM_SC" value="altijd" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZb" role="1PaTwD">
+            <property role="3oM_SC" value="getoond." />
           </node>
         </node>
       </node>
@@ -9414,9 +10203,27 @@
       <ref role="3uigEE" node="h3$tSnsrTK" resolve="IDebugConfiguration" />
     </node>
     <node concept="3UR2Jj" id="3MWvhyvonK8" role="lGtFl">
-      <node concept="TZ5HA" id="3MWvhyvonK9" role="TZ5H$">
-        <node concept="1dT_AC" id="3MWvhyvonKa" role="1dT_Ay">
-          <property role="1dT_AB" value="This class describes the default debug configuration." />
+      <node concept="1PaTwC" id="3yV49$LhuUh" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhuUi" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhuUj" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhuUk" role="1PaTwD">
+          <property role="3oM_SC" value="describes" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhuUl" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhuUm" role="1PaTwD">
+          <property role="3oM_SC" value="default" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhuUn" role="1PaTwD">
+          <property role="3oM_SC" value="debug" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhuUo" role="1PaTwD">
+          <property role="3oM_SC" value="configuration." />
         </node>
       </node>
     </node>
@@ -9493,29 +10300,164 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnsrW4" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnsrW5" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnsrW6" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnsrW7" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of deze DebugAction in de debugger editor component getoond dient te worden." />
+        <node concept="1PaTwC" id="3yV49$LhuZc" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuZd" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZe" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZf" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZg" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZh" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZi" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZj" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZk" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZl" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZm" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZn" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZo" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZp" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZq" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
-        <node concept="TZ5HA" id="h3$tSnsrW8" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnsrW9" role="1dT_Ay">
-            <property role="1dT_AB" value="Als deze false is,  dan worden er geen gelezen/geschreven slots/argumenten getoond," />
+        <node concept="1PaTwC" id="3yV49$LhuZr" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuZs" role="1PaTwD">
+            <property role="3oM_SC" value="Als" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZt" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZu" role="1PaTwD">
+            <property role="3oM_SC" value="false" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZv" role="1PaTwD">
+            <property role="3oM_SC" value="is," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZx" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZy" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZz" role="1PaTwD">
+            <property role="3oM_SC" value="er" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ$" role="1PaTwD">
+            <property role="3oM_SC" value="geen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZ_" role="1PaTwD">
+            <property role="3oM_SC" value="gelezen/geschreven" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZA" role="1PaTwD">
+            <property role="3oM_SC" value="slots/argumenten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZB" role="1PaTwD">
+            <property role="3oM_SC" value="getoond," />
           </node>
         </node>
-        <node concept="TZ5HA" id="h3$tSnsrWa" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnsrWb" role="1dT_Ay">
-            <property role="1dT_AB" value="wel worden dan de subacties getoons., als `debugSubActions`  true oplevert." />
+        <node concept="1PaTwC" id="3yV49$LhuZC" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuZD" role="1PaTwD">
+            <property role="3oM_SC" value="wel" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZE" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZF" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZG" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZH" role="1PaTwD">
+            <property role="3oM_SC" value="subacties" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZI" role="1PaTwD">
+            <property role="3oM_SC" value="getoons.," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZJ" role="1PaTwD">
+            <property role="3oM_SC" value="als" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZK" role="1PaTwD">
+            <property role="3oM_SC" value="`debugSubActions`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZM" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZN" role="1PaTwD">
+            <property role="3oM_SC" value="oplevert." />
           </node>
         </node>
-        <node concept="TZ5HA" id="h3$tSnsrWc" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnsrWd" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="3yV49$LhuZO" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuZP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="h3$tSnsrWe" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnsrWf" role="1dT_Ay">
-            <property role="1dT_AB" value="NB Default is false, dus te tonen DebugActions moeten deze methode overschrijven" />
+        <node concept="1PaTwC" id="3yV49$LhuZQ" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$LhuZR" role="1PaTwD">
+            <property role="3oM_SC" value="NB" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZS" role="1PaTwD">
+            <property role="3oM_SC" value="Default" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZT" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZU" role="1PaTwD">
+            <property role="3oM_SC" value="false," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZV" role="1PaTwD">
+            <property role="3oM_SC" value="dus" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZW" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZX" role="1PaTwD">
+            <property role="3oM_SC" value="tonen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZY" role="1PaTwD">
+            <property role="3oM_SC" value="DebugActions" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$LhuZZ" role="1PaTwD">
+            <property role="3oM_SC" value="moeten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv00" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv01" role="1PaTwD">
+            <property role="3oM_SC" value="methode" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv02" role="1PaTwD">
+            <property role="3oM_SC" value="overschrijven" />
           </node>
         </node>
       </node>
@@ -9562,9 +10504,57 @@
         <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
       </node>
       <node concept="P$JXv" id="7CW4B$98sjw" role="lGtFl">
-        <node concept="TZ5HA" id="7CW4B$98sjx" role="TZ5H$">
-          <node concept="1dT_AC" id="7CW4B$98sjy" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of deze actie opgeklapt moet kunnen worden, krijgt dan een +/- in de editor erbij." />
+        <node concept="1PaTwC" id="3yV49$Lhv03" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv04" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv05" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv06" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv07" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv08" role="1PaTwD">
+            <property role="3oM_SC" value="actie" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv09" role="1PaTwD">
+            <property role="3oM_SC" value="opgeklapt" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0a" role="1PaTwD">
+            <property role="3oM_SC" value="moet" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0b" role="1PaTwD">
+            <property role="3oM_SC" value="kunnen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0c" role="1PaTwD">
+            <property role="3oM_SC" value="worden," />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0d" role="1PaTwD">
+            <property role="3oM_SC" value="krijgt" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0e" role="1PaTwD">
+            <property role="3oM_SC" value="dan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0f" role="1PaTwD">
+            <property role="3oM_SC" value="een" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0g" role="1PaTwD">
+            <property role="3oM_SC" value="+/-" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0h" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0i" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0j" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0k" role="1PaTwD">
+            <property role="3oM_SC" value="erbij." />
           </node>
         </node>
       </node>
@@ -9604,9 +10594,57 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssKo" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssKp" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssKq" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssKr" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `subActions` voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv0l" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv0m" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0n" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0o" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0p" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0q" role="1PaTwD">
+            <property role="3oM_SC" value="`subActions`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0r" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0s" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0t" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0u" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0v" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0w" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0x" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0y" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0z" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0$" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0_" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0A" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9632,9 +10670,57 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssKC" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssKD" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssKE" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssKF" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `readArguments` voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv0B" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv0C" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0D" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0E" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0F" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0G" role="1PaTwD">
+            <property role="3oM_SC" value="`readArguments`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0H" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0I" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0J" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0K" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0L" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0M" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0N" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0O" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0P" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0Q" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0R" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0S" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9660,9 +10746,57 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssKS" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssKT" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssKU" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssKV" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `writtenArguments` voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv0T" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv0U" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0V" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0W" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0X" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0Y" role="1PaTwD">
+            <property role="3oM_SC" value="`writtenArguments`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv0Z" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv10" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv11" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv12" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv13" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv14" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv15" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv16" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv17" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv18" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv19" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1a" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9688,9 +10822,60 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssLa" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssLb" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssLc" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssLd" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `readSlots`  voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv1b" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv1c" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1d" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1e" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1f" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1g" role="1PaTwD">
+            <property role="3oM_SC" value="`readSlots`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1h" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1i" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1j" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1k" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1l" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1m" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1n" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1o" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1p" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1q" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1r" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1s" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1t" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9716,9 +10901,57 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssLq" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssLr" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssLs" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssLt" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de writtenSlots voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv1u" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv1v" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1w" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1x" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1y" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1z" role="1PaTwD">
+            <property role="3oM_SC" value="writtenSlots" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1$" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1_" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1A" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1B" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1C" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1D" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1E" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1F" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1G" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1H" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1I" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1J" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9744,9 +10977,63 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssLG" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssLH" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssLI" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssLJ" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de `constructed`  objecten voor deze DebugAction in de debugger editor component getoond dienen te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv1K" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv1L" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1M" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1N" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1O" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1P" role="1PaTwD">
+            <property role="3oM_SC" value="`constructed`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1Q" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1R" role="1PaTwD">
+            <property role="3oM_SC" value="objecten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1S" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1T" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1U" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1V" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1W" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1X" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1Y" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv1Z" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv20" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv21" role="1PaTwD">
+            <property role="3oM_SC" value="dienen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv22" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv23" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9772,9 +11059,57 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssLW" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssLX" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssLY" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssLZ" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of het `result` voor deze DebugAction in de debugger editor component getoond dient te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv24" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv25" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv26" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv27" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv28" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv29" role="1PaTwD">
+            <property role="3oM_SC" value="`result`" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2a" role="1PaTwD">
+            <property role="3oM_SC" value="voor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2b" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2c" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2d" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2e" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2f" role="1PaTwD">
+            <property role="3oM_SC" value="debugger" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2g" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2h" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2i" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2j" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2k" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2l" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9794,14 +11129,71 @@
         </node>
       </node>
       <node concept="P$JXv" id="Q6sMOKSBoR" role="lGtFl">
-        <node concept="TZ5HA" id="Q6sMOKSBoS" role="TZ5H$">
-          <node concept="1dT_AC" id="Q6sMOKSBoT" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de debugAction een punt is waarop de gebruiker kan klikken" />
+        <node concept="1PaTwC" id="3yV49$Lhv2m" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv2n" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2o" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2p" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2q" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2r" role="1PaTwD">
+            <property role="3oM_SC" value="debugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2s" role="1PaTwD">
+            <property role="3oM_SC" value="een" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2t" role="1PaTwD">
+            <property role="3oM_SC" value="punt" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2u" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2v" role="1PaTwD">
+            <property role="3oM_SC" value="waarop" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2w" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2x" role="1PaTwD">
+            <property role="3oM_SC" value="gebruiker" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2y" role="1PaTwD">
+            <property role="3oM_SC" value="kan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2z" role="1PaTwD">
+            <property role="3oM_SC" value="klikken" />
           </node>
         </node>
-        <node concept="TZ5HA" id="Q6sMOKSBru" role="TZ5H$">
-          <node concept="1dT_AC" id="Q6sMOKSBrv" role="1dT_Ay">
-            <property role="1dT_AB" value="om de focus te zetten in de debugger." />
+        <node concept="1PaTwC" id="3yV49$Lhv2$" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv2_" role="1PaTwD">
+            <property role="3oM_SC" value="om" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2A" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2B" role="1PaTwD">
+            <property role="3oM_SC" value="focus" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2C" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2D" role="1PaTwD">
+            <property role="3oM_SC" value="zetten" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2E" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2F" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2G" role="1PaTwD">
+            <property role="3oM_SC" value="debugger." />
           </node>
         </node>
       </node>
@@ -9827,9 +11219,60 @@
       </node>
       <node concept="3Tm1VV" id="h3$tSnssMc" role="1B3o_S" />
       <node concept="P$JXv" id="h3$tSnssMd" role="lGtFl">
-        <node concept="TZ5HA" id="h3$tSnssMe" role="TZ5H$">
-          <node concept="1dT_AC" id="h3$tSnssMf" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de naam van deze DebugAction getoond dient te worden. De geschreven eigenschappen worden altijd getoond." />
+        <node concept="1PaTwC" id="3yV49$Lhv2H" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv2I" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2J" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2K" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2L" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2M" role="1PaTwD">
+            <property role="3oM_SC" value="naam" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2N" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2O" role="1PaTwD">
+            <property role="3oM_SC" value="deze" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2P" role="1PaTwD">
+            <property role="3oM_SC" value="DebugAction" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2Q" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2R" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2S" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2T" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2U" role="1PaTwD">
+            <property role="3oM_SC" value="De" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2V" role="1PaTwD">
+            <property role="3oM_SC" value="geschreven" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2W" role="1PaTwD">
+            <property role="3oM_SC" value="eigenschappen" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2X" role="1PaTwD">
+            <property role="3oM_SC" value="worden" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2Y" role="1PaTwD">
+            <property role="3oM_SC" value="altijd" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv2Z" role="1PaTwD">
+            <property role="3oM_SC" value="getoond." />
           </node>
         </node>
       </node>
@@ -9850,9 +11293,33 @@
       </node>
       <node concept="3Tm1VV" id="5LlNhF9khfe" role="1B3o_S" />
       <node concept="P$JXv" id="5LlNhF9ki3O" role="lGtFl">
-        <node concept="TZ5HA" id="5LlNhF9ki3P" role="TZ5H$">
-          <node concept="1dT_AC" id="5LlNhF9ki3Q" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of het slot getoond dient te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv30" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv31" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv32" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv33" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv34" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv35" role="1PaTwD">
+            <property role="3oM_SC" value="slot" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv36" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv37" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv38" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv39" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>
@@ -9872,9 +11339,45 @@
       </node>
       <node concept="3Tm1VV" id="5LlNhF9khfo" role="1B3o_S" />
       <node concept="P$JXv" id="5LlNhF9ki6k" role="lGtFl">
-        <node concept="TZ5HA" id="5LlNhF9ki6l" role="TZ5H$">
-          <node concept="1dT_AC" id="5LlNhF9ki6m" role="1dT_Ay">
-            <property role="1dT_AB" value="Geeft aan of de klasse (LConstruction) van het slot getoond dient te worden." />
+        <node concept="1PaTwC" id="3yV49$Lhv3a" role="1Vez_I">
+          <node concept="3oM_SD" id="3yV49$Lhv3b" role="1PaTwD">
+            <property role="3oM_SC" value="Geeft" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3c" role="1PaTwD">
+            <property role="3oM_SC" value="aan" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3d" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3e" role="1PaTwD">
+            <property role="3oM_SC" value="de" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3f" role="1PaTwD">
+            <property role="3oM_SC" value="klasse" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3g" role="1PaTwD">
+            <property role="3oM_SC" value="(LConstruction)" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3h" role="1PaTwD">
+            <property role="3oM_SC" value="van" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3i" role="1PaTwD">
+            <property role="3oM_SC" value="het" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3j" role="1PaTwD">
+            <property role="3oM_SC" value="slot" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3k" role="1PaTwD">
+            <property role="3oM_SC" value="getoond" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3l" role="1PaTwD">
+            <property role="3oM_SC" value="dient" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3m" role="1PaTwD">
+            <property role="3oM_SC" value="te" />
+          </node>
+          <node concept="3oM_SD" id="3yV49$Lhv3n" role="1PaTwD">
+            <property role="3oM_SC" value="worden." />
           </node>
         </node>
       </node>

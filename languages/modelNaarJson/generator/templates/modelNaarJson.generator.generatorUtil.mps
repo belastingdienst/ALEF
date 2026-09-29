@@ -4,7 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -18,6 +18,9 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -145,22 +148,15 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -186,6 +182,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -860,54 +864,321 @@
       <ref role="3uigEE" to="dt2v:6YMJgI7i_8I" resolve="AbstractNodeRenderer" />
     </node>
     <node concept="3UR2Jj" id="13E6rLG8TbY" role="lGtFl">
-      <node concept="TZ5HA" id="13E6rLG8TbZ" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG8Tc0" role="1dT_Ay">
-          <property role="1dT_AB" value="JsonRegelRenderer rendert een concrete syntax-boom voor regelspraak als een template-string" />
+      <node concept="1PaTwC" id="3yV49$LhtkA" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtkB" role="1PaTwD">
+          <property role="3oM_SC" value="JsonRegelRenderer" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkC" role="1PaTwD">
+          <property role="3oM_SC" value="rendert" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkD" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkE" role="1PaTwD">
+          <property role="3oM_SC" value="concrete" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkF" role="1PaTwD">
+          <property role="3oM_SC" value="syntax-boom" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkG" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkH" role="1PaTwD">
+          <property role="3oM_SC" value="regelspraak" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkI" role="1PaTwD">
+          <property role="3oM_SC" value="als" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkJ" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkK" role="1PaTwD">
+          <property role="3oM_SC" value="template-string" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG8V5U" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG8V5V" role="1dT_Ay">
-          <property role="1dT_AB" value="met geïndexeerde markers ({ {t0:...}}, { {o1:...}}) voor referenties en traceerbare onderdelen. " />
+      <node concept="1PaTwC" id="3yV49$LhtkL" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtkM" role="1PaTwD">
+          <property role="3oM_SC" value="met" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkN" role="1PaTwD">
+          <property role="3oM_SC" value="geïndexeerde" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkO" role="1PaTwD">
+          <property role="3oM_SC" value="markers" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkP" role="1PaTwD">
+          <property role="3oM_SC" value="({" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkQ" role="1PaTwD">
+          <property role="3oM_SC" value="{t0:...}}," />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkR" role="1PaTwD">
+          <property role="3oM_SC" value="{" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkS" role="1PaTwD">
+          <property role="3oM_SC" value="{o1:...}})" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkT" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkU" role="1PaTwD">
+          <property role="3oM_SC" value="referenties" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkV" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkW" role="1PaTwD">
+          <property role="3oM_SC" value="traceerbare" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtkX" role="1PaTwD">
+          <property role="3oM_SC" value="onderdelen." />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG8ZYA" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG8ZYB" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3yV49$LhtkY" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtkZ" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG90lO" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG90lP" role="1dT_Ay">
-          <property role="1dT_AB" value="De renderer produceert drie &quot;outputs&quot; (één renderer als output met twee properties):" />
+      <node concept="1PaTwC" id="3yV49$Lhtl0" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lhtl1" role="1PaTwD">
+          <property role="3oM_SC" value="De" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl2" role="1PaTwD">
+          <property role="3oM_SC" value="renderer" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl3" role="1PaTwD">
+          <property role="3oM_SC" value="produceert" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl4" role="1PaTwD">
+          <property role="3oM_SC" value="drie" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl5" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;outputs&quot;" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl6" role="1PaTwD">
+          <property role="3oM_SC" value="(één" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl7" role="1PaTwD">
+          <property role="3oM_SC" value="renderer" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl8" role="1PaTwD">
+          <property role="3oM_SC" value="als" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl9" role="1PaTwD">
+          <property role="3oM_SC" value="output" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtla" role="1PaTwD">
+          <property role="3oM_SC" value="met" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlb" role="1PaTwD">
+          <property role="3oM_SC" value="twee" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlc" role="1PaTwD">
+          <property role="3oM_SC" value="properties):" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG9330" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG9331" role="1dT_Ay">
-          <property role="1dT_AB" value="- een template-string waarin referenties en origins zijn gemarkeerd" />
+      <node concept="1PaTwC" id="3yV49$Lhtld" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lhtle" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlf" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlg" role="1PaTwD">
+          <property role="3oM_SC" value="template-string" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlh" role="1PaTwD">
+          <property role="3oM_SC" value="waarin" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtli" role="1PaTwD">
+          <property role="3oM_SC" value="referenties" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlj" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlk" role="1PaTwD">
+          <property role="3oM_SC" value="origins" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtll" role="1PaTwD">
+          <property role="3oM_SC" value="zijn" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlm" role="1PaTwD">
+          <property role="3oM_SC" value="gemarkeerd" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG90H2" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG90H3" role="1dT_Ay">
-          <property role="1dT_AB" value="- een targetMap die target-nodes koppelt aan t-index, voor verwijzing naar andere elementen " />
+      <node concept="1PaTwC" id="3yV49$Lhtln" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lhtlo" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlp" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlq" role="1PaTwD">
+          <property role="3oM_SC" value="targetMap" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlr" role="1PaTwD">
+          <property role="3oM_SC" value="die" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtls" role="1PaTwD">
+          <property role="3oM_SC" value="target-nodes" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlt" role="1PaTwD">
+          <property role="3oM_SC" value="koppelt" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlu" role="1PaTwD">
+          <property role="3oM_SC" value="aan" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlv" role="1PaTwD">
+          <property role="3oM_SC" value="t-index," />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlw" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlx" role="1PaTwD">
+          <property role="3oM_SC" value="verwijzing" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtly" role="1PaTwD">
+          <property role="3oM_SC" value="naar" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtlz" role="1PaTwD">
+          <property role="3oM_SC" value="andere" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtl$" role="1PaTwD">
+          <property role="3oM_SC" value="elementen" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG91ru" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG91rv" role="1dT_Ay">
-          <property role="1dT_AB" value="- een origineMap die origin-nodes koppelt aan o-index, om naartoe te kunnen verwijzen (bijv. in execution tracing" />
+      <node concept="1PaTwC" id="3yV49$Lhtl_" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtlA" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlB" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlC" role="1PaTwD">
+          <property role="3oM_SC" value="origineMap" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlD" role="1PaTwD">
+          <property role="3oM_SC" value="die" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlE" role="1PaTwD">
+          <property role="3oM_SC" value="origin-nodes" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlF" role="1PaTwD">
+          <property role="3oM_SC" value="koppelt" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlG" role="1PaTwD">
+          <property role="3oM_SC" value="aan" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlH" role="1PaTwD">
+          <property role="3oM_SC" value="o-index," />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlI" role="1PaTwD">
+          <property role="3oM_SC" value="om" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlJ" role="1PaTwD">
+          <property role="3oM_SC" value="naartoe" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlK" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlL" role="1PaTwD">
+          <property role="3oM_SC" value="kunnen" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlM" role="1PaTwD">
+          <property role="3oM_SC" value="verwijzen" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlN" role="1PaTwD">
+          <property role="3oM_SC" value="(bijv." />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlO" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlP" role="1PaTwD">
+          <property role="3oM_SC" value="execution" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlQ" role="1PaTwD">
+          <property role="3oM_SC" value="tracing" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG91MG" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG91MH" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3yV49$LhtlR" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtlS" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG929U" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG929V" role="1dT_Ay">
-          <property role="1dT_AB" value="Deze renderer wordt gebruikt door de JSON-generator voor Regel-representaties, waar de marker-indices" />
+      <node concept="1PaTwC" id="3yV49$LhtlT" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtlU" role="1PaTwD">
+          <property role="3oM_SC" value="Deze" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlV" role="1PaTwD">
+          <property role="3oM_SC" value="renderer" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlW" role="1PaTwD">
+          <property role="3oM_SC" value="wordt" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlX" role="1PaTwD">
+          <property role="3oM_SC" value="gebruikt" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlY" role="1PaTwD">
+          <property role="3oM_SC" value="door" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtlZ" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm0" role="1PaTwD">
+          <property role="3oM_SC" value="JSON-generator" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm1" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm2" role="1PaTwD">
+          <property role="3oM_SC" value="Regel-representaties," />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm3" role="1PaTwD">
+          <property role="3oM_SC" value="waar" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm4" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm5" role="1PaTwD">
+          <property role="3oM_SC" value="marker-indices" />
         </node>
       </node>
-      <node concept="TZ5HA" id="13E6rLG914g" role="TZ5H$">
-        <node concept="1dT_AC" id="13E6rLG914h" role="1dT_Ay">
-          <property role="1dT_AB" value="  dienen als keys in de bijbehorende &quot;targets&quot; en &quot;origins&quot; JSON-objecten." />
+      <node concept="1PaTwC" id="3yV49$Lhtm6" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lhtm7" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm8" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm9" role="1PaTwD">
+          <property role="3oM_SC" value="dienen" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtma" role="1PaTwD">
+          <property role="3oM_SC" value="als" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmb" role="1PaTwD">
+          <property role="3oM_SC" value="keys" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmc" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmd" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtme" role="1PaTwD">
+          <property role="3oM_SC" value="bijbehorende" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmf" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;targets&quot;" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmg" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmh" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;origins&quot;" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmi" role="1PaTwD">
+          <property role="3oM_SC" value="JSON-objecten." />
         </node>
       </node>
     </node>
@@ -993,7 +1264,7 @@
                               <ref role="3Tt5mk" to="vuki:7p2tph7Kg0g" resolve="kenmerk" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="4N68xOhqpPM" role="2OqNvi">
+                          <node concept="3zqWPK" id="3yV49$LhpU4" role="2OqNvi">
                             <ref role="37wK5l" to="8l26:6VwZB7W$eDr" resolve="isBezittelijk" />
                           </node>
                         </node>
@@ -1017,7 +1288,7 @@
                             <ref role="3Tt5mk" to="vuki:7p2tph7Kg0g" resolve="kenmerk" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="4N68xOhqpPV" role="2OqNvi">
+                        <node concept="3zqWPK" id="3yV49$LhpU6" role="2OqNvi">
                           <ref role="37wK5l" to="8l26:63RcVZt$3S9" resolve="isBijvoeglijk" />
                         </node>
                       </node>
@@ -1075,19 +1346,163 @@
     <node concept="2tJIrI" id="7mwglLSPoCF" role="jymVt" />
     <node concept="3Tm1VV" id="7mwglLSPnF_" role="1B3o_S" />
     <node concept="3UR2Jj" id="7mwglLSPoKH" role="lGtFl">
-      <node concept="TZ5HA" id="KxYekfY0wU" role="TZ5H$">
-        <node concept="1dT_AC" id="KxYekfY0wV" role="1dT_Ay">
-          <property role="1dT_AB" value="We kunnen nu geen linguistics voor beslistabelspraak definieren, dus heeft het ook geen zin om gedrag te erven van AbstractRenderer." />
+      <node concept="1PaTwC" id="3yV49$Lhtmj" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lhtmk" role="1PaTwD">
+          <property role="3oM_SC" value="We" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtml" role="1PaTwD">
+          <property role="3oM_SC" value="kunnen" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmm" role="1PaTwD">
+          <property role="3oM_SC" value="nu" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmn" role="1PaTwD">
+          <property role="3oM_SC" value="geen" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmo" role="1PaTwD">
+          <property role="3oM_SC" value="linguistics" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmp" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmq" role="1PaTwD">
+          <property role="3oM_SC" value="beslistabelspraak" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmr" role="1PaTwD">
+          <property role="3oM_SC" value="definieren," />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtms" role="1PaTwD">
+          <property role="3oM_SC" value="dus" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmt" role="1PaTwD">
+          <property role="3oM_SC" value="heeft" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmu" role="1PaTwD">
+          <property role="3oM_SC" value="het" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmv" role="1PaTwD">
+          <property role="3oM_SC" value="ook" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmw" role="1PaTwD">
+          <property role="3oM_SC" value="geen" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmx" role="1PaTwD">
+          <property role="3oM_SC" value="zin" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmy" role="1PaTwD">
+          <property role="3oM_SC" value="om" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtmz" role="1PaTwD">
+          <property role="3oM_SC" value="gedrag" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm$" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtm_" role="1PaTwD">
+          <property role="3oM_SC" value="erven" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmA" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmB" role="1PaTwD">
+          <property role="3oM_SC" value="AbstractRenderer." />
         </node>
       </node>
-      <node concept="TZ5HA" id="KxYekfY0JD" role="TZ5H$">
-        <node concept="1dT_AC" id="KxYekfY0JE" role="1dT_Ay">
-          <property role="1dT_AB" value="In plaats daarvan maken we zoveel mogelijk gebruik van de Html renderer voor regelspraak en concateneren dit met de benodigde tekst " />
+      <node concept="1PaTwC" id="3yV49$LhtmC" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtmD" role="1PaTwD">
+          <property role="3oM_SC" value="In" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmE" role="1PaTwD">
+          <property role="3oM_SC" value="plaats" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmF" role="1PaTwD">
+          <property role="3oM_SC" value="daarvan" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmG" role="1PaTwD">
+          <property role="3oM_SC" value="maken" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmH" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmI" role="1PaTwD">
+          <property role="3oM_SC" value="zoveel" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmJ" role="1PaTwD">
+          <property role="3oM_SC" value="mogelijk" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmK" role="1PaTwD">
+          <property role="3oM_SC" value="gebruik" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmL" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmM" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmN" role="1PaTwD">
+          <property role="3oM_SC" value="Html" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmO" role="1PaTwD">
+          <property role="3oM_SC" value="renderer" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmP" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmQ" role="1PaTwD">
+          <property role="3oM_SC" value="regelspraak" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmR" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmS" role="1PaTwD">
+          <property role="3oM_SC" value="concateneren" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmT" role="1PaTwD">
+          <property role="3oM_SC" value="dit" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmU" role="1PaTwD">
+          <property role="3oM_SC" value="met" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmV" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmW" role="1PaTwD">
+          <property role="3oM_SC" value="benodigde" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$LhtmX" role="1PaTwD">
+          <property role="3oM_SC" value="tekst" />
         </node>
       </node>
-      <node concept="TZ5HA" id="KxYekfY0Xu" role="TZ5H$">
-        <node concept="1dT_AC" id="KxYekfY0Xv" role="1dT_Ay">
-          <property role="1dT_AB" value="zoals die ook in de editor van de beslistabel staat." />
+      <node concept="1PaTwC" id="3yV49$LhtmY" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$LhtmZ" role="1PaTwD">
+          <property role="3oM_SC" value="zoals" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn0" role="1PaTwD">
+          <property role="3oM_SC" value="die" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn1" role="1PaTwD">
+          <property role="3oM_SC" value="ook" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn2" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn3" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn4" role="1PaTwD">
+          <property role="3oM_SC" value="editor" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn5" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn6" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn7" role="1PaTwD">
+          <property role="3oM_SC" value="beslistabel" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhtn8" role="1PaTwD">
+          <property role="3oM_SC" value="staat." />
         </node>
       </node>
     </node>

@@ -225,16 +225,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -2403,9 +2397,54 @@
     <node concept="2tJIrI" id="3tVY8IO1H8K" role="jymVt" />
     <node concept="2tJIrI" id="5KbtEMz7GTa" role="jymVt" />
     <node concept="3UR2Jj" id="5KbtEMz7GTq" role="lGtFl">
-      <node concept="TZ5HA" id="5KbtEMz7GTr" role="TZ5H$">
-        <node concept="1dT_AC" id="5KbtEMz7GTs" role="1dT_Ay">
-          <property role="1dT_AB" value="Deze dialoog vraagt de gebruiker welke metatage types en waardes van welke concepten hij/zij wilt zoeken." />
+      <node concept="1PaTwC" id="3yV49$Lhs$$" role="1Vez_I">
+        <node concept="3oM_SD" id="3yV49$Lhs$_" role="1PaTwD">
+          <property role="3oM_SC" value="Deze" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$A" role="1PaTwD">
+          <property role="3oM_SC" value="dialoog" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$B" role="1PaTwD">
+          <property role="3oM_SC" value="vraagt" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$C" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$D" role="1PaTwD">
+          <property role="3oM_SC" value="gebruiker" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$E" role="1PaTwD">
+          <property role="3oM_SC" value="welke" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$F" role="1PaTwD">
+          <property role="3oM_SC" value="metatage" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$G" role="1PaTwD">
+          <property role="3oM_SC" value="types" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$H" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$I" role="1PaTwD">
+          <property role="3oM_SC" value="waardes" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$J" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$K" role="1PaTwD">
+          <property role="3oM_SC" value="welke" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$L" role="1PaTwD">
+          <property role="3oM_SC" value="concepten" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$M" role="1PaTwD">
+          <property role="3oM_SC" value="hij/zij" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$N" role="1PaTwD">
+          <property role="3oM_SC" value="wilt" />
+        </node>
+        <node concept="3oM_SD" id="3yV49$Lhs$O" role="1PaTwD">
+          <property role="3oM_SC" value="zoeken." />
         </node>
       </node>
     </node>

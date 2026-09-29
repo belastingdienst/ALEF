@@ -137,22 +137,22 @@
     <node concept="55IIr" id="7nCo6uzk0kQ" role="auvoZ" />
     <node concept="1l3spV" id="7nCo6uzk0kR" role="1l3spN">
       <node concept="m$_wl" id="22uCaKE8AUL" role="39821P">
-        <ref role="m_rDy" node="7nCo6uzk2tw" resolve="json" />
+        <ref role="m_rDy" node="7nCo6uzk2tw" resolve="jsonlanguage" />
         <node concept="pUk6x" id="22uCaKE8AUN" role="pUk7w" />
       </node>
     </node>
     <node concept="10PD9b" id="4uhklCFqF_v" role="10PD9s" />
     <node concept="3b7kt6" id="7nCo6uzk1$6" role="10PD9s" />
     <node concept="m$_wf" id="7nCo6uzk2tw" role="3989C9">
-      <property role="m$_wk" value="json" />
+      <property role="m$_wk" value="jsonlanguage" />
       <node concept="3_J27D" id="7nCo6uzk2tx" role="m$_yQ">
         <node concept="3Mxwew" id="7nCo6uzk2$b" role="3MwsjC">
-          <property role="3MwjfP" value="json" />
+          <property role="3MwjfP" value="json-language" />
         </node>
       </node>
       <node concept="3_J27D" id="7nCo6uzk2ty" role="m_cZH">
         <node concept="3Mxwew" id="7nCo6uzk2$c" role="3MwsjC">
-          <property role="3MwjfP" value="json" />
+          <property role="3MwjfP" value="json-language" />
         </node>
       </node>
       <node concept="3_J27D" id="7nCo6uzk2tz" role="m$_w8">

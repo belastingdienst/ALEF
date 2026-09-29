@@ -176,7 +176,7 @@
       </concept>
       <concept id="5917060184181247326" name="gegevensspraak.structure.NumeriekType" flags="ng" index="1EDDeX" />
       <concept id="8569264619982142397" name="gegevensspraak.structure.GedimensioneerdType" flags="ng" index="1EHTXS">
-        <child id="8569264619982147943" name="dimensies" index="1EHZmy" />
+        <child id="8569264619982147943" name="dimensieRefs" index="1EHZmy" />
         <child id="8569264619982150168" name="base" index="1EHZVt" />
       </concept>
       <concept id="8569264619982147940" name="gegevensspraak.structure.LabelRef" flags="ng" index="1EHZmx">
