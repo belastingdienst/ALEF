@@ -60,6 +60,14 @@ public abstract class AbstractService<T extends MObjectType> {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = beginResponse(outputStream);
         prepareUniverseForParsing(universe);
+        parseAndGenerateResponse(universe, inputStream, input, generator);
+        endResponse(universe, generator);
+        generator.flush();
+        logOnSuccess(universe.getMessageId(), input);
+        return outputStream;
+    }
+
+    private void parseAndGenerateResponse(MUniverse universe, InputStream inputStream, String input, ContentGenerator generator) throws IOException {
         final MObject mainObject = parseRequest(universe, inputStream, generator);
         logOnStart(universe.getMessageId(), input);
         setupUniverseForCalculation(universe);
@@ -67,18 +75,18 @@ public abstract class AbstractService<T extends MObjectType> {
         if (canReturnSuccessfulResponse(universe)) {
             generateResponse(universe, mainObject, generator);
         } else {
-            generator.writeFieldName(ALEFConstants.RESPONSE);
-            generator.beginObject();
-            generateServiceResult(generator, ALEFConstants.SERVICE_ERROR_CODE,
-                    universe.getViolations().stream()
-                            .map(Object::toString)
-                            .collect(Collectors.joining(System.lineSeparator())));
-            generator.endObject();
+            generateErrorResponse(universe, generator);
         }
-        endResponse(universe, generator);
-        generator.flush();
-        logOnSuccess(universe.getMessageId(), input);
-        return outputStream;
+    }
+
+    private void generateErrorResponse(MUniverse universe, ContentGenerator generator) throws IOException {
+        generator.writeFieldName(ALEFConstants.RESPONSE);
+        generator.beginObject();
+        generateServiceResult(generator, ALEFConstants.SERVICE_ERROR_CODE,
+                universe.getViolations().stream()
+                        .map(Object::toString)
+                        .collect(Collectors.joining(System.lineSeparator())));
+        generator.endObject();
     }
 
     private boolean canReturnSuccessfulResponse(MUniverse universe) {

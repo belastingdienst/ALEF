@@ -5,6 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
 import nl.belastingdienst.merlin.io.CollectionInfo;
 
 import javax.xml.namespace.QName;
+import javax.xml.stream.XMLOutputFactory;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.math.BigDecimal;
@@ -13,13 +14,14 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class XmlGenerator extends AbstractGenerator {
+    private static final String AUTOMATIC_EMPTY_ELEMENTS = "org.codehaus.stax2.automaticEmptyElements";
     private final ToXmlGenerator internalGenerator;
     private final Deque<CollectionInfo> collections = new ArrayDeque<>();
     private String currentFieldName = null;
 
     public XmlGenerator(OutputStream outputStream) throws IOException {
-        org.codehaus.stax2.XMLOutputFactory2 staxFactory = (org.codehaus.stax2.XMLOutputFactory2) javax.xml.stream.XMLOutputFactory.newFactory();
-        staxFactory.setProperty(org.codehaus.stax2.XMLOutputFactory2.P_AUTOMATIC_EMPTY_ELEMENTS, false);
+        final XMLOutputFactory staxFactory = XMLOutputFactory.newFactory();
+        staxFactory.setProperty(AUTOMATIC_EMPTY_ELEMENTS, false);
         final XmlFactory factory = XmlFactory.builder()
                 .xmlOutputFactory(staxFactory)
                 .build();
