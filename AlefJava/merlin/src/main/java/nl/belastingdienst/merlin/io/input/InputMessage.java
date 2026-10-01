@@ -105,7 +105,6 @@ public abstract class InputMessage<T extends MObjectType> {
         } else if (isComplexProperty(parser, fieldName)) {
             getComplexProperty(parser, fieldName).parseAndProcess(universe, parser, alefObject);
         } else {
-            universe.add(Violation.of("Unexpected field '" + fieldName + "' encountered at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
             parser.skipValue();
         }
     }
@@ -131,7 +130,6 @@ public abstract class InputMessage<T extends MObjectType> {
         } else if (isSimpleProperty(fieldName)) {
             getSimpleProperty(fieldName).parse(universe, propertyBasket, parser);
         } else {
-            universe.add(Violation.of("Unexpected field '" + fieldName + "' encountered at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
             parser.skipValue();
         }
     }
