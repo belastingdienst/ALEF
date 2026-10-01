@@ -57,7 +57,7 @@ class SoapServiceTest {
                   <soap:Body>
                     <alef:berekenEnkelvoudigerelatie>
                       <rsenkelvoudigerelatieMsg>
-                        <request datum="">
+                        <request rekenjaar="">
                           <person>
                             <forName>test</forName>
                           </person>
@@ -72,7 +72,7 @@ class SoapServiceTest {
                   <soap:Body>
                     <alef:berekenEnkelvoudigerelatieResponse>
                       <return>
-                        <request datum="">
+                        <request rekenjaar="">
                           <person>
                             <forName>test</forName>
                           </person>
@@ -92,8 +92,8 @@ class SoapServiceTest {
                   </soap:Body>
                 </soap:Envelope>
                 """;
-        final ByteArrayOutputStream outputStream = soapService.process(toInputStream(input), input);
-        final String actualOutput = toString(outputStream);
+        final ServiceResult serviceResult = soapService.process(toInputStream(input), input);
+        final String actualOutput = toString(serviceResult.getOutputStream());
         assertEquals(expectedOutput, actualOutput);
     }
 
@@ -149,8 +149,8 @@ class SoapServiceTest {
                   </soap:Body>
                 </soap:Envelope>
                 """;
-        final ByteArrayOutputStream outputStream = soapService.process(toInputStream(input), input);
-        final String actualOutput = toString(outputStream);
+        final ServiceResult serviceResult = soapService.process(toInputStream(input), input);
+        final String actualOutput = toString(serviceResult.getOutputStream());
         assertEquals(expectedOutput, actualOutput);
     }
 

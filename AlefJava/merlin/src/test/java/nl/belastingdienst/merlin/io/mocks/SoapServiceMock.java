@@ -44,9 +44,4 @@ public class SoapServiceMock<T extends MObjectType> extends SoapService<T> {
     protected void logOnError(String messageId, Exception x, String input) {
         // mock
     }
-
-    @Override
-    protected ByteArrayOutputStream returnError(InputStream inputStream, Exception e) {
-        return null;
-    }
 }

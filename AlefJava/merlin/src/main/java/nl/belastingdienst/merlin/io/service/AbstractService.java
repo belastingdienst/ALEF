@@ -1,5 +1,6 @@
 package nl.belastingdienst.merlin.io.service;
 
+import com.fasterxml.jackson.core.JsonParseException;
 import nl.belastingdienst.alef_runtime.Violation;
 import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MObject;
@@ -13,6 +14,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicLong;
@@ -37,7 +39,7 @@ public abstract class AbstractService<T extends MObjectType> {
 
     protected abstract void initialize(AdapterRegistry registry);
 
-    public final ByteArrayOutputStream process(InputStream inputStream, String input) throws IOException {
+    public final ServiceResult process(InputStream inputStream, String input) throws IOException {
         final long messageId = this.counter.getAndIncrement();
         final MUniverse universe = createUniverse(messageId);
         try {
@@ -56,7 +58,7 @@ public abstract class AbstractService<T extends MObjectType> {
         }
     }
 
-    private ByteArrayOutputStream processRequest(MUniverse universe, InputStream inputStream, String input) throws IOException {
+    private ServiceResult processRequest(MUniverse universe, InputStream inputStream, String input) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ContentGenerator generator = beginResponse(outputStream);
         prepareUniverseForParsing(universe);
@@ -64,7 +66,7 @@ public abstract class AbstractService<T extends MObjectType> {
         endResponse(universe, generator);
         generator.flush();
         logOnSuccess(universe.getMessageId(), input);
-        return outputStream;
+        return new ServiceResult(ServiceResultType.OK, outputStream);
     }
 
     private void parseAndGenerateResponse(MUniverse universe, InputStream inputStream, String input, ContentGenerator generator) throws IOException {
@@ -118,8 +120,14 @@ public abstract class AbstractService<T extends MObjectType> {
         return universe;
     }
 
-    protected ByteArrayOutputStream returnError(InputStream inputStream, Exception e) {
-        throw new ServiceException(e.getMessage(), e);
+    protected ServiceResult returnError(InputStream inputStream, Exception e) throws IOException {
+        final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        outputStream.write(e.getMessage().getBytes(StandardCharsets.UTF_8));
+        if (e instanceof JsonParseException) {
+            return new ServiceResult(ServiceResultType.BAD_REQUEST, outputStream);
+        } else {
+            return new ServiceResult(ServiceResultType.INTERNAL_EXCEPTION, outputStream);
+        }
     }
 
     protected abstract MObject parseRequest(MUniverse universe, InputStream inputStream, ContentGenerator generator) throws IOException;

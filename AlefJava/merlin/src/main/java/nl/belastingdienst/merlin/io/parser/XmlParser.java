@@ -162,8 +162,15 @@ public class XmlParser extends JacksonParser {
                         setXmlState(XmlState.END_COLLECTION_WITH_REUSE, isPeeking);
                         continue;
                     } else if (nextToken == ContentToken.VALUE_STRING) {
-                        // happens at the begin of a collection
-                        return nextToken;
+                        if (expectedXmlState == XmlState.BEGIN_OBJECT) {
+                            expectedXmlState = null;
+                            peekedToken = ContentToken.END_OBJECT;
+                            setXmlState(XmlState.BEGIN_OBJECT, isPeeking);
+                            continue;
+                        } else {
+                            // happens at the begin of a collection
+                            return nextToken;
+                        }
                     } else if (nextToken == ContentToken.BEGIN_OBJECT) {
                         setXmlState(Objects.requireNonNullElse(expectedXmlState, XmlState.BEGIN_OBJECT), isPeeking);
                         expectedXmlState = null;

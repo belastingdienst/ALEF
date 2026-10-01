@@ -6,7 +6,7 @@ import nl.belastingdienst.merlin.io.service.Request;
 
 public class RequestMock extends Request {
     public RequestMock() {
-        super(null, "datum", CalculationMoment.DAY);
+        super(null, "rekenjaar", CalculationMoment.YEAR);
     }
 
     @Override

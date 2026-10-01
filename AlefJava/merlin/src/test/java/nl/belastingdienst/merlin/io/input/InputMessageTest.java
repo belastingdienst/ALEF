@@ -30,7 +30,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
- class InputMessageTest {
+class InputMessageTest {
     @Test
     void testSimpleProperties() throws IOException {
         final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
@@ -353,6 +353,29 @@ import static org.junit.jupiter.api.Assertions.*;
     }
 
     @Test
+    void testEmptyCollection() throws IOException {
+        final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
+        mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
+        final InputMessageMock<PersonType> mockChild = new InputMessageMock<>(PersonType.class);
+        mockChild.addElement(new InputComplexProperty("items", null, false, mockItem, Cardinality.MULTIPLE, FactSide.LEFT, FactPersonHasItems.class));
+        mockChild.addElement(new InputAttribute<>("personName", false, null, PersonType.name, new StringToStringReader()));
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputComplexProperty("children", null, false, mockChild, Cardinality.MULTIPLE, FactSide.LEFT, FactParentHasChildren.class));
+        mockPerson.addElement(new InputAttribute<>("personName", false, null, PersonType.name, new StringToStringReader()));
+        // when
+        final String xml = """
+                <root>
+                    <personName>test5</personName>
+                    <children>
+                        <items/>
+                    </children>                    
+                </root>
+                """;
+        final MUniverse universe = new MUniverse(true);
+        final MObject alefObject = mockPerson.parse(universe, new XmlParser(asInputStream(xml)));
+    }
+
+    @Test
     void testKeyValuePairMessage() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputIdentifier("id", true));
@@ -563,6 +586,44 @@ import static org.junit.jupiter.api.Assertions.*;
     }
 
     @Test
+    void testTwoFieldsWithTheSameNameAndSameValue() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("age", false, null, PersonType.age, new DecimalToRationalReader()));
+        // when
+        final String json = """
+                {
+                    "age": 42,
+                    "age": 42
+                }
+                """;
+        final MUniverse universe = new MUniverse(true);
+        mockPerson.parse(universe, new JsonParser(asInputStream(json)));
+        // then
+        final List<Violation> violations = universe.getViolations();
+        assertEquals(1, violations.size());
+    }
+
+    @Test
+    void testTwoFieldsWithTheSameNameAndDifferentValue() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("age", false, null, PersonType.age, new DecimalToRationalReader()));
+        // when
+        final String json = """
+                {
+                    "age": 42,
+                    "age": 43
+                }
+                """;
+        final MUniverse universe = new MUniverse(true);
+        mockPerson.parse(universe, new JsonParser(asInputStream(json)));
+        // then
+        final List<Violation> violations = universe.getViolations();
+        assertEquals(2, violations.size());
+        assertEquals("Duplicate field 'age' encountered at /", violations.get(0).toString());
+        assertEquals("Reassignment of an attribute at /.", violations.get(1).toString());
+    }
+
+    @Test
     void testInvalidOrderingValidation() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
@@ -584,37 +645,37 @@ import static org.junit.jupiter.api.Assertions.*;
         assertTrue(violations.get(0).toString().contains("out of order"));
     }
 
-     @Test
-     void testValidOrderingWithComplexPropertyShouldNotGiveOutOfOrderViolation() throws IOException {
-         final InputMessageMock<ItemType> itemMessage = new InputMessageMock<>(ItemType.class);
-         itemMessage.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
-         itemMessage.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
-         final InputMessageMock<PersonType> personMessage = new InputMessageMock<>(PersonType.class);
-         personMessage.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
-         personMessage.addElement(new InputComplexProperty("item", null, false, itemMessage, Cardinality.SINGLE, FactSide.LEFT, FactPersonHasItems.class));
-         personMessage.addElement(new InputAttribute<>("age", false, null, PersonType.age, new DecimalToRationalReader()));
-         // when
-         final String xml = """
-            <root>
-                <person>
-                    <name>test</name>
-                    <item>
+    @Test
+    void testValidOrderingWithComplexPropertyShouldNotGiveOutOfOrderViolation() throws IOException {
+        final InputMessageMock<ItemType> itemMessage = new InputMessageMock<>(ItemType.class);
+        itemMessage.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
+        itemMessage.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
+        final InputMessageMock<PersonType> personMessage = new InputMessageMock<>(PersonType.class);
+        personMessage.addElement(new InputAttribute<>("name", false, null, PersonType.name, new StringToStringReader()));
+        personMessage.addElement(new InputComplexProperty("item", null, false, itemMessage, Cardinality.SINGLE, FactSide.LEFT, FactPersonHasItems.class));
+        personMessage.addElement(new InputAttribute<>("age", false, null, PersonType.age, new DecimalToRationalReader()));
+        // when
+        final String xml = """
+                <root>
+                    <person>
                         <name>test</name>
-                        <price>100</price>
-                    </item>
-                    <age>42</age>
-                </person>
-            </root>
-            """;
-         final MUniverse universe = new MUniverse(true);
-         final XmlParser xmlParser = new XmlParser(asInputStream(xml));
-         xmlParser.beginObject();
-         xmlParser.nextName();
-         personMessage.parse(universe, xmlParser);
-         xmlParser.endObject();
-         // then
-         assertTrue(universe.getViolations().isEmpty());
-     }
+                        <item>
+                            <name>test</name>
+                            <price>100</price>
+                        </item>
+                        <age>42</age>
+                    </person>
+                </root>
+                """;
+        final MUniverse universe = new MUniverse(true);
+        final XmlParser xmlParser = new XmlParser(asInputStream(xml));
+        xmlParser.beginObject();
+        xmlParser.nextName();
+        personMessage.parse(universe, xmlParser);
+        xmlParser.endObject();
+        // then
+        assertTrue(universe.getViolations().isEmpty());
+    }
 
     @Test
     void testChoiceValidation() throws IOException {

@@ -26,22 +26,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RestServiceTest {
     @Test
-    void testRestService2() throws IOException {
-        final InputMessageMock<ItemType> mockItem = new InputMessageMock<>(ItemType.class);
-        mockItem.addElement(new InputAttribute<>("name", false, null, ItemType.name, new StringToStringReader()));
-        mockItem.addElement(new InputAttribute<>("price", false, null, ItemType.price, new DecimalToRationalReader()));
+    void testRestService() throws IOException {
         final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
         mockPerson.addElement(new InputAttribute<>("forName", false, null, PersonType.name, new StringToStringReader()));
-        mockPerson.addElement(new InputComplexProperty("items", "item", false, mockItem, Cardinality.MULTIPLE,
-                FactSide.LEFT, FactPersonHasItems.class));
         final Request request = new RequestMock();
         request.addComplexProperty(new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE, FactSide.LEFT, null));
-        final OutputMessage outputMockItem = new OutputMessageMock();
-        outputMockItem.addField(new OutputAttribute<>("name", false, ItemType.name, newStringToStringWriter()));
-        outputMockItem.addField(new OutputAttribute<>("price", false, ItemType.price, newRationalToDecimalWriter()));
         final OutputMessage outputMockPerson = new OutputMessageMock();
         outputMockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
-        outputMockPerson.addField(new OutputComplexProperty<>("items", null, false, true, FactPersonHasItems.items, ItemType.class, outputMockItem));
         final Response response = new ResponseMock();
         response.addElement(new OutputComplexProperty("person", null, false, true, null, PersonType.class, outputMockPerson));
         //when
@@ -55,7 +46,7 @@ class RestServiceTest {
                     }
                 }
                 """;
-        final ByteArrayOutputStream outputStream = restService.process(toInputStream(input), input);
+        final ServiceResult serviceResult = restService.process(toInputStream(input), input);
         //then
         final String expectedOutput = """
                 {
@@ -76,8 +67,49 @@ class RestServiceTest {
                   }
                 }""";
 
-        final String actualOutput = toString(outputStream);
+        final String actualOutput = toString(serviceResult.getOutputStream());
         assertEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+    void testRestServiceWithInvalidRequestName() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("forName", false, null, PersonType.name, new StringToStringReader()));
+        final Request request = new RequestMock();
+        request.addComplexProperty(new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE, FactSide.LEFT, null));
+        final OutputMessage outputMockPerson = new OutputMessageMock();
+        outputMockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
+        final Response response = new ResponseMock();
+        response.addElement(new OutputComplexProperty("person", null, false, true, null, PersonType.class, outputMockPerson));
+        //when
+        final RestService restService = new RestServiceMock(request, response, PersonType.class);
+        final String input = """
+                {
+                    "req" : {
+                        "person" : {
+                            "forName" : "test"
+                        }
+                    }
+                }
+                """;
+        // then
+        final String expected = """
+                {
+                  "req" : {
+                    "person" : {
+                      "forName" : "test"
+                    }
+                  },
+                  "response" : {
+                    "serviceResultaat" : {
+                      "resultaatcode" : "0",
+                      "resultaatmelding" : "Expected 'request' but found 'req' at /",
+                      "serviceversie" : ""
+                    }
+                  }
+                }""";
+        final ServiceResult serviceResult = restService.process(toInputStream(input), input);
+        assertEquals(expected, toString(serviceResult.getOutputStream()));
     }
 
     private InputStream toInputStream(String input) {

@@ -23,6 +23,7 @@ public class TypeContextMock extends MTypeContext {
         public static final MPropertyKey<BigRational> age = new MPropertyKey<>();
         public static final MPropertyKey<BigRational> weight = new MPropertyKey<>();
         public static final MPropertyKey<BigRational> length = new MPropertyKey<>();
+        public static final MPropertyKey<DummyEnum> dummy = new MPropertyKey<>();
         public static final MPropertyKey<String> code = new MPropertyKey<>();
         public static final MPropertyKey<LocalDateTime> birthDate = new MPropertyKey<>();
         public static final MDimensionalPropertyKey<BigRational> salary = new MDimensionalPropertyKey<>(new int[]{2});
@@ -39,6 +40,7 @@ public class TypeContextMock extends MTypeContext {
             mObject.getProperty(age);
             mObject.getProperty(weight);
             mObject.getProperty(length);
+            mObject.getProperty(dummy);
             mObject.getProperty(code);
             mObject.getProperty(birthDate);
             mObject.getProperty(salary);

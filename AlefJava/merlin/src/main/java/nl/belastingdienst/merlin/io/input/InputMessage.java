@@ -72,7 +72,7 @@ public abstract class InputMessage<T extends MObjectType> {
         parser.beginObject();
         while (parser.peek() != ContentToken.END_OBJECT) {
             final String fieldName = parser.nextName();
-            encounteredFieldNames.add(fieldName);
+            handleEncounteredFieldName(universe, parser, encounteredFieldNames, fieldName);
             if (isIdentifier(fieldName)) {
                 final String identifier = parser.nextValue();
                 final MObject alefObject = createAlefObject(universe, identifier, propertyBasket, objectsByFieldName, parser);
@@ -99,13 +99,22 @@ public abstract class InputMessage<T extends MObjectType> {
 
     private void parseElement(MUniverse universe, ContentParser parser, MObject alefObject, List<String> encounteredFieldNames) throws IOException {
         final String fieldName = parser.nextName();
-        encounteredFieldNames.add(fieldName);
+        handleEncounteredFieldName(universe, parser, encounteredFieldNames, fieldName);
         if (isSimpleProperty(fieldName)) {
             getSimpleProperty(fieldName).parse(universe, alefObject, parser);
         } else if (isComplexProperty(parser, fieldName)) {
             getComplexProperty(parser, fieldName).parseAndProcess(universe, parser, alefObject);
         } else {
-            parser.nextValue(); // unknown property, just keep going
+            universe.add(Violation.of("Unexpected field '" + fieldName + "' encountered at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+            parser.skipValue();
+        }
+    }
+
+    private static void handleEncounteredFieldName(MUniverse universe, ContentParser parser, List<String> encounteredFieldNames, String fieldName) {
+        if (!encounteredFieldNames.contains(fieldName)) {
+            encounteredFieldNames.add(fieldName);
+        } else {
+            universe.add(Violation.of("Duplicate field '" + fieldName + "' encountered at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
         }
     }
 
@@ -122,7 +131,8 @@ public abstract class InputMessage<T extends MObjectType> {
         } else if (isSimpleProperty(fieldName)) {
             getSimpleProperty(fieldName).parse(universe, propertyBasket, parser);
         } else {
-            parser.nextValue(); // unknown property, just keep going
+            universe.add(Violation.of("Unexpected field '" + fieldName + "' encountered at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+            parser.skipValue();
         }
     }
 
@@ -213,7 +223,7 @@ public abstract class InputMessage<T extends MObjectType> {
         final List<String> foundFields = new ArrayList<>();
         for (InputElement node : choiceNode.getNodes()) {
             if (node instanceof InputField inputField) {
-                String fieldName = inputField.getFieldName();
+                final String fieldName = inputField.getFieldName();
                 if (encounteredFieldNames.contains(fieldName)) {
                     foundFields.add(fieldName);
                 }

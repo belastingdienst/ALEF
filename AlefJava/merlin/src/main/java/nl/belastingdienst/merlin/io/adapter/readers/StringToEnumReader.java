@@ -1,6 +1,8 @@
 package nl.belastingdienst.merlin.io.adapter.readers;
 
 import nl.belastingdienst.alef_runtime.Labeled;
+import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
@@ -32,11 +34,10 @@ public class StringToEnumReader<T extends Enum<?> & Labeled> extends AbstractRea
     public T read(MUniverse universe, ContentParser parser) throws IOException {
         final String lexicalValue = parser.nextValue();
         validateLexical(universe, parser, lexicalValue);
-        try {
-            return lookupMap.get(mappings.getOrDefault(lexicalValue, lexicalValue));
-        } catch (IllegalArgumentException ex) {
-            throw new IllegalArgumentException(
-                    "Unknown " + enumType.getSimpleName() + " value: " + lexicalValue, ex);
+        final T result = lookupMap.get(mappings.getOrDefault(lexicalValue, lexicalValue));
+        if (result == null) {
+            universe.add(Violation.of("Unknown " + enumType.getSimpleName() + " value: " + lexicalValue, ViolationKind.INPUT_VALIDATION));
         }
+        return result;
     }
 }

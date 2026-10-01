@@ -1,7 +1,6 @@
 package nl.belastingdienst.merlin.io.service;
 
-import nl.belastingdienst.alef_runtime.ALEFConstants;
-import nl.belastingdienst.alef_runtime.SoapConversion;
+import nl.belastingdienst.alef_runtime.*;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -15,6 +14,7 @@ import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -72,6 +72,9 @@ public abstract class Request {
                 processMessageId(universe, parser);
             } else if (Objects.equals(calculationMomentFieldName, fieldName)) {
                 processCalculationMoment(universe, parser);
+            } else {
+                universe.add(Violation.of("Unexpected field '" + fieldName + "' encountered at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+                parser.skipValue();
             }
         }
         parser.endObject();
@@ -102,14 +105,38 @@ public abstract class Request {
 
     private void processCalculationMoment(MUniverse universe, ContentParser parser) throws IOException {
         if (calculationMoment == CalculationMoment.YEAR) {
-            final int year = Integer.parseInt(parser.nextValue());
-            universe.setWorkingDate(LocalDateTime.of(year, 7, 1, 0, 0, 0));
+            processWorkingYear(universe, parser);
         } else {
-            final String date = parser.nextValue();
-            if (date != null && !date.isEmpty()) {
-                XMLGregorianCalendar xmlGregorianCalendar = DT_FACTORY.newXMLGregorianCalendar(date);
+            processWorkingDate(universe, parser);
+        }
+    }
+
+    private static void processWorkingDate(MUniverse universe, ContentParser parser) throws IOException {
+        final String date = parser.nextValue();
+        if (date != null && !date.isEmpty()) {
+            try {
+                final XMLGregorianCalendar xmlGregorianCalendar = DT_FACTORY.newXMLGregorianCalendar(date);
                 universe.setWorkingDate(SoapConversion.fromInputXMLGregorianCalender(xmlGregorianCalendar));
+            } catch (IllegalArgumentException e) {
+                universe.add(Violation.of("Invalid date value '" + date + "' at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
             }
+        } else {
+            universe.add(Violation.of("No working date was provided at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+        }
+    }
+
+    private static void processWorkingYear(MUniverse universe, ContentParser parser) throws IOException {
+        final String nextValue = parser.nextValue();
+        if (nextValue != null || nextValue.isBlank()) {
+            try {
+                final int year = Integer.parseInt(nextValue);
+                Validators.totalDigits(universe, BigDecimal.valueOf(year), 4, parser);
+                universe.setWorkingDate(LocalDateTime.of(year, 7, 1, 0, 0, 0));
+            } catch (NumberFormatException e) {
+                universe.add(Violation.of("Invalid working year " + nextValue + " was provided at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+            }
+        } else {
+            universe.add(Violation.of("No working year was provided at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
         }
     }
 

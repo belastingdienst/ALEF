@@ -1,5 +1,7 @@
 package nl.belastingdienst.merlin.io.service;
 
+import nl.belastingdienst.alef_runtime.Violation;
+import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -29,12 +31,19 @@ public abstract class RestService<T extends MObjectType> extends AbstractService
         parser.beginObject();
         parser.startGatheringLocationInfo();
         parser.startRecording();
-        parser.nextName();
+        parseRequestName(universe, parser);
         final MObject mainObject = requestHandler.process(universe, parser, false, getMainObjectType());
         parser.stopRecording();
         parser.stopGatheringLocationInfo();
         parser.endObject();
         return mainObject;
+    }
+
+    private void parseRequestName(MUniverse universe, ContentParser parser) throws IOException {
+        final String requestName = parser.nextName();
+        if (!ALEFConstants.REQUEST.equals(requestName)) {
+            universe.add(Violation.of("Expected '" + ALEFConstants.REQUEST + "' but found '" + requestName + "' at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+        }
     }
 
     protected void generateResponse(MUniverse universe, MObject alefObject, ContentGenerator generator) throws IOException {

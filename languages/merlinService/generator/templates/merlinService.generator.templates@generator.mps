@@ -96,6 +96,9 @@
         <child id="1224071154656" name="expression" index="0kSFX" />
       </concept>
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -207,8 +210,10 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -229,6 +234,10 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -6590,21 +6599,38 @@
               <property role="TrG5h" value="e" />
               <node concept="nSUau" id="184YrmvhWAe" role="1tU5fm">
                 <node concept="3uibUv" id="184YrmvhWAj" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                  <ref role="3uigEE" to="n8da:~ServiceException" resolve="ServiceException" />
                 </node>
               </node>
             </node>
             <node concept="3clFbS" id="184YrmvhWAf" role="1zc67A">
-              <node concept="YS8fn" id="5zXQHzS8CQg" role="3cqZAp">
-                <node concept="2ShNRf" id="5zXQHzS8CVs" role="YScLw">
-                  <node concept="1pGfFk" id="5zXQHzS8NgL" role="2ShVmc">
+              <node concept="YS8fn" id="6gu2EG_8oTo" role="3cqZAp">
+                <node concept="37vLTw" id="6gu2EG_8ANr" role="YScLw">
+                  <ref role="3cqZAo" node="184YrmvhWAd" resolve="e" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6gu2EG_8F5_" role="1zxBo5">
+            <node concept="XOnhg" id="6gu2EG_8F5A" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6gu2EG_8F5B" role="1tU5fm">
+                <node concept="3uibUv" id="6gu2EG_8Jzg" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6gu2EG_8F5C" role="1zc67A">
+              <node concept="YS8fn" id="6gu2EG_8Snx" role="3cqZAp">
+                <node concept="2ShNRf" id="6gu2EG_8Sz5" role="YScLw">
+                  <node concept="1pGfFk" id="6gu2EG_94o7" role="2ShVmc">
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="n8da:~ServiceException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="ServiceException" />
-                    <node concept="Xl_RD" id="79aBNE9efii" role="37wK5m">
-                      <property role="Xl_RC" value="Invalid input" />
+                    <node concept="Xl_RD" id="6gu2EG_98wW" role="37wK5m">
+                      <property role="Xl_RC" value="An error occurred, see logging for more details." />
                     </node>
-                    <node concept="37vLTw" id="79aBNE9eqmO" role="37wK5m">
-                      <ref role="3cqZAo" node="184YrmvhWAd" resolve="e" />
+                    <node concept="37vLTw" id="6gu2EG_arYg" role="37wK5m">
+                      <ref role="3cqZAo" node="6gu2EG_8F5A" resolve="e" />
                     </node>
                   </node>
                 </node>
@@ -6716,10 +6742,10 @@
             </node>
             <node concept="3cpWs8" id="184YrmvcT28" role="3cqZAp">
               <node concept="3cpWsn" id="184YrmvcT29" role="3cpWs9">
-                <property role="TrG5h" value="resultStream" />
+                <property role="TrG5h" value="result" />
                 <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="184YrmvcT2a" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~ByteArrayOutputStream" resolve="ByteArrayOutputStream" />
+                  <ref role="3uigEE" to="n8da:~ServiceResult" resolve="ServiceResult" />
                 </node>
                 <node concept="1rXfSq" id="184YrmvcImA" role="33vP2m">
                   <ref role="37wK5l" to="n8da:~AbstractService.process(java.io.InputStream,java.lang.String)" resolve="process" />
@@ -6738,22 +6764,77 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="184YrmvcTgI" role="3cqZAp">
-              <node concept="2ShNRf" id="184YrmvcTkf" role="3cqZAk">
-                <node concept="1pGfFk" id="184YrmvcUvr" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="b79t:~StreamSource.&lt;init&gt;(java.io.InputStream)" resolve="StreamSource" />
-                  <node concept="2ShNRf" id="184YrmvcU$B" role="37wK5m">
-                    <node concept="1pGfFk" id="184YrmvcVSd" role="2ShVmc">
+            <node concept="3clFbJ" id="6gu2EG_5p4I" role="3cqZAp">
+              <node concept="3clFbS" id="6gu2EG_5p4K" role="3clFbx">
+                <node concept="3cpWs6" id="184YrmvcTgI" role="3cqZAp">
+                  <node concept="2ShNRf" id="184YrmvcTkf" role="3cqZAk">
+                    <node concept="1pGfFk" id="184YrmvcUvr" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="guwi:~ByteArrayInputStream.&lt;init&gt;(byte[])" resolve="ByteArrayInputStream" />
-                      <node concept="2OqwBi" id="184YrmvhDcr" role="37wK5m">
-                        <node concept="37vLTw" id="184YrmvcVXp" role="2Oq$k0">
-                          <ref role="3cqZAo" node="184YrmvcT29" resolve="resultStream" />
+                      <ref role="37wK5l" to="b79t:~StreamSource.&lt;init&gt;(java.io.InputStream)" resolve="StreamSource" />
+                      <node concept="2ShNRf" id="184YrmvcU$B" role="37wK5m">
+                        <node concept="1pGfFk" id="184YrmvcVSd" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="guwi:~ByteArrayInputStream.&lt;init&gt;(byte[])" resolve="ByteArrayInputStream" />
+                          <node concept="2OqwBi" id="6gu2EG_70mq" role="37wK5m">
+                            <node concept="2OqwBi" id="184YrmvhDcr" role="2Oq$k0">
+                              <node concept="37vLTw" id="184YrmvcVXp" role="2Oq$k0">
+                                <ref role="3cqZAo" node="184YrmvcT29" resolve="result" />
+                              </node>
+                              <node concept="liA8E" id="184YrmvhDXd" role="2OqNvi">
+                                <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="6gu2EG_75Yj" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="liA8E" id="184YrmvhDXd" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="6gu2EG_5Fqq" role="3clFbw">
+                <node concept="Rm8GO" id="6gu2EG_5Sdg" role="3uHU7w">
+                  <ref role="Rm8GQ" to="n8da:~ServiceResultType.OK" resolve="OK" />
+                  <ref role="1Px2BO" to="n8da:~ServiceResultType" resolve="ServiceResultType" />
+                </node>
+                <node concept="2OqwBi" id="6gu2EG_5xxn" role="3uHU7B">
+                  <node concept="37vLTw" id="6gu2EG_5toe" role="2Oq$k0">
+                    <ref role="3cqZAo" node="184YrmvcT29" resolve="result" />
+                  </node>
+                  <node concept="liA8E" id="6gu2EG_5A8Z" role="2OqNvi">
+                    <ref role="37wK5l" to="n8da:~ServiceResult.getType()" resolve="getType" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="6gu2EG_6dSL" role="9aQIa">
+                <node concept="3clFbS" id="6gu2EG_6dSM" role="9aQI4">
+                  <node concept="YS8fn" id="6gu2EG_6DoU" role="3cqZAp">
+                    <node concept="2ShNRf" id="6gu2EG_6DoV" role="YScLw">
+                      <node concept="1pGfFk" id="6gu2EG_6DoW" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="n8da:~ServiceException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="ServiceException" />
+                        <node concept="2ShNRf" id="6gu2EG_7cVG" role="37wK5m">
+                          <node concept="1pGfFk" id="6gu2EG_7mrz" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                            <node concept="2OqwBi" id="6gu2EG_7twQ" role="37wK5m">
+                              <node concept="2OqwBi" id="6gu2EG_7twR" role="2Oq$k0">
+                                <node concept="37vLTw" id="6gu2EG_7twS" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="184YrmvcT29" resolve="result" />
+                                </node>
+                                <node concept="liA8E" id="6gu2EG_7twT" role="2OqNvi">
+                                  <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="6gu2EG_7twU" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
+                        <node concept="10Nm6u" id="6gu2EG_a$_q" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -7682,10 +7763,10 @@
         </node>
         <node concept="3cpWs8" id="4uZKzvjyV38" role="3cqZAp">
           <node concept="3cpWsn" id="4uZKzvjyV39" role="3cpWs9">
-            <property role="TrG5h" value="outputStream" />
+            <property role="TrG5h" value="result" />
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="4uZKzvjyV3a" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~ByteArrayOutputStream" resolve="ByteArrayOutputStream" />
+              <ref role="3uigEE" to="n8da:~ServiceResult" resolve="ServiceResult" />
             </node>
             <node concept="1rXfSq" id="4uZKzvjyX5N" role="33vP2m">
               <ref role="37wK5l" to="n8da:~AbstractService.process(java.io.InputStream,java.lang.String)" resolve="process" />
@@ -7704,28 +7785,151 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6YwrqIbEw4N" role="3cqZAp">
-          <node concept="2OqwBi" id="6YwrqIbEJlF" role="3cqZAk">
-            <node concept="2YIFZM" id="6YwrqIbEB8I" role="2Oq$k0">
-              <ref role="37wK5l" to="r9y:~Response.ok(java.lang.Object)" resolve="ok" />
-              <ref role="1Pybhc" to="r9y:~Response" resolve="Response" />
-              <node concept="2ShNRf" id="6YwrqIbEE3S" role="37wK5m">
-                <node concept="1pGfFk" id="6YwrqIbEE3T" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
-                  <node concept="2OqwBi" id="6YwrqIbEE3U" role="37wK5m">
-                    <node concept="37vLTw" id="6YwrqIbEE3V" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4uZKzvjyV39" resolve="outputStream" />
+        <node concept="3clFbJ" id="6gu2EG$XCOu" role="3cqZAp">
+          <node concept="3clFbS" id="6gu2EG$XCOw" role="3clFbx">
+            <node concept="3cpWs6" id="6YwrqIbEw4N" role="3cqZAp">
+              <node concept="2OqwBi" id="6YwrqIbEJlF" role="3cqZAk">
+                <node concept="2YIFZM" id="6YwrqIbEB8I" role="2Oq$k0">
+                  <ref role="37wK5l" to="r9y:~Response.ok(java.lang.Object)" resolve="ok" />
+                  <ref role="1Pybhc" to="r9y:~Response" resolve="Response" />
+                  <node concept="2ShNRf" id="6YwrqIbEE3S" role="37wK5m">
+                    <node concept="1pGfFk" id="6YwrqIbEE3T" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                      <node concept="2OqwBi" id="6gu2EG$XmIi" role="37wK5m">
+                        <node concept="2OqwBi" id="6YwrqIbEE3U" role="2Oq$k0">
+                          <node concept="37vLTw" id="6YwrqIbEE3V" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+                          </node>
+                          <node concept="liA8E" id="6gu2EG$XjKV" role="2OqNvi">
+                            <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6gu2EG$XuG0" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="6YwrqIbEE3W" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6YwrqIbELdt" role="2OqNvi">
+                  <ref role="37wK5l" to="r9y:~Response$ResponseBuilder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6gu2EG$XWIP" role="3clFbw">
+            <node concept="Rm8GO" id="6gu2EG$Y8rd" role="3uHU7w">
+              <ref role="Rm8GQ" to="n8da:~ServiceResultType.OK" resolve="OK" />
+              <ref role="1Px2BO" to="n8da:~ServiceResultType" resolve="ServiceResultType" />
+            </node>
+            <node concept="2OqwBi" id="6gu2EG$XNyb" role="3uHU7B">
+              <node concept="37vLTw" id="6gu2EG$XGYq" role="2Oq$k0">
+                <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+              </node>
+              <node concept="liA8E" id="6gu2EG$XRMP" role="2OqNvi">
+                <ref role="37wK5l" to="n8da:~ServiceResult.getType()" resolve="getType" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="6gu2EG_1k1W" role="3eNLev">
+            <node concept="3clFbS" id="6gu2EG_1k1X" role="3eOfB_">
+              <node concept="3cpWs6" id="6gu2EG_3LSN" role="3cqZAp">
+                <node concept="2OqwBi" id="6gu2EG_4H9r" role="3cqZAk">
+                  <node concept="2YIFZM" id="6gu2EG_41CL" role="2Oq$k0">
+                    <ref role="37wK5l" to="r9y:~Response.status(int,java.lang.String)" resolve="status" />
+                    <ref role="1Pybhc" to="r9y:~Response" resolve="Response" />
+                    <node concept="2OqwBi" id="6gu2EG_4rvD" role="37wK5m">
+                      <node concept="Rm8GO" id="6gu2EG_4j2u" role="2Oq$k0">
+                        <ref role="Rm8GQ" to="r9y:~Response$Status.BAD_REQUEST" resolve="BAD_REQUEST" />
+                        <ref role="1Px2BO" to="r9y:~Response$Status" resolve="Response.Status" />
+                      </node>
+                      <node concept="liA8E" id="6gu2EG_4wbw" role="2OqNvi">
+                        <ref role="37wK5l" to="r9y:~Response$Status.getStatusCode()" resolve="getStatusCode" />
+                      </node>
                     </node>
+                    <node concept="2ShNRf" id="6gu2EG_4CRO" role="37wK5m">
+                      <node concept="1pGfFk" id="6gu2EG_4CRP" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                        <node concept="2OqwBi" id="6gu2EG_4CRQ" role="37wK5m">
+                          <node concept="2OqwBi" id="6gu2EG_4CRR" role="2Oq$k0">
+                            <node concept="37vLTw" id="6gu2EG_4CRS" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+                            </node>
+                            <node concept="liA8E" id="6gu2EG_4CRT" role="2OqNvi">
+                              <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="6gu2EG_4CRU" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6gu2EG_4N7h" role="2OqNvi">
+                    <ref role="37wK5l" to="r9y:~Response$ResponseBuilder.build()" resolve="build" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="6YwrqIbELdt" role="2OqNvi">
-              <ref role="37wK5l" to="r9y:~Response$ResponseBuilder.build()" resolve="build" />
+            <node concept="3clFbC" id="6gu2EG_1BTF" role="3eO9$A">
+              <node concept="Rm8GO" id="6gu2EG_1VOE" role="3uHU7w">
+                <ref role="Rm8GQ" to="n8da:~ServiceResultType.BAD_REQUEST" resolve="BAD_REQUEST" />
+                <ref role="1Px2BO" to="n8da:~ServiceResultType" resolve="ServiceResultType" />
+              </node>
+              <node concept="2OqwBi" id="6gu2EG_1rDj" role="3uHU7B">
+                <node concept="37vLTw" id="6gu2EG_1obA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+                </node>
+                <node concept="liA8E" id="6gu2EG_1vN3" role="2OqNvi">
+                  <ref role="37wK5l" to="n8da:~ServiceResult.getType()" resolve="getType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6gu2EG_27Xy" role="9aQIa">
+            <node concept="3clFbS" id="6gu2EG_27Xz" role="9aQI4">
+              <node concept="3cpWs6" id="6gu2EG_2xa3" role="3cqZAp">
+                <node concept="2OqwBi" id="6gu2EG_3e37" role="3cqZAk">
+                  <node concept="2YIFZM" id="6gu2EG_2LF2" role="2Oq$k0">
+                    <ref role="37wK5l" to="r9y:~Response.status(int,java.lang.String)" resolve="status" />
+                    <ref role="1Pybhc" to="r9y:~Response" resolve="Response" />
+                    <node concept="2OqwBi" id="6gu2EG_3rLA" role="37wK5m">
+                      <node concept="Rm8GO" id="6gu2EG_2X5D" role="2Oq$k0">
+                        <ref role="Rm8GQ" to="r9y:~Response$Status.INTERNAL_SERVER_ERROR" resolve="INTERNAL_SERVER_ERROR" />
+                        <ref role="1Px2BO" to="r9y:~Response$Status" resolve="Response.Status" />
+                      </node>
+                      <node concept="liA8E" id="6gu2EG_3x8W" role="2OqNvi">
+                        <ref role="37wK5l" to="r9y:~Response$Status.getStatusCode()" resolve="getStatusCode" />
+                      </node>
+                    </node>
+                    <node concept="2ShNRf" id="6gu2EG_39FR" role="37wK5m">
+                      <node concept="1pGfFk" id="6gu2EG_39FS" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                        <node concept="2OqwBi" id="6gu2EG_39FT" role="37wK5m">
+                          <node concept="2OqwBi" id="6gu2EG_39FU" role="2Oq$k0">
+                            <node concept="37vLTw" id="6gu2EG_39FV" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+                            </node>
+                            <node concept="liA8E" id="6gu2EG_39FW" role="2OqNvi">
+                              <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="6gu2EG_39FX" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6gu2EG_3idN" role="2OqNvi">
+                    <ref role="37wK5l" to="r9y:~Response$ResponseBuilder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

@@ -5,11 +5,12 @@ import nl.belastingdienst.alef_runtime.time.ITimed;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
-import nl.belastingdienst.merlin.io.adapter.readers.TimedReader;
+import nl.belastingdienst.merlin.io.adapter.readers.*;
+import nl.belastingdienst.merlin.io.mocks.DummyEnum;
+import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
-import nl.belastingdienst.merlin.io.adapter.readers.BooleanToBooleanReader;
-import nl.belastingdienst.merlin.io.adapter.readers.DecimalToRationalReader;
-import nl.belastingdienst.merlin.io.adapter.readers.StringToStringReader;
+import nl.belastingdienst.merlin.io.mocks.ValueReturningParserMock;
+import nl.belastingdienst.merlin.io.parser.ContentParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -39,6 +40,26 @@ class InputAttributeTest extends InputElementTest {
                 "value", false, null, PersonType.carOwner, new BooleanToBooleanReader());
         final MObject alefObject = process(inputAttribute, "true");
         assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.carOwner).get());
+    }
+
+    @Test
+    void testEnumValue() throws IOException {
+        final InputAttribute<DummyEnum> inputAttribute = new InputAttribute<>(
+                "value", false, null, PersonType.dummy, new StringToEnumReader<>(DummyEnum.class));
+        final MObject alefObject = process(inputAttribute, "test1");
+        assertEquals(DummyEnum.TEST1, alefObject.getProperty(PersonType.dummy).get());
+    }
+
+    @Test
+    void testInvalidEnumValue() throws IOException {
+        final InputAttribute<DummyEnum> inputAttribute = new InputAttribute<>(
+                "value", false, null, PersonType.dummy, new StringToEnumReader<>(DummyEnum.class));
+        final MUniverse universe = new MUniverse(true);
+        final MObject alefObject = universe.getOrCreate(null, TypeContextMock.PersonType.class);
+        final ContentParser parser = new ValueReturningParserMock("unknown");
+        inputAttribute.parse(universe, alefObject, parser);
+        assertEquals(null, alefObject.getProperty(PersonType.dummy).get());
+        assertEquals(1, universe.getViolations().size());
     }
 
     @Test
