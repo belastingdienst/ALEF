@@ -11497,23 +11497,18 @@
       <node concept="17QB3L" id="4HmLHo98Kdx" role="3clF45" />
       <node concept="3clFbS" id="4HmLHo98JDe" role="3clF47">
         <node concept="3clFbJ" id="4HmLHo98Kf2" role="3cqZAp">
-          <node concept="3eOVzh" id="4HmLHo98OxJ" role="3clFbw">
-            <node concept="3cmrfG" id="4HmLHo98PWu" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="2OqwBi" id="4HmLHo98Kus" role="3uHU7B">
-              <node concept="13iPFW" id="4HmLHo98Kfr" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4HmLHo98LrK" role="2OqNvi">
-                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="4HmLHo98Kf4" role="3clFbx">
             <node concept="3cpWs6" id="4HmLHo98RxN" role="3cqZAp">
               <node concept="10M0yZ" id="4HmLHo98T5i" role="3cqZAk">
                 <ref role="3cqZAo" node="4HmLHo98HVc" resolve="TALLEN" />
                 <ref role="1PxDUh" node="4HmLHo98HKV" resolve="AfrondingLabels" />
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3JRruOfNnRp" role="3clFbw">
+            <node concept="13iPFW" id="3JRruOfNnBq" role="2Oq$k0" />
+            <node concept="2qgKlT" id="3JRruOfNoAJ" role="2OqNvi">
+              <ref role="37wK5l" node="3JRruObwBoN" resolve="isTallenGeselecteerd" />
             </node>
           </node>
         </node>
