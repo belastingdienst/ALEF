@@ -144,7 +144,7 @@ class ParserRecordingTest {
         parser.nextName();
         parser.beginObject();
         parser.peek();
-        assertThrows(IllegalStateException.class, parser::startRecording);
+        assertThrows(ParseException.class, parser::startRecording);
     }
 
     @Test

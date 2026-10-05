@@ -29,17 +29,20 @@ public class ShortToRationalReader extends AbstractReader<Short, BigRational> {
     public BigRational read(MUniverse universe, ContentParser parser) throws IOException {
         final String lexicalValue = parser.nextValue();
         validateLexical(universe, parser, lexicalValue);
-        final short value = parse(universe, parser, lexicalValue);
+        final Short value = parse(universe, parser, lexicalValue);
         validateValue(universe, parser, value);
-        return toInputValue(BigRational.valueOf(lexicalValue));
+        return toInputValue(value != null ? BigRational.valueOf(value) : null);
     }
 
     private Short parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return Short.parseShort(value);
         } catch (NumberFormatException e) {
             Validators.parseNumberError(universe, parser, value);
         }
-        return 0;
+        return null;
     }
 }

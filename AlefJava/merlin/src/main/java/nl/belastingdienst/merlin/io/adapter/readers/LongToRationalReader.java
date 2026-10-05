@@ -29,17 +29,20 @@ public class LongToRationalReader extends AbstractReader<Long, BigRational> {
     public BigRational read(MUniverse universe, ContentParser parser) throws IOException {
         final String lexicalValue = parser.nextValue();
         validateLexical(universe, parser, lexicalValue);
-        final long value = parse(universe, parser, lexicalValue);
+        final Long value = parse(universe, parser, lexicalValue);
         validateValue(universe, parser, value);
-        return toInputValue(BigRational.valueOf(lexicalValue));
+        return toInputValue(value != null ? BigRational.valueOf(value) : null);
     }
 
     private Long parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return Long.parseLong(value);
         } catch (NumberFormatException e) {
             Validators.parseNumberError(universe, parser, value);
         }
-        return 0L;
+        return null;
     }
 }

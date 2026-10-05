@@ -23,10 +23,10 @@ public abstract class JacksonParser extends LookAheadParser {
     @Override
     public void startRecording() {
         if (recorder == null) {
-            throw new IllegalStateException("Recording cannot be started because no recorder was provided.");
+            throw new ParseException("Recording cannot be started because no recorder was provided.");
         }
         if (hasPeeked()) {
-            throw new IllegalStateException("Cannot start recording while a peeked token has not yet been consumed.");
+            throw new ParseException("Cannot start recording while a peeked token has not yet been consumed.");
         }
         recording = true;
     }
@@ -34,10 +34,10 @@ public abstract class JacksonParser extends LookAheadParser {
     @Override
     public void stopRecording() {
         if (!recording) {
-            throw new IllegalStateException("Recording cannot be stopped because recording has not been started.");
+            throw new ParseException("Recording cannot be stopped because recording has not been started.");
         }
         if (hasPeeked()) {
-            throw new IllegalStateException("Cannot stop recording while a peeked token has not yet been consumed.");
+            throw new ParseException("Cannot stop recording while a peeked token has not yet been consumed.");
         }
         recording = false;
     }
@@ -120,7 +120,7 @@ public abstract class JacksonParser extends LookAheadParser {
             case FIELD_NAME -> ContentToken.FIELD_NAME;
             case VALUE_STRING, VALUE_TRUE, VALUE_FALSE, VALUE_NUMBER_FLOAT,
                  VALUE_NUMBER_INT, VALUE_NULL -> ContentToken.VALUE_STRING;
-            default -> throw new IllegalStateException("Unknown token: " + jsonToken);
+            default -> throw new ParseException("Unknown token: " + jsonToken);
         };
     }
 }

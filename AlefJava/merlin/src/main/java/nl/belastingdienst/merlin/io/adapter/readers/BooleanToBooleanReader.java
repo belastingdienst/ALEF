@@ -34,6 +34,9 @@ public class BooleanToBooleanReader extends AbstractReader<Boolean, Boolean> {
     }
 
     public Boolean parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         if (!value.equalsIgnoreCase("true") && !value.equalsIgnoreCase("false")) {
             Validators.parseBooleanError(universe, parser, value);
         }

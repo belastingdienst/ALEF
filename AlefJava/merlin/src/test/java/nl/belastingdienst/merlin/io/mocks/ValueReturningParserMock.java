@@ -5,6 +5,7 @@ import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
 
 import java.io.IOException;
+import java.util.Collections;
 
 public class ValueReturningParserMock implements ContentParser {
     private String value;
@@ -120,7 +121,7 @@ public class ValueReturningParserMock implements ContentParser {
 
     @Override
     public LocationInfo getLocationInfo() {
-        return null;
+        return new LocationInfo(Collections.emptyList());
     }
 
     public void setValue(String value) {

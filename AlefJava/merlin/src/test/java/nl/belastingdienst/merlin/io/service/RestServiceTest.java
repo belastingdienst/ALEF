@@ -40,6 +40,7 @@ class RestServiceTest {
         final String input = """
                 {
                     "request" : {
+                        "rekenjaar" : 2024,
                         "person" : {
                             "forName" : "test"
                         }
@@ -51,6 +52,7 @@ class RestServiceTest {
         final String expectedOutput = """
                 {
                   "request" : {
+                    "rekenjaar" : 2024,
                     "person" : {
                       "forName" : "test"
                     }
@@ -103,13 +105,35 @@ class RestServiceTest {
                   "response" : {
                     "serviceResultaat" : {
                       "resultaatcode" : "0",
-                      "resultaatmelding" : "Expected 'request' but found 'req' at /",
+                      "resultaatmelding" : "Expected 'request' but found 'req' at /\\nNo working year was provided.",
                       "serviceversie" : ""
                     }
                   }
                 }""";
         final ServiceResult serviceResult = restService.process(toInputStream(input), input);
         assertEquals(expected, toString(serviceResult.getOutputStream()));
+    }
+
+    @Test
+    void testRequestWithInvalidJson() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("forName", false, null, PersonType.name, new StringToStringReader()));
+        final Request request = new RequestMock();
+        request.addComplexProperty(new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE, FactSide.LEFT, null));
+        final OutputMessage outputMockPerson = new OutputMessageMock();
+        outputMockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
+        final Response response = new ResponseMock();
+        response.addElement(new OutputComplexProperty("person", null, false, true, null, PersonType.class, outputMockPerson));
+        //when
+        final RestService restService = new RestServiceMock(request, response, PersonType.class);
+        final String input = """
+                    "request" : {                
+                    }
+                }
+                """;
+        // then
+        final ServiceResult serviceResult = restService.process(toInputStream(input), input);
+        assertEquals(ServiceResultType.BAD_REQUEST, serviceResult.getType());
     }
 
     private InputStream toInputStream(String input) {

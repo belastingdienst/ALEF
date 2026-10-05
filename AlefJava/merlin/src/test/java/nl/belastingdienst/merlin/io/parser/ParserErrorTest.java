@@ -20,7 +20,7 @@ class ParserErrorTest {
                     <root></root>
                 """;
         final ContentParser parser = createParser(ContentType.XML, xml, null);
-        assertThrows(IllegalStateException.class, parser::startRecording);
+        assertThrows(ParseException.class, parser::startRecording);
     }
 
     @Test
@@ -32,7 +32,7 @@ class ParserErrorTest {
         final ToXmlGenerator generator = XmlFactory.builder().build().createGenerator(outputStream);
         final ContentParser parser = createParser(ContentType.XML, xml, generator);
         parser.peek();
-        assertThrows(IllegalStateException.class, parser::startRecording);
+        assertThrows(ParseException.class, parser::startRecording);
     }
 
     @Test
@@ -43,11 +43,11 @@ class ParserErrorTest {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final ToXmlGenerator generator = XmlFactory.builder().build().createGenerator(outputStream);
         final ContentParser parser = createParser(ContentType.XML, xml, generator);
-        assertThrows(IllegalStateException.class, parser::stopRecording);
+        assertThrows(ParseException.class, parser::stopRecording);
     }
 
     @Test
-    void testStopRecordingWhilePeeking() throws IOException {
+    void testStartRecordingAndDirectlyPeek() throws IOException {
         final String xml = """
                     <root></root>
                 """;
@@ -68,7 +68,7 @@ class ParserErrorTest {
         final ContentParser parser = createParser(ContentType.KV_PAIR, xml, generator);
         parser.beginObject();
         parser.enterKvPairSection();
-        assertThrows(IllegalStateException.class, parser::startRecording);
+        assertThrows(ParseException.class, parser::startRecording);
     }
 
     @Test
@@ -82,7 +82,7 @@ class ParserErrorTest {
         parser.beginObject();
         parser.startRecording();
         parser.enterKvPairSection();
-        assertThrows(IllegalStateException.class, parser::stopRecording);
+        assertThrows(ParseException.class, parser::stopRecording);
     }
 
     @Test
@@ -98,7 +98,7 @@ class ParserErrorTest {
         final ContentParser parser = createParser(ContentType.KV_PAIR, xml, null);
         parser.beginObject();
         parser.enterKvPairSection();
-        assertThrows(IllegalStateException.class, parser::nextName);
+        assertThrows(ParseException.class, parser::nextName);
     }
 
     @Test
@@ -110,7 +110,7 @@ class ParserErrorTest {
                 """;
         final ContentParser parser = createParser(ContentType.XML, xml, null);
         parser.beginObject();
-        assertThrows(IllegalStateException.class, parser::endCollection);
+        assertThrows(ParseException.class, parser::endCollection);
     }
 
     private ContentParser createParser(ContentType type, String input, JsonGenerator jsonGenerator) throws IOException {

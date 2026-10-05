@@ -9,6 +9,10 @@ public class RequestMock extends Request {
         super(null, "rekenjaar", CalculationMoment.YEAR);
     }
 
+    public RequestMock(CalculationMoment calculationMoment) {
+        super(null, "rekenjaar", calculationMoment);
+    }
+
     @Override
     public void initialize(AdapterRegistry registry) {
         // is initialized in test.

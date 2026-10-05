@@ -35,10 +35,13 @@ public class DecimalToRationalReader extends AbstractReader<BigDecimal, BigRatio
         validateLexical(universe, parser, lexicalValue);
         final BigDecimal value = parse(universe, parser, lexicalValue);
         validateValue(universe, parser, value);
-        return toInputValue(BigRational.valueOf(value));
+        return toInputValue(value != null ? BigRational.valueOf(value) : null);
     }
 
     private BigDecimal parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return new BigDecimal(value);
         } catch (NumberFormatException e) {

@@ -26,7 +26,7 @@ public class KvPairParser extends XmlParser {
     @Override
     public void enterKvPairSection() throws IOException {
         if (insideKvPairSection) {
-            throw new IllegalStateException("Cannot enter KV pair section: already inside one.");
+            throw new ParseException("Cannot enter KV pair section: already inside one.");
         }
         insideKvPairSection = true;
     }
@@ -34,7 +34,7 @@ public class KvPairParser extends XmlParser {
     @Override
     public void startRecording() {
         if (insideKvPairSection) {
-            throw new IllegalStateException("Cannot start recording while inside a KV pair section.");
+            throw new ParseException("Cannot start recording while inside a KV pair section.");
         }
         super.startRecording();
     }
@@ -47,7 +47,7 @@ public class KvPairParser extends XmlParser {
     @Override
     public void stopRecording() {
         if (insideKvPairSection) {
-            throw new IllegalStateException("Cannot stop recording while inside a KV pair section.");
+            throw new ParseException("Cannot stop recording while inside a KV pair section.");
         }
         super.stopRecording();
     }
@@ -118,7 +118,7 @@ public class KvPairParser extends XmlParser {
                     } else if (fieldName != null && fieldName.startsWith("value")) {
                         setKvPairState(State.READING_STRING_VALUE);
                     } else {
-                        throw new IllegalStateException(String.format("Parsing Error: Unexpected field: %s", fieldName));
+                        throw new ParseException(String.format("Parsing Error: Unexpected field: %s", fieldName));
                     }
                 }
                 case READING_STRING_VALUE -> {
@@ -151,13 +151,13 @@ public class KvPairParser extends XmlParser {
     private void requireToken(ContentToken expectedToken) throws IOException {
         final ContentToken actualToken = super.retrieveNextToken(false);
         if (actualToken != expectedToken) {
-            throw new IllegalStateException(String.format("Parsing Error: Required a %s token, but got a %s token.", expectedToken, actualToken));
+            throw new ParseException(String.format("Parsing Error: Required a %s token, but got a %s token.", expectedToken, actualToken));
         }
     }
 
     private void verifyFieldName(String actualName, String expectedName) {
         if (!Objects.equals(actualName, expectedName)) {
-            throw new IllegalStateException(String.format("Parsing Error: Expected field '%s' but found '%s' at state %s", expectedName, actualName, kvPairState));
+            throw new ParseException(String.format("Parsing Error: Expected field '%s' but found '%s' at state %s", expectedName, actualName, kvPairState));
         }
     }
 

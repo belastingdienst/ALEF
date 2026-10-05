@@ -52,9 +52,7 @@ class RequestTest {
 
     @Test
     void testRequestWithInvalidCalculationMoment() throws IOException {
-        final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
         final Request request = new RequestMock();
-        request.addComplexProperty(new InputComplexProperty("persons", "person", false, mock, Cardinality.MULTIPLE, FactSide.LEFT, null));
         // when
         final String json = """
                 {
@@ -68,14 +66,12 @@ class RequestTest {
     }
 
     @Test
-    void testRequestWithInvalidCalculationMomentName() throws IOException {
-        final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
-        final Request request = new RequestMock();
-        request.addComplexProperty(new InputComplexProperty("persons", "person", false, mock, Cardinality.MULTIPLE, FactSide.LEFT, null));
+    void testRequestWithInvalidCalculationMoment2() throws IOException {
+        final Request request = new RequestMock(CalculationMoment.YEAR);
         // when
         final String json = """
                 {
-                    "rekjar" : 123456
+                    "rekenjaar" : 45645645678
                 }
                 """;
         final MUniverse universe = new MUniverse(true);
@@ -85,10 +81,23 @@ class RequestTest {
     }
 
     @Test
-    void testRequestWithValidCalculationMoment() throws IOException {
-        final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
+    void testRequestWithInvalidCalculationMomentName() throws IOException {
         final Request request = new RequestMock();
-        request.addComplexProperty(new InputComplexProperty("persons", "person", false, mock, Cardinality.MULTIPLE, FactSide.LEFT, null));
+        // when
+        final String json = """
+                {
+                    "rekjar" : 123456
+                }
+                """;
+        final MUniverse universe = new MUniverse(true);
+        request.process(universe, new JsonParser(asInputStream(json)), false, PersonType.class);
+        // then
+        assertEquals(2, universe.getViolations().size());
+    }
+
+    @Test
+    void testRequestWithValidCalculationMoment() throws IOException {
+        final Request request = new RequestMock();
         // when
         final String json = """
                 {
@@ -102,14 +111,11 @@ class RequestTest {
     }
 
     @Test
-    void testRequestWithInvalidMessageIdName() throws IOException {
-        final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
+    void testEmptyRequest() throws IOException {
         final Request request = new RequestMock();
-        request.addComplexProperty(new InputComplexProperty("persons", "person", false, mock, Cardinality.MULTIPLE, FactSide.LEFT, null));
         // when
         final String json = """
                 {
-                    "berichd" : "1"
                 }
                 """;
         final MUniverse universe = new MUniverse(true);
@@ -119,10 +125,23 @@ class RequestTest {
     }
 
     @Test
-    void testRequestWithValidMessageId() throws IOException {
-        final InputMessageMock<PersonType> mock = new InputMessageMock<>(PersonType.class);
+    void testRequestWithInvalidMessageIdName() throws IOException {
         final Request request = new RequestMock();
-        request.addComplexProperty(new InputComplexProperty("persons", "person", false, mock, Cardinality.MULTIPLE, FactSide.LEFT, null));
+        // when
+        final String json = """
+                {
+                    "berichd" : "1"
+                }
+                """;
+        final MUniverse universe = new MUniverse(true);
+        request.process(universe, new JsonParser(asInputStream(json)), false, PersonType.class);
+        // then
+        assertEquals(2, universe.getViolations().size());
+    }
+
+    @Test
+    void testRequestWithValidMessageId() throws IOException {
+        final Request request = new RequestMock();
         // when
         final String json = """
                 {

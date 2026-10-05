@@ -37,11 +37,14 @@ public class DateToDateTimeReader extends AbstractReader<String, LocalDateTime> 
     }
 
     private LocalDateTime parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return LocalDate.parse(value, DateTimeFormatter.ISO_DATE).atStartOfDay();
         } catch (DateTimeParseException e) {
             Validators.parseDateTimeError(universe, parser, value);
         }
-        return LocalDateTime.MIN;
+        return null;
     }
 }

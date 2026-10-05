@@ -31,7 +31,7 @@ class ParserOtherTest {
         parser.beginObject();
         parser.expectName("value1");
         parser.nextValue();
-        assertThrows(IllegalStateException.class, () -> {
+        assertThrows(ParseException.class, () -> {
             parser.expectName("wrongName");
         });
     }

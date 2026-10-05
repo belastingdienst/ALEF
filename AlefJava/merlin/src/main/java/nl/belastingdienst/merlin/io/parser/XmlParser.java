@@ -52,9 +52,8 @@ public class XmlParser extends JacksonParser {
             super.endCollection();
         } else {
             if (collections.isEmpty() || !collections.peek().isInsideCollection()) {
-                throw new IllegalStateException("Cannot end collection because the parser is not inside a collection.");
+                throw new ParseException("Cannot end collection because the parser is not inside a collection.");
             }
-            // WHY IS THIS NOT USING THE INTERNALNEXTTOKEN??????
             if (!collections.isEmpty() && collections.peek().isEnclosedCollection()) {
                 expectContentToken(ContentToken.END_OBJECT, this.consumeNextToken());
             }
@@ -177,7 +176,7 @@ public class XmlParser extends JacksonParser {
                         continue;
                     }
 
-                    throw new IllegalStateException("Invalid token while inside collection: expected " +
+                    throw new ParseException("Invalid token while inside collection: expected " +
                             "FIELD_NAME token but found " + nextToken + ".");
                 }
                 case READ_NEXT_COLLECTION_VALUE -> {
@@ -203,7 +202,7 @@ public class XmlParser extends JacksonParser {
                         setXmlState(XmlState.DETERMINE_OUTSIDE_OR_INSIDE, isPeeking);
                         return nextToken;
                     }
-                    throw new IllegalStateException("Invalid token while reading collection value: expected " +
+                    throw new ParseException("Invalid token while reading collection value: expected " +
                             "BEGIN_OBJECT, END_OBJECT or VALUE_STRING but found " + nextToken + ".");
                 }
                 case DETERMINE_OUTSIDE_OR_INSIDE -> {
@@ -276,7 +275,7 @@ public class XmlParser extends JacksonParser {
 
     protected void expectContentToken(ContentToken expectedToken, ContentToken actualToken) {
         if (actualToken != expectedToken) {
-            throw new IllegalStateException(String.format("Expected token: %s, but found: %s", expectedToken, actualToken));
+            throw new ParseException(String.format("Expected token: %s, but found: %s", expectedToken, actualToken));
         }
     }
 

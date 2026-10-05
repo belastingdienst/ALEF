@@ -29,17 +29,20 @@ public class ByteToRationalReader extends AbstractReader<Byte, BigRational> {
     public BigRational read(MUniverse universe, ContentParser parser) throws IOException {
         final String lexicalValue = parser.nextValue();
         validateLexical(universe, parser, lexicalValue);
-        final byte value = parse(universe, parser, lexicalValue);
+        final Byte value = parse(universe, parser, lexicalValue);
         validateValue(universe, parser, value);
-        return toInputValue(BigRational.valueOf(lexicalValue));
+        return toInputValue(value != null ? BigRational.valueOf(value) : null);
     }
 
     private Byte parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return Byte.parseByte(value);
         } catch (NumberFormatException e) {
             Validators.parseNumberError(universe, parser, value);
         }
-        return 0;
+        return null;
     }
 }

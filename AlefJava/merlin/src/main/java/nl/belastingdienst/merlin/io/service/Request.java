@@ -16,10 +16,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public abstract class Request {
     private static final DatatypeFactory DT_FACTORY;
@@ -62,8 +59,10 @@ public abstract class Request {
         if (enterKvPairSection) {
             parser.enterKvPairSection();
         }
+        Set<String> encounteredFieldNames = new HashSet<>();
         while (parser.peek() != ContentToken.END_OBJECT) {
             final String fieldName = parser.nextName();
+            encounteredFieldNames.add(fieldName);
             if (isComplexProperty(parser, fieldName)) {
                 rootObject = processComplexProperty(universe, parser, mainObjectType, fieldName, rootObject);
             } else if (ALEFConstants.FIELDS.equals(fieldName) && parser instanceof KvPairParser) {
@@ -77,11 +76,18 @@ public abstract class Request {
                 parser.skipValue();
             }
         }
+        handleMissingFields(universe, encounteredFieldNames);
         parser.endObject();
         if (rootObject != null) {
             return rootObject;
         } else {
             return universe.getObjectType(mainObjectType).createObject();
+        }
+    }
+
+    private void handleMissingFields(MUniverse universe, Set<String> encounteredFieldNames) {
+        if (!encounteredFieldNames.contains(calculationMomentFieldName)) {
+            universe.add(Violation.of("No working year was provided.", ViolationKind.INPUT_VALIDATION));
         }
     }
 
@@ -130,10 +136,10 @@ public abstract class Request {
         if (nextValue != null || nextValue.isBlank()) {
             try {
                 final int year = Integer.parseInt(nextValue);
-                Validators.totalDigits(universe, BigDecimal.valueOf(year), 4, parser);
+                Validators.totalDigits(universe, new BigDecimal(nextValue), 4, parser);
                 universe.setWorkingDate(LocalDateTime.of(year, 7, 1, 0, 0, 0));
             } catch (NumberFormatException e) {
-                universe.add(Violation.of("Invalid working year " + nextValue + " was provided at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));
+                universe.add(Violation.of("Invalid working year '" + nextValue + "' at " + parser.getLocationInfo() + ". Expected a valid 4-digit year.", ViolationKind.INPUT_VALIDATION));
             }
         } else {
             universe.add(Violation.of("No working year was provided at " + parser.getLocationInfo(), ViolationKind.INPUT_VALIDATION));

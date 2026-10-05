@@ -32,15 +32,18 @@ public class IntegerToRationalReader extends AbstractReader<BigInteger, BigRatio
         validateLexical(universe, parser, lexicalValue);
         final BigInteger value = parse(universe, parser, lexicalValue);
         validateValue(universe, parser, value);
-        return toInputValue(BigRational.valueOf(lexicalValue));
+        return toInputValue(value != null ? BigRational.valueOf(value) : null);
     }
 
     private BigInteger parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return new BigInteger(value);
         } catch (NumberFormatException e) {
             Validators.parseNumberError(universe, parser, value);
         }
-        return BigInteger.ZERO;
+        return null;
     }
 }

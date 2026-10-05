@@ -36,11 +36,14 @@ public class DateTimeToDateTimeReader extends AbstractReader<String, LocalDateTi
     }
 
     private LocalDateTime parse(MUniverse universe, ContentParser parser, String value) {
+        if (value == null) {
+            return null;
+        }
         try {
             return LocalDateTime.ofInstant(DateUtil.parseOptionalIso(value).toInstant(), DateUtil.DUTCH_TIMEZONE);
         } catch (DateTimeParseException e) {
             Validators.parseDateTimeError(universe, parser, value);
         }
-        return LocalDateTime.MIN;
+        return null;
     }
 }

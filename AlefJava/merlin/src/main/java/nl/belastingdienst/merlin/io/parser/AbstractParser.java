@@ -101,7 +101,7 @@ public abstract class AbstractParser implements ContentParser {
     public void expectName(String expectedFieldName) throws IOException {
         final String actualFieldName = nextName();
         if (!Objects.equals(expectedFieldName, actualFieldName)) {
-            throw new IllegalStateException(String.format("Expected name: %s, but found: %s", actualFieldName, actualFieldName));
+            throw new ParseException(String.format("Expected name: %s, but found: %s", actualFieldName, actualFieldName));
         }
     }
 
@@ -226,7 +226,7 @@ public abstract class AbstractParser implements ContentParser {
 
     private void expectToken(ContentToken expectedToken, ContentToken actualToken) {
         if (actualToken != expectedToken) {
-            throw new IllegalStateException(String.format("Expected token: %s, but found: %s", expectedToken, actualToken));
+            throw new ParseException(String.format("Expected token: %s, but found: %s at " + getLocationInfo(), expectedToken, actualToken));
         }
     }
 }

@@ -28,6 +28,16 @@ class ReadersTest {
     }
 
     @Test
+    void testNullBooleanValue() throws IOException {
+        final ValueReturningParserMock parserMock = new ValueReturningParserMock("true");
+        final MUniverse universe = new MUniverse(true);
+        final BooleanToBooleanReader reader = new BooleanToBooleanReader();
+        assertEquals(true, reader.read(universe, parserMock));
+        parserMock.setValue(null);
+        assertEquals(null, reader.read(universe, parserMock));
+    }
+
+    @Test
     void testByteToRationalReader() throws IOException {
         final ValueReturningParserMock parserMock = new ValueReturningParserMock("123");
         final MUniverse universe = new MUniverse(true);
@@ -60,6 +70,11 @@ class ReadersTest {
     }
 
     @Test
+    void testDecimalToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new DecimalToRationalReader());
+    }
+
+    @Test
     void testDoubleToRationalReader() throws IOException {
         final ValueReturningParserMock parserMock = new ValueReturningParserMock("123.45");
         final MUniverse universe = new MUniverse(true);
@@ -68,11 +83,21 @@ class ReadersTest {
     }
 
     @Test
+    void testDoubleToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new DoubleToRationalReader());
+    }
+
+    @Test
     void testFloatToRationalReader() throws IOException {
         final ValueReturningParserMock parserMock = new ValueReturningParserMock("123.45");
         final MUniverse universe = new MUniverse(true);
         final FloatToRationalReader reader = new FloatToRationalReader();
-        assertEquals(BigRational.valueOf("123.45"), reader.read(universe, parserMock));
+        assertEquals(BigRational.valueOf("123.44999694824219"), reader.read(universe, parserMock));
+    }
+
+    @Test
+    void testFloatToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new FloatToRationalReader());
     }
 
     @Test
@@ -84,11 +109,24 @@ class ReadersTest {
     }
 
     @Test
+    void testIntegerToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new IntegerToRationalReader());
+    }
+
+    @Test
     void testIntToRationalReader() throws IOException {
-        final ValueReturningParserMock parserMock = new ValueReturningParserMock("123");
         final MUniverse universe = new MUniverse(true);
         final IntToRationalReader reader = new IntToRationalReader();
-        assertEquals(BigRational.valueOf(123), reader.read(universe, parserMock));
+        final ValueReturningParserMock parserMock1 = new ValueReturningParserMock("123");
+        assertEquals(BigRational.valueOf(123), reader.read(universe, parserMock1));
+        final ValueReturningParserMock parserMock2 = new ValueReturningParserMock(null);
+        assertEquals(null, reader.read(universe, parserMock2));
+        assertEquals(0, universe.getViolations().size());
+    }
+
+    @Test
+    void testIntToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new IntToRationalReader());
     }
 
     @Test
@@ -100,11 +138,21 @@ class ReadersTest {
     }
 
     @Test
+    void testLongToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new LongToRationalReader());
+    }
+
+    @Test
     void testShortToRationalReader() throws IOException {
         final ValueReturningParserMock parserMock = new ValueReturningParserMock("123");
         final MUniverse universe = new MUniverse(true);
         final ShortToRationalReader reader = new ShortToRationalReader();
         assertEquals(BigRational.valueOf(123), reader.read(universe, parserMock));
+    }
+
+    @Test
+    void testShortToRationalReaderWithInvalidInput() throws IOException {
+        verifyReaderWithInvalidInput(new ShortToRationalReader());
     }
 
     @Test
@@ -116,11 +164,30 @@ class ReadersTest {
     }
 
     @Test
+    void testUnknownEnumValue() throws IOException {
+        final ValueReturningParserMock parserMock = new ValueReturningParserMock("Act");
+        final MUniverse universe = new MUniverse(true);
+        final StringToEnumReader<TestEnum> reader = new StringToEnumReader<>(TestEnum.class);
+        reader.read(universe, parserMock);
+        assertEquals("Unknown enum value Act at /.", universe.getViolations().get(0).toString());
+    }
+
+    @Test
     void testStringToStringReader() throws IOException {
         final ValueReturningParserMock parserMock = new ValueReturningParserMock("hello");
         final MUniverse universe = new MUniverse(true);
         final StringToStringReader reader = new StringToStringReader();
         assertEquals("hello", reader.read(universe, parserMock));
+    }
+
+    private static void verifyReaderWithInvalidInput(AbstractReader reader) throws IOException {
+        final MUniverse universe = new MUniverse(true);
+        final ValueReturningParserMock parserMock1 = new ValueReturningParserMock("AAAA");
+        assertEquals(null, reader.read(universe, parserMock1));
+        assertEquals(1, universe.getViolations().size());
+        final ValueReturningParserMock parserMock2 = new ValueReturningParserMock("false");
+        assertEquals(null, reader.read(universe, parserMock2));
+        assertEquals(2, universe.getViolations().size());
     }
 
     private enum TestEnum implements Labeled {

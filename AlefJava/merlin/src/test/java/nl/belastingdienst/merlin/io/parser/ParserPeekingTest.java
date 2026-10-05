@@ -190,7 +190,7 @@ class ParserPeekingTest {
         final XmlParser xmlParser = new XmlParser(asInputStream(xml));
         peekAndBeginObject(xmlParser);
         xmlParser.peek();
-        assertThrows(IllegalStateException.class, xmlParser::close);
+        assertThrows(ParseException.class, xmlParser::close);
     }
 
     @Test

@@ -1,5 +1,6 @@
 package nl.belastingdienst.merlin.io.generator;
 
+import com.ctc.wstx.stax.WstxOutputFactory;
 import com.fasterxml.jackson.dataformat.xml.XmlFactory;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
 import nl.belastingdienst.merlin.io.CollectionInfo;
@@ -20,7 +21,7 @@ public class XmlGenerator extends AbstractGenerator {
     private String currentFieldName = null;
 
     public XmlGenerator(OutputStream outputStream) throws IOException {
-        final XMLOutputFactory staxFactory = XMLOutputFactory.newFactory();
+        final XMLOutputFactory staxFactory = new WstxOutputFactory();
         staxFactory.setProperty(AUTOMATIC_EMPTY_ELEMENTS, false);
         final XmlFactory factory = XmlFactory.builder()
                 .xmlOutputFactory(staxFactory)

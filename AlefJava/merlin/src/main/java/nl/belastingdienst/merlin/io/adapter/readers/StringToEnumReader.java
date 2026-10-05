@@ -36,7 +36,7 @@ public class StringToEnumReader<T extends Enum<?> & Labeled> extends AbstractRea
         validateLexical(universe, parser, lexicalValue);
         final T result = lookupMap.get(mappings.getOrDefault(lexicalValue, lexicalValue));
         if (result == null) {
-            universe.add(Violation.of("Unknown " + enumType.getSimpleName() + " value: " + lexicalValue, ViolationKind.INPUT_VALIDATION));
+            universe.add(Violation.of("Unknown enum value " + lexicalValue + " at " + parser.getLocationInfo() +".", ViolationKind.INPUT_VALIDATION));
         }
         return result;
     }

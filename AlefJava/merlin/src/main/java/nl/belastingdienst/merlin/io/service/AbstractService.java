@@ -9,6 +9,7 @@ import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
+import nl.belastingdienst.merlin.io.parser.ParseException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -123,7 +124,7 @@ public abstract class AbstractService<T extends MObjectType> {
     protected ServiceResult returnError(InputStream inputStream, Exception e) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         outputStream.write(e.getMessage().getBytes(StandardCharsets.UTF_8));
-        if (e instanceof JsonParseException) {
+        if (e instanceof JsonParseException || e instanceof ParseException) {
             return new ServiceResult(ServiceResultType.BAD_REQUEST, outputStream);
         } else {
             return new ServiceResult(ServiceResultType.INTERNAL_EXCEPTION, outputStream);

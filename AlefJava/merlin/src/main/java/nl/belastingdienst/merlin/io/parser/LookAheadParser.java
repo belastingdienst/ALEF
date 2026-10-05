@@ -42,7 +42,7 @@ public abstract class LookAheadParser extends AbstractParser {
     @Override
     protected final void rawClose() throws IOException {
         if (hasPeeked) {
-            throw new IllegalStateException("Cannot close while a peeked token is still pending.");
+            throw new ParseException("Cannot close while a peeked token is still pending.");
         }
         internalClose();
     }
