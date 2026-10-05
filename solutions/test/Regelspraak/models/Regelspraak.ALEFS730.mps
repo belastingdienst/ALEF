@@ -596,7 +596,7 @@
       </node>
     </node>
     <node concept="210ffa" id="15d$3Cd8trF" role="10_$IM">
-      <property role="TrG5h" value="Afronden op duizentallen 1250 -&gt; 1000" />
+      <property role="TrG5h" value="Afronden op duizendtallen 1250 -&gt; 1000" />
       <node concept="4Oh8J" id="15d$3Cd8trG" role="4Ohb1">
         <ref role="4Oh8G" node="4QAJma9Pdn8" resolve="Voertuig" />
         <ref role="3teO_M" node="15d$3Cd8trH" resolve="v" />
@@ -632,7 +632,7 @@
       </node>
     </node>
     <node concept="210ffa" id="3kYQxy_Kfr_" role="10_$IM">
-      <property role="TrG5h" value="Afronden op duizentallen 1550 -&gt; 2000" />
+      <property role="TrG5h" value="Afronden op duizendtallen 1550 -&gt; 2000" />
       <node concept="4Oh8J" id="3kYQxy_KfrA" role="4Ohb1">
         <ref role="4Oh8G" node="4QAJma9Pdn8" resolve="Voertuig" />
         <ref role="3teO_M" node="3kYQxy_KfrF" resolve="v" />
@@ -668,7 +668,7 @@
       </node>
     </node>
     <node concept="210ffa" id="3jTTg$zWtH6" role="10_$IM">
-      <property role="TrG5h" value="Afronden op tienduizentallen 12500 -&gt; 10000" />
+      <property role="TrG5h" value="Afronden op tienduizendtallen 12500 -&gt; 10000" />
       <node concept="4Oh8J" id="3jTTg$zWtH7" role="4Ohb1">
         <ref role="4Oh8G" node="4QAJma9Pdn8" resolve="Voertuig" />
         <ref role="3teO_M" node="3jTTg$zWtHc" resolve="v" />
@@ -704,7 +704,7 @@
       </node>
     </node>
     <node concept="210ffa" id="3kYQxy_Kh3s" role="10_$IM">
-      <property role="TrG5h" value="Afronden op tienduizentallen 15500 -&gt; 20000" />
+      <property role="TrG5h" value="Afronden op tienduizendtallen 15500 -&gt; 20000" />
       <node concept="4Oh8J" id="3kYQxy_Kh3t" role="4Ohb1">
         <ref role="4Oh8G" node="4QAJma9Pdn8" resolve="Voertuig" />
         <ref role="3teO_M" node="3kYQxy_Kh3y" resolve="v" />
