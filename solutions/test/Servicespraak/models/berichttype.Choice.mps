@@ -120,6 +120,7 @@
       <concept id="8878823228840241647" name="gegevensspraak.structure.TekstType" flags="ng" index="THod0" />
       <concept id="8989128614612178023" name="gegevensspraak.structure.Naamwoord" flags="ngI" index="16ZtyY">
         <property id="8989128614612178052" name="isOnzijdig" index="16Ztxt" />
+        <property id="8989128614612178055" name="meervoudsvorm" index="16Ztxu" />
       </concept>
       <concept id="558527188464633210" name="gegevensspraak.structure.AbstractNumeriekeLiteral" flags="ng" index="3e5kNY">
         <property id="558527188465081158" name="waarde" index="3e6Tb2" />
@@ -296,8 +297,55 @@
         </node>
       </node>
     </node>
-    <node concept="1uxNW$" id="5LhSaJUem0W" role="2bv6Cn" />
+    <node concept="2bvS6$" id="43IEK1qAgFO" role="2bv6Cn">
+      <property role="TrG5h" value="relatie" />
+      <node concept="2bv6ZS" id="43IEK1qAgG7" role="2bv01j">
+        <property role="16Ztxt" value="false" />
+        <property role="TrG5h" value="groepnaam" />
+        <node concept="THod0" id="43IEK1qAgGc" role="1EDDcc" />
+      </node>
+    </node>
     <node concept="1uxNW$" id="5LhSaJUem2u" role="2bv6Cn" />
+    <node concept="2mG0Cb" id="43IEK1qAp1Z" role="2bv6Cn">
+      <property role="TrG5h" value="aangifterel" />
+      <node concept="2mG0Ck" id="43IEK1qAp20" role="2mG0Ct">
+        <property role="u$DAK" value="true" />
+        <property role="TrG5h" value="aangifterel" />
+        <ref role="1fE_qF" node="2_HNuzYhLrV" resolve="aangifte" />
+      </node>
+      <node concept="2mG0Ck" id="43IEK1qAp21" role="2mG0Ct">
+        <property role="u$DAK" value="false" />
+        <property role="TrG5h" value="persrel" />
+        <ref role="1fE_qF" node="43IEK1qAgFO" resolve="relatie" />
+      </node>
+    </node>
+    <node concept="2mG0Cb" id="43IEK1qAgGi" role="2bv6Cn">
+      <property role="TrG5h" value="persrel" />
+      <node concept="2mG0Ck" id="43IEK1qAgGj" role="2mG0Ct">
+        <property role="u$DAK" value="true" />
+        <property role="TrG5h" value="aangiftepersrel" />
+        <ref role="1fE_qF" node="43IEK1qAgFO" resolve="relatie" />
+      </node>
+      <node concept="2mG0Ck" id="43IEK1qAgGk" role="2mG0Ct">
+        <property role="u$DAK" value="false" />
+        <property role="TrG5h" value="persrelaties" />
+        <property role="16Ztxu" value="persrelaties" />
+        <ref role="1fE_qF" node="5LhSaJUelYC" resolve="persoon" />
+      </node>
+    </node>
+    <node concept="2mG0Cb" id="43IEK1qAgMn" role="2bv6Cn">
+      <property role="TrG5h" value="zaakrel" />
+      <node concept="2mG0Ck" id="43IEK1qAgMo" role="2mG0Ct">
+        <property role="u$DAK" value="true" />
+        <property role="TrG5h" value="aangiftezaakrel" />
+        <ref role="1fE_qF" node="43IEK1qAgFO" resolve="relatie" />
+      </node>
+      <node concept="2mG0Ck" id="43IEK1qAgMp" role="2mG0Ct">
+        <property role="u$DAK" value="false" />
+        <property role="TrG5h" value="zaakrelaties" />
+        <ref role="1fE_qF" node="5LhSaJUem0Q" resolve="bedrijf" />
+      </node>
+    </node>
     <node concept="2mG0Cb" id="5LhSaJUem4N" role="2bv6Cn">
       <property role="TrG5h" value="bedrijf aangever" />
       <node concept="2mG0Ck" id="5LhSaJUem4O" role="2mG0Ct">
@@ -322,8 +370,8 @@
         <ref role="1fE_qF" node="2_HNuzYhLrV" resolve="aangifte" />
       </node>
       <node concept="2mG0Ck" id="5LhSaJUem6s" role="2mG0Ct">
-        <property role="u$DAK" value="true" />
         <property role="TrG5h" value="belastingplichtige" />
+        <property role="u$DAK" value="true" />
         <ref role="1fE_qF" node="5LhSaJUelYC" resolve="persoon" />
       </node>
     </node>
@@ -526,11 +574,16 @@
     <node concept="1IH5HN" id="2_HNuzYhMc6" role="2785Bw">
       <ref role="1IJyWM" node="2_HNuzYhLyZ" resolve="factor" />
     </node>
+    <node concept="KB4bO" id="43IEK1qApbM" role="2785Bw">
+      <property role="TrG5h" value="relatie" />
+      <ref role="KGglo" node="43IEK1qAgQx" resolve="rel" />
+      <ref role="1fpn6W" node="43IEK1qAp21" resolve="persrel" />
+    </node>
     <node concept="ySD5S" id="2_HNuzYhMc2" role="2785Bw">
       <node concept="KB4bO" id="2_HNuzYKMML" role="yzhjm">
         <property role="TrG5h" value="belastingplichtige" />
-        <property role="h6B3z" value="1" />
         <property role="3cd6q_" value="belastingplichtigen" />
+        <property role="h6B3z" value="1" />
         <ref role="KGglo" node="2_HNuzYhMcF" resolve="Persoon" />
         <ref role="1fpn6W" node="5LhSaJUem6s" resolve="belastingplichtige" />
       </node>
@@ -761,6 +814,156 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3dMsQu" id="43IEK1oi17I" role="3dMzYz">
+      <property role="TrG5h" value="Dubbele zaak met inkomen" />
+      <node concept="3dW_9m" id="43IEK1oi17J" role="3dLJhy">
+        <property role="3dWN8O" value="2025" />
+        <node concept="3dWXw4" id="43IEK1oi17K" role="3dWWrB">
+          <ref role="3dWXzV" node="2_HNuzYhMaz" resolve="aangifte" />
+          <node concept="27HnP5" id="43IEK1oi17L" role="27HnP2">
+            <node concept="3dWX$1" id="43IEK1oi17M" role="27HnPe">
+              <property role="3dWX$t" value="0.2" />
+              <ref role="3dWXzV" node="2_HNuzYhMc6" resolve="factor" />
+            </node>
+            <node concept="3dWXw4" id="43IEK1qApiL" role="27HnPe">
+              <ref role="3dWXzV" node="43IEK1qApbM" resolve="relatie" />
+              <node concept="27HnP5" id="43IEK1qApiM" role="27HnP2">
+                <node concept="3dWX$1" id="43IEK1qApjq" role="27HnPe">
+                  <property role="3dWX$t" value="jan" />
+                  <ref role="3dWXzV" node="43IEK1qAgQy" resolve="groepnaam" />
+                </node>
+                <node concept="3dWXw4" id="43IEK1qDAPy" role="27HnPe">
+                  <ref role="3dWXzV" node="43IEK1qAgQD" resolve="persoon" />
+                  <node concept="27HnP5" id="43IEK1qDAPz" role="27HnP2">
+                    <node concept="3dWX$1" id="43IEK1qDAQj" role="27HnPe">
+                      <property role="3dWX$t" value="piet" />
+                      <ref role="3dWXzV" node="2_HNuzYhMcG" resolve="naam" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="27HnP5" id="43IEK1qHWZL" role="27HnP2">
+                <node concept="3dWX$1" id="43IEK1qHWZM" role="27HnPe">
+                  <property role="3dWX$t" value="jan" />
+                  <ref role="3dWXzV" node="43IEK1qAgQy" resolve="groepnaam" />
+                </node>
+                <node concept="3dWXw4" id="43IEK1qHWZN" role="27HnPe">
+                  <ref role="3dWXzV" node="43IEK1qAgQD" resolve="persoon" />
+                  <node concept="27HnP5" id="43IEK1qHWZO" role="27HnP2">
+                    <node concept="3dWX$1" id="43IEK1qHWZP" role="27HnPe">
+                      <property role="3dWX$t" value="piet" />
+                      <ref role="3dWXzV" node="2_HNuzYhMcG" resolve="naam" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="27HnP5" id="43IEK1qApXp" role="27HnP2">
+                <node concept="3dWX$1" id="43IEK1qApY5" role="27HnPe">
+                  <property role="3dWX$t" value="groep 1" />
+                  <ref role="3dWXzV" node="43IEK1qAgQy" resolve="groepnaam" />
+                </node>
+                <node concept="3dWXw4" id="43IEK1qDAHe" role="27HnPe">
+                  <ref role="3dWXzV" node="43IEK1qAgTz" resolve="zaak" />
+                  <node concept="27HnP5" id="43IEK1qDAHf" role="27HnP2">
+                    <node concept="3dWX$1" id="43IEK1qHWRn" role="27HnPe">
+                      <property role="3dWX$t" value="kees" />
+                      <ref role="3dWXzV" node="2_HNuzYhMbE" resolve="naam" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="27HnP5" id="43IEK1qApMe" role="27HnP2">
+                <node concept="3dWX$1" id="43IEK1qApMM" role="27HnPe">
+                  <property role="3dWX$t" value="andere naam " />
+                  <ref role="3dWXzV" node="43IEK1qAgQy" resolve="groepnaam" />
+                </node>
+              </node>
+            </node>
+            <node concept="3dWXw4" id="43IEK1oi17N" role="27HnPe">
+              <ref role="3dWXzV" node="2_HNuzYhMce" resolve="zaak" />
+              <node concept="27HnP5" id="43IEK1oi17O" role="27HnP2">
+                <node concept="3dWX$1" id="43IEK1oi17P" role="27HnPe">
+                  <property role="3dWX$t" value="Baas" />
+                  <ref role="3dWXzV" node="2_HNuzYhMbE" resolve="naam" />
+                </node>
+                <node concept="3dWX$1" id="43IEK1oi17Q" role="27HnPe">
+                  <property role="3dWX$t" value="Stad" />
+                  <ref role="3dWXzV" node="2_HNuzYhMbJ" resolve="plaats" />
+                </node>
+                <node concept="3dWX$1" id="43IEK1oi17R" role="27HnPe">
+                  <property role="3dWX$t" value="ZaakLaan" />
+                  <ref role="3dWXzV" node="2_HNuzYhMbO" resolve="straat" />
+                </node>
+                <node concept="3dWX$1" id="43IEK1oi17S" role="27HnPe">
+                  <property role="3dWX$t" value="50" />
+                  <ref role="3dWXzV" node="2_HNuzYhMbT" resolve="winst" />
+                </node>
+                <node concept="3dWXw4" id="43IEK1oi17T" role="27HnPe">
+                  <ref role="3dWXzV" node="1usS2sr8X9d" resolve="eigenaar" />
+                  <node concept="27HnP5" id="43IEK1oi17U" role="27HnP2">
+                    <node concept="3dWX$1" id="43IEK1oi17V" role="27HnPe">
+                      <property role="3dWX$t" value="jaap de rijke" />
+                      <ref role="3dWXzV" node="2_HNuzYhMcG" resolve="naam" />
+                    </node>
+                    <node concept="3dWX$1" id="43IEK1oi17W" role="27HnPe">
+                      <property role="3dWX$t" value="andere straat 3" />
+                      <ref role="3dWXzV" node="2_HNuzYhMcV" resolve="adres" />
+                    </node>
+                    <node concept="3dWX$1" id="43IEK1oi17X" role="27HnPe">
+                      <property role="3dWX$t" value="De grote stad" />
+                      <ref role="3dWXzV" node="2_HNuzYhMd0" resolve="plaats" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3dWX$1" id="43IEK1oi17Y" role="27HnPe">
+              <property role="3dWX$t" value="100" />
+              <ref role="3dWXzV" node="137b3POKLsA" resolve="inkomen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1GVEHS" id="43IEK1oi17Z" role="1GVd_u">
+        <property role="1GVIAy" value="1" />
+        <node concept="1GVH25" id="43IEK1oi180" role="1GVH3P">
+          <ref role="1GVH3K" node="2_HNuzYhMeq" resolve="aanslag" />
+          <node concept="27HnPa" id="43IEK1oi181" role="27HnPl">
+            <node concept="1GVH3N" id="43IEK1oi182" role="27HnPh">
+              <property role="1GVH2a" value="20" />
+              <ref role="1GVH3K" node="2_HNuzYhMdY" resolve="bedrag" />
+            </node>
+            <node concept="1GVH3N" id="43IEK1oi183" role="27HnPh">
+              <property role="1GVH2a" value="100" />
+              <ref role="1GVH3K" node="137b3POKMp6" resolve="loon_of_inkomen" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2785BV" id="43IEK1qAgQx">
+    <property role="TrG5h" value="rel" />
+    <property role="20Qo_P" value="true" />
+    <ref role="1Ig6_r" node="43IEK1qAgFO" resolve="relatie" />
+    <node concept="1IH5HN" id="43IEK1qAgQy" role="2785Bw">
+      <ref role="1IJyWM" node="43IEK1qAgG7" resolve="groepnaam" />
+    </node>
+    <node concept="ySD5S" id="43IEK1qAgQA" role="2785Bw">
+      <property role="TrG5h" value="Choice" />
+      <node concept="KB4bO" id="43IEK1qAgQD" role="yzhjm">
+        <property role="TrG5h" value="persoon" />
+        <property role="h6B3z" value="1" />
+        <ref role="KGglo" node="2_HNuzYhMcF" resolve="Persoon" />
+        <ref role="1fpn6W" node="43IEK1qAgGk" resolve="persrelaties" />
+      </node>
+      <node concept="KB4bO" id="43IEK1qAgTz" role="yzhjm">
+        <property role="TrG5h" value="zaak" />
+        <property role="h6B3z" value="1" />
+        <ref role="KGglo" node="2_HNuzYhMbB" resolve="Bedrijf" />
+        <ref role="1fpn6W" node="43IEK1qAgMp" resolve="zaakrelaties" />
       </node>
     </node>
   </node>
