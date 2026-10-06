@@ -60,6 +60,14 @@
             </SettingState>
           </value>
         </entry>
+        <entry key="gegevensspraak.projecthygiene.BasisEenheidWordtNietGebruikt">
+          <value>
+            <SettingState>
+              <option name="identifier" value="gegevensspraak.projecthygiene.BasisEenheidWordtNietGebruikt" />
+              <option name="checkType" value="WARNING" />
+            </SettingState>
+          </value>
+        </entry>
         <entry key="gegevensspraak.projecthygiene.DagsoortStaatInCommentaar">
           <value>
             <SettingState>
@@ -250,6 +258,22 @@
           <value>
             <SettingState>
               <option name="identifier" value="servicespraak.projecthygiene.InvoerBerichtMappingWordtNietGebruikt" />
+              <option name="checkType" value="WARNING" />
+            </SettingState>
+          </value>
+        </entry>
+        <entry key="servicespraak.projecthygiene.RegelgroepWordtNietGebruiktInService">
+          <value>
+            <SettingState>
+              <option name="identifier" value="servicespraak.projecthygiene.RegelgroepWordtNietGebruiktInService" />
+              <option name="checkType" value="WARNING" />
+            </SettingState>
+          </value>
+        </entry>
+        <entry key="servicespraak.projecthygiene.RegelgroepbundelWordtNietGebruiktInService">
+          <value>
+            <SettingState>
+              <option name="identifier" value="servicespraak.projecthygiene.RegelgroepbundelWordtNietGebruiktInService" />
               <option name="checkType" value="WARNING" />
             </SettingState>
           </value>

@@ -250,9 +250,8 @@
     <property role="EcuMT" value="1482961590271922253" />
     <property role="TrG5h" value="BerichtType" />
     <property role="19KtqR" value="true" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="berichttype" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="4_w_EeGEZwN" resolve="AbstractBerichtType" />
     <node concept="1TJgyj" id="2jxTcXaCoQk" role="1TKVEi">
       <property role="IQ2ns" value="2657656834086768020" />
@@ -1562,6 +1561,346 @@
     </node>
     <node concept="PrWs8" id="6lR0svjHAuC" role="PzmwI">
       <ref role="PrY4T" to="3ic2:2k62pTb3lQI" resolve="Typed" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5EJMaFCQ6N$">
+    <property role="EcuMT" value="6534662220714372324" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="UnivBerichtmapping" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="4_w_EeGEZwN" resolve="AbstractBerichtType" />
+    <node concept="1TJgyj" id="5EJMaFDcepJ" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220720170607" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="veld" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWltS" role="PzmwI">
+      <ref role="PrY4T" node="76ic8nBJn7u" resolve="IBerichtType" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKGgnaY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWltT" role="PzmwI">
+      <ref role="PrY4T" node="ZY2AZh5xiX" resolve="IBecomeComplexType" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZH" role="PzmwI">
+      <ref role="PrY4T" to="dse8:51QYbfAyCB$" resolve="LConstruction" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZI" role="PzmwI">
+      <ref role="PrY4T" to="dse8:6DHtdHSCR6Y" resolve="LClass" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZJ" role="PzmwI">
+      <ref role="PrY4T" to="dse8:6DHtdHSCR7R" resolve="LAction" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZK" role="PzmwI">
+      <ref role="PrY4T" to="4slc:JO3t1XMH7w" resolve="IRapportageRoot" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZL" role="PzmwI">
+      <ref role="PrY4T" to="f6cw:1MP9utIs32t" resolve="IHaveMetatags" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZM" role="PzmwI">
+      <ref role="PrY4T" to="f6cw:4iVB5Q1RPKo" resolve="ICanHaveBron" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFCWwZN" role="PzmwI">
+      <ref role="PrY4T" to="rzok:1qfSAxa5U3$" resolve="ICanHaveComment" />
+    </node>
+    <node concept="1TJgyj" id="5EJMaFCWqGr" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220716026651" />
+      <property role="20kJfa" value="object" />
+      <ref role="20lvS9" to="3ic2:$infi2rtPg" resolve="ObjectType" />
+    </node>
+    <node concept="1TJgyi" id="5EJMaFCWv_8" role="1TKVEl">
+      <property role="IQ2nx" value="6534662220716046664" />
+      <property role="TrG5h" value="isGeordend" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5EJMaFD0I7l">
+    <property role="EcuMT" value="6534662220717154773" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="UnivComplexBerichtVeld" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5EJMaFD3yYF" role="1TKVEl">
+      <property role="IQ2nx" value="6534662220717895595" />
+      <property role="TrG5h" value="meervoudsvorm" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5EJMaFD3yYG" role="1TKVEl">
+      <property role="IQ2nx" value="6534662220717895596" />
+      <property role="TrG5h" value="omsluitendElement" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="5EJMaFD3yYH" role="1TKVEl">
+      <property role="IQ2nx" value="6534662220717895597" />
+      <property role="TrG5h" value="minOccurs" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5EJMaFD3yYI" role="1TKVEl">
+      <property role="IQ2nx" value="6534662220717895598" />
+      <property role="TrG5h" value="maxOccurs" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="5EJMaFD3yYJ" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220717895599" />
+      <property role="20kJfa" value="rol" />
+      <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
+    </node>
+    <node concept="1TJgyj" id="5EJMaFD3yYK" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220717895600" />
+      <property role="20kJfa" value="sub" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5EJMaFCQ6N$" resolve="UnivBerichtmapping" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4tcn" role="PzmwI">
+      <ref role="PrY4T" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4tco" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:5EnECDug8OS" resolve="IObject" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4tcp" role="PzmwI">
+      <ref role="PrY4T" node="ZY2AZh5xiX" resolve="IBecomeComplexType" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4tcq" role="PzmwI">
+      <ref role="PrY4T" to="dse8:51QYbfBR3DV" resolve="LReference" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4tcr" role="PzmwI">
+      <ref role="PrY4T" to="dse8:478t0Ge2iKJ" resolve="LArgument" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5EJMaFD4nwh">
+    <property role="TrG5h" value="UnivBerichtVeld" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="EcuMT" value="6534662220717991482" />
+    <node concept="1TJgyj" id="5EJMaFD4nwl" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220718110741" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="meta" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="38shpt" value="true" />
+      <ref role="20lvS9" node="7EstRf92mlK" resolve="BerichtVeldMetaData" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4nwi" role="PrDN$">
+      <ref role="PrY4T" to="3ic2:2W53dd2zzGp" resolve="Slot" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4nwj" role="PrDN$">
+      <ref role="PrY4T" to="f6cw:1MP9utIs32t" resolve="IHaveMetatags" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFD4nwk" role="PrDN$">
+      <ref role="PrY4T" to="f6cw:4iVB5Q1RPKo" resolve="ICanHaveBron" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5EJMaFDcNCi">
+    <property role="EcuMT" value="6534662220720323090" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="UnivDirectAttribuut" />
+    <ref role="1TJDcQ" node="7Bm9RKGv2Fh" resolve="UnivDirectEigenschap" />
+    <node concept="1TJgyj" id="5EJMaFDju$Z" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220722071871" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="verstekwaarde" />
+      <ref role="20lvS9" to="3ic2:2_An_4eZ$TB" resolve="ContextOngevoeligeLiteral" />
+    </node>
+    <node concept="1TJgyj" id="5EJMaFDcNCj" role="1TKVEi">
+      <property role="IQ2ns" value="6534662220720323091" />
+      <property role="20kJfa" value="attr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:$infi2rzcc" resolve="Attribuut" />
+    </node>
+    <node concept="1TJgyi" id="5EJMaFDcNCk" role="1TKVEl">
+      <property role="IQ2nx" value="6534662220720323092" />
+      <property role="TrG5h" value="verplicht" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="5EJMaFDcSbz" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:7rG9cks_72j" resolve="IDimensieLabelSelectie" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7Bm9RKGv2Ff">
+    <property role="TrG5h" value="UnivSimpelBerichtVeld" />
+    <property role="EcuMT" value="8779247937881123534" />
+    <property role="3GE5qa" value="berichttype" />
+    <node concept="PrWs8" id="7Bm9RKGv2Fg" role="PrDN$">
+      <ref role="PrY4T" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Bm9RKGv2Fh">
+    <property role="EcuMT" value="8779247937881123537" />
+    <property role="TrG5h" value="UnivDirectEigenschap" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="berichttype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Bm9RKGv2Fi" role="PzmwI">
+      <ref role="PrY4T" node="7Bm9RKGv2Ff" resolve="UnivSimpelBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKGv2Fj" role="PzmwI">
+      <ref role="PrY4T" to="m234:7580AHh3C2Q" resolve="ReadSlotAction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Bm9RKG$ecT">
+    <property role="EcuMT" value="8779247937882481465" />
+    <property role="TrG5h" value="UnivParameterVeld" />
+    <property role="3GE5qa" value="berichttype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Bm9RKG$ecU" role="PzmwI">
+      <ref role="PrY4T" node="7Bm9RKGv2Ff" resolve="UnivSimpelBerichtVeld" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKG$ecV" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937882481467" />
+      <property role="20kJfa" value="param" />
+      <ref role="20lvS9" to="3ic2:2rv1iEffm8d" resolve="Parameter" />
+    </node>
+    <node concept="1TJgyi" id="7Bm9RKG$eiL" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937882481841" />
+      <property role="TrG5h" value="optioneel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7Bm9RKHlOKd" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937895484429" />
+      <property role="TrG5h" value="alleenUitvoerenAlsGebruikt" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Bm9RKG$jBJ">
+    <property role="EcuMT" value="8779247937882503663" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="UnivIdentificerendBerichtVeld" />
+    <property role="34LRSv" value="identificerend veld" />
+    <node concept="1TJgyi" id="7Bm9RKG$jBK" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937882503664" />
+      <property role="TrG5h" value="optioneel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKG$jBL" role="PzmwI">
+      <ref role="PrY4T" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKHs1XN" role="PzmwI">
+      <ref role="PrY4T" node="7Bm9RKGv2Ff" resolve="UnivSimpelBerichtVeld" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKG$jBO" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937882503668" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="datatype" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="30CduGNAqP1" resolve="BerichtDataType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Bm9RKGEvxx">
+    <property role="EcuMT" value="8779247937884125281" />
+    <property role="3GE5qa" value="berichttype" />
+    <property role="TrG5h" value="UnivTekstSpecifiekVeld" />
+    <property role="34LRSv" value="invoer van tekst-afhankelijke kenmerken" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Bm9RKGEvxy" role="PzmwI">
+      <ref role="PrY4T" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKGEvxz" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:7rG9cks_72j" resolve="IDimensieLabelSelectie" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKGEvx$" role="PzmwI">
+      <ref role="PrY4T" node="7Bm9RKGv2Ff" resolve="UnivSimpelBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKGEvx_" role="PzmwI">
+      <ref role="PrY4T" to="m234:7580AHh3C2Q" resolve="ReadSlotAction" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKGEvxA" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937884125286" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="velddelen" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7vidyuNs5T1" resolve="TekstspecifiekVelddeel" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKGEvxB" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937884125287" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="verstekwaarde" />
+      <ref role="20lvS9" to="3ic2:44Jn6rIF6zH" resolve="TekstLiteral" />
+    </node>
+    <node concept="1TJgyi" id="7Bm9RKGEvxC" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937884125288" />
+      <property role="TrG5h" value="heeftAttribuut" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7Bm9RKGEvxD" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937884125289" />
+      <property role="TrG5h" value="verplicht" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKGEvxE" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937884125290" />
+      <property role="20kJfa" value="attr" />
+      <ref role="20lvS9" to="3ic2:$infi2rzcc" resolve="Attribuut" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Bm9RKH7XGX">
+    <property role="EcuMT" value="8779247937891851069" />
+    <property role="TrG5h" value="UnivDirectKenmerk" />
+    <property role="3GE5qa" value="berichttype" />
+    <ref role="1TJDcQ" node="7Bm9RKGv2Fh" resolve="UnivDirectEigenschap" />
+    <node concept="1TJgyi" id="7Bm9RKHcjs0" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937892988672" />
+      <property role="TrG5h" value="verplicht" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKH81sn" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937891866391" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="verstekwaarde" />
+      <ref role="20lvS9" to="3ic2:44Jn6rIEL3b" resolve="BooleanLiteral" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKH7YG9" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937891855113" />
+      <property role="20kJfa" value="kenmerk" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:$infi2t7IM" resolve="Kenmerk" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKHgsGb" role="PzmwI">
+      <ref role="PrY4T" to="m234:39pt6yOdv55" resolve="IEigenschapDefinitie" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Bm9RKHrn07">
+    <property role="EcuMT" value="8779247937896935431" />
+    <property role="TrG5h" value="UnivGeformateerdBerichtveld" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="berichttype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Bm9RKHrn08" role="PzmwI">
+      <ref role="PrY4T" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="7Bm9RKHrn09" role="PzmwI">
+      <ref role="PrY4T" to="m234:7580AHh3C2Q" resolve="ReadSlotAction" />
+    </node>
+    <node concept="1TJgyi" id="7Bm9RKHrn0a" role="1TKVEl">
+      <property role="IQ2nx" value="8779247937896935434" />
+      <property role="TrG5h" value="verplicht" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7Bm9RKHrn0b" role="1TKVEi">
+      <property role="IQ2ns" value="8779247937896935435" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1qESECD7gsS" resolve="VeldMetGaten" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="rKpwk5xnTZ">
+    <property role="EcuMT" value="500011730391629439" />
+    <property role="TrG5h" value="UnivSamengesteldVeld" />
+    <property role="34LRSv" value="invoer van numerieke codes met separatoren" />
+    <property role="3GE5qa" value="berichttype" />
+    <ref role="1TJDcQ" node="7Bm9RKHrn07" resolve="UnivGeformateerdBerichtveld" />
+    <node concept="PrWs8" id="rKpwk5xpy0" role="PzmwI">
+      <ref role="PrY4T" node="5EJMaFD4nwh" resolve="UnivBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="rKpwk5xpy1" role="PzmwI">
+      <ref role="PrY4T" node="7Bm9RKGv2Ff" resolve="UnivSimpelBerichtVeld" />
+    </node>
+    <node concept="PrWs8" id="rKpwk5xpy2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="rKpwk5xpy3" role="PzmwI">
+      <ref role="PrY4T" to="m234:7580AHh3C2Q" resolve="ReadSlotAction" />
     </node>
   </node>
 </model>

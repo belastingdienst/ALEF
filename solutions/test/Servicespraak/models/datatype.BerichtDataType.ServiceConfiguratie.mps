@@ -113,6 +113,7 @@
       <concept id="3470082797177561953" name="servicespraak.structure.BerichtDatatypeDefinitie" flags="ng" index="2R_qa">
         <child id="8943333957934572437" name="base" index="2Evv_c" />
       </concept>
+      <concept id="500011730391629439" name="servicespraak.structure.UnivSamengesteldVeld" flags="ng" index="3thxU" />
       <concept id="3470082797188803840" name="servicespraak.structure.DecimalenRestrictie" flags="ng" index="3ytzF">
         <property id="3470082797188803843" name="cijfersTotaal" index="3ytzC" />
         <property id="3470082797188803844" name="achterKomma" index="3ytzJ" />
@@ -158,6 +159,14 @@
         <property id="8614874206088486545" name="maxOccurs" index="h6B3z" />
         <reference id="8880636053083348520" name="sub" index="KGglo" />
       </concept>
+      <concept id="6534662220714372324" name="servicespraak.structure.UnivBerichtmapping" flags="ng" index="2MtUhe">
+        <reference id="6534662220716026651" name="object" index="2MnAeL" />
+        <child id="6534662220720170607" name="veld" index="2NBMV5" />
+      </concept>
+      <concept id="6534662220717154773" name="servicespraak.structure.UnivComplexBerichtVeld" flags="ng" index="2NFi_Z">
+        <property id="6534662220717895596" name="omsluitendElement" index="2NCus6" />
+        <reference id="6534662220717895600" name="sub" index="2NCusq" />
+      </concept>
       <concept id="5182003326601264810" name="servicespraak.structure.Xsd" flags="ng" index="2P7X8V">
         <property id="5182003326601509062" name="published" index="2P4Thn" />
         <property id="5182003326601303501" name="versie" index="2P7b_s" />
@@ -171,6 +180,7 @@
       <concept id="1633367035337312056" name="servicespraak.structure.VeldMetGaten" flags="ng" index="ZHYmi">
         <child id="1633367035338829356" name="velddelen" index="ZBGM6" />
       </concept>
+      <concept id="1633367035339744955" name="servicespraak.structure.Velddeel" flags="ng" index="ZUcgh" />
       <concept id="8634022979764772417" name="servicespraak.structure.TekstspecifiekVelddeel" flags="ng" index="34CAxA">
         <property id="8579476959875468272" name="hoofdlettergevoelig" index="2Z5IsA" />
         <property id="1315805416242801389" name="targetString" index="3IVkjw" />
@@ -196,6 +206,17 @@
       <concept id="1574316443131560932" name="servicespraak.structure.SamengesteldInvoerVeld" flags="ng" index="3hcdIi" />
       <concept id="1574316443131907630" name="servicespraak.structure.Attribuutdeel" flags="ng" index="3hdxpo">
         <reference id="1574316443131907631" name="attr" index="3hdxpp" />
+      </concept>
+      <concept id="8779247937896935431" name="servicespraak.structure.UnivGeformateerdBerichtveld" flags="ng" index="1kIPtV">
+        <child id="8779247937896935435" name="expr" index="1kIPtR" />
+      </concept>
+      <concept id="8779247937891851069" name="servicespraak.structure.UnivDirectKenmerk" flags="ng" index="1kMvL1">
+        <reference id="8779247937891855113" name="kenmerk" index="1kMsLP" />
+        <child id="8779247937891866391" name="verstekwaarde" index="1kXz1F" />
+      </concept>
+      <concept id="8779247937882481465" name="servicespraak.structure.UnivParameterVeld" flags="ng" index="1lhGh5" />
+      <concept id="8779247937884125281" name="servicespraak.structure.UnivTekstSpecifiekVeld" flags="ng" index="1lvXWt">
+        <child id="8779247937884125286" name="velddelen" index="1lvXWq" />
       </concept>
       <concept id="3670915702568119714" name="servicespraak.structure.BerichtDataTypeRef" flags="ng" index="3x25J3">
         <reference id="3670915702568123411" name="ref" index="3x24DM" />
@@ -5153,6 +5174,47 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2MtUhe" id="7Bm9RKG$ecO">
+    <property role="TrG5h" value="fdg" />
+    <ref role="2MnAeL" to="s1a9:4cyDsonoSlR" resolve="serviceObject" />
+    <node concept="2NFi_Z" id="7Bm9RKG$ecR" role="2NBMV5">
+      <property role="2NCus6" value="true" />
+      <property role="TrG5h" value="dfg" />
+      <ref role="2NCusq" node="7Bm9RKG$ecO" resolve="fdg" />
+    </node>
+    <node concept="1kMvL1" id="7Bm9RKHezj2" role="2NBMV5">
+      <property role="TrG5h" value="tes" />
+      <ref role="1kMsLP" to="s1a9:4$i$7y35gAZ" resolve="kenmerk_bijv" />
+      <node concept="2Jx4MH" id="7Bm9RKHiPns" role="1kXz1F" />
+    </node>
+    <node concept="1kMvL1" id="7Bm9RKHlEdM" role="2NBMV5">
+      <ref role="1kMsLP" to="s1a9:4$i$7y4dtkI" resolve="kenmerk_bez" />
+      <node concept="2Jx4MH" id="7Bm9RKHlEdS" role="1kXz1F">
+        <property role="2Jx4MO" value="true" />
+      </node>
+    </node>
+    <node concept="1lhGh5" id="7Bm9RKHqVRi" role="2NBMV5">
+      <property role="TrG5h" value="fdg" />
+    </node>
+    <node concept="1lhGh5" id="6XNsK_dApZn" role="2NBMV5" />
+    <node concept="3thxU" id="6XNsK_dANbc" role="2NBMV5">
+      <property role="TrG5h" value="dfg" />
+      <node concept="ZHYmi" id="6XNsK_dANbe" role="1kIPtR">
+        <node concept="3hdxpo" id="6XNsK_dANn$" role="ZBGM6" />
+        <node concept="3hdxpo" id="6XNsK_dANbP" role="ZBGM6" />
+      </node>
+    </node>
+    <node concept="3thxU" id="rKpwk5Ctos" role="2NBMV5">
+      <node concept="ZHYmi" id="rKpwk5Ctou" role="1kIPtR">
+        <node concept="ZUcgh" id="6XNsK_dwT$m" role="ZBGM6" />
+        <node concept="ZUcgh" id="6XNsK_dwT$e" role="ZBGM6" />
+        <node concept="ZUcgh" id="6XNsK_dwT$i" role="ZBGM6" />
+      </node>
+    </node>
+    <node concept="1lvXWt" id="rKpwk5xhiq" role="2NBMV5">
+      <node concept="34CAxA" id="rKpwk5xhis" role="1lvXWq" />
     </node>
   </node>
 </model>
