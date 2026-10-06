@@ -1,6 +1,10 @@
 name: Build
 run-name: Build '${{ github.ref_name }}'
-on: [push, pull_request]
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+  workflow_dispatch:
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
   GIT_COMMIT: ${{ github.sha }}
