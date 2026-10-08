@@ -1,14 +1,15 @@
 # Datatype
 
-Bij het opstellen van een objectmodel voor RegelSpraak is het bij een aantal constructies van belang om een *datatype* te specificeren. (Zie hieronder)
-Een datatype betreft een beschrijving van de structuur waaraan een waarde moet voldoen.
+Bij het opstellen van een objectmodel voor RegelSpraak is het van beland om bij een aantal constructies van belang om een *datatype* te specificeren.
+Een datatype bevat een beschrijving van de structuur waaraan een waarde moet voldoen.
 
 1. Bij [attributen van objecttypen](objecttype.md) is het belang een datatype op te geven. Hiermee wordt bepaald welke soort waarden het betreffende attribuut kan aannemen.
-2. Voor sommige regels in RegelSpraak zijn daarnaast algemene gegevens nodig die niet bij een specifiek object horen. Deze algemene gegevens worden in RegelSpraak [parameters](parameter.md) genoemd en zullen dus ook een bepaald datatype hebben.
+2. Voor sommige regels in RegelSpraak zijn daarnaast algemeen geldende gegevens nodig die niet bij een specifiek object horen. Deze algemene gegevens worden in RegelSpraak [parameters](parameter.md) genoemd en zullen dus ook een bepaald datatype hebben.
 3. [Expressies](../regels/Expressies.md) zijn RegelSpraak constructies voor onder andere berekeningen. Zo kunnen bijvoorbeeld numerieke waarden bij elkaar opgeteld worden. Derhalve hebben [expressies](../regels/Expressies.md) ook een datatype.
 
 In RegelSpraak zijn vijf standaarddatatypes voorhanden, te weten Numeriek, Tekst, Boolean, Datum-tijd en Percentage. Deze zullen hierna afzonderlijk toegelicht worden met aansluitend een opsomming van diverse voorbeelden Elk datatype definieert hierbij een verzameling met mogelijke waarden.
 
+Het is verder mogelijk om de default-verzameling van een datatype verder te verkleinen. Dit verkleinen gebeurt door het datatype te **beperken**. Met een dergelijke beperking wordt een deelverzameling van de mogelijke verzameling waarden aangegeven. Als we bijvoorbeeld een attribuut *leeftijd* een datatype willen geven, dan zou het standaard *Numeriek* datatype een veel te grote verzameling opleveren. In die verzameling zitten immers ook alle negatieve getallen terwijl een leeftijd niet negatief kan zijn. Verder worden leeftijden over het algemeen uitgedrukt in hele jaren, breuken zijn in de regel dan niet nodig. Het attribuut *leeftijd* krijgt dan ook een *Numeriek* datatype dat beperkt is tot niet-negatieve gehele getallen.
 
 * Numeriek
 * Percentage
@@ -16,8 +17,6 @@ In RegelSpraak zijn vijf standaarddatatypes voorhanden, te weten Numeriek, Tekst
 * Datum-tijd
 * Tekst
 * Valuta
-
-Het is verder mogelijk om de default-verzameling van een datatype verder te verkleinen. Dit verkleinen gebeurt door het datatype te **beperken**. Met een dergelijke beperking wordt een deelverzameling van de mogelijke verzameling waarden aangegeven. Als we bijvoorbeeld een attribuut *leeftijd* een datatype willen geven, dan zou het standaard *Numeriek* datatype een veel te grote verzameling opleveren. In die verzameling zitten immers ook alle negatieve getallen terwijl een leeftijd niet negatief kan zijn. Verder worden leeftijden over het algemeen uitgedrukt in hele jaren, breuken zijn in de regel dan niet nodig. Het attribuut *leeftijd* krijgt dan ook een *Numeriek* datatype dat beperkt is tot niet-negatieve gehele getallen.
 
 ## Datatype Numeriek
 
@@ -35,8 +34,8 @@ Bij een Numeriek datatype gelden de volgende twee nadere specificaties:
 
 ## Datatype Tekst
 
-Een **Tekst** datatype bevat de meeste soorten letters, tekens en woorden die in een tekst kunnen voorkomen. Alle letters en tekens die in de Unicode standaard zijn opgenomen, kunnen hierbij worden gebruikt. Een waarde met datatype Tekst staat hierbij altijd tussen aanhalingstekens.
-Een waarde met een Tekst datatype kan hierbij willekeurig lang zijn  en het datatype kan niet verder worden beperkt.
+Een **Tekst** datatype bevat de meeste soorten letters, tekens en woorden die in een tekst kunnen voorkomen. Alle letters en tekens die in de Unicode standaard zijn opgenomen, kunnen hierbij worden gebruikt. Een waarde met datatype Tekst staat altijd tussen aanhalingstekens.
+Een waarde met een Tekst datatype kan elke lengte hebben en het datatype kan niet verder worden beperkt.
 
 ## Datatype Boolean
 
@@ -47,12 +46,15 @@ Bij een **Boolean** (een datatype gebruikt voor logica) bestaat de verzameling u
 
 ## Datatype Datum-tijd
 
-Een **Datum-tijd** datatype wordt gebruikt voor attributen met datums en eventueel tijden/tijdstippen. Een voorbeeld is geboortedatum of vluchtdatum. Een Datum-tijd attribuut heeft ??n nadere beperking die aangeeft hoe nauwkeurig een waarde moet zijn:
+Een **Datum-tijd** datatype wordt gebruikt voor attributen met datums en eventueel tijden/tijdstippen. Een voorbeeld is geboortedatum of vluchtdatum. Een Datum-tijd attribuut heeft één nadere beperking die aangeeft hoe nauwkeurig een waarde moet zijn:
 
 * **in dagen**
-* **in millisecondes**
+* **in uren**
+* **in minuten**
+* **in seconden**
+* in millisecondes; Een datum-tijd met deze precisie wordt een **tijdstip** genoemd.
 
-Hierbij betekent *in dagen* een normale datumwaarde (bijvoorbeeld 12-03-2023) en *in millisecondes* een datumwaarde aangevuld met tijdwaarde (bijvoorbeeld 12-03-2023 11:34:42.679).
+Hierbij betekent *in dagen* een normale datumwaarde (bijvoorbeeld 12-03-2023) en de rest is een datumwaarde aangevuld met tijdwaarde (bijvoorbeeld 12-03-2023 11:34:42.679 voor **tijdstip**).
 
 ## Datatype Percentage
 

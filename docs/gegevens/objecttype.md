@@ -24,10 +24,12 @@ Bij objecttypen worden gespecificeerd:
 ## Attributen
 
 Een eerste belangrijk soort eigenschap betreft het **attribuut**. Een attribuut is een gegeven dat op enig moment een concrete waarde kan of moet hebben.
-Een attribuut kan dan ook gezien worden als de representatie van een dergelijk gegeven. Dit is vergelijkbaar met de implementatie in een fysiek datamodel van een relationele database vertaald, oftewel een kolom in de een tabel. Maar het invullen van de data gebeurt niet in het objectmodel.
+Een attribuut kan dan ook gezien worden als de representatie van een dergelijk gegeven.  
+Maar het invullen van de data gebeurt niet in het objectmodel. Het is een veld waar RegelSpraak een waarde kan invullen of uitlezen.
 Een attribuut hoeft overigens geen waarde te hebben. Als het attribuut geen waarde heeft, dan spreken we van een **lege waarde**.
 
-Een attribuut wordt net als een objecttype aangeduid met een naamwoord met daarna een aanduiding van het [datatype](datatype.md): hiermee wordt bepaald welke soort waarden het attribuut kan aannemen. Een attribuut voor een luchthaven van vertrek van een vlucht zal bijvoorbeeld tekstwaarden bevatten (de namen van de luchthavens), maar een attribuut voor de afstand tot de bestemming van de vlucht zal getallen bevatten (het aantal kilometers tussen vertrekpunt en bestemming).
+Een attribuut wordt aangeduid met een naamwoord met daarna een aanduiding van het [datatype](datatype.md):
+hiermee wordt bepaald welke soort waarden het attribuut kan aannemen. Een attribuut voor een luchthaven van vertrek van een vlucht zal bijvoorbeeld tekstwaarden bevatten (de namen van de luchthavens), maar een attribuut voor de afstand tot de bestemming van de vlucht zal getallen bevatten (het aantal kilometers tussen vertrekpunt en bestemming).
 
 ## Kenmerken
 

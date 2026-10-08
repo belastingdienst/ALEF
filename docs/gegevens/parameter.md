@@ -21,4 +21,4 @@ In parametersets worden waarden aan parameters toegekend met een bepaalde geldig
 In verband met beheer- en aanpasbaarheid van RegelSpraak-regels worden parameters doorgaans ook gebruikt om belangrijke waarden buiten objecten op te slaan.
 Dit voorkomt dat losse cijfers hard (dat wil zeggen niet aanpasbaar in het objectmodel) in de regels gezet worden.
 Een voorbeeld is een tarief of percentage.
-Een apart construct kan hierbij gemaakt worden voor bijvoorbeeld het getal 0, denk dan aan het geforceerd gelijkstellen op 0 indien het resultaat van een berekening negatief is gebleken.
+Een apart construct kan hierbij gemaakt worden voor bijvoorbeeld het getal 0; Denk dan aan het geforceerd gelijkstellen aan 0 indien het resultaat van een berekening negatief is gebleken.
