@@ -4,7 +4,7 @@ Het objectmodel is de basis voor het schrijven van regels in ALEF.
 
  ![Onderdelen objectmodel in regel](../img/ALEF200_gegevensmodel_basis_voor_regels.png)
 
- Binnen het gegevensmodel kunnen in een objectmodel de volgende elementen worden gespecificeerd:
+Bij het opstellen van een objectmodel kunnen de volgende elementen worden gespecificeerd:
 
 * (Extensie van) [objecttypen](objecttype.md)
 * [Feittypen](feittype.md)
@@ -17,7 +17,7 @@ Het objectmodel is de basis voor het schrijven van regels in ALEF.
 
 ## Objectmodel in GegevensSpraak en RegelSpraak
 
-De meeste regels die in RegelSpraak zijn of worden gemaakt, worden toegepast op objecten. Objecten zijn representaties van dingen in de echte wereld. Deze objecten hebben de eigenschappen die deze personen, objecten of entiteiten hebben en die relevant zijn voor de context (waaronder wetgeving) die gemodelleerd moet worden. Vervolgens kunnen er RegelSpraak-regels gemaakt worden die de eigenschappen van deze persoonsobjecten gebruiken of veranderen.
+De meeste regels die in RegelSpraak zijn of worden gemaakt, worden toegepast op objecten. Objecten zijn representaties van dingen in de echte wereld. Deze objecten hebben de eigenschappen die deze personen, objecten of entiteiten hebben en die relevant zijn voor de context (waaronder wetgeving) die gemodelleerd moet worden. Vervolgens kunnen er RegelSpraak-regels gemaakt worden die de eigenschappen van deze objecten gebruiken of veranderen.
 De objecten en hun eigenschappen worden gespecificeerd met de taal GegevensSpraak. Dit is weliswaar een andere taal dan RegelSpraak, maar we zullen het toch in dit hoofdstuk beschrijven aangezien RegelSpraak de objecten uit GegevensSpraak nodig heeft om te kunnen functioneren.
 
 De waardes van eigenschappen kunnen afkomstig zijn van daadwerkelijke waardes in de echte wereld. De objecten voor personen kunnen bijvoorbeeld een eigenschap geboortedatum hebben. Voordat RegelSpraak-regels op de persoonsobjecten kunnen worden uitgevoerd zal deze eigenschap voor elk persoonsobject een waarde moeten krijgen die overeenkomt met de geboortedatum van een persoon in de echte wereld. Hoe dit precies in zijn werk gaat, is implementatie en valt daarmee buiten het bestek van dit document.

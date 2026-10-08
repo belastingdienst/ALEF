@@ -5,7 +5,7 @@ In het voorbeeld is er een relatie tussen natuurlijk persoon en vlucht: een vluc
 Een feittype bestaat uit rollen die gespeeld worden door instanties van objecttypen waaraan deze rollen verbonden zijn.
 Door de verschillende rollen van een feittype in te vullen met instanties van de objecttypen waarmee de rollen verbonden zijn, wordt een relatie gelegd tussen deze instanties.
 
-![Een feittype relatie tussen een vlucht en een naturlijk persoon](../img/ALEF200_Feittype.png)
+![Een feittype relatie tussen een vlucht en een natuurlijk persoon](../img/ALEF200_Feittype.png)
 
 Een vlucht heeft de rol "reis" in relatie tot een natuurlijk persoon.
 Een natuurlijk persoon heeft de rol "passagier" in relatie tot een vlucht.

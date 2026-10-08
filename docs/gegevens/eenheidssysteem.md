@@ -7,21 +7,23 @@ Bij berekeningen moet vervolgens wel rekening gehouden worden met eenheden. Zo i
 Voordat een eenheid toegekend kan worden aan een attribuut of parameter (met percentage of numeriek datatype) moet deze eerst gespecificeerd worden.
 Een eenheid wordt gespecificeerd met een eenheidssysteem: een eenheidssysteem beschrijft de te gebruiken basiseenheden door middel van een naamwoord, eventueel hun afkorting en/of symbool, en eventueel een omrekenspecificatie waarmee de basiseenheid omgerekend kan worden in een andere basiseenheid uit hetzelfde eenheidssysteem.
 Als we bijvoorbeeld de eenheid Euro willen gaan gebruiken, dan moeten we een eenheidssysteem specificeren waarin de euro een basiseenheid is. Verder kunnen we dan specificeren dat de euro afgekort wordt tot EUR en het symbool € heeft.
-De basiseenheden moeten van *klein naar groot* in de lijst worden geplaatst met de bijbehorende omrekenfactor naar een andere basiseenheid. In regels worden de omrekenfactoren automatisch toegepast.
 
 ![Eenheidssysteem voor afstand](../img/ALEF200_Eenheidssysteem.png)
 
-Als we de basiseenheid hebben gespecificeerd in een eenheidssysteem, dan kunnen we hem toekennen aan een attribuut of parameter. Dit doen we door *met eenheid* achter het datatype of de domeinnaam te zetten, gevolgd door de naam van de basiseenheid. In GegevensSpraak ziet dat er als volgt uit bij een attribuut:
+Als we de basiseenheid hebben gespecificeerd in een eenheidssysteem, dan kunnen we hem toekennen aan een attribuut of parameter. Dit doen we door *met eenheid* achter het datatype of de domeinnaam te zetten, gevolgd door de naam van de basiseenheid.
 
 **Samengestelde eenheden** kunnen ook gespecificeerd worden. De basiseenheden uit de eenheidssystemen kunnen immers door middel van delingen of vermenigvuldigingen gecombineerd worden. Een snelheid heeft bijvoorbeeld een samengestelde eenheid, veelal het aantal kilometers gedeeld door het aantal uren waardoor kilometers per uur als samengestelde eenheid ontstaat. In het objectmodel kunnen we dit specificeren door een deelstreepje “/” te zetten tussen beide basiseenheden.
 
 ![Gecombineerde eenheden in een parameterdefinitie](../img/ALEF200_EenheidGecombineerd.png)
 
+## Omrekenen van eenheden
+
 In het voorbeeld met  gecombineerde eenheden werden twee verschillende basiseenheden voor afstand gebruikt, namelijk de meter (m) en de kilometer (km).
 Deze twee basiseenheden kunnen in elkaar omgerekend worden: een kilometer is gelijk aan 1000 meter. Dit kan bij elk eenheidssysteem ook gespecificeerd worden door het opgeven van een omrekenspecificatie.
 Een omrekenspecificatie specificeert voor een basiseenheid een omrekenfactor waarmee de betreffende basiseenheid omgerekend kan worden in een andere basiseenheid uit hetzelfde eenheidssysteem.
 De omrekenfactor bestaat uit een getal, eventueel een deelstreepje, en de basiseenheid waarop de omrekenfactor betrekking heeft.
-Bij het specificeren van omrekenfactoren is het van belang dat de basiseenheden op volgorde van toenemende grootte staan. De kleinste basiseenheid dient als eerste gespecificeerd te worden.
+De basiseenheden moeten van *klein naar groot* in de lijst worden geplaatst met de bijbehorende omrekenfactor naar een andere basiseenheid.
+In regels worden de omrekenfactoren automatisch toegepast.
 Omrekenspecificaties zijn optioneel. De basiseenheid *meter* heeft in bovenstaande specificatie bijvoorbeeld geen omrekenspecificatie.
 
 GegevensSpraak kent echter geen speciale betekenis toe aan basiseenheden die geen omrekenfactor hebben: ze zijn evengoed omrekenbaar als een andere basiseenheid naar hen verwijst.
