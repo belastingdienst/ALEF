@@ -4103,7 +4103,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6NL0NB_CwJe">
-    <property role="3GE5qa" value="expressies" />
+    <property role="3GE5qa" value="expressies.afronden" />
     <ref role="1XX52x" to="m234:6NL0NB_CwId" resolve="Afronden" />
     <node concept="1WcQYu" id="6xRQtuHaY4I" role="2wV5jI">
       <node concept="2ElW$n" id="fw3UtiuGMy" role="2El2Yn">
@@ -29985,7 +29985,7 @@
   </node>
   <node concept="PKFIW" id="7lPQcAcWCxL">
     <property role="TrG5h" value="AfrondingSoortEditorComponent" />
-    <property role="3GE5qa" value="expressies" />
+    <property role="3GE5qa" value="expressies.afronden" />
     <ref role="1XX52x" to="m234:6NL0NB_CwId" resolve="Afronden" />
     <node concept="3EZMnI" id="7lPQcAcWFLb" role="2wV5jI">
       <node concept="1QoScp" id="4qjyQx6yhGV" role="3EZMnx">
@@ -30016,7 +30016,7 @@
       </node>
       <node concept="1HlG4h" id="6rL_bLohjGV" role="3EZMnx">
         <ref role="1ERwB7" node="3JRruO6mZ7S" resolve="AfrondingSoortActions" />
-        <ref role="34QXea" node="7Ja95KAY0uO" resolve="Afronden_KeyMap" />
+        <ref role="34QXea" node="7Ja95KAY0uO" resolve="AfrondingSoortKeyMap" />
         <node concept="1HfYo3" id="6rL_bLohjGX" role="1HlULh">
           <node concept="3TQlhw" id="6rL_bLohjGZ" role="1Hhtcw">
             <node concept="3clFbS" id="6rL_bLohjH1" role="2VODD2">
@@ -30170,7 +30170,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="3JRruO6mZ7S">
-    <property role="3GE5qa" value="expressies" />
+    <property role="3GE5qa" value="expressies.afronden" />
     <property role="TrG5h" value="AfrondingSoortActions" />
     <ref role="1h_SK9" to="m234:6NL0NB_CwId" resolve="Afronden" />
     <node concept="1hA7zw" id="3JRruO6mZ7T" role="1h_SK8">
@@ -30239,8 +30239,8 @@
     </node>
   </node>
   <node concept="325Ffw" id="7Ja95KAY0uO">
-    <property role="3GE5qa" value="expressies" />
-    <property role="TrG5h" value="Afronden_KeyMap" />
+    <property role="3GE5qa" value="expressies.afronden" />
+    <property role="TrG5h" value="AfrondingSoortKeyMap" />
     <ref role="1chiOs" to="m234:6NL0NB_CwId" resolve="Afronden" />
     <node concept="2PxR9H" id="7Ja95KAY2lg" role="2QnnpI">
       <node concept="2Py5lD" id="7Ja95KAY2lh" role="2PyaAO">
