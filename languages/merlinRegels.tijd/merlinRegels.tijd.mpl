@@ -37,7 +37,6 @@
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">09737df8-57b5-428f-9399-89f414a94263(alef.runtime)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-        <dependency reexport="false">f21369f7-7e7f-4a03-a372-565160d29d2b(merlinBaseExt)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -84,7 +83,6 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="804014de-e593-4efc-b1b2-c667769358b9(linguistics)" version="0" />
         <module reference="1c5e9ad5-77a4-4ada-868f-9454fba4d4c1(merlin.runtime)" version="0" />
-        <module reference="f21369f7-7e7f-4a03-a372-565160d29d2b(merlinBaseExt)" version="0" />
         <module reference="275c6f39-896d-4050-9470-394cb099be3b(merlinGegevens.generator)" version="0" />
         <module reference="52927fcf-1e00-457d-aa5b-8870260c6e58(merlinGegevens.tijd.generator)" version="0" />
         <module reference="45e39a9b-8c0e-4795-9736-c8938479b3ad(merlinRegels.generator)" version="0" />

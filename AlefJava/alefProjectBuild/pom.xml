@@ -75,12 +75,12 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>${jackson-databind.version}</version>
+      <version>${jackson-implementation.version}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>${jackson-databind.version}</version>
+      <version>${jackson-implementation.version}</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
