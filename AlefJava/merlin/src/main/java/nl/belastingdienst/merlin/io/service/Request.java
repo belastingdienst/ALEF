@@ -133,7 +133,7 @@ public abstract class Request {
 
     private static void processWorkingYear(MUniverse universe, ContentParser parser) throws IOException {
         final String nextValue = parser.nextValue();
-        if (nextValue != null || nextValue.isBlank()) {
+        if (nextValue != null && !nextValue.isBlank()) {
             try {
                 final int year = Integer.parseInt(nextValue);
                 Validators.totalDigits(universe, new BigDecimal(nextValue), 4, parser);

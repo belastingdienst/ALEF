@@ -2,12 +2,8 @@ package nl.belastingdienst.merlin.io.service;
 
 import nl.belastingdienst.merlin.io.Cardinality;
 import nl.belastingdienst.merlin.io.FactSide;
-import nl.belastingdienst.merlin.io.TestUtils;
-import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.adapter.readers.DecimalToRationalReader;
 import nl.belastingdienst.merlin.io.adapter.readers.StringToStringReader;
-import nl.belastingdienst.merlin.io.adapter.writers.RationalToDecimalWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.input.InputAttribute;
 import nl.belastingdienst.merlin.io.input.InputComplexProperty;
 import nl.belastingdienst.merlin.io.mocks.*;
@@ -152,6 +148,33 @@ class SoapServiceTest {
         final ServiceResult serviceResult = soapService.process(toInputStream(input), input);
         final String actualOutput = toString(serviceResult.getOutputStream());
         assertEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+    void testErroneousSoapMessage() throws IOException {
+        final InputMessageMock<PersonType> mockPerson = new InputMessageMock<>(PersonType.class);
+        mockPerson.addElement(new InputAttribute<>("forName", false, null, PersonType.name, new StringToStringReader()));
+        final Request request = new RequestMock();
+        request.addComplexProperty(new InputComplexProperty("person", null, false, mockPerson, Cardinality.SINGLE, FactSide.LEFT, null));
+        final OutputMessage outputMockPerson = new OutputMessageMock();
+        outputMockPerson.addField(new OutputAttribute<>("forName", false, PersonType.name, newStringToStringWriter()));
+        final Response response = new ResponseMock();
+        response.addElement(new OutputComplexProperty("person", null, false, false, null, PersonType.class, outputMockPerson));
+        final SoapService soapService = new SoapServiceMock(request, response, PersonType.class, "berekenEnkelvoudigerelatie", "rsenkelvoudigerelatieMsg");
+        final String input = """
+                <?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:alef="http://evr.example.org"><soap:Header/><soap:Body>
+                    <alef:berekenEnkelvoudigerelatie>
+                      <rsenkelvoudigerelatieMsg>
+                        <request>
+                          <person
+                        </request>
+                      </rsenkelvoudigerelatieMsg>
+                    </alef:berekenEnkelvoudigerelatie>
+                  </soap:Body></soap:Envelope>
+                """;
+        final ServiceResult serviceResult = soapService.process(toInputStream(input), input);
+        final String actualOutput = toString(serviceResult.getOutputStream());
+        assertEquals(ServiceResultType.BAD_REQUEST, serviceResult.getType());
     }
 
     private InputStream toInputStream(String input) {

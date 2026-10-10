@@ -94,11 +94,14 @@ public abstract class AbstractService<T extends MObjectType> {
 
     private boolean canReturnSuccessfulResponse(MUniverse universe) {
         final List<Violation> violations = universe.getViolations();
-        return (violations.isEmpty() || !enableValidation) && violations.stream()
+        return universe.getWorkingDate() != null && (violations.isEmpty() || !enableValidation) && violations.stream()
                 .filter(violation -> violation.getViolationKind().equals(ViolationKind.EVALUATION_ERROR)).count() == 0;
     }
 
     private void evaluate(MUniverse universe, MObject mainObject) {
+        if (universe.getWorkingDate() == null) {
+            return;
+        }
         try {
             response.evaluate(universe, mainObject);
         } catch (Exception e) {

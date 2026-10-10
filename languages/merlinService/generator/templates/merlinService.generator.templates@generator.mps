@@ -84,6 +84,7 @@
     <import index="nxml" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.transform(JDK/)" />
     <import index="4meo" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.io.validation(alef.runtime/)" />
     <import index="thp" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.merlin.base.types(alef.runtime/)" />
+    <import index="sjka" ref="09737df8-57b5-428f-9399-89f414a94263/java:jakarta.xml.ws.soap(alef.runtime/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -6808,33 +6809,167 @@
                   </node>
                 </node>
               </node>
-              <node concept="9aQIb" id="6gu2EG_6dSL" role="9aQIa">
-                <node concept="3clFbS" id="6gu2EG_6dSM" role="9aQI4">
-                  <node concept="YS8fn" id="6gu2EG_6DoU" role="3cqZAp">
-                    <node concept="2ShNRf" id="6gu2EG_6DoV" role="YScLw">
-                      <node concept="1pGfFk" id="6gu2EG_6DoW" role="2ShVmc">
-                        <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="n8da:~ServiceException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="ServiceException" />
-                        <node concept="2ShNRf" id="6gu2EG_7cVG" role="37wK5m">
-                          <node concept="1pGfFk" id="6gu2EG_7mrz" role="2ShVmc">
+              <node concept="3eNFk2" id="6gu2EG_HlQ1" role="3eNLev">
+                <node concept="3clFbS" id="6gu2EG_HlQ2" role="3eOfB_">
+                  <node concept="3cpWs8" id="6gu2EG_JleP" role="3cqZAp">
+                    <node concept="3cpWsn" id="6gu2EG_JleQ" role="3cpWs9">
+                      <property role="TrG5h" value="fault" />
+                      <property role="3TUv4t" value="true" />
+                      <node concept="3uibUv" id="6gu2EG_JleR" role="1tU5fm">
+                        <ref role="3uigEE" to="teke:~SOAPFault" resolve="SOAPFault" />
+                      </node>
+                      <node concept="2OqwBi" id="6gu2EG_JDob" role="33vP2m">
+                        <node concept="2YIFZM" id="6gu2EG_J$QI" role="2Oq$k0">
+                          <ref role="37wK5l" to="teke:~SOAPFactory.newInstance()" resolve="newInstance" />
+                          <ref role="1Pybhc" to="teke:~SOAPFactory" resolve="SOAPFactory" />
+                        </node>
+                        <node concept="liA8E" id="6gu2EG_JIoN" role="2OqNvi">
+                          <ref role="37wK5l" to="teke:~SOAPFactory.createFault()" resolve="createFault" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6gu2EG_JRm0" role="3cqZAp">
+                    <node concept="2OqwBi" id="6gu2EG_JW1a" role="3clFbG">
+                      <node concept="37vLTw" id="6gu2EG_JRlY" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6gu2EG_JleQ" resolve="fault" />
+                      </node>
+                      <node concept="liA8E" id="6gu2EG_K3gO" role="2OqNvi">
+                        <ref role="37wK5l" to="teke:~SOAPFault.setFaultString(java.lang.String)" resolve="setFaultString" />
+                        <node concept="2ShNRf" id="6gu2EG_Ks9R" role="37wK5m">
+                          <node concept="1pGfFk" id="6gu2EG_Ks9S" role="2ShVmc">
                             <property role="373rjd" value="true" />
                             <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
-                            <node concept="2OqwBi" id="6gu2EG_7twQ" role="37wK5m">
-                              <node concept="2OqwBi" id="6gu2EG_7twR" role="2Oq$k0">
-                                <node concept="37vLTw" id="6gu2EG_7twS" role="2Oq$k0">
+                            <node concept="2OqwBi" id="6gu2EG_Ks9T" role="37wK5m">
+                              <node concept="2OqwBi" id="6gu2EG_Ks9U" role="2Oq$k0">
+                                <node concept="37vLTw" id="6gu2EG_Ks9V" role="2Oq$k0">
                                   <ref role="3cqZAo" node="184YrmvcT29" resolve="result" />
                                 </node>
-                                <node concept="liA8E" id="6gu2EG_7twT" role="2OqNvi">
+                                <node concept="liA8E" id="6gu2EG_Ks9W" role="2OqNvi">
                                   <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
                                 </node>
                               </node>
-                              <node concept="liA8E" id="6gu2EG_7twU" role="2OqNvi">
+                              <node concept="liA8E" id="6gu2EG_Ks9X" role="2OqNvi">
                                 <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="10Nm6u" id="6gu2EG_a$_q" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6gu2EG_K_Ln" role="3cqZAp">
+                    <node concept="2OqwBi" id="6gu2EG_KD4Z" role="3clFbG">
+                      <node concept="37vLTw" id="6gu2EG_K_Ll" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6gu2EG_JleQ" resolve="fault" />
+                      </node>
+                      <node concept="liA8E" id="6gu2EG_KJim" role="2OqNvi">
+                        <ref role="37wK5l" to="teke:~SOAPFault.setFaultCode(javax.xml.namespace.QName)" resolve="setFaultCode" />
+                        <node concept="10M0yZ" id="6gu2EG_LJjd" role="37wK5m">
+                          <ref role="3cqZAo" to="teke:~SOAPConstants.SOAP_SENDER_FAULT" resolve="SOAP_SENDER_FAULT" />
+                          <ref role="1PxDUh" to="teke:~SOAPConstants" resolve="SOAPConstants" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="YS8fn" id="6gu2EG_J06u" role="3cqZAp">
+                    <node concept="2ShNRf" id="6gu2EG_J0r8" role="YScLw">
+                      <node concept="1pGfFk" id="6gu2EG_J86U" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="sjka:~SOAPFaultException.&lt;init&gt;(jakarta.xml.soap.SOAPFault)" resolve="SOAPFaultException" />
+                        <node concept="37vLTw" id="6gu2EG_Lf7d" role="37wK5m">
+                          <ref role="3cqZAo" node="6gu2EG_JleQ" resolve="fault" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="6gu2EG_HOB0" role="3eO9$A">
+                  <node concept="Rm8GO" id="6gu2EG_I1a8" role="3uHU7w">
+                    <ref role="Rm8GQ" to="n8da:~ServiceResultType.BAD_REQUEST" resolve="BAD_REQUEST" />
+                    <ref role="1Px2BO" to="n8da:~ServiceResultType" resolve="ServiceResultType" />
+                  </node>
+                  <node concept="2OqwBi" id="6gu2EG_HBYS" role="3uHU7B">
+                    <node concept="37vLTw" id="6gu2EG_H$Ay" role="2Oq$k0">
+                      <ref role="3cqZAo" node="184YrmvcT29" resolve="result" />
+                    </node>
+                    <node concept="liA8E" id="6gu2EG_HGOy" role="2OqNvi">
+                      <ref role="37wK5l" to="n8da:~ServiceResult.getType()" resolve="getType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="6gu2EG_Ievq" role="9aQIa">
+                <node concept="3clFbS" id="6gu2EG_Ievr" role="9aQI4">
+                  <node concept="3cpWs8" id="6gu2EG_LvF7" role="3cqZAp">
+                    <node concept="3cpWsn" id="6gu2EG_LvF8" role="3cpWs9">
+                      <property role="TrG5h" value="fault" />
+                      <property role="3TUv4t" value="true" />
+                      <node concept="3uibUv" id="6gu2EG_LvF9" role="1tU5fm">
+                        <ref role="3uigEE" to="teke:~SOAPFault" resolve="SOAPFault" />
+                      </node>
+                      <node concept="2OqwBi" id="6gu2EG_LvFa" role="33vP2m">
+                        <node concept="2YIFZM" id="6gu2EG_LvFb" role="2Oq$k0">
+                          <ref role="37wK5l" to="teke:~SOAPFactory.newInstance()" resolve="newInstance" />
+                          <ref role="1Pybhc" to="teke:~SOAPFactory" resolve="SOAPFactory" />
+                        </node>
+                        <node concept="liA8E" id="6gu2EG_LvFc" role="2OqNvi">
+                          <ref role="37wK5l" to="teke:~SOAPFactory.createFault()" resolve="createFault" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6gu2EG_LvFd" role="3cqZAp">
+                    <node concept="2OqwBi" id="6gu2EG_LvFe" role="3clFbG">
+                      <node concept="37vLTw" id="6gu2EG_LvFf" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6gu2EG_LvF8" resolve="fault" />
+                      </node>
+                      <node concept="liA8E" id="6gu2EG_LvFg" role="2OqNvi">
+                        <ref role="37wK5l" to="teke:~SOAPFault.setFaultString(java.lang.String)" resolve="setFaultString" />
+                        <node concept="2ShNRf" id="6gu2EG_LvFh" role="37wK5m">
+                          <node concept="1pGfFk" id="6gu2EG_LvFi" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                            <node concept="2OqwBi" id="6gu2EG_LvFj" role="37wK5m">
+                              <node concept="2OqwBi" id="6gu2EG_LvFk" role="2Oq$k0">
+                                <node concept="37vLTw" id="6gu2EG_LvFl" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="184YrmvcT29" resolve="result" />
+                                </node>
+                                <node concept="liA8E" id="6gu2EG_LvFm" role="2OqNvi">
+                                  <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="6gu2EG_LvFn" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6gu2EG_LvFo" role="3cqZAp">
+                    <node concept="2OqwBi" id="6gu2EG_LvFp" role="3clFbG">
+                      <node concept="37vLTw" id="6gu2EG_LvFq" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6gu2EG_LvF8" resolve="fault" />
+                      </node>
+                      <node concept="liA8E" id="6gu2EG_LvFr" role="2OqNvi">
+                        <ref role="37wK5l" to="teke:~SOAPFault.setFaultCode(javax.xml.namespace.QName)" resolve="setFaultCode" />
+                        <node concept="10M0yZ" id="6gu2EG_LE4_" role="37wK5m">
+                          <ref role="3cqZAo" to="teke:~SOAPConstants.SOAP_RECEIVER_FAULT" resolve="SOAP_RECEIVER_FAULT" />
+                          <ref role="1PxDUh" to="teke:~SOAPConstants" resolve="SOAPConstants" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="YS8fn" id="6gu2EG_LvG8" role="3cqZAp">
+                    <node concept="2ShNRf" id="6gu2EG_LvG9" role="YScLw">
+                      <node concept="1pGfFk" id="6gu2EG_LvGa" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="sjka:~SOAPFaultException.&lt;init&gt;(jakarta.xml.soap.SOAPFault)" resolve="SOAPFaultException" />
+                        <node concept="37vLTw" id="6gu2EG_LvGb" role="37wK5m">
+                          <ref role="3cqZAo" node="6gu2EG_LvF8" resolve="fault" />
+                        </node>
                       </node>
                     </node>
                   </node>

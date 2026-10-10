@@ -13,6 +13,7 @@ import nl.belastingdienst.merlin.io.mocks.InputMessageMock;
 import nl.belastingdienst.merlin.io.mocks.RequestMock;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
 import nl.belastingdienst.merlin.io.parser.JsonParser;
+import nl.belastingdienst.merlin.io.parser.XmlParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -49,6 +50,22 @@ class RequestTest {
         assertEquals("testAddress", alefObject.getProperty(PersonType.address).get());
         assertEquals(BigRational.valueOf(29), alefObject.getProperty(PersonType.age).get());
     }
+
+    @Test
+    void testRequestWithCalculationMomentAsNulLValue() throws IOException {
+        final Request request = new RequestMock(CalculationMoment.YEAR);
+        // when
+        final String json = """
+                {
+                    "rekenjaar" : null
+                }
+                """;
+        final MUniverse universe = new MUniverse(true);
+        request.process(universe, new JsonParser(asInputStream(json)), false, PersonType.class);
+        // then
+        assertEquals(1, universe.getViolations().size());
+    }
+
 
     @Test
     void testRequestWithInvalidCalculationMoment() throws IOException {
@@ -152,6 +169,20 @@ class RequestTest {
         request.process(universe, new JsonParser(asInputStream(json)), false, PersonType.class);
         // then
         assertEquals("10", universe.getMessageId());
+    }
+
+    @Test
+    void testXmlMessage() throws IOException {
+        final Request request = new RequestMock();
+        // when
+        final String json = """
+                <request rekenjaar="2016">
+                </request>
+                """;
+        final MUniverse universe = new MUniverse(true);
+        request.process(universe, new XmlParser(asInputStream(json)), false, PersonType.class);
+        // then
+        assertEquals(0, universe.getViolations().size());
     }
 
     private InputStream asInputStream(String input) {
