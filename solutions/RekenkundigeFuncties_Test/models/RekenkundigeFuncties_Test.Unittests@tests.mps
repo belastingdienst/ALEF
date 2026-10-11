@@ -4447,5 +4447,67 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="2FAlTN$x4_t">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_BackspaceAction" />
+    <node concept="1qefOq" id="2FAlTN$x5EK" role="25YQCW">
+      <node concept="29kKyO" id="2FAlTN$x5EI" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-2" />
+        <node concept="2MOiMP" id="2FAlTN$x5EJ" role="29kKy2" />
+        <node concept="LIFWc" id="2FAlTN$Izwl" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ReadOnlyModelAccessor_6rwag2_b0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2FAlTN$x6Nk" role="25YQFr">
+      <node concept="29kKyO" id="2FAlTN$x6Ni" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2FAlTN$x6Nj" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="2FAlTN$x8eB" role="LjaKd">
+      <node concept="2HxZob" id="2FAlTN$IFwv" role="3cqZAp">
+        <node concept="1iFQzN" id="2FAlTN$IFwL" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="2FAlTN$IccP">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_KeyMap" />
+    <node concept="1qefOq" id="2FAlTN$IcdS" role="25YQCW">
+      <node concept="29kKyO" id="2FAlTN$IcdQ" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2FAlTN$IcdR" role="29kKy2" />
+        <node concept="LIFWc" id="2FAlTN$Icep" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ReadOnlyModelAccessor_6rwag2_b0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2FAlTN$IceG" role="25YQFr">
+      <node concept="29kKyO" id="2FAlTN$IceE" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-2" />
+        <node concept="2MOiMP" id="2FAlTN$IceF" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="2FAlTN$IckT" role="LjaKd">
+      <node concept="2TK7Tu" id="2FAlTN$IckS" role="3cqZAp">
+        <property role="2TTd_B" value="0" />
+      </node>
+    </node>
+  </node>
 </model>
 
