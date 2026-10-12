@@ -32,7 +32,6 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
-      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -116,6 +115,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -1166,6 +1166,22 @@
             <ref role="23mlFp" node="15d$3CtqNPh" resolve="decimalen" />
           </node>
         </node>
+        <node concept="23JKde" id="2FAlTNDJaJv" role="23JKd8">
+          <node concept="23GdfO" id="2FAlTNDJaJw" role="23JKdf">
+            <node concept="2xS9Ii" id="2FAlTNDJcrX" role="23GdfP">
+              <property role="23G6sU" value="een" />
+            </node>
+            <node concept="2xS9Ii" id="2FAlTNGhcra" role="23GdfP">
+              <property role="23G6sU" value="geheel" />
+            </node>
+            <node concept="2xS9Ii" id="2FAlTNDJcNU" role="23GdfP">
+              <property role="23G6sU" value="getal" />
+            </node>
+          </node>
+          <node concept="23mlFo" id="2FAlTNDJb4h" role="23J4uA">
+            <ref role="23mlFp" node="2FAlTNDJ9l2" resolve="geheelGetal" />
+          </node>
+        </node>
         <node concept="23JKde" id="15d$3CtqZJP" role="23JKd8">
           <node concept="23GdfO" id="15d$3CtqZJQ" role="23JKdf">
             <node concept="2xS9Io" id="15d$3Ctr$n2" role="23GdfP">
@@ -1185,7 +1201,7 @@
         <node concept="234$WW" id="15d$3CtqQ34" role="2358aa">
           <node concept="3clFbS" id="15d$3CtqQ35" role="2VODD2">
             <node concept="3clFbF" id="15d$3CtqQNl" role="3cqZAp">
-              <node concept="2d3UOw" id="15d$3CtqVS6" role="3clFbG">
+              <node concept="3eOSWO" id="2FAlTNDJ49a" role="3clFbG">
                 <node concept="2OqwBi" id="15d$3CtqRTU" role="3uHU7B">
                   <node concept="236Rlm" id="15d$3CtqQNk" role="2Oq$k0" />
                   <node concept="3TrcHB" id="l9pacjaf2i" role="2OqNvi">
@@ -1193,6 +1209,28 @@
                   </node>
                 </node>
                 <node concept="3cmrfG" id="15d$3CtqW13" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="23mcil" id="2FAlTNDJ9l2" role="23mchj">
+      <property role="TrG5h" value="geheelGetal" />
+      <node concept="2358bp" id="2FAlTNDJ9l3" role="23mciC">
+        <node concept="234$WW" id="2FAlTNDJ9l4" role="2358aa">
+          <node concept="3clFbS" id="2FAlTNDJ9l5" role="2VODD2">
+            <node concept="3clFbF" id="2FAlTNDJ9l6" role="3cqZAp">
+              <node concept="3clFbC" id="2FAlTNDJa2J" role="3clFbG">
+                <node concept="2OqwBi" id="2FAlTNDJ9l8" role="3uHU7B">
+                  <node concept="236Rlm" id="2FAlTNDJ9l9" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2FAlTNDJ9la" role="2OqNvi">
+                    <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="2FAlTNDJ9lb" role="3uHU7w">
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>

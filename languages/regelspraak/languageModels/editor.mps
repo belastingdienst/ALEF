@@ -30012,6 +30012,18 @@
         <node concept="3F0A7n" id="4qjyQx6yTVe" role="1QoVPY">
           <property role="1$x2rV" value="vul het aantal decimalen in" />
           <ref role="1NtTu8" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+          <node concept="pkWqt" id="2FAlTO6u1Z9" role="pqm2j">
+            <node concept="3clFbS" id="2FAlTO6u1Za" role="2VODD2">
+              <node concept="3clFbF" id="2FAlTO6u266" role="3cqZAp">
+                <node concept="2OqwBi" id="2FAlTO6u2VP" role="3clFbG">
+                  <node concept="pncrf" id="2FAlTO6u265" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2FAlTO6u3nB" role="2OqNvi">
+                    <ref role="37wK5l" to="u5to:2FAlTNNtdSL" resolve="isDecimalenGeselecteerd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1HlG4h" id="6rL_bLohjGV" role="3EZMnx">
@@ -30068,6 +30080,10 @@
                       <node concept="37vLTw" id="2JHQGlColIA" role="HW$Y0">
                         <ref role="3cqZAo" node="2JHQGlCnDA8" resolve="decimalLabel" />
                       </node>
+                      <node concept="10M0yZ" id="2FAlTN$JGa2" role="HW$Y0">
+                        <ref role="3cqZAo" to="u5to:2FAlTN$Jks1" resolve="GEHEEL_GETAL" />
+                        <ref role="1PxDUh" to="u5to:4HmLHo98HKV" resolve="AfrondingLabels" />
+                      </node>
                       <node concept="10M0yZ" id="4HmLHo990wh" role="HW$Y0">
                         <ref role="3cqZAo" to="u5to:4HmLHo98HVc" resolve="TALLEN" />
                         <ref role="1PxDUh" to="u5to:4HmLHo98HKV" resolve="AfrondingLabels" />
@@ -30120,31 +30136,73 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="9aQIb" id="2JHQGlCoxnl" role="9aQIa">
-                    <node concept="3clFbS" id="2JHQGlCoxnm" role="9aQI4">
-                      <node concept="3clFbJ" id="2JHQGlCoxAa" role="3cqZAp">
-                        <node concept="3eOVzh" id="2JHQGlCo_ju" role="3clFbw">
-                          <node concept="3cmrfG" id="2JHQGlCo_jx" role="3uHU7w">
+                  <node concept="3eNFk2" id="2FAlTN$JHE2" role="3eNLev">
+                    <node concept="3clFbS" id="2FAlTN$JHE3" role="3eOfB_">
+                      <node concept="3clFbJ" id="2FAlTN$JHE4" role="3cqZAp">
+                        <node concept="3y3z36" id="2FAlTN$JLsJ" role="3clFbw">
+                          <node concept="2OqwBi" id="2FAlTN$JHE7" role="3uHU7B">
+                            <node concept="3GMtW1" id="2FAlTN$JHE8" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="2FAlTN$JHE9" role="2OqNvi">
+                              <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                            </node>
+                          </node>
+                          <node concept="3cmrfG" id="2FAlTN$JHE6" role="3uHU7w">
                             <property role="3cmrfH" value="0" />
                           </node>
+                        </node>
+                        <node concept="3clFbS" id="2FAlTN$JHEa" role="3clFbx">
+                          <node concept="3clFbF" id="2FAlTN$JHEb" role="3cqZAp">
+                            <node concept="37vLTI" id="2FAlTN$JHEc" role="3clFbG">
+                              <node concept="3cmrfG" id="2FAlTN$JHEd" role="37vLTx">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                              <node concept="2OqwBi" id="2FAlTN$JHEe" role="37vLTJ">
+                                <node concept="3GMtW1" id="2FAlTN$JHEf" role="2Oq$k0" />
+                                <node concept="3TrcHB" id="2FAlTN$JHEg" role="2OqNvi">
+                                  <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2FAlTN$JIJI" role="3eO9$A">
+                      <node concept="10M0yZ" id="2FAlTN$JIfP" role="2Oq$k0">
+                        <ref role="3cqZAo" to="u5to:2FAlTN$Jks1" resolve="GEHEEL_GETAL" />
+                        <ref role="1PxDUh" to="u5to:4HmLHo98HKV" resolve="AfrondingLabels" />
+                      </node>
+                      <node concept="liA8E" id="2FAlTN$JKCL" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                        <node concept="3GLrbK" id="2FAlTN$JKMF" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="9aQIb" id="2FAlTN$JQpD" role="9aQIa">
+                    <node concept="3clFbS" id="2FAlTN$JQpE" role="9aQI4">
+                      <node concept="3clFbJ" id="2JHQGlCoxAa" role="3cqZAp">
+                        <node concept="2dkUwp" id="2FAlTN$JZ0I" role="3clFbw">
                           <node concept="2OqwBi" id="2JHQGlCoxPz" role="3uHU7B">
                             <node concept="3GMtW1" id="2JHQGlCoxAz" role="2Oq$k0" />
                             <node concept="3TrcHB" id="2JHQGlCoycN" role="2OqNvi">
                               <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
                             </node>
                           </node>
+                          <node concept="3cmrfG" id="2JHQGlCo_jx" role="3uHU7w">
+                            <property role="3cmrfH" value="0" />
+                          </node>
                         </node>
                         <node concept="3clFbS" id="2JHQGlCoxAc" role="3clFbx">
                           <node concept="3clFbF" id="2JHQGlCoAoQ" role="3cqZAp">
                             <node concept="37vLTI" id="2JHQGlCoCZl" role="3clFbG">
-                              <node concept="3cmrfG" id="2JHQGlCoDvG" role="37vLTx">
-                                <property role="3cmrfH" value="0" />
-                              </node>
                               <node concept="2OqwBi" id="2JHQGlCoABU" role="37vLTJ">
                                 <node concept="3GMtW1" id="2JHQGlCoAoP" role="2Oq$k0" />
                                 <node concept="3TrcHB" id="2JHQGlCoAZ6" role="2OqNvi">
                                   <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
                                 </node>
+                              </node>
+                              <node concept="3cmrfG" id="2FAlTN$K1jQ" role="37vLTx">
+                                <property role="3cmrfH" value="1" />
                               </node>
                             </node>
                           </node>

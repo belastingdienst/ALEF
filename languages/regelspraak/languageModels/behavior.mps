@@ -12429,6 +12429,46 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2FAlTN$JsW3" role="13h7CS">
+      <property role="TrG5h" value="isGeheelGetalGeselecteerd" />
+      <node concept="3Tm1VV" id="2FAlTN$JsW4" role="1B3o_S" />
+      <node concept="10P_77" id="2FAlTN$JsW5" role="3clF45" />
+      <node concept="3clFbS" id="2FAlTN$JsW6" role="3clF47">
+        <node concept="3cpWs6" id="2FAlTN$JsW7" role="3cqZAp">
+          <node concept="3clFbC" id="2FAlTN$Juac" role="3cqZAk">
+            <node concept="2OqwBi" id="2FAlTN$JsWa" role="3uHU7B">
+              <node concept="13iPFW" id="2FAlTN$JsWb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2FAlTN$JsWc" role="2OqNvi">
+                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="2FAlTN$JsW9" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2FAlTNNtdSL" role="13h7CS">
+      <property role="TrG5h" value="isDecimalenGeselecteerd" />
+      <node concept="3Tm1VV" id="2FAlTNNtdSM" role="1B3o_S" />
+      <node concept="10P_77" id="2FAlTNNtetz" role="3clF45" />
+      <node concept="3clFbS" id="2FAlTNNtdSO" role="3clF47">
+        <node concept="3cpWs6" id="2FAlTNNteDw" role="3cqZAp">
+          <node concept="3eOSWO" id="2FAlTNNth03" role="3cqZAk">
+            <node concept="3cmrfG" id="2FAlTNNth06" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="2FAlTNNteUv" role="3uHU7B">
+              <node concept="13iPFW" id="2FAlTNNteFp" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2FAlTNNtfTK" role="2OqNvi">
+                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="4HmLHo98JDb" role="13h7CS">
       <property role="TrG5h" value="getAfrondingLabel" />
       <node concept="3Tm1VV" id="4HmLHo98JDc" role="1B3o_S" />
@@ -12447,6 +12487,22 @@
             <node concept="13iPFW" id="3JRruOfNnBq" role="2Oq$k0" />
             <node concept="2qgKlT" id="3JRruOfNoAJ" role="2OqNvi">
               <ref role="37wK5l" node="3JRruObwBoN" resolve="isTallenGeselecteerd" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2FAlTN$Jnkb" role="3cqZAp">
+          <node concept="3clFbS" id="2FAlTN$Jnkd" role="3clFbx">
+            <node concept="3cpWs6" id="2FAlTN$Jw3V" role="3cqZAp">
+              <node concept="10M0yZ" id="2FAlTN$Jy3G" role="3cqZAk">
+                <ref role="3cqZAo" node="2FAlTN$Jks1" resolve="GEHEEL_GETAL" />
+                <ref role="1PxDUh" node="4HmLHo98HKV" resolve="AfrondingLabels" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2FAlTN$JuZH" role="3clFbw">
+            <node concept="13iPFW" id="2FAlTN$JuJv" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2FAlTN$JvZ7" role="2OqNvi">
+              <ref role="37wK5l" node="2FAlTN$JsW3" resolve="isGeheelGetalGeselecteerd" />
             </node>
           </node>
         </node>
@@ -60614,6 +60670,15 @@
       <node concept="17QB3L" id="4HmLHo98HVe" role="1tU5fm" />
       <node concept="Xl_RD" id="4HmLHo98HVf" role="33vP2m">
         <property role="Xl_RC" value="-tallen" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2FAlTN$Jks1" role="jymVt">
+      <property role="TrG5h" value="GEHEEL_GETAL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2FAlTN$Jkas" role="1B3o_S" />
+      <node concept="17QB3L" id="2FAlTN$JkiM" role="1tU5fm" />
+      <node concept="Xl_RD" id="2FAlTN$JkuU" role="33vP2m">
+        <property role="Xl_RC" value="een geheel getal" />
       </node>
     </node>
     <node concept="2tJIrI" id="2v83bYNovTG" role="jymVt" />
