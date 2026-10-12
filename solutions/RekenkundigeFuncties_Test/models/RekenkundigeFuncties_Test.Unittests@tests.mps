@@ -10,7 +10,6 @@
     <use id="471364db-8078-4933-b2ef-88232bfa34fc" name="gegevensspraak" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="bef79dc4-9060-4318-a10a-46eb2fa0f3b1" name="translator" version="1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
   </languages>
   <imports>
     <import index="r2nh" ref="r:05a8f765-7ff1-45ab-8d9d-4557ba983db4(regelspraak.typesystem)" />
