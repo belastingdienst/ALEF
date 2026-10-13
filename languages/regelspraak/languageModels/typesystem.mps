@@ -12009,12 +12009,22 @@
             </node>
             <node concept="mw_s8" id="t3Q2DYqBjn" role="1ZfhK$">
               <node concept="1Z2H0r" id="t3Q2DYqAXu" role="mwGJk">
-                <node concept="2OqwBi" id="t3Q2DYqB2z" role="1Z2MuG">
-                  <node concept="1YBJjd" id="t3Q2DYqAZU" role="2Oq$k0">
-                    <ref role="1YBMHb" node="t3Q2DYmX_h" resolve="node" />
+                <node concept="2OqwBi" id="7wz_GqWaVgD" role="1Z2MuG">
+                  <node concept="2OqwBi" id="7wz_GqWaTTW" role="2Oq$k0">
+                    <node concept="2OqwBi" id="t3Q2DYqB2z" role="2Oq$k0">
+                      <node concept="1YBJjd" id="t3Q2DYqAZU" role="2Oq$k0">
+                        <ref role="1YBMHb" node="t3Q2DYmX_h" resolve="node" />
+                      </node>
+                      <node concept="3TrEf2" id="t3Q2DYqB88" role="2OqNvi">
+                        <ref role="3Tt5mk" to="m234:7O88o1$Pe$L" resolve="object" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="7wz_GqWaV5V" role="2OqNvi">
+                      <ref role="37wK5l" to="8l26:2noOFp_6pJO" resolve="type" />
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="t3Q2DYqB88" role="2OqNvi">
-                    <ref role="3Tt5mk" to="m234:7O88o1$Pe$L" resolve="object" />
+                  <node concept="2qgKlT" id="7wz_GqWaVVn" role="2OqNvi">
+                    <ref role="37wK5l" to="8l26:6jduagf_$iN" resolve="zonderDimensies" />
                   </node>
                 </node>
               </node>
@@ -12053,6 +12063,14 @@
                 <node concept="Xl_RD" id="t3Q2DYqC4O" role="3uHU7w">
                   <property role="Xl_RC" value=" is geen kenmerk van " />
                 </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2JunpjKnAiq" role="1ZmcU8">
+              <node concept="1YBJjd" id="2JunpjKn_Zy" role="2Oq$k0">
+                <ref role="1YBMHb" node="t3Q2DYmX_h" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="2JunpjKnBPI" role="2OqNvi">
+                <ref role="3Tt5mk" to="m234:7O88o1$Pe$L" resolve="object" />
               </node>
             </node>
           </node>
