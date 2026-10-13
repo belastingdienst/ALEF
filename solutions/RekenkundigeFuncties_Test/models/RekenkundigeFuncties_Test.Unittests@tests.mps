@@ -4687,5 +4687,37 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="2j7IssY8ecV">
+    <property role="3GE5qa" value="afronding_editor_tests" />
+    <property role="TrG5h" value="Afronden_BackspaceActionConditie" />
+    <node concept="1qefOq" id="2j7IssY8efe" role="25YQCW">
+      <node concept="29kKyO" id="2j7IssY8efc" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2j7IssY8efd" role="29kKy2" />
+        <node concept="LIFWc" id="2j7IssY8eyw" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ReadOnlyModelAccessor_6rwag2_b0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2j7IssY8erJ" role="25YQFr">
+      <node concept="29kKyO" id="2j7IssY8erH" role="1qenE9">
+        <property role="35Sgwk" value="true" />
+        <property role="29kKyf" value="-1" />
+        <node concept="2MOiMP" id="2j7IssY8erI" role="29kKy2" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="2j7IssY8ext" role="LjaKd">
+      <node concept="2HxZob" id="2j7IssY8exr" role="3cqZAp">
+        <node concept="1iFQzN" id="2j7IssY8exI" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
