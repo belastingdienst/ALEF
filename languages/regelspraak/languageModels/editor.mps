@@ -759,6 +759,7 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
+      <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
@@ -30270,24 +30271,39 @@
                 </node>
               </node>
             </node>
-            <node concept="1Wc70l" id="7Ja95Kqoq2o" role="3clFbw">
-              <node concept="3clFbC" id="7Ja95KqomSq" role="3uHU7B">
-                <node concept="2EnYce" id="7Ja95KqojZG" role="3uHU7B">
-                  <node concept="37vLTw" id="7Ja95KqojpV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7Ja95Kqoehv" resolve="cell" />
-                  </node>
-                  <node concept="liA8E" id="7Ja95Kqol3m" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell_Label.getCaretPosition()" resolve="getCaretPosition" />
+            <node concept="1Wc70l" id="2j7IssVyFEo" role="3clFbw">
+              <node concept="3eOVzh" id="2j7IssVyLPY" role="3uHU7w">
+                <node concept="2OqwBi" id="2j7IssVyGrn" role="3uHU7B">
+                  <node concept="0IXxy" id="2j7IssVyFKS" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2j7IssVyHO8" role="2OqNvi">
+                    <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
                   </node>
                 </node>
-                <node concept="3cmrfG" id="7Ja95KqonOQ" role="3uHU7w">
-                  <property role="3cmrfH" value="0" />
+                <node concept="1ZRNhn" id="2j7IssVyN0n" role="3uHU7w">
+                  <node concept="3cmrfG" id="2j7IssVyN2y" role="2$L3a6">
+                    <property role="3cmrfH" value="1" />
+                  </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="3JRruObwKYl" role="3uHU7w">
-                <node concept="0IXxy" id="3JRruObwKC2" role="2Oq$k0" />
-                <node concept="2qgKlT" id="3JRruObwLlI" role="2OqNvi">
-                  <ref role="37wK5l" to="u5to:3JRruObwBoN" resolve="isTallenGeselecteerd" />
+              <node concept="1Wc70l" id="7Ja95Kqoq2o" role="3uHU7B">
+                <node concept="3clFbC" id="7Ja95KqomSq" role="3uHU7B">
+                  <node concept="2EnYce" id="7Ja95KqojZG" role="3uHU7B">
+                    <node concept="37vLTw" id="7Ja95KqojpV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7Ja95Kqoehv" resolve="cell" />
+                    </node>
+                    <node concept="liA8E" id="7Ja95Kqol3m" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell_Label.getCaretPosition()" resolve="getCaretPosition" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="7Ja95KqonOQ" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3JRruObwKYl" role="3uHU7w">
+                  <node concept="0IXxy" id="3JRruObwKC2" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3JRruObwLlI" role="2OqNvi">
+                    <ref role="37wK5l" to="u5to:3JRruObwBoN" resolve="isTallenGeselecteerd" />
+                  </node>
                 </node>
               </node>
             </node>
