@@ -1860,7 +1860,7 @@
     <property role="EcuMT" value="993564824857576101" />
     <property role="3GE5qa" value="acties" />
     <property role="TrG5h" value="FeitCreatie" />
-    <property role="34LRSv" value="feitcreatie" />
+    <property role="34LRSv" value="Feitcreatie" />
     <ref role="1TJDcQ" node="1ibElXOlZMm" resolve="Actie" />
     <node concept="1TJgyj" id="4czgdIbv0tB" role="1TKVEi">
       <property role="IQ2ns" value="4837781736408221543" />
