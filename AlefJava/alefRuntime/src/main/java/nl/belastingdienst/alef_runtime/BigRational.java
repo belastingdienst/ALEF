@@ -362,7 +362,8 @@ public final class BigRational extends Number implements Comparable<BigRational>
 
     public BigRational sqrt(final int digits, final RoundingMode mode) {
         if (signum() < 0) { throw new ArithmeticException("Wortel van negatief getal"); }
-        int genoegDigits = digits + 1;
+        // digits < 0 means rounding to tens, hundreds, ... (tallen): compute with at least 1 extra decimal, round once at the end.
+        int genoegDigits = Math.max(digits, 0) + 1;
         BigInteger sqrtNumDenPow = sqrt(this.num.multiply(this.den).multiply(BigInteger.TEN.pow(genoegDigits * 2)));
         return new BigRational(sqrtNumDenPow, this.den.multiply(BigInteger.TEN.pow(genoegDigits))).round(digits, mode);
     }
@@ -379,7 +380,9 @@ public final class BigRational extends Number implements Comparable<BigRational>
             final int c = n.compareTo(BigRational.ONE);
             if (!BigInteger.ONE.equals(n.den)) {
                 final BigDecimal g = estimatePow(n, d, c);
-                r = r.newtonRaphson(n.den, g, (negative ? digits * 2 : digits) + 2);
+                // digits < 0 means rounding to tens, hundreds, ... (tallen): that rounding happens at the end, not in the approximation.
+                final int werkDigits = Math.max(digits, 0);
+                r = r.newtonRaphson(n.den, g, (negative ? werkDigits * 2 : werkDigits) + 2);
                 if (this.num.compareTo(BigInteger.ZERO) < 0 && c > 0 && !n.den.equals(BigInteger.ONE)) { r = r.negate(); }
             }
             if (negative) { r = r.reciprocal(); }
