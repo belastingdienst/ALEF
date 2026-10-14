@@ -8,6 +8,9 @@
   <registry>
     <language id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts">
       <concept id="4485080112264973245" name="contexts.structure.Witruimte" flags="ng" index="1uxNW$" />
+      <concept id="159216743683133206" name="contexts.structure.Commentaar" flags="ng" index="3FGEBu">
+        <child id="159216743683133207" name="text" index="3FGEBv" />
+      </concept>
     </language>
     <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
       <concept id="7850059172684106637" name="regelspraak.structure.Afronden" flags="ng" index="29kKyO">
@@ -39,6 +42,9 @@
       </concept>
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
+      </concept>
+      <concept id="8116110704340985492" name="regelspraak.structure.Worteltrekken" flags="ng" index="LnP4V">
+        <child id="8116110704340985505" name="radicand" index="LnP4e" />
       </concept>
       <concept id="5696347358893285502" name="regelspraak.structure.ISelectie" flags="ngI" index="137dR0">
         <child id="6774523643279660910" name="selector" index="eaaoM" />
@@ -146,6 +152,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -284,11 +301,27 @@
           <property role="3GST$d" value="-1" />
         </node>
       </node>
+      <node concept="2bv6ZS" id="I0S54gFHBZ" role="2bv01j">
+        <property role="16Ztxt" value="true" />
+        <property role="TrG5h" value="wortel van een heel grote getal afgerond op 1000-tallen" />
+        <node concept="1EDDeX" id="I0S54gFIkU" role="1EDDcc">
+          <property role="3GST$d" value="-1" />
+        </node>
+      </node>
     </node>
     <node concept="1uxNW$" id="15d$3Cd7i8y" role="2bv6Cn" />
   </node>
   <node concept="2bQVlO" id="15d$3Cd7jFW">
     <property role="TrG5h" value="Regels" />
+    <node concept="3FGEBu" id="I0S54gEU_h" role="1HSqhF">
+      <node concept="1Pa9Pv" id="I0S54gEU_i" role="3FGEBv">
+        <node concept="1PaTwC" id="I0S54gEU_j" role="1PaQFQ">
+          <node concept="3oM_SD" id="I0S54gEU_k" role="1PaTwD">
+            <property role="3oM_SC" value="Voertuig" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1HSql3" id="15d$3Cd8$2I" role="1HSqhF">
       <property role="TrG5h" value="Afronden op 100 - expliciet geschreven berekening" />
       <node concept="1wO7pt" id="15d$3Cd8$2K" role="kiesI">
@@ -487,8 +520,17 @@
         <node concept="2ljwA5" id="2FAlTNDIOKC" role="1nvPAL" />
       </node>
     </node>
+    <node concept="3FGEBu" id="I0S54gEVJY" role="1HSqhF">
+      <node concept="1Pa9Pv" id="I0S54gEVJZ" role="3FGEBv">
+        <node concept="1PaTwC" id="I0S54gEVK0" role="1PaQFQ">
+          <node concept="3oM_SD" id="I0S54gEVK1" role="1PaTwD">
+            <property role="3oM_SC" value="BNP" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1HSql3" id="4O2qdTt_xJl" role="1HSqhF">
-      <property role="TrG5h" value="heel grote getal afgerond op 10-tallen" />
+      <property role="TrG5h" value="Heel grote getal afgerond op 10-tallen" />
       <node concept="1wO7pt" id="4O2qdTt_xJn" role="kiesI">
         <node concept="2boe1W" id="4O2qdTt_xJo" role="1wO7pp">
           <node concept="2boe1X" id="4O2qdTt_yBQ" role="1wO7i6">
@@ -518,7 +560,103 @@
         <node concept="2ljwA5" id="4O2qdTt_xJq" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1uxNW$" id="4O2qdTt_y3l" role="1HSqhF" />
+    <node concept="1HSql3" id="TqWqs9bXO2" role="1HSqhF">
+      <property role="TrG5h" value="Heel grote getal afgerond op 100-tallen" />
+      <node concept="1wO7pt" id="TqWqs9bXO3" role="kiesI">
+        <node concept="2boe1W" id="TqWqs9bXO4" role="1wO7pp">
+          <node concept="2boe1X" id="TqWqs9bXO5" role="1wO7i6">
+            <node concept="3_mHL5" id="TqWqs9bXO6" role="2bokzF">
+              <node concept="c2t0s" id="TqWqs9bYCR" role="eaaoM">
+                <ref role="Qu8KH" node="4O2qdTt_we2" resolve="heel grote getal afgerond op 100-tallen " />
+              </node>
+              <node concept="3_kdyS" id="TqWqs9bXO8" role="pQQuc">
+                <ref role="Qu8KH" node="4O2qdTt_vew" resolve="BNP" />
+              </node>
+            </node>
+            <node concept="29kKyO" id="TqWqs9bXO9" role="2bokzm">
+              <property role="35Sgwk" value="true" />
+              <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+              <property role="29kKyf" value="-2" />
+              <node concept="3_mHL5" id="TqWqs9bXOa" role="29kKy2">
+                <node concept="c2t0s" id="TqWqs9bXOb" role="eaaoM">
+                  <ref role="Qu8KH" node="4O2qdTt_vnd" resolve="heel grote getal" />
+                </node>
+                <node concept="3yS1BT" id="TqWqs9bXOc" role="pQQuc">
+                  <ref role="3yS1Ki" node="TqWqs9bXO8" resolve="BNP" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="TqWqs9bXOd" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1HSql3" id="TqWqs9bZ1V" role="1HSqhF">
+      <property role="TrG5h" value="Heel grote getal afgerond op 1000-tallen" />
+      <node concept="1wO7pt" id="TqWqs9bZ1W" role="kiesI">
+        <node concept="2boe1W" id="TqWqs9bZ1X" role="1wO7pp">
+          <node concept="2boe1X" id="TqWqs9bZ1Y" role="1wO7i6">
+            <node concept="3_mHL5" id="TqWqs9bZ1Z" role="2bokzF">
+              <node concept="c2t0s" id="TqWqs9bZzv" role="eaaoM">
+                <ref role="Qu8KH" node="4O2qdTt_vMM" resolve="heel grote getal afgerond op 1000-tallen" />
+              </node>
+              <node concept="3_kdyS" id="TqWqs9bZ21" role="pQQuc">
+                <ref role="Qu8KH" node="4O2qdTt_vew" resolve="BNP" />
+              </node>
+            </node>
+            <node concept="29kKyO" id="TqWqs9bZ22" role="2bokzm">
+              <property role="35Sgwk" value="true" />
+              <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+              <property role="29kKyf" value="-3" />
+              <node concept="3_mHL5" id="TqWqs9bZ23" role="29kKy2">
+                <node concept="c2t0s" id="TqWqs9bZ24" role="eaaoM">
+                  <ref role="Qu8KH" node="4O2qdTt_vnd" resolve="heel grote getal" />
+                </node>
+                <node concept="3yS1BT" id="TqWqs9bZ25" role="pQQuc">
+                  <ref role="3yS1Ki" node="TqWqs9bZ21" resolve="BNP" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="TqWqs9bZ26" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1HSql3" id="I0S54gFf5$" role="1HSqhF">
+      <property role="TrG5h" value="Wortel en afgerond op 1000-tallen" />
+      <node concept="1wO7pt" id="I0S54gFf5_" role="kiesI">
+        <node concept="2boe1W" id="I0S54gFf5A" role="1wO7pp">
+          <node concept="2boe1X" id="I0S54gFf5B" role="1wO7i6">
+            <node concept="3_mHL5" id="I0S54gFf5C" role="2bokzF">
+              <node concept="c2t0s" id="I0S54gFL_D" role="eaaoM">
+                <ref role="Qu8KH" node="I0S54gFHBZ" resolve="wortel van een heel grote getal afgerond op 1000-tallen" />
+              </node>
+              <node concept="3_kdyS" id="I0S54gFf5E" role="pQQuc">
+                <ref role="Qu8KH" node="4O2qdTt_vew" resolve="BNP" />
+              </node>
+            </node>
+            <node concept="29kKyO" id="I0S54gFmpm" role="2bokzm">
+              <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+              <property role="29kKyf" value="-3" />
+              <node concept="2E1DPt" id="I0S54gFn6m" role="29kKy2">
+                <node concept="LnP4V" id="I0S54gFn6n" role="2CAJk9">
+                  <node concept="3_mHL5" id="I0S54gFKBo" role="LnP4e">
+                    <node concept="c2t0s" id="I0S54gFKLa" role="eaaoM">
+                      <ref role="Qu8KH" node="4O2qdTt_vnd" resolve="heel grote getal" />
+                    </node>
+                    <node concept="3yS1BT" id="I0S54gFKL9" role="pQQuc">
+                      <ref role="3yS1Ki" node="I0S54gFf5E" resolve="BNP" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="I0S54gFf5J" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1uxNW$" id="I0S54gFeef" role="1HSqhF" />
   </node>
   <node concept="1rXTK1" id="15d$3Cd7ljt">
     <property role="TrG5h" value="Afronden" />
@@ -891,7 +1029,7 @@
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="4O2qdTt_w$c" resolve="heel grote getal afgerond op 10-tallen" />
           <node concept="1EQTEq" id="4O2qdTt_A8h" role="3mzBi6">
-            <property role="3e6Tb2" value="100000" />
+            <property role="3e6Tb2" value="1000000" />
           </node>
         </node>
       </node>
@@ -902,6 +1040,102 @@
           <ref role="3_ceKs" node="4O2qdTt_vnd" resolve="heel grote getal" />
           <node concept="1EQTEq" id="4O2qdTt__gx" role="3_ceKu">
             <property role="3e6Tb2" value="1000000,45678" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="4O2qdTtB82x" role="10_$IM">
+      <property role="TrG5h" value="Afronden op 10-tallen (1234567.89 -&gt; 1234570)" />
+      <node concept="4Oh8J" id="4O2qdTtB82y" role="4Ohb1">
+        <ref role="4Oh8G" node="4O2qdTt_vew" resolve="BNP" />
+        <ref role="3teO_M" node="4O2qdTtB82_" resolve="BNP" />
+        <node concept="3mzBic" id="4O2qdTtB82z" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="4O2qdTt_w$c" resolve="heel grote getal afgerond op 10-tallen" />
+          <node concept="1EQTEq" id="4O2qdTtB82$" role="3mzBi6">
+            <property role="3e6Tb2" value="1234570" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="4O2qdTtB82_" role="4Ohaa">
+        <property role="TrG5h" value="BNP" />
+        <ref role="4OhPH" node="4O2qdTt_vew" resolve="BNP" />
+        <node concept="3_ceKt" id="4O2qdTtB82A" role="4OhPJ">
+          <ref role="3_ceKs" node="4O2qdTt_vnd" resolve="heel grote getal" />
+          <node concept="1EQTEq" id="4O2qdTtB82B" role="3_ceKu">
+            <property role="3e6Tb2" value="1234567,89" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="4O2qdTtBfed" role="10_$IM">
+      <property role="TrG5h" value="Afronden op 100-tallen (1234567.78 -&gt; 1234600)" />
+      <node concept="4Oh8J" id="4O2qdTtBfee" role="4Ohb1">
+        <ref role="4Oh8G" node="4O2qdTt_vew" resolve="BNP" />
+        <ref role="3teO_M" node="4O2qdTtBfef" resolve="BNP" />
+        <node concept="3mzBic" id="4O2qdTtBgeM" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="4O2qdTt_we2" resolve="heel grote getal afgerond op 100-tallen " />
+          <node concept="1EQTEq" id="4O2qdTtBgeS" role="3mzBi6">
+            <property role="3e6Tb2" value="1234600" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="4O2qdTtBfef" role="4Ohaa">
+        <property role="TrG5h" value="BNP" />
+        <ref role="4OhPH" node="4O2qdTt_vew" resolve="BNP" />
+        <node concept="3_ceKt" id="4O2qdTtBfUs" role="4OhPJ">
+          <ref role="3_ceKs" node="4O2qdTt_vnd" resolve="heel grote getal" />
+          <node concept="1EQTEq" id="4O2qdTtBfUx" role="3_ceKu">
+            <property role="3e6Tb2" value="1234567,78" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="4O2qdTtBo$l" role="10_$IM">
+      <property role="TrG5h" value="Afronden op 1000-tallen (1234567.77 -&gt; 1235000)" />
+      <node concept="4Oh8J" id="4O2qdTtBo$m" role="4Ohb1">
+        <ref role="4Oh8G" node="4O2qdTt_vew" resolve="BNP" />
+        <ref role="3teO_M" node="4O2qdTtBo$p" resolve="BNP" />
+        <node concept="3mzBic" id="4O2qdTtBo$n" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="4O2qdTt_vMM" resolve="heel grote getal afgerond op 1000-tallen" />
+          <node concept="1EQTEq" id="4O2qdTtBo$o" role="3mzBi6">
+            <property role="3e6Tb2" value="1235000" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="4O2qdTtBo$p" role="4Ohaa">
+        <property role="TrG5h" value="BNP" />
+        <ref role="4OhPH" node="4O2qdTt_vew" resolve="BNP" />
+        <node concept="3_ceKt" id="4O2qdTtBo$q" role="4OhPJ">
+          <ref role="3_ceKs" node="4O2qdTt_vnd" resolve="heel grote getal" />
+          <node concept="1EQTEq" id="4O2qdTtBo$r" role="3_ceKu">
+            <property role="3e6Tb2" value="1234567,77" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="I0S54gFLPP" role="10_$IM">
+      <property role="TrG5h" value="Wortel van heel grote getal is afgerond op 1000-tallen (2250000)" />
+      <node concept="4Oh8J" id="I0S54gFLPQ" role="4Ohb1">
+        <ref role="4Oh8G" node="4O2qdTt_vew" resolve="BNP" />
+        <ref role="3teO_M" node="I0S54gFLPT" resolve="BNP" />
+        <node concept="3mzBic" id="I0S54gFLPR" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="I0S54gFHBZ" resolve="wortel van een heel grote getal afgerond op 1000-tallen" />
+          <node concept="1EQTEq" id="I0S54gFLPS" role="3mzBi6">
+            <property role="3e6Tb2" value="2000" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="I0S54gFLPT" role="4Ohaa">
+        <property role="TrG5h" value="BNP" />
+        <ref role="4OhPH" node="4O2qdTt_vew" resolve="BNP" />
+        <node concept="3_ceKt" id="I0S54gFLPU" role="4OhPJ">
+          <ref role="3_ceKs" node="4O2qdTt_vnd" resolve="heel grote getal" />
+          <node concept="1EQTEq" id="I0S54gFLPV" role="3_ceKu">
+            <property role="3e6Tb2" value="2250000" />
           </node>
         </node>
       </node>
