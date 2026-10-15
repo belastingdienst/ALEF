@@ -24,7 +24,7 @@ if [ -d "$MPS_HOME/lib/jna/amd64" ]; then
   fi
 fi
 
-ANT_HOME=$MPS_HOME/lib/ant
+ANT_HOME="$MPS_HOME"/lib/ant
 "${MPS_JAVA_EXEC}" \
 	-cp "$ANT_HOME/lib/ant.jar:$ANT_HOME/lib/ant-launcher.jar:$ANT_HOME/lib/ant-junit.jar:$ANT_HOME/lib/ant-junit4.jar:$ANT_HOME/lib/ant-junitlauncher.jar" \
 	-Dant.home="$ANT_HOME" \

@@ -9,7 +9,7 @@ fi
 
 # Convert MPS_HOME to *nix path if it is a Windows path, i.e. contain ':':
 if [[ "$MPS_HOME" == *":"* ]]; then
-	export MPS_HOME="$(cygpath -u $MPS_HOME)"
+	export MPS_HOME="$(cygpath -u "$MPS_HOME")"
     echo "Environment variable 'MPS_HOME' contains a Windows path."
 	echo "Converting to *nix path: $MPS_HOME"
 fi
