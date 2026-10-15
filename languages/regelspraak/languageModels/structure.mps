@@ -714,6 +714,11 @@
       <property role="IQ2nx" value="8397212885425912778" />
       <ref role="AX2Wp" to="3ic2:4WetKT2PyUm" resolve="TijdsGranulariteit" />
     </node>
+    <node concept="1TJgyi" id="1KegIuBX47u" role="1TKVEl">
+      <property role="IQ2nx" value="2021626845458612702" />
+      <property role="TrG5h" value="totEnMet" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="7i8Ta439fJ8" role="PzmwI">
       <ref role="PrY4T" node="1ibElXOi63u" resolve="Berekening" />
     </node>
