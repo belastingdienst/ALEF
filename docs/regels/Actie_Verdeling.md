@@ -8,13 +8,18 @@ Opties binnen de toepassing van de actie:
 * Afronden
 * Verdelen vanuit één of meerdere verdelers
 Verdelingen vanuit meerdere verdelers met verdeelplafonds en restanten. Kan gebruikt worden via de intentie “Verdeel Vanuit Meerdere Verdelers” beschikbaar op de verdeling. Verdelers en ontvangers bieden de volgende optie.
-* Verdeling op basis van rangorde
-Dit houdt in dat voorkomens van objecten in groepen worden ingedeeld op basis van de toenemende/afnemende volgorde van de waardes in 1 of meerdere attributen (numeriek of datum-tijd)
+* Verdeling met subgroepen 
+Dit houdt in dat Ontvangers in subgroepen worden ingedeeld, waarover in een volgorde wordt verdeeld.
 
 Ontvangers hebben daarbij ook de volgende opties extra
 
-* Verdelen in **gelijke delen** of **naar rato** van een attribuut.
-Verdeeld op basis van het aandeel van een ontvanger gedeeld door het totale aandeel van de ontvangers in de groep (bijvoorbeeld 1/3 voor 1 ontvanger binnen een groep van 3). Naar rato stelt een gebruiker in staat om zelf het aandeel per ontvanger in te stellen. Beide opties kunnen gebruikt worden zonder de **rangorde** optie of in combinatie met de rangorde optie voor groepen groter dan 1. N.B. verdelers hebben deze optie niet dus een verdeling met meerdere verdelers mag nooit groepen groter dan 1 hebben, groepen groter dan 1 worden als inconsistent gemarkeerd.
+* Verdelen in **gelijke delen**
+Verdeeld op basis van het aandeel van een ontvanger gedeeld door het totale aandeel van de ontvangers in de groep (bijvoorbeeld 1/3 voor 1 ontvanger binnen een groep van 3).
+* Verdelen **naar rato**
+Naar rato stelt een gebruiker in staat om zelf het aandeel per ontvanger in te stellen.
+* Groepen
+Beide opties kunnen gebruikt worden zonder of met de **Verdeel over groepen** optie.
+N.B. verdelers hebben deze optie niet dus een verdeling met meerdere verdelers mag nooit groepen groter dan 1 hebben, groepen groter dan 1 worden als inconsistent gemarkeerd.
 * De te ontvangen hoeveelheid kan worden beperkt door een **aanspraak**.
 De aanspraak bevat de maximale hoeveelheid die een ontvanger toegewezen kan krijgen. Het is alleen mogelijk om een aanspraak op te nemen voor de situatie waarin verdeeld wordt naar rato.
 
@@ -42,7 +47,7 @@ In dit geval wordt de hoeveelheid die door de Verdeler verdeeld wordt (verdeelpl
 
 ## Voorbeeld 2 - Verdeling met groepen
 
-In dit geval wordt de hoeveelheid die door de Verdeler verdeeld wordt (verdeelplafond) toegewezen aan de Ontvangers (aandeel in verdeelplafond) op basis van een volgorde die wordt bepaald door een rangorde-attribuut (waarmee de groep wordt gevormd) met een toenemende volgorde.
+In dit geval wordt de hoeveelheid die door de Verdeler verdeeld wordt (verdeelplafond) toegewezen aan de Ontvangers (aandeel in verdeelplafond) op basis van een groepering die wordt bepaald door een attribuut. De Ontvangers met dezelfde waarde voor dat attribuut (bijvoorbeeld 'leeftijd') worden in subgroepen opgedeeld en de verdeling vindt dan plaats over die subgroepen in een volgorde.
 
 De aanspraak die een Ontvanger kan hebben wordt bepaald door het aanspraak-attribuut en bepaalt het maximale aandeel in het verdeelplafond voor de Ontvanger. Tenslotte wordt door een rato-attribuut bepaald wat de verdeling moet zijn bij een gelijk criterium.
 
