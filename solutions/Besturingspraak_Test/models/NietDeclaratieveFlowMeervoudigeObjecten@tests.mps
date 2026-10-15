@@ -110,7 +110,7 @@
       </node>
       <node concept="2bv6ZS" id="5ZfYJuj7H5U" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" dummy " />
+        <property role="TrG5h" value="dummy" />
         <node concept="THod0" id="5ZfYJuj7H75" role="1EDDcc" />
       </node>
     </node>
@@ -241,7 +241,7 @@
       <property role="TrG5h" value="Object2" />
       <node concept="2bv6ZS" id="68VlqaaHOlw" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" dummy " />
+        <property role="TrG5h" value="dummy" />
         <node concept="THod0" id="68VlqaaHOlx" role="1EDDcc" />
       </node>
     </node>

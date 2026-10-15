@@ -282,7 +282,7 @@
       </node>
       <node concept="2bv6ZS" id="hFiMIsu8w3" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" duurInDagen" />
+        <property role="TrG5h" value="duurInDagen" />
         <node concept="1EDDeX" id="hFiMIsu8Te" role="1EDDcc">
           <property role="3GST$d" value="0" />
         </node>
@@ -561,7 +561,7 @@
           <node concept="2boe1X" id="hFiMIsu9ew" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvx6Z" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvx70" role="eaaoM">
-                <ref role="Qu8KH" node="hFiMIsu8w3" resolve=" duurInDagen" />
+                <ref role="Qu8KH" node="hFiMIsu8w3" resolve="duurInDagen" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvx6Y" role="pQQuc">
                 <ref role="Qu8KH" node="2WqscnMNSt0" resolve="DatumVerschil" />

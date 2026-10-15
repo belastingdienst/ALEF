@@ -84,7 +84,7 @@
       </node>
       <node concept="2bv6ZS" id="1$hZSWw6Vj7" role="2bv01j">
         <property role="16Ztxt" value="true" />
-        <property role="TrG5h" value=" reeelNummer" />
+        <property role="TrG5h" value="reeelNummer" />
         <node concept="1EDDeX" id="1$hZSWw6VoD" role="1EDDcc">
           <property role="3GST$d" value="-1" />
         </node>

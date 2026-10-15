@@ -246,7 +246,7 @@
       </node>
       <node concept="2mG0Ck" id="2N4lNCBnLYo" role="2mG0Ct">
         <property role="u$DAK" value="true" />
-        <property role="TrG5h" value="Erfbelasting " />
+        <property role="TrG5h" value="erfbelasting" />
         <ref role="1fE_qF" node="2N4lNCBnLWA" resolve="belasting" />
       </node>
     </node>
@@ -269,7 +269,7 @@
       <property role="TrG5h" value="verdeling testament" />
       <node concept="2mG0Ck" id="2N4lNCBnM4s" role="2mG0Ct">
         <property role="u$DAK" value="true" />
-        <property role="TrG5h" value="verdeling " />
+        <property role="TrG5h" value="verdeling" />
         <ref role="1fE_qF" node="2N4lNCBnM2l" resolve="verdeling" />
       </node>
       <node concept="2mG0Ck" id="2N4lNCBnM4t" role="2mG0Ct">
@@ -306,7 +306,7 @@
                 </node>
                 <node concept="3_mHL5" id="2N4lNCBnMV1" role="pQQuc">
                   <node concept="ean_g" id="2N4lNCBnMV2" role="eaaoM">
-                    <ref role="Qu8KH" node="2N4lNCBnLYo" resolve="Erfbelasting " />
+                    <ref role="Qu8KH" node="2N4lNCBnLYo" resolve="erfbelasting" />
                   </node>
                   <node concept="3_kdyS" id="2N4lNCBnMV3" role="pQQuc">
                     <ref role="Qu8KH" node="2N4lNCBnLYn" resolve="overledene" />
@@ -418,7 +418,7 @@
                     <ref role="Qu8KH" node="2N4lNCBnM14" resolve="Verdeling nalatenschap" />
                   </node>
                   <node concept="3yS1BT" id="2N4lNCBnN7b" role="pQQuc">
-                    <ref role="3yS1Ki" node="2N4lNCBnMV2" resolve="Erfbelasting " />
+                    <ref role="3yS1Ki" node="2N4lNCBnMV2" resolve="erfbelasting" />
                   </node>
                 </node>
               </node>
@@ -619,7 +619,7 @@
         <property role="TrG5h" value="testament overledene" />
         <ref role="4OhPH" node="2N4lNCBnLXn" resolve="testament" />
         <node concept="3_ceKt" id="2N4lNCD71B4" role="4OhPJ">
-          <ref role="3_ceKs" node="2N4lNCBnM4s" resolve="verdeling " />
+          <ref role="3_ceKs" node="2N4lNCBnM4s" resolve="verdeling" />
           <node concept="4PMua" id="2N4lNCD71Bf" role="3_ceKu">
             <node concept="4PMub" id="2N4lNCD71Bx" role="4PMue">
               <ref role="4PMuN" node="2N4lNCD71sc" resolve="erfbelasting verdeling" />

@@ -288,7 +288,7 @@
       </node>
       <node concept="2bv6ZS" id="3lL3AAj9Vrk" role="2bv01j">
         <property role="16Ztxt" value="true" />
-        <property role="TrG5h" value=" inkomen" />
+        <property role="TrG5h" value="inkomen" />
         <node concept="1EDDeX" id="4dMPNdqb4yK" role="1EDDcc">
           <property role="3GST$d" value="2" />
         </node>
@@ -663,7 +663,7 @@
               <node concept="3RQlaP" id="3DPnffTv$sG" role="20pUfp">
                 <property role="21dgoC" value="false" />
                 <node concept="c2t0s" id="3DPnffTv$sF" role="21dgoE">
-                  <ref role="Qu8KH" node="3lL3AAj9Vrk" resolve=" inkomen" />
+                  <ref role="Qu8KH" node="3lL3AAj9Vrk" resolve="inkomen" />
                 </node>
               </node>
             </node>

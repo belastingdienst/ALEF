@@ -2412,7 +2412,7 @@
             <node concept="2boe1X" id="1nxn9podHa$" role="1wO7i6">
               <node concept="3_mHL5" id="1nxn9podHa_" role="2bokzF">
                 <node concept="c2t0s" id="6kT5D6kWD1C" role="eaaoM">
-                  <ref role="Qu8KH" to="n7la:6kT5D6kWD0g" resolve=" realdummy" />
+                  <ref role="Qu8KH" to="n7la:6kT5D6kWD0g" resolve="realdummy" />
                 </node>
                 <node concept="3_kdyS" id="1nxn9podHhf" role="pQQuc">
                   <ref role="Qu8KH" to="n7la:2ONNSf1DC6O" resolve="Rekening" />
@@ -2842,7 +2842,7 @@
             <node concept="2boe1X" id="4WdfOwuuHKb" role="1wO7i6">
               <node concept="3_mHL5" id="4WdfOwuuHKc" role="2bokzF">
                 <node concept="c2t0s" id="4WdfOwuuHKd" role="eaaoM">
-                  <ref role="Qu8KH" to="n7la:6kT5D6kWD0g" resolve=" realdummy" />
+                  <ref role="Qu8KH" to="n7la:6kT5D6kWD0g" resolve="realdummy" />
                 </node>
                 <node concept="3_kdyS" id="4WdfOwuuHKe" role="pQQuc">
                   <ref role="Qu8KH" to="n7la:2ONNSf1DC6O" resolve="Rekening" />

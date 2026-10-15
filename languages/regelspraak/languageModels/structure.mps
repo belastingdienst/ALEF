@@ -538,6 +538,9 @@
     <node concept="PrWs8" id="4iVB5Q1RSUP" role="PzmwI">
       <ref role="PrY4T" to="f6cw:4iVB5Q1RPKo" resolve="ICanHaveBron" />
     </node>
+    <node concept="PrWs8" id="45LX4bdDkjZ" role="PzmwI">
+      <ref role="PrY4T" to="f6cw:1MP9utIs32t" resolve="IHaveMetatags" />
+    </node>
     <node concept="1TJgyj" id="5ptxuD2ysh8" role="1TKVEi">
       <property role="IQ2ns" value="6223277501281059912" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -559,9 +562,6 @@
           <property role="3PKj8l" value="000000" />
         </node>
       </node>
-    </node>
-    <node concept="PrWs8" id="45LX4bdDkjZ" role="PzmwI">
-      <ref role="PrY4T" to="f6cw:1MP9utIs32t" resolve="IHaveMetatags" />
     </node>
   </node>
   <node concept="PlHQZ" id="33T2FuQfOjG">
@@ -1718,7 +1718,7 @@
       <ref role="PrY4T" to="3ic2:2k62pTb3lQI" resolve="Typed" />
     </node>
     <node concept="PrWs8" id="6Cw8uHwQ7Lz" role="PrDN$">
-      <ref role="PrY4T" to="3ic2:7MZNd$UgxhB" resolve="Naamwoord" />
+      <ref role="PrY4T" to="3ic2:4Jsm7EuZdud" resolve="NaamwoordRef" />
     </node>
     <node concept="1TJgyj" id="6Cw8uHsmaR6" role="1TKVEi">
       <property role="IQ2ns" value="7647149462025448902" />
@@ -1927,6 +1927,16 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
       <ref role="20ksaX" node="5_kzpqNqH9t" resolve="eigenschap" />
+    </node>
+    <node concept="1TJgyi" id="2JunpjHyeGJ" role="1TKVEl">
+      <property role="IQ2nx" value="3161066882682383151" />
+      <property role="TrG5h" value="showAdjective" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2JunpjHyeMb" role="1TKVEl">
+      <property role="IQ2nx" value="3161066882682383499" />
+      <property role="TrG5h" value="showOppositeAdjective" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="R9Qv6ISKy$">
@@ -2690,11 +2700,6 @@
       <ref role="PrY4T" to="3ic2:4VCVDWApLfB" resolve="ICannotBeAddedByUser" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4kJNa09Th$t">
-    <property role="EcuMT" value="4985428300255271197" />
-    <property role="TrG5h" value="Statement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="PlHQZ" id="39pt6yOdv55">
     <property role="EcuMT" value="3628058967872500037" />
     <property role="TrG5h" value="IEigenschapDefinitie" />
@@ -2705,6 +2710,11 @@
   <node concept="PlHQZ" id="39pt6yNMxiq">
     <property role="EcuMT" value="3628058967865431194" />
     <property role="TrG5h" value="IEigenschapReferentie" />
+  </node>
+  <node concept="1TIwiD" id="4kJNa09Th$t">
+    <property role="EcuMT" value="4985428300255271197" />
+    <property role="TrG5h" value="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2pWEaT0RsOK">
     <property role="EcuMT" value="2773276936919436592" />

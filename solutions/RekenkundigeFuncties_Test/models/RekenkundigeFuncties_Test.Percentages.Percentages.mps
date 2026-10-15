@@ -206,13 +206,13 @@
         </node>
       </node>
       <node concept="2bv6ZS" id="77B$FguGVqY" role="2bv01j">
-        <property role="TrG5h" value=" renteDom" />
+        <property role="TrG5h" value="renteDom" />
         <node concept="1EDDfm" id="77B$FguGVuu" role="1EDDcc">
           <ref role="1EDDfl" node="2ONNSf1DC6g" resolve="Percentage" />
         </node>
       </node>
       <node concept="2bv6ZS" id="77B$FguOh1h" role="2bv01j">
-        <property role="TrG5h" value=" renteDom2" />
+        <property role="TrG5h" value="renteDom2" />
         <node concept="1EDDfm" id="77B$FguOh97" role="1EDDcc">
           <ref role="1EDDfl" node="2ONNSf1DC6g" resolve="Percentage" />
         </node>
@@ -231,7 +231,7 @@
         </node>
       </node>
       <node concept="2bv6ZS" id="hFiMIsaBGB" role="2bv01j">
-        <property role="TrG5h" value=" saldo3" />
+        <property role="TrG5h" value="saldo3" />
         <node concept="1EDDeX" id="hFiMIsaBOB" role="1EDDcc">
           <property role="3GST$d" value="-1" />
         </node>
@@ -243,13 +243,13 @@
         </node>
       </node>
       <node concept="2bv6ZS" id="C7AsQwPzK2" role="2bv01j">
-        <property role="TrG5h" value=" dummy" />
+        <property role="TrG5h" value="dummy" />
         <node concept="1EDDeX" id="C7AsQwPzLs" role="1EDDcc">
           <property role="3GST$d" value="0" />
         </node>
       </node>
       <node concept="2bv6ZS" id="6kT5D6kWD0g" role="2bv01j">
-        <property role="TrG5h" value=" realdummy" />
+        <property role="TrG5h" value="realdummy" />
         <node concept="1EDDeX" id="6kT5D6kWD0h" role="1EDDcc">
           <property role="3GST$d" value="-1" />
         </node>
@@ -373,7 +373,7 @@
           <node concept="2z5Mdt" id="3DPnffTvxCa" role="1wO7i3">
             <node concept="3_mHL5" id="3DPnffTvxC5" role="2z5D6P">
               <node concept="c2t0s" id="3DPnffTvxC6" role="eaaoM">
-                <ref role="Qu8KH" node="C7AsQwPzK2" resolve=" dummy" />
+                <ref role="Qu8KH" node="C7AsQwPzK2" resolve="dummy" />
               </node>
               <node concept="3yS1BT" id="3DPnffTvxC7" role="pQQuc">
                 <ref role="3yS1Ki" node="3DPnffTvxBV" resolve="Rekening" />
@@ -396,7 +396,7 @@
           <node concept="2boe1X" id="C7AsQwPzCP" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvxCn" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvxCo" role="eaaoM">
-                <ref role="Qu8KH" node="77B$FguGVqY" resolve=" renteDom" />
+                <ref role="Qu8KH" node="77B$FguGVqY" resolve="renteDom" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvxCm" role="pQQuc">
                 <ref role="Qu8KH" node="2ONNSf1DC6O" resolve="Rekening" />
@@ -528,7 +528,7 @@
           <node concept="2boe1X" id="77B$FguLwSE" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvxCJ" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvxCK" role="eaaoM">
-                <ref role="Qu8KH" node="77B$FguGVqY" resolve=" renteDom" />
+                <ref role="Qu8KH" node="77B$FguGVqY" resolve="renteDom" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvxCI" role="pQQuc">
                 <ref role="Qu8KH" node="2ONNSf1DC6O" resolve="Rekening" />
@@ -632,7 +632,7 @@
             </node>
             <node concept="3_mHL5" id="3DPnffTvxD$" role="2bokzm">
               <node concept="c2t0s" id="3DPnffTvxD_" role="eaaoM">
-                <ref role="Qu8KH" node="77B$FguOh1h" resolve=" renteDom2" />
+                <ref role="Qu8KH" node="77B$FguOh1h" resolve="renteDom2" />
               </node>
               <node concept="3yS1BT" id="3DPnffTvxDz" role="pQQuc">
                 <ref role="3yS1Ki" node="3DPnffTvxDw" resolve="Rekening" />
@@ -672,7 +672,7 @@
           <node concept="2boe1X" id="77B$FguLwWQ" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvxDU" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvxDV" role="eaaoM">
-                <ref role="Qu8KH" node="77B$FguGVqY" resolve=" renteDom" />
+                <ref role="Qu8KH" node="77B$FguGVqY" resolve="renteDom" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvxDT" role="pQQuc">
                 <ref role="Qu8KH" node="2ONNSf1DC6O" resolve="Rekening" />
@@ -680,7 +680,7 @@
             </node>
             <node concept="3_mHL5" id="3DPnffTvxDX" role="2bokzm">
               <node concept="c2t0s" id="3DPnffTvxDY" role="eaaoM">
-                <ref role="Qu8KH" node="77B$FguOh1h" resolve=" renteDom2" />
+                <ref role="Qu8KH" node="77B$FguOh1h" resolve="renteDom2" />
               </node>
               <node concept="3yS1BT" id="3DPnffTvxDW" role="pQQuc">
                 <ref role="3yS1Ki" node="3DPnffTvxDT" resolve="Rekening" />
@@ -728,7 +728,7 @@
             </node>
             <node concept="3_mHL5" id="3DPnffTvxEm" role="2bokzm">
               <node concept="c2t0s" id="3DPnffTvxEn" role="eaaoM">
-                <ref role="Qu8KH" node="C7AsQwPzK2" resolve=" dummy" />
+                <ref role="Qu8KH" node="C7AsQwPzK2" resolve="dummy" />
               </node>
               <node concept="3yS1BT" id="3DPnffTvxEl" role="pQQuc">
                 <ref role="3yS1Ki" node="3DPnffTvxEi" resolve="Rekening" />
@@ -768,7 +768,7 @@
           <node concept="2boe1X" id="hFiMIsaCcS" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvxEG" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvxEH" role="eaaoM">
-                <ref role="Qu8KH" node="hFiMIsaBGB" resolve=" saldo3" />
+                <ref role="Qu8KH" node="hFiMIsaBGB" resolve="saldo3" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvxEF" role="pQQuc">
                 <ref role="Qu8KH" node="2ONNSf1DC6O" resolve="Rekening" />
@@ -777,7 +777,7 @@
             <node concept="3IOlpp" id="hFiMIsaCfQ" role="2bokzm">
               <node concept="3_mHL5" id="3DPnffTvxEK" role="2C$i6l">
                 <node concept="c2t0s" id="3DPnffTvxEL" role="eaaoM">
-                  <ref role="Qu8KH" node="77B$FguOh1h" resolve=" renteDom2" />
+                  <ref role="Qu8KH" node="77B$FguOh1h" resolve="renteDom2" />
                 </node>
                 <node concept="3yS1BT" id="3DPnffTvxEJ" role="pQQuc">
                   <ref role="3yS1Ki" node="3DPnffTvxEF" resolve="Rekening" />
@@ -785,7 +785,7 @@
               </node>
               <node concept="3_mHL5" id="3DPnffTvxEM" role="2C$i6h">
                 <node concept="c2t0s" id="3DPnffTvxEN" role="eaaoM">
-                  <ref role="Qu8KH" node="77B$FguGVqY" resolve=" renteDom" />
+                  <ref role="Qu8KH" node="77B$FguGVqY" resolve="renteDom" />
                 </node>
                 <node concept="3yS1BT" id="3DPnffTvxEO" role="pQQuc">
                   <ref role="3yS1Ki" node="3DPnffTvxEF" resolve="Rekening" />
@@ -837,7 +837,7 @@
         <property role="TrG5h" value="rekening" />
         <ref role="4OhPH" node="2ONNSf1DC6O" resolve="Rekening" />
         <node concept="3_ceKt" id="2ONNSf1F5mQ" role="4OhPJ">
-          <ref role="3_ceKs" node="C7AsQwPzK2" resolve=" dummy" />
+          <ref role="3_ceKs" node="C7AsQwPzK2" resolve="dummy" />
           <node concept="1EQTEq" id="2ONNSf1F5mR" role="3_ceKu">
             <property role="3e6Tb2" value="300" />
           </node>

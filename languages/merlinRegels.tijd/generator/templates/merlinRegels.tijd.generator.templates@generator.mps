@@ -593,7 +593,7 @@
                   <ref role="2Gs0qQ" node="2vZlndnHjXz" resolve="aiv" />
                 </node>
                 <node concept="2qgKlT" id="4bY2t4hGuYz" role="2OqNvi">
-                  <ref role="37wK5l" to="u5to:4bY2t4hFZYG" resolve="voegConditieVoorUnivOndwToe" />
+                  <ref role="37wK5l" to="u5to:4bY2t4hFZYG" resolve="verplaatsUnivOnderwerpCheckNaarConditie" />
                 </node>
               </node>
             </node>

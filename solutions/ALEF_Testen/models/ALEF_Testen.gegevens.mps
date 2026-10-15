@@ -1082,7 +1082,7 @@
         <node concept="THod0" id="4AH3xxNtaz2" role="1EDDcc" />
       </node>
       <node concept="2bv6ZS" id="7Qy8rY48f4Q" role="2bv01j">
-        <property role="TrG5h" value="is  baasje" />
+        <property role="TrG5h" value="is baasje" />
         <node concept="1EDDcM" id="7Qy8rY48faq" role="1EDDcc" />
       </node>
     </node>

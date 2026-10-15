@@ -366,7 +366,7 @@
                   <ref role="Qu8KH" node="2liFoN$zkUv" resolve="temperatuur" />
                 </node>
                 <node concept="3_kdyS" id="2liFoN$HD33" role="pQQuc">
-                  <ref role="Qu8KH" node="2liFoN$zfR2" resolve="a" />
+                  <ref role="Qu8KH" node="2liFoN$zfMu" resolve="a" />
                 </node>
               </node>
               <node concept="28AkDQ" id="2liFoN$_izM" role="2z5HcU">
@@ -478,7 +478,7 @@
           <node concept="2zaH5l" id="KBFA$sT8Le" role="1wO7i6">
             <ref role="2zaJI2" node="KBFA$sT8$O" resolve="fout" />
             <node concept="3_kdyS" id="KBFA$sT8Lg" role="pRcyL">
-              <ref role="Qu8KH" node="2liFoN$zfR2" resolve="a" />
+              <ref role="Qu8KH" node="2liFoN$zfMu" resolve="a" />
             </node>
           </node>
           <node concept="avDeg" id="KBFA$sT8Wl" role="1wO7i3">
