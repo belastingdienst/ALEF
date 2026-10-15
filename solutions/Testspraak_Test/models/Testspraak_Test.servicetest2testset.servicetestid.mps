@@ -184,12 +184,12 @@
       <property role="TrG5h" value="root" />
       <node concept="2bv6ZS" id="aKNFBIB5eh" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" naam" />
+        <property role="TrG5h" value="naam" />
         <node concept="THod0" id="aKNFBIB5em" role="1EDDcc" />
       </node>
       <node concept="2bv6ZS" id="aKNFBIB5e$" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" waarde" />
+        <property role="TrG5h" value="waarde" />
         <node concept="1EDDeX" id="aKNFBIB5eD" role="1EDDcc">
           <property role="3GST$d" value="-1" />
         </node>
@@ -206,12 +206,12 @@
       <property role="TrG5h" value="A" />
       <node concept="2bv6ZS" id="aKNFBIB5gR" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" naam" />
+        <property role="TrG5h" value="naam" />
         <node concept="THod0" id="aKNFBIB5gS" role="1EDDcc" />
       </node>
       <node concept="2bv6ZS" id="aKNFBIB5gT" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" waarde" />
+        <property role="TrG5h" value="waarde" />
         <node concept="1EDDeX" id="aKNFBIB5gU" role="1EDDcc">
           <property role="3GST$d" value="-1" />
         </node>
@@ -228,12 +228,12 @@
       <property role="TrG5h" value="uitkomst" />
       <node concept="2bv6ZS" id="4MAJwhS_CeK" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" naam" />
+        <property role="TrG5h" value="naam" />
         <node concept="THod0" id="4MAJwhS_CeL" role="1EDDcc" />
       </node>
       <node concept="2bv6ZS" id="4MAJwhS_CeM" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" waarde" />
+        <property role="TrG5h" value="waarde" />
         <node concept="1EDDeX" id="4MAJwhS_CeN" role="1EDDcc">
           <property role="3GST$d" value="-1" />
         </node>
@@ -281,10 +281,10 @@
     <property role="TrG5h" value="invoerRoot" />
     <ref role="1Ig6_r" node="aKNFBIB5e7" resolve="root" />
     <node concept="1IH5HN" id="aKNFBIB5j1" role="2785Bw">
-      <ref role="1IJyWM" node="aKNFBIB5eh" resolve=" naam" />
+      <ref role="1IJyWM" node="aKNFBIB5eh" resolve="naam" />
     </node>
     <node concept="1IH5HN" id="aKNFBIB5j5" role="2785Bw">
-      <ref role="1IJyWM" node="aKNFBIB5e$" resolve=" waarde" />
+      <ref role="1IJyWM" node="aKNFBIB5e$" resolve="waarde" />
     </node>
     <node concept="1IH5HN" id="aKNFBIDj9n" role="2785Bw">
       <ref role="1IJyWM" node="aKNFBIB5o6" resolve="klasse" />
@@ -306,10 +306,10 @@
       </node>
     </node>
     <node concept="1IH5HN" id="aKNFBIB5jn" role="2785Bw">
-      <ref role="1IJyWM" node="aKNFBIB5gR" resolve=" naam" />
+      <ref role="1IJyWM" node="aKNFBIB5gR" resolve="naam" />
     </node>
     <node concept="1IH5HN" id="aKNFBIB5jr" role="2785Bw">
-      <ref role="1IJyWM" node="aKNFBIB5gT" resolve=" waarde" />
+      <ref role="1IJyWM" node="aKNFBIB5gT" resolve="waarde" />
     </node>
     <node concept="1IH5HN" id="aKNFBIDja7" role="2785Bw">
       <ref role="1IJyWM" node="aKNFBIB5os" resolve="klasse" />
@@ -325,7 +325,7 @@
     <property role="TrG5h" value="uitvoerRoot" />
     <ref role="1Ig6_r" node="4MAJwhS_CeJ" resolve="uitkomst" />
     <node concept="1IHXn0" id="aKNFBIDjRl" role="2785Bw">
-      <ref role="1IJyWM" node="4MAJwhS_CeK" resolve=" naam" />
+      <ref role="1IJyWM" node="4MAJwhS_CeK" resolve="naam" />
     </node>
   </node>
   <node concept="2kTx5H" id="aKNFBIB5oP">
@@ -392,7 +392,7 @@
           <node concept="2boe1X" id="aKNFBIDjOY" role="1wO7i6">
             <node concept="3_mHL5" id="aKNFBIDjOZ" role="2bokzF">
               <node concept="c2t0s" id="4MAJwhS_CqG" role="eaaoM">
-                <ref role="Qu8KH" node="4MAJwhS_CeK" resolve=" naam" />
+                <ref role="Qu8KH" node="4MAJwhS_CeK" resolve="naam" />
               </node>
               <node concept="3_kdyS" id="aKNFBIDjPh" role="pQQuc">
                 <ref role="Qu8KH" node="4MAJwhS_CeJ" resolve="uitkomst" />

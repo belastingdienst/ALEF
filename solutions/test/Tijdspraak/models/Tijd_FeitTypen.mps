@@ -725,7 +725,7 @@
     <node concept="2mG0Cb" id="2tLjs1GAGfe" role="2bv6Cn">
       <property role="TrG5h" value="Gebouw staat op perceel" />
       <node concept="2mG0Ck" id="2tLjs1GAGff" role="2mG0Ct">
-        <property role="TrG5h" value="Gebouw op Perceel " />
+        <property role="TrG5h" value="Gebouw op Perceel" />
         <ref role="1fE_qF" node="2tLjs1GAbmn" resolve="Gebouw" />
       </node>
       <node concept="2mG0Ck" id="2tLjs1GAGfg" role="2mG0Ct">

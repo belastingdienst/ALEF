@@ -229,7 +229,7 @@
       </node>
       <node concept="2mG0Ck" id="1EGxWrdblNo" role="2mG0Ct">
         <property role="u$DAK" value="true" />
-        <property role="TrG5h" value=" item" />
+        <property role="TrG5h" value="item" />
         <property role="16Ztxt" value="true" />
         <ref role="1fE_qF" node="1EGxWrdbhRH" resolve="Item" />
       </node>
@@ -336,7 +336,7 @@
                       </node>
                       <node concept="3_mHL5" id="1EGxWrdcXJY" role="pQQuc">
                         <node concept="ean_g" id="1EGxWrdcXJZ" role="eaaoM">
-                          <ref role="Qu8KH" node="1EGxWrdblNo" resolve=" item" />
+                          <ref role="Qu8KH" node="1EGxWrdblNo" resolve="item" />
                         </node>
                         <node concept="3yS1BT" id="1EGxWrdcXK0" role="pQQuc">
                           <ref role="3yS1Ki" node="1EGxWrdbjKb" resolve="Bericht" />
@@ -366,7 +366,7 @@
                         <ref role="Qu8KH" node="1EGxWrdboKn" resolve="subitem" />
                       </node>
                       <node concept="3yS1BT" id="1EGxWrdbti4" role="pQQuc">
-                        <ref role="3yS1Ki" node="1EGxWrdcXJZ" resolve=" item" />
+                        <ref role="3yS1Ki" node="1EGxWrdcXJZ" resolve="item" />
                       </node>
                     </node>
                   </node>
@@ -405,7 +405,7 @@
         <property role="TrG5h" value="bericht" />
         <ref role="4OhPH" node="1EGxWrdbgZn" resolve="Bericht" />
         <node concept="3_ceKt" id="1EGxWrdbui4" role="4OhPJ">
-          <ref role="3_ceKs" node="1EGxWrdblNo" resolve=" item" />
+          <ref role="3_ceKs" node="1EGxWrdblNo" resolve="item" />
           <node concept="4PMua" id="1EGxWrdbui5" role="3_ceKu" />
         </node>
       </node>

@@ -199,7 +199,7 @@
         </node>
       </node>
       <node concept="2bv6ZS" id="6UwmrtSwmLa" role="2bv01j">
-        <property role="TrG5h" value="min boeken op plank " />
+        <property role="TrG5h" value="min boeken op plank" />
         <node concept="1EDDeX" id="6UwmrtSwmLb" role="1EDDcc">
           <property role="3GST$d" value="0" />
         </node>
@@ -241,7 +241,7 @@
         <node concept="1EDDcM" id="6UwmrtSwmby" role="1EDDcc" />
       </node>
       <node concept="2bv6ZS" id="6UwmrtSwmbV" role="2bv01j">
-        <property role="TrG5h" value="b3 " />
+        <property role="TrG5h" value="b3" />
         <node concept="1EDDcM" id="6UwmrtSwmbW" role="1EDDcc" />
       </node>
     </node>

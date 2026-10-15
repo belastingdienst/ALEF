@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:02a28937-32e5-4c39-a14a-543fa92df8ca(regelspraak.tijd.linguistics)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="804014de-e593-4efc-b1b2-c667769358b9" name="linguistics" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -8,7 +9,7 @@
   </languages>
   <imports>
     <import index="64jk" ref="r:548ad0ea-7fa4-4982-b00f-e449fc4e78a1(regelspraak.linguistics)" />
-    <import index="4udd" ref="r:ee98044b-dd5f-43e9-9c10-c24e4f2df92d(regelspraak.tijd.structure)" implicit="true" />
+    <import index="4udd" ref="r:ee98044b-dd5f-43e9-9c10-c24e4f2df92d(regelspraak.tijd.structure)" />
     <import index="lxx5" ref="r:fc4a1009-2df4-497d-b754-af7772a25efa(gegevensspraak.tijd.structure)" implicit="true" />
     <import index="m234" ref="r:dab861ec-284c-4992-a98c-1e3b9c9dd555(regelspraak.structure)" implicit="true" />
     <import index="3ic2" ref="r:1be64251-a392-4bb4-8ecb-06d30a9277a4(gegevensspraak.structure)" implicit="true" />
@@ -603,9 +604,6 @@
               <ref role="23mlFp" node="7ujcURq1aca" resolve="heeftGedurende" />
             </node>
           </node>
-          <node concept="23JKde" id="7ujcURq1b1y" role="23JKd8">
-            <node concept="23GdfO" id="7ujcURq1b1z" role="23JKdf" />
-          </node>
         </node>
       </node>
     </node>
@@ -629,9 +627,6 @@
           <node concept="23C7c5" id="RW5RguJS4R" role="23J4uA">
             <ref role="23C6GS" to="4udd:7XBkchvX0kG" resolve="uitputtend" />
           </node>
-        </node>
-        <node concept="23JKde" id="2ZKvEa0t23y" role="23JKd8">
-          <node concept="23GdfO" id="2ZKvEa0t23z" role="23JKdf" />
         </node>
       </node>
       <node concept="23Fm0F" id="RW5RguHQno" role="23GdfP">

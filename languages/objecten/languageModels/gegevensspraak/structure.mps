@@ -937,6 +937,21 @@
     <node concept="PrWs8" id="4aR45EWddPK" role="PzmwI">
       <ref role="PrY4T" to="dse8:51QYbfBR3DV" resolve="LReference" />
     </node>
+    <node concept="1TJgyi" id="22JzJdytbH" role="1TKVEl">
+      <property role="IQ2nx" value="36800911033094893" />
+      <property role="TrG5h" value="bijvoeglijkNaamwoord" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2JunpjBOejR" role="1TKVEl">
+      <property role="IQ2nx" value="3161066882586436855" />
+      <property role="TrG5h" value="bijvoeglijkNaamwoord_een" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="22JzJd_EtO" role="1TKVEl">
+      <property role="IQ2nx" value="36800911033935732" />
+      <property role="TrG5h" value="voorzetsel" />
+      <ref role="AX2Wp" node="22JzJd_EtV" resolve="RolVoorzetsel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="uG31bexKhv">
     <property role="EcuMT" value="552830129173627999" />
@@ -1850,6 +1865,55 @@
   <node concept="PlHQZ" id="y87BIjIbP1">
     <property role="EcuMT" value="614774865244241217" />
     <property role="TrG5h" value="INeedUniverseExtensie" />
+  </node>
+  <node concept="25R3W" id="22JzJd_EtV">
+    <property role="3F6X1D" value="36800911033935739" />
+    <property role="TrG5h" value="RolVoorzetsel" />
+    <ref role="1H5jkz" node="22JzJd_EtW" resolve="van" />
+    <node concept="25R33" id="22JzJd_FgL" role="25R1y">
+      <property role="3tVfz5" value="36800911033938993" />
+      <property role="TrG5h" value="bij" />
+    </node>
+    <node concept="25R33" id="22JzJd_Fgv" role="25R1y">
+      <property role="3tVfz5" value="36800911033938975" />
+      <property role="TrG5h" value="met" />
+    </node>
+    <node concept="25R33" id="22JzJd_FgF" role="25R1y">
+      <property role="3tVfz5" value="36800911033938987" />
+      <property role="TrG5h" value="in" />
+    </node>
+    <node concept="25R33" id="22JzJd_FgA" role="25R1y">
+      <property role="3tVfz5" value="36800911033938982" />
+      <property role="TrG5h" value="op" />
+    </node>
+    <node concept="25R33" id="22JzJd_FgS" role="25R1y">
+      <property role="3tVfz5" value="36800911033939000" />
+      <property role="TrG5h" value="over" />
+    </node>
+    <node concept="25R33" id="22JzJd_Fgy" role="25R1y">
+      <property role="3tVfz5" value="36800911033938978" />
+      <property role="TrG5h" value="tbv" />
+      <property role="1L1pqM" value="ten behoeve van" />
+    </node>
+    <node concept="25R33" id="22JzJd_FiT" role="25R1y">
+      <property role="3tVfz5" value="36800911033939129" />
+      <property role="TrG5h" value="uit" />
+    </node>
+    <node concept="25R33" id="22JzJd_EtW" role="25R1y">
+      <property role="3tVfz5" value="36800911033935740" />
+      <property role="TrG5h" value="van" />
+    </node>
+    <node concept="25R33" id="22JzJd_Fh0" role="25R1y">
+      <property role="3tVfz5" value="36800911033939008" />
+      <property role="TrG5h" value="voor" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4Jsm7EuZdud">
+    <property role="EcuMT" value="5466341331397564301" />
+    <property role="TrG5h" value="NaamwoordRef" />
+    <node concept="PrWs8" id="4Jsm7EuZdue" role="PrDN$">
+      <ref role="PrY4T" node="7MZNd$UgxhB" resolve="Naamwoord" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4NdByBpbsRr">
     <property role="EcuMT" value="5534253419682713051" />

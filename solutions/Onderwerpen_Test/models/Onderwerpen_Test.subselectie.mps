@@ -230,7 +230,7 @@
       </node>
       <node concept="2bv6ZS" id="4BA_o5dVnoS" role="2bv01j">
         <property role="16Ztxt" value="true" />
-        <property role="TrG5h" value=" aantal planken met alleen anonieme boeken" />
+        <property role="TrG5h" value="aantal planken met alleen anonieme boeken" />
         <node concept="1EDDeX" id="4BA_o5dVnro" role="1EDDcc">
           <property role="3GST$d" value="0" />
         </node>
@@ -368,7 +368,7 @@
           <node concept="2boe1X" id="4u8DTgDi$9P" role="1wO7i6">
             <node concept="3_mHL5" id="4u8DTgDi$9Q" role="2bokzF">
               <node concept="c2t0s" id="4BA_o5dVnBS" role="eaaoM">
-                <ref role="Qu8KH" node="4BA_o5dVnoS" resolve=" aantal planken met alleen anonieme boeken" />
+                <ref role="Qu8KH" node="4BA_o5dVnoS" resolve="aantal planken met alleen anonieme boeken" />
               </node>
               <node concept="3_kdyS" id="4u8DTgDi$ba" role="pQQuc">
                 <ref role="Qu8KH" node="iV51E5eTI1" resolve="Kast" />
@@ -442,7 +442,7 @@
           <node concept="2boe1X" id="4BA_o5dVwKs" role="1wO7i6">
             <node concept="3_mHL5" id="4BA_o5dVwKt" role="2bokzF">
               <node concept="c2t0s" id="4BA_o5dVwKu" role="eaaoM">
-                <ref role="Qu8KH" node="4BA_o5dVnoS" resolve=" aantal planken met alleen anonieme boeken" />
+                <ref role="Qu8KH" node="4BA_o5dVnoS" resolve="aantal planken met alleen anonieme boeken" />
               </node>
               <node concept="3_kdyS" id="4BA_o5dVwKv" role="pQQuc">
                 <ref role="Qu8KH" node="iV51E5eTI1" resolve="Kast" />
@@ -514,7 +514,7 @@
             <node concept="2boe1X" id="2wVcjLSt19P" role="1wO7i6">
               <node concept="3_mHL5" id="2wVcjLSt19Q" role="2bokzF">
                 <node concept="c2t0s" id="2wVcjLSt19R" role="eaaoM">
-                  <ref role="Qu8KH" node="4BA_o5dVnoS" resolve=" aantal planken met alleen anonieme boeken" />
+                  <ref role="Qu8KH" node="4BA_o5dVnoS" resolve="aantal planken met alleen anonieme boeken" />
                 </node>
                 <node concept="3_kdyS" id="2wVcjLSt19S" role="pQQuc">
                   <ref role="Qu8KH" node="iV51E5eTI1" resolve="Kast" />
@@ -550,7 +550,7 @@
           <node concept="2boe1X" id="4BA_o5dVyat" role="1wO7i6">
             <node concept="3_mHL5" id="4BA_o5dVyau" role="2bokzF">
               <node concept="c2t0s" id="4BA_o5dVyav" role="eaaoM">
-                <ref role="Qu8KH" node="4BA_o5dVnoS" resolve=" aantal planken met alleen anonieme boeken" />
+                <ref role="Qu8KH" node="4BA_o5dVnoS" resolve="aantal planken met alleen anonieme boeken" />
               </node>
               <node concept="3_kdyS" id="4BA_o5dVyaw" role="pQQuc">
                 <ref role="Qu8KH" node="iV51E5eTI1" resolve="Kast" />
@@ -1116,7 +1116,7 @@
         <ref role="4Oh8G" node="iV51E5eTI1" resolve="Kast" />
         <node concept="3mzBic" id="4u8DTgDiA0O" role="4Ohbj">
           <property role="V2jGk" value="-1" />
-          <ref role="10Xmnc" node="4BA_o5dVnoS" resolve=" aantal planken met alleen anonieme boeken" />
+          <ref role="10Xmnc" node="4BA_o5dVnoS" resolve="aantal planken met alleen anonieme boeken" />
           <node concept="1EQTEq" id="4u8DTgDiA0Z" role="3mzBi6">
             <property role="3e6Tb2" value="1" />
           </node>

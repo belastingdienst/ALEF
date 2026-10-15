@@ -412,7 +412,7 @@
       </node>
       <node concept="2bv6ZS" id="1$hZSWyX_rO" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" n" />
+        <property role="TrG5h" value="n" />
         <node concept="1EDDeX" id="1$hZSWyX_uY" role="1EDDcc">
           <property role="3GST$d" value="15" />
         </node>
@@ -1073,7 +1073,7 @@
       </node>
       <node concept="2bv6ZS" id="7S2AUgF_VX9" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value=" resultaat_datum" />
+        <property role="TrG5h" value="resultaat_datum" />
         <node concept="1EDDdA" id="7S2AUgF_Y2o" role="1EDDcc">
           <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
         </node>

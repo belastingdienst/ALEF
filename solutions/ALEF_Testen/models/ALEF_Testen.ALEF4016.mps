@@ -476,7 +476,7 @@
       <property role="TrG5h" value="onderwerp natuurlijk persoon" />
       <node concept="2mG0Ck" id="18zfqYgGNvb" role="2mG0Ct">
         <property role="u$DAK" value="true" />
-        <property role="TrG5h" value="partnerschap " />
+        <property role="TrG5h" value="partnerschap" />
         <ref role="1fE_qF" node="3DzwRpKUPt1" resolve="OT1 Partnerschap" />
       </node>
       <node concept="2mG0Ck" id="18zfqYgGNvc" role="2mG0Ct">
