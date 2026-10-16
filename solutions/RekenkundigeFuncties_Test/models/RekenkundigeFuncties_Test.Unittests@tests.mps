@@ -44,6 +44,9 @@
       <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
         <child id="8489045168660938635" name="warningRef" index="3lydCh" />
       </concept>
+      <concept id="1215526290564" name="jetbrains.mps.lang.test.structure.NodeTypeCheckOperation" flags="ng" index="30Omv">
+        <child id="1215526393912" name="type" index="31d$z" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -4715,6 +4718,179 @@
       <node concept="2HxZob" id="2j7IssY8exr" role="3cqZAp">
         <node concept="1iFQzN" id="2j7IssY8exI" role="3iKnsn">
           <ref role="1iFR8X" to="ekwn:7HPyHg86S0x" resolve="Backspace" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2Bo1A4bg20F">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="AfrondenOpTallenTests" />
+    <node concept="1qefOq" id="2Bo1A4bg232" role="1SKRRt">
+      <node concept="1HSql3" id="2Bo1A4bg234" role="1qenE9">
+        <property role="TrG5h" value="AfrondenOp10TallenGesteldOpLiteralMet0DecimalenCheck" />
+        <node concept="1wO7pt" id="2Bo1A4bg235" role="kiesI">
+          <node concept="2boe1W" id="2Bo1A4bg236" role="1wO7pp">
+            <node concept="2boe1X" id="2Bo1A4bg239" role="1wO7i6">
+              <node concept="3_mHL5" id="2Bo1A4bg23e" role="2bokzF">
+                <node concept="c2t0s" id="2Bo1A4bg23_" role="eaaoM">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbZm" resolve="getalMet0Decimalen" />
+                </node>
+                <node concept="3_kdyS" id="2Bo1A4bg23$" role="pQQuc">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbKj" resolve="DecimalenObject" />
+                </node>
+              </node>
+              <node concept="29kKyO" id="2Bo1A4bg24L" role="2bokzm">
+                <property role="35Sgwk" value="true" />
+                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                <property role="29kKyf" value="-1" />
+                <node concept="1EQTEq" id="2Bo1A4bganC" role="29kKy2">
+                  <property role="3e6Tb2" value="1234,56" />
+                </node>
+                <node concept="7CXmI" id="2Bo1A4bg2b0" role="lGtFl">
+                  <node concept="7OXhh" id="2Bo1A4bg2bf" role="7EUXB">
+                    <property role="GvXf4" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ljwA5" id="2Bo1A4bg238" role="1nvPAL" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2Bo1A4bgz34" role="1SKRRt">
+      <node concept="1HSql3" id="2Bo1A4bgz35" role="1qenE9">
+        <property role="TrG5h" value="AfrondenOp100TallenGesteldOpLiteralMet0DecimalenCheck" />
+        <node concept="1wO7pt" id="2Bo1A4bgz36" role="kiesI">
+          <node concept="2boe1W" id="2Bo1A4bgz37" role="1wO7pp">
+            <node concept="2boe1X" id="2Bo1A4bgz38" role="1wO7i6">
+              <node concept="3_mHL5" id="2Bo1A4bgz39" role="2bokzF">
+                <node concept="c2t0s" id="2Bo1A4bgz3a" role="eaaoM">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbZm" resolve="getalMet0Decimalen" />
+                </node>
+                <node concept="3_kdyS" id="2Bo1A4bgz3b" role="pQQuc">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbKj" resolve="DecimalenObject" />
+                </node>
+              </node>
+              <node concept="29kKyO" id="2Bo1A4bgz3c" role="2bokzm">
+                <property role="35Sgwk" value="true" />
+                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                <property role="29kKyf" value="-2" />
+                <node concept="1EQTEq" id="2Bo1A4bgz3d" role="29kKy2">
+                  <property role="3e6Tb2" value="1234,56" />
+                </node>
+                <node concept="7CXmI" id="2Bo1A4bgz3e" role="lGtFl">
+                  <node concept="7OXhh" id="2Bo1A4bgz3f" role="7EUXB">
+                    <property role="GvXf4" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ljwA5" id="2Bo1A4bgz3g" role="1nvPAL" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2Bo1A4bh00t" role="1SKRRt">
+      <node concept="1HSql3" id="2Bo1A4bh00u" role="1qenE9">
+        <property role="TrG5h" value="AfrondenOp1000TallenGesteldOpLiteralMet0DecimalenCheck" />
+        <node concept="1wO7pt" id="2Bo1A4bh00v" role="kiesI">
+          <node concept="2boe1W" id="2Bo1A4bh00w" role="1wO7pp">
+            <node concept="2boe1X" id="2Bo1A4bh00x" role="1wO7i6">
+              <node concept="3_mHL5" id="2Bo1A4bh00y" role="2bokzF">
+                <node concept="c2t0s" id="2Bo1A4bh00z" role="eaaoM">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbZm" resolve="getalMet0Decimalen" />
+                </node>
+                <node concept="3_kdyS" id="2Bo1A4bh00$" role="pQQuc">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbKj" resolve="DecimalenObject" />
+                </node>
+              </node>
+              <node concept="29kKyO" id="2Bo1A4bh00_" role="2bokzm">
+                <property role="35Sgwk" value="true" />
+                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                <property role="29kKyf" value="-3" />
+                <node concept="1EQTEq" id="2Bo1A4bh00A" role="29kKy2">
+                  <property role="3e6Tb2" value="1234,56" />
+                </node>
+                <node concept="7CXmI" id="2Bo1A4bh00B" role="lGtFl">
+                  <node concept="7OXhh" id="2Bo1A4bh00C" role="7EUXB">
+                    <property role="GvXf4" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ljwA5" id="2Bo1A4bh00D" role="1nvPAL" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2Bo1A4bgGOm" role="1SKRRt">
+      <node concept="1HSql3" id="2Bo1A4bgGOn" role="1qenE9">
+        <property role="TrG5h" value="AfrondenOp10TallenHasTypeNumeriekGeheelGetalCheck" />
+        <node concept="1wO7pt" id="2Bo1A4bgGOo" role="kiesI">
+          <node concept="2boe1W" id="2Bo1A4bgGOp" role="1wO7pp">
+            <node concept="2boe1X" id="2Bo1A4bgGOq" role="1wO7i6">
+              <node concept="3_mHL5" id="2Bo1A4bgGOr" role="2bokzF">
+                <node concept="c2t0s" id="2Bo1A4bgGOs" role="eaaoM">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbZm" resolve="getalMet0Decimalen" />
+                </node>
+                <node concept="3_kdyS" id="2Bo1A4bgGOt" role="pQQuc">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbKj" resolve="DecimalenObject" />
+                </node>
+              </node>
+              <node concept="29kKyO" id="2Bo1A4bgGOu" role="2bokzm">
+                <property role="35Sgwk" value="true" />
+                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                <property role="29kKyf" value="-1" />
+                <node concept="1EQTEq" id="2Bo1A4bgGOv" role="29kKy2">
+                  <property role="3e6Tb2" value="1234,56" />
+                </node>
+                <node concept="7CXmI" id="2Bo1A4bgGOw" role="lGtFl">
+                  <node concept="30Omv" id="2Bo1A4bgGOx" role="7EUXB">
+                    <node concept="1EDDeX" id="2Bo1A4bgGOy" role="31d$z">
+                      <property role="3GST$d" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ljwA5" id="2Bo1A4bgGOz" role="1nvPAL" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2Bo1A4bgz3h" role="1SKRRt">
+      <node concept="1HSql3" id="2Bo1A4bgz3i" role="1qenE9">
+        <property role="TrG5h" value="AfrondenOp100TallenHasTypeNumeriekGeheelGetalCheck" />
+        <node concept="1wO7pt" id="2Bo1A4bgz3j" role="kiesI">
+          <node concept="2boe1W" id="2Bo1A4bgz3k" role="1wO7pp">
+            <node concept="2boe1X" id="2Bo1A4bgz3l" role="1wO7i6">
+              <node concept="3_mHL5" id="2Bo1A4bgz3m" role="2bokzF">
+                <node concept="c2t0s" id="2Bo1A4bgz3n" role="eaaoM">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbZm" resolve="getalMet0Decimalen" />
+                </node>
+                <node concept="3_kdyS" id="2Bo1A4bgz3o" role="pQQuc">
+                  <ref role="Qu8KH" to="ej9i:8epmhSZbKj" resolve="DecimalenObject" />
+                </node>
+              </node>
+              <node concept="29kKyO" id="2Bo1A4bgz3p" role="2bokzm">
+                <property role="35Sgwk" value="true" />
+                <property role="29kKyC" value="6NL0NB_CwIl/rekenkundig_afgerond" />
+                <property role="29kKyf" value="-3" />
+                <node concept="1EQTEq" id="2Bo1A4bgz3q" role="29kKy2">
+                  <property role="3e6Tb2" value="1234,56" />
+                </node>
+                <node concept="7CXmI" id="2Bo1A4bgz3r" role="lGtFl">
+                  <node concept="30Omv" id="2Bo1A4bgz3s" role="7EUXB">
+                    <node concept="1EDDeX" id="2Bo1A4bgz3t" role="31d$z">
+                      <property role="3GST$d" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ljwA5" id="2Bo1A4bgz3u" role="1nvPAL" />
         </node>
       </node>
     </node>
