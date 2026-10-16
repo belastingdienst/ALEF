@@ -38,6 +38,7 @@ Dit is het deel van de regel dat het resultaat van de regel beschrijft.
 ![Resultaatdeel regelversie](../img/ALEF200_RegelversieActiedeel.png)
 
 In het resultaatdeel kan een aantal [acties](../regels/Acties.md) worden gebruikt.
+Zie [Rekenen in Regelspraak](Rekenen_in_RegelSpraak.md) voor meer details over hoe numerieke berekeningen werken in RegelSpraak.
 
 ### Voorwaardendeel van regelversie
 
