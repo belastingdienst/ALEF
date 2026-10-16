@@ -176,49 +176,6 @@
       </node>
     </node>
     <node concept="1uxNW$" id="1lDQ9Sx5LjM" role="2bv6Cn" />
-    <node concept="3FGEBu" id="1lDQ9Sx5y2W" role="2bv6Cn">
-      <node concept="1Pa9Pv" id="1lDQ9Sx5y2X" role="3FGEBv">
-        <node concept="1PaTwC" id="1lDQ9Sx5y2Y" role="1PaQFQ">
-          <node concept="3oM_SD" id="1lDQ9Sx5y2Z" role="1PaTwD">
-            <property role="3oM_SC" value="TODO:" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5AH2" role="1PaTwD">
-            <property role="3oM_SC" value="gewicht" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5AH3" role="1PaTwD">
-            <property role="3oM_SC" value="rekenkundig" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5AH4" role="1PaTwD">
-            <property role="3oM_SC" value="afgerond" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5AH5" role="1PaTwD">
-            <property role="3oM_SC" value="op" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5AH6" role="1PaTwD">
-            <property role="3oM_SC" value="10-tallen" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5BhY" role="1PaTwD">
-            <property role="3oM_SC" value="moet" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5Cvq" role="1PaTwD">
-            <property role="3oM_SC" value="Numeriek" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5ECp" role="1PaTwD">
-            <property role="3oM_SC" value="(geheel" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5Gvw" role="1PaTwD">
-            <property role="3oM_SC" value="getal)" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx5I4J" role="1PaTwD">
-            <property role="3oM_SC" value="zijn" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6K_M" role="1PaTwD">
-            <property role="3oM_SC" value="?" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1uxNW$" id="1lDQ9Sx5KUY" role="2bv6Cn" />
     <node concept="2bvS6$" id="4QAJma9Pdn8" role="2bv6Cn">
       <property role="TrG5h" value="Voertuig" />
       <node concept="2bv6ZS" id="4QAJma9Pdny" role="2bv01j">
@@ -251,7 +208,7 @@
         <property role="TrG5h" value="gewicht rekenkundig afgerond op 10-tallen" />
         <property role="16Ztxt" value="true" />
         <node concept="1EDDeX" id="3jTTg$zWGa$" role="1EDDcc">
-          <property role="3GST$d" value="-1" />
+          <property role="3GST$d" value="0" />
           <node concept="PwxsY" id="3jTTg$zWGa_" role="PyN7z">
             <node concept="Pwxi7" id="3jTTg$zWGaA" role="Pwxi2">
               <property role="Pwxi6" value="1" />
@@ -327,51 +284,6 @@
       </node>
     </node>
     <node concept="1uxNW$" id="15d$3Cd7jq3" role="2bv6Cn" />
-    <node concept="3FGEBu" id="1lDQ9Sx6bCn" role="2bv6Cn">
-      <node concept="1Pa9Pv" id="1lDQ9Sx6bCo" role="3FGEBv">
-        <node concept="1PaTwC" id="1lDQ9Sx6bCp" role="1PaQFQ">
-          <node concept="3oM_SD" id="1lDQ9Sx6h_$" role="1PaTwD">
-            <property role="3oM_SC" value="TOOD:" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6i1n" role="1PaTwD">
-            <property role="3oM_SC" value="Ik" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6cqR" role="1PaTwD">
-            <property role="3oM_SC" value="verwacht" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6erT" role="1PaTwD">
-            <property role="3oM_SC" value="that" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6fxn" role="1PaTwD">
-            <property role="3oM_SC" value="alle" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6m8Z" role="1PaTwD">
-            <property role="3oM_SC" value="afgeronden" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6rwt" role="1PaTwD">
-            <property role="3oM_SC" value="getallen" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6rMm" role="1PaTwD">
-            <property role="3oM_SC" value="een" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6sHU" role="1PaTwD">
-            <property role="3oM_SC" value="geheel" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6uj9" role="1PaTwD">
-            <property role="3oM_SC" value="getal" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6vEv" role="1PaTwD">
-            <property role="3oM_SC" value="moeten" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6zaP" role="1PaTwD">
-            <property role="3oM_SC" value="zijn" />
-          </node>
-          <node concept="3oM_SD" id="1lDQ9Sx6L5$" role="1PaTwD">
-            <property role="3oM_SC" value="?" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1uxNW$" id="1lDQ9Sx6aKU" role="2bv6Cn" />
     <node concept="2bvS6$" id="4O2qdTt_vew" role="2bv6Cn">
       <property role="16Ztxt" value="true" />
@@ -394,35 +306,35 @@
         <property role="16Ztxt" value="true" />
         <property role="TrG5h" value="heel grote getal afgerond op 1000-tallen" />
         <node concept="1EDDeX" id="4O2qdTt_w17" role="1EDDcc">
-          <property role="3GST$d" value="-1" />
+          <property role="3GST$d" value="0" />
         </node>
       </node>
       <node concept="2bv6ZS" id="4O2qdTt_we2" role="2bv01j">
         <property role="16Ztxt" value="true" />
         <property role="TrG5h" value="heel grote getal afgerond op 100-tallen " />
         <node concept="1EDDeX" id="4O2qdTt_wpZ" role="1EDDcc">
-          <property role="3GST$d" value="-1" />
+          <property role="3GST$d" value="0" />
         </node>
       </node>
       <node concept="2bv6ZS" id="4O2qdTt_w$c" role="2bv01j">
         <property role="16Ztxt" value="true" />
         <property role="TrG5h" value="heel grote getal afgerond op 10-tallen" />
         <node concept="1EDDeX" id="4O2qdTt_wHL" role="1EDDcc">
-          <property role="3GST$d" value="-1" />
+          <property role="3GST$d" value="0" />
         </node>
       </node>
       <node concept="2bv6ZS" id="I0S54gFHBZ" role="2bv01j">
         <property role="16Ztxt" value="true" />
         <property role="TrG5h" value="wortel van een heel grote getal afgerond op 1000-tallen" />
         <node concept="1EDDeX" id="I0S54gFIkU" role="1EDDcc">
-          <property role="3GST$d" value="-1" />
+          <property role="3GST$d" value="0" />
         </node>
       </node>
       <node concept="2bv6ZS" id="1lDQ9Sx3AyC" role="2bv01j">
         <property role="16Ztxt" value="true" />
         <property role="TrG5h" value="een kleine getal tot de 5e macht verheven en afgerond op 100-tallen" />
         <node concept="1EDDeX" id="1lDQ9Sx3C1Z" role="1EDDcc">
-          <property role="3GST$d" value="-1" />
+          <property role="3GST$d" value="0" />
         </node>
       </node>
     </node>

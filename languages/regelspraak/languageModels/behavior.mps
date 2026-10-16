@@ -12469,6 +12469,68 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2Bo1A47tmW3" role="13h7CS">
+      <property role="TrG5h" value="resultaatDecimalen" />
+      <node concept="3Tm1VV" id="2Bo1A47tmW4" role="1B3o_S" />
+      <node concept="10Oyi0" id="2Bo1A47totB" role="3clF45" />
+      <node concept="3clFbS" id="2Bo1A47tmW6" role="3clF47">
+        <node concept="3SKdUt" id="2Bo1A47tp2t" role="3cqZAp">
+          <node concept="1PaTwC" id="2Bo1A47tp2u" role="1aUNEU">
+            <node concept="3oM_SD" id="2Bo1A47tLYA" role="1PaTwD">
+              <property role="3oM_SC" value="afronding" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A48RJww" role="1PaTwD">
+              <property role="3oM_SC" value="op" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A48RJ_7" role="1PaTwD">
+              <property role="3oM_SC" value="tientallen" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47tpev" role="1PaTwD">
+              <property role="3oM_SC" value="(waar" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A48RK2r" role="1PaTwD">
+              <property role="3oM_SC" value="aantalDecimaen" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47tqZG" role="1PaTwD">
+              <property role="3oM_SC" value="&lt;" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47tr64" role="1PaTwD">
+              <property role="3oM_SC" value="0)" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47trv3" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47tr$V" role="1PaTwD">
+              <property role="3oM_SC" value="altijd" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47trFN" role="1PaTwD">
+              <property role="3oM_SC" value="een" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47trLV" role="1PaTwD">
+              <property role="3oM_SC" value="geheel" />
+            </node>
+            <node concept="3oM_SD" id="2Bo1A47trSj" role="1PaTwD">
+              <property role="3oM_SC" value="getal" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2Bo1A47tBNH" role="3cqZAp">
+          <node concept="2YIFZM" id="2Bo1A47tvtm" role="3cqZAk">
+            <ref role="37wK5l" to="wyt6:~Math.max(int,int)" resolve="max" />
+            <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+            <node concept="3cmrfG" id="2Bo1A47tvzE" role="37wK5m">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="2Bo1A47t$4B" role="37wK5m">
+              <node concept="13iPFW" id="2Bo1A47tz9e" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2Bo1A47t_$k" role="2OqNvi">
+                <ref role="3TsBF5" to="m234:6NL0NB_CwIQ" resolve="aantalDecimalen" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="4HmLHo98JDb" role="13h7CS">
       <property role="TrG5h" value="getAfrondingLabel" />
       <node concept="3Tm1VV" id="4HmLHo98JDc" role="1B3o_S" />
