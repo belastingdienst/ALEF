@@ -53,7 +53,7 @@ class SoapServiceTest {
                   <soap:Body>
                     <alef:berekenEnkelvoudigerelatie>
                       <rsenkelvoudigerelatieMsg>
-                        <request rekenjaar="">
+                        <request rekenjaar="2012">
                           <person>
                             <forName>test</forName>
                           </person>
@@ -68,7 +68,7 @@ class SoapServiceTest {
                   <soap:Body>
                     <alef:berekenEnkelvoudigerelatieResponse>
                       <return>
-                        <request rekenjaar="">
+                        <request rekenjaar="2012">
                           <person>
                             <forName>test</forName>
                           </person>
@@ -117,7 +117,7 @@ class SoapServiceTest {
                 <?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:alef="http://evr.example.org"><soap:Header/><soap:Body>
                     <alef:berekenEnkelvoudigerelatie>
                       <rsenkelvoudigerelatieMsg>
-                        <request>
+                        <request rekenjaar="2012">
                           <person/>
                         </request>
                       </rsenkelvoudigerelatieMsg>
@@ -129,7 +129,7 @@ class SoapServiceTest {
                   <soap:Body>
                     <alef:berekenEnkelvoudigerelatieResponse>
                       <return>
-                        <request>
+                        <request rekenjaar="2012">
                           <person></person>
                         </request>
                         <response>
