@@ -47,7 +47,6 @@ public abstract class AbstractService<T extends MObjectType> {
             return processRequest(universe, inputStream, input);
         } catch (Exception e) {
             try {
-                logOnError(universe.getMessageId(), e, input);
                 return returnError(inputStream, e);
             } catch (RuntimeException x) {
                 logOnError(universe.getMessageId(), e, input);
