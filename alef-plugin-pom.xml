@@ -604,7 +604,6 @@
 				</os>
 			</activation>
 			<properties>
-			    <alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<mps.platform>linux</mps.platform>
 				<jbr.classifier>linux-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
@@ -618,7 +617,6 @@
 				</os>
 			</activation>
 			<properties>
-			    <alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<mps.platform>windows</mps.platform>
 				<jbr.classifier>windows-x64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}</java.home>
@@ -634,7 +632,6 @@
 				</os>
 			</activation>
 			<properties>
-			    <alef.skip.build-services>${skipTests}</alef.skip.build-services>
 				<jbr.classifier>osx-aarch64</jbr.classifier>
 				<java.home>${project.build.directory}/jbr-${jbr.version}-${jbr.classifier}/Contents/Home</java.home>
 			</properties>
