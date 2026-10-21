@@ -408,9 +408,9 @@
 							<overWriteIfNewer>true</overWriteIfNewer>
 						</configuration>
 					</execution>
-					<!-- Copy J2EE jakarta voor v8 to the expected location -->
+					<!-- Copy Jakarta EE to the expected location -->
 					<execution>
-						<id>copy-jakarta-8-dependencies</id>
+						<id>copy-jakarta-ee-dependencies</id>
 						<phase>compile</phase>
 						<goals>
 							<goal>copy-dependencies</goal>
