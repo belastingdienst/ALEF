@@ -1852,6 +1852,11 @@
       <property role="TrG5h" value="bezittelijk" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="1xxPe$z8X7M" role="1TKVEl">
+      <property role="IQ2nx" value="1756919427433222642" />
+      <property role="TrG5h" value="bijvoeglijk" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="39pt6yNN05K" role="PzmwI">
       <ref role="PrY4T" node="39pt6yNMxiq" resolve="IEigenschapReferentie" />
     </node>
@@ -1927,11 +1932,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ic2:4KQiE3qx$2O" resolve="Rol" />
       <ref role="20ksaX" node="5_kzpqNqH9t" resolve="eigenschap" />
-    </node>
-    <node concept="1TJgyi" id="2JunpjHyeGJ" role="1TKVEl">
-      <property role="IQ2nx" value="3161066882682383151" />
-      <property role="TrG5h" value="showAdjective" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="2JunpjHyeMb" role="1TKVEl">
       <property role="IQ2nx" value="3161066882682383499" />

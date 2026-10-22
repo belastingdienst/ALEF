@@ -10,6 +10,14 @@
       <concept id="4485080112264973245" name="contexts.structure.Witruimte" flags="ng" index="1uxNW$" />
     </language>
     <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
+      <concept id="6747529342265147481" name="regelspraak.structure.SamengesteldPredicaat" flags="ng" index="28AkDQ">
+        <child id="6747529342265147484" name="subconditie" index="28AkDN" />
+        <child id="6747529342265147483" name="quant" index="28AkDO" />
+      </concept>
+      <concept id="6747529342263111880" name="regelspraak.structure.RolOfKenmerkCheck" flags="ng" index="28IzFB">
+        <property id="1756919427433222642" name="bijvoeglijk" index="Vgwkr" />
+        <reference id="6747529342263116998" name="rolOfKenmerk" index="28I$VD" />
+      </concept>
       <concept id="6747529342263124657" name="regelspraak.structure.Vergelijking" flags="ng" index="28IAyu">
         <property id="6747529342263127133" name="operator" index="28IApM" />
         <child id="6747529342263128125" name="rechts" index="28IBCi" />
@@ -28,7 +36,6 @@
       <concept id="347899601029311684" name="regelspraak.structure.AttribuutSelector" flags="ng" index="c2t0s" />
       <concept id="6774523643279607820" name="regelspraak.structure.RolSelector" flags="ng" index="ean_g">
         <property id="3161066882682383499" name="showOppositeAdjective" index="36lF4v" />
-        <property id="3161066882682383151" name="showAdjective" index="36lFqV" />
       </concept>
       <concept id="6223277501270327848" name="regelspraak.structure.AbstracteRegel" flags="ng" index="nISv2">
         <child id="6223277501273432772" name="versie" index="kiesI" />
@@ -44,9 +51,16 @@
         <child id="6774523643279660910" name="selector" index="eaaoM" />
         <child id="9009487889885775372" name="object" index="pQQuc" />
       </concept>
+      <concept id="5696347358796946095" name="regelspraak.structure.SamengesteldeVoorwaarde" flags="ng" index="19nIsh">
+        <child id="5696347358796946096" name="predicaat" index="19nIse" />
+      </concept>
       <concept id="1480463129960505090" name="regelspraak.structure.RegelVersie" flags="ng" index="1wO7pt">
         <child id="1480463129960505094" name="statement" index="1wO7pp" />
       </concept>
+      <concept id="1480463129961380548" name="regelspraak.structure.Subconditie" flags="ng" index="1wSDer">
+        <child id="1480463129961380549" name="conditie" index="1wSDeq" />
+      </concept>
+      <concept id="1480463129962641080" name="regelspraak.structure.Alle" flags="ng" index="1wXXZB" />
       <concept id="1024280404772184160" name="regelspraak.structure.OnderwerpRef" flags="ng" index="3yS1BT">
         <reference id="1024280404772185483" name="ref" index="3yS1Ki" />
       </concept>
@@ -214,31 +228,58 @@
               <property role="3e6Tb2" value="0" />
             </node>
           </node>
-          <node concept="2z5Mdt" id="2JunpjFOsn4" role="1wO7i3">
-            <node concept="3_mHL5" id="2JunpjGvLgm" role="2z5D6P">
-              <node concept="c2t0s" id="2JunpjGvLhJ" role="eaaoM">
-                <ref role="Qu8KH" node="2JunpjFoh3k" resolve="saldo" />
-              </node>
-              <node concept="3_mHL5" id="2JunpjGvLgo" role="pQQuc">
-                <node concept="ean_g" id="2JunpjGvLgp" role="eaaoM">
-                  <ref role="Qu8KH" node="2JunpjFo9Gb" resolve="houder" />
-                </node>
-                <node concept="3_mHL5" id="2JunpjGvLgq" role="pQQuc">
-                  <node concept="ean_g" id="2JunpjGvLgr" role="eaaoM">
-                    <property role="36lFqV" value="true" />
-                    <ref role="Qu8KH" node="2JunpjFo9Fr" resolve="rekening" />
+          <node concept="19nIsh" id="1xxPe$$9Ldg" role="1wO7i3">
+            <node concept="28AkDQ" id="1xxPe$$9Ldh" role="19nIse">
+              <node concept="1wSDer" id="1xxPe$$9Ldi" role="28AkDN">
+                <node concept="2z5Mdt" id="1xxPe$$9Ldj" role="1wSDeq">
+                  <node concept="3_mHL5" id="1xxPe$$9Ldk" role="2z5D6P">
+                    <node concept="c2t0s" id="1xxPe$$9Ldl" role="eaaoM">
+                      <ref role="Qu8KH" node="2JunpjFoh3k" resolve="saldo" />
+                    </node>
+                    <node concept="3_mHL5" id="1xxPe$$9Ldm" role="pQQuc">
+                      <node concept="ean_g" id="1xxPe$$9Ldn" role="eaaoM">
+                        <ref role="Qu8KH" node="2JunpjFo9Gb" resolve="houder" />
+                      </node>
+                      <node concept="3_mHL5" id="1xxPe$$9Ldo" role="pQQuc">
+                        <node concept="ean_g" id="1xxPe$$9Ldp" role="eaaoM">
+                          <ref role="Qu8KH" node="2JunpjFo9Fr" resolve="rekening" />
+                        </node>
+                        <node concept="3yS1BT" id="1xxPe$$9Ldq" role="pQQuc">
+                          <ref role="3yS1Ki" node="2JunpjFOs4W" resolve="betaling" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3yS1BT" id="2JunpjGvLgs" role="pQQuc">
-                    <ref role="3yS1Ki" node="2JunpjFOs4W" resolve="betaling" />
+                  <node concept="28IAyu" id="1xxPe$$9Ldr" role="2z5HcU">
+                    <property role="28IApM" value="5brrC35IcXw/LE" />
+                    <node concept="1EQTEq" id="1xxPe$$9Lds" role="28IBCi">
+                      <property role="3e6Tb2" value="0" />
+                    </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="28IAyu" id="2JunpjGvLMx" role="2z5HcU">
-              <property role="28IApM" value="5brrC35IcXw/LE" />
-              <node concept="1EQTEq" id="2JunpjGvLMy" role="28IBCi">
-                <property role="3e6Tb2" value="0" />
+              <node concept="1wSDer" id="1xxPe$$9Ldd" role="28AkDN">
+                <node concept="2z5Mdt" id="1xxPe$$9Lde" role="1wSDeq">
+                  <node concept="3_mHL5" id="1xxPe$$9Ld8" role="2z5D6P">
+                    <node concept="ean_g" id="1xxPe$$9Ld9" role="eaaoM">
+                      <ref role="Qu8KH" node="2JunpjFo9Gb" resolve="houder" />
+                    </node>
+                    <node concept="3_mHL5" id="1xxPe$$9Lda" role="pQQuc">
+                      <node concept="ean_g" id="1xxPe$$9Ldb" role="eaaoM">
+                        <ref role="Qu8KH" node="2JunpjFo9Fr" resolve="rekening" />
+                      </node>
+                      <node concept="3yS1BT" id="1xxPe$$9Ldc" role="pQQuc">
+                        <ref role="3yS1Ki" node="2JunpjFOs4W" resolve="betaling" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="28IzFB" id="1xxPe$$9SdK" role="2z5HcU">
+                    <property role="Vgwkr" value="true" />
+                    <ref role="28I$VD" node="2JunpjFo9Gb" resolve="houder" />
+                  </node>
+                </node>
               </node>
+              <node concept="1wXXZB" id="1xxPe$$9NwU" role="28AkDO" />
             </node>
           </node>
         </node>
