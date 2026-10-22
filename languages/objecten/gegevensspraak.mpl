@@ -45,6 +45,9 @@
     <dependency reexport="false">b13b6244-ea51-440e-bbb8-37e1276fefe2(projecthygiene.plugin)</dependency>
     <dependency reexport="false">20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
+    <dependency reexport="false">8bc962c0-cb3c-49f0-aa03-23c3bc0304b0(testspraak)</dependency>
+    <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
+    <dependency reexport="false">4f3d16ac-f7e4-4b3f-a6b7-131c2b808441(alef.customization)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:33ffcc1f-fa7d-4e95-a508-70b7986298ef:bl.stringinterpolation" version="0" />
@@ -76,6 +79,7 @@
     <language slang="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" version="0" />
     <language slang="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" version="0" />
     <language slang="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" version="4" />
+    <language slang="l:f159adf4-3c93-40f9-9c5a-1f245a8697af:jetbrains.mps.lang.aspect" version="2" />
     <language slang="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" version="2" />
     <language slang="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" version="6" />
     <language slang="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" version="0" />
@@ -96,6 +100,8 @@
     <language slang="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" version="1" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
+    <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="6" />
+    <language slang="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" version="0" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="5" />
     <language slang="l:3ecd7c84-cde3-45de-886c-135ecc69b742:jetbrains.mps.lang.refactoring" version="0" />
     <language slang="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" version="3" />
@@ -110,6 +116,8 @@
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
+    <language slang="l:c9d137c4-3259-44f8-80ff-33ab2b506ee4:jetbrains.mps.lang.util.order" version="0" />
+    <language slang="l:696c1165-4a59-463b-bc5d-902caab85dd0:jetbrains.mps.make.facet" version="0" />
     <language slang="l:804014de-e593-4efc-b1b2-c667769358b9:linguistics" version="0" />
     <language slang="l:9a426806-963f-464e-a66c-82a7bdb9cfde:projecthygiene" version="0" />
     <language slang="l:b2fc4154-1657-4d74-8828-c55b57a96ecd:rapporten" version="2" />
@@ -123,8 +131,12 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
+    <module reference="4f3d16ac-f7e4-4b3f-a6b7-131c2b808441(alef.customization)" version="0" />
     <module reference="09737df8-57b5-428f-9399-89f414a94263(alef.runtime)" version="0" />
     <module reference="4a6bb6ab-de63-4605-8a60-a06fda7893a8(alef.tools)" version="0" />
+    <module reference="7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3(beslistabelspraak)" version="0" />
+    <module reference="65239ca4-9057-41f8-999d-97fa1a60b298(besturingspraak)" version="0" />
     <module reference="5feb4260-bb43-4b81-aa8f-b5cd0665bfeb(blaze.srl)" version="0" />
     <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
     <module reference="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" version="0" />
@@ -165,7 +177,11 @@
     <module reference="b13b6244-ea51-440e-bbb8-37e1276fefe2(projecthygiene.plugin)" version="0" />
     <module reference="8fbde41a-1e4d-4a35-b4ee-694c9b61c7ca(projecthygiene.runtime)" version="0" />
     <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
+    <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
+    <module reference="d8af31be-1847-4d5b-8686-78e232d4e0f8(servicespraak)" version="0" />
+    <module reference="8270cb09-651a-458a-9f4e-86e3e4423c92(standaardFuncties)" version="0" />
     <module reference="caef3229-d6fe-4ba8-b3e3-cf13cc4a9119(strings)" version="0" />
+    <module reference="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0(testspraak)" version="15" />
     <module reference="d8e9f689-ebf9-4dc1-b26b-cc0e8268cf07(translator.genplan)" version="0" />
     <module reference="de859d7b-3967-4dc6-800a-c7f85c414239(translator.runtime)" version="0" />
   </dependencyVersions>
