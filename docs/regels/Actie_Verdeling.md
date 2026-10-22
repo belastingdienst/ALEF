@@ -5,10 +5,11 @@ Doel van deze actie is het verdelen van een te verdelen hoeveelheid (Verdeelplaf
 Als niet het hele verdeelplafond wordt toegerekend aan ontvangers (door afronding of aanspraak) dan wordt een restant berekend voor iedere Verdeler.
 
 Opties binnen de toepassing van de actie:
-* Afronden
-* Verdelen vanuit één of meerdere verdelers
+
+* **Afronden**
+* **Verdelen vanuit één of meerdere verdelers**  
 Verdelingen vanuit meerdere verdelers met verdeelplafonds en restanten. Kan gebruikt worden via de intentie “Verdeel Vanuit Meerdere Verdelers” beschikbaar op de verdeling. Verdelers en ontvangers bieden de volgende optie.
-* Verdeling met subgroepen 
+* **Verdeling met subgroepen**   
 Dit houdt in dat Ontvangers in subgroepen worden ingedeeld, waarover in een volgorde wordt verdeeld.
 
 Ontvangers hebben daarbij ook de volgende opties extra
@@ -39,13 +40,15 @@ Bij meerdere verdelers heeft een verdeling zijn (één op meer) verdelers en (é
 
 ![Verdeling meerdere verdelers relatiemodel](img/VerdelingRelatieMeerdereVerdelers.png)
 
-## Voorbeeld 1 - Verdeling zonder groepen
+## Voorbeelden
+
+### Voorbeeld 1: Verdeling zonder groepen
 
 In dit geval wordt de hoeveelheid die door de Verdeler verdeeld wordt (verdeelplafond) in gelijke delen toegewezen aan de Ontvangers (aandeel in verdeelplafond). 
 
 ![Verdeling verdeelplafond in gelijke delen, zonder groepen](../img/ALEF201_VerdelingZonderGroepen.png)
 
-## Voorbeeld 2 - Verdeling met groepen
+### Voorbeeld 2: Verdeling met groepen
 
 In dit geval wordt de hoeveelheid die door de Verdeler verdeeld wordt (verdeelplafond) toegewezen aan de Ontvangers (aandeel in verdeelplafond) op basis van een groepering die wordt bepaald door een attribuut. De Ontvangers met dezelfde waarde voor dat attribuut (bijvoorbeeld 'leeftijd') worden in subgroepen opgedeeld en de verdeling vindt dan plaats over die subgroepen in een volgorde.
 
@@ -53,7 +56,7 @@ De aanspraak die een Ontvanger kan hebben wordt bepaald door het aanspraak-attri
 
 ![Verdeling verdeelplafond met groepen, naar rato verdeeld binnen groep](../img/ALEF201_VerdelingMetGroepen.png)
 
-## Voorbeeld 3 - Verdeling met meerdere verdelers
+### Voorbeeld 3: Verdeling met meerdere verdelers
 
 In dit geval wordt de hoeveelheid die door de Verdelers verdeeld wordt toegewezen aan de Ontvangers. Ieder deel wordt vastgelegd in een transactie object
 
