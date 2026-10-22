@@ -28,7 +28,7 @@ you wil find a distribution for Windows, Linux and MacOS to use.
    * Maven.
 2. Make sure you install [Jetbrains MPS](http://jetbrains.com/mps/) 
    see the [version-mps.txt](versionMPS.txt) file for the version to use.
-3. Run `mvn -B -U -Pinstall-deps package` to only build and install the dependencies.
+3. Run `mvn -B -U -P install-deps package` to only build and install the dependencies.
 4. Open in MPS the folder where this [README.md](README.md) file is located.
 5. Add to Settings > Appearance & Behavior > Path Variables
    * `alef.home` the location where [README.md](README.md) file is located.
@@ -37,6 +37,7 @@ you wil find a distribution for Windows, Linux and MacOS to use.
 ## Documentation
 
 To build the documentation:
+
 1. Make sure you installed Python 3.x and Zensical (`pip install zensical`)
 2. Run: `sh scripts/build-docs.sh`
 
