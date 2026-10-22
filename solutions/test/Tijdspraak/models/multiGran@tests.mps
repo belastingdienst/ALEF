@@ -24,8 +24,8 @@
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="e5lo" ref="r:70ff780f-2f03-4182-96db-287595569f24(Tijd_VariabeleStartdatum)" />
     <import index="9nho" ref="r:4172b106-22c7-49a2-9043-c1e488e6f56c(standaard.funcs)" />
+    <import index="8l26" ref="r:788951b7-6ce7-4cdf-b16c-b6ef0e226719(gegevensspraak.behavior)" />
     <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" implicit="true" />
-    <import index="8l26" ref="r:788951b7-6ce7-4cdf-b16c-b6ef0e226719(gegevensspraak.behavior)" implicit="true" />
     <import index="3ic2" ref="r:1be64251-a392-4bb4-8ecb-06d30a9277a4(gegevensspraak.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -791,9 +791,9 @@
           </node>
           <node concept="3clFbS" id="4$UnxqrJSMd" role="Jncv$">
             <node concept="3vlDli" id="4$UnxqrJT3j" role="3cqZAp">
-              <node concept="10M0yZ" id="4$UnxqrJZ5b" role="3tpDZB">
-                <ref role="3cqZAo" to="3ph8:JN8gpVx15U" resolve="JAAR" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+              <node concept="10M0yZ" id="1yiHq0vmV6y" role="3tpDZB">
+                <ref role="3cqZAo" to="8l26:JN8gpVx15U" resolve="JAAR" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="4$UnxqrJU6_" role="3tpDZA">
                 <node concept="2OqwBi" id="4$UnxqrJTnI" role="2Oq$k0">
@@ -872,8 +872,8 @@
           <node concept="3clFbS" id="4$UnxqrKv99" role="Jncv$">
             <node concept="3vlDli" id="4$UnxqrKv9a" role="3cqZAp">
               <node concept="10M0yZ" id="4$UnxqrKyR2" role="3tpDZB">
-                <ref role="3cqZAo" to="3ph8:JN8gpVx0Qj" resolve="KWARTAAL" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                <ref role="3cqZAo" to="8l26:JN8gpVx0Qj" resolve="KWARTAAL" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="4$UnxqrKv9c" role="3tpDZA">
                 <node concept="2OqwBi" id="4$UnxqrKv9d" role="2Oq$k0">
@@ -952,8 +952,8 @@
           <node concept="3clFbS" id="4$UnxqrL6bh" role="Jncv$">
             <node concept="3vlDli" id="4$UnxqrL6bi" role="3cqZAp">
               <node concept="10M0yZ" id="4$UnxqrL6C0" role="3tpDZB">
-                <ref role="3cqZAo" to="3ph8:JN8gpVx0tD" resolve="MAAND" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                <ref role="3cqZAo" to="8l26:JN8gpVx0tD" resolve="MAAND" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="4$UnxqrL6bk" role="3tpDZA">
                 <node concept="2OqwBi" id="4$UnxqrL6bl" role="2Oq$k0">
@@ -1032,8 +1032,8 @@
           <node concept="3clFbS" id="4$UnxqrLeHS" role="Jncv$">
             <node concept="3vlDli" id="4$UnxqrLeHT" role="3cqZAp">
               <node concept="10M0yZ" id="4$UnxqrMuuR" role="3tpDZB">
-                <ref role="3cqZAo" to="3ph8:JN8gpVx0Qj" resolve="KWARTAAL" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                <ref role="3cqZAo" to="8l26:JN8gpVx0Qj" resolve="KWARTAAL" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="4$UnxqrLeHV" role="3tpDZA">
                 <node concept="2OqwBi" id="4$UnxqrLeHW" role="2Oq$k0">
@@ -1112,8 +1112,8 @@
           <node concept="3clFbS" id="4$UnxqrLzpB" role="Jncv$">
             <node concept="3vlDli" id="4$UnxqrLzpC" role="3cqZAp">
               <node concept="10M0yZ" id="79jefRMx$zR" role="3tpDZB">
-                <ref role="3cqZAo" to="3ph8:JN8gpVx0tD" resolve="MAAND" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                <ref role="3cqZAo" to="8l26:JN8gpVx0tD" resolve="MAAND" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="4$UnxqrLzpE" role="3tpDZA">
                 <node concept="2OqwBi" id="4$UnxqrLzpF" role="2Oq$k0">
@@ -3126,8 +3126,8 @@
           <node concept="3clFbS" id="5Kky4K6KDCX" role="Jncv$">
             <node concept="3vlDli" id="5Kky4K6KDCY" role="3cqZAp">
               <node concept="10M0yZ" id="5Kky4K6KFpV" role="3tpDZB">
-                <ref role="3cqZAo" to="3ph8:JN8gpVx0tD" resolve="MAAND" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                <ref role="3cqZAo" to="8l26:JN8gpVx0tD" resolve="MAAND" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="5Kky4K6KDD0" role="3tpDZA">
                 <node concept="2OqwBi" id="5Kky4K6KDD1" role="2Oq$k0">
