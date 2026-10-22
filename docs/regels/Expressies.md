@@ -51,6 +51,37 @@ Een voorbeeld hiervan is een berekening van de nette winst in een winkel. De vas
 
 ![Regels met combinatie van tijdsafhankelijke attributen](img/Expressies_Tijdsafhankelijk1.png)
 
+### Omrekenen naar verhouding
+
+RegelSpraak doet automatisch aan delen en vermenigvuldigen naar verhouding met tijdsafhankelijke waarden met verschillende tijdseenheden.
+Een waarde met tijdseenheid *per maand* wordt bijvoorbeeld met 12 vermenigvuldigd als het resultaat een tijdseenheid *per jaar* moet hebben.
+Het omrekenen van maanden naar dagen en vice versa werkt echter niet. Het aantal dagen in een maand is niet altijd hetzelfde, dus hier bestaat geen ingebouwde omrekenfactor voor. Omrekenen van jaren naar dagen en vice versa kan daarom ook niet.
+
+In dit voorbeeld is de [parameter](../gegevens/parameter.md) Standaard Belastingvermindering een Numerieke waarde met eenheid euro/jaar. De berekening moet een waarde met euro/maand opleveren voor de [gelijkstelling](Actie_Gelijkstelling.md).
+
+![Voorbeeld van omrekenen euro/maand naar euro/jaar](img/Expressies_Datum_omrekenen_1.png)
+
+### Tijdsevenredig deel
+
+Met de expressie **het tijdsevenredig deel per** kunnen regels worden opgesteld voor omrekeningen tussen jaar en maand waarbij sprake is van een gebroken jaar of maand.
+In die berekeningen wordt de omrekenfactor bepaald door per maand of jaar het aantal dagen waarop de expressie moet worden toegepast te delen door het totale aantal dagen van het jaar of de maand.
+
+![Voorbeeld van omrekenen euro/maand naar euro/jaar](img/Expressies_Datum_omrekenen_2.png)
+
+De gebroken periode waarover het tijdsevenredig deel berekend moet worden wordt bepaald door een tijdsafhankelijke conditie bij deze expressie.
+Die begint met 'gedurende de tijd dat'.
+Er moet ook worden gespecificeerd voor welke periode een tijdsevenredig deel moet worden berekend.
+
+### Aggregeren in de tijd
+
+De expressie **het totaal van** voert in RegelSpraak een sommatie uit van alle waarden van een attribuut in de tijd.
+Dit moet toegepast worden op een attribuut met numeriek datatype met eenheid per tijdseenheid.
+Het is mogelijk om aan de expressie een tijdafhankelijke conditie toe te voegen. Sterker nog, zonder conditie is er geen grens aan de periode waarover gesommeerd wordt.
+Voor meer uitleg over aggegraties en condities, zie ['Selectie expressies'](Expressies_Selectie.md)
+In dat geval worden voor het resultaat van de expressie uitsluitend waarden gebruikt die van toepassing zijn in de periode zoals die in de tijdsafhankelijke conditie is gespecificeerd.
+N.B. De conditie heeft in dit geval alleen betrekking op de expressie en is geen onderdeel van het voorwaardendeel van de regel.
+De regel wordt overzichtelijker door de conditie die bij de aggegratie hoort in haakjes te plaatsen. Dan wordt deze makkelijker de onderscheiden van de conditie van de regel zelf (als die wordt gebruikt).
+
 ### Perioden in expressies
 
 De waarden van tijdsafhankelijke attributen, parameters of kenmerken hebben een periode waarin ze van toepassing zijn. Die periode kan als volgt worden gespecificeerd in RegelSpraak:
