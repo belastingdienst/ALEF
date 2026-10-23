@@ -5,12 +5,13 @@ import nl.belastingdienst.alef_runtime.time.IValidity;
 import nl.belastingdienst.alef_runtime.time.Time;
 import nl.belastingdienst.merlin.base.MElementList;
 import nl.belastingdienst.merlin.base.MObject;
+import nl.belastingdienst.merlin.base.MRoleKey;
 import nl.belastingdienst.merlin.base.RoleCardinalityException;
 
 import java.util.List;
 import java.util.function.Function;
 
-public class MTimedObjectSingleton extends MTimedObjectSet {
+public class MTimedObjectSingleton extends MTimedObjectSet  {
 
     public static MTimedObjectSingleton of(List<MTimedObject> elements) {
         return new MTimedObjectSingleton(elements);
@@ -37,6 +38,15 @@ public class MTimedObjectSingleton extends MTimedObjectSet {
 
     public <V> ITimed<V> mapToTimedValue(Function<MObject, ITimed<V>> function) {
         return Time.liftT(function).apply(asTimed());
+    }
+    @Override
+    public MTimedObjectSingleton mapTimedSingularRole(MRoleKey role) {
+        return new MTimedObjectSingleton(super.mapTimedSingularRole(role).members());
+    }
+
+    @Override
+    public MTimedObjectSingleton asSingleton() {
+        return this;
     }
 
     public ITimed<MObject> asTimed() {

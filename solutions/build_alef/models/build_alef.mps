@@ -11769,6 +11769,11 @@
             <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5j7WUa3vxaZ" role="3bR37C">
+          <node concept="3bR9La" id="5j7WUa3vxb0" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4_O251liq0W" role="2G$12L">
         <property role="BnDLt" value="true" />
