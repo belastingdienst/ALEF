@@ -10,6 +10,7 @@ import nl.belastingdienst.brm.alef.servicetest.dto.ServiceTestSet;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -109,15 +110,22 @@ public class ServicetestRunner {
 
     private List<ServiceTestSet> getData(Path testSet) throws IOException {
         final byte[] contents = Platform.extractFromZip(testSet.toFile(), "data.json");
-        return mapper.readValue(contents, new TypeReference<>(){});
+        if (contents != null) {
+            return mapper.readValue(contents, new TypeReference<>(){});
+        } else {
+            return new ArrayList<>();
+        }
     }
 
     private String getTextFile(Path testSet, String fileName) throws IOException {
         final byte[] contents = Platform.extractFromZip(testSet.toFile(), fileName);
-        try (InputStreamReader input = new InputStreamReader(new ByteArrayInputStream(contents), StandardCharsets.UTF_8);
-             BufferedReader reader = new BufferedReader(input)) {
-            return reader.lines().collect(Collectors.joining("\n"));
+        if (contents != null) {
+            try (InputStreamReader input = new InputStreamReader(new ByteArrayInputStream(contents), StandardCharsets.UTF_8);
+                 BufferedReader reader = new BufferedReader(input)) {
+                return reader.lines().collect(Collectors.joining("\n"));
+            }
         }
+        return "";
     }
 
     private String testId(final String inputFilePath) {

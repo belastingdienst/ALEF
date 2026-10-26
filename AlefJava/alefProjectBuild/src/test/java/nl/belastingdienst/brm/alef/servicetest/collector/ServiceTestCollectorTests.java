@@ -73,6 +73,7 @@ public class ServiceTestCollectorTests {
         int expectedFiles = 1;
 
         final byte[] contents = Platform.extractFromZip(resultZipFile.toFile(), "data.json");
+        Assert.assertNotNull(contents);
         List<ServiceTestSet> testSets = mapper.readValue(contents, new TypeReference<>(){});
         for (ServiceTestSet testSet : testSets) {
             if (!testSet.getXsd().isBlank()) {

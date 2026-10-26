@@ -174,6 +174,13 @@ public final class Platform {
         }
     }
 
+    /**
+     * Get the content in bytes from a file in a zip file.
+     * @param zip Zip file
+     * @param name Relative path to the file in unix style (example: folder/my-file.txt)
+     * @return Bytes of the file or null if the file doesn't exist.
+     * @throws IOException In case of a zip file read error.
+     */
     public static byte[] extractFromZip(final File zip, final String name) throws IOException {
         // Making this method smaller causes false positives about not checking for Zip Bomb Attacks.
         try (FileInputStream fileInputStream = new FileInputStream(zip);
@@ -200,6 +207,6 @@ public final class Platform {
                 }
             }
         }
-        return new byte[0];
+        return null;
     }
 }
