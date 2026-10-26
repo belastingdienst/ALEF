@@ -173,6 +173,47 @@ class ParserRecordingTest {
     }
 
     @Test
+    void testSpecialCharactersSoap() throws IOException {
+        final String xml = "<root><name>reëel</name></root>";
+        final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        final ToXmlGenerator generator = XmlFactory.builder().build().createGenerator(outputStream);
+        generator.setNextName(new QName("response"));
+        generator.writeStartObject();
+        final XmlParser parser = new XmlParser(asInputStream(xml), generator);
+        parser.beginObject();
+        parser.startRecording();
+        parser.nextName();
+        parser.nextValue();
+        parser.stopRecording();
+        parser.endObject();
+        generator.writeEndObject();
+        generator.flush();
+        assertEquals("<response><name>reëel</name></response>", outputStream.toString(Charset.defaultCharset()));
+    }
+
+    @Test
+    void testSpecialCharactersRest() throws IOException {
+        final String json = """
+                {
+                    "value" : "reëel"
+                }
+                """;
+        final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        final JsonGenerator generator = JsonFactory.builder().build().createGenerator(outputStream);
+        generator.writeStartObject();
+        final JsonParser parser = new JsonParser(asInputStream(json), generator);
+        parser.beginObject();
+        parser.startRecording();
+        parser.nextName();
+        parser.nextValue();
+        parser.stopRecording();
+        parser.endObject();
+        generator.writeEndObject();
+        generator.flush();
+        assertEquals("{\"value\":\"reëel\"}", outputStream.toString(Charset.defaultCharset()));
+    }
+
+    @Test
     void testRecordingWhileXmlParserReusesTokens() throws IOException {
         String xml = """
                 <message>
