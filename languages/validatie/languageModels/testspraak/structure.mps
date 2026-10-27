@@ -273,7 +273,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dagsoorten" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6tO5$LqO4dn" resolve="DatumDagSoortVoorspelling" />
+      <ref role="20lvS9" node="6tO5$LqO4dn" resolve="DatumDagsoortVoorspelling" />
     </node>
     <node concept="1TJgyj" id="1r175cmcDnq" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1792,7 +1792,7 @@
   </node>
   <node concept="1TIwiD" id="6tO5$LqO4dn">
     <property role="EcuMT" value="7454607800401937239" />
-    <property role="TrG5h" value="DatumDagSoortVoorspelling" />
+    <property role="TrG5h" value="DatumDagsoortVoorspelling" />
     <property role="3GE5qa" value="voorspelling" />
     <property role="34LRSv" value="datum is (geen) dagsoort" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

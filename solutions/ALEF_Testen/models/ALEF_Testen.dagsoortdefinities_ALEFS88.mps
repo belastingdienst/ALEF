@@ -401,6 +401,7 @@
     <node concept="210ffa" id="6tO5$LvoRSn" role="10_$IM">
       <property role="TrG5h" value="001" />
       <node concept="XD5kr" id="6tO5$LvoSNw" role="XDnfx">
+        <property role="3iLdo0" value="true" />
         <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
         <node concept="2ljiaL" id="6tO5$LvoSNx" role="XDl9Z">
           <property role="2ljiaM" value="1" />
@@ -423,6 +424,17 @@
           <property role="2ljiaM" value="4" />
           <property role="2ljiaN" value="5" />
           <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="4HvEN5Rb$Vc" role="10_$IM">
+      <property role="TrG5h" value="002" />
+      <node concept="XD5kr" id="4HvEN5RbAWM" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60i" resolve="eerste paasdag" />
+        <node concept="2ljiaL" id="4HvEN5RbAWN" role="XDl9Z">
+          <property role="2ljiaM" value="1" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2022" />
         </node>
       </node>
     </node>

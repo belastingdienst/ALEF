@@ -1936,7 +1936,7 @@
                             <ref role="3TtcxE" to="6ldf:6tO5$LqOmmH" resolve="dagsoorten" />
                           </node>
                         </node>
-                        <node concept="3GX2aA" id="6tO5$LqRRKG" role="2OqNvi" />
+                        <node concept="1v1jN8" id="4HvEN5Rb00a" role="2OqNvi" />
                       </node>
                       <node concept="1Wc70l" id="17_dysTEJuY" role="3uHU7B">
                         <node concept="1Wc70l" id="2fPeqn6kKVk" role="3uHU7B">
@@ -13341,7 +13341,7 @@
   </node>
   <node concept="24kQdi" id="6tO5$LqOKpr">
     <property role="3GE5qa" value="voorspelling" />
-    <ref role="1XX52x" to="6ldf:6tO5$LqO4dn" resolve="DatumDagSoortVoorspelling" />
+    <ref role="1XX52x" to="6ldf:6tO5$LqO4dn" resolve="DatumDagsoortVoorspelling" />
     <node concept="3EZMnI" id="6tO5$LqOKH9" role="2wV5jI">
       <node concept="3F1sOY" id="6tO5$LqOKP5" role="3EZMnx">
         <ref role="1NtTu8" to="6ldf:6tO5$LqOkgN" resolve="datum" />
