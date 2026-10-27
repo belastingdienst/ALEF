@@ -268,6 +268,13 @@
       <property role="IQ2ns" value="4520032613910301313" />
       <ref role="20lvS9" to="3ic2:58tBIcSsgcf" resolve="Parametertoekenning" />
     </node>
+    <node concept="1TJgyj" id="6tO5$LqOmmH" role="1TKVEi">
+      <property role="IQ2ns" value="7454607800402011565" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dagsoorten" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6tO5$LqO4dn" resolve="DatumDagSoortVoorspelling" />
+    </node>
     <node concept="1TJgyj" id="1r175cmcDnq" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="flow" />
@@ -1781,6 +1788,32 @@
     </node>
     <node concept="PrWs8" id="5yztnPwm8y6" role="PzmwI">
       <ref role="PrY4T" node="5yztnPwm8y3" resolve="INavigeer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tO5$LqO4dn">
+    <property role="EcuMT" value="7454607800401937239" />
+    <property role="TrG5h" value="DatumDagSoortVoorspelling" />
+    <property role="3GE5qa" value="voorspelling" />
+    <property role="34LRSv" value="datum is (geen) dagsoort" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6tO5$LqOkgN" role="1TKVEi">
+      <property role="IQ2ns" value="7454607800402002995" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="datum" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:4K62$zpiMzT" resolve="DatumTijdLiteral" />
+    </node>
+    <node concept="PrWs8" id="6tO5$LvLuyA" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:hSxee4BM23" resolve="AlefDebugAction" />
+    </node>
+    <node concept="PrWs8" id="6tO5$LqO6QG" role="PzmwI">
+      <ref role="PrY4T" to="m234:6E7_KuSgO46" resolve="Ontkenbaar" />
+    </node>
+    <node concept="1TJgyj" id="6tO5$LqOkSc" role="1TKVEi">
+      <property role="IQ2ns" value="7454607800402005516" />
+      <property role="20kJfa" value="dagsoort" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:4SRT32yWMLH" resolve="Dagsoort" />
     </node>
   </node>
 </model>

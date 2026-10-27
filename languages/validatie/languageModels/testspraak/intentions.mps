@@ -266,6 +266,9 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -4073,6 +4076,146 @@
               </node>
             </node>
             <node concept="3GX2aA" id="3Ne_voFgP6v" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6tO5$Lrheg_">
+    <property role="TrG5h" value="VoegDagsoortVoorspellingToe" />
+    <ref role="2ZfgGC" to="6ldf:YPZHqeHgOs" resolve="TestGeval" />
+    <node concept="2S6ZIM" id="6tO5$LrhegA" role="2ZfVej">
+      <node concept="3clFbS" id="6tO5$LrhegB" role="2VODD2">
+        <node concept="3clFbF" id="6tO5$LrheV$" role="3cqZAp">
+          <node concept="Xl_RD" id="6tO5$LrheVz" role="3clFbG">
+            <property role="Xl_RC" value="Voeg Dagsoortvoorspelling Toe" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6tO5$LrhegC" role="2ZfgGD">
+      <node concept="3clFbS" id="6tO5$LrhegD" role="2VODD2">
+        <node concept="3cpWs8" id="6tO5$LrhNuz" role="3cqZAp">
+          <node concept="3cpWsn" id="6tO5$LrhNu$" role="3cpWs9">
+            <property role="TrG5h" value="datumDagSoortVoorspelling" />
+            <node concept="3Tqbb2" id="6tO5$LrhNc8" role="1tU5fm">
+              <ref role="ehGHo" to="6ldf:6tO5$LqO4dn" resolve="DatumDagSoortVoorspelling" />
+            </node>
+            <node concept="2OqwBi" id="6tO5$LrhNu_" role="33vP2m">
+              <node concept="2OqwBi" id="6tO5$LrhNuA" role="2Oq$k0">
+                <node concept="2Sf5sV" id="6tO5$LrhNuB" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6tO5$LrhNuC" role="2OqNvi">
+                  <ref role="3TtcxE" to="6ldf:6tO5$LqOmmH" resolve="dagsoorten" />
+                </node>
+              </node>
+              <node concept="WFELt" id="6tO5$LrhNuD" role="2OqNvi">
+                <ref role="1A0vxQ" to="6ldf:6tO5$LqO4dn" resolve="DatumDagSoortVoorspelling" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6tO5$Lrhxqo" role="3cqZAp">
+          <node concept="2OqwBi" id="6tO5$LrhPfl" role="3clFbG">
+            <node concept="2OqwBi" id="6tO5$LrhOrO" role="2Oq$k0">
+              <node concept="37vLTw" id="6tO5$LrhNuE" role="2Oq$k0">
+                <ref role="3cqZAo" node="6tO5$LrhNu$" resolve="datumDagSoortVoorspelling" />
+              </node>
+              <node concept="3TrEf2" id="6tO5$LrhOQi" role="2OqNvi">
+                <ref role="3Tt5mk" to="6ldf:6tO5$LqOkgN" resolve="datum" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6tO5$LrhSnq" role="2OqNvi">
+              <ref role="1A9B2P" to="3ic2:4K62$zpiMzT" resolve="DatumTijdLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6tO5$LrhfDJ" role="2ZfVeh">
+      <node concept="3clFbS" id="6tO5$LrhfDK" role="2VODD2">
+        <node concept="3clFbF" id="6tO5$LrhgDg" role="3cqZAp">
+          <node concept="3clFbT" id="6tO5$LrhgDf" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6tO5$LrhUfa">
+    <property role="TrG5h" value="VoegSituatieEnResultaatToe" />
+    <ref role="2ZfgGC" to="6ldf:YPZHqeHgOs" resolve="TestGeval" />
+    <node concept="2S6ZIM" id="6tO5$LrhUfb" role="2ZfVej">
+      <node concept="3clFbS" id="6tO5$LrhUfc" role="2VODD2">
+        <node concept="3clFbF" id="6tO5$LrhUQg" role="3cqZAp">
+          <node concept="Xl_RD" id="6tO5$LrhUQf" role="3clFbG">
+            <property role="Xl_RC" value="Voeg Situatie en Resultaat Toe" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6tO5$LrhUfd" role="2ZfgGD">
+      <node concept="3clFbS" id="6tO5$LrhUfe" role="2VODD2">
+        <node concept="3clFbF" id="6tO5$LriuCQ" role="3cqZAp">
+          <node concept="2OqwBi" id="6tO5$LriB_B" role="3clFbG">
+            <node concept="2OqwBi" id="6tO5$Lriv5v" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6tO5$LriuCP" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6tO5$LriwZz" role="2OqNvi">
+                <ref role="3TtcxE" to="6ldf:5EnECDuhFw0" resolve="situatie" />
+              </node>
+            </node>
+            <node concept="WFELt" id="6tO5$LriHe3" role="2OqNvi">
+              <ref role="1A0vxQ" to="6ldf:5EnECDuhFvy" resolve="Instantie" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6tO5$LuBwBw" role="3cqZAp">
+          <node concept="2OqwBi" id="6tO5$LuBwBx" role="3clFbG">
+            <node concept="2OqwBi" id="6tO5$LuBwBy" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6tO5$LuBwBz" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6tO5$LuBwB$" role="2OqNvi">
+                <ref role="3TtcxE" to="6ldf:5EnECDuhFxb" resolve="resultaat" />
+              </node>
+            </node>
+            <node concept="WFELt" id="6tO5$LuBwB_" role="2OqNvi">
+              <ref role="1A0vxQ" to="6ldf:5EnECDuhFy_" resolve="Resultaat" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6tO5$LrhVdG" role="2ZfVeh">
+      <node concept="3clFbS" id="6tO5$LrhVdH" role="2VODD2">
+        <node concept="3clFbF" id="6tO5$LrhVsl" role="3cqZAp">
+          <node concept="1Wc70l" id="6tO5$LuAJKZ" role="3clFbG">
+            <node concept="2OqwBi" id="6tO5$Lrikrh" role="3uHU7w">
+              <node concept="2OqwBi" id="6tO5$Lrifl5" role="2Oq$k0">
+                <node concept="2Sf5sV" id="6tO5$LrieNy" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6tO5$Lrihgo" role="2OqNvi">
+                  <ref role="3TtcxE" to="6ldf:6tO5$LqOmmH" resolve="dagsoorten" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="6tO5$Lriuam" role="2OqNvi" />
+            </node>
+            <node concept="1Wc70l" id="6tO5$LriekB" role="3uHU7B">
+              <node concept="2OqwBi" id="6tO5$Lri6VW" role="3uHU7B">
+                <node concept="2OqwBi" id="6tO5$LrhW2j" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="6tO5$LrhVsk" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="6tO5$LrhYe$" role="2OqNvi">
+                    <ref role="3TtcxE" to="6ldf:5EnECDuhFw0" resolve="situatie" />
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="6tO5$LricCq" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="6tO5$LuATpq" role="3uHU7w">
+                <node concept="2OqwBi" id="6tO5$LuAKDJ" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="6tO5$LuAK7X" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="6tO5$LuAMNM" role="2OqNvi">
+                    <ref role="3TtcxE" to="6ldf:5EnECDuhFxb" resolve="resultaat" />
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="6tO5$LuBgLZ" role="2OqNvi" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
