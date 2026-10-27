@@ -3514,8 +3514,8 @@
   </node>
   <node concept="sE7Ow" id="734CgWXAP3l">
     <property role="1rBW0U" value="true" />
-    <property role="TrG5h" value="Splits Rolnamen" />
-    <property role="2uzpH1" value="Splits Rolnamen" />
+    <property role="TrG5h" value="Vereenvoudig Rolnamen" />
+    <property role="2uzpH1" value="Vereenvoudig Rolnamen" />
     <node concept="mfpdH" id="734CgWXB249" role="med8o" />
     <node concept="tnohg" id="734CgWXAP3m" role="tncku">
       <node concept="3clFbS" id="734CgWXAP3n" role="2VODD2">
@@ -3620,7 +3620,7 @@
     <property role="TrG5h" value="RefactoringGroup" />
     <node concept="ftmFs" id="734CgWXDjS8" role="ftER_">
       <node concept="tCFHf" id="734CgWXDjSa" role="ftvYc">
-        <ref role="tCJdB" node="734CgWXAP3l" resolve="Splits Rolnamen" />
+        <ref role="tCJdB" node="734CgWXAP3l" resolve="Vereenvoudig Rolnamen" />
       </node>
       <node concept="tCFHf" id="734CgWXZjRL" role="ftvYc">
         <ref role="tCJdB" to="h75z:734CgWXTwHr" resolve="VerwijderOvertolligeSpaties" />

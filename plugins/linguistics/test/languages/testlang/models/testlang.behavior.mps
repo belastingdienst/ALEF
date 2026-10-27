@@ -339,8 +339,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="7UQGk9UrN_Y" role="13h7CS">
-      <property role="TrG5h" value="form" />
-      <ref role="13i0hy" to="o2rs:6FJD36T33Ql" resolve="form" />
+      <property role="TrG5h" value="verbForm" />
+      <ref role="13i0hy" to="o2rs:1xxPe$JZ0L0" resolve="verbForm" />
       <node concept="3Tm1VV" id="7UQGk9UrNA1" role="1B3o_S" />
       <node concept="3clFbS" id="7UQGk9UrNA4" role="3clF47">
         <node concept="3cpWs8" id="7UQGk9UsKit" role="3cqZAp">
@@ -367,7 +367,7 @@
                         <node concept="2qgKlT" id="7UQGk9UsKiD" role="2OqNvi">
                           <ref role="37wK5l" node="7UQGk9Us4Yg" resolve="appliesTo" />
                           <node concept="37vLTw" id="7UQGk9UsKiE" role="37wK5m">
-                            <ref role="3cqZAo" node="7UQGk9UrNA5" resolve="features" />
+                            <ref role="3cqZAo" node="1xxPe$K1i4o" resolve="fs" />
                           </node>
                         </node>
                       </node>
@@ -389,7 +389,7 @@
               <node concept="3fqX7Q" id="3UzoW98UD$w" role="3clFbw">
                 <node concept="2OqwBi" id="3UzoW98UD$x" role="3fr31v">
                   <node concept="37vLTw" id="3UzoW98UD$y" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7UQGk9UrNA5" resolve="features" />
+                    <ref role="3cqZAo" node="1xxPe$K1i4o" resolve="fs" />
                   </node>
                   <node concept="liA8E" id="3UzoW98UD$z" role="2OqNvi">
                     <ref role="37wK5l" to="dt2v:17cXij2K_pO" resolve="isPastPerfectTense" />
@@ -417,7 +417,7 @@
                 </node>
                 <node concept="2OqwBi" id="3UzoW98Uldp" role="33vP2m">
                   <node concept="37vLTw" id="3UzoW98Uldq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7UQGk9UrNA5" resolve="features" />
+                    <ref role="3cqZAo" node="1xxPe$K1i4o" resolve="fs" />
                   </node>
                   <node concept="liA8E" id="3UzoW98Uldr" role="2OqNvi">
                     <ref role="37wK5l" to="dt2v:5$BC2AaYzNv" resolve="getAuxiliaryVerb" />
@@ -457,7 +457,7 @@
                     <ref role="3cqZAo" node="3UzoW98Uldo" resolve="auxiliaryVerb" />
                   </node>
                   <node concept="2qgKlT" id="3UzoW98Uujs" role="2OqNvi">
-                    <ref role="37wK5l" to="o2rs:6FJD36T33Ql" resolve="form" />
+                    <ref role="37wK5l" to="o2rs:1xxPe$JZ0L0" resolve="verbForm" />
                     <node concept="2OqwBi" id="3UzoW98UNUX" role="37wK5m">
                       <node concept="2ShNRf" id="3UzoW98UMH8" role="2Oq$k0">
                         <node concept="1pGfFk" id="3UzoW98UNE2" role="2ShVmc">
@@ -470,7 +470,7 @@
                         <node concept="22lmx$" id="3UzoW98USZj" role="37wK5m">
                           <node concept="2OqwBi" id="3UzoW98UTOM" role="3uHU7w">
                             <node concept="37vLTw" id="3UzoW98UTuN" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7UQGk9UrNA5" resolve="features" />
+                              <ref role="3cqZAo" node="1xxPe$K1i4o" resolve="fs" />
                             </node>
                             <node concept="liA8E" id="3UzoW98UUGH" role="2OqNvi">
                               <ref role="37wK5l" to="dt2v:27yL655LIpi" resolve="isInsideVerbPhrase" />
@@ -478,7 +478,7 @@
                           </node>
                           <node concept="2OqwBi" id="3UzoW98UQAO" role="3uHU7B">
                             <node concept="37vLTw" id="3UzoW98UQlr" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7UQGk9UrNA5" resolve="features" />
+                              <ref role="3cqZAo" node="1xxPe$K1i4o" resolve="fs" />
                             </node>
                             <node concept="liA8E" id="3UzoW98URA4" role="2OqNvi">
                               <ref role="37wK5l" to="dt2v:6t2t8IuAP9i" resolve="isPlural" />
@@ -535,7 +535,7 @@
                 </node>
                 <node concept="2OqwBi" id="3UzoW98Uyn9" role="3K4Cdx">
                   <node concept="37vLTw" id="3UzoW98Uy7L" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7UQGk9UrNA5" resolve="features" />
+                    <ref role="3cqZAo" node="1xxPe$K1i4o" resolve="fs" />
                   </node>
                   <node concept="liA8E" id="3UzoW98UzbI" role="2OqNvi">
                     <ref role="37wK5l" to="dt2v:4foijzsi7lu" resolve="hasAuxAfter" />
@@ -560,13 +560,13 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="7UQGk9UrNA5" role="3clF46">
-        <property role="TrG5h" value="features" />
-        <node concept="3uibUv" id="7UQGk9UrNA6" role="1tU5fm">
+      <node concept="37vLTG" id="1xxPe$K1i4o" role="3clF46">
+        <property role="TrG5h" value="fs" />
+        <node concept="3uibUv" id="1xxPe$K1i4p" role="1tU5fm">
           <ref role="3uigEE" to="dt2v:6eoYsmrPpZA" resolve="FeatureSet" />
         </node>
       </node>
-      <node concept="17QB3L" id="7UQGk9UrNA7" role="3clF45" />
+      <node concept="17QB3L" id="1xxPe$K1i4q" role="3clF45" />
     </node>
     <node concept="13i0hz" id="61tZzPD9Bm1" role="13h7CS">
       <property role="TrG5h" value="formNoAux" />
@@ -996,8 +996,8 @@
       <node concept="10P_77" id="7UQGk9UE0Rb" role="3clF45" />
     </node>
     <node concept="13i0hz" id="7UQGk9UE0Re" role="13h7CS">
-      <property role="TrG5h" value="form" />
-      <ref role="13i0hy" to="o2rs:6FJD36T33Ql" resolve="form" />
+      <property role="TrG5h" value="nounForm" />
+      <ref role="13i0hy" to="o2rs:1xxPe$JYLBV" resolve="nounForm" />
       <node concept="3Tm1VV" id="7UQGk9UE0Rh" role="1B3o_S" />
       <node concept="3clFbS" id="7UQGk9UE0Rk" role="3clF47">
         <node concept="3clFbF" id="7UQGk9UJnqL" role="3cqZAp">
@@ -1016,7 +1016,7 @@
             </node>
             <node concept="2OqwBi" id="7UQGk9UJnzV" role="3K4Cdx">
               <node concept="37vLTw" id="7UQGk9UJnqI" role="2Oq$k0">
-                <ref role="3cqZAo" node="7UQGk9UE0Rl" resolve="features" />
+                <ref role="3cqZAo" node="1xxPe$K1cyo" resolve="fs" />
               </node>
               <node concept="liA8E" id="7UQGk9UJnWX" role="2OqNvi">
                 <ref role="37wK5l" to="dt2v:6t2t8IuAP9i" resolve="isPlural" />
@@ -1025,13 +1025,13 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="7UQGk9UE0Rl" role="3clF46">
-        <property role="TrG5h" value="features" />
-        <node concept="3uibUv" id="7UQGk9UE0Rm" role="1tU5fm">
+      <node concept="37vLTG" id="1xxPe$K1cyo" role="3clF46">
+        <property role="TrG5h" value="fs" />
+        <node concept="3uibUv" id="1xxPe$K1cyp" role="1tU5fm">
           <ref role="3uigEE" to="dt2v:6eoYsmrPpZA" resolve="FeatureSet" />
         </node>
       </node>
-      <node concept="17QB3L" id="7UQGk9UE0Rn" role="3clF45" />
+      <node concept="17QB3L" id="1xxPe$K1cyq" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7UQGk9UTMgl">
