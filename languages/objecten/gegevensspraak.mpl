@@ -45,7 +45,6 @@
     <dependency reexport="false">b13b6244-ea51-440e-bbb8-37e1276fefe2(projecthygiene.plugin)</dependency>
     <dependency reexport="false">20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
-    <dependency reexport="false">8bc962c0-cb3c-49f0-aa03-23c3bc0304b0(testspraak)</dependency>
     <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
     <dependency reexport="false">4f3d16ac-f7e4-4b3f-a6b7-131c2b808441(alef.customization)</dependency>
   </dependencies>
@@ -135,8 +134,6 @@
     <module reference="4f3d16ac-f7e4-4b3f-a6b7-131c2b808441(alef.customization)" version="0" />
     <module reference="09737df8-57b5-428f-9399-89f414a94263(alef.runtime)" version="0" />
     <module reference="4a6bb6ab-de63-4605-8a60-a06fda7893a8(alef.tools)" version="0" />
-    <module reference="7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3(beslistabelspraak)" version="0" />
-    <module reference="65239ca4-9057-41f8-999d-97fa1a60b298(besturingspraak)" version="0" />
     <module reference="5feb4260-bb43-4b81-aa8f-b5cd0665bfeb(blaze.srl)" version="0" />
     <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
     <module reference="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" version="0" />
@@ -177,11 +174,7 @@
     <module reference="b13b6244-ea51-440e-bbb8-37e1276fefe2(projecthygiene.plugin)" version="0" />
     <module reference="8fbde41a-1e4d-4a35-b4ee-694c9b61c7ca(projecthygiene.runtime)" version="0" />
     <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
-    <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
-    <module reference="d8af31be-1847-4d5b-8686-78e232d4e0f8(servicespraak)" version="0" />
-    <module reference="8270cb09-651a-458a-9f4e-86e3e4423c92(standaardFuncties)" version="0" />
     <module reference="caef3229-d6fe-4ba8-b3e3-cf13cc4a9119(strings)" version="0" />
-    <module reference="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0(testspraak)" version="15" />
     <module reference="d8e9f689-ebf9-4dc1-b26b-cc0e8268cf07(translator.genplan)" version="0" />
     <module reference="de859d7b-3967-4dc6-800a-c7f85c414239(translator.runtime)" version="0" />
   </dependencyVersions>

@@ -14,6 +14,7 @@
     <import index="o2rs" ref="r:e831b84d-120c-4b09-9c04-3971beeb563d(linguistics.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,6 +112,20 @@
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
         <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
@@ -170,6 +185,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -214,6 +233,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1902,6 +1922,53 @@
     <node concept="1YaCAy" id="4foijzrmvBQ" role="1YuTPh">
       <property role="TrG5h" value="noun" />
       <ref role="1YaFvo" to="ggaa:19qDpgVR6Ow" resolve="Noun" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="uUjlHseqal">
+    <property role="TrG5h" value="typeof_AuxNodeConceptFunction" />
+    <property role="3GE5qa" value="auxNode" />
+    <node concept="3clFbS" id="uUjlHseqam" role="18ibNy">
+      <node concept="1Z5TYs" id="uUjlHseqDG" role="3cqZAp">
+        <node concept="mw_s8" id="uUjlHseqDS" role="1ZfhKB">
+          <node concept="2pJPEk" id="uUjlHseqDO" role="mwGJk">
+            <node concept="2pJPED" id="uUjlHseqDQ" role="2pJPEn">
+              <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
+              <node concept="2pIpSj" id="uUjlHseqEf" role="2pJxcM">
+                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
+                <node concept="36biLy" id="uUjlHseqEq" role="28nt2d">
+                  <node concept="2OqwBi" id="uUjlHseshg" role="36biLW">
+                    <node concept="1PxgMI" id="uUjlHses3M" role="2Oq$k0">
+                      <node concept="chp4Y" id="uUjlHses4z" role="3oSUPX">
+                        <ref role="cht4Q" to="ggaa:uUjlHsecDq" resolve="NodeRef" />
+                      </node>
+                      <node concept="2OqwBi" id="uUjlHser7b" role="1m5AlR">
+                        <node concept="1YBJjd" id="uUjlHseqF2" role="2Oq$k0">
+                          <ref role="1YBMHb" node="uUjlHseqao" resolve="function" />
+                        </node>
+                        <node concept="1mfA1w" id="uUjlHses1C" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="uUjlHsesEM" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ggaa:uUjlHsen1O" resolve="type" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="uUjlHseqDJ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="uUjlHseqby" role="mwGJk">
+            <node concept="1YBJjd" id="uUjlHseqgT" role="1Z2MuG">
+              <ref role="1YBMHb" node="uUjlHseqao" resolve="function" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="uUjlHseqao" role="1YuTPh">
+      <property role="TrG5h" value="function" />
+      <ref role="1YaFvo" to="ggaa:uUjlHsecE4" resolve="NodeRefConceptFunction" />
     </node>
   </node>
 </model>

@@ -10906,6 +10906,16 @@
             <ref role="3bR37D" to="90a9:2Xjt3l57bIA" resolve="de.itemis.mps.editor.math.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6mDxF__E9YW" role="3bR37C">
+          <node concept="3bR9La" id="6mDxF__E9YX" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6mDxF__E9YY" role="3bR37C">
+          <node concept="3bR9La" id="6mDxF__E9YZ" role="1SiIV1">
+            <ref role="3bR37D" node="7vJ9kmUx1Xj" resolve="alef.customization" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4wvGeDpkGS5" role="2G$12L">
         <property role="TrG5h" value="regelspraak" />

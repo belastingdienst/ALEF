@@ -937,6 +937,9 @@
     <node concept="PrWs8" id="4aR45EWddPK" role="PzmwI">
       <ref role="PrY4T" to="dse8:51QYbfBR3DV" resolve="LReference" />
     </node>
+    <node concept="PrWs8" id="1xxPe$K1A1t" role="PzmwI">
+      <ref role="PrY4T" to="ggaa:6FJD36T33N4" resolve="IAdjective" />
+    </node>
     <node concept="1TJgyi" id="22JzJdytbH" role="1TKVEl">
       <property role="IQ2nx" value="36800911033094893" />
       <property role="TrG5h" value="bijvoeglijkNaamwoord" />
