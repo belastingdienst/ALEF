@@ -944,6 +944,64 @@
         </node>
       </node>
     </node>
+    <node concept="210ffa" id="KDGq9vDA1$" role="10_$IM">
+      <property role="TrG5h" value="Afronden positief rekenkundigafronding 01" />
+      <node concept="4OhPC" id="KDGq9vDA1_" role="4Ohaa">
+        <property role="TrG5h" value="O1" />
+        <ref role="4OhPH" node="6NL0NB_DdMr" resolve="AfrondenBerekenenObject" />
+        <node concept="3_ceKt" id="KDGq9vDA1A" role="4OhPJ">
+          <ref role="3_ceKs" node="6NL0NB_Jnb1" resolve="InvoerA" />
+          <node concept="1EQTEq" id="KDGq9vDA1B" role="3_ceKu">
+            <property role="3e6Tb2" value="2,5" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="KDGq9vDA1C" role="4Ohb1">
+        <ref role="3teO_M" node="KDGq9vDA1_" resolve="O1" />
+        <ref role="4Oh8G" node="6NL0NB_DdMr" resolve="AfrondenBerekenenObject" />
+        <node concept="3mzBic" id="KDGq9vDA1D" role="4Ohbj">
+          <ref role="10Xmnc" node="6NL0NB_DdSx" resolve="A Afronden naar boven - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDA1E" role="3mzBi6">
+            <property role="3e6Tb2" value="3" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDA1F" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1VvqeeVH" resolve="A Afronden naar beneden - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDA1G" role="3mzBi6">
+            <property role="3e6Tb2" value="2" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDA1H" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1VvqeeYv" resolve="A Afronden rekenkundig - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDA1I" role="3mzBi6">
+            <property role="3e6Tb2" value="3" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDA1J" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1Vvqef4B" resolve="A Afronden richting nul - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDA1K" role="3mzBi6">
+            <property role="3e6Tb2" value="2" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDA1L" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1Vvqef1t" resolve="A Afronden weg van nul - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDA1M" role="3mzBi6">
+            <property role="3e6Tb2" value="3" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDA1N" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6X5WWOEgvQu" resolve="A Afronden rekenkundig half richting nul - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDA1O" role="3mzBi6">
+            <property role="3e6Tb2" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="210ffa" id="7Bs1VvqeqbK" role="10_$IM">
       <property role="TrG5h" value="Afronden positief 02" />
       <node concept="4OhPC" id="7Bs1VvqeqbL" role="4Ohaa">
@@ -1114,6 +1172,64 @@
           <ref role="10Xmnc" node="6X5WWOEgvQu" resolve="A Afronden rekenkundig half richting nul - 0 dec" />
           <node concept="1EQTEq" id="6X5WWOEgwDh" role="3mzBi6">
             <property role="3e6Tb2" value="-3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="KDGq9vDALg" role="10_$IM">
+      <property role="TrG5h" value="Afronden negatief rekenkundigafronding 01" />
+      <node concept="4OhPC" id="KDGq9vDALh" role="4Ohaa">
+        <property role="TrG5h" value="O1" />
+        <ref role="4OhPH" node="6NL0NB_DdMr" resolve="AfrondenBerekenenObject" />
+        <node concept="3_ceKt" id="KDGq9vDALi" role="4OhPJ">
+          <ref role="3_ceKs" node="6NL0NB_Jnb1" resolve="InvoerA" />
+          <node concept="1EQTEq" id="KDGq9vDALj" role="3_ceKu">
+            <property role="3e6Tb2" value="-2,5" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Oh8J" id="KDGq9vDALk" role="4Ohb1">
+        <ref role="3teO_M" node="KDGq9vDALh" resolve="O1" />
+        <ref role="4Oh8G" node="6NL0NB_DdMr" resolve="AfrondenBerekenenObject" />
+        <node concept="3mzBic" id="KDGq9vDALl" role="4Ohbj">
+          <ref role="10Xmnc" node="6NL0NB_DdSx" resolve="A Afronden naar boven - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDALm" role="3mzBi6">
+            <property role="3e6Tb2" value="-2" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDALn" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1VvqeeVH" resolve="A Afronden naar beneden - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDALo" role="3mzBi6">
+            <property role="3e6Tb2" value="-3" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDALp" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1VvqeeYv" resolve="A Afronden rekenkundig - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDALq" role="3mzBi6">
+            <property role="3e6Tb2" value="-3" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDALr" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1Vvqef4B" resolve="A Afronden richting nul - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDALs" role="3mzBi6">
+            <property role="3e6Tb2" value="-2" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDALt" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="7Bs1Vvqef1t" resolve="A Afronden weg van nul - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDALu" role="3mzBi6">
+            <property role="3e6Tb2" value="-3" />
+          </node>
+        </node>
+        <node concept="3mzBic" id="KDGq9vDALv" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6X5WWOEgvQu" resolve="A Afronden rekenkundig half richting nul - 0 dec" />
+          <node concept="1EQTEq" id="KDGq9vDALw" role="3mzBi6">
+            <property role="3e6Tb2" value="-2" />
           </node>
         </node>
       </node>
@@ -1883,6 +1999,7 @@
         <node concept="2ljwA5" id="1fqNLmnOKtA" role="1nvPAL" />
       </node>
     </node>
+    <node concept="1uxNW$" id="KDGq9vDLRM" role="1HSqhF" />
   </node>
   <node concept="1rXTK1" id="7Bs1VvqesAn">
     <property role="TrG5h" value="Afronden in expressies" />
