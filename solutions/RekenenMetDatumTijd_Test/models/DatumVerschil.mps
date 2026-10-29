@@ -53,6 +53,7 @@
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
       <concept id="8397212885425912768" name="regelspraak.structure.DatumTijdVerschil" flags="ng" index="1RF1Xx">
         <property id="626908702108797613" name="absoluut" index="2nuf29" />
+        <property id="2021626845458612702" name="totEnMet" index="2VYwcT" />
         <property id="8397212885425912778" name="granulariteit" index="1RF1XF" />
         <child id="8397212885425912781" name="begin" index="1RF1XG" />
         <child id="8397212885425922603" name="eind" index="1RFsqa" />
@@ -287,6 +288,42 @@
           <property role="3GST$d" value="0" />
         </node>
       </node>
+      <node concept="2bv6ZS" id="6CBAvXUa4jX" role="2bv01j">
+        <property role="TrG5h" value="tijdsduur tot en met in dagen" />
+        <node concept="1EDDeX" id="6CBAvXUa4jY" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+          <node concept="PwxsY" id="6CBAvXUa4jZ" role="PyN7z">
+            <node concept="Pwxi7" id="6CBAvXUa4k0" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="6CBAvXUa4k1" role="2bv01j">
+        <property role="TrG5h" value="tijdsduur tot en met in millisec" />
+        <node concept="1EDDeX" id="6CBAvXUa4k2" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+          <node concept="PwxsY" id="6CBAvXUa4k3" role="PyN7z">
+            <node concept="Pwxi7" id="6CBAvXUa4k4" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxl" resolve="milliseconde" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="6CBAvXUa4xA" role="2bv01j">
+        <property role="TrG5h" value="tijdsduur tot en met in jaren (abs)" />
+        <node concept="1EDDeX" id="6CBAvXUa4xB" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+          <node concept="PwxsY" id="6CBAvXUa4xC" role="PyN7z">
+            <node concept="Pwxi7" id="6CBAvXUa4xD" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxt" resolve="jaar" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1uxNW$" id="5QGe9ffVq7" role="2bv6Cn" />
   </node>
@@ -372,11 +409,11 @@
         <node concept="2boe1W" id="2WqscnMNW5Z" role="1wO7pp">
           <node concept="2boe1X" id="2WqscnMNW6J" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvx5m" role="2bokzF">
-              <node concept="c2t0s" id="3DPnffTvx5n" role="eaaoM">
-                <ref role="Qu8KH" node="2WqscnMNUnP" resolve="tijdsduur in dagen" />
-              </node>
               <node concept="3_kdyS" id="3DPnffTvx5l" role="pQQuc">
                 <ref role="Qu8KH" node="2WqscnMNSt0" resolve="DatumVerschil" />
+              </node>
+              <node concept="c2t0s" id="3DPnffTvx5n" role="eaaoM">
+                <ref role="Qu8KH" node="2WqscnMNUnP" resolve="tijdsduur in dagen" />
               </node>
             </node>
             <node concept="1RF1Xx" id="2WqscnMNW80" role="2bokzm">
@@ -401,6 +438,44 @@
           </node>
         </node>
         <node concept="2ljwA5" id="2WqscnMNW61" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1HSql3" id="6CBAvXUaljn" role="1HSqhF">
+      <property role="TrG5h" value="Tijdsduur Tot en Met in Dagen" />
+      <node concept="1wO7pt" id="6CBAvXUaljo" role="kiesI">
+        <node concept="2boe1W" id="6CBAvXUaljp" role="1wO7pp">
+          <node concept="2boe1X" id="6CBAvXUaljq" role="1wO7i6">
+            <node concept="3_mHL5" id="6CBAvXUaljr" role="2bokzF">
+              <node concept="3_kdyS" id="6CBAvXUaljs" role="pQQuc">
+                <ref role="Qu8KH" node="2WqscnMNSt0" resolve="DatumVerschil" />
+              </node>
+              <node concept="c2t0s" id="6CBAvXUanQC" role="eaaoM">
+                <ref role="Qu8KH" node="6CBAvXUa4jX" resolve="tijdsduur tot en met in dagen" />
+              </node>
+            </node>
+            <node concept="1RF1Xx" id="6CBAvXUaryw" role="2bokzm">
+              <property role="1RF1XF" value="58tBIcSIKQf/DAG" />
+              <property role="2VYwcT" value="true" />
+              <node concept="3_mHL5" id="6CBAvXUaryx" role="1RF1XG">
+                <node concept="c2t0s" id="6CBAvXUaryy" role="eaaoM">
+                  <ref role="Qu8KH" node="2WqscnMNV9u" resolve="datum1" />
+                </node>
+                <node concept="3yS1BT" id="6CBAvXUaryz" role="pQQuc">
+                  <ref role="3yS1Ki" node="6CBAvXUaljs" resolve="DatumVerschil" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="6CBAvXUary$" role="1RFsqa">
+                <node concept="c2t0s" id="6CBAvXUary_" role="eaaoM">
+                  <ref role="Qu8KH" node="2WqscnMNVrD" resolve="datum2" />
+                </node>
+                <node concept="3yS1BT" id="6CBAvXUaryA" role="pQQuc">
+                  <ref role="3yS1Ki" node="6CBAvXUaljs" resolve="DatumVerschil" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="6CBAvXUaljD" role="1nvPAL" />
       </node>
     </node>
     <node concept="1HSql3" id="77H42MIxokw" role="1HSqhF">
@@ -440,6 +515,44 @@
         <node concept="2ljwA5" id="77H42MIxokD" role="1nvPAL" />
       </node>
     </node>
+    <node concept="1HSql3" id="6CBAvXUamZG" role="1HSqhF">
+      <property role="TrG5h" value="Tijdsduur Tot en Met in milliseconden" />
+      <node concept="1wO7pt" id="6CBAvXUamZH" role="kiesI">
+        <node concept="2boe1W" id="6CBAvXUamZI" role="1wO7pp">
+          <node concept="2boe1X" id="6CBAvXUamZJ" role="1wO7i6">
+            <node concept="3_mHL5" id="6CBAvXUamZK" role="2bokzF">
+              <node concept="c2t0s" id="6CBAvXUanM7" role="eaaoM">
+                <ref role="Qu8KH" node="6CBAvXUa4k1" resolve="tijdsduur tot en met in millisec" />
+              </node>
+              <node concept="3_kdyS" id="6CBAvXUamZM" role="pQQuc">
+                <ref role="Qu8KH" node="2WqscnMNSt0" resolve="DatumVerschil" />
+              </node>
+            </node>
+            <node concept="1RF1Xx" id="6CBAvXUarvN" role="2bokzm">
+              <property role="1RF1XF" value="58tBIcSIKQD/MILLISECONDE" />
+              <property role="2VYwcT" value="true" />
+              <node concept="3_mHL5" id="6CBAvXUarvO" role="1RF1XG">
+                <node concept="c2t0s" id="6CBAvXUarvP" role="eaaoM">
+                  <ref role="Qu8KH" node="2WqscnMNV9u" resolve="datum1" />
+                </node>
+                <node concept="3yS1BT" id="6CBAvXUarvQ" role="pQQuc">
+                  <ref role="3yS1Ki" node="6CBAvXUamZM" resolve="DatumVerschil" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="6CBAvXUarvR" role="1RFsqa">
+                <node concept="c2t0s" id="6CBAvXUarvS" role="eaaoM">
+                  <ref role="Qu8KH" node="2WqscnMNVrD" resolve="datum2" />
+                </node>
+                <node concept="3yS1BT" id="6CBAvXUarvT" role="pQQuc">
+                  <ref role="3yS1Ki" node="6CBAvXUamZM" resolve="DatumVerschil" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="6CBAvXUamZU" role="1nvPAL" />
+      </node>
+    </node>
     <node concept="1HSql3" id="svlIDYs90Y" role="1HSqhF">
       <property role="TrG5h" value="Tijdsduur in Jaren - absoluut" />
       <node concept="1wO7pt" id="svlIDYs90Z" role="kiesI">
@@ -476,6 +589,45 @@
           </node>
         </node>
         <node concept="2ljwA5" id="svlIDYs917" role="1nvPAL" />
+      </node>
+    </node>
+    <node concept="1HSql3" id="6CBAvXUanXp" role="1HSqhF">
+      <property role="TrG5h" value="Tijdsduur Tot en Met in Jaren - absoluut" />
+      <node concept="1wO7pt" id="6CBAvXUanXq" role="kiesI">
+        <node concept="2boe1W" id="6CBAvXUanXr" role="1wO7pp">
+          <node concept="2boe1X" id="6CBAvXUanXs" role="1wO7i6">
+            <node concept="3_mHL5" id="6CBAvXUanXt" role="2bokzF">
+              <node concept="c2t0s" id="6CBAvXUaoIM" role="eaaoM">
+                <ref role="Qu8KH" node="6CBAvXUa4xA" resolve="tijdsduur tot en met in jaren (abs)" />
+              </node>
+              <node concept="3_kdyS" id="6CBAvXUanXv" role="pQQuc">
+                <ref role="Qu8KH" node="2WqscnMNSt0" resolve="DatumVerschil" />
+              </node>
+            </node>
+            <node concept="1RF1Xx" id="6CBAvXUarFb" role="2bokzm">
+              <property role="1RF1XF" value="58tBIcSIKQ7/JAAR" />
+              <property role="2nuf29" value="true" />
+              <property role="2VYwcT" value="true" />
+              <node concept="3_mHL5" id="6CBAvXUarFc" role="1RF1XG">
+                <node concept="c2t0s" id="6CBAvXUarFd" role="eaaoM">
+                  <ref role="Qu8KH" node="2WqscnMNV9u" resolve="datum1" />
+                </node>
+                <node concept="3yS1BT" id="6CBAvXUarFe" role="pQQuc">
+                  <ref role="3yS1Ki" node="6CBAvXUanXv" resolve="DatumVerschil" />
+                </node>
+              </node>
+              <node concept="3_mHL5" id="6CBAvXUarFf" role="1RFsqa">
+                <node concept="c2t0s" id="6CBAvXUarFg" role="eaaoM">
+                  <ref role="Qu8KH" node="2WqscnMNVrD" resolve="datum2" />
+                </node>
+                <node concept="3yS1BT" id="6CBAvXUarFh" role="pQQuc">
+                  <ref role="3yS1Ki" node="6CBAvXUanXv" resolve="DatumVerschil" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ljwA5" id="6CBAvXUanXB" role="1nvPAL" />
       </node>
     </node>
     <node concept="1HSql3" id="svlIDYs918" role="1HSqhF">
@@ -642,6 +794,19 @@
             </node>
           </node>
         </node>
+        <node concept="3mzBic" id="6CBAvXUaqka" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6CBAvXUa4k1" resolve="tijdsduur tot en met in millisec" />
+          <node concept="1EQTEq" id="6CBAvXUaqkb" role="3mzBi6">
+            <property role="3e6Tb2" value="31536000001" />
+            <node concept="PwxsY" id="6CBAvXUaqkc" role="1jdwn1">
+              <node concept="Pwxi7" id="6CBAvXUaqkd" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxl" resolve="milliseconde" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3mzBic" id="svlIDYs8Yw" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="2WqscnMNUnP" resolve="tijdsduur in dagen" />
@@ -649,6 +814,19 @@
             <property role="3e6Tb2" value="365" />
             <node concept="PwxsY" id="5D48PNlX_yp" role="1jdwn1">
               <node concept="Pwxi7" id="5D48PNlX_yq" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3mzBic" id="6CBAvXUaqts" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6CBAvXUa4jX" resolve="tijdsduur tot en met in dagen" />
+          <node concept="1EQTEq" id="6CBAvXUaqtt" role="3mzBi6">
+            <property role="3e6Tb2" value="366" />
+            <node concept="PwxsY" id="6CBAvXUaqtu" role="1jdwn1">
+              <node concept="Pwxi7" id="6CBAvXUaqtv" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
               </node>
@@ -720,16 +898,29 @@
             </node>
           </node>
         </node>
+        <node concept="3mzBic" id="6CBAvXUar9b" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6CBAvXUa4xA" resolve="tijdsduur tot en met in jaren (abs)" />
+          <node concept="1EQTEq" id="6CBAvXUar9c" role="3mzBi6">
+            <property role="3e6Tb2" value="1" />
+            <node concept="PwxsY" id="6CBAvXUar9d" role="1jdwn1">
+              <node concept="Pwxi7" id="6CBAvXUar9e" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxt" resolve="jaar" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="210ffa" id="svlIDYsbvJ" role="10_$IM">
+    <node concept="210ffa" id="2gqjJO13sha" role="10_$IM">
       <property role="TrG5h" value="Negatief" />
-      <node concept="4OhPC" id="svlIDYsbvK" role="4Ohaa">
+      <node concept="4OhPC" id="2gqjJO13shb" role="4Ohaa">
         <property role="TrG5h" value="temp1" />
         <ref role="4OhPH" node="2WqscnMNSt0" resolve="DatumVerschil" />
-        <node concept="3_ceKt" id="svlIDYsbvN" role="4OhPJ">
+        <node concept="3_ceKt" id="2gqjJO13shc" role="4OhPJ">
           <ref role="3_ceKs" node="2WqscnMNV9u" resolve="datum1" />
-          <node concept="2ljiaL" id="svlIDYsbvO" role="3_ceKu">
+          <node concept="2ljiaL" id="2gqjJO13shd" role="3_ceKu">
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="5" />
             <property role="2ljiaO" value="2014" />
@@ -739,9 +930,9 @@
             <property role="2isrjt" value="0" />
           </node>
         </node>
-        <node concept="3_ceKt" id="svlIDYsbvL" role="4OhPJ">
+        <node concept="3_ceKt" id="2gqjJO13she" role="4OhPJ">
           <ref role="3_ceKs" node="2WqscnMNVrD" resolve="datum2" />
-          <node concept="2ljiaL" id="svlIDYsbvM" role="3_ceKu">
+          <node concept="2ljiaL" id="2gqjJO13shf" role="3_ceKu">
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="1" />
             <property role="2ljiaO" value="2003" />
@@ -752,80 +943,93 @@
           </node>
         </node>
       </node>
-      <node concept="4Oh8J" id="svlIDYsbvP" role="4Ohb1">
+      <node concept="4Oh8J" id="2gqjJO13shg" role="4Ohb1">
         <ref role="4Oh8G" node="2WqscnMNSt0" resolve="DatumVerschil" />
-        <node concept="3mzBic" id="svlIDYsbvQ" role="4Ohbj">
+        <node concept="3mzBic" id="2gqjJO13shh" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="2WqscnMNUnP" resolve="tijdsduur in dagen" />
-          <node concept="1EQTEq" id="5D48PNlX_yH" role="3mzBi6">
+          <node concept="1EQTEq" id="2gqjJO13shi" role="3mzBi6">
             <property role="3e6Tb2" value="-4138" />
-            <node concept="PwxsY" id="5D48PNlX_yF" role="1jdwn1">
-              <node concept="Pwxi7" id="5D48PNlX_yG" role="Pwxi2">
+            <node concept="PwxsY" id="2gqjJO13shj" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13shk" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3mzBic" id="svlIDYsbvS" role="4Ohbj">
+        <node concept="3mzBic" id="2gqjJO13shl" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="6CBAvXUa4jX" resolve="tijdsduur tot en met in dagen" />
+          <node concept="1EQTEq" id="2gqjJO13shm" role="3mzBi6">
+            <property role="3e6Tb2" value="-4137" />
+            <node concept="PwxsY" id="2gqjJO13shn" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13sho" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3mzBic" id="2gqjJO13shp" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="svlIDYs9ro" resolve="tijdsduur in dagen (abs)" />
-          <node concept="1EQTEq" id="5D48PNlX_yK" role="3mzBi6">
+          <node concept="1EQTEq" id="2gqjJO13shq" role="3mzBi6">
             <property role="3e6Tb2" value="4138" />
-            <node concept="PwxsY" id="5D48PNlX_yI" role="1jdwn1">
-              <node concept="Pwxi7" id="5D48PNlX_yJ" role="Pwxi2">
+            <node concept="PwxsY" id="2gqjJO13shr" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13shs" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxp" resolve="dag" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3mzBic" id="svlIDYsbvY" role="4Ohbj">
+        <node concept="3mzBic" id="2gqjJO13sht" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="2WqscnMNTf1" resolve="tijdsduur in maanden" />
-          <node concept="1EQTEq" id="5D48PNlX_yN" role="3mzBi6">
+          <node concept="1EQTEq" id="2gqjJO13shu" role="3mzBi6">
             <property role="3e6Tb2" value="-136" />
-            <node concept="PwxsY" id="5D48PNlX_yL" role="1jdwn1">
-              <node concept="Pwxi7" id="5D48PNlX_yM" role="Pwxi2">
+            <node concept="PwxsY" id="2gqjJO13shv" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13shw" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3mzBic" id="svlIDYsbw0" role="4Ohbj">
+        <node concept="3mzBic" id="2gqjJO13shx" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="svlIDYs9rm" resolve="tijdsduur in maanden (abs)" />
-          <node concept="1EQTEq" id="5D48PNlX_yQ" role="3mzBi6">
+          <node concept="1EQTEq" id="2gqjJO13shy" role="3mzBi6">
             <property role="3e6Tb2" value="136" />
-            <node concept="PwxsY" id="5D48PNlX_yO" role="1jdwn1">
-              <node concept="Pwxi7" id="5D48PNlX_yP" role="Pwxi2">
+            <node concept="PwxsY" id="2gqjJO13shz" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13sh$" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxr" resolve="maand" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3mzBic" id="svlIDYsbvU" role="4Ohbj">
+        <node concept="3mzBic" id="2gqjJO13sh_" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="2WqscnMNT1o" resolve="tijdsduur in jaren" />
-          <node concept="1EQTEq" id="5D48PNlX_yT" role="3mzBi6">
+          <node concept="1EQTEq" id="2gqjJO13shA" role="3mzBi6">
             <property role="3e6Tb2" value="-11" />
-            <node concept="PwxsY" id="5D48PNlX_yR" role="1jdwn1">
-              <node concept="Pwxi7" id="5D48PNlX_yS" role="Pwxi2">
+            <node concept="PwxsY" id="2gqjJO13shB" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13shC" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxt" resolve="jaar" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3mzBic" id="svlIDYsbvW" role="4Ohbj">
+        <node concept="3mzBic" id="2gqjJO13shD" role="4Ohbj">
           <property role="V2jGk" value="-1" />
           <ref role="10Xmnc" node="svlIDYs9rk" resolve="tijdsduur in jaren (abs)" />
-          <node concept="1EQTEq" id="5D48PNlX_yW" role="3mzBi6">
+          <node concept="1EQTEq" id="2gqjJO13shE" role="3mzBi6">
             <property role="3e6Tb2" value="11" />
-            <node concept="PwxsY" id="5D48PNlX_yU" role="1jdwn1">
-              <node concept="Pwxi7" id="5D48PNlX_yV" role="Pwxi2">
+            <node concept="PwxsY" id="2gqjJO13shF" role="1jdwn1">
+              <node concept="Pwxi7" id="2gqjJO13shG" role="Pwxi2">
                 <property role="Pwxi6" value="1" />
                 <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxt" resolve="jaar" />
               </node>

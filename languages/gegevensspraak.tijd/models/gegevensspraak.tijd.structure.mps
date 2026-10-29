@@ -8,20 +8,11 @@
     <import index="3ic2" ref="r:1be64251-a392-4bb4-8ecb-06d30a9277a4(gegevensspraak.structure)" />
     <import index="rzok" ref="r:a8fb563d-47c7-4600-a897-619c6d2de4c5(contexts.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="dse8" ref="r:bbb1f8ef-a8a5-48ec-918c-331fca20e41c(interpreter.debug.structure)" implicit="true" />
+    <import index="dse8" ref="r:bbb1f8ef-a8a5-48ec-918c-331fca20e41c(interpreter.debug.structure)" />
     <import index="m234" ref="r:dab861ec-284c-4992-a98c-1e3b9c9dd555(regelspraak.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
-        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-      </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
-        <child id="3348158742936976577" name="members" index="25R1y" />
-      </concept>
-      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
-        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -98,31 +89,6 @@
       <property role="20kJfa" value="eenheid" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ic2:4w8Ipi$whJq" resolve="Tijdseenheid" />
-    </node>
-  </node>
-  <node concept="25R3W" id="xwHwt_YgV2">
-    <property role="3F6X1D" value="603682492959493826" />
-    <property role="3GE5qa" value="tijd" />
-    <property role="TrG5h" value="TijdseenheidEnum" />
-    <node concept="25R33" id="xwHwt_YgV3" role="25R1y">
-      <property role="3tVfz5" value="603682492959493827" />
-      <property role="TrG5h" value="dag" />
-    </node>
-    <node concept="25R33" id="6CsHGVpTvcM" role="25R1y">
-      <property role="3tVfz5" value="7646187266903503666" />
-      <property role="TrG5h" value="week" />
-    </node>
-    <node concept="25R33" id="xwHwt_YgV4" role="25R1y">
-      <property role="3tVfz5" value="603682492959493828" />
-      <property role="TrG5h" value="maand" />
-    </node>
-    <node concept="25R33" id="3SYd9_w$ODf" role="25R1y">
-      <property role="3tVfz5" value="4485080112262498895" />
-      <property role="TrG5h" value="kwartaal" />
-    </node>
-    <node concept="25R33" id="xwHwt_YgV7" role="25R1y">
-      <property role="3tVfz5" value="603682492959493831" />
-      <property role="TrG5h" value="jaar" />
     </node>
   </node>
   <node concept="1TIwiD" id="3SYd9_w_FPn">
