@@ -7873,12 +7873,12 @@
             <node concept="10Q1$e" id="79aBNE9m$lP" role="1tU5fm">
               <node concept="10PrrI" id="79aBNE9mydr" role="10Q1$1" />
             </node>
-            <node concept="2OqwBi" id="79aBNE9mGbn" role="33vP2m">
+            <node concept="2OqwBi" id="7B1HuMkPgBf" role="33vP2m">
               <node concept="37vLTw" id="79aBNE9mEd4" role="2Oq$k0">
                 <ref role="3cqZAo" node="59jthqyy6Ll" resolve="inputStream" />
               </node>
-              <node concept="liA8E" id="79aBNE9mLrh" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.getBytes()" resolve="getBytes" />
+              <node concept="liA8E" id="7B1HuMkPo2F" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~InputStream.readAllBytes()" resolve="readAllBytes" />
               </node>
             </node>
           </node>
@@ -8095,7 +8095,9 @@
       <node concept="3Tm1VV" id="59jthqyy667" role="1B3o_S" />
       <node concept="37vLTG" id="59jthqyy6Ll" role="3clF46">
         <property role="TrG5h" value="inputStream" />
-        <node concept="17QB3L" id="79aBNE9o3SV" role="1tU5fm" />
+        <node concept="3uibUv" id="7B1HuMkOspE" role="1tU5fm">
+          <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
+        </node>
       </node>
       <node concept="2AHcQZ" id="59jthqyy8wm" role="2AJF6D">
         <ref role="2AI5Lk" to="xnvb:~POST" resolve="POST" />
