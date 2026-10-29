@@ -23,7 +23,7 @@ Een beslistabel is hetzelfde als een verzameling normale gelijkstellingsregels, 
 * Overzicht te creëren (bijv. ter beoordeling door een materiedeskundige).
 * Te helpen controleren of relevante regels op elkaar aansluiten zonder leemtes te laten.
 
-> *N.B.: Een beslistabel kan in principe ook één regel bevatten, maar in dat geval heeft een beslistabel meestal geen meerwaarde ten opzichte van een normale regel. Kies in dat geval liever voor een gewone regel: het maken van een gewone losse regel is vaak sneller, makkelijker en flexibeler dan het maken dan een beslistabel.*
+> *N.B.: Een beslistabel kan in principe ook één regel bevatten, maar in dat geval heeft een beslistabel meestal geen meerwaarde ten opzichte van een normale regel. Kies in dat geval liever voor een gewone regel: het maken van een gewone losse regel is vaak sneller, makkelijker en flexibeler dan het maken van een beslistabel.*
 
 ## Bijzonderheden beslistabel
 Hou bij gebruik van beslistabellen rekening met het volgende:

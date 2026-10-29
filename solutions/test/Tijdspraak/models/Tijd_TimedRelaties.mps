@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:19bc760c-163d-413c-8859-d18dcaf36362(Tijd_TimedRelaties)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="d07fa9c5-678d-4a9b-9eaf-b1b8c569b820(alef.devkit)" />
   </languages>

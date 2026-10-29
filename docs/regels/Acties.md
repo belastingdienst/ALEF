@@ -21,7 +21,7 @@ De Initialisatie is een specifieke variant van de actie [Gelijkstelling](../rege
 * [Kenmerktoekenning](../regels/Actie_Kenmerktoekenning.md)   
 De Kenmerktoekenning is de actie voor het toekennen van een kenmerk aan een object of rol. 
 * [Objectcreatie](../regels/Actie_Objectcreatie.md)   
-De objectcreatie is de actie waarmee een voorkomen van een object wordt gecreéerd.
+De objectcreatie is de actie waarmee een voorkomen van een object wordt gecreëerd.
 * [Verdeling](../regels/Actie_Verdeling.md)   
 Verdeling is de actie voor het verdelen van een te verdelen hoeveelheid over een aantal Ontvangers.
 

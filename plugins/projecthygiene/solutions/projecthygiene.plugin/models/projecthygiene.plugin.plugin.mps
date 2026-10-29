@@ -13946,8 +13946,8 @@
     <node concept="15feLH" id="XUfIJ1XbY_" role="15cTzA">
       <node concept="15fezS" id="XUfIJ1XbYz" role="15fezK">
         <node concept="pLAjd" id="XUfIJ1XbY$" role="15feLI">
-          <property role="pLAjc" value="alt" />
-          <property role="pLAjf" value="VK_F10" />
+          <property role="pLAjc" value="alt+shift" />
+          <property role="pLAjf" value="VK_0" />
         </node>
       </node>
     </node>

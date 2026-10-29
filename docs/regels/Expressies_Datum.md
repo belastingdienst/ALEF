@@ -15,7 +15,7 @@ De tijdsduur tussen twee datums of tijdstippen berekenen. De tijdsduur is een nu
 ![Tijdsduur bepalen tussen twee datums](img/Expressies_Tijdsduur1.png)
 
 ## Numerieke waarde uit deel van datum-tijd afleiden
-Uit een gegeven met waarde in datatype Datum-tijd kan een numeriek waarde worden bepaald. Hiervoor zijn de volgende expressies beschikbaar:
+Uit een gegeven met waarde in datatype Datum-tijd kan een numerieke waarde worden bepaald. Hiervoor zijn de volgende expressies beschikbaar:
 
 * jaar uit
 * maand uit

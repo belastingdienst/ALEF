@@ -30,7 +30,7 @@ ALEF toont nu in de regels de toegekende waarde en de invoerwaarden plus een aan
 
 ## Testdekking
 
-Testdekking is de verhouding tussen datgene wat getest kan worden en datgene wat met de testsets gedekt wordt. Het [testdekkingsrapport](../testen/Testdekking.md) geeft inzicht in de de testdekking.
+Testdekking is de verhouding tussen datgene wat getest kan worden en datgene wat met de testsets gedekt wordt. Het [testdekkingsrapport](../testen/Testdekking.md) geeft inzicht in de testdekking.
 
 
 

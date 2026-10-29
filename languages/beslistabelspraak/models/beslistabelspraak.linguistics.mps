@@ -223,5 +223,13 @@
     <ref role="2xOZSN" to="vuki:42_2FfyaRfp" resolve="NoConclusie" />
     <node concept="23GdfO" id="KOe0LRJiGX" role="1co$Kl" />
   </node>
+  <node concept="2xOZSM" id="5dmU7v6j1Lw">
+    <ref role="2xOZSN" to="vuki:4pdPqAJSROM" resolve="NietVanToepassing" />
+    <node concept="23GdfO" id="5dmU7v6j1Lx" role="1co$Kl">
+      <node concept="2xS9Ii" id="5dmU7v6j1Ly" role="23GdfP">
+        <property role="23G6sU" value="n.v.t." />
+      </node>
+    </node>
+  </node>
 </model>
 

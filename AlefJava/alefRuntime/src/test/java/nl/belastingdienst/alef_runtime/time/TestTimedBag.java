@@ -3,7 +3,6 @@ package nl.belastingdienst.alef_runtime.time;
 import nl.belastingdienst.alef_runtime.Bag;
 import org.junit.jupiter.api.Test;
 import java.util.*;
-import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -12,9 +11,9 @@ class TestTimedBag extends TestITimed {
     @Test
     void testBag() {
         String[] strings1 = new String[]{"a", "b", "c", "d", "b", "c", "b"};
-        final Bag<String> bag1 = Bag.from(Arrays.stream(strings1).collect(Collectors.toList()));
+        final Bag<String> bag1 = Bag.from(Arrays.stream(strings1).toList());
         String[] strings2 = new String[]{"b", "c", "d", "e", "f", "f"};
-        final Bag<String> bag2 = Bag.from(Arrays.stream(strings2).collect(Collectors.toList()));
+        final Bag<String> bag2 = Bag.from(Arrays.stream(strings2).toList());
         Bag<String> union = bag1.union(bag2);
         Set<String> elems = new TreeSet<String>();
         elems.addAll(bag1.uniqueElements());

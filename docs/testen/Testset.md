@@ -8,7 +8,7 @@ Er is specifieke informatie over het [testen van Flows](../testen/TestenFlows.md
 
 ![Configuratie testset](../img/ALEF300_Testset1.png)
 
-De **scope van de test** wordt in de kopregel vastgelegd. In dit voorbeeld us de testscope de regel 'te betalen belasting 01'
+De **scope van de test** wordt in de kopregel vastgelegd. In dit voorbeeld is de testscope de regel 'te betalen belasting 01'
 
 Welke **parameterset** wordt gebruikt voor de test, wordt afgeleid van de geldigheidsperiode van de testset en de geldigheid van de parametersets.
 
@@ -26,7 +26,7 @@ Een testgeval bevat **testinvoer** en een **testvoorspelling**.
 
 ![Testgeval](../img/ALEF300_TestGeval1.png)
 
-In het voorbeeld hierboven staat de tetsinvoer onder de tekst 'de volgende situatie:' en de testuitvoer onder de tekst 'moet het volgende resultaat hebben:'
+In het voorbeeld hierboven staat de testinvoer onder de tekst 'de volgende situatie:' en de testuitvoer onder de tekst 'moet het volgende resultaat hebben:'
 
 In een testgeval waarin attributen van verschillende objecttypes worden gebruikt, moeten voorkomens/instanties van beide objecttypes in de in- en/of uitvoer worden opgenomen.  
 Daarbij moet door middel van een rol de relatie met het andere object worden opgenomen. In het voorbeeld hierboven verwijst de rolnaam 'passagier' in blauw naar de instantie 'Jaap' van objecttype 'Natuurlijk persoon'. 
@@ -35,11 +35,11 @@ Daarbij moet door middel van een rol de relatie met het andere object worden opg
 
 Standaard worden de parameters uit de parametersets gebruikt, die genoemd zijn bovenin de testset onder 'Gebruikte parameters'. Wanneer een parametertoekenning buiten de testscope ligt, moet de testset onafhankelijk zijn van periodieke wijzigingen van parameters. Daarvoor kunnen parameterwaarden worden opgenomen in het individuele testgeval met de intention "Forceer Parameterwaarde".
 
-![Intentie Forceer parameterwaarde](../img/ALEF300_TestGeval_Parameters1.png).
+![Intentie Forceer parameterwaarde](../img/ALEF300_TestGeval_Parameters1.png)
 
 In het testgeval verschijnt een lijst van parameterwaarden die invoer zijn voor dit specifieke testgeval:
 
-![Forceer parameterwaarde in testgeval](../img/ALEF300_TestGeval_Parameters1.png).
+![Forceer parameterwaarde in testgeval](../img/ALEF300_TestGeval_Parameters2.png)
 
 ### Testinitialisatie
 

@@ -3,7 +3,7 @@
 Bij het uitvoerbaar maken van wetten en beleid door computersystemen zijn er de volgende uitdagingen:
 
 * Bewerkelijke wetgeving en uitvoering
-* Wijzingen doorvoeren kost veel tijd
+* Wijzigingen doorvoeren kost veel tijd
 * Kennis is verstopt in applicaties
 * Afhankelijkheid van verouderde technologie
 * Kennis en kunde is schaars

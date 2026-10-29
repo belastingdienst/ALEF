@@ -10,7 +10,7 @@ Deze quick start handleiding helpt om een ALEF service te maken.
 
 ## Precondities
 
-ALEF dient geinstalleerd te zijn. Zie de installatie instructie voor:
+ALEF dient geïnstalleerd te zijn. Zie de installatie instructie voor:
 
 * [Windows](installeren/Windows.md)
 * [macOS](installeren/macOS.md)
@@ -22,7 +22,7 @@ Als ALEF de eerste keer wordt gestart verschijnt het "Welcome" scherm. Kies voor
 ![Screenshot Welcome scherm](img/ALEF_Welkomscherm_NewProject.png)
 Als ALEF al een keer gestart is kies dan voor File > New > Project. 
 
-> **_Windows:_**  In Windows is het File menu zichtbaar nadat op de het icon met vier horizontale balken wordt geklikt.
+> **_Windows:_**  In Windows is het File menu zichtbaar nadat op het icoon met vier horizontale balken wordt geklikt.
 >
 > ![Windows menu icon](img/windows-menu-icon.png)
 
@@ -63,8 +63,8 @@ Het objectmodel beschrijft alle attributen en feiten.
 1. Klik rechts op het model en kies voor **New** > **gegevensspraak** > **Objectmodel**.
 ![Screenshot menustructuur New > gegevensspraak > Objectmodel](img/ALEF_NieuwObjectmodel.png)
 2. Geef het objectmodel de naam `objectmodel` en druk op Enter.
-![Screenshot nieuw objectmode zonder naam](img/ALEF_NieuwObjectmodelZonderNaam.png)
-![Screenshot nieuw objectmode met naam](img/ALEF_NieuwObjectmodelMetNaam.png)
+![Screenshot nieuw objectmodel zonder naam](img/ALEF_NieuwObjectmodelZonderNaam.png)
+![Screenshot nieuw objectmodel met naam](img/ALEF_NieuwObjectmodelMetNaam.png)
 3. Druk ctrl + spatie en kies `Objecttype` om een nieuw objecttype toe te voegen.  
 ![Screenshot object model ctrl + spatie](img/ALEF_ObjecttypeToevoegen.png)
 4. Geef het objecttype de naam `persoon` en druk op Enter.
@@ -74,17 +74,17 @@ Het objectmodel beschrijft alle attributen en feiten.
 ![Screenshot voeg attribuut toe](img/ALEF_NieuwAttribuut.png)
 >Een attribuut is een eigenschap van het objecttype. Bijvoorbeeld: objecttype `persoon` heeft attribuut `geboortedatum` en `leeftijd`. 
 6. Noem het attribuut `geboortedatum`. 
-![Screensshot van attribuut met de naam geboortedatum](img/ALEF_AttribuutMetNaamZonderDatatype.png)
+![Screenshot van attribuut met de naam geboortedatum](img/ALEF_AttribuutMetNaamZonderDatatype.png)
 7. Druk op tab en vervolgens ctrl + spatie om een datatype voor het attribuut te kiezen. Kies `Datum-tijd`.
 ![Screenshot datatype Datum-tijd kiezen](img/ALEF_DatatypeKiezen.png)
 ![Screenshot datatype Datum-tijd gekozen](img/ALEF_DatatypeGekozen.png)
 8. Druk op Enter en voeg op dezelfde manier als hiervoor een attribuut met de naam `datum van vandaag` toe. Kies bij datatype voor Datum-tijd.
-![Screenshot van tweede attribuut geboortedatum](img/ALEF_TweedeAttribuut.png)
+![Screenshot van tweede attribuut datum van vandaag](img/ALEF_TweedeAttribuut.png)
 9. Druk op Enter en voeg op dezelfde manier als hiervoor een attribuut met de naam `leeftijd` toe, maar kies bij het datatype voor Numeriek.
 ![Screenshot tweede attribuut](img/ALEF_DerdeAttribuut.png)
 10. Plaats bij het attribuut `leeftijd` de cursor tussen `)` en `;`, druk vervolgens spatie en daarna ctrl + spatie. Kies `met eenheid` om een eenheid toe te voegen aan het datatype. 
 ![Screenshot toevoegen eenheid aan datatype van attribuut](img/ALEF_ToevoegenMetEenheid.png)
->TIP: als de optie `met eenheid` niet verschijnt stond de cursor niet op de juiste plek. Plaats de cursor tussen het haakje sluiten `)` en puntcomma `;` en probeer het opnieuw.
+>TIP: als de optie `met eenheid` niet verschijnt stond de cursor niet op de juiste plek. Plaats de cursor tussen het haakje sluiten `)` en puntkomma `;` en probeer het opnieuw.
 11. Druk ctrl + spatie en kies `jr` om de eenheid jaar toe te voegen aan het datatype Numeriek (getal).
 ![Screenshot lijst met eenheden datatype](img/ALEF_EenheidSelecteren.png)
 ![Screenshot datatype met eenheid](img/ALEF_DatatypeMetEenheid.png)
@@ -109,7 +109,7 @@ Regelgroepen bevatten de logica van het project.
 ![Screenshot menustructuur nieuwe regel](img/ALEF_NieuweRegelInRegelgroepToevoegen.png)
 
 4. Geef de regel de naam `Bepalen leeftijd` en druk op tab.
-<!-- TODO: opmaak toetsen(combinaties uniformeren !-->
+<!-- TODO: opmaak toetsen(combinaties uniformeren -->
 ![Screenshot nieuwe regel zonder naam](img/ALEF_NieuweRegelZonderNaam.png)
 
 ![Screenshot nieuwe regel met naam](img/ALEF_NieuweRegelMetNaam.png)
@@ -171,7 +171,7 @@ Regelgroepen bevatten de logica van het project.
 
 ![Screenshot onjuiste eenheid toekenning](img/ALEF_ErrorToekenningAttribuutMetDagenInPlaatsVanJaren.png)
 
-14. Zet de cursor vóór het woord `dagen`, druk op ctrl + spatie en kies `jaren`. De rode kringellijn (error) zal nu verdwijnen, omdat de eenheid nu klopt. 
+14. Zet de cursor vóór het woord `dagen`, druk op ctrl + spatie en kies `jaren`. De rode kronkellijn (error) zal nu verdwijnen, omdat de eenheid nu klopt. 
 
 ![Screenshot aanpassen eenheid van dagen naar jaren](img/ALEF_RegelEenheidWijzigenVanDagenNaarJaren.png)
 
@@ -205,7 +205,7 @@ De regel is nu compleet en kloppend. We kunnen nu testgevallen bij de regel make
 
 5. Klik op de onderste `<< ... >>` of druk meermaals op tab tot de cursor vóór de onderste `<<` staat.
 
-![Screenshot cursus voor eerste testgeval](img/ALEF_CursorTestsetBijEersteTestgeval.png)
+![Screenshot cursor voor eerste testgeval](img/ALEF_CursorTestsetBijEersteTestgeval.png)
 
 6. Druk ctrl + spatie en kies `TestGeval`. 
 
@@ -255,7 +255,7 @@ De regel is nu compleet en kloppend. We kunnen nu testgevallen bij de regel make
 
 14. Druk alt + enter of klik op de lampenbol links van `leeftijd` en kies `Voeg Eenheid Toe Aan Numerieke Waarde`.
 
-![Screenshot Intensions ALEF](img/ALEF_IcoontjeIntensions.png)
+![Screenshot Intentions ALEF](img/ALEF_IcoontjeIntensions.png)
 
 ![Screenshot kiezen Voeg Eenheid Toe aan Numerieke Waarde](img/ALEF_TestVoegEenheidToeAanAttribuutResultaatdeel.png)
 
