@@ -29,7 +29,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v7
       with:
         python-version: 3.x
     - name: Set-up Zensical
@@ -118,7 +118,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v7
       with:
         python-version: 3.x
     - name: Set-up Zensical
