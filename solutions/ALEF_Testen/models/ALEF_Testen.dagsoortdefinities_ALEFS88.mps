@@ -86,7 +86,7 @@
       <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa">
         <child id="7454607800402011565" name="dagsoorten" index="XDnfx" />
       </concept>
-      <concept id="7454607800401937239" name="testspraak.structure.DatumDagSoortVoorspelling" flags="ng" index="XD5kr">
+      <concept id="7454607800401937239" name="testspraak.structure.DatumDagsoortVoorspelling" flags="ng" index="XD5kr">
         <reference id="7454607800402005516" name="dagsoort" index="XDlx0" />
         <child id="7454607800402002995" name="datum" index="XDl9Z" />
       </concept>
@@ -396,75 +396,6 @@
     </node>
     <node concept="1uxNW$" id="LU9bvsa5Ys" role="1HSqhF" />
   </node>
-  <node concept="1rXTK1" id="LU9bvsa605">
-    <property role="TrG5h" value="FeestWerkEnWeekdagenTest" />
-    <node concept="210ffa" id="6tO5$LvoRSn" role="10_$IM">
-      <property role="TrG5h" value="001" />
-      <node concept="XD5kr" id="6tO5$LvoSNw" role="XDnfx">
-        <property role="3iLdo0" value="true" />
-        <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
-        <node concept="2ljiaL" id="6tO5$LvoSNx" role="XDl9Z">
-          <property role="2ljiaM" value="1" />
-          <property role="2ljiaN" value="1" />
-          <property role="2ljiaO" value="2021" />
-        </node>
-      </node>
-      <node concept="XD5kr" id="6tO5$LvL66I" role="XDnfx">
-        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
-        <node concept="2ljiaL" id="6tO5$LvL66K" role="XDl9Z">
-          <property role="2ljiaM" value="1" />
-          <property role="2ljiaN" value="2" />
-          <property role="2ljiaO" value="2021" />
-        </node>
-      </node>
-      <node concept="XD5kr" id="6tO5$LvL7Nh" role="XDnfx">
-        <property role="3iLdo0" value="true" />
-        <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
-        <node concept="2ljiaL" id="6tO5$LvL7Nj" role="XDl9Z">
-          <property role="2ljiaM" value="4" />
-          <property role="2ljiaN" value="5" />
-          <property role="2ljiaO" value="2021" />
-        </node>
-      </node>
-    </node>
-    <node concept="210ffa" id="4HvEN5Rb$Vc" role="10_$IM">
-      <property role="TrG5h" value="002" />
-      <node concept="XD5kr" id="4HvEN5RbAWM" role="XDnfx">
-        <ref role="XDlx0" node="LU9bvsa60i" resolve="eerste paasdag" />
-        <node concept="2ljiaL" id="4HvEN5RbAWN" role="XDl9Z">
-          <property role="2ljiaM" value="1" />
-          <property role="2ljiaN" value="1" />
-          <property role="2ljiaO" value="2022" />
-        </node>
-      </node>
-    </node>
-    <node concept="2ljwA5" id="LU9bvsa607" role="3Na4y7">
-      <node concept="2ljiaL" id="LU9bvsa60c" role="2ljwA6">
-        <property role="2ljiaO" value="2021" />
-        <property role="2ljiaN" value="1" />
-        <property role="2ljiaM" value="1" />
-      </node>
-      <node concept="2ljiaL" id="LU9bvsa60d" role="2ljwA7">
-        <property role="2ljiaO" value="2021" />
-        <property role="2ljiaN" value="1" />
-        <property role="2ljiaM" value="1" />
-      </node>
-    </node>
-    <node concept="2ljiaL" id="LU9bvsa608" role="1lUMLE">
-      <property role="2ljiaO" value="2021" />
-      <property role="2ljiaN" value="1" />
-      <property role="2ljiaM" value="1" />
-    </node>
-    <node concept="3WogBB" id="LU9bvsa609" role="vfxHU">
-      <property role="TrG5h" value="naam" />
-      <node concept="17AEQp" id="LU9bvsa60e" role="3WoufU">
-        <ref role="17AE6y" node="LU9bvsa5Yl" resolve="Feestdagen" />
-      </node>
-      <node concept="17AEQp" id="5P0Q73Hx7$q" role="3WoufU">
-        <ref role="17AE6y" node="LU9bvsa60u" resolve=" Werkdagen" />
-      </node>
-    </node>
-  </node>
   <node concept="2bv6Cm" id="LU9bvsa60h">
     <property role="TrG5h" value="WerkEnFeestdagen" />
     <node concept="3GLcxt" id="LU9bvsa60i" role="2bv6Cn">
@@ -541,6 +472,74 @@
       </node>
     </node>
     <node concept="1uxNW$" id="LU9bvsa60w" role="1HSqhF" />
+  </node>
+  <node concept="1rXTK1" id="6xdCdVKPpEF">
+    <property role="TrG5h" value="FeestWerkEnWeekdagenTest" />
+    <node concept="210ffa" id="6xdCdVKPyin" role="10_$IM">
+      <property role="TrG5h" value="001" />
+      <node concept="XD5kr" id="6xdCdVKPyJY" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
+        <node concept="2ljiaL" id="6xdCdVKPyJZ" role="XDl9Z">
+          <property role="2ljiaM" value="4" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+      <node concept="XD5kr" id="6xdCdVQiE_5" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
+        <node concept="2ljiaL" id="6xdCdVQiE_6" role="XDl9Z">
+          <property role="2ljiaM" value="5" />
+          <property role="2ljiaN" value="5" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+      <node concept="XD5kr" id="6xdCdVQiGt2" role="XDnfx">
+        <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
+        <node concept="2ljiaL" id="6xdCdVQiGt3" role="XDl9Z">
+          <property role="2ljiaM" value="2" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+    </node>
+    <node concept="210ffa" id="6xdCdVKPAxv" role="10_$IM">
+      <property role="TrG5h" value="002" />
+      <node concept="XD5kr" id="6xdCdVKPAxw" role="XDnfx">
+        <property role="3iLdo0" value="true" />
+        <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
+        <node concept="2ljiaL" id="6xdCdVKPAxx" role="XDl9Z">
+          <property role="2ljiaM" value="5" />
+          <property role="2ljiaN" value="5" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+    </node>
+    <node concept="2ljwA5" id="6xdCdVKPpEG" role="3Na4y7">
+      <node concept="2ljiaL" id="6xdCdVKPpEH" role="2ljwA6">
+        <property role="2ljiaO" value="2021" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaM" value="1" />
+      </node>
+      <node concept="2ljiaL" id="6xdCdVKPpEI" role="2ljwA7">
+        <property role="2ljiaO" value="2021" />
+        <property role="2ljiaN" value="12" />
+        <property role="2ljiaM" value="31" />
+      </node>
+    </node>
+    <node concept="2ljiaL" id="6xdCdVKPpEJ" role="1lUMLE">
+      <property role="2ljiaO" value="2021" />
+      <property role="2ljiaN" value="7" />
+      <property role="2ljiaM" value="1" />
+    </node>
+    <node concept="3WogBB" id="6xdCdVKPx5j" role="vfxHU">
+      <property role="TrG5h" value="naam" />
+      <node concept="17AEQp" id="6xdCdVKPxbh" role="3WoufU">
+        <ref role="17AE6y" node="LU9bvsa60u" resolve=" Werkdagen" />
+      </node>
+      <node concept="17AEQp" id="6xdCdVKPxt4" role="3WoufU">
+        <ref role="17AE6y" node="LU9bvsa5Yl" resolve="Feestdagen" />
+      </node>
+    </node>
   </node>
 </model>
 
