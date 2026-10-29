@@ -2784,7 +2784,7 @@
                             </node>
                           </node>
                           <node concept="37vLTw" id="3oSvr8pq4Zz" role="37wK5m">
-                            <ref role="3cqZAo" node="3oSvr8pq4Zk" resolve="htmlSourceDir" />
+                            <ref role="3cqZAo" node="3oSvr8pqz0J" resolve="htmlFileName" />
                           </node>
                         </node>
                       </node>
