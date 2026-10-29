@@ -90,6 +90,7 @@
         <reference id="7454607800402005516" name="dagsoort" index="XDlx0" />
         <child id="7454607800402002995" name="datum" index="XDl9Z" />
       </concept>
+      <concept id="1574163149259822287" name="testspraak.structure.VerwachtFoutAttribute" flags="ng" index="1nZdB4" />
       <concept id="8931076255651336840" name="testspraak.structure.TestSet" flags="ng" index="1rXTK1">
         <child id="7037334947758586275" name="teTesten" index="vfxHU" />
         <child id="7760345304265917250" name="testGevallen" index="10_$IM" />
@@ -128,6 +129,9 @@
       <concept id="5636224356220873837" name="gegevensspraak.structure.Dagsoort" flags="ng" index="3GLcxt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -502,8 +506,45 @@
         </node>
       </node>
     </node>
-    <node concept="210ffa" id="6xdCdVKPAxv" role="10_$IM">
+    <node concept="210ffa" id="1gzlwsXWXcg" role="10_$IM">
       <property role="TrG5h" value="002" />
+      <node concept="XD5kr" id="1gzlwsXWXch" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
+        <node concept="2ljiaL" id="1gzlwsXWXci" role="XDl9Z">
+          <property role="2ljiaM" value="4" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+      <node concept="XD5kr" id="1gzlwsXWXcj" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
+        <node concept="2ljiaL" id="1gzlwsXWXck" role="XDl9Z">
+          <property role="2ljiaM" value="5" />
+          <property role="2ljiaN" value="5" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+      <node concept="XD5kr" id="1gzlwsXWXcl" role="XDnfx">
+        <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
+        <node concept="2ljiaL" id="1gzlwsXWXcm" role="XDl9Z">
+          <property role="2ljiaM" value="2" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+      <node concept="XD5kr" id="1gzlwsXWXJZ" role="XDnfx">
+        <property role="3iLdo0" value="true" />
+        <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
+        <node concept="2ljiaL" id="1gzlwsXWXK0" role="XDl9Z">
+          <property role="2ljiaM" value="5" />
+          <property role="2ljiaN" value="5" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+      <node concept="1nZdB4" id="1gzlwsXWZ9R" role="lGtFl" />
+    </node>
+    <node concept="210ffa" id="6xdCdVKPAxv" role="10_$IM">
+      <property role="TrG5h" value="003" />
       <node concept="XD5kr" id="6xdCdVKPAxw" role="XDnfx">
         <property role="3iLdo0" value="true" />
         <ref role="XDlx0" node="LU9bvsa60p" resolve="feestdag" />
@@ -513,6 +554,7 @@
           <property role="2ljiaO" value="2021" />
         </node>
       </node>
+      <node concept="1nZdB4" id="1gzlwsXWU6s" role="lGtFl" />
     </node>
     <node concept="2ljwA5" id="6xdCdVKPpEG" role="3Na4y7">
       <node concept="2ljiaL" id="6xdCdVKPpEH" role="2ljwA6">
