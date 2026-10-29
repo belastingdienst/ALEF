@@ -140,7 +140,7 @@ jobs:
         name: test-results-windows
         path: build/test-resultaten/*
     - name: Publish test results
-      uses: EnricoMi/publish-unit-test-result-action@v2
+      uses: EnricoMi/publish-unit-test-result-action/windows@v2
       if: (!cancelled())
       with:
         check_name: Test Results (Windows)
