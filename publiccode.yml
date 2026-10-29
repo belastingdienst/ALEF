@@ -1,0 +1,78 @@
+publiccodeYmlVersion: "0.7"
+
+name: Agile Law Execution Factory (ALEF)
+url: https://github.com/belastingdienst/ALEF.git
+softwareType: standalone/desktop
+
+platforms:
+  - windows
+  - linux
+  - mac
+
+categories:
+  - it-development
+  - regulations-and-directives
+
+developmentStatus: stable
+
+dependsOn:
+  open:
+    - name: JetBrains MPS
+      optional: false
+
+description:
+  en:
+    shortDescription: >-
+      ALEF enables non-programmers to write executable rules for
+      Dutch law in RegelSpraak.
+
+    longDescription: |
+      The Agile Law Execution Factory (ALEF) is developed by the Dutch Tax
+      Administration (Dutch: Belastingdienst) to enable non-programmers to
+      write rules for Dutch law in the language Regelspraak, which
+      is still comprehensible to law experts and at the same time precise
+      enough to be executed by a computer. ALEF is a JetBrains MPS based
+      Studio that is distributed as a desktop application for Windows,
+      Linux and macOS.
+
+    features:
+      - RegelSpraak business rule editor
+      - Rule execution engine
+      - Code generation
+  nl:
+    shortDescription: >-
+      ALEF stelt niet-programmeurs in staat uitvoerbare regels schrijven voor wetten in RegelSpraak
+
+    longDescription: |
+      The Agile Law Execution Factory (ALEF) is ontwikkeld door de Belastingdinest
+      om niet programmeurs regels te laten schrijven voor de Nederlandse wet in de taal RegelSpraak
+      die te begrijpen is door wet specialisten en tegelijk precies genoeg is zodat het
+      uitgevoerd kan worden door computers. ALEF is gebaseerd op JetBrains MPS
+      en wordt gedistribueerd als applicatie voor Windows, Linux en macOS.
+    features:
+      - RegelSpraak IDE
+      - Regels executie engine
+      - Code generatie
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Dutch Tax Administration (Belastingdienst)
+
+intendedAudience:
+  countries:
+    - NL
+  scope:
+    - government
+
+localisation:
+  availableLanguages:
+    - nl
+  localisationReady: false
+
+maintenance:
+  type: internal
+
+  contacts:
+    - name: Bureau Open Source Software
+      email: bureauopensourcesoftware@belastingdienst.nl
+      affiliation: Dutch Tax Administration (Belastingdienst)
