@@ -7929,34 +7929,42 @@
         <node concept="3clFbJ" id="6gu2EG$XCOu" role="3cqZAp">
           <node concept="3clFbS" id="6gu2EG$XCOw" role="3clFbx">
             <node concept="3cpWs6" id="6YwrqIbEw4N" role="3cqZAp">
-              <node concept="2OqwBi" id="6YwrqIbEJlF" role="3cqZAk">
-                <node concept="2YIFZM" id="6YwrqIbEB8I" role="2Oq$k0">
-                  <ref role="37wK5l" to="r9y:~Response.ok(java.lang.Object)" resolve="ok" />
-                  <ref role="1Pybhc" to="r9y:~Response" resolve="Response" />
-                  <node concept="2ShNRf" id="6YwrqIbEE3S" role="37wK5m">
-                    <node concept="1pGfFk" id="6YwrqIbEE3T" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[],java.lang.String)" resolve="String" />
-                      <node concept="2OqwBi" id="6gu2EG$XmIi" role="37wK5m">
-                        <node concept="2OqwBi" id="6YwrqIbEE3U" role="2Oq$k0">
-                          <node concept="37vLTw" id="6YwrqIbEE3V" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+              <node concept="2OqwBi" id="7B1HuMkMmxm" role="3cqZAk">
+                <node concept="2OqwBi" id="7B1HuMkLemR" role="2Oq$k0">
+                  <node concept="2YIFZM" id="6YwrqIbEB8I" role="2Oq$k0">
+                    <ref role="37wK5l" to="r9y:~Response.ok(java.lang.Object)" resolve="ok" />
+                    <ref role="1Pybhc" to="r9y:~Response" resolve="Response" />
+                    <node concept="2ShNRf" id="6YwrqIbEE3S" role="37wK5m">
+                      <node concept="1pGfFk" id="6YwrqIbEE3T" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[],java.lang.String)" resolve="String" />
+                        <node concept="2OqwBi" id="6gu2EG$XmIi" role="37wK5m">
+                          <node concept="2OqwBi" id="6YwrqIbEE3U" role="2Oq$k0">
+                            <node concept="37vLTw" id="6YwrqIbEE3V" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4uZKzvjyV39" resolve="result" />
+                            </node>
+                            <node concept="liA8E" id="6gu2EG$XjKV" role="2OqNvi">
+                              <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="6gu2EG$XjKV" role="2OqNvi">
-                            <ref role="37wK5l" to="n8da:~ServiceResult.getOutputStream()" resolve="getOutputStream" />
+                          <node concept="liA8E" id="6gu2EG$XuG0" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="6gu2EG$XuG0" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray()" resolve="toByteArray" />
+                        <node concept="Xl_RD" id="7B1HuMkCo_J" role="37wK5m">
+                          <property role="Xl_RC" value="UTF-8" />
                         </node>
-                      </node>
-                      <node concept="Xl_RD" id="7B1HuMkCo_J" role="37wK5m">
-                        <property role="Xl_RC" value="UTF-8" />
                       </node>
                     </node>
                   </node>
+                  <node concept="liA8E" id="7B1HuMkLyG3" role="2OqNvi">
+                    <ref role="37wK5l" to="r9y:~Response$ResponseBuilder.type(java.lang.String)" resolve="type" />
+                    <node concept="Xl_RD" id="7B1HuMkLQeG" role="37wK5m">
+                      <property role="Xl_RC" value="application/json; charset=UTF-8" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="6YwrqIbELdt" role="2OqNvi">
+                <node concept="liA8E" id="7B1HuMkMryd" role="2OqNvi">
                   <ref role="37wK5l" to="r9y:~Response$ResponseBuilder.build()" resolve="build" />
                 </node>
               </node>
