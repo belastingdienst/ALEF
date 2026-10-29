@@ -140,7 +140,7 @@ jobs:
         name: test-results-windows
         path: build/test-resultaten/*
     - name: Publish test results
-      uses: EnricoMi/publish-unit-test-result-action/windows@master
+      uses: EnricoMi/publish-unit-test-result-action@v2
       if: (!cancelled())
       with:
         check_name: Test Results (Windows)
@@ -155,4 +155,4 @@ jobs:
         path: build/test-report/**
         retention-days: 2
     - name: Clean-up
-      run: rm -rf build
+      run: del /s /q build && rmdir /s /q build
