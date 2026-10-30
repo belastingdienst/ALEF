@@ -4681,7 +4681,7 @@
                         <ref role="3cqZAo" node="3aN8wiJ8t0a" resolve="timedOppos" />
                       </node>
                       <node concept="liA8E" id="3aN8wiJ8t0n" role="2OqNvi">
-                        <ref role="37wK5l" to="geqe:Wr_nwIaH6P" resolve="add" />
+                        <ref role="37wK5l" to="geqe:4wKR5dDIAeU" resolve="setValid" />
                         <node concept="37vLTw" id="3aN8wiJ8t0o" role="37wK5m">
                           <ref role="3cqZAo" node="3aN8wiJ8sZL" resolve="object" />
                         </node>
