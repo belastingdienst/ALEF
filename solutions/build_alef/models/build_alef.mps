@@ -12649,6 +12649,36 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="2h4$HGGZJW6" role="3bR37C">
+          <node concept="3bR9La" id="2h4$HGGZJW7" role="1SiIV1">
+            <ref role="3bR37D" node="8h9A10k_Rf" resolve="editorcells" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2h4$HGGZJW8" role="3bR37C">
+          <node concept="3bR9La" id="2h4$HGGZJW9" role="1SiIV1">
+            <ref role="3bR37D" node="7mSdnB$6VZ6" resolve="editorUtils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2h4$HGGZJWa" role="3bR37C">
+          <node concept="3bR9La" id="2h4$HGGZJWb" role="1SiIV1">
+            <ref role="3bR37D" node="QJxhUGsRLC" resolve="testspraak" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2h4$HGGZJWc" role="3bR37C">
+          <node concept="3bR9La" id="2h4$HGGZJWd" role="1SiIV1">
+            <ref role="3bR37D" node="4wvGeDpkGR9" resolve="mpsUtils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2h4$HGGZJWe" role="3bR37C">
+          <node concept="3bR9La" id="2h4$HGGZJWf" role="1SiIV1">
+            <ref role="3bR37D" node="4goxJ2eP2lW" resolve="interpreter.debug" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2h4$HGGZJWw" role="3bR37C">
+          <node concept="1Busua" id="2h4$HGGZJWx" role="1SiIV1">
+            <ref role="1Busuk" node="QJxhUGsRLC" resolve="testspraak" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4goxJ2eOV40" role="3989C9">
