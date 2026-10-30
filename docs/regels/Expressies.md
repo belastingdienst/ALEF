@@ -28,7 +28,8 @@ Deze worden uitgedrukt met enkele aanhalingstekens wanneer ze in een regel aange
 ## Tekst expressies
 
 In expressies, die een waarde van het datatype Tekst opleveren, kan gebruik worden gemaakt van de expressie **reeks van teksten en waarden**.
-Dit is een expressie die gebruikt wordt om bij uitvoering van de regel de waarden van een expressie om te zetten naar een tekstwaarde, ook als de attributen een ander datatype hebben dan “Tekst”. Attributen in een reeks van teksten en waarden worden in dat geval omringd door “«»” haken.
+Dit is een expressie die gebruikt wordt om bij uitvoering van de regel de waarden van een expressie om te zetten naar een tekstwaarde, ook als de attributen een ander datatype hebben dan “Tekst”.
+Attributen in een reeks van teksten en waarden worden in dat geval omringd door “«»” haken.
 
 ![Omzetten naar tekst in expressie](img/Expressies_TekstOverzetten.png)
 

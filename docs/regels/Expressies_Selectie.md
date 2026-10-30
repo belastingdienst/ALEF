@@ -23,8 +23,6 @@ Rollen in een [feittype](../gegevens/feittype.md) koppelen verschillende objectt
 Als we een rol gebruiken, dan maken we eigenlijk een keten van objecttypen die met feittypen verbonden zijn.
 Een dergelijke keten noemen we de *onderwerpketen*.
 
-
-
 Hierbij is het van belang of een rol enkelvoudig of meervoudig is.
 De rol passagier bijvoorbeeld is meervoudig.
 Eén Vlucht betreft de verplaatsing van meerdere passagiers.
@@ -50,7 +48,7 @@ Indien dit het geval is, moeten de woorden aan alle/geen/precies/ten minste/ten 
 Selectiecriteria in een predicaat kunnen een controle van een kenmerk, attribuut of rol zijn, maar kunnen ook andere voorwaarden bevatten.
 Dit is dezelfde constructie die voor [samengestelde voorwaarden](Voorwaardendeel.md) wordt gebruikt.
 
-Bij dit soort onderwerpen kunnen meerdere soorten kwantificaties gebruikt worden. Meestal wordt “alle” gebruikt maar in RegelSpraak mag ook “geen”, “ten minste <getal>“, “hoogstens <getal>“ en “precies <getal>“ gebruikt worden waarin <getal> vervangen wordt door de tekstuele vorm van de getallen “één”, “twee”, “drie” of “vier”, of meer dan vier (maar dan genoteerd met een getal zoals 6 of 12).
+Bij dit soort onderwerpen kunnen meerdere soorten kwantificaties gebruikt worden. Meestal wordt “alle” gebruikt maar in RegelSpraak mag ook “geen”, “ten minste (getal)“, “hoogstens (getal)“ en “precies (getal)“ gebruikt worden waarin (getal) vervangen wordt door de tekstuele vorm van de getallen “één”, “twee”, “drie” of “vier”, of meer dan vier (maar dan genoteerd met een getal zoals 6 of 12).
 
 ## Concatenatie expressies
 
