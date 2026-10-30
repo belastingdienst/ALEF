@@ -4,6 +4,7 @@ import nl.belastingdienst.alef_runtime.Util;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
+import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
@@ -22,10 +23,10 @@ public class PredictedTimed<T> implements ITimed<T> {
 
     public void equalsForEachExpectedPeriod(@NotNull ITimed<T> calculated, @NotNull Consumer<String> action) {
         calculated = LazyTimed.of(calculated);
-        for (TimeBox<?> predictedBox : boxes) {
+        for (TimeBox<T> predictedBox : boxes) {
             Period pPeriod = predictedBox.valid;
             calculated.boxes(pPeriod).forEach(actualBox -> {
-                boolean ok = isOk(predictedBox, pPeriod, actualBox);
+                boolean ok = isOk(predictedBox, pPeriod, actualBox, Util::compareEQ);
                 action.accept(ok ? null : String.format("expected: %s, actual: %s", predictedBox, actualBox));
             });
         }
@@ -33,23 +34,23 @@ public class PredictedTimed<T> implements ITimed<T> {
 
     public boolean isEqualForEachPredictedPeriod(ITimed<T> calculated) {
         calculated = LazyTimed.of(calculated);
-        for (TimeBox<?> predictedBox : boxes) {
+        for (TimeBox<T> predictedBox : boxes) {
             Period pPeriod = predictedBox.valid;
-            if (!calculated.boxes(pPeriod).allMatch(actualBox -> isOk(predictedBox, pPeriod, actualBox))) {
+            if (!calculated.boxes(pPeriod).allMatch(actualBox -> isOk(predictedBox, pPeriod, actualBox, Util::compareEQ))) {
                 return false;
             }
         }
         return true;
     }
 
-    private static <T> boolean isOk(TimeBox<?> predictedBox, Period pPeriod, TimeBox<T> actualBox) {
+    public static <T> boolean isOk(TimeBox<T> predictedBox, Period pPeriod, TimeBox<T> actualBox, BiPredicate<T,T> compare) {
         boolean strictBegin = true;
         boolean strictEnd   = true;
         if (pPeriod instanceof PredictedPeriod ppPeriod) {
             strictBegin = ppPeriod.hasPreciseBeginBorder();
             strictEnd = ppPeriod.hasPreciseEndBorder();
         }
-        return Util.compareEQ(predictedBox.content(), actualBox.content()) &&
+        return compare.test(predictedBox.content(), actualBox.content()) &&
                 (strictBegin ? pPeriod.begin().equals(actualBox.valid.begin()) : !actualBox.valid.begin().isAfter(pPeriod.begin())) &&
                 (strictEnd ? pPeriod.end().equals(actualBox.valid.end()) : !actualBox.valid.end().isBefore(pPeriod.end()));
     }

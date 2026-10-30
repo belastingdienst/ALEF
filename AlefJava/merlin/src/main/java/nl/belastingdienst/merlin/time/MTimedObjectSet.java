@@ -1,16 +1,22 @@
 package nl.belastingdienst.merlin.time;
 
 import nl.belastingdienst.alef_runtime.time.*;
-import nl.belastingdienst.merlin.base.*;
+import nl.belastingdienst.merlin.base.MElementList;
+import nl.belastingdienst.merlin.base.MObject;
+import nl.belastingdienst.merlin.base.MPropertyKey;
+import nl.belastingdienst.merlin.base.MRoleKey;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
+
+import static nl.belastingdienst.alef_runtime.time.PredictedTimed.isOk;
 
 public class MTimedObjectSet implements ITimed<MElementList<MObject>> {
 
@@ -203,5 +209,34 @@ public class MTimedObjectSet implements ITimed<MElementList<MObject>> {
         }
         final ITimed<List<MObject>> tList = Time.makeTimed(list);
         return Time.lift((List<MObject> l) -> MElementList.of(l).withoutNull()).apply(tList).boxes(scope);
+    }
+
+    public void assertHaveSameObjectForAllPredictedPeriods(
+            @NotNull PredictedTimed<MElementList<MObject>> expected,
+            @NotNull Consumer<String> action)
+    {
+        expected.boxes(Period.ALWAYS).forEach(predictedBox -> {
+            Period pPeriod = predictedBox.valid();
+            this.boxes(pPeriod).forEach(actualBox -> {
+                boolean ok = isOk(predictedBox, pPeriod, actualBox, MTimedObjectSet::sameObjects);
+                action.accept(ok ? null : String.format("expected: %s, actual: %s", str(predictedBox), str(actualBox)));
+            });
+        });
+    }
+
+    private static boolean sameObjects(MElementList<MObject> a, MElementList<MObject> b) {
+        return a.hasTheSameObjects(b);
+    }
+
+    private static String str(TimeBox<MElementList<MObject>> box) {
+        final StringBuilder b = new StringBuilder();
+        b.append("{");
+        for (MObject elem : box.value()) {
+            if (b.length() > 1) { b.append(", "); }
+            b.append(elem);
+        }
+        b.append("} ");
+        b.append(box.valid());
+        return b.toString();
     }
 }
