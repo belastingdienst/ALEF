@@ -97,6 +97,9 @@
         <child id="5466076230970264373" name="rekendatums" index="1lUMLE" />
         <child id="3279801700007574211" name="geldigheidsperiode" index="3Na4y7" />
       </concept>
+      <concept id="8931076255651336860" name="testspraak.structure.TeTestenRegel" flags="ng" index="1rXTKl">
+        <reference id="9154144551707055005" name="ref" index="1G6pT_" />
+      </concept>
       <concept id="4162845176053918790" name="testspraak.structure.TeTestenRegelset" flags="ng" index="3WogBB">
         <child id="4162845176053925467" name="sets" index="3WoufU" />
       </concept>
@@ -580,6 +583,40 @@
       </node>
       <node concept="17AEQp" id="6xdCdVKPxt4" role="3WoufU">
         <ref role="17AE6y" node="LU9bvsa5Yl" resolve="Feestdagen" />
+      </node>
+    </node>
+  </node>
+  <node concept="1rXTK1" id="4XBD93cvOYS">
+    <property role="TrG5h" value="WerkdaagRegelTest" />
+    <node concept="2ljwA5" id="4XBD93cvOYT" role="3Na4y7">
+      <node concept="2ljiaL" id="4XBD93cvOYU" role="2ljwA6">
+        <property role="2ljiaO" value="2021" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaM" value="1" />
+      </node>
+      <node concept="2ljiaL" id="4XBD93cvOYV" role="2ljwA7">
+        <property role="2ljiaO" value="2021" />
+        <property role="2ljiaN" value="12" />
+        <property role="2ljiaM" value="31" />
+      </node>
+    </node>
+    <node concept="2ljiaL" id="4XBD93cvOYW" role="1lUMLE">
+      <property role="2ljiaO" value="2021" />
+      <property role="2ljiaN" value="7" />
+      <property role="2ljiaM" value="1" />
+    </node>
+    <node concept="1rXTKl" id="4XBD93cvQci" role="vfxHU">
+      <ref role="1G6pT_" node="LU9bvsa60v" resolve="werkdag" />
+    </node>
+    <node concept="210ffa" id="4XBD93cvQQ6" role="10_$IM">
+      <property role="TrG5h" value="001" />
+      <node concept="XD5kr" id="4XBD93cvRjI" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
+        <node concept="2ljiaL" id="4XBD93cvRjJ" role="XDl9Z">
+          <property role="2ljiaM" value="4" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
       </node>
     </node>
   </node>
