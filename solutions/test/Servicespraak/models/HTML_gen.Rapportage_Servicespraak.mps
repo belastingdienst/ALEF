@@ -13,7 +13,7 @@
     <import index="s0iw" ref="r:1003f867-7322-4084-8f1e-d1eaf0f019a1(berichttype.scopeParameters.ServiceSpecs)" />
     <import index="a4xb" ref="r:1cffb004-5bd8-4919-8917-4ac7470107b5(berichttype.KVEnSamengesteldVeld)" />
     <import index="ntyp" ref="r:1ad51599-bc6b-46db-9b52-ffc6bf3f98f5(datatype.berichtDataType.ServiceTests)" />
-    <import index="q9b1" ref="r:c9b1da14-2404-4277-9cf8-9a02b802acfc(datatype.restrictie.DecimalenRestrictie)" />
+    <import index="q9b1" ref="r:c9b1da14-2404-4277-9cf8-9a02b802acfc(datatype.restrictie.Restricties)" />
     <import index="eiom" ref="r:2b2530de-61ce-49c7-b8d2-fd3fb668c430(datatype.berichtDataType.ServiceConfiguratie)" />
     <import index="s1a9" ref="r:4007c337-4e9d-4156-8ba4-3bb279f88d52(datatype.berichtDataType.ServiceSpecificaties)" />
     <import index="et6" ref="r:0dd4a099-6070-4030-bb92-e46e6a0f813d(mapping.Boolean)" />
