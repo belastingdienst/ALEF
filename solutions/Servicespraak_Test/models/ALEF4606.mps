@@ -139,6 +139,7 @@
       <concept id="1482961590271922255" name="servicespraak.structure.Uitvoerberichtmapping" flags="ng" index="2785BU" />
       <concept id="1482961590271922254" name="servicespraak.structure.Invoerberichtmapping" flags="ng" index="2785BV" />
       <concept id="2142746120988295507" name="servicespraak.structure.Service" flags="ng" index="2kTx5H">
+        <property id="5131038505588465370" name="enableValidation" index="2phCaf" />
         <property id="8879350159213016781" name="componentnaam" index="2R2JWx" />
         <property id="8879350159213016767" name="projectnaam" index="2R2JXj" />
         <property id="235016714107005849" name="serviceNamespace" index="3jS_BH" />
@@ -258,6 +259,7 @@
     <property role="2R2JWx" value="cvs" />
     <property role="3jS_BH" value="http://example.org" />
     <property role="1CIKbG" value="https://service.example.org/Alef4606" />
+    <property role="2phCaf" value="true" />
     <node concept="2xwknM" id="4SL1R875q6y" role="2xxADg">
       <property role="TrG5h" value="DecisionService" />
       <property role="3EWdbH" value="rscreatievariabelenservice" />

@@ -18,7 +18,7 @@
     <import index="x0ng" ref="r:f3738b84-ccb7-4c26-9cf0-55f6a880e7d8(interpreter.runtime)" />
     <import index="5nyn" ref="r:70cf410c-6e25-457a-bade-ee96d00bdb6f(testspraak.typesystem)" />
     <import index="9lsg" ref="r:89509856-08a4-4830-93c1-493528cbdac3(NietHierarchisch.NietHierarchisch)" />
-    <import index="q9b1" ref="r:c9b1da14-2404-4277-9cf8-9a02b802acfc(datatype.restrictie.DecimalenRestrictie)" />
+    <import index="q9b1" ref="r:c9b1da14-2404-4277-9cf8-9a02b802acfc(datatype.restrictie.Restricties)" />
     <import index="eiom" ref="r:2b2530de-61ce-49c7-b8d2-fd3fb668c430(datatype.berichtDataType.ServiceConfiguratie)" />
     <import index="s1a9" ref="r:4007c337-4e9d-4156-8ba4-3bb279f88d52(datatype.berichtDataType.ServiceSpecificaties)" />
     <import index="o24a" ref="r:8d96a913-ea84-465e-987d-694675e74cb1(mapping.DataTypeZonderEenheid)" />
