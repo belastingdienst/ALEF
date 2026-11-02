@@ -587,7 +587,7 @@
     </node>
   </node>
   <node concept="1rXTK1" id="4XBD93cEnWP">
-    <property role="TrG5h" value="RegelTest" />
+    <property role="TrG5h" value="EerstePaasdagRegelTest" />
     <node concept="210ffa" id="4XBD93cEpcZ" role="10_$IM">
       <property role="TrG5h" value="001" />
       <node concept="XD5kr" id="4XBD93cEqkb" role="XDnfx">
