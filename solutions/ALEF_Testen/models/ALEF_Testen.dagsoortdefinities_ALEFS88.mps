@@ -7,7 +7,6 @@
   <imports>
     <import index="9nho" ref="r:4172b106-22c7-49a2-9043-c1e488e6f56c(standaard.funcs)" />
     <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" implicit="true" />
-    <import index="tz50" ref="r:91ada6ff-f45e-4b59-8f7e-7fa6c3590a24(ALEF_Testen.RegelsMetdagsoorten)" implicit="true" />
   </imports>
   <registry>
     <language id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts">
@@ -171,6 +170,9 @@
       </concept>
       <concept id="1788186806698835283" name="gegevensspraak.structure.Eenheid" flags="ng" index="PwxsY">
         <child id="1788186806698835695" name="numerator" index="Pwxi2" unordered="true" />
+      </concept>
+      <concept id="8989128614612178023" name="gegevensspraak.structure.Naamwoord" flags="ngI" index="16ZtyY">
+        <property id="8989128614612178052" name="isOnzijdig" index="16Ztxt" />
       </concept>
       <concept id="558527188464633210" name="gegevensspraak.structure.AbstractNumeriekeLiteral" flags="ng" index="3e5kNY">
         <property id="558527188465081158" name="waarde" index="3e6Tb2" />
@@ -485,35 +487,6 @@
     <node concept="3GLcxt" id="LU9bvsa60p" role="2bv6Cn">
       <property role="TrG5h" value="feestdag" />
     </node>
-    <node concept="1uxNW$" id="4uZnkk8$AaT" role="2bv6Cn" />
-    <node concept="2bvS6$" id="4uZnkk8$AqG" role="2bv6Cn">
-      <property role="TrG5h" value="OT" />
-      <node concept="2bv6ZS" id="284lcsD2Ule" role="2bv01j">
-        <property role="TrG5h" value="vervaldag" />
-        <node concept="1EDDdA" id="284lcsD2Um0" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
-        </node>
-      </node>
-      <node concept="2bv6ZS" id="284lcsD2Umb" role="2bv01j">
-        <property role="TrG5h" value="datum dagtekening" />
-        <node concept="1EDDdA" id="284lcsD2Umc" role="1EDDcc">
-          <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
-        </node>
-      </node>
-      <node concept="2bv6ZS" id="4fkaojx1u1U" role="2bv01j">
-        <property role="TrG5h" value="gegevenTermijn" />
-        <node concept="1EDDeX" id="5D48PNlX_kU" role="1EDDcc">
-          <property role="3GST$d" value="0" />
-          <node concept="PwxsY" id="5D48PNlX_kS" role="PyN7z">
-            <node concept="Pwxi7" id="5D48PNlX_kT" role="Pwxi2">
-              <property role="Pwxi6" value="1" />
-              <ref role="Pwxi0" to="tz50:4SRT32z3GYv" resolve="werkdag" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1uxNW$" id="LU9bvsa60s" role="2bv6Cn" />
     <node concept="1uxNW$" id="LU9bvsa60t" role="2bv6Cn" />
   </node>
   <node concept="2bQVlO" id="LU9bvsa60u">
@@ -702,54 +675,6 @@
         </node>
       </node>
     </node>
-    <node concept="210ffa" id="4uZnkk8$N2p" role="10_$IM">
-      <property role="TrG5h" value="datum dagtekening is een werkdag" />
-      <node concept="4Oh8J" id="4uZnkk8$N2q" role="4Ohb1">
-        <ref role="4Oh8G" node="4uZnkk8$AqG" resolve="OT" />
-        <ref role="3teO_M" node="4uZnkk8$N2r" resolve="ot" />
-        <node concept="3mzBic" id="4uZnkk8_8c4" role="4Ohbj">
-          <property role="V2jGk" value="-1" />
-          <ref role="10Xmnc" node="284lcsD2Umb" resolve="datum dagtekening" />
-          <node concept="2ljiaL" id="4uZnkk8_8c6" role="3mzBi6">
-            <property role="2ljiaM" value="19" />
-            <property role="2ljiaN" value="1" />
-            <property role="2ljiaO" value="2021" />
-          </node>
-        </node>
-      </node>
-      <node concept="4OhPC" id="4uZnkk8$N2r" role="4Ohaa">
-        <property role="TrG5h" value="ot" />
-        <ref role="4OhPH" node="4uZnkk8$AqG" resolve="OT" />
-        <node concept="3_ceKt" id="4uZnkk8_5op" role="4OhPJ">
-          <ref role="3_ceKs" node="284lcsD2Ule" resolve="vervaldag" />
-          <node concept="2ljiaL" id="4uZnkk8_5oq" role="3_ceKu">
-            <property role="2ljiaM" value="1" />
-            <property role="2ljiaN" value="1" />
-            <property role="2ljiaO" value="2021" />
-          </node>
-        </node>
-        <node concept="3_ceKt" id="4uZnkk8_5ZZ" role="4OhPJ">
-          <ref role="3_ceKs" node="4fkaojx1u1U" resolve="gegevenTermijn" />
-          <node concept="1EQTEq" id="4uZnkk8_6fV" role="3_ceKu">
-            <property role="3e6Tb2" value="12" />
-            <node concept="PwxsY" id="4uZnkk8_72O" role="1jdwn1">
-              <node concept="Pwxi7" id="4uZnkk8_72N" role="Pwxi2">
-                <property role="Pwxi6" value="1" />
-                <ref role="Pwxi0" to="tz50:4SRT32z3GYv" resolve="werkdag" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="XD5kr" id="4uZnkk8$P4y" role="XDnfx">
-        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
-        <node concept="2ljiaL" id="4uZnkk8$P4z" role="XDl9Z">
-          <property role="2ljiaM" value="19" />
-          <property role="2ljiaN" value="1" />
-          <property role="2ljiaO" value="2021" />
-        </node>
-      </node>
-    </node>
     <node concept="2ljwA5" id="6xdCdVKPpEG" role="3Na4y7">
       <node concept="2ljiaL" id="6xdCdVKPpEH" role="2ljwA6">
         <property role="2ljiaO" value="2021" />
@@ -811,45 +736,160 @@
       <ref role="1G6pT_" node="LU9bvsc7Gp" resolve="eerste paasdag" />
     </node>
   </node>
-  <node concept="2bQVlO" id="4uZnkk8$S$V">
+  <node concept="2bQVlO" id="1F8C$8ACqeT">
     <property role="TrG5h" value="Dagtekening" />
-    <node concept="1HSql3" id="284lcsD2U9H" role="1HSqhF">
+    <node concept="1HSql3" id="1F8C$8ACrHr" role="1HSqhF">
       <property role="TrG5h" value="berekening dagtekening" />
-      <node concept="1wO7pt" id="284lcsD2U9J" role="kiesI">
-        <node concept="2boe1W" id="284lcsD2U9K" role="1wO7pp">
-          <node concept="2boe1X" id="284lcsD2UmP" role="1wO7i6">
-            <node concept="3_mHL5" id="284lcsD2UmQ" role="2bokzF">
-              <node concept="c2t0s" id="284lcsD2Un6" role="eaaoM">
-                <ref role="Qu8KH" node="284lcsD2Umb" resolve="datum dagtekening" />
+      <node concept="1wO7pt" id="1F8C$8ACrHt" role="kiesI">
+        <node concept="2boe1W" id="1F8C$8ACrHu" role="1wO7pp">
+          <node concept="2boe1X" id="1F8C$8AD2Ie" role="1wO7i6">
+            <node concept="3_mHL5" id="1F8C$8AD2Ij" role="2bokzF">
+              <node concept="c2t0s" id="1F8C$8AD3XX" role="eaaoM">
+                <ref role="Qu8KH" node="1F8C$8ACuFH" resolve="datum dagtekening" />
               </node>
-              <node concept="3_kdyS" id="284lcsD2Un5" role="pQQuc">
-                <ref role="Qu8KH" node="4uZnkk8$AqG" resolve="OT" />
+              <node concept="3_kdyS" id="1F8C$8AD3XW" role="pQQuc">
+                <ref role="Qu8KH" node="1F8C$8ACl4L" resolve="OT" />
               </node>
             </node>
-            <node concept="3aUx8v" id="3wWnbOvbNc2" role="2bokzm">
-              <node concept="3_mHL5" id="3wWnbOvbNc3" role="2C$i6h">
-                <node concept="3yS1BT" id="3wWnbOvbNc5" role="pQQuc">
-                  <ref role="3yS1Ki" node="284lcsD2Un5" resolve="OT" />
+            <node concept="3aUx8v" id="1F8C$8AD36j" role="2bokzm">
+              <node concept="3_mHL5" id="1F8C$8AD3mc" role="2C$i6h">
+                <node concept="c2t0s" id="1F8C$8AD3A4" role="eaaoM">
+                  <ref role="Qu8KH" node="1F8C$8ACmzE" resolve="vervaldag" />
                 </node>
-                <node concept="c2t0s" id="3wWnbOvbNc4" role="eaaoM">
-                  <ref role="Qu8KH" node="284lcsD2Ule" resolve="vervaldag" />
+                <node concept="3yS1BT" id="1F8C$8AD4_G" role="pQQuc">
+                  <ref role="3yS1Ki" node="1F8C$8AD3XW" resolve="OT" />
                 </node>
               </node>
-              <node concept="3_mHL5" id="1q1vRKef10u" role="2C$i6l">
-                <node concept="c2t0s" id="1q1vRKef13d" role="eaaoM">
-                  <ref role="Qu8KH" node="4fkaojx1u1U" resolve="gegevenTermijn" />
+              <node concept="3_mHL5" id="1F8C$8AD563" role="2C$i6l">
+                <node concept="c2t0s" id="1F8C$8AD58F" role="eaaoM">
+                  <ref role="Qu8KH" node="1F8C$8ACnbl" resolve="gegevenTermijn" />
                 </node>
-                <node concept="3yS1BT" id="1q1vRKef13c" role="pQQuc">
-                  <ref role="3yS1Ki" node="284lcsD2Un5" resolve="OT" />
+                <node concept="3yS1BT" id="1F8C$8AD58E" role="pQQuc">
+                  <ref role="3yS1Ki" node="1F8C$8AD3XW" resolve="OT" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2ljwA5" id="284lcsD2U9M" role="1nvPAL" />
+        <node concept="2ljwA5" id="1F8C$8ACrHw" role="1nvPAL" />
       </node>
     </node>
-    <node concept="1uxNW$" id="4uZnkk8$Ts5" role="1HSqhF" />
+    <node concept="1uxNW$" id="1F8C$8ACrHz" role="1HSqhF" />
+  </node>
+  <node concept="1rXTK1" id="1F8C$8ADn1k">
+    <property role="TrG5h" value="DagtekeningTest" />
+    <node concept="210ffa" id="1F8C$8ADnpa" role="10_$IM">
+      <property role="TrG5h" value="001" />
+      <node concept="4Oh8J" id="1F8C$8ADnpb" role="4Ohb1">
+        <ref role="4Oh8G" node="1F8C$8ACl4L" resolve="OT" />
+        <ref role="3teO_M" node="1F8C$8ADnpc" resolve="ot" />
+        <node concept="3mzBic" id="1F8C$8ADqlu" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1F8C$8ACuFH" resolve="datum dagtekening" />
+          <node concept="2ljiaL" id="1F8C$8ADqlw" role="3mzBi6">
+            <property role="2ljiaM" value="19" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2021" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="1F8C$8ADnpc" role="4Ohaa">
+        <property role="TrG5h" value="ot" />
+        <ref role="4OhPH" node="1F8C$8ACl4L" resolve="OT" />
+        <node concept="3_ceKt" id="1F8C$8ADogr" role="4OhPJ">
+          <ref role="3_ceKs" node="1F8C$8ACmzE" resolve="vervaldag" />
+          <node concept="2ljiaL" id="1F8C$8ADogs" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2021" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="1F8C$8ADoCi" role="4OhPJ">
+          <ref role="3_ceKs" node="1F8C$8ACnbl" resolve="gegevenTermijn" />
+          <node concept="1EQTEq" id="1F8C$8ADoKm" role="3_ceKu">
+            <property role="3e6Tb2" value="12" />
+            <node concept="PwxsY" id="1F8C$8ADpqN" role="1jdwn1">
+              <node concept="Pwxi7" id="1F8C$8ADpqM" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="LU9bvsa60o" resolve="werkdag" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="XD5kr" id="1F8C$8ADrO_" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
+        <node concept="2ljiaL" id="1F8C$8ADrOA" role="XDl9Z">
+          <property role="2ljiaM" value="19" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+    </node>
+    <node concept="2ljwA5" id="1F8C$8ADn1l" role="3Na4y7">
+      <node concept="2ljiaL" id="1F8C$8ADn1m" role="2ljwA6">
+        <property role="2ljiaO" value="2026" />
+        <property role="2ljiaN" value="1" />
+        <property role="2ljiaM" value="1" />
+      </node>
+      <node concept="2ljiaL" id="1F8C$8ADn1n" role="2ljwA7">
+        <property role="2ljiaO" value="2026" />
+        <property role="2ljiaN" value="12" />
+        <property role="2ljiaM" value="31" />
+      </node>
+    </node>
+    <node concept="2ljiaL" id="1F8C$8ADn1o" role="1lUMLE">
+      <property role="2ljiaO" value="2026" />
+      <property role="2ljiaN" value="7" />
+      <property role="2ljiaM" value="1" />
+    </node>
+    <node concept="3WogBB" id="1F8C$8ADvtO" role="vfxHU">
+      <property role="TrG5h" value="naam" />
+      <node concept="17AEQp" id="1F8C$8ADvAT" role="3WoufU">
+        <ref role="17AE6y" node="1F8C$8ACqeT" resolve="Dagtekening" />
+      </node>
+      <node concept="17AEQp" id="1F8C$8AD_ve" role="3WoufU">
+        <ref role="17AE6y" node="LU9bvsa60u" resolve=" Werkdagen" />
+      </node>
+      <node concept="17AEQp" id="1F8C$8ADAk4" role="3WoufU">
+        <ref role="17AE6y" node="LU9bvsa5Yl" resolve="Feestdagen" />
+      </node>
+    </node>
+  </node>
+  <node concept="2bv6Cm" id="1F8C$8ADCZ7">
+    <property role="TrG5h" value="Dagtekening" />
+    <node concept="2bvS6$" id="1F8C$8ACl4L" role="2bv6Cn">
+      <property role="TrG5h" value="OT" />
+      <node concept="2bv6ZS" id="1F8C$8ACmzE" role="2bv01j">
+        <property role="16Ztxt" value="false" />
+        <property role="TrG5h" value="vervaldag" />
+        <node concept="1EDDdA" id="1F8C$8ACmNv" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="1F8C$8ACuFH" role="2bv01j">
+        <property role="16Ztxt" value="false" />
+        <property role="TrG5h" value="datum dagtekening" />
+        <node concept="1EDDdA" id="1F8C$8ACSo3" role="1EDDcc">
+          <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
+        </node>
+      </node>
+      <node concept="2bv6ZS" id="1F8C$8ACnbl" role="2bv01j">
+        <property role="16Ztxt" value="false" />
+        <property role="TrG5h" value="gegevenTermijn" />
+        <node concept="1EDDeX" id="1F8C$8ACUoI" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+          <node concept="PwxsY" id="1F8C$8ACVlj" role="PyN7z">
+            <node concept="Pwxi7" id="1F8C$8ACVNh" role="Pwxi2">
+              <property role="Pwxi6" value="1" />
+              <ref role="Pwxi0" node="LU9bvsa60o" resolve="werkdag" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1uxNW$" id="1F8C$8ADE_T" role="2bv6Cn" />
+    <node concept="1uxNW$" id="1F8C$8ADCZ8" role="2bv6Cn" />
   </node>
 </model>
 
