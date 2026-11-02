@@ -586,38 +586,38 @@
       </node>
     </node>
   </node>
-  <node concept="1rXTK1" id="4XBD93cvOYS">
-    <property role="TrG5h" value="WerkdaagRegelTest" />
-    <node concept="2ljwA5" id="4XBD93cvOYT" role="3Na4y7">
-      <node concept="2ljiaL" id="4XBD93cvOYU" role="2ljwA6">
+  <node concept="1rXTK1" id="4XBD93cEnWP">
+    <property role="TrG5h" value="RegelTest" />
+    <node concept="210ffa" id="4XBD93cEpcZ" role="10_$IM">
+      <property role="TrG5h" value="001" />
+      <node concept="XD5kr" id="4XBD93cEqkb" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60i" resolve="eerste paasdag" />
+        <node concept="2ljiaL" id="4XBD93cEqkc" role="XDl9Z">
+          <property role="2ljiaM" value="4" />
+          <property role="2ljiaN" value="4" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+    </node>
+    <node concept="2ljwA5" id="4XBD93cEnWQ" role="3Na4y7">
+      <node concept="2ljiaL" id="4XBD93cEnWR" role="2ljwA6">
         <property role="2ljiaO" value="2021" />
         <property role="2ljiaN" value="1" />
         <property role="2ljiaM" value="1" />
       </node>
-      <node concept="2ljiaL" id="4XBD93cvOYV" role="2ljwA7">
+      <node concept="2ljiaL" id="4XBD93cEnWS" role="2ljwA7">
         <property role="2ljiaO" value="2021" />
         <property role="2ljiaN" value="12" />
         <property role="2ljiaM" value="31" />
       </node>
     </node>
-    <node concept="2ljiaL" id="4XBD93cvOYW" role="1lUMLE">
+    <node concept="2ljiaL" id="4XBD93cEnWT" role="1lUMLE">
       <property role="2ljiaO" value="2021" />
       <property role="2ljiaN" value="7" />
       <property role="2ljiaM" value="1" />
     </node>
-    <node concept="1rXTKl" id="4XBD93cvQci" role="vfxHU">
-      <ref role="1G6pT_" node="LU9bvsa60v" resolve="werkdag" />
-    </node>
-    <node concept="210ffa" id="4XBD93cvQQ6" role="10_$IM">
-      <property role="TrG5h" value="001" />
-      <node concept="XD5kr" id="4XBD93cvRjI" role="XDnfx">
-        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
-        <node concept="2ljiaL" id="4XBD93cvRjJ" role="XDl9Z">
-          <property role="2ljiaM" value="4" />
-          <property role="2ljiaN" value="1" />
-          <property role="2ljiaO" value="2021" />
-        </node>
-      </node>
+    <node concept="1rXTKl" id="4XBD93cEoGv" role="vfxHU">
+      <ref role="1G6pT_" node="LU9bvsc7Gp" resolve="eerste paasdag" />
     </node>
   </node>
 </model>
