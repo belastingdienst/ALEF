@@ -428,10 +428,7 @@
           <node concept="3oM_SD" id="6ly27SDX2JS" role="1PaTwD">
             <property role="3oM_SC" value="stopt" />
           </node>
-          <node concept="3oM_SD" id="6ly27SDX2JT" role="1PaTwD">
-            <property role="3oM_SC" value="waarschijnlijk" />
-          </node>
-          <node concept="3oM_SD" id="6ly27SDX2JU" role="1PaTwD">
+          <node concept="3oM_SD" id="2x0vnaMWjHq" role="1PaTwD">
             <property role="3oM_SC" value="niet" />
           </node>
           <node concept="3oM_SD" id="6ly27SDX2JV" role="1PaTwD">
