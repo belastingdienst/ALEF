@@ -309,13 +309,7 @@ public class JavaServiceBuilder {
         final int index = value.indexOf(FILE_IN_JAR);
         final Path jarFile = Path.of(value.substring(0, index + 4));
         final String jarPath = value.substring(index + FILE_IN_JAR.length());
-        final Path targetPath;
-
-        if (Platform.isWindows()) {
-            targetPath = Path.of(jarPath.replace("/", "\\"));
-        } else {
-            targetPath = Path.of(jarPath);
-        }
+        final Path targetPath = Path.of(toFileSystemPath(jarPath));
 
         final String tmpFolderName = jarFile.getFileName().toString().replace(".jar", "_jar");
         final Path targetFile = pomFolder.resolve(tmpFolderName).resolve(targetPath);
@@ -332,6 +326,10 @@ public class JavaServiceBuilder {
         }
 
         sourceFile.setTextContent(pomFolder.resolve(Path.of(tmpFolderName)).resolve(jarPath).toAbsolutePath().toString());
+    }
+
+    private static String toFileSystemPath(final String path) {
+        return path.replace('/', File.separatorChar);
     }
 
     private static NamespaceContext namespaceContext() {
