@@ -167,7 +167,8 @@
       <node concept="2mG0Ck" id="2JunpjFo9Gb" role="2mG0Ct">
         <property role="u$DAK" value="true" />
         <property role="TrG5h" value="houder" />
-        <property role="3d2QNm" value="xxx" />
+        <property role="3d2QNm" value="xxxe" />
+        <property role="16Ztxt" value="true" />
         <ref role="1fE_qF" node="2JunpjFo9CW" resolve="persoon" />
       </node>
       <node concept="2mG0Ck" id="2JunpjFo9Gc" role="2mG0Ct">
