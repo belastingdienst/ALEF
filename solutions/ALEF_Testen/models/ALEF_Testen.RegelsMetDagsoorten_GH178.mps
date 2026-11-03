@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f3f74024-03c1-4031-b618-f3c98eacde13(ALEF_Testen.RegelsMetDagsoortenBugRepro)">
+<model ref="r:f3f74024-03c1-4031-b618-f3c98eacde13(ALEF_Testen.RegelsMetDagsoorten_GH178)">
   <persistence version="9" />
   <languages>
     <devkit ref="d07fa9c5-678d-4a9b-9eaf-b1b8c569b820(alef.devkit)" />
