@@ -6768,7 +6768,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="6xdCdVNhgB_" role="3uHU7B">
-                      <property role="Xl_RC" value="Ongedefinieerde dagsoort: " />
+                      <property role="Xl_RC" value="Ongedefiniëerde dagsoort: " />
                     </node>
                   </node>
                 </node>
