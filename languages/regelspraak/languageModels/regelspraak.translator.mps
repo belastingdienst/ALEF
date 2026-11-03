@@ -19329,40 +19329,40 @@
         </node>
       </node>
       <node concept="3clFbS" id="3u9KL4EYr84" role="3clF47">
-        <node concept="3clFbF" id="3u9KL4FcyN_" role="3cqZAp">
-          <node concept="21Gwf3" id="3u9KL4FcyNz" role="3clFbG">
+        <node concept="3clFbF" id="2gqjJO3sxdp" role="3cqZAp">
+          <node concept="21Gwf3" id="6CBAvXUPX7i" role="3clFbG">
             <ref role="37wK5l" node="3u9KL4F3QSb" resolve="abstractMapping_nodeBinaireExpressie" />
-            <node concept="37vLTw" id="3u9KL4FcyQy" role="37wK5m">
+            <node concept="37vLTw" id="6CBAvXUPX7j" role="37wK5m">
               <ref role="3cqZAo" node="3u9KL4EYr83" resolve="expr" />
             </node>
-            <node concept="37vLTw" id="1uVct5xXg5V" role="37wK5m">
+            <node concept="37vLTw" id="6CBAvXUPX7k" role="37wK5m">
               <ref role="3cqZAo" node="3u9KL4F0FDW" resolve="ctx" />
             </node>
-            <node concept="21Gwf3" id="3u9KL4Fd7nd" role="37wK5m">
+            <node concept="21Gwf3" id="6CBAvXUPX7l" role="37wK5m">
               <ref role="37wK5l" to="18s:5sYnSNmBQHi" resolve="abstractMapping_nodeExpressie" />
-              <node concept="2OqwBi" id="3u9KL4FdGLP" role="37wK5m">
-                <node concept="37vLTw" id="3u9KL4Fd87G" role="2Oq$k0">
+              <node concept="2OqwBi" id="6CBAvXUPX7m" role="37wK5m">
+                <node concept="37vLTw" id="6CBAvXUPX7n" role="2Oq$k0">
                   <ref role="3cqZAo" node="3u9KL4EYr83" resolve="expr" />
                 </node>
-                <node concept="2qgKlT" id="4gfpxD5au9S" role="2OqNvi">
+                <node concept="2qgKlT" id="6CBAvXUPX7o" role="2OqNvi">
                   <ref role="37wK5l" to="u5to:4gfpxD55O8U" resolve="links" />
                 </node>
               </node>
-              <node concept="37vLTw" id="3u9KL4FeiLh" role="37wK5m">
+              <node concept="37vLTw" id="6CBAvXUPX7p" role="37wK5m">
                 <ref role="3cqZAo" node="3u9KL4F0FDW" resolve="ctx" />
               </node>
             </node>
-            <node concept="21Gwf3" id="3u9KL4Ff0m5" role="37wK5m">
+            <node concept="21Gwf3" id="6CBAvXUPX7q" role="37wK5m">
               <ref role="37wK5l" to="18s:5sYnSNmBQHi" resolve="abstractMapping_nodeExpressie" />
-              <node concept="2OqwBi" id="3u9KL4Ff2wu" role="37wK5m">
-                <node concept="37vLTw" id="3u9KL4Ff2hJ" role="2Oq$k0">
+              <node concept="2OqwBi" id="6CBAvXUPX7r" role="37wK5m">
+                <node concept="37vLTw" id="6CBAvXUPX7s" role="2Oq$k0">
                   <ref role="3cqZAo" node="3u9KL4EYr83" resolve="expr" />
                 </node>
-                <node concept="2qgKlT" id="4gfpxD5awXO" role="2OqNvi">
+                <node concept="2qgKlT" id="6CBAvXUPX7t" role="2OqNvi">
                   <ref role="37wK5l" to="u5to:4gfpxD55Pdb" resolve="rechts" />
                 </node>
               </node>
-              <node concept="37vLTw" id="3u9KL4FfCl8" role="37wK5m">
+              <node concept="37vLTw" id="6CBAvXUPX7u" role="37wK5m">
                 <ref role="3cqZAo" node="3u9KL4F0FDW" resolve="ctx" />
               </node>
             </node>
@@ -20154,6 +20154,52 @@
                   <ref role="3TsBF5" to="m234:yNeyivMWEH" resolve="absoluut" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6CBAvXV8cSj" role="3cqZAp">
+          <node concept="3clFbS" id="6CBAvXV8cSl" role="3clFbx">
+            <node concept="3cpWs6" id="XApyzfoYWQ" role="3cqZAp">
+              <node concept="2EnYce" id="XApyzfoqBM" role="3cqZAk">
+                <node concept="2OqwBi" id="6CBAvXUWqA0" role="2Oq$k0">
+                  <node concept="37vLTw" id="6CBAvXUWmn0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1WByCHbCV9C" resolve="span" />
+                  </node>
+                  <node concept="liA8E" id="6CBAvXUWGSu" role="2OqNvi">
+                    <ref role="37wK5l" to="2vij:~Timespan.add(nl.belastingdienst.alef_runtime.Timespan)" resolve="add" />
+                    <node concept="2YIFZM" id="6CBAvXUX4oI" role="37wK5m">
+                      <ref role="37wK5l" to="2vij:~Timespan.fromTijdsduur(long,nl.belastingdienst.alef_runtime.TimeGranularity)" resolve="fromTijdsduur" />
+                      <ref role="1Pybhc" to="2vij:~Timespan" resolve="Timespan" />
+                      <node concept="3cmrfG" id="6CBAvXUX4oJ" role="37wK5m">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                      <node concept="2YIFZM" id="XApyzgkiwD" role="37wK5m">
+                        <ref role="37wK5l" to="8l26:XApyzggY68" resolve="toTimeGranularityEnum" />
+                        <ref role="1Pybhc" to="8l26:sAPZKRxDD" resolve="TijdsGranulariteitHelper" />
+                        <node concept="2OqwBi" id="XApyzgkiwE" role="37wK5m">
+                          <node concept="37vLTw" id="XApyzgkiwF" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1WByCHbCV9u" resolve="datumVerschil" />
+                          </node>
+                          <node concept="3TrcHB" id="XApyzgkiwG" role="2OqNvi">
+                            <ref role="3TsBF5" to="m234:4WetKT2PzqJ" resolve="granulariteit" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="XApyzfoI9Z" role="2OqNvi">
+                  <ref role="37wK5l" to="2vij:~Timespan.bigRationalValue()" resolve="bigRationalValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6CBAvXV8oxm" role="3clFbw">
+            <node concept="37vLTw" id="6CBAvXV8l0i" role="2Oq$k0">
+              <ref role="3cqZAo" node="1WByCHbCV9u" resolve="datumVerschil" />
+            </node>
+            <node concept="3TrcHB" id="6CBAvXV8Edm" role="2OqNvi">
+              <ref role="3TsBF5" to="m234:1KegIuBX47u" resolve="totEnMet" />
             </node>
           </node>
         </node>

@@ -8,6 +8,7 @@
   <imports>
     <import index="lxx5" ref="r:fc4a1009-2df4-497d-b754-af7772a25efa(gegevensspraak.tijd.structure)" />
     <import index="3ph8" ref="r:1d793c6a-f9fb-4b17-9a22-dc37ef699df6(gegevensspraak.tijd.behavior)" />
+    <import index="8l26" ref="r:788951b7-6ce7-4cdf-b16c-b6ef0e226719(gegevensspraak.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -86,8 +87,8 @@
           <node concept="3clFbF" id="MDW8TAVdCQ" role="3cqZAp">
             <node concept="37vLTI" id="MDW8TAVed5" role="3clFbG">
               <node concept="10M0yZ" id="MDW8TAVfe6" role="37vLTx">
-                <ref role="3cqZAo" to="3ph8:JN8gpVwZRC" resolve="DAG" />
-                <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                <ref role="3cqZAo" to="8l26:JN8gpVwZRC" resolve="DAG" />
+                <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
               </node>
               <node concept="2OqwBi" id="MDW8TAVdMV" role="37vLTJ">
                 <node concept="1r4Lsj" id="MDW8TAVdCP" role="2Oq$k0" />

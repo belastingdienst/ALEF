@@ -2943,8 +2943,8 @@
                       <ref role="37wK5l" to="3ph8:7HdA5NUS_gO" resolve="from" />
                       <ref role="1Pybhc" to="3ph8:6O4FGJCARDr" resolve="Tijdlijn" />
                       <node concept="2YIFZM" id="7HdA5NUZ6u0" role="37wK5m">
-                        <ref role="37wK5l" to="3ph8:4GFbPfNhYpH" resolve="fromGranulariteit" />
-                        <ref role="1Pybhc" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                        <ref role="37wK5l" to="8l26:4GFbPfNhYpH" resolve="fromGranulariteit" />
+                        <ref role="1Pybhc" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
                         <node concept="2OqwBi" id="7HdA5NUZ6u1" role="37wK5m">
                           <node concept="37vLTw" id="7HdA5NUZ6u2" role="2Oq$k0">
                             <ref role="3cqZAo" node="2HmBP0T4VkV" resolve="vanType" />
@@ -2982,8 +2982,8 @@
                         <ref role="37wK5l" to="3ph8:7HdA5NUS_gO" resolve="from" />
                         <ref role="1Pybhc" to="3ph8:6O4FGJCARDr" resolve="Tijdlijn" />
                         <node concept="2YIFZM" id="7HdA5NUZHjz" role="37wK5m">
-                          <ref role="37wK5l" to="3ph8:4GFbPfNhYpH" resolve="fromGranulariteit" />
-                          <ref role="1Pybhc" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                          <ref role="37wK5l" to="8l26:4GFbPfNhYpH" resolve="fromGranulariteit" />
+                          <ref role="1Pybhc" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
                           <node concept="2OqwBi" id="7HdA5NUZHj$" role="37wK5m">
                             <node concept="37vLTw" id="7HdA5NUZHj_" role="2Oq$k0">
                               <ref role="3cqZAo" node="2HmBP0T596O" resolve="totType" />
@@ -3016,9 +3016,9 @@
                 <node concept="2YIFZM" id="7HdA5NV08TP" role="3K4GZi">
                   <ref role="37wK5l" to="3ph8:7HdA5NUS_gO" resolve="from" />
                   <ref role="1Pybhc" to="3ph8:6O4FGJCARDr" resolve="Tijdlijn" />
-                  <node concept="10M0yZ" id="7HdA5NV0dJo" role="37wK5m">
-                    <ref role="3cqZAo" to="3ph8:JN8gpVwZRC" resolve="DAG" />
-                    <ref role="1PxDUh" to="3ph8:JN8gpVwPCH" resolve="Tijdseenheid" />
+                  <node concept="10M0yZ" id="2gqjJO431J1" role="37wK5m">
+                    <ref role="3cqZAo" to="8l26:JN8gpVwZRC" resolve="DAG" />
+                    <ref role="1PxDUh" to="8l26:JN8gpVwPCH" resolve="Tijdseenheid" />
                   </node>
                 </node>
                 <node concept="3y3z36" id="7HdA5NV00pK" role="3K4Cdx">
