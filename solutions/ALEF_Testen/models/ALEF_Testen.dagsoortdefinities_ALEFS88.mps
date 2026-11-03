@@ -675,6 +675,54 @@
         </node>
       </node>
     </node>
+    <node concept="210ffa" id="7_JvM80XIl1" role="10_$IM">
+      <property role="TrG5h" value="met een regel niet in scope" />
+      <node concept="4Oh8J" id="7_JvM80XIl2" role="4Ohb1">
+        <ref role="4Oh8G" node="1F8C$8ACl4L" resolve="OT" />
+        <ref role="3teO_M" node="7_JvM80XIl5" resolve="ot" />
+        <node concept="3mzBic" id="7_JvM80XIl3" role="4Ohbj">
+          <property role="V2jGk" value="-1" />
+          <ref role="10Xmnc" node="1F8C$8ACuFH" resolve="datum dagtekening" />
+          <node concept="2ljiaL" id="7_JvM80XIl4" role="3mzBi6">
+            <property role="2ljiaM" value="19" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2021" />
+          </node>
+        </node>
+      </node>
+      <node concept="4OhPC" id="7_JvM80XIl5" role="4Ohaa">
+        <property role="TrG5h" value="ot" />
+        <ref role="4OhPH" node="1F8C$8ACl4L" resolve="OT" />
+        <node concept="3_ceKt" id="7_JvM80XIl6" role="4OhPJ">
+          <ref role="3_ceKs" node="1F8C$8ACmzE" resolve="vervaldag" />
+          <node concept="2ljiaL" id="7_JvM80XIl7" role="3_ceKu">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2021" />
+          </node>
+        </node>
+        <node concept="3_ceKt" id="7_JvM80XIl8" role="4OhPJ">
+          <ref role="3_ceKs" node="1F8C$8ACnbl" resolve="gegevenTermijn" />
+          <node concept="1EQTEq" id="7_JvM80XIl9" role="3_ceKu">
+            <property role="3e6Tb2" value="12" />
+            <node concept="PwxsY" id="7_JvM80XIla" role="1jdwn1">
+              <node concept="Pwxi7" id="7_JvM80XIlb" role="Pwxi2">
+                <property role="Pwxi6" value="1" />
+                <ref role="Pwxi0" node="LU9bvsa60o" resolve="werkdag" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="XD5kr" id="7_JvM80XIlc" role="XDnfx">
+        <ref role="XDlx0" node="LU9bvsa60o" resolve="werkdag" />
+        <node concept="2ljiaL" id="7_JvM80XIld" role="XDl9Z">
+          <property role="2ljiaM" value="19" />
+          <property role="2ljiaN" value="1" />
+          <property role="2ljiaO" value="2021" />
+        </node>
+      </node>
+    </node>
     <node concept="2ljwA5" id="6xdCdVKPpEG" role="3Na4y7">
       <node concept="2ljiaL" id="6xdCdVKPpEH" role="2ljwA6">
         <property role="2ljiaO" value="2021" />
