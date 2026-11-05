@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings("java:S5976") // Parameterized won't make it more clear.
 class DigitsRuleTest {
-    private final LocationInfoProvider locationInfoProvider = () -> new LocationInfo(Collections.emptyList());;
+    private final LocationInfoProvider locationInfoProvider = () -> new LocationInfo(Collections.emptyList());
 
     @ParameterizedTest
     @ValueSource(strings = {"   ", "  123.45  ", "123.45000", "123.45"})

@@ -2,9 +2,6 @@ package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.ContentType;
-import nl.belastingdienst.merlin.io.TestUtils;
-import nl.belastingdienst.merlin.io.adapter.writers.BooleanToBooleanWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import org.junit.jupiter.api.Test;
 

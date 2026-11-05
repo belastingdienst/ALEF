@@ -74,8 +74,8 @@ public abstract class TimedArbitraries {
                     .flatMap(b -> splitBox(b, scope)));
         }
 
-        private static Time RANGE_BEGIN = Time.fromYMD(1925, 1, 1);
-        private static Time RANGE_END = Time.fromYMD(2075, 1, 1);
+        private static final Time rangeBegin = Time.fromYMD(1925, 1, 1);
+        private static final Time rangeEnd = Time.fromYMD(2075, 1, 1);
 
         private static <T> Stream<TimeBox<T>> splitBox(TimeBox<T> box, Period scope) {
             List<TimeBox<T>> boxes = new ArrayList<>();
@@ -84,11 +84,11 @@ public abstract class TimedArbitraries {
             } else if (box.valid().hasOpenBegin() && box.valid().hasOpenEnd()) {
                 boxes.add(box.withValue(null));
             } else if (box.valid().hasOpenBegin()) {
-                if (scope.covers(RANGE_BEGIN)) boxes.add(TimeBox.make(null, Period.before(RANGE_BEGIN)));
-                boxes.add(TimeBox.make(box.value(), RANGE_BEGIN.until(box.valid().end())));
+                if (scope.covers(rangeBegin)) boxes.add(TimeBox.make(null, Period.before(rangeBegin)));
+                boxes.add(TimeBox.make(box.value(), rangeBegin.until(box.valid().end())));
             } else if (box.valid().hasOpenEnd()) {
-                boxes.add(TimeBox.make(box.value(), box.valid().begin().until(RANGE_END)));
-                if (scope.covers(RANGE_END)) boxes.add(TimeBox.make(null, Period.after(RANGE_END)));
+                boxes.add(TimeBox.make(box.value(), box.valid().begin().until(rangeEnd)));
+                if (scope.covers(rangeEnd)) boxes.add(TimeBox.make(null, Period.after(rangeEnd)));
             } else {
                 boxes.add(box);
             }

@@ -60,7 +60,7 @@ class TestNonStrict extends TestITimed {
         assertThrowsExactly(RuntimeException.class, () -> {
             Function<ITimed<Supplier<Boolean>>, ITimed<Boolean>> evalArg1 = lifted.apply(arg1);
             ITimed<Boolean> evalArg2 = evalArg1.apply(arg2b);
-            Boolean r = evalArg2.atTime(t[6]).content();
+            evalArg2.atTime(t[6]).content();
             fail();
         }, () -> "Should not be evaluated");
     }

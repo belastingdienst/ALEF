@@ -373,6 +373,7 @@ class InputMessageTest {
                 """;
         final MUniverse universe = new MUniverse(true);
         final MObject alefObject = mockPerson.parse(universe, new XmlParser(asInputStream(xml)));
+        assertNotNull(alefObject);
     }
 
     @Test

@@ -173,7 +173,6 @@ class SoapServiceTest {
                   </soap:Body></soap:Envelope>
                 """;
         final ServiceResult serviceResult = soapService.process(toInputStream(input), null);
-        final String actualOutput = toString(serviceResult.getOutputStream());
         assertEquals(ServiceResultType.BAD_REQUEST, serviceResult.getType());
     }
 
