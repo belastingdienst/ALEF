@@ -1,17 +1,15 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.time.IValidity;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.adapter.writers.ValidityWriter;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
-import nl.belastingdienst.merlin.io.adapter.writers.BooleanToBooleanWriter;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputFeatureTest extends AbstractOutputTest {
     @Test
@@ -22,7 +20,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "carOwner" : true
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -33,7 +31,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "carOwner" : false
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -44,7 +42,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "carOwner" : false
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -56,7 +54,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "hasChildren" : [ ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -68,6 +66,6 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "hasChildren" : [ ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 }

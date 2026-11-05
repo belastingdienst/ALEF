@@ -11,7 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 
 class TimedWriterTest {
     @Test
@@ -31,7 +31,7 @@ class TimedWriterTest {
                     "waarde" : "Test"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualsIgnoreSystemLineSeparator(expected, actual);
     }
 
     @Test
@@ -50,7 +50,7 @@ class TimedWriterTest {
                     "waarde" : "Test"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualsIgnoreSystemLineSeparator(expected, actual);
     }
 
     @Test
@@ -62,7 +62,7 @@ class TimedWriterTest {
                 {
                   "values" : [ ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualsIgnoreSystemLineSeparator(expected, actual);
     }
 
     @Test
@@ -72,7 +72,7 @@ class TimedWriterTest {
                 {
                   "values" : [ ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualsIgnoreSystemLineSeparator(expected, actual);
     }
 
     private static String generateXML(ITimed<String> values) throws IOException {

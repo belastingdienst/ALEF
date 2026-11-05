@@ -2,7 +2,6 @@ package nl.belastingdienst.merlin.io.adapter.writers;
 
 import nl.belastingdienst.alef_runtime.BigRational;
 import nl.belastingdienst.alef_runtime.Labeled;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.mocks.ValueReceivingGeneratorMock;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +9,6 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
-import java.util.Collections;
 
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;

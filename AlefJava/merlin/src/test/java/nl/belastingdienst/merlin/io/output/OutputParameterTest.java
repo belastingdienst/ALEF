@@ -2,9 +2,6 @@ package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.ContentType;
-import nl.belastingdienst.merlin.io.TestUtils;
-import nl.belastingdienst.merlin.io.adapter.writers.BooleanToBooleanWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import org.junit.jupiter.api.Test;
 
@@ -12,8 +9,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputParameterTest extends AbstractOutputTest {
     @Test
@@ -21,7 +18,7 @@ class OutputParameterTest extends AbstractOutputTest {
         final OutputParameter parameter = new OutputParameter("param", "param", false, newBooleanToBooleanWriter());
         final MUniverse universe = new MUniverse(true);
         final String actualOutput = generateOutput(parameter, universe);
-        assertEquals("{ }", actualOutput);
+        assertEqualsIgnoreSystemLineSeparator("{ }", actualOutput);
     }
 
     @Test
@@ -34,7 +31,7 @@ class OutputParameterTest extends AbstractOutputTest {
                 {
                   "param" : true
                 }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualOutput);
     }
 
     @Test
@@ -47,7 +44,7 @@ class OutputParameterTest extends AbstractOutputTest {
                 {
                   "param" : "test"
                 }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualOutput);
     }
 
     @Test
@@ -58,7 +55,7 @@ class OutputParameterTest extends AbstractOutputTest {
         final String actualOutput = generateOutput(parameter, universe);
         final String expectedJson = """
                 { }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualOutput);
     }
 
     @Test
@@ -72,7 +69,7 @@ class OutputParameterTest extends AbstractOutputTest {
                 {
                   "param" : true
                 }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualOutput);
     }
 
     private String generateOutput(OutputParameter parameter, MUniverse universe) throws IOException {

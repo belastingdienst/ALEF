@@ -6,10 +6,6 @@ import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.service.Request;
 import nl.belastingdienst.merlin.io.service.Response;
 import nl.belastingdienst.merlin.io.service.RestService;
-import nl.belastingdienst.merlin.io.service.ServiceResult;
-
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 
 public class RestServiceMock<T extends MObjectType> extends RestService<T> {
     public RestServiceMock(Request requestHandler, Response responseHandler, Class<T> mainObjectType) {

@@ -1,7 +1,6 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.merlin.io.ContentType;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 import nl.belastingdienst.merlin.io.generator.KvPairGenerator;
@@ -9,7 +8,6 @@ import nl.belastingdienst.merlin.io.generator.XmlGenerator;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.mocks.OutputMessageMock;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.ItemType;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
 import org.junit.jupiter.api.Test;
@@ -18,9 +16,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SuppressWarnings("java:S5976") // Parameterized won't make it more clear.
 class OutputComplexPropertyTest {
@@ -46,7 +44,7 @@ class OutputComplexPropertyTest {
                   </items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -68,7 +66,7 @@ class OutputComplexPropertyTest {
                   </item>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -95,7 +93,7 @@ class OutputComplexPropertyTest {
                   </items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -119,7 +117,7 @@ class OutputComplexPropertyTest {
                   </items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -140,7 +138,7 @@ class OutputComplexPropertyTest {
                   </param>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -166,7 +164,7 @@ class OutputComplexPropertyTest {
                   </person>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -203,7 +201,7 @@ class OutputComplexPropertyTest {
                   </KeyValuePairs>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -231,7 +229,7 @@ class OutputComplexPropertyTest {
                   </KeyValuePairs>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -249,7 +247,7 @@ class OutputComplexPropertyTest {
         final String expectedOutput = """
                 <response></response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -286,7 +284,7 @@ class OutputComplexPropertyTest {
                   </KeyValuePairs>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -306,7 +304,7 @@ class OutputComplexPropertyTest {
                   <items></items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -324,7 +322,7 @@ class OutputComplexPropertyTest {
         final String expectedOutput = """
                 <response></response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     private MObject setupAlefObjects(MUniverse universe) {

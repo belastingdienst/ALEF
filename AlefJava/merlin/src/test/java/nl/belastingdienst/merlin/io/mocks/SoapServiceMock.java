@@ -6,9 +6,6 @@ import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.service.*;
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 public class SoapServiceMock<T extends MObjectType> extends SoapService<T> {
     public SoapServiceMock(Request requestHandler, Response responseHandler, Class<T> mainObjectType, String methodName, String acroniem) {
         super(true, "1.0.0", ContentType.XML, mainObjectType, methodName, acroniem, false);
