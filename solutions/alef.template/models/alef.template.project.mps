@@ -342,6 +342,7 @@
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
+      <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -3039,7 +3040,7 @@
                   </node>
                 </node>
                 <node concept="1gjT0q" id="7iEd7_cRJDh" role="10PD9s" />
-                <node concept="3jkSsB" id="7iEd7_cRJDi" role="10PD9s" />
+                <node concept="10PD9b" id="Cn9BN_COzl" role="10PD9s" />
                 <node concept="2sgV4H" id="7iEd7_cRJDj" role="1l3spa">
                   <ref role="1l3spb" to="4a8c:7nCo6uzk0kP" resolve="json-plugin" />
                   <node concept="398BVA" id="7iEd7_cRJDk" role="2JcizS">
@@ -3960,47 +3961,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1eWSCAaNGlI" role="3cqZAp" />
-        <node concept="3clFbF" id="1eWSCAaOveC" role="3cqZAp">
-          <node concept="2OqwBi" id="1eWSCAaOzdo" role="3clFbG">
-            <node concept="37vLTw" id="1eWSCAaOveA" role="2Oq$k0">
-              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
-            </node>
-            <node concept="liA8E" id="1eWSCAaOAb8" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
-              <node concept="Xl_RD" id="1eWSCAaOBIw" role="37wK5m">
-                <property role="Xl_RC" value="/**/build/" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1eWSCAaOHsG" role="3cqZAp">
-          <node concept="2OqwBi" id="1eWSCAaOHsH" role="3clFbG">
-            <node concept="37vLTw" id="1eWSCAaOHsI" role="2Oq$k0">
-              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
-            </node>
-            <node concept="liA8E" id="1eWSCAaOHsJ" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
-              <node concept="Xl_RD" id="1eWSCAaOHsK" role="37wK5m">
-                <property role="Xl_RC" value="/logs/" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1eWSCAaOt2R" role="3cqZAp" />
-        <node concept="3clFbF" id="1eWSCAaNvfD" role="3cqZAp">
-          <node concept="2OqwBi" id="1eWSCAaNwWu" role="3clFbG">
-            <node concept="37vLTw" id="1eWSCAaNvfB" role="2Oq$k0">
-              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
-            </node>
-            <node concept="liA8E" id="1eWSCAaNz7y" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
-              <node concept="Xl_RD" id="1eWSCAaN$b2" role="37wK5m">
-                <property role="Xl_RC" value="TEST-*.xml" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1eWSCAaNoAr" role="3cqZAp">
           <node concept="2OqwBi" id="1eWSCAaNoAs" role="3clFbG">
             <node concept="37vLTw" id="1eWSCAaNoAt" role="2Oq$k0">
@@ -4028,6 +3988,58 @@
           </node>
         </node>
         <node concept="3clFbH" id="1eWSCAaOUR6" role="3cqZAp" />
+        <node concept="3clFbF" id="1eWSCAaOHsG" role="3cqZAp">
+          <node concept="2OqwBi" id="1eWSCAaOHsH" role="3clFbG">
+            <node concept="37vLTw" id="1eWSCAaOHsI" role="2Oq$k0">
+              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
+            </node>
+            <node concept="liA8E" id="1eWSCAaOHsJ" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="Xl_RD" id="1eWSCAaOHsK" role="37wK5m">
+                <property role="Xl_RC" value="/build/" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sjSD3C$CjR" role="3cqZAp">
+          <node concept="2OqwBi" id="2sjSD3C$CjS" role="3clFbG">
+            <node concept="37vLTw" id="2sjSD3C$CjT" role="2Oq$k0">
+              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
+            </node>
+            <node concept="liA8E" id="2sjSD3C$CjU" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="Xl_RD" id="2sjSD3C$CjV" role="37wK5m">
+                <property role="Xl_RC" value="build-alef-project.log" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1eWSCAaNvfD" role="3cqZAp">
+          <node concept="2OqwBi" id="1eWSCAaNwWu" role="3clFbG">
+            <node concept="37vLTw" id="1eWSCAaNvfB" role="2Oq$k0">
+              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
+            </node>
+            <node concept="liA8E" id="1eWSCAaNz7y" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="Xl_RD" id="1eWSCAaN$b2" role="37wK5m">
+                <property role="Xl_RC" value="TEST-*.xml" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sjSD3CAeUH" role="3cqZAp">
+          <node concept="2OqwBi" id="2sjSD3CAeUI" role="3clFbG">
+            <node concept="37vLTw" id="2sjSD3CAeUJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="1eWSCAaMPcy" resolve="ignore" />
+            </node>
+            <node concept="liA8E" id="2sjSD3CAeUK" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="Xl_RD" id="2sjSD3CAeUL" role="37wK5m">
+                <property role="Xl_RC" value="checkproject-TEST-*.xml" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1eWSCAaOWYG" role="3cqZAp">
           <node concept="2OqwBi" id="1eWSCAaOWYH" role="3clFbG">
             <node concept="37vLTw" id="1eWSCAaOWYI" role="2Oq$k0">
@@ -4582,8 +4594,8 @@
                       <node concept="1EDDdA" id="3q014QkiuzB" role="3AW66m">
                         <property role="1EDDdh" value="58tBIcSIKQf/DAG" />
                       </node>
-                      <node concept="2R$z7" id="3q014QkiuzC" role="2KWIQ6">
-                        <property role="2RIz2" value="30CduGMXEu3/dateTime" />
+                      <node concept="2R$z7" id="2sjSD3CAQJL" role="2KWIQ6">
+                        <property role="2RIz2" value="30CduGMXElI/date" />
                       </node>
                     </node>
                     <node concept="3AW6rv" id="3q014QkiuzD" role="21XpMX">
