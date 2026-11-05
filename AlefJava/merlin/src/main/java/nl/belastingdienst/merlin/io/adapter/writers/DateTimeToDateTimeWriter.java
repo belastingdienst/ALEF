@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeToDateTimeWriter extends AbstractWriter<LocalDateTime> {
-    private boolean withTimeZoneOffset = false;
+    private final boolean withTimeZoneOffset;
 
     public DateTimeToDateTimeWriter(boolean withTimeZoneOffset, String valueTypeName) {
         super(valueTypeName);

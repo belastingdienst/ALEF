@@ -226,7 +226,7 @@ public abstract class AbstractParser implements ContentParser {
 
     private void expectToken(ContentToken expectedToken, ContentToken actualToken) {
         if (actualToken != expectedToken) {
-            throw new ParseException(String.format("Expected token: %s, but found: %s at " + getLocationInfo(), expectedToken, actualToken));
+            throw new ParseException(String.format("Expected token: %s, but found: %s at %s", expectedToken, actualToken, getLocationInfo().toString()));
         }
     }
 }

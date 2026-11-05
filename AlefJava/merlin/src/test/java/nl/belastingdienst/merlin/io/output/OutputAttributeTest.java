@@ -6,7 +6,6 @@ import nl.belastingdienst.alef_runtime.time.Period;
 import nl.belastingdienst.alef_runtime.time.TimeBox;
 import nl.belastingdienst.alef_runtime.time.Timed;
 import nl.belastingdienst.merlin.io.ContentType;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.adapter.writers.*;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;

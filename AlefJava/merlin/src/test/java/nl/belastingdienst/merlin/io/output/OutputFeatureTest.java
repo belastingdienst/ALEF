@@ -1,11 +1,9 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.time.IValidity;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.adapter.writers.ValidityWriter;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
-import nl.belastingdienst.merlin.io.adapter.writers.BooleanToBooleanWriter;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

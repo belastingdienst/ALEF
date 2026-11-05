@@ -7,7 +7,6 @@ import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MPropertyKey;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.FactSide;
-import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
 import nl.belastingdienst.merlin.io.adapter.readers.StringToStringReader;
 import nl.belastingdienst.merlin.io.parser.KvPairParser;
 import nl.belastingdienst.merlin.io.parser.XmlParser;

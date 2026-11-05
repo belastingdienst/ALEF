@@ -3,19 +3,20 @@ package nl.belastingdienst.alef_runtime.time;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class TestLazyTimed extends TestITimed {
 
     @Test
     void testTimeLine() {
         Time[] t = getTimes(5);
-        Valid VALID = Valid.TRUE;
+        Valid valid = Valid.TRUE;
         ITimed<Valid> a = Timed.of(
-                TimeBox.make(VALID, Period.before(t[0])),
+                TimeBox.make(valid, Period.before(t[0])),
                 TimeBox.make(null, t[0].until(t[1])),
-                TimeBox.make(VALID, t[1].until(t[2])),
-                TimeBox.make(VALID, t[2].until(t[3])),
-                TimeBox.make(VALID, t[3].until(t[4]))
+                TimeBox.make(valid, t[1].until(t[2])),
+                TimeBox.make(valid, t[2].until(t[3])),
+                TimeBox.make(valid, t[3].until(t[4]))
         );
         ITimed<Valid> lc = LazyTimed.of(a);
 
@@ -23,12 +24,12 @@ class TestLazyTimed extends TestITimed {
         assertBoxesAreSortedAndDoNotOverlap(lc, Period.ALWAYS);
 
         TimeBox<Valid> b0 = lc.atTime(t[0]);
-        assertEquals(null, b0.value);
+        assertNull(b0.value);
         assertEquals(t[0], b0.valid.begin());
         assertEquals(t[1], b0.valid.end());
 
         TimeBox<Valid> b3 = lc.atTime(t[3]);
-        assertEquals(VALID, b3.value);
+        assertEquals(valid, b3.value);
         assertEquals(t[1], b3.valid.begin());
         assertEquals(t[4], b3.valid.end());
 

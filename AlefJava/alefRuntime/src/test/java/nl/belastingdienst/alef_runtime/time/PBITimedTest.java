@@ -167,7 +167,7 @@ class PBITimedTest {
             final BigRational actual = r.aggregate(BigRational.ADD_OPERATOR).orElse(BigRational.ZERO);
             assertEquals(expected, actual);
         } catch (InfinitePeriodException | TooManyUnitsInPeriodException e) {
-
+            // ignore those generated cases
         }
     }
 

@@ -177,10 +177,9 @@ public final class BigRational extends Number implements Comparable<BigRational>
         int nFive = 0;
         if (!BigInteger.ZERO.equals(number)) {
             number = number.abs();
-            BigInteger two = BigInteger.valueOf(2);
             BigInteger[] divideAndRemainder;
             while (!number.equals(BigInteger.ONE)) {
-                divideAndRemainder = number.divideAndRemainder(two);
+                divideAndRemainder = number.divideAndRemainder(BigInteger.TWO);
                 if (divideAndRemainder[1].equals(BigInteger.ZERO)) {
                     nTwo++;
                     number = divideAndRemainder[0];
