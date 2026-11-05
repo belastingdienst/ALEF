@@ -365,10 +365,10 @@ public class JavaServiceBuilder {
 
     private void extractFileFromJar(final File jar, final String source, final File target) throws IOException {
         final byte[] contents = Platform.extractFromZip(jar, source);
-        if (contents.length > 0) {
+        if (contents != null) {
             Files.write(target.toPath(), contents);
         } else {
-            logger.log(Level.SEVERE, () -> "Extract file form jar: file: '" + source + "' not found in jar: '" + jar + "'.");
+            logger.log(Level.SEVERE, () -> "Extract file from jar: file: '" + source + "' not found in jar: '" + jar + "'.");
             throw new FileNotFoundInJarException(jar, source);
         }
     }
