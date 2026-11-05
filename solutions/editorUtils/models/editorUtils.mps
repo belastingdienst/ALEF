@@ -2011,6 +2011,17 @@
       </node>
       <node concept="3Tm1VV" id="BHuEZVexov" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="46Qs6QyHjRS" role="jymVt">
+      <property role="TrG5h" value="ArgumentKleur" />
+      <node concept="3uibUv" id="46Qs6QyHjRT" role="1tU5fm">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="10M0yZ" id="46Qs6QyHjRU" role="33vP2m">
+        <ref role="1PxDUh" node="BHuEZVdCTb" resolve="AlefKleuren" />
+        <ref role="3cqZAo" node="BHuEZVdXV$" resolve="KoningsBlauw" />
+      </node>
+      <node concept="3Tm1VV" id="46Qs6QyHjRV" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="BHuEZVexow" role="jymVt">
       <property role="TrG5h" value="TekstAchtergrondKleur" />
       <node concept="3uibUv" id="BHuEZVexox" role="1tU5fm">

@@ -3076,5 +3076,45 @@
       <ref role="20lvS9" to="3ic2:$infi2rzcc" resolve="Attribuut" />
     </node>
   </node>
+  <node concept="1TIwiD" id="46Qs6Q$HGK4">
+    <property role="EcuMT" value="4735095674443844612" />
+    <property role="3GE5qa" value="acties" />
+    <property role="TrG5h" value="FunctieDefinitie" />
+    <ref role="1TJDcQ" node="1ibElXOlZMm" resolve="Actie" />
+    <node concept="1TJgyj" id="46Qs6Q$HGK5" role="1TKVEi">
+      <property role="IQ2ns" value="4735095674443844613" />
+      <property role="20kJfa" value="functie" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:46Qs6QxPZLQ" resolve="Functie" />
+    </node>
+    <node concept="1TJgyj" id="46Qs6Q$HGK6" role="1TKVEi">
+      <property role="IQ2ns" value="4735095674443844614" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="waarde" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:7WC_ArdYrFj" resolve="Expressie" />
+    </node>
+    <node concept="PrWs8" id="46Qs6QAisI7" role="PzmwI">
+      <ref role="PrY4T" to="3ic2:1XN84VF0KFF" resolve="ITypeExpector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="46Qs6Q$T0EO">
+    <property role="EcuMT" value="4735095674446809780" />
+    <property role="3GE5qa" value="expressies" />
+    <property role="TrG5h" value="FunctieArgumentRef" />
+    <ref role="1TJDcQ" to="3ic2:7WC_ArdYrFj" resolve="Expressie" />
+    <node concept="1TJgyj" id="46Qs6Q$T0EP" role="1TKVEi">
+      <property role="IQ2ns" value="4735095674446809781" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3ic2:46Qs6QxQxhP" resolve="FunctieArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="46Qs6QJjfjv">
+    <property role="EcuMT" value="4735095674621457631" />
+    <property role="3GE5qa" value="debug.dummies" />
+    <property role="TrG5h" value="LDummyFunctieDefsArgument" />
+    <ref role="1TJDcQ" to="dse8:2p918TsFNK_" resolve="LDummyArgument" />
+  </node>
 </model>
 

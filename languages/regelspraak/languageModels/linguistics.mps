@@ -7216,5 +7216,49 @@
       </node>
     </node>
   </node>
+  <node concept="2xOZSM" id="46Qs6QRsnE8">
+    <property role="3GE5qa" value="expressies" />
+    <ref role="2xOZSN" to="m234:46Qs6Q$T0EO" resolve="FunctieArgumentRef" />
+    <node concept="23mcil" id="46Qs6QRso2A" role="23mchj">
+      <property role="TrG5h" value="meervoud" />
+    </node>
+    <node concept="23GdfO" id="46Qs6QRsnE9" role="1co$Kl">
+      <node concept="23Fji1" id="46Qs6QRso2x" role="23GdfP">
+        <ref role="2xS9Ik" to="m234:46Qs6Q$T0EP" resolve="argument" />
+        <node concept="23GdfO" id="46Qs6QRso2z" role="23CHyb">
+          <node concept="2oWRCQ" id="46Qs6QRsquO" role="23GdfP" />
+          <node concept="2mZ9qf" id="46Qs6QRsquL" role="23GdfP" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2xOZSM" id="7Au4OQ8hXPe">
+    <property role="3GE5qa" value="acties" />
+    <ref role="2xOZSN" to="m234:46Qs6Q$HGK4" resolve="FunctieDefinitie" />
+    <node concept="23GdfO" id="7Au4OQ8hXPf" role="1co$Kl">
+      <node concept="23Fji1" id="7Au4OQ8hXPr" role="23GdfP">
+        <ref role="2xS9Ik" to="m234:46Qs6Q$HGK5" resolve="functie" />
+        <node concept="23GdfO" id="7Au4OQ8hXPt" role="23CHyb">
+          <node concept="2xS9Io" id="7Au4OQ8i0Ng" role="23GdfP">
+            <ref role="2xS9Ip" to="3ic2:46Qs6QzZvnd" resolve="description" />
+          </node>
+        </node>
+      </node>
+      <node concept="2xS9Ii" id="7Au4OQ8hXPi" role="23GdfP">
+        <property role="23G6sU" value="is" />
+      </node>
+      <node concept="2xS9Ii" id="7Au4OQ8hXPk" role="23GdfP">
+        <property role="23G6sU" value="gedefiniëerd" />
+      </node>
+      <node concept="2xS9Ii" id="7Au4OQ8hXPl" role="23GdfP">
+        <property role="23G6sU" value="als" />
+      </node>
+      <node concept="23Fm0F" id="7Au4OQ8hXPn" role="23GdfP">
+        <ref role="2xS9Ik" to="m234:46Qs6Q$HGK6" resolve="waarde" />
+        <node concept="23GdfO" id="7Au4OQ8hXPo" role="23E8Zc" />
+        <node concept="23GdfO" id="7Au4OQ8hXPp" role="23E8Z2" />
+      </node>
+    </node>
+  </node>
 </model>
 

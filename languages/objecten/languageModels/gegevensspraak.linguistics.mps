@@ -1569,5 +1569,42 @@
       <ref role="2oHhyl" to="3ic2:4WetKT2PyUx" resolve="TIJDSTIP" />
     </node>
   </node>
+  <node concept="2xOZSM" id="7Au4OQ5vfvU">
+    <property role="3GE5qa" value="functies" />
+    <ref role="2xOZSN" to="3ic2:46Qs6Qzs9HF" resolve="FunctieAanroep" />
+    <node concept="23GdfO" id="7Au4OQ5vfvV" role="1co$Kl" />
+  </node>
+  <node concept="2xOZSM" id="7Au4OQ8hYOh">
+    <property role="3GE5qa" value="functies" />
+    <ref role="2xOZSN" to="3ic2:46Qs6QyTdoH" resolve="ArgumentPrefix" />
+    <node concept="1dEjS6" id="7Au4OQ8hYOn" role="1dCV2V">
+      <property role="TrG5h" value="argName" />
+      <node concept="1dEi69" id="7Au4OQ8hYOo" role="1dEhro">
+        <node concept="3clFbS" id="7Au4OQ8hYOp" role="2VODD2">
+          <node concept="3clFbF" id="7Au4OQ8hYUF" role="3cqZAp">
+            <node concept="2OqwBi" id="7Au4OQ8hZQq" role="3clFbG">
+              <node concept="2OqwBi" id="7Au4OQ8hZcG" role="2Oq$k0">
+                <node concept="1dEiK4" id="7Au4OQ8hYUE" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7Au4OQ8hZtV" role="2OqNvi">
+                  <ref role="37wK5l" to="8l26:46Qs6QyTkE$" resolve="argument" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7Au4OQ8i0IV" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="23GdfO" id="7Au4OQ8hYOi" role="1co$Kl">
+      <node concept="2xS9Io" id="7Au4OQ8hYOk" role="23GdfP">
+        <ref role="2xS9Ip" to="3ic2:46Qs6QyTdoI" resolve="text" />
+      </node>
+      <node concept="2aZLUQ" id="7Au4OQ8i0N3" role="23GdfP">
+        <ref role="2aZL_9" node="7Au4OQ8hYOn" resolve="argName" />
+      </node>
+    </node>
+  </node>
 </model>
 

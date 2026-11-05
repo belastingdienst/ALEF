@@ -20070,5 +20070,37 @@
       <ref role="1YaFvo" to="m234:5z2T4YJ6VrU" resolve="SorteerCriterium" />
     </node>
   </node>
+  <node concept="18kY7G" id="46Qs6QAWvH0">
+    <property role="TrG5h" value="check_FunctieDefinitie" />
+    <property role="3GE5qa" value="acties" />
+    <node concept="3clFbS" id="46Qs6QAWvH1" role="18ibNy">
+      <node concept="3clFbF" id="46Qs6QAWw9D" role="3cqZAp">
+        <node concept="2YIFZM" id="46Qs6QAWwcq" role="3clFbG">
+          <ref role="37wK5l" node="5rBvemfjfEo" resolve="checkToekenning" />
+          <ref role="1Pybhc" node="5rBvemfj6hV" resolve="ToekenningChecker" />
+          <node concept="2OqwBi" id="46Qs6QAWwqe" role="37wK5m">
+            <node concept="1YBJjd" id="46Qs6QAWwcK" role="2Oq$k0">
+              <ref role="1YBMHb" node="46Qs6QAWvH3" resolve="functieDefinitie" />
+            </node>
+            <node concept="3TrEf2" id="46Qs6QAWxit" role="2OqNvi">
+              <ref role="3Tt5mk" to="m234:46Qs6Q$HGK6" resolve="waarde" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="46Qs6QAWxrQ" role="37wK5m">
+            <node concept="1YBJjd" id="46Qs6QAWxmq" role="2Oq$k0">
+              <ref role="1YBMHb" node="46Qs6QAWvH3" resolve="functieDefinitie" />
+            </node>
+            <node concept="3TrEf2" id="46Qs6QAWxx0" role="2OqNvi">
+              <ref role="3Tt5mk" to="m234:46Qs6Q$HGK5" resolve="functie" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="46Qs6QAWvH3" role="1YuTPh">
+      <property role="TrG5h" value="functieDefinitie" />
+      <ref role="1YaFvo" to="m234:46Qs6Q$HGK4" resolve="FunctieDefinitie" />
+    </node>
+  </node>
 </model>
 

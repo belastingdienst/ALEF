@@ -5971,5 +5971,115 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="46Qs6Q_HXt9">
+    <property role="3GE5qa" value="expressies" />
+    <ref role="1M2myG" to="m234:46Qs6Q$T0EO" resolve="FunctieArgumentRef" />
+    <node concept="1N5Pfh" id="46Qs6Q_HXta" role="1Mr941">
+      <ref role="1N5Vy1" to="m234:46Qs6Q$T0EP" resolve="argument" />
+      <node concept="3dgokm" id="46Qs6Q_HXTk" role="1N6uqs">
+        <node concept="3clFbS" id="46Qs6Q_HXTm" role="2VODD2">
+          <node concept="3cpWs8" id="46Qs6Q_HYQp" role="3cqZAp">
+            <node concept="3cpWsn" id="46Qs6Q_HYQq" role="3cpWs9">
+              <property role="TrG5h" value="def" />
+              <node concept="3Tqbb2" id="46Qs6Q_HYPY" role="1tU5fm">
+                <ref role="ehGHo" to="m234:46Qs6Q$HGK4" resolve="FunctieDefinitie" />
+              </node>
+              <node concept="2OqwBi" id="46Qs6Q_HYQr" role="33vP2m">
+                <node concept="2rP1CM" id="46Qs6Q_HYQs" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="46Qs6Q_HYQt" role="2OqNvi">
+                  <node concept="1xMEDy" id="46Qs6Q_HYQu" role="1xVPHs">
+                    <node concept="chp4Y" id="46Qs6Q_HYQv" role="ri$Ld">
+                      <ref role="cht4Q" to="m234:46Qs6Q$HGK4" resolve="FunctieDefinitie" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="46Qs6Q_HZ5x" role="3cqZAp">
+            <node concept="3clFbS" id="46Qs6Q_HZ5z" role="3clFbx">
+              <node concept="3cpWs8" id="46Qs6Q_I0iQ" role="3cqZAp">
+                <node concept="3cpWsn" id="46Qs6Q_I0iR" role="3cpWs9">
+                  <property role="TrG5h" value="aiv" />
+                  <node concept="3Tqbb2" id="46Qs6Q_I0io" role="1tU5fm">
+                    <ref role="ehGHo" to="m234:$infi2sFM8" resolve="ActieIndienVoorwaarde" />
+                  </node>
+                  <node concept="2OqwBi" id="46Qs6Q_I0iS" role="33vP2m">
+                    <node concept="2rP1CM" id="46Qs6Q_I0iT" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="46Qs6Q_I0iU" role="2OqNvi">
+                      <node concept="1xMEDy" id="46Qs6Q_I0iV" role="1xVPHs">
+                        <node concept="chp4Y" id="46Qs6Q_I0iW" role="ri$Ld">
+                          <ref role="cht4Q" to="m234:$infi2sFM8" resolve="ActieIndienVoorwaarde" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="46Qs6Q_I1xf" role="3cqZAp">
+                <node concept="37vLTI" id="46Qs6Q_I1I7" role="3clFbG">
+                  <node concept="1PxgMI" id="46Qs6Q_I2lW" role="37vLTx">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="46Qs6Q_I2uG" role="3oSUPX">
+                      <ref role="cht4Q" to="m234:46Qs6Q$HGK4" resolve="FunctieDefinitie" />
+                    </node>
+                    <node concept="2OqwBi" id="46Qs6Q_I1TN" role="1m5AlR">
+                      <node concept="37vLTw" id="46Qs6Q_I1PV" role="2Oq$k0">
+                        <ref role="3cqZAo" node="46Qs6Q_I0iR" resolve="aiv" />
+                      </node>
+                      <node concept="3TrEf2" id="46Qs6Q_I1Y4" role="2OqNvi">
+                        <ref role="3Tt5mk" to="m234:1ibElXOmXRp" resolve="actie" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="46Qs6Q_I1xa" role="37vLTJ">
+                    <ref role="3cqZAo" node="46Qs6Q_HYQq" resolve="def" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="46Qs6Q_HZj5" role="3clFbw">
+              <node concept="10Nm6u" id="46Qs6Q_HZqy" role="3uHU7w" />
+              <node concept="37vLTw" id="46Qs6Q_HZ6o" role="3uHU7B">
+                <ref role="3cqZAo" node="46Qs6Q_HYQq" resolve="def" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="46Qs6Q_I2DX" role="3cqZAp">
+            <node concept="3clFbS" id="46Qs6Q_I2DZ" role="3clFbx">
+              <node concept="3cpWs6" id="46Qs6Q_I3bR" role="3cqZAp">
+                <node concept="10Nm6u" id="46Qs6Q_I3mx" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="46Qs6Q_I2PV" role="3clFbw">
+              <node concept="10Nm6u" id="46Qs6Q_I2Xh" role="3uHU7w" />
+              <node concept="37vLTw" id="46Qs6Q_I2EH" role="3uHU7B">
+                <ref role="3cqZAo" node="46Qs6Q_HYQq" resolve="def" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="46Qs6Q_I3sw" role="3cqZAp">
+            <node concept="2YIFZM" id="46Qs6Q_I3Dt" role="3cqZAk">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="46Qs6Q_I4X8" role="37wK5m">
+                <node concept="2OqwBi" id="46Qs6Q_I3X5" role="2Oq$k0">
+                  <node concept="37vLTw" id="46Qs6Q_I3Gd" role="2Oq$k0">
+                    <ref role="3cqZAo" node="46Qs6Q_HYQq" resolve="def" />
+                  </node>
+                  <node concept="3TrEf2" id="46Qs6Q_I4AI" role="2OqNvi">
+                    <ref role="3Tt5mk" to="m234:46Qs6Q$HGK5" resolve="functie" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="46Qs6Q_I5Sg" role="2OqNvi">
+                  <ref role="3TtcxE" to="3ic2:46Qs6QxQxhT" resolve="argument" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
