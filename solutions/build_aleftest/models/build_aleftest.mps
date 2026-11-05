@@ -1615,6 +1615,11 @@
             <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1sAyjoyc4qh" role="3bR37C">
+          <node concept="3bR9La" id="1sAyjoyc4qi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2vNR6jceho9" role="2G$12L">
         <property role="BnDLt" value="true" />
