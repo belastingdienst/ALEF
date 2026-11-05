@@ -174,6 +174,14 @@ public final class Platform {
         }
     }
 
+    public static void copyFile(final Path source, final Path target) {
+        try {
+            Files.copy(source, target);
+        } catch (IOException e) {
+            logger.log(Level.WARNING, () -> "Can't copy file '" + source + "' to '" + target + "': " + e.getMessage());
+        }
+    }
+
     /**
      * Get the content in bytes from a file in a zip file.
      * @param zip Zip file

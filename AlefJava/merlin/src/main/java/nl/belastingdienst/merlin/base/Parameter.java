@@ -3,8 +3,8 @@ package nl.belastingdienst.merlin.base;
 
 
 public class Parameter<T> {
-	private T value;
-	private String name;
+	private final T value;
+	private final String name;
 
 	Parameter(T value,String name) {
 		this.value = value;

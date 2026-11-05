@@ -26,11 +26,11 @@ public class MElementList<E> implements Iterable<E> {
     }
 
     public static <Q> ITimed<MElementList<Q>> makeTimed( MElementList<ITimed<Q>> mlist) {
-        return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.<Q>makeTimed(mlist.elementList));
+        return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.makeTimed(mlist.elementList));
     }
 
     public static <Q> ITimed<MElementList<Q>> makeTimed( List<ITimed<Q>> mlist) {
-        return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.<Q>makeTimed(mlist));
+        return Time.lift((List<Q> l) -> MElementList.of(l)).apply(Time.makeTimed(mlist));
     }
 
     public static <T> MElementList<T> empty() {

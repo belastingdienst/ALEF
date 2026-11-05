@@ -14,9 +14,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.HTTP_NEW_LINE;
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SuppressWarnings("java:S5976") // Parameterized won't make it more clear.
 class OutputComplexPropertyTest {
@@ -42,7 +43,7 @@ class OutputComplexPropertyTest {
                   </items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -64,7 +65,7 @@ class OutputComplexPropertyTest {
                   </item>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -91,7 +92,7 @@ class OutputComplexPropertyTest {
                   </items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -115,7 +116,7 @@ class OutputComplexPropertyTest {
                   </items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -136,7 +137,7 @@ class OutputComplexPropertyTest {
                   </param>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -162,7 +163,7 @@ class OutputComplexPropertyTest {
                   </person>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -199,7 +200,7 @@ class OutputComplexPropertyTest {
                   </KeyValuePairs>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -227,7 +228,7 @@ class OutputComplexPropertyTest {
                   </KeyValuePairs>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -245,7 +246,7 @@ class OutputComplexPropertyTest {
         final String expectedOutput = """
                 <response></response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -282,7 +283,7 @@ class OutputComplexPropertyTest {
                   </KeyValuePairs>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -302,7 +303,7 @@ class OutputComplexPropertyTest {
                   <items></items>
                 </response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -320,7 +321,7 @@ class OutputComplexPropertyTest {
         final String expectedOutput = """
                 <response></response>
                 """;
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     private MObject setupAlefObjects(MUniverse universe) {
@@ -350,9 +351,9 @@ class OutputComplexPropertyTest {
 
     private ContentGenerator createGenerator(ContentType type, OutputStream outputStream) throws IOException {
         return switch (type) {
-            case JSON -> new JsonGenerator(outputStream);
-            case XML -> new XmlGenerator(outputStream);
-            case KV_PAIR -> new KvPairGenerator(outputStream);
+            case JSON -> new JsonGenerator(outputStream, HTTP_NEW_LINE);
+            case XML -> new XmlGenerator(outputStream, HTTP_NEW_LINE);
+            case KV_PAIR -> new KvPairGenerator(outputStream, HTTP_NEW_LINE);
         };
     }
 }

@@ -10,8 +10,8 @@ import java.math.BigInteger;
 public class KvPairGenerator extends XmlGenerator {
     private boolean insideKvPairSection = false;
 
-    public KvPairGenerator(OutputStream outputStream) throws IOException {
-        super(outputStream);
+    public KvPairGenerator(OutputStream outputStream, final String newLine) throws IOException {
+        super(outputStream, newLine);
     }
 
     @Override

@@ -9,8 +9,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputParameterTest extends AbstractOutputTest {
     @Test
@@ -18,7 +18,7 @@ class OutputParameterTest extends AbstractOutputTest {
         final OutputParameter parameter = new OutputParameter("param", "param", false, newBooleanToBooleanWriter());
         final MUniverse universe = new MUniverse(true);
         final String actualOutput = generateOutput(parameter, universe);
-        assertEquals("{ }", actualOutput);
+        assertEqualOutput("{ }", actualOutput);
     }
 
     @Test
@@ -31,7 +31,7 @@ class OutputParameterTest extends AbstractOutputTest {
                 {
                   "param" : true
                 }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualOutput(expectedJson, actualOutput);
     }
 
     @Test
@@ -44,7 +44,7 @@ class OutputParameterTest extends AbstractOutputTest {
                 {
                   "param" : "test"
                 }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualOutput(expectedJson, actualOutput);
     }
 
     @Test
@@ -55,7 +55,7 @@ class OutputParameterTest extends AbstractOutputTest {
         final String actualOutput = generateOutput(parameter, universe);
         final String expectedJson = """
                 { }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualOutput(expectedJson, actualOutput);
     }
 
     @Test
@@ -69,7 +69,7 @@ class OutputParameterTest extends AbstractOutputTest {
                 {
                   "param" : true
                 }""";
-        assertEquals(expectedJson, actualOutput);
+        assertEqualOutput(expectedJson, actualOutput);
     }
 
     private String generateOutput(OutputParameter parameter, MUniverse universe) throws IOException {

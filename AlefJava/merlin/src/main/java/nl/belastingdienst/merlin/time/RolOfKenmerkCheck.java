@@ -17,7 +17,7 @@ public class RolOfKenmerkCheck {
                 .filter(box -> box.value() != null)
                 .map(box -> {
                     Boolean k = box.value().getProperty(kenmerk).get();
-                    return TimeBox.<Valid>make(Valid.of(k), box.valid());
+                    return TimeBox.make(Valid.of(k), box.valid());
                 })));
     }
 
@@ -31,7 +31,7 @@ public class RolOfKenmerkCheck {
                 .flatMap(box -> box.value()
                                                           .getProperty(kenmerk).get()
                                                           .periods(box.valid())
-                                                          .map(p -> TimeBox.<Valid>make(Valid.TRUE, p)))));
+                                                          .map(p -> TimeBox.make(Valid.TRUE, p)))));
     }
 
     public static IValidity ofTimedKenmerk(MObject element, MKenmerkKey<IValidity> kenmerk) {
@@ -44,7 +44,7 @@ public class RolOfKenmerkCheck {
                                             .flatMap(box -> box.value()
                                                                                       .validityOfRole(role)
                                                                                       .periods(box.valid())
-                                                                                      .map(p -> TimeBox.<Valid>make(Valid.TRUE, p)))));
+                                                                                      .map(p -> TimeBox.make(Valid.TRUE, p)))));
     }
 
     public static IValidity ofTimedRole(MObject element, MRoleKey role) {

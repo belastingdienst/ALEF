@@ -57,7 +57,7 @@ public class MObject extends MBase implements IMDelegatedExecution, IMPropertyHo
 
     @Override
     public MElementList<MDistributionRule> getDistributionRules() {
-        return distributionRules.isEmpty() ? MElementList.<MDistributionRule>empty() : MElementList.of(distributionRules);
+        return distributionRules.isEmpty() ? MElementList.empty() : MElementList.of(distributionRules);
     }
 
     public MDistributionRule getDistributionRule(Class<? extends MDistributionRule> ruleClass) {

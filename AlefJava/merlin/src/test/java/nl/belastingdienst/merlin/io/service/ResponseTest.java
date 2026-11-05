@@ -16,8 +16,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.HTTP_NEW_LINE;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 
 class ResponseTest {
     @Test
@@ -41,12 +42,12 @@ class ResponseTest {
                     "price" : 10
                   } ]
                 }""";
-        assertEquals(expectedJson, getActualResult(response, alefObjectPerson));
+        assertEqualOutput(expectedJson, getActualResult(response, alefObjectPerson));
     }
 
     private String getActualResult(Response response, MObject alefObject) throws IOException {
         final OutputStream outputStream = new ByteArrayOutputStream();
-        final JsonGenerator messageGenerator = new JsonGenerator(outputStream);
+        final JsonGenerator messageGenerator = new JsonGenerator(outputStream, HTTP_NEW_LINE);
         messageGenerator.beginObject();
         response.process(new MUniverse(true), messageGenerator, alefObject);
         messageGenerator.endObject();

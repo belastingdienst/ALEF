@@ -117,11 +117,7 @@ public class TestReport {
         }
         for (Path sourceFile : files) {
             final Path targetFile = target.resolve(sourceFile.getFileName());
-            try {
-                Files.copy(sourceFile, targetFile);
-            } catch (IOException e) {
-                logger.warning("Can't copy file '" + source + "' to '" + target + "': " + e.getMessage());
-            }
+            Platform.copyFile(sourceFile, targetFile);
         }
     }
 

@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import static org.junit.Assert.assertEquals;
+
 public class ServiceTestCollectorTests {
     @Test
     public void validServiceInfoTest() throws IOException {
@@ -92,7 +94,7 @@ public class ServiceTestCollectorTests {
             }
         }
 
-        Assert.assertEquals(expectedFiles, zipFiles.size());
+        assertEquals(expectedFiles, zipFiles.size());
     }
 
     private List<String> getFilesInZip(Path zipFile) {

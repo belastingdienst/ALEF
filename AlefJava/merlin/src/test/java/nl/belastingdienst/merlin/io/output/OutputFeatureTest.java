@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputFeatureTest extends AbstractOutputTest {
     @Test
@@ -20,7 +20,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "carOwner" : true
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -31,7 +31,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "carOwner" : false
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -42,7 +42,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "carOwner" : false
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -54,7 +54,7 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "hasChildren" : [ ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -66,6 +66,6 @@ class OutputFeatureTest extends AbstractOutputTest {
                 {
                   "hasChildren" : [ ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 }

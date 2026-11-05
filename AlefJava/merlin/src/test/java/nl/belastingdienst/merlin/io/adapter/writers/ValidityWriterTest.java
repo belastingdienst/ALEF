@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.adapter.writers;
 
 import nl.belastingdienst.alef_runtime.time.*;
+import nl.belastingdienst.merlin.io.OutputUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
@@ -10,7 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 
 class ValidityWriterTest {
     @Test
@@ -30,7 +31,7 @@ class ValidityWriterTest {
                     "tot" : "2020-03-03"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualOutput(expected, actual);
     }
 
     @Test
@@ -47,12 +48,12 @@ class ValidityWriterTest {
                     "tot" : "2021-02-02"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualOutput(expected, actual);
     }
 
     private static String generateXML(IValidity values) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        final ContentGenerator generator = new JsonGenerator(outputStream);
+        final ContentGenerator generator = new JsonGenerator(outputStream, OutputUtils.HTTP_NEW_LINE);
         final ValidityWriter writer = new ValidityWriter(new TimelineInfo(true));
         generator.beginObject();
         generator.writeFieldName("values");

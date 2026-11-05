@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class ReadersTest {
     @Test
@@ -34,7 +35,7 @@ class ReadersTest {
         final BooleanToBooleanReader reader = new BooleanToBooleanReader();
         assertEquals(true, reader.read(universe, parserMock));
         parserMock.setValue(null);
-        assertEquals(null, reader.read(universe, parserMock));
+        assertNull(reader.read(universe, parserMock));
     }
 
     @Test
@@ -120,7 +121,7 @@ class ReadersTest {
         final ValueReturningParserMock parserMock1 = new ValueReturningParserMock("123");
         assertEquals(BigRational.valueOf(123), reader.read(universe, parserMock1));
         final ValueReturningParserMock parserMock2 = new ValueReturningParserMock(null);
-        assertEquals(null, reader.read(universe, parserMock2));
+        assertNull(reader.read(universe, parserMock2));
         assertEquals(0, universe.getViolations().size());
     }
 
@@ -183,10 +184,10 @@ class ReadersTest {
     private static void verifyReaderWithInvalidInput(AbstractReader reader) throws IOException {
         final MUniverse universe = new MUniverse(true);
         final ValueReturningParserMock parserMock1 = new ValueReturningParserMock("AAAA");
-        assertEquals(null, reader.read(universe, parserMock1));
+        assertNull(reader.read(universe, parserMock1));
         assertEquals(1, universe.getViolations().size());
         final ValueReturningParserMock parserMock2 = new ValueReturningParserMock("false");
-        assertEquals(null, reader.read(universe, parserMock2));
+        assertNull(reader.read(universe, parserMock2));
         assertEquals(2, universe.getViolations().size());
     }
 

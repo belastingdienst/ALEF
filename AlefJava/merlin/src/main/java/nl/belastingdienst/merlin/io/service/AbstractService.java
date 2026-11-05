@@ -86,7 +86,7 @@ public abstract class AbstractService<T extends MObjectType, I> {
         generateServiceResult(generator, ALEFConstants.SERVICE_ERROR_CODE,
                 universe.getViolations().stream()
                         .map(Object::toString)
-                        .collect(Collectors.joining(System.lineSeparator())));
+                        .collect(Collectors.joining(NEW_LINE)));
         generator.endObject();
     }
 
@@ -156,4 +156,10 @@ public abstract class AbstractService<T extends MObjectType, I> {
     public Class<T> getMainObjectType() {
         return mainObjectType;
     }
+
+    /**
+     * The HTTP protocol specifies CRLF for header properties.
+     * We also use CRLF for the HTTP body to keep it consistent and platform independent.
+     */
+    public static final String NEW_LINE = "\r\n";
 }

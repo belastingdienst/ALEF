@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.dataformat.xml.XmlFactory;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
+import nl.belastingdienst.merlin.io.OutputUtils;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.XmlGenerator;
 import org.junit.jupiter.api.Test;
@@ -11,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import javax.xml.namespace.QName;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
 
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.asInputStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -46,7 +46,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("{\"values\":[1,2,3]}", outputStream.toString(Charset.defaultCharset()));
+        OutputUtils.assertEqualOutput("{\"values\":[1,2,3]}", outputStream);
     }
 
     @Test
@@ -80,8 +80,8 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><values>1</values><values>2</values><values>3</values></response>",
-                outputStream.toString(Charset.defaultCharset()));
+        OutputUtils.assertEqualOutput("<response><values>1</values><values>2</values><values>3</values></response>",
+                outputStream);
     }
 
     @Test
@@ -125,11 +125,11 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><request>" +
+        OutputUtils.assertEqualOutput("<response><request>" +
                 "<KeyValuePairs><key>values</key><valueString>1</valueString></KeyValuePairs>" +
                 "<KeyValuePairs><key>values</key><valueString>2</valueString></KeyValuePairs>" +
                 "<KeyValuePairs><key>values</key><valueString>3</valueString></KeyValuePairs>" +
-                "</request></response>", outputStream.toString(Charset.defaultCharset()));
+                "</request></response>", outputStream);
     }
 
     @Test
@@ -169,7 +169,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><entity name=\"person\"><age>21</age></entity></response>", outputStream.toString(Charset.defaultCharset()));
+        OutputUtils.assertEqualOutput("<response><entity name=\"person\"><age>21</age></entity></response>", outputStream);
     }
 
     @Test
@@ -188,7 +188,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><name>reëel</name></response>", outputStream.toString(Charset.defaultCharset()));
+        OutputUtils.assertEqualOutput("<response><name>reëel</name></response>", outputStream);
     }
 
     @Test
@@ -210,7 +210,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("{\"value\":\"reëel\"}", outputStream.toString(Charset.defaultCharset()));
+        OutputUtils.assertEqualOutput("{\"value\":\"reëel\"}", outputStream);
     }
 
     @Test
@@ -232,7 +232,7 @@ class ParserRecordingTest {
                 </message>
                 """;
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        final ContentGenerator generator = new XmlGenerator(outputStream);
+        final ContentGenerator generator = new XmlGenerator(outputStream, OutputUtils.HTTP_NEW_LINE);
         generator.writeRootFieldName("test");
         generator.beginObject();
         final ContentParser parser = new XmlParser(asInputStream(xml), generator.getInternalGenerator());
@@ -270,7 +270,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.endObject();
         generator.flush();
-        assertEquals("""
+        OutputUtils.assertEqualOutput("""
                 <test>
                   <request>
                     <items>
@@ -285,7 +285,7 @@ class ParserRecordingTest {
                     </items>
                   </request>
                 </test>
-                """, outputStream.toString(Charset.defaultCharset()));
+                """, outputStream);
     }
 
     private void parseAndAssertFieldName(ContentParser parser, String expectedFieldName) throws IOException {

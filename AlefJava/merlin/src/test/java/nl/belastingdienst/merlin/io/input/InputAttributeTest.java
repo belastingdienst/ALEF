@@ -16,6 +16,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class InputAttributeTest extends InputElementTest {
     @Test
@@ -58,7 +59,7 @@ class InputAttributeTest extends InputElementTest {
         final MObject alefObject = universe.getOrCreate(null, TypeContextMock.PersonType.class);
         final ContentParser parser = new ValueReturningParserMock("unknown");
         inputAttribute.parse(universe, alefObject, parser);
-        assertEquals(null, alefObject.getProperty(PersonType.dummy).get());
+        assertNull(alefObject.getProperty(PersonType.dummy).get());
         assertEquals(1, universe.getViolations().size());
     }
 

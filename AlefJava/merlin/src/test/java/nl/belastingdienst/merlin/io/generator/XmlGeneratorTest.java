@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.createGenerator;
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.getOutput;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class XmlGeneratorTest {
     @Test
@@ -44,7 +44,7 @@ class XmlGeneratorTest {
                     </uitvoer>
                   </uitvoers>
                 </root>""";
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -80,7 +80,7 @@ class XmlGeneratorTest {
                   <values>true</values>
                   <values/>
                 </root>""";
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -114,7 +114,7 @@ class XmlGeneratorTest {
                   <values>2.0</values>
                   <values>true</values>
                 </root>""";
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -153,6 +153,6 @@ class XmlGeneratorTest {
                   <value7>2.0</value7>
                   <value8>true</value8>
                 </root>""";
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 }

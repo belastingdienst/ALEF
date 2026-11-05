@@ -19,7 +19,7 @@ public class MExtent<T> {
     }
 
     public <C extends T> void add(C value) {
-        this.add(value, (Class<C>) value.getClass());
+        this.add(value, value.getClass());
     }
 
     public <C extends T> void add(C value, Class<?> key) {

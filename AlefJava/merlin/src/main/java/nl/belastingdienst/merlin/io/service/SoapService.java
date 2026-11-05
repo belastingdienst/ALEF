@@ -119,8 +119,8 @@ public abstract class SoapService<T extends MObjectType> extends AbstractService
 
     private ContentGenerator createGenerator(OutputStream outputStream) throws IOException {
         return switch (contentType) {
-            case XML -> new XmlGenerator(outputStream);
-            case KV_PAIR -> new KvPairGenerator(outputStream);
+            case XML -> new XmlGenerator(outputStream, NEW_LINE);
+            case KV_PAIR -> new KvPairGenerator(outputStream, NEW_LINE);
         };
     }
 

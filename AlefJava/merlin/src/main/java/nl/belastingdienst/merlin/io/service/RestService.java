@@ -21,7 +21,7 @@ public abstract class RestService<T extends MObjectType> extends AbstractService
     }
 
     protected ContentGenerator beginResponse(OutputStream outputStream) throws IOException {
-        final ContentGenerator generator = new JsonGenerator(outputStream);
+        final ContentGenerator generator = new JsonGenerator(outputStream, NEW_LINE);
         generator.beginObject();
         return generator;
     }

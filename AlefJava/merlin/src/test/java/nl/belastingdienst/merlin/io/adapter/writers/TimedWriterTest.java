@@ -1,6 +1,7 @@
 package nl.belastingdienst.merlin.io.adapter.writers;
 
 import nl.belastingdienst.alef_runtime.time.*;
+import nl.belastingdienst.merlin.io.OutputUtils;
 import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
@@ -11,7 +12,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 
 class TimedWriterTest {
     @Test
@@ -31,7 +32,7 @@ class TimedWriterTest {
                     "waarde" : "Test"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualOutput(expected, actual);
     }
 
     @Test
@@ -50,7 +51,7 @@ class TimedWriterTest {
                     "waarde" : "Test"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualOutput(expected, actual);
     }
 
     @Test
@@ -62,7 +63,7 @@ class TimedWriterTest {
                 {
                   "values" : [ ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualOutput(expected, actual);
     }
 
     @Test
@@ -72,12 +73,12 @@ class TimedWriterTest {
                 {
                   "values" : [ ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualOutput(expected, actual);
     }
 
     private static String generateXML(ITimed<String> values) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        final ContentGenerator generator = new JsonGenerator(outputStream);
+        final ContentGenerator generator = new JsonGenerator(outputStream, OutputUtils.HTTP_NEW_LINE);
         final TimedWriter<String> writer = new TimedWriter<>(new TimelineInfo(true), TestUtils.newStringToStringWriter());
         generator.beginObject();
         generator.writeFieldName("values");

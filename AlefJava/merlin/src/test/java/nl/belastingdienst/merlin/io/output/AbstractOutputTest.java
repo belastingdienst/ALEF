@@ -4,6 +4,7 @@ import nl.belastingdienst.merlin.base.MDimensionalPropertyKey;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MPropertyKey;
 import nl.belastingdienst.merlin.base.MUniverse;
+import nl.belastingdienst.merlin.io.OutputUtils;
 import nl.belastingdienst.merlin.io.ContentType;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.KvPairGenerator;
@@ -49,10 +50,14 @@ public abstract class AbstractOutputTest {
     }
 
     protected ContentGenerator createGenerator(ContentType type, OutputStream outputStream) throws IOException {
+        return createGenerator(type, OutputUtils.HTTP_NEW_LINE, outputStream);
+    }
+
+    protected ContentGenerator createGenerator(ContentType type, final String newLine, OutputStream outputStream) throws IOException {
         return switch (type) {
-            case JSON -> new JsonGenerator(outputStream);
-            case XML -> new XmlGenerator(outputStream);
-            case KV_PAIR -> new KvPairGenerator(outputStream);
+            case JSON -> new JsonGenerator(outputStream, newLine);
+            case XML -> new XmlGenerator(outputStream, newLine);
+            case KV_PAIR -> new KvPairGenerator(outputStream, newLine);
         };
     }
 }

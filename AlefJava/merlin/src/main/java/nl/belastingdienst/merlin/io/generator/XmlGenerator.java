@@ -1,8 +1,10 @@
 package nl.belastingdienst.merlin.io.generator;
 
 import com.ctc.wstx.stax.WstxOutputFactory;
+import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.dataformat.xml.XmlFactory;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
+import com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter;
 import nl.belastingdienst.merlin.io.CollectionInfo;
 
 import javax.xml.namespace.QName;
@@ -20,14 +22,16 @@ public class XmlGenerator extends AbstractGenerator {
     private final Deque<CollectionInfo> collections = new ArrayDeque<>();
     private String currentFieldName = null;
 
-    public XmlGenerator(OutputStream outputStream) throws IOException {
+    public XmlGenerator(OutputStream outputStream, final String newLine) throws IOException {
         final XMLOutputFactory staxFactory = new WstxOutputFactory();
         staxFactory.setProperty(AUTOMATIC_EMPTY_ELEMENTS, false);
         final XmlFactory factory = XmlFactory.builder()
                 .xmlOutputFactory(staxFactory)
                 .build();
-        internalGenerator = factory.createGenerator(outputStream);
-        internalGenerator.useDefaultPrettyPrinter();
+        internalGenerator = factory.createGenerator(outputStream, JsonEncoding.UTF8);
+        final DefaultXmlPrettyPrinter prettyPrinter = new DefaultXmlPrettyPrinter();
+        prettyPrinter.withCustomNewLine(newLine);
+        internalGenerator.setPrettyPrinter(prettyPrinter);
     }
 
     @Override

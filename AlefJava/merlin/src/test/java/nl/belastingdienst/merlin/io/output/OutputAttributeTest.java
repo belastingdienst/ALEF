@@ -14,8 +14,8 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputAttributeTest extends AbstractOutputTest {
     @Test
@@ -26,7 +26,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "forName" : "testName"
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -37,7 +37,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "age" : 45
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -48,7 +48,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "bikeOwner" : true
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -59,7 +59,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "birthDate" : "2020-01-01"
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -73,7 +73,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                     "waarde" : 100
                   } ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -84,7 +84,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "salary" : 45
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -92,7 +92,7 @@ class OutputAttributeTest extends AbstractOutputTest {
         final OutputAttribute<Boolean> attribute = new OutputAttribute<>("bikeOwner", false, PersonType.bikeOwner, newBooleanToBooleanWriter());
         final String actualJson = generate(attribute, PersonType.bikeOwner, null);
         final String expectedJson = "{ }";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -101,7 +101,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 new TimedWriter<>(new TimelineInfo(true), newRationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, null);
         final String expectedJson = "{ }";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -110,7 +110,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 new TimedWriter<>(new TimelineInfo(true), newRationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, Timed.of(TimeBox.make(null, Period.ALWAYS)));
         final String expectedJson = "{ }";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -121,7 +121,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "bikeOwner" : null
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -133,7 +133,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "mortgageAmount" : [ ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
@@ -145,6 +145,6 @@ class OutputAttributeTest extends AbstractOutputTest {
                   <bikeOwner/>
                 </root>
                 """;
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 }

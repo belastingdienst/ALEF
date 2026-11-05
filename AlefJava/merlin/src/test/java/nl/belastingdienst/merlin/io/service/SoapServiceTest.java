@@ -19,11 +19,11 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 
 class SoapServiceTest {
     @Test
@@ -90,7 +90,7 @@ class SoapServiceTest {
                 """;
         final ServiceResult serviceResult = soapService.process(toInputStream(input), null);
         final String actualOutput = toString(serviceResult.getOutputStream());
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -147,7 +147,7 @@ class SoapServiceTest {
                 """;
         final ServiceResult serviceResult = soapService.process(toInputStream(input), null);
         final String actualOutput = toString(serviceResult.getOutputStream());
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -176,11 +176,11 @@ class SoapServiceTest {
         assertEquals(ServiceResultType.BAD_REQUEST, serviceResult.getType());
     }
 
-    private InputStream toInputStream(String input) {
+    private InputStream toInputStream(final String input) {
         return new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
     }
 
-    private String toString(ByteArrayOutputStream outputStream) {
-        return outputStream.toString(Charset.defaultCharset());
+    private String toString(final ByteArrayOutputStream outputStream) {
+        return outputStream.toString(StandardCharsets.UTF_8);
     }
 }

@@ -20,8 +20,8 @@ class InputChoiceTest {
         final InputAttribute<BigRational> attribute2 = new InputAttribute<>("age", true, BigRational.valueOf(20), TypeContextMock.PersonType.age, new IntegerToRationalReader());
         final InputChoice choice = new InputChoice(List.of(attribute1, attribute2));
         assertEquals(2, choice.getNodes().size());
-        assertTrue(choice.getNodes().get(0) instanceof InputAttribute<?>);
-        assertTrue(choice.getNodes().get(1) instanceof InputAttribute<?>);
+        assertInstanceOf(InputAttribute.class, choice.getNodes().get(0));
+        assertInstanceOf(InputAttribute.class, choice.getNodes().get(1));
         assertFalse(choice.isRequired());
     }
 

@@ -1,6 +1,5 @@
 package nl.belastingdienst.merlin.base;
 
-import nl.belastingdienst.alef_runtime.time.*;
 import nl.belastingdienst.merlin.time.MTimedObject;
 import nl.belastingdienst.merlin.time.MTimedObjectSet;
 import nl.belastingdienst.merlin.time.MTimedObjectSingleton;

@@ -11,7 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 
 class OutputIdentifierTest extends AbstractOutputTest {
     @Test
@@ -22,14 +22,14 @@ class OutputIdentifierTest extends AbstractOutputTest {
                 {
                   "identifier" : "123"
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualOutput(expectedJson, actualJson);
     }
 
     @Test
     void testEmptyIdentifier() throws IOException {
         final OutputIdentifier identifier = new OutputIdentifier("identifier", "string");
         final String actualJson = generateOutput(identifier, null, ContentType.JSON);
-        assertEquals("{ }", actualJson);
+        assertEqualOutput("{ }", actualJson);
     }
 
     @Test
@@ -44,7 +44,7 @@ class OutputIdentifierTest extends AbstractOutputTest {
                   </KeyValuePairs>
                 </root>
                 """;
-        assertEquals(expected, actualOutput);
+        assertEqualOutput(expected, actualOutput);
     }
 
     private String generateOutput(OutputIdentifier element, String identifier, ContentType contentType) throws IOException {

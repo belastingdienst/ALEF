@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.createGenerator;
 import static nl.belastingdienst.merlin.io.generator.GeneratorTestUtils.getOutput;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class KvPairGeneratorTest {
     @Test
@@ -75,7 +75,7 @@ class KvPairGeneratorTest {
                     <valueBoolean/>
                   </KeyValuePairs>
                 </root>""";
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -111,6 +111,6 @@ class KvPairGeneratorTest {
                   <values>true</values>
                   <values/>
                 </root>""";
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 }

@@ -1,6 +1,9 @@
 package nl.belastingdienst.merlin.io.generator;
 
+import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.util.DefaultIndenter;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -10,10 +13,14 @@ import java.math.BigInteger;
 public class JsonGenerator extends AbstractGenerator {
     private final com.fasterxml.jackson.core.JsonGenerator internalGenerator;
 
-    public JsonGenerator(final OutputStream outputStream) throws IOException {
+    public JsonGenerator(final OutputStream outputStream, final String newLine) throws IOException {
         final JsonFactory factory = JsonFactory.builder().build();
-        internalGenerator = factory.createGenerator(outputStream);
-        internalGenerator.useDefaultPrettyPrinter();
+        internalGenerator = factory.createGenerator(outputStream, JsonEncoding.UTF8);
+
+        final DefaultIndenter indenter = new DefaultIndenter("  ", newLine);
+        final DefaultPrettyPrinter prettyPrinter = new DefaultPrettyPrinter();
+        prettyPrinter.indentObjectsWith(indenter);
+        internalGenerator.setPrettyPrinter(prettyPrinter);
     }
 
     @Override

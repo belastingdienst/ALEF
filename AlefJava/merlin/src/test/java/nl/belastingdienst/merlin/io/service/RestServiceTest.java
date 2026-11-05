@@ -14,9 +14,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import static nl.belastingdienst.merlin.io.OutputUtils.assertEqualOutput;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -67,7 +67,7 @@ class RestServiceTest {
                 }""";
 
         final String actualOutput = toString(serviceResult.getOutputStream());
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualOutput(expectedOutput, actualOutput);
     }
 
     @Test
@@ -102,13 +102,13 @@ class RestServiceTest {
                   "response" : {
                     "serviceResultaat" : {
                       "resultaatcode" : "0",
-                      "resultaatmelding" : "Expected 'request' but found 'req' at /\\nNo working year was provided.",
+                      "resultaatmelding" : "Expected 'request' but found 'req' at /\\r\\nNo working year was provided.",
                       "serviceversie" : ""
                     }
                   }
                 }""";
         final ServiceResult serviceResult = restService.process(toInputStream(input), input);
-        assertEquals(expected, toString(serviceResult.getOutputStream()));
+        assertEqualOutput(expected, toString(serviceResult.getOutputStream()));
     }
 
     @Test
@@ -133,11 +133,11 @@ class RestServiceTest {
         assertEquals(ServiceResultType.BAD_REQUEST, serviceResult.getType());
     }
 
-    private InputStream toInputStream(String input) {
+    private InputStream toInputStream(final String input) {
         return new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
     }
 
-    private String toString(ByteArrayOutputStream outputStream) {
-        return outputStream.toString(Charset.defaultCharset());
+    private String toString(final ByteArrayOutputStream outputStream) {
+        return outputStream.toString(StandardCharsets.UTF_8);
     }
 }

@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
+
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -42,7 +43,7 @@ class WritersTest {
     @Test
     void testEnumToStringWriter() throws IOException {
         final ValueReceivingGeneratorMock generator = new ValueReceivingGeneratorMock();
-        final EnumToStringWriter writer = newEnumToStringWriter();
+        final EnumToStringWriter<TestEnum> writer = newEnumToStringWriter();
         writer.write(generator, TestEnum.ACTIVE);
         assertEquals("Active", generator.getValue());
     }

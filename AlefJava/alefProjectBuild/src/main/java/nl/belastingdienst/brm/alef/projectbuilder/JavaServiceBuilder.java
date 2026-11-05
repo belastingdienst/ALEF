@@ -128,11 +128,7 @@ public class JavaServiceBuilder {
                         TARGET_FOLDER.equals(path.getParent().getFileName().toString())
                         && path.getFileName().toString().toLowerCase().endsWith(".war"))) {
             for (Path warFile : stream.toList()) {
-                try {
-                    Files.copy(warFile, servicesFolder.resolve(warFile.getFileName()));
-                } catch (IOException e) {
-                    logger.log(Level.WARNING, () -> "Can't copy file '" + warFile + "' to '" + servicesFolder.resolve(warFile.getFileName()) + "': " + e.getMessage());
-                }
+                Platform.copyFile(warFile, servicesFolder.resolve(warFile.getFileName()));
             }
         }
     }
@@ -140,11 +136,7 @@ public class JavaServiceBuilder {
     private void copyTestResults(final Path workingDir, final Path testResults) throws IOException {
         for (Path source : testReports(workingDir)) {
             final Path target = testResults.resolve(source.getFileName());
-            try {
-                Files.copy(source, target);
-            } catch (IOException e) {
-                logger.log(Level.WARNING, () -> "Can't copy file '" + source + "' to '" + target + "': " + e.getMessage());
-            }
+            Platform.copyFile(source, target);
         }
     }
 

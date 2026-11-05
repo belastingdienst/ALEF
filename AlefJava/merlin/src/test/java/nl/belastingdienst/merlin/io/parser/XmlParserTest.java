@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class XmlParserTest {
     private static final String EMPTY_ELEMENT_XML = """
@@ -22,7 +23,7 @@ class XmlParserTest {
         parser.beginObject();
         parser.endObject();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 
     @Test
@@ -35,7 +36,7 @@ class XmlParserTest {
         assertEquals(ContentToken.END_OBJECT, parser.peek()); // uses currentToken
         parser.endObject();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 
 
@@ -48,7 +49,7 @@ class XmlParserTest {
         parseAndAssertValue(parser, "");
         parser.endCollection();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 
     @Test
@@ -59,7 +60,7 @@ class XmlParserTest {
         parser.beginEnclosedCollection("inner");
         parser.endCollection();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 
     @Test
@@ -82,7 +83,7 @@ class XmlParserTest {
         parser.endObject();
         parser.endCollection();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 
     @Test
@@ -102,7 +103,7 @@ class XmlParserTest {
         parser.endObject();
         parser.endCollection();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 
     @Test
@@ -149,6 +150,6 @@ class XmlParserTest {
         }
         parser.endCollection();
         parser.endObject();
-        assertEquals(null, parser.nextToken());
+        assertNull(parser.nextToken());
     }
 }
