@@ -6836,19 +6836,40 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5F2q6CHsUsi" role="3cqZAp">
-              <node concept="1rXfSq" id="5F2q6CHsUsd" role="3clFbG">
-                <ref role="37wK5l" node="4mHXsdSEqa5" resolve="parseVersion" />
-                <node concept="2OqwBi" id="5F2q6CHsX2B" role="37wK5m">
-                  <node concept="37vLTw" id="5F2q6CHsX2C" role="2Oq$k0">
+            <node concept="3cpWs8" id="5PA5YHm9uIH" role="3cqZAp">
+              <node concept="3cpWsn" id="5PA5YHm9uII" role="3cpWs9">
+                <property role="TrG5h" value="project_version" />
+                <node concept="3uibUv" id="5PA5YHm2F4Z" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+                <node concept="2OqwBi" id="5PA5YHm9uIJ" role="33vP2m">
+                  <node concept="37vLTw" id="5PA5YHm9uIK" role="2Oq$k0">
                     <ref role="3cqZAo" node="MYcE8VdYcN" resolve="props" />
                   </node>
-                  <node concept="liA8E" id="5F2q6CHsX2D" role="2OqNvi">
+                  <node concept="liA8E" id="5PA5YHm9uIL" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Properties.getProperty(java.lang.String)" resolve="getProperty" />
-                    <node concept="37vLTw" id="5F2q6CHtBQy" role="37wK5m">
+                    <node concept="37vLTw" id="5PA5YHm9uIM" role="37wK5m">
                       <ref role="3cqZAo" node="5F2q6CHtlBR" resolve="PROJECT_VERSION" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5PA5YHm9QDZ" role="3cqZAp">
+              <node concept="3clFbS" id="5PA5YHm9QE1" role="3clFbx">
+                <node concept="3clFbF" id="5F2q6CHsUsi" role="3cqZAp">
+                  <node concept="1rXfSq" id="5F2q6CHsUsd" role="3clFbG">
+                    <ref role="37wK5l" node="4mHXsdSEqa5" resolve="parseVersion" />
+                    <node concept="37vLTw" id="5PA5YHm9uIN" role="37wK5m">
+                      <ref role="3cqZAo" node="5PA5YHm9uII" resolve="project_version" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="5PA5YHm9Zne" role="3clFbw">
+                <node concept="10Nm6u" id="5PA5YHma2_d" role="3uHU7w" />
+                <node concept="37vLTw" id="5PA5YHm9TNu" role="3uHU7B">
+                  <ref role="3cqZAo" node="5PA5YHm9uII" resolve="project_version" />
                 </node>
               </node>
             </node>
