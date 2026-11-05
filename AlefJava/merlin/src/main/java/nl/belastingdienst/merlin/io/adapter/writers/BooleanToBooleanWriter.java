@@ -15,7 +15,7 @@ public class BooleanToBooleanWriter implements FeatureSupport<Boolean> {
     }
 
     public BooleanToBooleanWriter(String valueTypeName, Converter<Boolean> converter) {
-        assert converter != null : "A converter must be provided.";
+        if (converter == null) throw new IllegalArgumentException("A converter must be provided.");
         this.valueTypeName = valueTypeName;
         this.converter = converter;
     }

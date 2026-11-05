@@ -1,7 +1,6 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.BigRational;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -9,8 +8,6 @@ import nl.belastingdienst.merlin.io.mocks.OutputMessageMock;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.FactPersonHasItems;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.ItemType;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
-import nl.belastingdienst.merlin.io.adapter.writers.RationalToDecimalWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;

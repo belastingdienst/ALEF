@@ -92,8 +92,8 @@ public abstract class AbstractService<T extends MObjectType, I> {
 
     private boolean canReturnSuccessfulResponse(MUniverse universe) {
         final List<Violation> violations = universe.getViolations();
-        return universe.getWorkingDate() != null && (violations.isEmpty() || !enableValidation) && violations.stream()
-                .filter(violation -> violation.getViolationKind().equals(ViolationKind.EVALUATION_ERROR)).count() == 0;
+        return universe.getWorkingDate() != null && (violations.isEmpty() || !enableValidation)
+                && violations.stream().noneMatch(violation -> violation.getViolationKind().equals(ViolationKind.EVALUATION_ERROR));
     }
 
     private void evaluate(MUniverse universe, MObject mainObject) {
@@ -122,6 +122,9 @@ public abstract class AbstractService<T extends MObjectType, I> {
         return universe;
     }
 
+    /**
+            * @param inputStream Input that can be used in overriding classes
+    */
     protected ServiceResult returnError(InputStream inputStream, Exception e) throws IOException {
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         outputStream.write(e.getMessage().getBytes(StandardCharsets.UTF_8));

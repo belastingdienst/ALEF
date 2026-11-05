@@ -52,8 +52,8 @@ class TestTimedBag extends TestITimed {
         assertTrue(elems.contains("c"));
 
         final ITimed<Integer> nrA = timedBag.count("a");
-        final ITimed<Integer> nrB = timedBag.count("b");
-        final ITimed<Integer> nrC = timedBag.count("c");
+        timedBag.count("b");
+        timedBag.count("c");
 
         ITimed<Integer> expectedNrA = Timed.of(
                 TimeBox.make(0, Period.OPEN_BEGIN.until(t[0])),

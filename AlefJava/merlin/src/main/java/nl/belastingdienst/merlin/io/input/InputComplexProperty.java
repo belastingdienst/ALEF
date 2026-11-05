@@ -97,9 +97,10 @@ public final class InputComplexProperty implements InputElement {
 
     private void process(MUniverse universe, MObject parentObject, MObject childObject) {
         final MFactType factType = universe.getFactType(getFactTypeClass());
-        switch (factSide) {
-            case RIGHT -> factType.createFact(parentObject, childObject);
-            case LEFT -> factType.createFact(childObject, parentObject);
+        if (factSide == FactSide.RIGHT) {
+            factType.createFact(parentObject, childObject);
+        } else {
+            factType.createFact(childObject, parentObject);
         }
     }
 

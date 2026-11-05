@@ -1,10 +1,7 @@
 package nl.belastingdienst.merlin.io.service;
 
 import nl.belastingdienst.merlin.io.*;
-import nl.belastingdienst.merlin.io.adapter.readers.DecimalToRationalReader;
 import nl.belastingdienst.merlin.io.adapter.readers.StringToStringReader;
-import nl.belastingdienst.merlin.io.adapter.writers.RationalToDecimalWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.input.InputAttribute;
 import nl.belastingdienst.merlin.io.input.InputComplexProperty;
 import nl.belastingdienst.merlin.io.mocks.*;

@@ -3,13 +3,13 @@ package nl.belastingdienst.merlin.io.adapter.readers;
 import nl.belastingdienst.alef_runtime.Validators;
 import nl.belastingdienst.merlin.base.MUniverse;
 import nl.belastingdienst.merlin.io.adapter.converters.Converter;
-import nl.belastingdienst.merlin.io.adapter.converters.IdentityConverter;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.validation.MValidationRule;
 
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
+import org.jetbrains.annotations.Nullable;
 
 public class BooleanToBooleanReader extends AbstractReader<Boolean, Boolean> {
     public BooleanToBooleanReader() {
@@ -33,6 +33,7 @@ public class BooleanToBooleanReader extends AbstractReader<Boolean, Boolean> {
         return toInputValue(value);
     }
 
+    @Nullable
     public Boolean parse(MUniverse universe, ContentParser parser, String value) {
         if (value == null) {
             return null;

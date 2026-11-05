@@ -55,7 +55,6 @@ class TestValidity extends TestITimed {
         IValidity valid = new TValidity(t[0].until(t[4]));
         IValidity checked = valid.conformsTo(new TValidity(t[1].until(t[4])));
         checked.evaluate();
-        Object r = checked.boxes(Period.ALWAYS).toArray();
 
         ITimed<Valid> expected = Timed.of(
                 TimeBox.make(Valid.TRUE, Period.before(t[0])),

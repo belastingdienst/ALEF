@@ -107,11 +107,11 @@ class TestTimeLine {
 
     @Test
     void testAlign() {
-        final Time jan1_1950 = Time.fromYMD(1950, 1, 1);
-        final Time jan1_1970 = Time.fromYMD(1970, 1, 1);
-        final Time jan2_1970 = Time.fromYMD(1970, 1, 2);
-        final ITimed<Valid> aligned = reflectiveAlignWeak(TimeLine.BY_YEAR, TValidity.after(jan2_1970), Valid.TRUE);
-        assertDoesNotThrow(() -> ITimedContract.weaklyConformsTo(aligned, jan1_1950.until(jan1_1970), jan1_1970.until(jan2_1970)));
+        final Time firstJan1950 = Time.fromYMD(1950, 1, 1);
+        final Time firstJan1970 = Time.fromYMD(1970, 1, 1);
+        final Time secondJan1970 = Time.fromYMD(1970, 1, 2);
+        final ITimed<Valid> aligned = reflectiveAlignWeak(TimeLine.BY_YEAR, TValidity.after(secondJan1970), Valid.TRUE);
+        assertDoesNotThrow(() -> ITimedContract.weaklyConformsTo(aligned, firstJan1950.until(firstJan1970), firstJan1970.until(secondJan1970)));
     }
 
     @Test
