@@ -1727,7 +1727,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="6FS4Ng7yFy3">
-    <property role="TrG5h" value="check_Constructie" />
+    <property role="TrG5h" value="check_ObjectCreatie" />
     <property role="3GE5qa" value="acties" />
     <node concept="3clFbS" id="6FS4Ng7yFy4" role="18ibNy">
       <node concept="3cpWs8" id="76ic8n_BmWX" role="3cqZAp">
@@ -1739,7 +1739,7 @@
           <node concept="2OqwBi" id="76ic8n_BmWZ" role="33vP2m">
             <node concept="2OqwBi" id="76ic8n_BmX0" role="2Oq$k0">
               <node concept="1YBJjd" id="76ic8n_BmX1" role="2Oq$k0">
-                <ref role="1YBMHb" node="6FS4Ng7yFyE" resolve="constructie" />
+                <ref role="1YBMHb" node="6FS4Ng7yFyE" resolve="node" />
               </node>
               <node concept="3TrEf2" id="76ic8n_BmX2" role="2OqNvi">
                 <ref role="3Tt5mk" to="m234:7O88o1$OOoc" resolve="object" />
@@ -1760,7 +1760,7 @@
           <node concept="2OqwBi" id="76ic8n_BpPp" role="33vP2m">
             <node concept="2OqwBi" id="76ic8n_BpPq" role="2Oq$k0">
               <node concept="1YBJjd" id="76ic8n_BpPr" role="2Oq$k0">
-                <ref role="1YBMHb" node="6FS4Ng7yFyE" resolve="constructie" />
+                <ref role="1YBMHb" node="6FS4Ng7yFyE" resolve="node" />
               </node>
               <node concept="3TrEf2" id="76ic8n_BpPs" role="2OqNvi">
                 <ref role="3Tt5mk" to="m234:4czgdIbuVq3" resolve="rolSelector" />
@@ -1809,7 +1809,7 @@
               </node>
             </node>
             <node concept="1YBJjd" id="6FS4Ng7yFys" role="1urrMF">
-              <ref role="1YBMHb" node="6FS4Ng7yFyE" resolve="constructie" />
+              <ref role="1YBMHb" node="6FS4Ng7yFyE" resolve="node" />
             </node>
           </node>
         </node>
@@ -1884,7 +1884,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="6FS4Ng7yFyE" role="1YuTPh">
-      <property role="TrG5h" value="constructie" />
+      <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="m234:R9Qv6ITdW3" resolve="ObjectCreatie" />
     </node>
   </node>
