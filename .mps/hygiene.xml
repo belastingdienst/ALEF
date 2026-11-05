@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectHygiene">
-    <option name="version" value="82" />
+    <option name="version" value="86" />
     <option name="settings">
       <map>
         <entry key="beslistabelspraak.projecthygiene.BeslistabelStaatInCommentaar">
@@ -16,14 +16,6 @@
           <value>
             <SettingState>
               <option name="identifier" value="beslistabelspraak.projecthygiene.BeslistabelVersieStaatInCommentaar" />
-              <option name="checkType" value="WARNING" />
-            </SettingState>
-          </value>
-        </entry>
-        <entry key="besturingspraak.projecthygiene.RegelgroepWordtNietGebruiktInFlow">
-          <value>
-            <SettingState>
-              <option name="identifier" value="besturingspraak.projecthygiene.RegelgroepWordtNietGebruiktInFlow" />
               <option name="checkType" value="WARNING" />
             </SettingState>
           </value>
@@ -250,6 +242,22 @@
           <value>
             <SettingState>
               <option name="identifier" value="servicespraak.projecthygiene.InvoerBerichtMappingWordtNietGebruikt" />
+              <option name="checkType" value="WARNING" />
+            </SettingState>
+          </value>
+        </entry>
+        <entry key="servicespraak.projecthygiene.RegelgroepWordtNietGebruiktInService">
+          <value>
+            <SettingState>
+              <option name="identifier" value="servicespraak.projecthygiene.RegelgroepWordtNietGebruiktInService" />
+              <option name="checkType" value="WARNING" />
+            </SettingState>
+          </value>
+        </entry>
+        <entry key="servicespraak.projecthygiene.RegelgroepbundelWordtNietGebruiktInService">
+          <value>
+            <SettingState>
+              <option name="identifier" value="servicespraak.projecthygiene.RegelgroepbundelWordtNietGebruiktInService" />
               <option name="checkType" value="WARNING" />
             </SettingState>
           </value>

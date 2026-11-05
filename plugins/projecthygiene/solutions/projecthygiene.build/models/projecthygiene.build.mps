@@ -291,6 +291,9 @@
         <property role="2iUeEt" value="Belastingdienst" />
         <property role="2iUeEu" value="https://github.com/belastingdienst/ALEF" />
       </node>
+      <node concept="m$_yC" id="2qzJzSROT4G" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
+      </node>
     </node>
     <node concept="2G$12M" id="1izTxFAOy2J" role="3989C9">
       <property role="TrG5h" value="hygiene.group" />
@@ -557,6 +560,16 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7EB9w9kC8GT" role="3bR37C">
+          <node concept="3bR9La" id="7EB9w9kC8GU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6NC7D6ImuiR" role="3bR37C">
+          <node concept="3bR9La" id="6NC7D6ImuiS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
           </node>
         </node>
       </node>
