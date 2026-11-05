@@ -547,6 +547,17 @@
     <node concept="1vbSaH" id="1QUOXBmL6sE" role="1vbS8p">
       <property role="1vbSaE" value="}" />
     </node>
+    <node concept="1vbSaH" id="6Xm1_6uHDCU" role="1vbS8p" />
+    <node concept="1vbSaH" id="6Xm1_6uHDCT" role="1vbS8p">
+      <property role="1vbSaE" value=".dagsoort {" />
+    </node>
+    <node concept="1vbSaH" id="6Xm1_6uHDCS" role="1vbS8p">
+      <property role="1vbSaE" value="    color: #4080C0;" />
+    </node>
+    <node concept="1vbSaH" id="6Xm1_6uHDCR" role="1vbS8p">
+      <property role="1vbSaE" value="}" />
+    </node>
+    <node concept="1vbSaH" id="6Xm1_6uHDCK" role="1vbS8p" />
     <node concept="n94m4" id="6vy4zwDXVsw" role="lGtFl" />
   </node>
   <node concept="3$kDHP" id="9_x74dxPEH">
