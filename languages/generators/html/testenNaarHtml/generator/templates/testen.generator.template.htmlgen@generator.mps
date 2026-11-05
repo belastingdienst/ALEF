@@ -1522,6 +1522,23 @@
                 <node concept="3o6iSG" id="7bnLPF6LoNf" role="3o6s8t">
                   <property role="3o6i5n" value="de volgende situatie:" />
                 </node>
+                <node concept="1W57fq" id="6Xm1_6uCdug" role="lGtFl">
+                  <node concept="3IZrLx" id="6Xm1_6uCduh" role="3IZSJc">
+                    <node concept="3clFbS" id="6Xm1_6uCdui" role="2VODD2">
+                      <node concept="3clFbF" id="6Xm1_6uCdz8" role="3cqZAp">
+                        <node concept="2OqwBi" id="6Xm1_6uCnuq" role="3clFbG">
+                          <node concept="2OqwBi" id="6Xm1_6uCe96" role="2Oq$k0">
+                            <node concept="30H73N" id="6Xm1_6uCdz7" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="6Xm1_6uCfPQ" role="2OqNvi">
+                              <ref role="3TtcxE" to="6ldf:5EnECDuhFw0" resolve="situatie" />
+                            </node>
+                          </node>
+                          <node concept="3GX2aA" id="6Xm1_6uCt8z" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="2pNNFK" id="5dNCBVT4xpy" role="3o6s8t">
                 <property role="2pNNFO" value="div" />
@@ -1557,6 +1574,23 @@
                 <property role="2pNNFO" value="div" />
                 <node concept="3o6iSG" id="7bnLPF6Ngkq" role="3o6s8t">
                   <property role="3o6i5n" value="moet het volgende resultaat hebben:" />
+                </node>
+                <node concept="1W57fq" id="6Xm1_6uCyBR" role="lGtFl">
+                  <node concept="3IZrLx" id="6Xm1_6uCyBS" role="3IZSJc">
+                    <node concept="3clFbS" id="6Xm1_6uCyBT" role="2VODD2">
+                      <node concept="3clFbF" id="6Xm1_6uCyGJ" role="3cqZAp">
+                        <node concept="2OqwBi" id="6Xm1_6uCGjD" role="3clFbG">
+                          <node concept="2OqwBi" id="6Xm1_6uCziH" role="2Oq$k0">
+                            <node concept="30H73N" id="6Xm1_6uCyGI" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="6Xm1_6uC_1t" role="2OqNvi">
+                              <ref role="3TtcxE" to="6ldf:5EnECDuhFxb" resolve="resultaat" />
+                            </node>
+                          </node>
+                          <node concept="3GX2aA" id="6Xm1_6uCKFv" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="2pNUuL" id="5dNCBVT2wnq" role="2pNNFR">
