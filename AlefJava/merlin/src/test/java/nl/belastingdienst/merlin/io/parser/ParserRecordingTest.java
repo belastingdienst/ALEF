@@ -13,6 +13,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.parser.ParserTestUtils.asInputStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -46,7 +47,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("{\"values\":[1,2,3]}", outputStream.toString(Charset.defaultCharset()));
+        assertEqualsIgnoreSystemLineSeparator("{\"values\":[1,2,3]}", outputStream.toString(Charset.defaultCharset()));
     }
 
     @Test
@@ -80,7 +81,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><values>1</values><values>2</values><values>3</values></response>",
+        assertEqualsIgnoreSystemLineSeparator("<response><values>1</values><values>2</values><values>3</values></response>",
                 outputStream.toString(Charset.defaultCharset()));
     }
 
@@ -125,7 +126,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><request>" +
+        assertEqualsIgnoreSystemLineSeparator("<response><request>" +
                 "<KeyValuePairs><key>values</key><valueString>1</valueString></KeyValuePairs>" +
                 "<KeyValuePairs><key>values</key><valueString>2</valueString></KeyValuePairs>" +
                 "<KeyValuePairs><key>values</key><valueString>3</valueString></KeyValuePairs>" +
@@ -169,7 +170,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><entity name=\"person\"><age>21</age></entity></response>", outputStream.toString(Charset.defaultCharset()));
+        assertEqualsIgnoreSystemLineSeparator("<response><entity name=\"person\"><age>21</age></entity></response>", outputStream.toString(Charset.defaultCharset()));
     }
 
     @Test
@@ -188,7 +189,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("<response><name>reëel</name></response>", outputStream.toString(Charset.defaultCharset()));
+        assertEqualsIgnoreSystemLineSeparator("<response><name>reëel</name></response>", outputStream.toString(Charset.defaultCharset()));
     }
 
     @Test
@@ -210,7 +211,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.writeEndObject();
         generator.flush();
-        assertEquals("{\"value\":\"reëel\"}", outputStream.toString(Charset.defaultCharset()));
+        assertEqualsIgnoreSystemLineSeparator("{\"value\":\"reëel\"}", outputStream.toString(Charset.defaultCharset()));
     }
 
     @Test
@@ -270,7 +271,7 @@ class ParserRecordingTest {
         parser.endObject();
         generator.endObject();
         generator.flush();
-        assertEquals("""
+        assertEqualsIgnoreSystemLineSeparator("""
                 <test>
                   <request>
                     <items>

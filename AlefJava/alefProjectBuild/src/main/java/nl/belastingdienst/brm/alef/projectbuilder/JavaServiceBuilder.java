@@ -308,12 +308,14 @@ public class JavaServiceBuilder {
     private void extractPomFile(Path pomFile, Path pomFolder, String value, Node sourceFile) throws IOException {
         final int index = value.indexOf(FILE_IN_JAR);
         final Path jarFile = Path.of(value.substring(0, index + 4));
-        final Path jarPath = Path.of(value.substring(index + FILE_IN_JAR.length()));
-        logger.log(Level.FINE, () -> "Extract '" + jarPath + "' from '" + jarFile + "' for '" + pomFile + "'.");
+        final String jarPath = value.substring(index + FILE_IN_JAR.length());
+        final Path targetPath = Path.of(toFileSystemPath(jarPath));
 
         final String tmpFolderName = jarFile.getFileName().toString().replace(".jar", "_jar");
-        final Path targetFile = pomFolder.resolve(tmpFolderName).resolve(jarPath);
+        final Path targetFile = pomFolder.resolve(tmpFolderName).resolve(targetPath);
         final File targetFolder = targetFile.getParent().toFile();
+
+        logger.log(Level.FINE, () -> "Extract '" + jarPath + "' from '" + jarFile + "' for '" + pomFile + "' to '" + targetFile + "'.");
 
         if (!targetFolder.exists() && !targetFolder.mkdirs()) {
             throw new IOException("Cannot create target folder.");
@@ -324,6 +326,10 @@ public class JavaServiceBuilder {
         }
 
         sourceFile.setTextContent(pomFolder.resolve(Path.of(tmpFolderName)).resolve(jarPath).toAbsolutePath().toString());
+    }
+
+    private static String toFileSystemPath(final String path) {
+        return path.replace('/', File.separatorChar);
     }
 
     private static NamespaceContext namespaceContext() {
@@ -357,10 +363,13 @@ public class JavaServiceBuilder {
         };
     }
 
-    private void extractFileFromJar(final File jar, final Path source, final File target) throws IOException {
-        final byte[] contents = Platform.extractFromZip(jar, source.toString());
-        if (contents.length > 0) {
+    private void extractFileFromJar(final File jar, final String source, final File target) throws IOException {
+        final byte[] contents = Platform.extractFromZip(jar, source);
+        if (contents != null) {
             Files.write(target.toPath(), contents);
+        } else {
+            logger.log(Level.SEVERE, () -> "Extract file from jar: file: '" + source + "' not found in jar: '" + jar + "'.");
+            throw new FileNotFoundInJarException(jar, source);
         }
     }
 

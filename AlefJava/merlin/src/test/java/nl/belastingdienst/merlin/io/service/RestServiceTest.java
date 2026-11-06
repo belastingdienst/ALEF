@@ -1,10 +1,7 @@
 package nl.belastingdienst.merlin.io.service;
 
 import nl.belastingdienst.merlin.io.*;
-import nl.belastingdienst.merlin.io.adapter.readers.DecimalToRationalReader;
 import nl.belastingdienst.merlin.io.adapter.readers.StringToStringReader;
-import nl.belastingdienst.merlin.io.adapter.writers.RationalToDecimalWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import nl.belastingdienst.merlin.io.input.InputAttribute;
 import nl.belastingdienst.merlin.io.input.InputComplexProperty;
 import nl.belastingdienst.merlin.io.mocks.*;
@@ -20,6 +17,7 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static nl.belastingdienst.merlin.io.mocks.TypeContextMock.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -70,7 +68,7 @@ class RestServiceTest {
                 }""";
 
         final String actualOutput = toString(serviceResult.getOutputStream());
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -111,7 +109,7 @@ class RestServiceTest {
                   }
                 }""";
         final ServiceResult serviceResult = restService.process(toInputStream(input), input);
-        assertEquals(expected, toString(serviceResult.getOutputStream()));
+        assertEqualsIgnoreSystemLineSeparator(expected, toString(serviceResult.getOutputStream()));
     }
 
     @Test

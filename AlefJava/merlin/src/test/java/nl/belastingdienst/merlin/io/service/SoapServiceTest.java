@@ -24,6 +24,7 @@ import java.nio.charset.StandardCharsets;
 
 import static nl.belastingdienst.merlin.io.TestUtils.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 
 class SoapServiceTest {
     @Test
@@ -90,7 +91,7 @@ class SoapServiceTest {
                 """;
         final ServiceResult serviceResult = soapService.process(toInputStream(input), null);
         final String actualOutput = toString(serviceResult.getOutputStream());
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test
@@ -147,7 +148,7 @@ class SoapServiceTest {
                 """;
         final ServiceResult serviceResult = soapService.process(toInputStream(input), null);
         final String actualOutput = toString(serviceResult.getOutputStream());
-        assertEquals(expectedOutput, actualOutput);
+        assertEqualsIgnoreSystemLineSeparator(expectedOutput, actualOutput);
     }
 
     @Test

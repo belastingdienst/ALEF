@@ -11,7 +11,6 @@ import nl.belastingdienst.merlin.io.input.InputAttribute;
 import nl.belastingdienst.merlin.io.input.InputComplexProperty;
 import nl.belastingdienst.merlin.io.mocks.InputMessageMock;
 import nl.belastingdienst.merlin.io.mocks.RequestMock;
-import nl.belastingdienst.merlin.io.mocks.TypeContextMock;
 import nl.belastingdienst.merlin.io.parser.JsonParser;
 import nl.belastingdienst.merlin.io.parser.XmlParser;
 import org.junit.jupiter.api.Test;

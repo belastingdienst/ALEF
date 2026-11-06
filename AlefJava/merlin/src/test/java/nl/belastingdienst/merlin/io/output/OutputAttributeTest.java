@@ -6,7 +6,6 @@ import nl.belastingdienst.alef_runtime.time.Period;
 import nl.belastingdienst.alef_runtime.time.TimeBox;
 import nl.belastingdienst.alef_runtime.time.Timed;
 import nl.belastingdienst.merlin.io.ContentType;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.adapter.TimelineInfo;
 import nl.belastingdienst.merlin.io.adapter.writers.*;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
@@ -15,8 +14,8 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputAttributeTest extends AbstractOutputTest {
     @Test
@@ -27,7 +26,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "forName" : "testName"
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -38,7 +37,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "age" : 45
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -49,7 +48,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "bikeOwner" : true
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -60,7 +59,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "birthDate" : "2020-01-01"
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -74,7 +73,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                     "waarde" : 100
                   } ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -85,7 +84,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "salary" : 45
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -93,7 +92,7 @@ class OutputAttributeTest extends AbstractOutputTest {
         final OutputAttribute<Boolean> attribute = new OutputAttribute<>("bikeOwner", false, PersonType.bikeOwner, newBooleanToBooleanWriter());
         final String actualJson = generate(attribute, PersonType.bikeOwner, null);
         final String expectedJson = "{ }";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -102,7 +101,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 new TimedWriter<>(new TimelineInfo(true), newRationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, null);
         final String expectedJson = "{ }";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -111,7 +110,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 new TimedWriter<>(new TimelineInfo(true), newRationalToDecimalWriter()));
         final String actualJson = generate(attribute, PersonType.mortgageAmount, Timed.of(TimeBox.make(null, Period.ALWAYS)));
         final String expectedJson = "{ }";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -122,7 +121,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "bikeOwner" : null
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -134,7 +133,7 @@ class OutputAttributeTest extends AbstractOutputTest {
                 {
                   "mortgageAmount" : [ ]
                 }""";
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 
     @Test
@@ -146,6 +145,6 @@ class OutputAttributeTest extends AbstractOutputTest {
                   <bikeOwner/>
                 </root>
                 """;
-        assertEquals(expectedJson, actualJson);
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, actualJson);
     }
 }

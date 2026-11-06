@@ -1,7 +1,6 @@
 package nl.belastingdienst.merlin.io.output;
 
 import nl.belastingdienst.alef_runtime.BigRational;
-import nl.belastingdienst.merlin.io.TestUtils;
 import nl.belastingdienst.merlin.io.generator.JsonGenerator;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
@@ -9,16 +8,14 @@ import nl.belastingdienst.merlin.io.mocks.OutputMessageMock;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.FactPersonHasItems;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.ItemType;
 import nl.belastingdienst.merlin.io.mocks.TypeContextMock.PersonType;
-import nl.belastingdienst.merlin.io.adapter.writers.RationalToDecimalWriter;
-import nl.belastingdienst.merlin.io.adapter.writers.StringToStringWriter;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 import static nl.belastingdienst.merlin.io.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OutputMessageTest {
     @Test
@@ -41,7 +38,7 @@ class OutputMessageTest {
                   "address" : "testAddress",
                   "age" : 29
                 }""";
-        assertEquals(expectedJson, getActualResult(mock, alefObject));
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, getActualResult(mock, alefObject));
     }
 
     @Test
@@ -70,7 +67,7 @@ class OutputMessageTest {
                     "price" : 10
                   } ]
                 }""";
-        assertEquals(expectedJson, getActualResult(mockPerson, alefObjectPerson));
+        assertEqualsIgnoreSystemLineSeparator(expectedJson, getActualResult(mockPerson, alefObjectPerson));
     }
 
     private String getActualResult(OutputMessage mock, MObject alefObject) throws IOException {

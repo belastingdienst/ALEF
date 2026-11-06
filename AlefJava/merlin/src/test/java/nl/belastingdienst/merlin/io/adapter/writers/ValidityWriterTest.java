@@ -10,7 +10,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static nl.belastingdienst.merlin.io.AssertionsUtils.assertEqualsIgnoreSystemLineSeparator;
 
 class ValidityWriterTest {
     @Test
@@ -30,7 +30,7 @@ class ValidityWriterTest {
                     "tot" : "2020-03-03"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualsIgnoreSystemLineSeparator(expected, actual);
     }
 
     @Test
@@ -47,7 +47,7 @@ class ValidityWriterTest {
                     "tot" : "2021-02-02"
                   } ]
                 }""";
-        assertEquals(expected, actual);
+        assertEqualsIgnoreSystemLineSeparator(expected, actual);
     }
 
     private static String generateXML(IValidity values) throws IOException {

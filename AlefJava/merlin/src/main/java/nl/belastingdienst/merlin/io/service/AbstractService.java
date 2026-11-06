@@ -86,7 +86,7 @@ public abstract class AbstractService<T extends MObjectType, I> {
         generateServiceResult(generator, ALEFConstants.SERVICE_ERROR_CODE,
                 universe.getViolations().stream()
                         .map(Object::toString)
-                        .collect(Collectors.joining(System.lineSeparator())));
+                        .collect(Collectors.joining("\n")));
         generator.endObject();
     }
 
