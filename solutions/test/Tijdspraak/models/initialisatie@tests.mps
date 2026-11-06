@@ -1344,5 +1344,45 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="c_FtTpDggP">
+    <property role="TrG5h" value="VoegResultaatToeAanSituatieEnDagsoortVoorspelling" />
+    <node concept="1qefOq" id="c_FtTpDgpZ" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpDgpY" role="1qenE9">
+        <node concept="4OhPC" id="c_FtTpDgu$" role="4Ohaa" />
+        <node concept="XD5kr" id="c_FtTpDi36" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpDi37" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="LIFWc" id="c_FtTpDiz7" role="lGtFl">
+          <property role="LIFWa" value="8" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="8" />
+          <property role="p6zMs" value="8" />
+          <property role="LIFWd" value="Constant_lb25e5_b1a0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpDgKP" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpDgN9" role="1qenE9">
+        <node concept="4OhPC" id="c_FtTpDgNa" role="4Ohaa" />
+        <node concept="XD5kr" id="c_FtTpDhIv" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpDhIw" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="4Oh8J" id="c_FtTpDhWf" role="4Ohb1" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpDiMp" role="LjaKd">
+      <node concept="1MFPAf" id="c_FtTpDiMo" role="3cqZAp">
+        <ref role="1MFYO6" to="3nsx:6tO5$LrhUfa" resolve="VoegSituatieEnResultaatToe" />
+      </node>
+    </node>
+  </node>
 </model>
 
