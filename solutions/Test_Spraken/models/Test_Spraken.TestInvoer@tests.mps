@@ -676,7 +676,7 @@
       <node concept="210ffa" id="c_FtTpD$JL" role="1qenE9">
         <property role="TrG5h" value="alleen dagsoortvoorspellingen" />
         <node concept="XD5kr" id="c_FtTpD$JM" role="XDnfx">
-          <ref role="XDlx0" to="9nho:284lcsCmKVV" resolve="maandag" />
+          <ref role="XDlx0" to="9nho:284lcsCmKWg" resolve="vrijdag" />
           <node concept="2ljiaL" id="c_FtTpD$JN" role="XDl9Z">
             <property role="2ljiaM" value="1" />
             <property role="2ljiaN" value="1" />
@@ -2572,16 +2572,16 @@
           <node concept="XD5kr" id="c_FtTpGyjg" role="XDnfx">
             <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
             <node concept="2ljiaL" id="c_FtTpGyjh" role="XDl9Z">
-              <property role="2ljiaM" value="1" />
+              <property role="2ljiaM" value="2" />
               <property role="2ljiaN" value="1" />
               <property role="2ljiaO" value="2021" />
             </node>
           </node>
         </node>
         <node concept="210ffa" id="c_FtTqAXMc" role="10_$IM">
-          <property role="TrG5h" value="dagsoort  volgorde 1" />
+          <property role="TrG5h" value="dagsoort volgorde 1" />
           <node concept="XD5kr" id="c_FtTqAXMd" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
             <node concept="2ljiaL" id="c_FtTqAXMe" role="XDl9Z">
               <property role="2ljiaM" value="5" />
               <property role="2ljiaN" value="1" />
@@ -2589,7 +2589,7 @@
             </node>
           </node>
           <node concept="XD5kr" id="c_FtTqBwdw" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKW5" resolve="woensdag" />
             <node concept="2ljiaL" id="c_FtTqBwdx" role="XDl9Z">
               <property role="2ljiaM" value="6" />
               <property role="2ljiaN" value="1" />
@@ -2605,9 +2605,9 @@
           </node>
         </node>
         <node concept="210ffa" id="c_FtTqBIQY" role="10_$IM">
-          <property role="TrG5h" value="dagsoort  volgorde 2 dubbel" />
+          <property role="TrG5h" value="dagsoort volgorde 2 dubbel" />
           <node concept="XD5kr" id="c_FtTqBIR1" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKW5" resolve="woensdag" />
             <node concept="2ljiaL" id="c_FtTqBIR2" role="XDl9Z">
               <property role="2ljiaM" value="6" />
               <property role="2ljiaN" value="1" />
@@ -2615,7 +2615,7 @@
             </node>
           </node>
           <node concept="XD5kr" id="c_FtTqBIQZ" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
             <node concept="2ljiaL" id="c_FtTqBIR0" role="XDl9Z">
               <property role="2ljiaM" value="5" />
               <property role="2ljiaN" value="1" />
@@ -2633,7 +2633,7 @@
         <node concept="210ffa" id="c_FtTqDaeS" role="10_$IM">
           <property role="TrG5h" value="dagsoort volgorde 2 (+ nog andere dagsoort)" />
           <node concept="XD5kr" id="c_FtTqDaeT" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKW5" resolve="woensdag" />
             <node concept="2ljiaL" id="c_FtTqDaeU" role="XDl9Z">
               <property role="2ljiaM" value="6" />
               <property role="2ljiaN" value="1" />
@@ -2641,7 +2641,7 @@
             </node>
           </node>
           <node concept="XD5kr" id="c_FtTqDaeV" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
             <node concept="2ljiaL" id="c_FtTqDaeW" role="XDl9Z">
               <property role="2ljiaM" value="5" />
               <property role="2ljiaN" value="1" />
@@ -2649,7 +2649,7 @@
             </node>
           </node>
           <node concept="XD5kr" id="c_FtTqDe$C" role="XDnfx">
-            <ref role="XDlx0" to="9nho:284lcsCmKWv" resolve="zondag" />
+            <ref role="XDlx0" to="9nho:284lcsCmKWa" resolve="donderdag" />
             <node concept="2ljiaL" id="c_FtTqDe$D" role="XDl9Z">
               <property role="2ljiaM" value="7" />
               <property role="2ljiaN" value="1" />
