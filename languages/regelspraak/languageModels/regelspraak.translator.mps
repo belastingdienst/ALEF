@@ -4880,7 +4880,7 @@
                                 <node concept="3clFbS" id="2cSuEAOYtiu" role="1bW5cS">
                                   <node concept="3clFbF" id="2cSuEAOZN7a" role="3cqZAp">
                                     <node concept="21Gwf3" id="2cSuEAOZN78" role="3clFbG">
-                                      <ref role="3qchXZ" node="2cSuEAOFt0E" resolve="satisfies" />
+                                      <ref role="3qchXZ" node="2cSuEAOFt0E" resolve="mergeable" />
                                       <ref role="37wK5l" node="2cSuEAOHikS" resolve="mapping_nodeEigenschapInitialisatie" />
                                       <node concept="37vLTw" id="2cSuEAP0Ryo" role="37wK5m">
                                         <ref role="3cqZAo" node="2cSuEAOAaEN" resolve="m" />
@@ -5021,7 +5021,7 @@
           <node concept="10P_77" id="4q__ml6q_ne" role="3clF45" />
         </node>
         <node concept="3qapGz" id="2cSuEAOFt0E" role="jymVt">
-          <property role="TrG5h" value="satisfies" />
+          <property role="TrG5h" value="mergeable" />
           <node concept="3uibUv" id="2cSuEAOFt0F" role="1tU5fm">
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
@@ -5108,14 +5108,30 @@
                   </node>
                 </node>
                 <node concept="3cpWs6" id="2cSuEAPJ8RV" role="3cqZAp">
-                  <node concept="2YIFZM" id="2cSuEAPJM2c" role="3cqZAk">
-                    <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object)" resolve="equals" />
-                    <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
-                    <node concept="37vLTw" id="2cSuEAPK$He" role="37wK5m">
-                      <ref role="3cqZAo" node="2cSuEAPyw6F" resolve="value" />
+                  <node concept="22lmx$" id="1$53X1qtqf3" role="3cqZAk">
+                    <node concept="22lmx$" id="1$53X1qz9BX" role="3uHU7B">
+                      <node concept="3clFbC" id="1$53X1q_tjd" role="3uHU7w">
+                        <node concept="10Nm6u" id="1$53X1q_tMP" role="3uHU7w" />
+                        <node concept="37vLTw" id="1$53X1q$ZfS" role="3uHU7B">
+                          <ref role="3cqZAo" node="2cSuEAPDylF" resolve="initValue" />
+                        </node>
+                      </node>
+                      <node concept="3clFbC" id="1$53X1qv9yu" role="3uHU7B">
+                        <node concept="37vLTw" id="1$53X1quNIC" role="3uHU7B">
+                          <ref role="3cqZAo" node="2cSuEAPyw6F" resolve="value" />
+                        </node>
+                        <node concept="10Nm6u" id="1$53X1qv9Vd" role="3uHU7w" />
+                      </node>
                     </node>
-                    <node concept="37vLTw" id="2cSuEAPNnqR" role="37wK5m">
-                      <ref role="3cqZAo" node="2cSuEAPDylF" resolve="initValue" />
+                    <node concept="2YIFZM" id="2cSuEAPJM2c" role="3uHU7w">
+                      <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object)" resolve="equals" />
+                      <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+                      <node concept="37vLTw" id="2cSuEAPK$He" role="37wK5m">
+                        <ref role="3cqZAo" node="2cSuEAPyw6F" resolve="value" />
+                      </node>
+                      <node concept="37vLTw" id="2cSuEAPNnqR" role="37wK5m">
+                        <ref role="3cqZAo" node="2cSuEAPDylF" resolve="initValue" />
+                      </node>
                     </node>
                   </node>
                 </node>
