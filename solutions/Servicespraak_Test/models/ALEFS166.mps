@@ -233,6 +233,13 @@
     <node concept="2bvS6$" id="10qlxUYZKze" role="2bv6Cn">
       <property role="TrG5h" value="Kind" />
       <property role="16Ztxt" value="true" />
+      <node concept="2bv6ZS" id="1$53X1z4goV" role="2bv01j">
+        <property role="16Ztxt" value="true" />
+        <property role="TrG5h" value="nummer" />
+        <node concept="1EDDeX" id="1$53X1z4gwK" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+        </node>
+      </node>
       <node concept="2bv6ZS" id="10qlxUYZK_l" role="2bv01j">
         <property role="TrG5h" value="zakgeld" />
         <property role="16Ztxt" value="true" />
@@ -286,13 +293,19 @@
                 </node>
               </node>
             </node>
+            <node concept="21IqBs" id="1$53X1z4gZz" role="2zfbal">
+              <ref role="21IqBt" node="1$53X1z4goV" resolve="nummer" />
+              <node concept="1EQTEq" id="1$53X1z4qJt" role="21IqBv">
+                <property role="3e6Tb2" value="1" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2ljwA5" id="10qlxUYZKDJ" role="1nvPAL" />
       </node>
     </node>
     <node concept="1HSql3" id="3sbrVdeiwWe" role="1HSqhF">
-      <property role="TrG5h" value="Objectcreatie 1ste kind bij een ouder " />
+      <property role="TrG5h" value="Objectcreatie 2e kind bij een ouder " />
       <node concept="1wO7pt" id="3sbrVdeiwWf" role="kiesI">
         <node concept="2boe1W" id="3sbrVdeiwWg" role="1wO7pp">
           <node concept="2zbgrM" id="3sbrVdeiwWh" role="1wO7i6">
@@ -316,6 +329,12 @@
                     <ref role="3yS1Ki" node="3sbrVdeiwWi" resolve="Ouder" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="21IqBs" id="1$53X1z4iJR" role="2zfbal">
+              <ref role="21IqBt" node="1$53X1z4goV" resolve="nummer" />
+              <node concept="1EQTEq" id="1$53X1z4r7Z" role="21IqBv">
+                <property role="3e6Tb2" value="2" />
               </node>
             </node>
           </node>

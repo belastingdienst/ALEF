@@ -171,6 +171,14 @@
         <property id="8989128614612178052" name="isOnzijdig" index="16Ztxt" />
         <property id="8989128614612178055" name="meervoudsvorm" index="16Ztxu" />
       </concept>
+      <concept id="558527188464633210" name="gegevensspraak.structure.AbstractNumeriekeLiteral" flags="ng" index="3e5kNY">
+        <property id="558527188465081158" name="waarde" index="3e6Tb2" />
+      </concept>
+      <concept id="5917060184181247326" name="gegevensspraak.structure.NumeriekType" flags="ng" index="1EDDeX" />
+      <concept id="5917060184181965945" name="gegevensspraak.structure.NumeriekeLiteral" flags="ng" index="1EQTEq" />
+      <concept id="3257175120315973651" name="gegevensspraak.structure.AbstractNumeriekType" flags="ng" index="3GBOYg">
+        <property id="3257175120318322318" name="decimalen" index="3GST$d" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -239,6 +247,13 @@
         <property role="TrG5h" value="naam" />
         <node concept="THod0" id="AkS0UnYpKS" role="1EDDcc" />
       </node>
+      <node concept="2bv6ZS" id="1$53X1zgTLO" role="2bv01j">
+        <property role="16Ztxt" value="true" />
+        <property role="TrG5h" value="nummer" />
+        <node concept="1EDDeX" id="1$53X1zgTLT" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+        </node>
+      </node>
     </node>
     <node concept="1uxNW$" id="AkS0UnYpHm" role="2bv6Cn" />
     <node concept="2mG0Cb" id="AkS0UnYqFk" role="2bv6Cn">
@@ -277,6 +292,12 @@
                     <property role="2JwNin" value="Extra" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="21IqBs" id="1$53X1zgTPw" role="2zfbal">
+              <ref role="21IqBt" node="1$53X1zgTLO" resolve="nummer" />
+              <node concept="1EQTEq" id="1$53X1zgTQ$" role="21IqBv">
+                <property role="3e6Tb2" value="2" />
               </node>
             </node>
           </node>
@@ -357,6 +378,12 @@
             <property role="2JwNin" value="Extra" />
           </node>
         </node>
+        <node concept="3_ceKt" id="1$53X1zgTM$" role="4OhPJ">
+          <ref role="3_ceKs" node="1$53X1zgTLO" resolve="nummer" />
+          <node concept="1EQTEq" id="1$53X1zgTN4" role="3_ceKu">
+            <property role="3e6Tb2" value="1" />
+          </node>
+        </node>
       </node>
       <node concept="4Oh8J" id="AkS0UnYrNT" role="4Ohb1">
         <property role="3bjIlU" value="true" />
@@ -423,6 +450,9 @@
     <node concept="1IH5HN" id="AkS0UnYtSI" role="2785Bw">
       <ref role="1IJyWM" node="AkS0UnYpKC" resolve="naam" />
     </node>
+    <node concept="1IH5HN" id="1$53X1zgU3I" role="2785Bw">
+      <ref role="1IJyWM" node="1$53X1zgTLO" resolve="nummer" />
+    </node>
   </node>
   <node concept="2kTx5H" id="AkS0UnYwdk">
     <property role="TrG5h" value="uniciteitobjectcreatieservice" />
@@ -471,6 +501,10 @@
                 <node concept="3dWX$1" id="AkS0UnYxPW" role="27HnPe">
                   <property role="3dWX$t" value="Extra" />
                   <ref role="3dWXzV" node="AkS0UnYtSI" resolve="naam" />
+                </node>
+                <node concept="3dWX$1" id="1$53X1zgU4g" role="27HnPe">
+                  <property role="3dWX$t" value="1" />
+                  <ref role="3dWXzV" node="1$53X1zgU3I" resolve="nummer" />
                 </node>
               </node>
             </node>

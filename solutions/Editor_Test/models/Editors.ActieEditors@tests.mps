@@ -459,7 +459,7 @@
     <property role="TrG5h" value="Actie_FeitCreatie" />
     <node concept="3clFbS" id="13suu8USfYm" role="LjaKd">
       <node concept="2TK7Tu" id="13suu8USfYA" role="3cqZAp">
-        <property role="2TTd_B" value="feitcreatie" />
+        <property role="2TTd_B" value="Feitcreatie" />
       </node>
       <node concept="2HxZob" id="13suu8USfYz" role="3cqZAp">
         <node concept="1iFQzN" id="13suu8USfY$" role="3iKnsn">
