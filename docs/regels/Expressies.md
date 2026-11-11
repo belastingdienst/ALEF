@@ -35,7 +35,7 @@ Attributen in een reeks van teksten en waarden worden in dat geval omringd door 
 
 ## Datum-tijd expressies
 
-Datum-tijd expressies gaan over rekenen met tijdseenheden. Dat betekent iets anders dan [tijdsafhankelijke expressies](#tijdsafhankelijke-expressies). Meerdere soorten expressies kunnen tijdsafhankelijk zijn.
+[Datum-tijd expressies](Expressies_Datum.md) gaan over rekenen met tijdseenheden. Dat betekent iets anders dan [tijdsafhankelijke expressies](#tijdsafhankelijke-expressies).
 
 ## Tijdsafhankelijke expressies
 
@@ -70,7 +70,7 @@ In die berekeningen wordt de omrekenfactor bepaald door per maand of jaar het aa
 ![Voorbeeld van omrekenen euro/maand naar euro/jaar](img/Expressies_Datum_omrekenen_2.png)
 
 De gebroken periode waarover het tijdsevenredig deel berekend moet worden wordt bepaald door een tijdsafhankelijke conditie bij deze expressie.
-Die begint met 'gedurende de tijd dat'.
+Die begint met 'gedurende de tijd dat'. Condities staan in het [voorwaardendeel](Voorwaardendeel.md) van de regel.
 Er moet ook worden gespecificeerd voor welke periode een tijdsevenredig deel moet worden berekend.
 
 ### Aggregeren in de tijd
@@ -80,7 +80,7 @@ Dit moet toegepast worden op een attribuut met numeriek datatype met eenheid per
 Het is mogelijk om aan de expressie een tijdafhankelijke conditie toe te voegen. Sterker nog, zonder conditie is er geen grens aan de periode waarover gesommeerd wordt.
 Voor meer uitleg over aggegraties en condities, zie ['Selectie expressies'](Expressies_Selectie.md)
 In dat geval worden voor het resultaat van de expressie uitsluitend waarden gebruikt die van toepassing zijn in de periode zoals die in de tijdsafhankelijke conditie is gespecificeerd.
-N.B. De conditie heeft in dit geval alleen betrekking op de expressie en is geen onderdeel van het voorwaardendeel van de regel.
+N.B. De conditie heeft in dit geval alleen betrekking op de expressie en is geen onderdeel van het [voorwaardendeel](Voorwaardendeel.md) van de regel.
 De regel wordt overzichtelijker door de conditie die bij de aggegratie hoort in haakjes te plaatsen. Dan wordt deze makkelijker de onderscheiden van de conditie van de regel zelf (als die wordt gebruikt).
 
 ### Perioden in expressies

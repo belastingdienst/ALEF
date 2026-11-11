@@ -1,7 +1,7 @@
-## Variabelendeel regel
+# Variabelendeel regel
 
 Doel van het gebruik van variabelen is het vergroten van de leesbaarheid van de regel.
-Variabelen worden standaard aangeduid met hoofdletters ("A", "B", etc.).   
+Variabelen worden standaard aangeduid met hoofdletters ("A", "B", etc.).
 Deze variabelen worden opgenomen in een tekstblok onder de regel dat begint met "Daarbij geldt:".
 
 Voorbeeld:

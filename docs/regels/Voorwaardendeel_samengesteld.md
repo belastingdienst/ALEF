@@ -15,9 +15,10 @@ Hiervoor wordt de vragende vorm van het predicaat gebruikt.
 
 ## Samengestelde conditie
 
-Een samengestelde conditie bestaat uit een lijst met meerdere condities. De lijst met condities wordt gespecificeerd door gebruik te maken van bullets (het symbool **•** ) met een symbool per predicaat.
+Een samengestelde conditie bestaat uit een lijst met meerdere condities. De lijst met condities wordt gespecificeerd door gebruik te maken van bullets (het symbool **&bull;** ), &#233;&#233;n per item in de lijst.
 
 Dit is een regel met een samengestelde voorwaarde die betrekking heeft op verschillende attributen/rollen/kenmerken/expressies:
+
 ![Voorwaardendeel met 'er'](img/Voorwaarden_Er.png)
 
 Verder moet gespecificeerd worden hoeveel van deze condities waar moeten zijn om de samengestelde conditie waar te laten zijn.
@@ -42,14 +43,18 @@ De kwantificatie wordt op de volgende manier gebruikt bij een samengestelde cond
 
 Dit is een regel met een samengestelde voorwaarde die controleert of een attribuut aan voorwaarden voldoet.
 Aan de waarde van 1 attribuut worden 1 of meer voorwaarden gesteld.
+
 ![Voorwaardendeel met voorwaarden aan 1 attribuut ](img/Voorwaarden_Attribuut.png)
 
 Dit zijn voorbeelden met samengestelde voorwaarden die controleren of de rol van het onderwerp van regel aan voorwaarde voldoet
 Aan een rol worden 1 of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
+
 ![Voorwaardendeel met voorwaarden aan rol passagier in onderwerp regel](img/Voorwaarden_RolInOnderwerp1.png)
 
 Voorbeelden met voorwaarden aan rol 'reis' in onderwerp van een regel:  
+
 ![Voorwaardendeel met voorwaarden aan rol reis in onderwerp regel](img/Voorwaarden_RolInOnderwerp2.png)
+
 ![Voorwaardendeel met voorwaarden aan rol reis in onderwerp regel](img/Voorwaarden_RolInOnderwerp3.png)
 
 Let op: Omdat het objecttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is, zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
