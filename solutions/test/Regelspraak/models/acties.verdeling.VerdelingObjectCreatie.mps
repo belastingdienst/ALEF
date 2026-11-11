@@ -10,6 +10,10 @@
       <concept id="4485080112264973245" name="contexts.structure.Witruimte" flags="ng" index="1uxNW$" />
     </language>
     <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
+      <concept id="3534427357911017256" name="regelspraak.structure.EigenschapInitialisatie" flags="ng" index="21IqBs">
+        <reference id="3534427357911017257" name="eigenschap" index="21IqBt" />
+        <child id="3534427357911017259" name="waarde" index="21IqBv" />
+      </concept>
       <concept id="9068608409355101349" name="regelspraak.structure.Afronding" flags="ng" index="23ogZD" />
       <concept id="653687101152476296" name="regelspraak.structure.ActieIndienVoorwaarde" flags="ng" index="2boe1W">
         <child id="1480463129960504793" name="actie" index="1wO7i6" />
@@ -30,7 +34,9 @@
         <child id="462670810444409445" name="ontvanger" index="2u49r3" />
         <child id="4737161987634769871" name="verdeler" index="3HMuxP" />
       </concept>
-      <concept id="993564824856485635" name="regelspraak.structure.ObjectCreatie" flags="ng" index="2zbgrM" />
+      <concept id="993564824856485635" name="regelspraak.structure.ObjectCreatie" flags="ng" index="2zbgrM">
+        <child id="993564824857570148" name="init" index="2zfbal" />
+      </concept>
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
       </concept>
@@ -276,6 +282,13 @@
     <node concept="1uxNW$" id="AkS0UnUHvS" role="2bv6Cn" />
     <node concept="2bvS6$" id="AkS0UnUHxR" role="2bv6Cn">
       <property role="TrG5h" value="Ontvanger" />
+      <node concept="2bv6ZS" id="1$53X1_Z8Rx" role="2bv01j">
+        <property role="16Ztxt" value="true" />
+        <property role="TrG5h" value="nummer" />
+        <node concept="1EDDeX" id="1$53X1_Z8RC" role="1EDDcc">
+          <property role="3GST$d" value="0" />
+        </node>
+      </node>
       <node concept="2bv6ZS" id="AkS0UnUHyl" role="2bv01j">
         <property role="TrG5h" value="ontvangen bedrag" />
         <property role="16Ztxt" value="true" />
@@ -312,6 +325,12 @@
             </node>
             <node concept="ean_g" id="AkS0UnUIht" role="eaaoM">
               <ref role="Qu8KH" node="AkS0UnUHzr" resolve="ontvanger" />
+            </node>
+            <node concept="21IqBs" id="1$53X1_Z8Qm" role="2zfbal">
+              <ref role="21IqBt" node="1$53X1_Z8Rx" resolve="nummer" />
+              <node concept="1EQTEq" id="1$53X1_Z8Zh" role="21IqBv">
+                <property role="3e6Tb2" value="1234" />
+              </node>
             </node>
           </node>
         </node>
@@ -415,10 +434,22 @@
       <node concept="4OhPC" id="AkS0UnUJiL" role="4Ohaa">
         <property role="TrG5h" value="ontvanger 1" />
         <ref role="4OhPH" node="AkS0UnUHxR" resolve="Ontvanger" />
+        <node concept="3_ceKt" id="1$53X1_Z972" role="4OhPJ">
+          <ref role="3_ceKs" node="1$53X1_Z8Rx" resolve="nummer" />
+          <node concept="1EQTEq" id="1$53X1_Z973" role="3_ceKu">
+            <property role="3e6Tb2" value="1" />
+          </node>
+        </node>
       </node>
       <node concept="4OhPC" id="AkS0UnUJiS" role="4Ohaa">
         <property role="TrG5h" value="ontvanger 2" />
         <ref role="4OhPH" node="AkS0UnUHxR" resolve="Ontvanger" />
+        <node concept="3_ceKt" id="1$53X1_Z98P" role="4OhPJ">
+          <ref role="3_ceKs" node="1$53X1_Z8Rx" resolve="nummer" />
+          <node concept="1EQTEq" id="1$53X1_Z98Q" role="3_ceKu">
+            <property role="3e6Tb2" value="2" />
+          </node>
+        </node>
       </node>
       <node concept="4Oh8J" id="AkS0UnUJmG" role="4Ohb1">
         <ref role="3teO_M" node="AkS0UnUJiL" resolve="ontvanger 1" />
@@ -490,6 +521,9 @@
   <node concept="2785BV" id="AkS0UnVVx8">
     <property role="TrG5h" value="Invoerbericht__spontvanger" />
     <ref role="1Ig6_r" node="AkS0UnUHxR" resolve="Ontvanger" />
+    <node concept="1IH5HN" id="1$53X1_Z9qL" role="2785Bw">
+      <ref role="1IJyWM" node="1$53X1_Z8Rx" resolve="nummer" />
+    </node>
   </node>
   <node concept="2785BU" id="AkS0UnVWgC">
     <property role="TrG5h" value="Uitvoerbericht__spontvanger" />
@@ -581,8 +615,18 @@
             </node>
             <node concept="3dWXw4" id="AkS0UnX8_c" role="27HnPe">
               <ref role="3dWXzV" node="AkS0UnX8pr" resolve="ontvangerInvoer" />
-              <node concept="27HnP5" id="AkS0UnX8_n" role="27HnP2" />
-              <node concept="27HnP5" id="AkS0UnX8_y" role="27HnP2" />
+              <node concept="27HnP5" id="AkS0UnX8_n" role="27HnP2">
+                <node concept="3dWX$1" id="1$53X1_Z9rb" role="27HnPe">
+                  <property role="3dWX$t" value="1" />
+                  <ref role="3dWXzV" node="1$53X1_Z9qL" resolve="nummer" />
+                </node>
+              </node>
+              <node concept="27HnP5" id="AkS0UnX8_y" role="27HnP2">
+                <node concept="3dWX$1" id="1$53X1_Z9rI" role="27HnPe">
+                  <property role="3dWX$t" value="2" />
+                  <ref role="3dWXzV" node="1$53X1_Z9qL" resolve="nummer" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
