@@ -1,6 +1,7 @@
 # Acties
 
 Dit zijn uitdrukkingen waarmee de actie in het [resultaatdeel](OpbouwRegelSpraakRegel.md) wordt geformuleerd.
+Het resultaatdeel van een regel is verplicht.
 
 In onderstaande regel is de actie 'moet berekend worden als' (Gelijkstelling). In het actiedeel staat een numerieke [expressie](../regels/Expressies.md) 'belasting op basis van afstand plus belasting op basis van reisduur'.
 
@@ -25,9 +26,6 @@ De objectcreatie is de actie waarmee een voorkomen van een object wordt gecreëe
 * [Verdeling](../regels/Actie_Verdeling.md)   
 Verdeling is de actie voor het verdelen van een te verdelen hoeveelheid over een aantal Ontvangers.
 
+## Rekenvolgorde
 
-
-
-
-
-
+H11 uit specificaties
