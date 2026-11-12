@@ -1,13 +1,16 @@
 # Consistentieregel
 
-De ConsistentieRegel is de actie voor het specificeren van een regel om te controleren of gegevens een juiste/geldige waarde hebben.
-
+Consistentieregels zijn regels die niet bedoeld zijn om aan een attribuut of een kenmerk een waarde te geven, maar om te controleren of de waarde van een attribuut, rol of instantie aan bepaalde criteria voldoet.
+Criteria voor consistentieregels zijn [condities](Voorwaardendeel.md). Ze worden geschreven als een verplichting met het woord "**moeten**".
+Als er niet aan de criteria wordt voldaan, dan zal een consistentieregel als resultaat *niet waar*, oftewel *inconsistent*, opleveren. Dit resultaat kan dan in andere regels gebruikt worden.
 Consistentiecontroles worden uitgevoerd op invoerwaarden en worden gebruikt voor acceptatieservices.
 
-Opties voor het opgeven van criteria waarop gecontroleerd moet worden:
+Er zijn twee opties voor het opgeven van criteria waarop gecontroleerd moet worden:
 
 * attribuut moet aan criterium voldoen.
 * rol of expressie moet aan criterium voldoen.
+
+In consistentieregels kan ook de uniciteit van instanties gecontroleerd worden, oftewel of waarden in  identificerende velden maar een keer voorkomen.
 
 ## variant: attribuut moet aan criterium voldoen
 
@@ -15,14 +18,13 @@ Het resultaatdeel van de regel met een consistentiecontrole voor een attribuut z
 
 ![Consistentieregel: attribuut moet aan criterium voldoen](../img/ALEF200_ConsistentieregelKaal.png)
 
-Ook bij deze actie geldt dat een voorwaardendeel kan worden opgenomen waarin wordt bepaald 
-wanneer de actie (consistentiecontrole) moet worden uitgevoerd.
+Ook bij deze actie geldt dat een voorwaardendeel kan worden opgenomen waarin wordt bepaald wanneer de actie (consistentiecontrole) moet worden uitgevoerd.
 
 ![Consistentieregel: attribuut moet aan criterium voldoen](../img/ALEF200_Consistentieregel.png)
 
 ## variant: rol of expressie moet aan criterium voldoen
 
-Actie waarmee diverse soorten consistentiecontroles op objecten en rollen kunnen worden geformuleerd. 
+Actie waarmee diverse soorten consistentiecontroles op objecten en rollen kunnen worden geformuleerd.
 
 Bijvoorbeeld:
 
@@ -43,7 +45,7 @@ Uniciteitschecks zijn alleen nodig als dat niet het geval is. De objecten zijn d
 Om dan te kunnen achterhalen dat twee representaties over hetzelfde werkelijke object gaan is er een identificerend attribuut nodig waarvan de uniciteit per werkelijk object gewaarborgd wordt.
 Daar bestaat meestal een identificerend nummer voor in een veld met Datatype *numeriek* of *tekst*. Daar kan deze controle over worden uitgevoerd.
 Daarvoor is het speciale predicaat is **uniek zijn**.
-Met dit predicaat kan voor één of een combinatie van attributen gecontroleerd worden of deze over de instanties heen dezelfde waarde hebben.
+Met dit predicaat kan voor &#233;&#233;n of een combinatie van attributen gecontroleerd worden of deze over de instanties heen dezelfde waarde hebben.
 Dit noemen we *uniciteit*. Dit predicaat is *waar* als Is de waarde van een attribuut of combinatie van attributen uniek over instanties heen.
 Dit predicaat kan alleen gebruikt worden in [consistentieregels](Actie_Consistentieregel.md), en alleen in een enkel criterium (dus niet in een samengesteld criterium).
 De attributen waarvan de waardes worden vergeleken moeten hierbij gespecificeerd worden.

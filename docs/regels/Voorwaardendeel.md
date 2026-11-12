@@ -13,10 +13,24 @@ Het woord "**indien**" wordt voor de onderwerpexpressie gezet als de conditie wo
 ![Voorwaardendeel met lege expressie](img/Voorwaarden_Expressie.png)
 
 Dit is de meest generieke manier om een voorwaardendeel te construeren.
+Elementaire voorwaarden hebben maar één enkele conditie passen aan het uiteinde van de zin in Regelspraak.
+Bij samengestelde voorwaarden maakt Regelspraak standaard gebruik van een lijstweergave. Zie [samengestelde voorwaarden](Voorwaardendeel_samengesteld.md).
 Predicaten hebben een vragende vorm (bv. gelijk is/zijn aan) en een stellende vorm (bv. is/zijn gelijk aan).
 De vragende vorm staat vóór een predicaat. De stellende vorm wordt ná het werkwoord ingevoegd.
-Enkelvoudige predicaten passen aan het uiteinde van de zin in Regelspraak.
-Bij meervoudige predicaten maakt Regelspraak standaard gebruik van een lijstweergave. Zie [samengestelde voorwaarden](Voorwaardendeel_samengesteld.md).
+
+### Enkelvoudig en meervoudige voorwaarden
+
+Een enkelvoudige voorwaarde controleert slechts één enkele instantie terwijl een meervoudige voorwaarde meerdere instanties controleert.
+Bij een meervoudige voorwaarde dient ook de onderwerpexpressie meervoudig te zijn, en moet het voorafgegaan worden door een *kwantificatie*.
+Dat kan een rol zijn, of een attribuut van een object met rol die de relatie met het onderwerp aangeeft.
+
+Dit zijn de kwantificaties die gebruikt kunnen worden:
+
+* **alle**
+* **geen**
+* **ten minste** (*één, twee, drie, vier of meer* (genoteerd als getal))
+* **ten hoogste** (*één, twee, drie, vier of meer* (genoteerd als getal))
+* **precies** (*één, twee, drie, vier of meer* (genoteerd als getal))
 
 ### Regels met criterium
 

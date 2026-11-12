@@ -57,6 +57,7 @@ Voor meer informatie, zie de pagina over het [*voorwaardendeel*](Voorwaardendeel
 ### Variabelendeel van regelversie
 
 Binnen een regel kunnen variabelen worden gedefinieerd die alleen binnen die regel gebruikt worden.
+Hiermee kan ook een bepaalde volgorde van berekeningen afgedwongen worden.
 Deze [variabelen](Variabelendeel.md) worden opgenomen in een tekstblok onder de regel dat begint met "Daarbij geldt:". Dat is het laatste deel van een regel in RegelSpraak.
 
 ![Variabelendeel](../img/ALEF200_RegelversieVariabelendeel.png)

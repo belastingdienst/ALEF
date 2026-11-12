@@ -8,16 +8,18 @@ Als de conditie gebruikt wordt als *criterium*, dan wordt het woord **moet** tus
 
 ## Enkele conditie
 
-Bij een enkele conditie is er slechts &#233;&#233;n predicaat.
+Bij een enkele conditie is er slechts één predicaat.
 Hiervoor wordt de vragende vorm van het predicaat gebruikt.
 
 ![Voorwaardendeel met lege expressie](img/Voorwaarden_Expressie.png)
 
 ## Samengestelde conditie
 
-Een samengestelde conditie bestaat uit een lijst met meerdere condities. De lijst met condities wordt gespecificeerd door gebruik te maken van bullets (het symbool **&bull;** ), &#233;&#233;n per item in de lijst.
+Een samengestelde conditie bestaat uit een lijst met meerdere condities. De lijst met condities wordt gespecificeerd door gebruik te maken van bullets (het symbool **&bull;** ), één per item in de lijst.
+De lijst moet voorafgegaan worden door de woorden **er aan \<kwantificatie> volgende voorwaarden wordt voldaan:** . Of, als de condities slechts één attribuut controleren, dan staat er **\<expressie> aan \<kwantificatie> volgende voorwaarden voldoet:** .
+De samengestelde schrijfwijze van de condities moet hier gebruikt worden. Deze schrijfwijze is een stellende vorm, dus het werkwoord staat vooraan.
 
-Dit is een regel met een samengestelde voorwaarde die betrekking heeft op verschillende attributen/rollen/kenmerken/expressies:
+Hier volgt een voorbeeld met een samengestelde voorwaarde die betrekking heeft op verschillende attributen/rollen/kenmerken/expressies:
 
 ![Voorwaardendeel met 'er'](img/Voorwaarden_Er.png)
 
@@ -26,9 +28,9 @@ Dit doen we door middel van het toevoegen van een kwantificatie. De volgende kwa
 
 * **alle** – aan alle condities in de lijst moet voldaan zijn om aan de samengestelde conditie  te voldoen;
 * **geen van de** – aan geen van de condities in de lijst mag voldaan zijn om aan de samengestelde conditie te voldoen;
-* **ten minste** (*&#233;&#233;n, twee, drie, vier of meer* (genoteerd als getal)) **van de** – aan ten minste het gespecificeerde aantal condities in de lijst moet voldaan zijn om aan de samengestelde conditie te voldoen;
-* **ten hoogste** (*&#233;&#233;n, twee, drie, vier of meer* (genoteerd als getal)) **van de** – aan hoogstens het gespecificeerde aantal condities in de lijst mag voldaan zijn om aan de samengestelde conditie te voldoen
-* **precies** (*&#233;&#233;n, twee, drie, vier of meer* (genoteerd als getal)) **van de** – aan precies het gespecificeerde getal aan aantal condities in de lijst moet voldaan zijn om aan de samengestelde conditie te voldoen
+* **ten minste** (*één, twee, drie, vier of meer* (genoteerd als getal)) **van de** – aan ten minste het gespecificeerde aantal condities in de lijst moet voldaan zijn om aan de samengestelde conditie te voldoen;
+* **ten hoogste** (*één, twee, drie, vier of meer* (genoteerd als getal)) **van de** – aan hoogstens het gespecificeerde aantal condities in de lijst mag voldaan zijn om aan de samengestelde conditie te voldoen
+* **precies** (*één, twee, drie, vier of meer* (genoteerd als getal)) **van de** – aan precies het gespecificeerde getal aan aantal condities in de lijst moet voldaan zijn om aan de samengestelde conditie te voldoen
 
 ### Kwantificaties in samengestelde condities
 
@@ -59,7 +61,7 @@ Voorbeelden met voorwaarden aan rol 'reis' in onderwerp van een regel:
 
 Let op: Omdat het objecttype natuurlijk persoon [**bezield**](../gegevens/objecttype.md) is, zijn de rollen passagier en reis verkort aangeduid met 'hij' en 'zijn'.
 
-Er is ook de optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan deze rollen worden dan ook &#233;&#233;n of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
+Er is ook de optie om voorwaarden te stellen aan andere rollen dan die uit het onderwerp. Aan deze rollen worden dan ook één of meer voorwaarden gesteld. Dit kunnen voorwaarden met betrekking tot zowel attributen als kenmerken zijn.
 ![Voorwaardendeel met voorwaarden aan rol passagier](img/Voorwaarden_Rol.png)
 
 ## Verkorte weergave in plaats van lijstweergave
@@ -74,7 +76,7 @@ Omdat het woordt **en** gebruikt wordt, is de betekenis gelijk aan **moet aan al
 
 ## Geneste lijst condities
 
-Binnen &#233;&#233;n item in de lijst van samengestelde condities kan nog een lijst geplaatst worden. Dan staat daar **moet aan ... voorwaarden voldoen**, met daaronder de lijst met bullets en condities. De bullets zien er per niveau anders uit.
+Binnen één item in de lijst van samengestelde condities kan nog een lijst geplaatst worden. Dan staat daar **moet aan ... voorwaarden voldoen**, met daaronder de lijst met bullets en condities. De bullets zien er per niveau anders uit.
 Een lijst van condities kan [verkort weergegeven](#verkorte-weergave-in-plaats-van-lijstweergave) worden in de overkoepelende lijst. Het onderwerp van de predicaten moet dan hezelfde zijn.
 Voor de condities in de lijst wordt de stellende vorm van het predicaat gebruikt.
 
