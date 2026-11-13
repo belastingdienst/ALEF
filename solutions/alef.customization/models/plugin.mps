@@ -11,12 +11,12 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
   </languages>
   <imports>
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
@@ -438,7 +438,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -446,13 +445,10 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -1549,14 +1545,113 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="41pt6YYEdEH" role="lGtFl">
-      <node concept="TZ5HA" id="4MLP1Tsftob" role="TZ5H$">
-        <node concept="1dT_AC" id="4MLP1Tsftoc" role="1dT_Ay">
-          <property role="1dT_AB" value="Deze checker wordt ten tijde van een modelcheck aangeroepen voor alle modellen in een project," />
+      <node concept="1PaTwC" id="6iZkeYks3Q7" role="1Vez_I">
+        <node concept="3oM_SD" id="6iZkeYks3Q8" role="1PaTwD">
+          <property role="3oM_SC" value="Deze" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Q9" role="1PaTwD">
+          <property role="3oM_SC" value="checker" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qa" role="1PaTwD">
+          <property role="3oM_SC" value="wordt" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qb" role="1PaTwD">
+          <property role="3oM_SC" value="ten" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qc" role="1PaTwD">
+          <property role="3oM_SC" value="tijde" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qd" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qe" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qf" role="1PaTwD">
+          <property role="3oM_SC" value="modelcheck" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qg" role="1PaTwD">
+          <property role="3oM_SC" value="aangeroepen" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qh" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qi" role="1PaTwD">
+          <property role="3oM_SC" value="alle" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qj" role="1PaTwD">
+          <property role="3oM_SC" value="modellen" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qk" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Ql" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qm" role="1PaTwD">
+          <property role="3oM_SC" value="project," />
         </node>
       </node>
-      <node concept="TZ5HA" id="4MLP1Tsftod" role="TZ5H$">
-        <node concept="1dT_AC" id="4MLP1Tsftoe" role="1dT_Ay">
-          <property role="1dT_AB" value="en produceert een error op elk model dat afhankelijk is van andere modellen die `do not generate` aan hebben staan." />
+      <node concept="1PaTwC" id="6iZkeYks3Qn" role="1Vez_I">
+        <node concept="3oM_SD" id="6iZkeYks3Qo" role="1PaTwD">
+          <property role="3oM_SC" value="en" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qp" role="1PaTwD">
+          <property role="3oM_SC" value="produceert" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qq" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qr" role="1PaTwD">
+          <property role="3oM_SC" value="error" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qs" role="1PaTwD">
+          <property role="3oM_SC" value="op" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qt" role="1PaTwD">
+          <property role="3oM_SC" value="elk" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qu" role="1PaTwD">
+          <property role="3oM_SC" value="model" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qv" role="1PaTwD">
+          <property role="3oM_SC" value="dat" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qw" role="1PaTwD">
+          <property role="3oM_SC" value="afhankelijk" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qx" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qy" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Qz" role="1PaTwD">
+          <property role="3oM_SC" value="andere" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Q$" role="1PaTwD">
+          <property role="3oM_SC" value="modellen" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3Q_" role="1PaTwD">
+          <property role="3oM_SC" value="die" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3QA" role="1PaTwD">
+          <property role="3oM_SC" value="`do" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3QB" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3QC" role="1PaTwD">
+          <property role="3oM_SC" value="generate`" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3QD" role="1PaTwD">
+          <property role="3oM_SC" value="aan" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3QE" role="1PaTwD">
+          <property role="3oM_SC" value="hebben" />
+        </node>
+        <node concept="3oM_SD" id="6iZkeYks3QF" role="1PaTwD">
+          <property role="3oM_SC" value="staan." />
         </node>
       </node>
     </node>
@@ -6101,9 +6196,18 @@
         <node concept="10P_77" id="wAUnMydEEM" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="4PYnLjVsA4V" role="lGtFl">
-        <node concept="TZ5HA" id="4PYnLjVsA4W" role="TZ5H$">
-          <node concept="1dT_AC" id="4PYnLjVsA4X" role="1dT_Ay">
-            <property role="1dT_AB" value="Modified version from: IdeCommandUtil::make" />
+        <node concept="1PaTwC" id="6iZkeYks3QG" role="1Vez_I">
+          <node concept="3oM_SD" id="6iZkeYks3QH" role="1PaTwD">
+            <property role="3oM_SC" value="Modified" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QI" role="1PaTwD">
+            <property role="3oM_SC" value="version" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QJ" role="1PaTwD">
+            <property role="3oM_SC" value="from:" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QK" role="1PaTwD">
+            <property role="3oM_SC" value="IdeCommandUtil::make" />
           </node>
         </node>
       </node>
@@ -6310,19 +6414,89 @@
       <node concept="10P_77" id="6a_xAytqh6B" role="3clF45" />
       <node concept="3Tm1VV" id="6a_xAytqf7K" role="1B3o_S" />
       <node concept="P$JXv" id="6a_xAytqzjH" role="lGtFl">
-        <node concept="TZ5HA" id="6a_xAytqzjI" role="TZ5H$">
-          <node concept="1dT_AC" id="6a_xAytqzjJ" role="1dT_Ay">
-            <property role="1dT_AB" value="Check if the user is running AlefStudio or is developing ALEF in MPS." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="6a_xAytqzjK" role="3nqlJM">
-          <property role="TUZQ4" value="Project to check" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="6a_xAytqzjM" role="zr_5Q">
             <ref role="zr_51" node="6a_xAytqlvr" resolve="project" />
           </node>
+          <node concept="1PaTwC" id="6iZkeYks3QZ" role="1Vez_I">
+            <node concept="3oM_SD" id="6iZkeYks3R0" role="1PaTwD">
+              <property role="3oM_SC" value="Project" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R1" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R2" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="6a_xAytqzjN" role="3nqlJM">
-          <property role="x79VB" value="True when the user is using AlefStudio" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="6iZkeYks3R3" role="1Vez_I">
+            <node concept="3oM_SD" id="6iZkeYks3R4" role="1PaTwD">
+              <property role="3oM_SC" value="True" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R5" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R6" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R7" role="1PaTwD">
+              <property role="3oM_SC" value="user" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R8" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3R9" role="1PaTwD">
+              <property role="3oM_SC" value="using" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks3Ra" role="1PaTwD">
+              <property role="3oM_SC" value="AlefStudio" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="6iZkeYks3QL" role="1Vez_I">
+          <node concept="3oM_SD" id="6iZkeYks3QM" role="1PaTwD">
+            <property role="3oM_SC" value="Check" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QN" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QO" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QP" role="1PaTwD">
+            <property role="3oM_SC" value="user" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QQ" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QR" role="1PaTwD">
+            <property role="3oM_SC" value="running" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QS" role="1PaTwD">
+            <property role="3oM_SC" value="AlefStudio" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QT" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QU" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QV" role="1PaTwD">
+            <property role="3oM_SC" value="developing" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QW" role="1PaTwD">
+            <property role="3oM_SC" value="ALEF" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QX" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks3QY" role="1PaTwD">
+            <property role="3oM_SC" value="MPS." />
+          </node>
         </node>
       </node>
     </node>

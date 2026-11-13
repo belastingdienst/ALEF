@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -126,15 +126,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -392,13 +388,27 @@
         </node>
       </node>
       <node concept="P$JXv" id="5nLb9DvFWIO" role="lGtFl">
-        <node concept="TZ5HA" id="5nLb9DvFWIP" role="TZ5H$">
-          <node concept="1dT_AC" id="5nLb9DvFWIQ" role="1dT_Ay">
-            <property role="1dT_AB" value="Overgenomen uit @SBaseLanguageTextGen" />
+        <node concept="x79VA" id="5nLb9DvFWIR" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="6iZkeYks2VS" role="1Vez_I">
+            <node concept="3oM_SD" id="6iZkeYks2VT" role="1PaTwD">
+              <property role="3oM_SC" value="Package" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks2VU" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="5nLb9DvFWIR" role="3nqlJM">
-          <property role="x79VB" value="Package name" />
+        <node concept="1PaTwC" id="6iZkeYks2VO" role="1Vez_I">
+          <node concept="3oM_SD" id="6iZkeYks2VP" role="1PaTwD">
+            <property role="3oM_SC" value="Overgenomen" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks2VQ" role="1PaTwD">
+            <property role="3oM_SC" value="uit" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks2VR" role="1PaTwD">
+            <property role="3oM_SC" value="@SBaseLanguageTextGen" />
+          </node>
         </node>
       </node>
     </node>
@@ -527,13 +537,27 @@
         </node>
       </node>
       <node concept="P$JXv" id="59jthqwEjEw" role="lGtFl">
-        <node concept="TZ5HA" id="59jthqwEjEx" role="TZ5H$">
-          <node concept="1dT_AC" id="59jthqwEjEy" role="1dT_Ay">
-            <property role="1dT_AB" value="Overgenomen uit @SBaseLanguageTextGen" />
+        <node concept="x79VA" id="59jthqwEjEz" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="6iZkeYks2VZ" role="1Vez_I">
+            <node concept="3oM_SD" id="6iZkeYks2W0" role="1PaTwD">
+              <property role="3oM_SC" value="Package" />
+            </node>
+            <node concept="3oM_SD" id="6iZkeYks2W1" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="59jthqwEjEz" role="3nqlJM">
-          <property role="x79VB" value="Package name" />
+        <node concept="1PaTwC" id="6iZkeYks2VV" role="1Vez_I">
+          <node concept="3oM_SD" id="6iZkeYks2VW" role="1PaTwD">
+            <property role="3oM_SC" value="Overgenomen" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks2VX" role="1PaTwD">
+            <property role="3oM_SC" value="uit" />
+          </node>
+          <node concept="3oM_SD" id="6iZkeYks2VY" role="1PaTwD">
+            <property role="3oM_SC" value="@SBaseLanguageTextGen" />
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="4PgpJ9OHWXZ" role="3clF46">
