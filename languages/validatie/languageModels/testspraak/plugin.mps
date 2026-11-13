@@ -2745,50 +2745,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7jUccgvMPmW" role="3cqZAp">
-          <node concept="2OqwBi" id="7jUccgvMSAD" role="3clFbG">
-            <node concept="2OqwBi" id="7jUccgvMShp" role="2Oq$k0">
-              <node concept="2YIFZM" id="7zIuBbeSsfI" role="2Oq$k0">
-                <ref role="37wK5l" to="n5dx:6rWXOBlKB06" resolve="moduleRepository" />
-                <ref role="1Pybhc" to="n5dx:61IHcBPjP9r" resolve="MPSUtil" />
-              </node>
-              <node concept="liA8E" id="7jUccgvMSt8" role="2OqNvi">
-                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
-              </node>
+        <node concept="3clFbF" id="5Mr4y$_ZCw4" role="3cqZAp">
+          <node concept="2OqwBi" id="5Mr4y$_ZCTh" role="3clFbG">
+            <node concept="2YIFZM" id="5Mr4y$_ZC_K" role="2Oq$k0">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
             </node>
-            <node concept="liA8E" id="7jUccgvMSOY" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
-              <node concept="1bVj0M" id="7jUccgvMSRY" role="37wK5m">
-                <node concept="3clFbS" id="7jUccgvMSRZ" role="1bW5cS">
-                  <node concept="3clFbF" id="5Mr4y$_ZCw4" role="3cqZAp">
-                    <node concept="2OqwBi" id="5Mr4y$_ZCTh" role="3clFbG">
-                      <node concept="2YIFZM" id="5Mr4y$_ZC_K" role="2Oq$k0">
-                        <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
-                        <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
-                      </node>
-                      <node concept="liA8E" id="5Mr4y$_ZDdq" role="2OqNvi">
-                        <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="1kniyHKq$pK" role="3cqZAp">
-                    <node concept="2OqwBi" id="1kniyHKq$Dz" role="3clFbG">
-                      <node concept="2YIFZM" id="1kniyHKq$yo" role="2Oq$k0">
-                        <ref role="37wK5l" to="kv4l:1kniyHKqu3r" resolve="instance" />
-                        <ref role="1Pybhc" to="kv4l:1kniyHK5mGa" resolve="DebugConfiguration" />
-                      </node>
-                      <node concept="liA8E" id="1kniyHKq$Oq" role="2OqNvi">
-                        <ref role="37wK5l" to="kv4l:1kniyHK8jT_" resolve="addConfiguration" />
-                        <node concept="2ShNRf" id="1kniyHKq$Qm" role="37wK5m">
-                          <node concept="HV5vD" id="6ByK8LzjoZo" role="2ShVmc">
-                            <ref role="HV5vE" to="st2d:1kniyHK5S9b" resolve="AlefDebugConfiguration" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="liA8E" id="5Mr4y$_ZDdq" role="2OqNvi">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
             </node>
           </node>
         </node>
@@ -2875,6 +2839,39 @@
     </node>
     <node concept="2uRRBT" id="4mHXsdSpUmn" role="2uRRB$">
       <node concept="3clFbS" id="4mHXsdSpUmo" role="2VODD2">
+        <node concept="3clFbF" id="so$px9eqAl" role="3cqZAp">
+          <node concept="2OqwBi" id="so$px9es8J" role="3clFbG">
+            <node concept="2OqwBi" id="so$px9erua" role="2Oq$k0">
+              <node concept="1KvdUw" id="so$px9eqAk" role="2Oq$k0" />
+              <node concept="liA8E" id="so$px9es0t" role="2OqNvi">
+                <ref role="37wK5l" to="z1c4:~Project.getModelAccess()" resolve="getModelAccess" />
+              </node>
+            </node>
+            <node concept="liA8E" id="so$px9euhf" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
+              <node concept="1bVj0M" id="so$px9euiB" role="37wK5m">
+                <node concept="3clFbS" id="so$px9euiE" role="1bW5cS">
+                  <node concept="3clFbF" id="so$px9eukE" role="3cqZAp">
+                    <node concept="2OqwBi" id="1kniyHKq$Dz" role="3clFbG">
+                      <node concept="2YIFZM" id="1kniyHKq$yo" role="2Oq$k0">
+                        <ref role="37wK5l" to="kv4l:1kniyHKqu3r" resolve="instance" />
+                        <ref role="1Pybhc" to="kv4l:1kniyHK5mGa" resolve="DebugConfiguration" />
+                      </node>
+                      <node concept="liA8E" id="1kniyHKq$Oq" role="2OqNvi">
+                        <ref role="37wK5l" to="kv4l:1kniyHK8jT_" resolve="addConfiguration" />
+                        <node concept="2ShNRf" id="1kniyHKq$Qm" role="37wK5m">
+                          <node concept="HV5vD" id="6ByK8LzjoZo" role="2ShVmc">
+                            <ref role="HV5vE" to="st2d:1kniyHK5S9b" resolve="AlefDebugConfiguration" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="2Jc1sTtk9Pp" role="3cqZAp">
           <node concept="3clFbS" id="2Jc1sTtk9Pr" role="3clFbx">
             <node concept="3clFbF" id="4mHXsdTze_3" role="3cqZAp">
