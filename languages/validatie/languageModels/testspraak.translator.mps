@@ -9320,6 +9320,57 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1_pZIaPEy7s" role="jymVt" />
+    <node concept="Wx3nA" id="596fjnCggOx" role="jymVt">
+      <property role="TrG5h" value="instance" />
+      <node concept="3Tm6S6" id="596fjnCgdD4" role="1B3o_S" />
+      <node concept="3uibUv" id="596fjnCgg3O" role="1tU5fm">
+        <ref role="3uigEE" node="1kniyHK5S9b" resolve="AlefDebugConfiguration" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="596fjnCgirU" role="jymVt" />
+    <node concept="2YIFZL" id="596fjnCgvmx" role="jymVt">
+      <property role="TrG5h" value="instance" />
+      <node concept="3clFbS" id="596fjnCgvm$" role="3clF47">
+        <node concept="3clFbJ" id="596fjnCgAaD" role="3cqZAp">
+          <node concept="3clFbC" id="596fjnCgCsL" role="3clFbw">
+            <node concept="10Nm6u" id="596fjnCgDoN" role="3uHU7w" />
+            <node concept="37vLTw" id="596fjnCgBfe" role="3uHU7B">
+              <ref role="3cqZAo" node="596fjnCggOx" resolve="instance" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="596fjnCgAaF" role="3clFbx">
+            <node concept="3clFbF" id="596fjnCic$T" role="3cqZAp">
+              <node concept="37vLTI" id="596fjnCidGt" role="3clFbG">
+                <node concept="2ShNRf" id="596fjnCie_e" role="37vLTx">
+                  <node concept="1pGfFk" id="596fjnCioA9" role="2ShVmc">
+                    <ref role="37wK5l" node="596fjnCimZj" resolve="AlefDebugConfiguration" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="596fjnCic$S" role="37vLTJ">
+                  <ref role="3cqZAo" node="596fjnCggOx" resolve="instance" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="596fjnCiiBk" role="3cqZAp">
+          <node concept="37vLTw" id="596fjnCijyQ" role="3cqZAk">
+            <ref role="3cqZAo" node="596fjnCggOx" resolve="instance" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="596fjnCgsZU" role="1B3o_S" />
+      <node concept="3uibUv" id="596fjnCgxWZ" role="3clF45">
+        <ref role="3uigEE" node="1kniyHK5S9b" resolve="AlefDebugConfiguration" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="596fjnCikjJ" role="jymVt" />
+    <node concept="3clFbW" id="596fjnCimZj" role="jymVt">
+      <node concept="3cqZAl" id="596fjnCimZl" role="3clF45" />
+      <node concept="3Tm6S6" id="596fjnCipxE" role="1B3o_S" />
+      <node concept="3clFbS" id="596fjnCimZn" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="596fjnCgrnT" role="jymVt" />
     <node concept="3clFb_" id="esjlper2XH" role="jymVt">
       <property role="TrG5h" value="isParentOfSameAction" />
       <node concept="37vLTG" id="esjlper66B" role="3clF46">
