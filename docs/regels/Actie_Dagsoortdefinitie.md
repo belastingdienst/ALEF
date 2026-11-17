@@ -1,6 +1,7 @@
 # Dagsoortdefinitie
 
-Actie waarmee een specifieke [dagsoort](../gegevens/dagsoort.md) wordt gedefinieerd.
+Een dagsoortdefinitie wordt gebruikt om te definiëren wanneer een dag van een bepaalde een specifieke [dagsoort](../gegevens/dagsoort.md) is.
+Een voorbeeld hierbij kan zijn om te bepalen of een dag een Kerstdag is.
 
 ![Dagsoort actie kaal](../img/ALEF200_DagsoortDefinitie1.png)
 
