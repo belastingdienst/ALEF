@@ -35,6 +35,7 @@
   <exported-language name="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" />
   <exported-language name="9a244687-dfa9-4fe1-be0a-b7a1c754e930(buildAlefProject)" />
   <exported-language name="4f7705db-6cde-4dd2-bae3-c8d8801d8324(vrijspraak)" />
+  <exported-language name="fc8ef9c4-06fb-45d6-9045-6f23372c27b1(csvImporter)" />
   <exported-solutions>
     <exported-solution>f5d91e37-b444-4afe-b345-11a4cc4fc117(spraken.genplan)</exported-solution>
     <exported-solution>899a0a6a-566f-4976-b382-4766d9c4f8b4(unittest.runtime)</exported-solution>
