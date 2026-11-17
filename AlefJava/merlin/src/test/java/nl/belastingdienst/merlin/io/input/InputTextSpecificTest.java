@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 import static nl.belastingdienst.merlin.io.input.SubStringCondition.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -83,6 +84,70 @@ class InputTextSpecificTest extends InputElementTest {
         assertNull(alefObject.getProperty(PersonType.houseOwner).get());
         assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.carOwner).get());
         assertEquals("Car", alefObject.getProperty(PersonType.code).get());
+    }
+
+    @Test
+    void testMatchesCondition() throws IOException {
+        final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
+                new RegexTextSpecificItem("[a-z]+[0-9]+", true, false, PersonType.houseOwner),
+                new RegexTextSpecificItem("[0-9]+", true, false, PersonType.carOwner)
+        ));
+        final MObject alefObject = process(textSpecificItem, "house123");
+        assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.houseOwner).get());
+        assertNull(alefObject.getProperty(PersonType.carOwner).get());
+        assertEquals("house123", alefObject.getProperty(PersonType.code).get());
+    }
+
+    @Test
+    void testMatchesConditionCaseSensitive() throws IOException {
+        final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
+                new RegexTextSpecificItem("HOUSE[0-9]+", true, false, PersonType.houseOwner)
+        ));
+        final MObject alefObject = process(textSpecificItem, "house123");
+        assertNull(alefObject.getProperty(PersonType.houseOwner).get());
+        assertEquals("house123", alefObject.getProperty(PersonType.code).get());
+    }
+
+    @Test
+    void testMatchesConditionCaseInsensitive() throws IOException {
+        final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
+                new RegexTextSpecificItem("HOUSE[0-9]+", false, false, PersonType.houseOwner)
+        ));
+        final MObject alefObject = process(textSpecificItem, "house123");
+        assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.houseOwner).get());
+        assertEquals("house123", alefObject.getProperty(PersonType.code).get());
+    }
+
+    @Test
+    void testInSetCondition() throws IOException {
+        final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
+                new ListTextSpecificItem(Set.of("house", "car"), true, false, PersonType.houseOwner),
+                new ListTextSpecificItem(Set.of("boat"), true, false, PersonType.carOwner)
+        ));
+        final MObject alefObject = process(textSpecificItem, "car");
+        assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.houseOwner).get());
+        assertNull(alefObject.getProperty(PersonType.carOwner).get());
+        assertEquals("car", alefObject.getProperty(PersonType.code).get());
+    }
+
+    @Test
+    void testInSetConditionCaseInsensitive() throws IOException {
+        final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
+                new ListTextSpecificItem(Set.of("House", "CAR"), false, false, PersonType.houseOwner)
+        ));
+        final MObject alefObject = process(textSpecificItem, "house");
+        assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.houseOwner).get());
+        assertEquals("house", alefObject.getProperty(PersonType.code).get());
+    }
+
+    @Test
+    void testInSetConditionNegation() throws IOException {
+        final InputTextSpecific textSpecificItem = new InputTextSpecific("code", false, null, PersonType.code, new StringToStringReader(), List.of(
+                new ListTextSpecificItem(Set.of("house"), true, true, PersonType.houseOwner)
+        ));
+        final MObject alefObject = process(textSpecificItem, "car");
+        assertEquals(Boolean.TRUE, alefObject.getProperty(PersonType.houseOwner).get());
+        assertEquals("car", alefObject.getProperty(PersonType.code).get());
     }
 
     @Test
