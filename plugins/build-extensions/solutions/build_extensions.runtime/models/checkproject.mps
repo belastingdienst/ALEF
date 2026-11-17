@@ -43,8 +43,10 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" />
     <import index="ft0j" ref="r:adc783db-1c21-4910-9cf7-6a22bf949a4a(jetbrains.mps.persistence.java.library)" />
+    <import index="nos0" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project.ex(MPS.IDEA/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -350,20 +352,19 @@
         <property role="Xl_RC" value="checkproject.project" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4454gfTsh60" role="jymVt" />
-    <node concept="312cEg" id="BnBlcdSQQM" role="jymVt">
-      <property role="TrG5h" value="myEnvironment" />
-      <node concept="3uibUv" id="BnBlcdSQQP" role="1tU5fm">
-        <ref role="3uigEE" to="79ha:HKKzfMjqRV" resolve="Environment" />
-      </node>
-      <node concept="3Tm6S6" id="BnBlcdSQQQ" role="1B3o_S" />
-    </node>
     <node concept="312cEg" id="4454gfTk4zp" role="jymVt">
       <property role="TrG5h" value="mpsProject" />
       <node concept="3uibUv" id="4454gfTk4zs" role="1tU5fm">
         <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
       </node>
       <node concept="3Tm6S6" id="4454gfTk4zt" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="5bdCXEJDX$N" role="jymVt">
+      <property role="TrG5h" value="myEnvironment" />
+      <node concept="3Tm6S6" id="5bdCXEJDWK4" role="1B3o_S" />
+      <node concept="3uibUv" id="5bdCXEJDXuB" role="1tU5fm">
+        <ref role="3uigEE" to="79ha:HKKzfMjqRV" resolve="Environment" />
+      </node>
     </node>
     <node concept="2tJIrI" id="BnBlcdWsoE" role="jymVt" />
     <node concept="3clFb_" id="4454gfTkbdZ" role="jymVt">
@@ -400,13 +401,13 @@
         </node>
       </node>
       <node concept="3clFbS" id="BnBlcepivR" role="3clF47">
-        <node concept="3clFbF" id="BnBlcfbnDK" role="3cqZAp">
-          <node concept="37vLTI" id="BnBlcfbqJN" role="3clFbG">
-            <node concept="37vLTw" id="BnBlcfbs3T" role="37vLTx">
+        <node concept="3clFbF" id="5bdCXEJDY4m" role="3cqZAp">
+          <node concept="37vLTI" id="5bdCXEJDYzG" role="3clFbG">
+            <node concept="37vLTw" id="5bdCXEJDYOC" role="37vLTx">
               <ref role="3cqZAo" node="BnBlcepivO" resolve="env" />
             </node>
-            <node concept="37vLTw" id="BnBlcfbnDI" role="37vLTJ">
-              <ref role="3cqZAo" node="BnBlcdSQQM" resolve="myEnvironment" />
+            <node concept="37vLTw" id="5bdCXEJDY4l" role="37vLTJ">
+              <ref role="3cqZAo" node="5bdCXEJDX$N" resolve="myEnvironment" />
             </node>
           </node>
         </node>
@@ -427,7 +428,7 @@
             </node>
             <node concept="2OqwBi" id="BnBlce26XI" role="33vP2m">
               <node concept="37vLTw" id="BnBlce26XJ" role="2Oq$k0">
-                <ref role="3cqZAo" node="BnBlcdSQQM" resolve="myEnvironment" />
+                <ref role="3cqZAo" node="5bdCXEJDX$N" resolve="myEnvironment" />
               </node>
               <node concept="liA8E" id="BnBlce26XK" role="2OqNvi">
                 <ref role="37wK5l" to="79ha:6rx4kZDjWg4" resolve="openProject" />
@@ -440,7 +441,7 @@
                         <node concept="2YIFZM" id="BnBlceZvK8" role="37wK5m">
                           <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                           <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                          <node concept="37vLTw" id="BnBlcf0cg6" role="37wK5m">
+                          <node concept="37vLTw" id="5bdCXEJE1ev" role="37wK5m">
                             <ref role="3cqZAo" node="BnBlceZSlh" resolve="PROJECTPATH_PROPERTY" />
                           </node>
                         </node>
@@ -458,8 +459,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="BnBlce26Y4" role="3cqZAp">
-          <node concept="37vLTI" id="BnBlce26Y5" role="3clFbG">
+        <node concept="3clFbF" id="5bdCXEJDZBo" role="3cqZAp">
+          <node concept="37vLTI" id="5bdCXEJDZBp" role="3clFbG">
             <node concept="2OqwBi" id="BnBlce26Y6" role="37vLTx">
               <node concept="37vLTw" id="BnBlce26Y7" role="2Oq$k0">
                 <ref role="3cqZAo" node="BnBlce26XG" resolve="project" />
@@ -471,7 +472,7 @@
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="BnBlce2P7K" role="37vLTJ">
+            <node concept="37vLTw" id="5bdCXEJDZBq" role="37vLTJ">
               <ref role="3cqZAo" node="4454gfTk4zp" resolve="mpsProject" />
             </node>
           </node>
