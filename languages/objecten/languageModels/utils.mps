@@ -5,7 +5,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
@@ -219,16 +219,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1218047638031" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CreateUniqueName" flags="nn" index="2piZGk">
@@ -2204,34 +2198,205 @@
     <node concept="2tJIrI" id="79kG3gFPv1z" role="jymVt" />
     <node concept="3Tm1VV" id="79kG3gFPv0Y" role="1B3o_S" />
     <node concept="3UR2Jj" id="79kG3gFRt$p" role="lGtFl">
-      <node concept="TZ5HA" id="79kG3gFRt$q" role="TZ5H$">
-        <node concept="1dT_AC" id="79kG3gFRt$r" role="1dT_Ay">
-          <property role="1dT_AB" value="Utility class voor het uitvoeren van coverage-meting op generatoren." />
+      <node concept="1PaTwC" id="1s__XYVevq1" role="1Vez_I">
+        <node concept="3oM_SD" id="1s__XYVevq2" role="1PaTwD">
+          <property role="3oM_SC" value="Utility" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq3" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq4" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq5" role="1PaTwD">
+          <property role="3oM_SC" value="het" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq6" role="1PaTwD">
+          <property role="3oM_SC" value="uitvoeren" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq7" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq8" role="1PaTwD">
+          <property role="3oM_SC" value="coverage-meting" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq9" role="1PaTwD">
+          <property role="3oM_SC" value="op" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqa" role="1PaTwD">
+          <property role="3oM_SC" value="generatoren." />
         </node>
       </node>
-      <node concept="TZ5HA" id="79kG3gFRu64" role="TZ5H$">
-        <node concept="1dT_AC" id="79kG3gFRu65" role="1dT_Ay">
-          <property role="1dT_AB" value="Door in de verschillende cases van generator switch templates CoverageMeter.bump(...) calls te zetten," />
+      <node concept="1PaTwC" id="1s__XYVevqb" role="1Vez_I">
+        <node concept="3oM_SD" id="1s__XYVevqc" role="1PaTwD">
+          <property role="3oM_SC" value="Door" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqd" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqe" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqf" role="1PaTwD">
+          <property role="3oM_SC" value="verschillende" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqg" role="1PaTwD">
+          <property role="3oM_SC" value="cases" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqh" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqi" role="1PaTwD">
+          <property role="3oM_SC" value="generator" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqj" role="1PaTwD">
+          <property role="3oM_SC" value="switch" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqk" role="1PaTwD">
+          <property role="3oM_SC" value="templates" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevql" role="1PaTwD">
+          <property role="3oM_SC" value="CoverageMeter.bump(...)" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqm" role="1PaTwD">
+          <property role="3oM_SC" value="calls" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqn" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqo" role="1PaTwD">
+          <property role="3oM_SC" value="zetten," />
         </node>
       </node>
-      <node concept="TZ5HA" id="79kG3gFRu$i" role="TZ5H$">
-        <node concept="1dT_AC" id="79kG3gFRu$j" role="1dT_Ay">
-          <property role="1dT_AB" value="Op de console CoverageMeter.start() te executeren," />
+      <node concept="1PaTwC" id="1s__XYVevqp" role="1Vez_I">
+        <node concept="3oM_SD" id="1s__XYVevqq" role="1PaTwD">
+          <property role="3oM_SC" value="Op" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqr" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqs" role="1PaTwD">
+          <property role="3oM_SC" value="console" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqt" role="1PaTwD">
+          <property role="3oM_SC" value="CoverageMeter.start()" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqu" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqv" role="1PaTwD">
+          <property role="3oM_SC" value="executeren," />
         </node>
       </node>
-      <node concept="TZ5HA" id="79kG3gFRv2y" role="TZ5H$">
-        <node concept="1dT_AC" id="79kG3gFRv2z" role="1dT_Ay">
-          <property role="1dT_AB" value="Rebuild aan te roepen voor verschillende testmodellen/ solutions" />
+      <node concept="1PaTwC" id="1s__XYVevqw" role="1Vez_I">
+        <node concept="3oM_SD" id="1s__XYVevqx" role="1PaTwD">
+          <property role="3oM_SC" value="Rebuild" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqy" role="1PaTwD">
+          <property role="3oM_SC" value="aan" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqz" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq$" role="1PaTwD">
+          <property role="3oM_SC" value="roepen" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevq_" role="1PaTwD">
+          <property role="3oM_SC" value="voor" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqA" role="1PaTwD">
+          <property role="3oM_SC" value="verschillende" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqB" role="1PaTwD">
+          <property role="3oM_SC" value="testmodellen/" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqC" role="1PaTwD">
+          <property role="3oM_SC" value="solutions" />
         </node>
       </node>
-      <node concept="TZ5HA" id="79kG3gFRvwO" role="TZ5H$">
-        <node concept="1dT_AC" id="79kG3gFRvwP" role="1dT_Ay">
-          <property role="1dT_AB" value="En ten slotte op de console CoverageMeter.finish() te doen." />
+      <node concept="1PaTwC" id="1s__XYVevqD" role="1Vez_I">
+        <node concept="3oM_SD" id="1s__XYVevqE" role="1PaTwD">
+          <property role="3oM_SC" value="En" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqF" role="1PaTwD">
+          <property role="3oM_SC" value="ten" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqG" role="1PaTwD">
+          <property role="3oM_SC" value="slotte" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqH" role="1PaTwD">
+          <property role="3oM_SC" value="op" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqI" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqJ" role="1PaTwD">
+          <property role="3oM_SC" value="console" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqK" role="1PaTwD">
+          <property role="3oM_SC" value="CoverageMeter.finish()" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqL" role="1PaTwD">
+          <property role="3oM_SC" value="te" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqM" role="1PaTwD">
+          <property role="3oM_SC" value="doen." />
         </node>
       </node>
-      <node concept="TZ5HA" id="79kG3gFRvZ8" role="TZ5H$">
-        <node concept="1dT_AC" id="79kG3gFRvZ9" role="1dT_Ay">
-          <property role="1dT_AB" value="Hierdoor verschijnt in het java console een rapportage van het aantal keren dat de verschillende bumps zijn aangeroepen. " />
+      <node concept="1PaTwC" id="1s__XYVevqN" role="1Vez_I">
+        <node concept="3oM_SD" id="1s__XYVevqO" role="1PaTwD">
+          <property role="3oM_SC" value="Hierdoor" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqP" role="1PaTwD">
+          <property role="3oM_SC" value="verschijnt" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqQ" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqR" role="1PaTwD">
+          <property role="3oM_SC" value="het" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqS" role="1PaTwD">
+          <property role="3oM_SC" value="java" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqT" role="1PaTwD">
+          <property role="3oM_SC" value="console" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqU" role="1PaTwD">
+          <property role="3oM_SC" value="een" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqV" role="1PaTwD">
+          <property role="3oM_SC" value="rapportage" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqW" role="1PaTwD">
+          <property role="3oM_SC" value="van" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqX" role="1PaTwD">
+          <property role="3oM_SC" value="het" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqY" role="1PaTwD">
+          <property role="3oM_SC" value="aantal" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevqZ" role="1PaTwD">
+          <property role="3oM_SC" value="keren" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevr0" role="1PaTwD">
+          <property role="3oM_SC" value="dat" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevr1" role="1PaTwD">
+          <property role="3oM_SC" value="de" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevr2" role="1PaTwD">
+          <property role="3oM_SC" value="verschillende" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevr3" role="1PaTwD">
+          <property role="3oM_SC" value="bumps" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevr4" role="1PaTwD">
+          <property role="3oM_SC" value="zijn" />
+        </node>
+        <node concept="3oM_SD" id="1s__XYVevr5" role="1PaTwD">
+          <property role="3oM_SC" value="aangeroepen." />
         </node>
       </node>
     </node>

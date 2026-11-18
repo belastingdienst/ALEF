@@ -25,6 +25,7 @@
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
+      <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -867,6 +868,7 @@
     <node concept="55IIr" id="3QUgeVhkps3" role="auvoZ" />
     <node concept="1l3spV" id="3QUgeVhkps4" role="1l3spN" />
     <node concept="3b7kt6" id="3QUgeVhkpuv" role="10PD9s" />
+    <node concept="10PD9b" id="4NSj1PaV_jr" role="10PD9s" />
   </node>
 </model>
 
