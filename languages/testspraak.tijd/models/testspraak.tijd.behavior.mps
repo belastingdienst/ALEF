@@ -1548,21 +1548,8 @@
                       <ref role="ehGHo" to="ku5w:30CduGNAqP1" resolve="BerichtDataType" />
                     </node>
                     <node concept="2OqwBi" id="fID1l15GQ$" role="33vP2m">
-                      <node concept="2qgKlT" id="fID1l15GQ_" role="2OqNvi">
-                        <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                        <node concept="2OqwBi" id="fID1l15GQA" role="37wK5m">
-                          <node concept="2OqwBi" id="fID1l15GQB" role="2Oq$k0">
-                            <node concept="37vLTw" id="fID1l15GQC" role="2Oq$k0">
-                              <ref role="3cqZAo" node="fID1l15GQo" resolve="testset" />
-                            </node>
-                            <node concept="3TrEf2" id="fID1l15GQD" role="2OqNvi">
-                              <ref role="3Tt5mk" to="6ldf:2a2AOY7i8su" resolve="entrypoint" />
-                            </node>
-                          </node>
-                          <node concept="2qgKlT" id="fID1l15GQE" role="2OqNvi">
-                            <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
-                          </node>
-                        </node>
+                      <node concept="2qgKlT" id="1kY8nd2Ocq0" role="2OqNvi">
+                        <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
                       </node>
                       <node concept="2OqwBi" id="fID1l15GQF" role="2Oq$k0">
                         <node concept="37vLTw" id="fID1l15GQG" role="2Oq$k0">
@@ -2369,7 +2356,7 @@
                       <ref role="3cqZAo" node="3S7ul9WHNjh" resolve="service" />
                     </node>
                     <node concept="2qgKlT" id="3S7ul9WHNk9" role="2OqNvi">
-                      <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                      <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                       <node concept="1PxgMI" id="3S7ul9WHNka" role="37wK5m">
                         <property role="1BlNFB" value="true" />
                         <node concept="chp4Y" id="3S7ul9WHNkb" role="3oSUPX">

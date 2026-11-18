@@ -1805,11 +1805,8 @@
               <node concept="37vLTw" id="h0QVkElFJc" role="2Oq$k0">
                 <ref role="3cqZAo" node="h0QVkElpEA" resolve="node" />
               </node>
-              <node concept="2qgKlT" id="h0QVkD5ZIr" role="2OqNvi">
-                <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                <node concept="37vLTw" id="h0QVkElqPn" role="37wK5m">
-                  <ref role="3cqZAo" node="h0QVkElqcQ" resolve="service" />
-                </node>
+              <node concept="2qgKlT" id="1kY8nd2ETrD" role="2OqNvi">
+                <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
               </node>
             </node>
           </node>
@@ -1975,11 +1972,8 @@
                                 <node concept="37vLTw" id="h0QVkElGa9" role="2Oq$k0">
                                   <ref role="3cqZAo" node="h0QVkElpEA" resolve="node" />
                                 </node>
-                                <node concept="2qgKlT" id="bd4JGTwCAr" role="2OqNvi">
-                                  <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                                  <node concept="37vLTw" id="h0QVkElswX" role="37wK5m">
-                                    <ref role="3cqZAo" node="h0QVkElqcQ" resolve="service" />
-                                  </node>
+                                <node concept="2qgKlT" id="1kY8nd2ERPx" role="2OqNvi">
+                                  <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
                                 </node>
                               </node>
                               <node concept="2qgKlT" id="bd4JGTxEco" role="2OqNvi">
@@ -1994,11 +1988,8 @@
                             <node concept="37vLTw" id="h0QVkElGf0" role="2Oq$k0">
                               <ref role="3cqZAo" node="h0QVkElpEA" resolve="node" />
                             </node>
-                            <node concept="2qgKlT" id="bd4JGTxk2e" role="2OqNvi">
-                              <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                              <node concept="37vLTw" id="h0QVkEls8x" role="37wK5m">
-                                <ref role="3cqZAo" node="h0QVkElqcQ" resolve="service" />
-                              </node>
+                            <node concept="2qgKlT" id="1kY8nd2ES_N" role="2OqNvi">
+                              <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
                             </node>
                           </node>
                         </node>

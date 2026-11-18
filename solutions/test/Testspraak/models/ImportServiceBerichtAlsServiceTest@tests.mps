@@ -20,7 +20,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z148" ref="r:a023aff8-1871-4910-a2c2-c0c6e0ed9e46(testspraak.plugin)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
-    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(de.itemis.mps.utils.serializer.xml/)" />
+    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="etkp" ref="r:1587e710-6cac-4d2e-887c-9d1071cfc317(ImportServiceBerichtAlsServiceTest.ImportServiceBerichtAlsServiceTest)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />

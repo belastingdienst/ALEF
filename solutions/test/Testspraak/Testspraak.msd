@@ -13,7 +13,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">5454dbfd-2075-4de0-b85e-fa645eb6957e(de.itemis.mps.utils.serializer.xml)</dependency>
+    <dependency reexport="false">5454dbfd-2075-4de0-b85e-fa645eb6957e(com.mbeddr.mpsutil.serializer.xml)</dependency>
     <dependency reexport="false">7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)</dependency>
     <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
     <dependency reexport="false">a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)</dependency>
@@ -95,9 +95,9 @@
     <module reference="65239ca4-9057-41f8-999d-97fa1a60b298(besturingspraak)" version="0" />
     <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
+    <module reference="5454dbfd-2075-4de0-b85e-fa645eb6957e(com.mbeddr.mpsutil.serializer.xml)" version="0" />
     <module reference="09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)" version="0" />
     <module reference="e9756da9-d229-455c-ab9e-e4bf1fa8bd36(converter)" version="0" />
-    <module reference="5454dbfd-2075-4de0-b85e-fa645eb6957e(de.itemis.mps.utils.serializer.xml)" version="0" />
     <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="5" />
     <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
     <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />

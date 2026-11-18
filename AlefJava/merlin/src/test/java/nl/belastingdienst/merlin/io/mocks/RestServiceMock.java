@@ -2,7 +2,6 @@ package nl.belastingdienst.merlin.io.mocks;
 
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
-import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.service.Request;
 import nl.belastingdienst.merlin.io.service.Response;
 import nl.belastingdienst.merlin.io.service.RestService;
@@ -15,7 +14,7 @@ public class RestServiceMock<T extends MObjectType> extends RestService<T> {
     }
 
     @Override
-    protected void initialize(AdapterRegistry registry) {
+    protected void initialize() {
         // mock
     }
 

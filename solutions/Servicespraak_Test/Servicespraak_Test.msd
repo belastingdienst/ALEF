@@ -21,7 +21,7 @@
     <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)</dependency>
-    <dependency reexport="false">5454dbfd-2075-4de0-b85e-fa645eb6957e(de.itemis.mps.utils.serializer.xml)</dependency>
+    <dependency reexport="false">5454dbfd-2075-4de0-b85e-fa645eb6957e(com.mbeddr.mpsutil.serializer.xml)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3:beslistabelspraak" version="2" />
@@ -88,9 +88,9 @@
     <module reference="7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3(beslistabelspraak)" version="0" />
     <module reference="65239ca4-9057-41f8-999d-97fa1a60b298(besturingspraak)" version="0" />
     <module reference="08d6f877-03cc-45d3-b03c-d6f786266853(bronspraak)" version="0" />
+    <module reference="5454dbfd-2075-4de0-b85e-fa645eb6957e(com.mbeddr.mpsutil.serializer.xml)" version="0" />
     <module reference="09c04f52-88c5-4bd6-a481-cabab9f61ff5(contexts)" version="0" />
     <module reference="e9756da9-d229-455c-ab9e-e4bf1fa8bd36(converter)" version="0" />
-    <module reference="5454dbfd-2075-4de0-b85e-fa645eb6957e(de.itemis.mps.utils.serializer.xml)" version="0" />
     <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="5" />
     <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
     <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />

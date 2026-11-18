@@ -1,9 +1,8 @@
 package nl.belastingdienst.merlin.io.service;
 
+import nl.belastingdienst.alef_runtime.ALEFConstants;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MUniverse;
-import nl.belastingdienst.alef_runtime.ALEFConstants;
-import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.generator.KvPairGenerator;
 import nl.belastingdienst.merlin.io.output.OutputComplexProperty;
@@ -16,12 +15,12 @@ public abstract class Response {
     private final List<OutputComplexProperty<?>> complexProperties = new ArrayList<>();
     private final boolean useConsistencyFlag;
 
-    protected Response(AdapterRegistry registry, boolean useConsistencyFlag) {
+    protected Response(boolean useConsistencyFlag) {
         this.useConsistencyFlag = useConsistencyFlag;
-        initialize(registry);
+        initialize();
     }
 
-    public abstract void initialize(AdapterRegistry registry);
+    public abstract void initialize();
 
     public void addElement(OutputComplexProperty<?> property) {
         complexProperties.add(property);

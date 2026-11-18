@@ -70,10 +70,10 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="wopc" ref="r:0fe109e6-fd90-4779-8e5b-5fe7192b2468(xml.schema.structure)" />
     <import index="kart" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.xml.sax(JDK/)" />
-    <import index="5obs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.input.sax(de.itemis.mps.utils.serializer.xml/)" />
-    <import index="qq98" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.input(de.itemis.mps.utils.serializer.xml/)" />
+    <import index="5obs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.input.sax(com.mbeddr.mpsutil.serializer.xml/)" />
+    <import index="qq98" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.input(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
-    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(de.itemis.mps.utils.serializer.xml/)" />
+    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="ctyd" ref="r:e478e6fd-5b0e-47c4-947c-e496d05ed60a(jsonUtils.jsonUtils)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="jgyw" ref="r:3f2425bc-6eca-4e4c-b6d9-dbf5333694ad(testUtil.testruns)" />

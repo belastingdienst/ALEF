@@ -714,10 +714,10 @@
                 <node concept="3cpWs6" id="6Mb_0yeyVYG" role="3cqZAp">
                   <node concept="2OqwBi" id="6Mb_0yeyVYI" role="3cqZAk">
                     <node concept="2YIFZM" id="6Mb_0yeyVYJ" role="2Oq$k0">
-                      <ref role="37wK5l" node="6Mb_0ydPQ8I" resolve="forService" />
+                      <ref role="37wK5l" node="6Mb_0ydPQ8I" resolve="forContext" />
                       <ref role="1Pybhc" node="6Mb_0ydPQ6U" resolve="TijdlijnMappingInstantiator" />
                       <node concept="37vLTw" id="6Mb_0yeyVYK" role="37wK5m">
-                        <ref role="3cqZAo" node="6Mb_0yex$d0" resolve="service" />
+                        <ref role="3cqZAo" node="6Mb_0yex$d0" resolve="ctx" />
                       </node>
                     </node>
                     <node concept="liA8E" id="6Mb_0yeyVYL" role="2OqNvi">
@@ -761,9 +761,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="6Mb_0yex$d0" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="6Mb_0yex$O2" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
       <node concept="37vLTG" id="2NLb_hlPeDK" role="3clF46">
@@ -1725,10 +1725,10 @@
           </node>
           <node concept="2OqwBi" id="2NLb_hlL6fx" role="2GsD0m">
             <node concept="37vLTw" id="7grPb6NILkA" role="2Oq$k0">
-              <ref role="3cqZAo" node="7grPb6NIHU7" resolve="service" />
+              <ref role="3cqZAo" node="7grPb6NIHU7" resolve="ctx" />
             </node>
             <node concept="2qgKlT" id="2NLb_hlL6fz" role="2OqNvi">
-              <ref role="37wK5l" to="txb8:7GYmR1d7hkh" resolve="alleVelden" />
+              <ref role="37wK5l" to="txb8:1kY8nd6AmHY" resolve="alleVelden" />
             </node>
           </node>
           <node concept="3clFbS" id="2NLb_hlL66e" role="2LFqv$">
@@ -1818,7 +1818,7 @@
                         <ref role="1Pybhc" node="7grPb6NIHRn" resolve="DefaultTijdlijnMappings" />
                         <ref role="37wK5l" node="42hYueOVP5J" resolve="addVoorTijdlijn" />
                         <node concept="37vLTw" id="42hYueOVP5M" role="37wK5m">
-                          <ref role="3cqZAo" node="7grPb6NIHU7" resolve="service" />
+                          <ref role="3cqZAo" node="7grPb6NIHU7" resolve="ctx" />
                         </node>
                         <node concept="2GrUjf" id="42hYueOVP5N" role="37wK5m">
                           <ref role="2Gs0qQ" node="7$5jc90SXGM" resolve="tijdlijn" />
@@ -1842,9 +1842,9 @@
       <node concept="3Tm1VV" id="7grPb6NIHSV" role="1B3o_S" />
       <node concept="3cqZAl" id="7grPb6NIHTm" role="3clF45" />
       <node concept="37vLTG" id="7grPb6NIHU7" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="7grPb6NIHU6" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
     </node>
@@ -1854,9 +1854,9 @@
       <node concept="3Tm1VV" id="42hYueOVPWi" role="1B3o_S" />
       <node concept="3cqZAl" id="42hYueOVP5L" role="3clF45" />
       <node concept="37vLTG" id="42hYueOVP5x" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="42hYueOVP5y" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
       <node concept="37vLTG" id="42hYueOVP5z" role="3clF46">
@@ -1881,10 +1881,10 @@
             <node concept="2OqwBi" id="42hYueOW3KX" role="33vP2m">
               <node concept="2OqwBi" id="42hYueOW3KY" role="2Oq$k0">
                 <node concept="37vLTw" id="42hYueOW3KZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="42hYueOVP5x" resolve="service" />
+                  <ref role="3cqZAo" node="42hYueOVP5x" resolve="ctx" />
                 </node>
-                <node concept="3Tsc0h" id="42hYueOW3L0" role="2OqNvi">
-                  <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
+                <node concept="2qgKlT" id="1kY8nd4mjWr" role="2OqNvi">
+                  <ref role="37wK5l" to="txb8:1kY8nd4pdZ_" resolve="dimensieMappings" />
                 </node>
               </node>
               <node concept="v3k3i" id="42hYueOW3L1" role="2OqNvi">
@@ -1916,18 +1916,14 @@
             </node>
             <node concept="3clFbJ" id="42hYueOW5mf" role="3cqZAp">
               <node concept="3clFbS" id="42hYueOW5mh" role="3clFbx">
-                <node concept="3clFbF" id="42hYueOVP4W" role="3cqZAp">
-                  <node concept="2OqwBi" id="42hYueOVP4X" role="3clFbG">
-                    <node concept="2OqwBi" id="42hYueOVP4Y" role="2Oq$k0">
-                      <node concept="37vLTw" id="42hYueOVP5E" role="2Oq$k0">
-                        <ref role="3cqZAo" node="42hYueOVP5x" resolve="service" />
-                      </node>
-                      <node concept="3Tsc0h" id="42hYueOVP50" role="2OqNvi">
-                        <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
-                      </node>
+                <node concept="3clFbF" id="1kY8nd4on36" role="3cqZAp">
+                  <node concept="2OqwBi" id="1kY8nd4onJ5" role="3clFbG">
+                    <node concept="37vLTw" id="1kY8nd4on34" role="2Oq$k0">
+                      <ref role="3cqZAo" node="42hYueOVP5x" resolve="ctx" />
                     </node>
-                    <node concept="TSZUe" id="42hYueOVP51" role="2OqNvi">
-                      <node concept="37vLTw" id="42hYueOWg0c" role="25WWJ7">
+                    <node concept="2qgKlT" id="1kY8nd4opoH" role="2OqNvi">
+                      <ref role="37wK5l" to="txb8:1kY8nd4nkMl" resolve="addMapping" />
+                      <node concept="37vLTw" id="1kY8nd4opH1" role="37wK5m">
                         <ref role="3cqZAo" node="42hYueOWg08" resolve="m" />
                       </node>
                     </node>
@@ -2150,7 +2146,7 @@
                 <node concept="2qgKlT" id="22ImGsqdwHo" role="2OqNvi">
                   <ref role="37wK5l" to="txb8:4_w_EeF3DBt" resolve="applyTo" />
                   <node concept="37vLTw" id="6Mb_0yex_q9" role="37wK5m">
-                    <ref role="3cqZAo" node="6Mb_0yex_kN" resolve="service" />
+                    <ref role="3cqZAo" node="6Mb_0yex_kN" resolve="ctx" />
                   </node>
                   <node concept="37vLTw" id="22ImGsqdwHp" role="37wK5m">
                     <ref role="3cqZAo" node="22ImGsqdr1G" resolve="dimensie" />
@@ -2177,9 +2173,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="6Mb_0yex_kN" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="6Mb_0yex_mC" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
       <node concept="37vLTG" id="22ImGsqdr1G" role="3clF46">
@@ -2223,7 +2219,7 @@
     </node>
     <node concept="2tJIrI" id="6Mb_0ydPQau" role="jymVt" />
     <node concept="2YIFZL" id="6Mb_0ydPQ8I" role="jymVt">
-      <property role="TrG5h" value="forService" />
+      <property role="TrG5h" value="forContext" />
       <property role="od$2w" value="true" />
       <node concept="3clFbS" id="6Mb_0ydPQ8L" role="3clF47">
         <node concept="3cpWs8" id="6Mb_0ydPRln" role="3cqZAp">
@@ -2239,7 +2235,7 @@
               <node concept="2OqwBi" id="6Mb_0ydPRlp" role="0kSFX">
                 <node concept="2JrnkZ" id="6Mb_0ydPRlq" role="2Oq$k0">
                   <node concept="37vLTw" id="6Mb_0ydPRlr" role="2JrQYb">
-                    <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="service" />
+                    <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="ctx" />
                   </node>
                 </node>
                 <node concept="liA8E" id="6Mb_0ydPRls" role="2OqNvi">
@@ -2260,7 +2256,7 @@
                   <node concept="1pGfFk" id="6Mb_0ydPSIs" role="2ShVmc">
                     <ref role="37wK5l" node="6Mb_0ydPSFG" resolve="TijdlijnMappingInstantiator" />
                     <node concept="37vLTw" id="6Mb_0ydPSX3" role="37wK5m">
-                      <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="service" />
+                      <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="ctx" />
                     </node>
                   </node>
                 </node>
@@ -2273,7 +2269,7 @@
               <node concept="2OqwBi" id="6Mb_0ydPU5_" role="3clFbG">
                 <node concept="2JrnkZ" id="6Mb_0ydPTNC" role="2Oq$k0">
                   <node concept="37vLTw" id="6Mb_0ydPT4F" role="2JrQYb">
-                    <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="service" />
+                    <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="ctx" />
                   </node>
                 </node>
                 <node concept="liA8E" id="6Mb_0ydPUnz" role="2OqNvi">
@@ -2295,7 +2291,7 @@
                 <node concept="liA8E" id="1VHIOeoqJiB" role="2OqNvi">
                   <ref role="37wK5l" node="1VHIOeolx11" resolve="triggerInstantiation" />
                   <node concept="37vLTw" id="1VHIOeoqJAS" role="37wK5m">
-                    <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="service" />
+                    <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="ctx" />
                   </node>
                 </node>
               </node>
@@ -2309,7 +2305,7 @@
               <node concept="liA8E" id="6Mb_0ydSC2d" role="2OqNvi">
                 <ref role="37wK5l" node="6Mb_0ydSB3i" resolve="changed" />
                 <node concept="37vLTw" id="6Mb_0ydSC8p" role="37wK5m">
-                  <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="service" />
+                  <ref role="3cqZAo" node="6Mb_0ydPQ9c" resolve="ctx" />
                 </node>
               </node>
             </node>
@@ -2332,9 +2328,9 @@
         <ref role="3uigEE" node="6Mb_0ydPQ6U" resolve="TijdlijnMappingInstantiator" />
       </node>
       <node concept="37vLTG" id="6Mb_0ydPQ9c" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="6Mb_0ydPQ9b" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
     </node>
@@ -2354,11 +2350,11 @@
     </node>
     <node concept="2tJIrI" id="6Mb_0ydPSCU" role="jymVt" />
     <node concept="312cEg" id="6Mb_0ydPULo" role="jymVt">
-      <property role="TrG5h" value="serviceCopy" />
+      <property role="TrG5h" value="ctxCopy" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="6Mb_0ydPUFF" role="1B3o_S" />
       <node concept="3Tqbb2" id="6Mb_0ydPUK7" role="1tU5fm">
-        <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+        <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
       </node>
     </node>
     <node concept="312cEg" id="6Mb_0yeOeXS" role="jymVt">
@@ -2418,23 +2414,23 @@
           <node concept="37vLTI" id="6Mb_0ydPVFU" role="3clFbG">
             <node concept="2OqwBi" id="6Mb_0ydSKrH" role="37vLTx">
               <node concept="37vLTw" id="6Mb_0ydPVNj" role="2Oq$k0">
-                <ref role="3cqZAo" node="6Mb_0ydPSNg" resolve="service" />
+                <ref role="3cqZAo" node="6Mb_0ydPSNg" resolve="ctx" />
               </node>
               <node concept="1$rogu" id="6Mb_0ydSL6D" role="2OqNvi" />
             </node>
             <node concept="2OqwBi" id="6Mb_0ydPV0w" role="37vLTJ">
               <node concept="Xjq3P" id="6Mb_0ydPUQk" role="2Oq$k0" />
               <node concept="2OwXpG" id="6Mb_0ydPVfu" role="2OqNvi">
-                <ref role="2Oxat5" node="6Mb_0ydPULo" resolve="serviceCopy" />
+                <ref role="2Oxat5" node="6Mb_0ydPULo" resolve="ctxCopy" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="6Mb_0ydPSNg" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="6Mb_0ydPSNf" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
     </node>
@@ -2453,7 +2449,7 @@
               <node concept="2OqwBi" id="1bBCVu$LZ_W" role="37wK5m">
                 <node concept="Xjq3P" id="1bBCVu$LZ_X" role="2Oq$k0" />
                 <node concept="2OwXpG" id="1bBCVu$LZ_Y" role="2OqNvi">
-                  <ref role="2Oxat5" node="6Mb_0ydPULo" resolve="serviceCopy" />
+                  <ref role="2Oxat5" node="6Mb_0ydPULo" resolve="ctxCopy" />
                 </node>
               </node>
             </node>
@@ -2464,7 +2460,7 @@
       <node concept="37vLTG" id="6Mb_0ydSB3l" role="3clF46">
         <property role="TrG5h" value="service" />
         <node concept="3Tqbb2" id="6Mb_0ydSB3m" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
       <node concept="3Tm6S6" id="6Mb_0ydSB3q" role="1B3o_S" />
@@ -2481,10 +2477,10 @@
           <node concept="2OqwBi" id="1VHIOeoo_6Y" role="2GsD0m">
             <node concept="2OqwBi" id="1VHIOeoov0t" role="2Oq$k0">
               <node concept="37vLTw" id="1VHIOeoou8o" role="2Oq$k0">
-                <ref role="3cqZAo" node="1VHIOeolzwR" resolve="service" />
+                <ref role="3cqZAo" node="1VHIOeolzwR" resolve="ctx" />
               </node>
               <node concept="2qgKlT" id="1VHIOeoox47" role="2OqNvi">
-                <ref role="37wK5l" to="txb8:7GYmR1d5y5c" resolve="gebruikteDataTypen" />
+                <ref role="37wK5l" to="txb8:1kY8nd6A5OA" resolve="usedDataTypes" />
               </node>
             </node>
             <node concept="3zZkjj" id="1VHIOeooF4l" role="2OqNvi">
@@ -2527,10 +2523,10 @@
                 </node>
                 <node concept="2OqwBi" id="1VHIOeop8x6" role="33vP2m">
                   <node concept="37vLTw" id="1VHIOeop8x7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1VHIOeolzwR" resolve="service" />
+                    <ref role="3cqZAo" node="1VHIOeolzwR" resolve="ctx" />
                   </node>
                   <node concept="2qgKlT" id="1VHIOeop8x8" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                    <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                     <node concept="2GrUjf" id="1VHIOeop8x9" role="37wK5m">
                       <ref role="2Gs0qQ" node="1VHIOeooqlK" resolve="dt" />
                     </node>
@@ -2631,9 +2627,9 @@
       <node concept="3Tm6S6" id="1VHIOeolxVQ" role="1B3o_S" />
       <node concept="3cqZAl" id="1VHIOeolwT7" role="3clF45" />
       <node concept="37vLTG" id="1VHIOeolzwR" role="3clF46">
-        <property role="TrG5h" value="service" />
+        <property role="TrG5h" value="ctx" />
         <node concept="3Tqbb2" id="1VHIOeolzwQ" role="1tU5fm">
-          <ref role="ehGHo" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+          <ref role="ehGHo" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
         </node>
       </node>
     </node>

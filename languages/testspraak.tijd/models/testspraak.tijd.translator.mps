@@ -2123,7 +2123,7 @@
                           <ref role="3cqZAo" node="7ywtZqZcKDl" resolve="service" />
                         </node>
                         <node concept="2qgKlT" id="7ywtZqZcZvd" role="2OqNvi">
-                          <ref role="37wK5l" to="txb8:4_w_EeF1yYy" resolve="dimensieMappings" />
+                          <ref role="37wK5l" to="txb8:1kY8nd4pdZ_" resolve="dimensieMappings" />
                         </node>
                       </node>
                       <node concept="3$u5V9" id="7ywtZqZcZve" role="2OqNvi">
@@ -4432,25 +4432,8 @@
               <ref role="ehGHo" to="ku5w:30CduGNAqP1" resolve="BerichtDataType" />
             </node>
             <node concept="2OqwBi" id="2Bfowq0H6ZR" role="33vP2m">
-              <node concept="2qgKlT" id="2Bfowq0H6ZS" role="2OqNvi">
-                <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                <node concept="2OqwBi" id="2Bfowq0H6ZT" role="37wK5m">
-                  <node concept="2qgKlT" id="2Bfowq0H6ZU" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
-                  </node>
-                  <node concept="2OqwBi" id="2Bfowq0H6ZV" role="2Oq$k0">
-                    <node concept="37vLTw" id="2Bfowq0H6ZW" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2Bfowq0GmjL" resolve="ctx" />
-                    </node>
-                    <node concept="liA8E" id="2Bfowq0H6ZX" role="2OqNvi">
-                      <ref role="37wK5l" to="x0ng:GV41edM7Aa" resolve="get" />
-                      <node concept="10M0yZ" id="2Bfowq0H6ZY" role="37wK5m">
-                        <ref role="3cqZAo" to="xfzg:I0uujL3PVx" resolve="INSTANCE" />
-                        <ref role="1PxDUh" to="xfzg:I0uujL3NdY" resolve="RtServiceEntrypointArgument" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+              <node concept="2qgKlT" id="1kY8nd2PmZD" role="2OqNvi">
+                <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
               </node>
               <node concept="2OqwBi" id="2Bfowq0H6ZZ" role="2Oq$k0">
                 <node concept="2OqwBi" id="2Bfowq0H700" role="2Oq$k0">
@@ -8475,7 +8458,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="3KD8iw2E$gh" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                    <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                     <node concept="37vLTw" id="1ip0z9Q_9Uk" role="37wK5m">
                       <ref role="3cqZAo" node="67etOnXr9Bx" resolve="dataType" />
                     </node>

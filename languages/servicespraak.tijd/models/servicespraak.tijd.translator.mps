@@ -951,8 +951,8 @@
                           <node concept="37vLTw" id="7grPb6RR8d0" role="2Oq$k0">
                             <ref role="3cqZAo" node="7grPb6RKPP9" resolve="service" />
                           </node>
-                          <node concept="3Tsc0h" id="7grPb6RR8d1" role="2OqNvi">
-                            <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
+                          <node concept="2qgKlT" id="1kY8ndjeRh4" role="2OqNvi">
+                            <ref role="37wK5l" to="txb8:1kY8nd4pdZ_" resolve="dimensieMappings" />
                           </node>
                         </node>
                         <node concept="v3k3i" id="7grPb6RR8d2" role="2OqNvi">

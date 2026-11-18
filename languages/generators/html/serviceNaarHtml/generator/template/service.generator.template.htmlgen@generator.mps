@@ -1953,8 +1953,8 @@
                     <node concept="3clFbF" id="7A_TBHTVQN8" role="3cqZAp">
                       <node concept="2OqwBi" id="7A_TBHTVR3u" role="3clFbG">
                         <node concept="30H73N" id="7A_TBHTVQN7" role="2Oq$k0" />
-                        <node concept="3Tsc0h" id="7A_TBHTVRsZ" role="2OqNvi">
-                          <ref role="3TtcxE" to="ku5w:30CduGMZ12g" resolve="datatype" />
+                        <node concept="2qgKlT" id="1kY8nd1VNxz" role="2OqNvi">
+                          <ref role="37wK5l" to="txb8:1kY8nd1Vp27" resolve="datatypes" />
                         </node>
                       </node>
                     </node>
@@ -1981,10 +1981,10 @@
                   <node concept="3clFbS" id="7d7Y6SL$6_D" role="2VODD2">
                     <node concept="3clFbF" id="7d7Y6SL$6_E" role="3cqZAp">
                       <node concept="2OqwBi" id="7d7Y6SL$6_F" role="3clFbG">
-                        <node concept="3Tsc0h" id="7d7Y6SL$6_G" role="2OqNvi">
-                          <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
-                        </node>
                         <node concept="30H73N" id="7d7Y6SL$6_H" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="1kY8ndjcwAF" role="2OqNvi">
+                          <ref role="37wK5l" to="txb8:1kY8nd1VpqP" resolve="datatypeMappings" />
+                        </node>
                       </node>
                     </node>
                   </node>

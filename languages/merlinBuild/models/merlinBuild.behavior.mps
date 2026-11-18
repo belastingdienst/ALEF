@@ -660,8 +660,8 @@
                   <node concept="Jnkvi" id="5HOwf0Zo_z3" role="2Oq$k0">
                     <ref role="1M0zk5" node="5HOwf0Zo_z7" resolve="service" />
                   </node>
-                  <node concept="3Tsc0h" id="5HOwf0Zo_z4" role="2OqNvi">
-                    <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
+                  <node concept="2qgKlT" id="1kY8nd4kCT$" role="2OqNvi">
+                    <ref role="37wK5l" to="txb8:1kY8nd1VpqP" resolve="datatypeMappings" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5HOwf0Zo_z5" role="2OqNvi">
@@ -2348,8 +2348,8 @@
                   <node concept="Jnkvi" id="55kDvbJtI2K" role="2Oq$k0">
                     <ref role="1M0zk5" node="55kDvbJtI2O" resolve="service" />
                   </node>
-                  <node concept="3Tsc0h" id="55kDvbJxwPP" role="2OqNvi">
-                    <ref role="3TtcxE" to="ku5w:659DFnwJ3C8" resolve="mapping" />
+                  <node concept="2qgKlT" id="1kY8nd4kIDk" role="2OqNvi">
+                    <ref role="37wK5l" to="txb8:1kY8nd1VpqP" resolve="datatypeMappings" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="55kDvbJtI2M" role="2OqNvi">

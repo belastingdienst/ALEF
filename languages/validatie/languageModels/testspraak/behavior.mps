@@ -14385,7 +14385,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1mUtUroUDAt" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:3GLmsVyDL94" resolve="externalize" />
+                    <ref role="37wK5l" to="txb8:1kY8ndfkf9p" resolve="externalize" />
                     <node concept="2OqwBi" id="1mUtUroUDQE" role="37wK5m">
                       <node concept="13iPFW" id="1mUtUroUDGL" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1mUtUroUE0d" role="2OqNvi">
@@ -14909,7 +14909,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1mUtUroTrqU" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:3GLmsVyDL94" resolve="externalize" />
+                    <ref role="37wK5l" to="txb8:1kY8ndfkf9p" resolve="externalize" />
                     <node concept="2OqwBi" id="1mUtUroTs1g" role="37wK5m">
                       <node concept="13iPFW" id="1mUtUroTrxe" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1mUtUroTtmh" role="2OqNvi">
@@ -33604,11 +33604,8 @@
                   <node concept="37vLTw" id="6YwrqIbCjld" role="2Oq$k0">
                     <ref role="3cqZAo" node="6qqZC3Qfo9Q" resolve="veld" />
                   </node>
-                  <node concept="2qgKlT" id="6YwrqIbClfJ" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                    <node concept="37vLTw" id="6YwrqIbCmxV" role="37wK5m">
-                      <ref role="3cqZAo" node="6qqZC3QeL$u" resolve="service" />
-                    </node>
+                  <node concept="2qgKlT" id="1kY8nd2FpMy" role="2OqNvi">
+                    <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="6YwrqIbCoQ2" role="2OqNvi">

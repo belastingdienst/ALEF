@@ -14,7 +14,7 @@ public class SoapServiceMock<T extends MObjectType> extends SoapService<T> {
     }
 
     @Override
-    protected void initialize(AdapterRegistry registry) {
+    protected void initialize() {
         // mock
     }
 

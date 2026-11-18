@@ -4,7 +4,6 @@ import nl.belastingdienst.alef_runtime.*;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
-import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.input.InputComplexProperty;
 import nl.belastingdienst.merlin.io.parser.ContentParser;
 import nl.belastingdienst.merlin.io.parser.ContentToken;
@@ -35,14 +34,14 @@ public abstract class Request {
     private final HashMap<String, InputComplexProperty> complexPropertyByName = new HashMap<>();
     private final HashMap<String, InputComplexProperty> complexPropertyByCollectionItemFieldName = new HashMap<>();
 
-    protected Request(AdapterRegistry registry, String calculationMomentFieldName, CalculationMoment calculationMoment) {
+    protected Request(String calculationMomentFieldName, CalculationMoment calculationMoment) {
         super();
         this.calculationMomentFieldName = calculationMomentFieldName;
         this.calculationMoment = calculationMoment;
-        initialize(registry);
+        initialize();
     }
 
-    public abstract void initialize(AdapterRegistry registry);
+    public abstract void initialize();
 
 
     public void addComplexProperty(InputComplexProperty complexProperty) {

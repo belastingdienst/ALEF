@@ -7,7 +7,6 @@ import nl.belastingdienst.alef_runtime.ViolationKind;
 import nl.belastingdienst.merlin.base.MObject;
 import nl.belastingdienst.merlin.base.MObjectType;
 import nl.belastingdienst.merlin.base.MUniverse;
-import nl.belastingdienst.merlin.io.adapter.AdapterRegistry;
 import nl.belastingdienst.merlin.io.generator.ContentGenerator;
 import nl.belastingdienst.merlin.io.parser.ParseException;
 
@@ -37,7 +36,7 @@ public abstract class AbstractService<T extends MObjectType, I> {
         this.enableValidation = enableValidation;
     }
 
-    protected abstract void initialize(AdapterRegistry registry);
+    protected abstract void initialize();
 
     public final ServiceResult process(InputStream inputStream, I input) throws IOException {
         final long messageId = this.counter.getAndIncrement();

@@ -38,7 +38,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="iny8" ref="r:98f2c063-d2b2-4335-9fd7-30b61a727b20(xmlUtils)" />
-    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(de.itemis.mps.utils.serializer.xml/)" />
+    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="z148" ref="r:a023aff8-1871-4910-a2c2-c0c6e0ed9e46(testspraak.plugin)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="4fyb" ref="r:c1f51457-1dd3-44d9-8648-a0a2e4e72bef(immutable)" />
@@ -3614,26 +3614,6 @@
             <node concept="17QB3L" id="aOEqsxdJ89" role="1tU5fm" />
           </node>
           <node concept="3clFbS" id="aOEqsxdJ8a" role="3clF47">
-            <node concept="3cpWs8" id="aOEqsxdJ8b" role="3cqZAp">
-              <node concept="3cpWsn" id="aOEqsxdJ8c" role="3cpWs9">
-                <property role="TrG5h" value="entrypoint" />
-                <node concept="3Tqbb2" id="aOEqsxdJ8d" role="1tU5fm">
-                  <ref role="ehGHo" to="ku5w:2a2AOY30XUX" resolve="Entrypoint" />
-                </node>
-                <node concept="2OqwBi" id="aOEqsxdJ8e" role="33vP2m">
-                  <node concept="37vLTw" id="aOEqsxdJ8f" role="2Oq$k0">
-                    <ref role="3cqZAo" node="aOEqsxdJ82" resolve="ctx" />
-                  </node>
-                  <node concept="liA8E" id="aOEqsxdJ8g" role="2OqNvi">
-                    <ref role="37wK5l" to="x0ng:GV41edM7Aa" resolve="get" />
-                    <node concept="10M0yZ" id="aOEqsxdJ8h" role="37wK5m">
-                      <ref role="3cqZAo" to="xfzg:I0uujL3PVx" resolve="INSTANCE" />
-                      <ref role="1PxDUh" to="xfzg:I0uujL3NdY" resolve="RtServiceEntrypointArgument" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="aOEqsxdJ8i" role="3cqZAp">
               <node concept="3cpWsn" id="aOEqsxdJ8j" role="3cpWs9">
                 <property role="TrG5h" value="type" />
@@ -3644,16 +3624,8 @@
                   <node concept="37vLTw" id="aOEqsxdJ8m" role="2Oq$k0">
                     <ref role="3cqZAo" node="aOEqsxdJ84" resolve="veld" />
                   </node>
-                  <node concept="2qgKlT" id="aOEqsxdJ8n" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:I0uujHxewQ" resolve="getBerichtType" />
-                    <node concept="2OqwBi" id="aOEqsxdJ8o" role="37wK5m">
-                      <node concept="37vLTw" id="aOEqsxdJ8p" role="2Oq$k0">
-                        <ref role="3cqZAo" node="aOEqsxdJ8c" resolve="entrypoint" />
-                      </node>
-                      <node concept="2qgKlT" id="aOEqsxdJ8q" role="2OqNvi">
-                        <ref role="37wK5l" to="txb8:2a2AOY7ibut" resolve="service" />
-                      </node>
-                    </node>
+                  <node concept="2qgKlT" id="1kY8nd2LXQq" role="2OqNvi">
+                    <ref role="37wK5l" to="txb8:4yfvH3pHsLr" resolve="externType" />
                   </node>
                 </node>
               </node>
@@ -13329,7 +13301,7 @@
                         <ref role="3cqZAo" node="y87BImenj$" resolve="service" />
                       </node>
                       <node concept="2qgKlT" id="y87BImg4L0" role="2OqNvi">
-                        <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                        <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                         <node concept="1PxgMI" id="y87BImg4L1" role="37wK5m">
                           <node concept="chp4Y" id="y87BImg4L2" role="3oSUPX">
                             <ref role="cht4Q" to="3ic2:58tBIcSIKOO" resolve="DataType" />
@@ -13489,7 +13461,7 @@
                         <ref role="3cqZAo" node="y87BImpPS7" resolve="service" />
                       </node>
                       <node concept="2qgKlT" id="y87BImpPRV" role="2OqNvi">
-                        <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                        <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                         <node concept="1PxgMI" id="y87BImpPRW" role="37wK5m">
                           <node concept="chp4Y" id="y87BImpPRX" role="3oSUPX">
                             <ref role="cht4Q" to="3ic2:58tBIcSIKOO" resolve="DataType" />
@@ -13679,7 +13651,7 @@
                   <ref role="3cqZAo" node="7ywtZqZ76tt" resolve="service" />
                 </node>
                 <node concept="2qgKlT" id="7ywtZqZ8ilq" role="2OqNvi">
-                  <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                  <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                   <node concept="37vLTw" id="7ywtZqZ8kRX" role="37wK5m">
                     <ref role="3cqZAo" node="7ywtZqZ79fK" resolve="datatype" />
                   </node>
@@ -13813,7 +13785,7 @@
                         <ref role="3cqZAo" node="7ywtZqZ9ewN" resolve="service" />
                       </node>
                       <node concept="2qgKlT" id="7ywtZqZ9DVL" role="2OqNvi">
-                        <ref role="37wK5l" to="txb8:4_w_EeF1yYy" resolve="dimensieMappings" />
+                        <ref role="37wK5l" to="txb8:1kY8nd4pdZ_" resolve="dimensieMappings" />
                       </node>
                     </node>
                     <node concept="3$u5V9" id="7ywtZqZ9Kl8" role="2OqNvi">
@@ -23279,7 +23251,7 @@
                 </node>
                 <node concept="2OqwBi" id="3KD8iw2E$gf" role="33vP2m">
                   <node concept="2qgKlT" id="3KD8iw2E$gh" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                    <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                     <node concept="1PxgMI" id="2yinoIq69X4" role="37wK5m">
                       <node concept="chp4Y" id="2yinoIq6tiM" role="3oSUPX">
                         <ref role="cht4Q" to="3ic2:58tBIcSIKOO" resolve="DataType" />
@@ -25824,7 +25796,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="46a9zCb$vbc" role="2OqNvi">
-                    <ref role="37wK5l" to="txb8:3aZUpxwHW6G" resolve="mappingVoor" />
+                    <ref role="37wK5l" to="txb8:1kY8nd2PBu5" resolve="mappingVoor" />
                     <node concept="37vLTw" id="67etOnWr5Bg" role="37wK5m">
                       <ref role="3cqZAo" node="67etOnWqxsz" resolve="dataType" />
                     </node>

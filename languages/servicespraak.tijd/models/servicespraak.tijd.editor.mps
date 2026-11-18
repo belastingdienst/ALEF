@@ -285,9 +285,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
@@ -632,14 +629,14 @@
                             <node concept="2Xjw5R" id="4hooXbArwxL" role="2OqNvi">
                               <node concept="1xMEDy" id="4hooXbArwxM" role="1xVPHs">
                                 <node concept="chp4Y" id="4hooXbArwxN" role="ri$Ld">
-                                  <ref role="cht4Q" to="ku5w:1QW$3U9mC5j" resolve="Service" />
+                                  <ref role="cht4Q" to="ku5w:1kY8nd1Vnem" resolve="IMappingContext" />
                                 </node>
                               </node>
                               <node concept="1xIGOp" id="4hooXbArwxO" role="1xVPHs" />
                             </node>
                           </node>
-                          <node concept="3Tsc0h" id="4hooXbArwxP" role="2OqNvi">
-                            <ref role="3TtcxE" to="ku5w:30CduGMZ12g" resolve="datatype" />
+                          <node concept="2qgKlT" id="1kY8nd1WiaD" role="2OqNvi">
+                            <ref role="37wK5l" to="txb8:1kY8nd1Vp27" resolve="datatypes" />
                           </node>
                         </node>
                         <node concept="3zZkjj" id="4hooXbArwxQ" role="2OqNvi">
