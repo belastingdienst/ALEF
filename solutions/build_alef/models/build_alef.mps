@@ -11748,11 +11748,6 @@
             <ref role="3bR37D" to="4a8c:7nCo6uzk30U" resolve="json" />
           </node>
         </node>
-        <node concept="1SiIV0" id="15_coDx$P_k" role="3bR37C">
-          <node concept="3bR9La" id="15_coDx$P_l" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L2l" resolve="jetbrains.mps.baseLanguage.logging" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="15_coDx$P_o" role="3bR37C">
           <node concept="3bR9La" id="15_coDx$P_p" role="1SiIV1">
             <ref role="3bR37D" node="4_O251liq0W" resolve="gegevensspraak.tijd" />
@@ -11786,6 +11781,11 @@
         <node concept="1SiIV0" id="LxvEVM_O2e" role="3bR37C">
           <node concept="3bR9La" id="LxvEVM_O2f" role="1SiIV1">
             <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xsdtLnXBaR" role="3bR37C">
+          <node concept="3bR9La" id="6xsdtLnXBaS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>

@@ -3629,7 +3629,7 @@
             <node concept="2Sf5sV" id="1BREw2bDS8F" role="37wK5m" />
             <node concept="2YIFZM" id="1BREw2bD$DW" role="37wK5m">
               <ref role="37wK5l" to="r02f:7hF7fwi2qC5" resolve="of" />
-              <ref role="1Pybhc" to="r02f:7hF7fwi2m3l" resolve="UserState" />
+              <ref role="1Pybhc" to="r02f:7hF7fwi2m3l" resolve="TestResult" />
               <node concept="2Sf5sV" id="3$RLyPlklZu" role="37wK5m" />
             </node>
             <node concept="3clFbT" id="1BREw2bDSJL" role="37wK5m">
@@ -4073,6 +4073,59 @@
               </node>
             </node>
             <node concept="3GX2aA" id="3Ne_voFgP6v" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="mnanJseC93">
+    <property role="TrG5h" value="RunTestWithoutDebug" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="6ldf:7ypotQ8J$0P" resolve="ITestGeval" />
+    <node concept="2S6ZIM" id="mnanJseC94" role="2ZfVej">
+      <node concept="3clFbS" id="mnanJseC95" role="2VODD2">
+        <node concept="3clFbF" id="mnanJseC96" role="3cqZAp">
+          <node concept="Xl_RD" id="mnanJseC97" role="3clFbG">
+            <property role="Xl_RC" value="Test Zonder Debug-trace" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="mnanJseC98" role="2ZfgGD">
+      <node concept="3clFbS" id="mnanJseC99" role="2VODD2">
+        <node concept="3clFbF" id="mnanJseC9a" role="3cqZAp">
+          <node concept="2YIFZM" id="mnanJseKgu" role="3clFbG">
+            <ref role="37wK5l" to="r02f:mnanJseItK" resolve="runWithoutDebugger" />
+            <ref role="1Pybhc" to="r02f:4tGWrODgrhH" resolve="TestsRunConfiguration" />
+            <node concept="1XNTG" id="mnanJseKgv" role="37wK5m" />
+            <node concept="2Sf5sV" id="mnanJseKgw" role="37wK5m" />
+            <node concept="2YIFZM" id="mnanJseU8C" role="37wK5m">
+              <ref role="37wK5l" to="r02f:7hF7fwi2qC5" resolve="of" />
+              <ref role="1Pybhc" to="r02f:7hF7fwi2m3l" resolve="TestResult" />
+              <node concept="2Sf5sV" id="mnanJseU9K" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="mnanJseC9h" role="2ZfVeh">
+      <node concept="3clFbS" id="mnanJseC9i" role="2VODD2">
+        <node concept="3clFbF" id="mnanJseC9j" role="3cqZAp">
+          <node concept="1Wc70l" id="mnanJseC9k" role="3clFbG">
+            <node concept="2OqwBi" id="mnanJseC9l" role="3uHU7B">
+              <node concept="2Sf5sV" id="mnanJseC9m" role="2Oq$k0" />
+              <node concept="2qgKlT" id="mnanJseC9n" role="2OqNvi">
+                <ref role="37wK5l" to="r02f:72vEOu2WqtC" resolve="canDebugTest" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="mnanJseC9o" role="3uHU7w">
+              <node concept="2OqwBi" id="mnanJseC9p" role="3fr31v">
+                <node concept="2Sf5sV" id="mnanJseC9q" role="2Oq$k0" />
+                <node concept="2qgKlT" id="mnanJseC9r" role="2OqNvi">
+                  <ref role="37wK5l" to="8l26:30WUhM5mN2k" resolve="negeer" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
