@@ -1530,6 +1530,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7opdvrabBPE" role="3cqZAp">
+          <node concept="2OqwBi" id="7opdvrabD4B" role="3clFbG">
+            <node concept="37vLTw" id="7opdvrabBPC" role="2Oq$k0">
+              <ref role="3cqZAo" node="44CxCRxDumS" resolve="timeLinks" />
+            </node>
+            <node concept="TSZUe" id="7opdvrabFFU" role="2OqNvi">
+              <node concept="359W_D" id="7opdvrabFQd" role="25WWJ7">
+                <ref role="359W_E" to="m234:34cNJiKHmsC" resolve="EigenschapInitialisatie" />
+                <ref role="359W_F" to="m234:34cNJiKHmsF" resolve="waarde" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="44CxCRxD_UD" role="3cqZAp">
           <node concept="2OqwBi" id="44CxCRxD_UE" role="3clFbG">
             <node concept="37vLTw" id="44CxCRxD_UF" role="2Oq$k0">

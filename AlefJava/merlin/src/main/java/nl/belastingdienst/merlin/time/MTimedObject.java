@@ -2,6 +2,7 @@ package nl.belastingdienst.merlin.time;
 
 import nl.belastingdienst.alef_runtime.time.IValidity;
 import nl.belastingdienst.merlin.base.MObject;
+import nl.belastingdienst.merlin.base.MRoleKey;
 
 public class MTimedObject {
 
@@ -21,5 +22,12 @@ public class MTimedObject {
 
     public IValidity validity() { return this.valid; }
 
+    public MTimedObjectSingleton getTimedRoleOneRelation(MRoleKey roleKey) {
+        return this.object().getTimedRoleOneRelation(roleKey).when(this.validity()).asSingleton();
+    }
+
+    public MTimedObjectSet getTimedRoleNRelations(MRoleKey roleKey) {
+        return this.object().getTimedRoleNRelations(roleKey).when(this.validity());
+    }
 
 }

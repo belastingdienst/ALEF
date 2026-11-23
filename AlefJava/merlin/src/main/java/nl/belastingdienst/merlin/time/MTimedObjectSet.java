@@ -53,7 +53,7 @@ public class MTimedObjectSet implements ITimed<MElementList<MObject>> {
         }
     }
 
-    protected List<MTimedObject> members() {
+    public List<MTimedObject> members() {
         final List<MTimedObject> members = new ArrayList<>();
         for (var entry : membership.entrySet()) {
             members.add(MTimedObject.of(entry.getKey(), entry.getValue()));
