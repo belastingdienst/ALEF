@@ -70,6 +70,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -253,8 +254,18 @@
             </node>
           </node>
           <node concept="3_1$Yv" id="2Ujvt8LzByF" role="3_9lra">
-            <node concept="Xl_RD" id="2Ujvt8LzBFI" role="3_1BAH">
-              <property role="Xl_RC" value="Suspiciously few tests found" />
+            <node concept="3cpWs3" id="4H5FiC9aNny" role="3_1BAH">
+              <node concept="Xl_RD" id="4H5FiC9aNSr" role="3uHU7w">
+                <property role="Xl_RC" value=", that is suspiciously few!" />
+              </node>
+              <node concept="3cpWs3" id="4H5FiC9aL_I" role="3uHU7B">
+                <node concept="Xl_RD" id="2Ujvt8LzBFI" role="3uHU7B">
+                  <property role="Xl_RC" value="Found" />
+                </node>
+                <node concept="37vLTw" id="4H5FiC9aLFY" role="3uHU7w">
+                  <ref role="3cqZAo" node="2Ujvt8IGB5q" resolve="numberOfTests" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
