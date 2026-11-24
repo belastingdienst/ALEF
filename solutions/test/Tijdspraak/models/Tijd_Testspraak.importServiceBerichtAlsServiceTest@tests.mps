@@ -28,6 +28,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="ctzw" ref="r:74f223ba-ead2-455d-852d-25e8cdeee4d3(json.structure)" />
+    <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
@@ -364,10 +365,10 @@
           <node concept="3cpWsn" id="5xj$Q_BTY_a" role="3cpWs9">
             <property role="TrG5h" value="xmlString" />
             <node concept="17QB3L" id="5xj$Q_BTY_b" role="1tU5fm" />
-            <node concept="2YIFZM" id="5xj$Q_BTY_c" role="33vP2m">
-              <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
-              <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-              <node concept="37vLTw" id="5xj$Q_CqDjw" role="37wK5m">
+            <node concept="2YIFZM" id="6spfdw1FB2G" role="33vP2m">
+              <ref role="37wK5l" to="n5dx:6spfdw1EO0F" resolve="generateText" />
+              <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
+              <node concept="37vLTw" id="6spfdw1FB9D" role="37wK5m">
                 <ref role="3cqZAo" node="5xj$Q_CqCqf" resolve="xmlFile" />
               </node>
             </node>
@@ -582,6 +583,11 @@
             </node>
             <node concept="37vLTw" id="5xj$Q_Bucfh" role="37wK5m">
               <ref role="3cqZAo" node="5xj$Q_Bub$$" resolve="xsd" />
+            </node>
+            <node concept="2YIFZM" id="5YVShqY_IH0" role="37wK5m">
+              <ref role="37wK5l" to="n5dx:5YVShqYfMsL" resolve="toMpsProject" />
+              <ref role="1Pybhc" to="n5dx:61IHcBPjP9r" resolve="MPSUtil" />
+              <node concept="1jxXqW" id="5YVShqY_Ja1" role="37wK5m" />
             </node>
           </node>
         </node>

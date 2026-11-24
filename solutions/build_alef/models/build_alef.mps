@@ -13401,6 +13401,16 @@
             <ref role="3bR37D" to="ffeo:6IrEpWwbD4R" resolve="jetbrains.mps.vcs.idea.stubs" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6spfdw1S8Jh" role="3bR37C">
+          <node concept="3bR9La" id="6spfdw1S8Ji" role="1SiIV1">
+            <ref role="3bR37D" node="4wvGeDpkGRx" resolve="servicespraak" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6spfdw1S8Jj" role="3bR37C">
+          <node concept="3bR9La" id="6spfdw1S8Jk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5qlw_qNL1oh" role="2G$12L">
         <property role="TrG5h" value="strings" />

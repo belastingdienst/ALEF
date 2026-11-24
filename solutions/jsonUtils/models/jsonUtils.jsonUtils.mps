@@ -358,10 +358,10 @@
           <node concept="3cpWsn" id="6YlQ9T4Zu8D" role="3cpWs9">
             <property role="TrG5h" value="jsonText" />
             <node concept="17QB3L" id="6a_xAytEDE7" role="1tU5fm" />
-            <node concept="2YIFZM" id="6YlQ9T4Zu8E" role="33vP2m">
-              <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
-              <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-              <node concept="37vLTw" id="6YlQ9T4Zu8F" role="37wK5m">
+            <node concept="2YIFZM" id="6spfdw1FGNx" role="33vP2m">
+              <ref role="37wK5l" to="n5dx:6spfdw1EO0F" resolve="generateText" />
+              <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
+              <node concept="37vLTw" id="6spfdw1FGSA" role="37wK5m">
                 <ref role="3cqZAo" node="6YlQ9T4ZstG" resolve="jsonFile" />
               </node>
             </node>

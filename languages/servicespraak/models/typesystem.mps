@@ -5,6 +5,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -33,6 +34,10 @@
     <import index="iny8" ref="r:98f2c063-d2b2-4335-9fd7-30b61a727b20(xmlUtils)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="5iz4" ref="r:a10379d1-7a2d-4e32-a57a-72cdb4f3ff7e(strings)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -5740,9 +5745,9 @@
         <node concept="3cpWsn" id="5LFypqHo$Ms" role="3cpWs9">
           <property role="TrG5h" value="xsdText" />
           <node concept="17QB3L" id="5LFypqHoD9S" role="1tU5fm" />
-          <node concept="2YIFZM" id="5LFypqHo$Mt" role="33vP2m">
-            <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
-            <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+          <node concept="2YIFZM" id="6spfdw1FyVr" role="33vP2m">
+            <ref role="37wK5l" to="n5dx:6spfdw1EO0F" resolve="generateText" />
+            <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
             <node concept="2OqwBi" id="5LFypqHrFyg" role="37wK5m">
               <node concept="1YBJjd" id="15pyRee3HJI" role="2Oq$k0">
                 <ref role="1YBMHb" node="4vEb97OAKwG" resolve="schema" />

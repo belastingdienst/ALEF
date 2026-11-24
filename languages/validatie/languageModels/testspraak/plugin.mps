@@ -8637,9 +8637,9 @@
             <node concept="3clFbS" id="4GUqgN01_it" role="9aQI4">
               <node concept="3clFbF" id="4GUqgN007kt" role="3cqZAp">
                 <node concept="37vLTI" id="4GUqgN009S0" role="3clFbG">
-                  <node concept="2YIFZM" id="4GUqgN00cGG" role="37vLTx">
-                    <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
-                    <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+                  <node concept="2YIFZM" id="6spfdw1G1Hf" role="37vLTx">
+                    <ref role="37wK5l" to="n5dx:5YVShqVSC7W" resolve="generateText" />
+                    <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
                     <node concept="2OqwBi" id="4GUqgN01CCu" role="37wK5m">
                       <node concept="37vLTw" id="4GUqgN01C2g" role="2Oq$k0">
                         <ref role="3cqZAo" node="1Uc5WZucEX2" resolve="xsdContent" />
@@ -8647,6 +8647,9 @@
                       <node concept="3TrEf2" id="4GUqgN01E12" role="2OqNvi">
                         <ref role="3Tt5mk" to="ku5w:4vEb97N9FzE" resolve="xsdContent" />
                       </node>
+                    </node>
+                    <node concept="37vLTw" id="5YVShqYe1rs" role="37wK5m">
+                      <ref role="3cqZAo" node="5YVShqYdVdm" resolve="mpsProject" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="4GUqgN007kr" role="37vLTJ">
@@ -9040,6 +9043,13 @@
         <property role="TrG5h" value="xsdContent" />
         <node concept="3Tqbb2" id="1Uc5WZucEX3" role="1tU5fm">
           <ref role="ehGHo" to="ku5w:4vEb97MXvUE" resolve="Xsd" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5YVShqYdVdm" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="5YVShqYdYxG" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
     </node>
@@ -11051,11 +11061,38 @@
   <node concept="312cEu" id="1xXjEZkr5EG">
     <property role="3GE5qa" value="ImportXMLAlsServiceTest" />
     <property role="TrG5h" value="ImportXmlServiceTest" />
+    <node concept="312cEg" id="5YVShqY_XC2" role="jymVt">
+      <property role="TrG5h" value="mpsProject" />
+      <node concept="3Tm6S6" id="5YVShqY_UkH" role="1B3o_S" />
+      <node concept="3uibUv" id="5YVShqY_X_8" role="1tU5fm">
+        <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1xXjEZkr8Ok" role="jymVt" />
     <node concept="3clFbW" id="1xXjEZkrMhj" role="jymVt">
       <node concept="3cqZAl" id="1xXjEZkrMhk" role="3clF45" />
-      <node concept="3clFbS" id="1xXjEZkrMhm" role="3clF47" />
+      <node concept="3clFbS" id="1xXjEZkrMhm" role="3clF47">
+        <node concept="3clFbF" id="5YVShqY_ZmT" role="3cqZAp">
+          <node concept="37vLTI" id="5YVShqYA1o4" role="3clFbG">
+            <node concept="37vLTw" id="5YVShqYA1Vj" role="37vLTx">
+              <ref role="3cqZAo" node="5YVShqY_RWx" resolve="project" />
+            </node>
+            <node concept="2OqwBi" id="5YVShqY_ZNq" role="37vLTJ">
+              <node concept="Xjq3P" id="5YVShqY_ZmS" role="2Oq$k0" />
+              <node concept="2OwXpG" id="5YVShqYA0fM" role="2OqNvi">
+                <ref role="2Oxat5" node="5YVShqY_XC2" resolve="mpsProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="1xXjEZkrJcW" role="1B3o_S" />
+      <node concept="37vLTG" id="5YVShqY_RWx" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="5YVShqY_RWw" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="1xXjEZkrFQs" role="jymVt" />
     <node concept="3clFb_" id="1xXjEZkrg$O" role="jymVt">
@@ -11390,6 +11427,9 @@
               <node concept="37vLTw" id="1xXjEZkr68F" role="37wK5m">
                 <ref role="3cqZAo" node="1xXjEZkr689" resolve="registeredXsd" />
               </node>
+              <node concept="37vLTw" id="5YVShqYA3QH" role="37wK5m">
+                <ref role="3cqZAo" node="5YVShqY_XC2" resolve="mpsProject" />
+              </node>
             </node>
           </node>
         </node>
@@ -11710,7 +11750,7 @@
       <node concept="1oajcY" id="2AoftXIYDKE" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="6Kj44FXdeeu" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
+      <property role="TrG5h" value="mpsProject" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="6Kj44FXdeev" role="1oa70y" />
     </node>
@@ -11727,7 +11767,7 @@
               <node concept="2OqwBi" id="3lhZQ8i26SG" role="2Oq$k0">
                 <node concept="2WthIp" id="3lhZQ8i26SH" role="2Oq$k0" />
                 <node concept="1DTwFV" id="3lhZQ8i26SI" role="2OqNvi">
-                  <ref role="2WH_rO" node="6Kj44FXdeeu" resolve="project" />
+                  <ref role="2WH_rO" node="6Kj44FXdeeu" resolve="mpsProject" />
                 </node>
               </node>
               <node concept="liA8E" id="3lhZQ8i26SJ" role="2OqNvi">
@@ -11747,7 +11787,7 @@
               <node concept="2OqwBi" id="164yCO9zDzG" role="2Oq$k0">
                 <node concept="2WthIp" id="164yCO9zDzH" role="2Oq$k0" />
                 <node concept="1DTwFV" id="164yCO9zDzI" role="2OqNvi">
-                  <ref role="2WH_rO" node="6Kj44FXdeeu" resolve="project" />
+                  <ref role="2WH_rO" node="6Kj44FXdeeu" resolve="mpsProject" />
                 </node>
               </node>
               <node concept="liA8E" id="164yCO9zDzJ" role="2OqNvi">
@@ -11956,6 +11996,12 @@
                                   <node concept="2ShNRf" id="2AoftXIwCDk" role="2Oq$k0">
                                     <node concept="1pGfFk" id="2AoftXIwCDl" role="2ShVmc">
                                       <ref role="37wK5l" node="1xXjEZkrMhj" resolve="ImportXmlServiceTest" />
+                                      <node concept="2OqwBi" id="5YVShr1dJh6" role="37wK5m">
+                                        <node concept="2WthIp" id="5YVShr1dI$M" role="2Oq$k0" />
+                                        <node concept="1DTwFV" id="5YVShr1dJR4" role="2OqNvi">
+                                          <ref role="2WH_rO" node="6Kj44FXdeeu" resolve="mpsProject" />
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2AoftXIwCDm" role="2OqNvi">

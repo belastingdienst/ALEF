@@ -23006,9 +23006,9 @@
           <node concept="3cpWsn" id="5LFypqHo$Ms" role="3cpWs9">
             <property role="TrG5h" value="xsdText" />
             <node concept="17QB3L" id="5LFypqHoD9S" role="1tU5fm" />
-            <node concept="2YIFZM" id="5LFypqHo$Mt" role="33vP2m">
-              <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-              <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+            <node concept="2YIFZM" id="6spfdw1FRlx" role="33vP2m">
+              <ref role="37wK5l" to="n5dx:6spfdw1EO0F" resolve="generateText" />
+              <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
               <node concept="2OqwBi" id="4Wcg3N04uRl" role="37wK5m">
                 <node concept="37vLTw" id="4Wcg3N04uEY" role="2Oq$k0">
                   <ref role="3cqZAo" node="4Wcg3N04rnM" resolve="xsd" />
