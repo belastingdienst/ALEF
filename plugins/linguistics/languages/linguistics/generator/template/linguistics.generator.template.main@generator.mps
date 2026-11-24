@@ -7347,6 +7347,42 @@
                       <ref role="37wK5l" to="o2rs:1xxPe$K1Go2" resolve="adjectiveForm" />
                       <node concept="37vLTw" id="uUjlHrEQdK" role="37wK5m">
                         <ref role="3cqZAo" node="uUjlHrE4s9" resolve="fs" />
+                        <node concept="1ZhdrF" id="15C9zy$yA1l" role="lGtFl">
+                          <property role="2qtEX8" value="variableDeclaration" />
+                          <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                          <node concept="3$xsQk" id="15C9zy$yA1m" role="3$ytzL">
+                            <node concept="3clFbS" id="15C9zy$yA1n" role="2VODD2">
+                              <node concept="3clFbF" id="15C9zy$yAkn" role="3cqZAp">
+                                <node concept="2YIFZM" id="15C9zy$yAko" role="3clFbG">
+                                  <ref role="37wK5l" to="dcu6:2AbN5Po26rk" resolve="of" />
+                                  <ref role="1Pybhc" to="dcu6:2AbN5Po26pC" resolve="FS" />
+                                  <node concept="30H73N" id="15C9zy$yAkp" role="37wK5m" />
+                                  <node concept="1bVj0M" id="15C9zy$yAkq" role="37wK5m">
+                                    <node concept="37vLTG" id="15C9zy$yAkr" role="1bW2Oz">
+                                      <property role="TrG5h" value="p" />
+                                      <node concept="3Tqbb2" id="15C9zy$yAks" role="1tU5fm">
+                                        <ref role="ehGHo" to="ggaa:6ZNMfVe4Pdx" resolve="Phrase" />
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbS" id="15C9zy$yAkt" role="1bW5cS">
+                                      <node concept="3clFbF" id="15C9zy$yAku" role="3cqZAp">
+                                        <node concept="2OqwBi" id="15C9zy$yAkv" role="3clFbG">
+                                          <node concept="1iwH7S" id="15C9zy$yAkw" role="2Oq$k0" />
+                                          <node concept="1iwH70" id="15C9zy$yAkx" role="2OqNvi">
+                                            <ref role="1iwH77" node="2AbN5Po0cjE" resolve="fs" />
+                                            <node concept="37vLTw" id="15C9zy$yAky" role="1iwH7V">
+                                              <ref role="3cqZAo" node="15C9zy$yAkr" resolve="p" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
