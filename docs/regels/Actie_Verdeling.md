@@ -5,9 +5,11 @@ In een verdeling wordt gesproken over een *verdeler* en een *ontvanger*. De verd
 Als niet het hele verdeelplafond wordt toegerekend aan ontvangers (door afronding of aanspraak) dan wordt een restant berekend voor iedere Verdeler.
 
 Een verdeling kan met of zonder subgroepen:
+// Guanshengdijun: Ik mis na "kan" nog een twee werkwoord, iets als "kan plaatsvinden"
 
 * **Verdelen vanuit één of meerdere verdelers**  
 Verdelingen vanuit meerdere verdelers met verdeelplafonds en restanten. Kan gebruikt worden via de intentie “Verdeel Vanuit Meerdere Verdelers” beschikbaar op de verdeling. Verdelers en ontvangers bieden de volgende optie.
+  // Guanshengdijun: Ik begrijp niet wat de laatste zin inhoudt. Houdt de verdeling met subgroepen verband met bovenstaande regel?
 * **Verdeling met subgroepen**
 Dit houdt in dat Ontvangers in subgroepen worden ingedeeld, waarover in een volgorde wordt verdeeld.
 
@@ -32,6 +34,7 @@ Een enkele verdeler verdeelt over zijn ontvangers. De relatie is één op meer.
 ![Verdeling enkele verdeler relatiemodel](img/VerdelingRelatieEnkeleVerdelers.png)
 
 Bij meerdere verdelers heeft een verdeling zijn (één op meer) verdelers en (één op meer) ontvangers. Een transactieobject heeft een (aparte) relatie met de verdeler en ontvanger
+// Guanshengdijun: Is "zijn" hier een werkwoord of een bezittelijk voornaamwoord? In het eerste geval kan die weg. Er mist aan het eind van de regel ook een punt.
 
 ![Verdeling meerdere verdelers relatiemodel](img/VerdelingRelatieMeerdereVerdelers.png)
 
@@ -43,6 +46,7 @@ Gelijk verdelen is op basis van het aandeel van een ontvanger gedeeld door het t
 
 Wanneer naar rato wordt verdeeld krijgen de instanties van de rol met een hogere waarde voor dit 'naar rato attribuut' een groter aandeel van het te verdelen bedrag dan instanties met een kleinere waarde.
 In het voorbeeld onderaan wordt het numerieke attribuut 'woonregiofactor' gebruikt. Stel dat we 1000 miles moeten verdelen over Tom en maria. Die van Tom is 3 en die van Maria 2, dus samen 5. Dat betekent dat Tom 3/5e deel van de 1000 beschikbare treinmiles krijgt, dus 600 treinmiles. Maria krijgt 2/5e deel, dus 400 treinmiles.
+// Guanshengdijun: Ik neem aan dat je in het voorbeeld met "die van Tom" verwijst naar de woonregiofactor, maar dat staat twee zinnen verderop. Ik zou hier expliciet noemen dat het daarover gaat.
 
 ## Verdeling over groepen ontvangers in een volgorde
 
@@ -56,7 +60,9 @@ Hierbij bestaat opnieuw de mogelijkheid om dit in [gelijke delen](#gelijk-verdel
 ## Gebruik van een maximale aanspraak
 
 Als naar rato wordt verdeeld kan bij beide bovengenoemde vormen van verdeling een zogenaamde aanspraak toegevoegd worden.
+// Guanshengdijun: Hieronder herhalend: het is belangrijk om "maximum" bij "aanspraak" te noemen. Elke ontvanger heeft aanspraak, maar wat dit aangeeft is dat er aan die aanspraak een limiet zit.
 Dit is niet mogelijk bij gelijke verdeling omdat een gelijke verdeling met een maximum aanspraak voor meerdere uitleg vatbaar is.
+// Guanshengdijun: "meerdere uitleg" klopt niet, maar ik kan ook niet echt zien wat je bedoelt, dus ik kan ook niet echt een alternatieve suggestie doen.
 Deze aanspraak is altijd een numeriek attribuut van de ontvanger en beschrijft hoeveel een individuele ontvanger maximaal kan krijgen uit de verdeling.
 Dit is belangrijk om te gebruiken in combinatie met het verdelen over groepen. Want zonder maximum zou het hele te verdelen bedrag over de eerste groep verdeeld worden.
 Als een maximale aanspraak wordt gespecificeerd, dan moet ook altijd een [onverdeelde rest](#gebruik-van-onverdeelde-rest) worden gespecificeerd omdat door toepassing van het maximum het totale verdeelplafond mogelijk niet helemaal wordt toegewezen.
@@ -64,6 +70,7 @@ Als een maximale aanspraak wordt gespecificeerd, dan moet ook altijd een [onverd
 ## Gebruik van afronding
 
 Als laatste kan het te ontvangen aantal treinmiles ook afgerond worden. Dit kan in deze situatie alleen naar beneden maar er kan wel een aantal decimalen gespecificeerd worden.
+// Guanshengdijun: Er mist een komma tussen "beneden" en "maar"
 Als wordt afgerond, dan moet ook altijd een onverdeelde rest worden gespecificeerd omdat door toepassing van de afronding het totale verdeelplafond mogelijk niet helemaal wordt toegewezen.
 
 ## Gebruik van onverdeelde rest
@@ -73,6 +80,7 @@ In het geval van verdelen met een aanspraak of een afronding kan het voorkomen d
 ## Omgang met lege waarden
 
 Onderstaande tabel bevat het overzicht van de resultaten van de verdeling als één van de attributen een lege of uitzonderlijke waarde heeft.
+// Guanshengdijun: Hier mist volgens mij de genoemde tabel
 
 ## Transacties
 

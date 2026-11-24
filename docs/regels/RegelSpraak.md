@@ -1,6 +1,7 @@
 # RegelSpraak
 
 RegelSpraak is een taal die gebruikt wordt om regels te formuleren met natuurlijke taal die uitvoerbaar zijn door een digitaal systeem.
+//Guanshengdijun: Ik zou "in natuurlijke taal" gebruiken.
 
 ## Naam van een regel
 
@@ -10,9 +11,11 @@ Er is ook een naamgevingsconventie: de naam van de regel is gelijk aan de naam v
 ## Geldigheidsperiode van een regelversie
 
 De geldigheidsperiode bepaalt welke regelversie moet worden meegenomen bij de uitvoering van de regels voor een bepaald moment.
+// Guanshengdijun: "op een bepaald moment"
 Iedere regelversie heeft zijn eigen *geldigheidsperiode*, voorafgegaan door het woord **geldig**:
 
 * een tweezijdig open interval. In dat geval staat er altijd het woord **altijd** bij vermeld, en is er maar regelversie;
+// Ik neem aan dat er een woord mist voor "regelversie". Wellicht "1" (als getal zodat de diakrieten niet wegvallen in Github)?
 * een eenzijdig open interval, bijvoorbeeld **vanaf 01-01-2021** of **t/m 31-12-2021**;
 * een gesloten interval, bijvoorbeeld **vanaf 01-01-2021 t/m 31-12-2021**;
 
@@ -49,6 +52,7 @@ Dit [*voorwaardendeel*](Voorwaardendeel.md) volgt na de **indien**. Bijvoorbeeld
 ![Voorwaardendeel bij een regelversie](../img/ALEF200_RegelversieVoorwaardendeel.png)
 
 De voorwaarden kunnen enkelvoudig zijn of samengesteld, en tijdsafhankelijk zijn of -onafhankelijk. Als een de voorwaarden tijdsafhankelijk is, dan zijn ze dat allemaal.
+// Guanshengdijun: "één van de voorwaarden". Ik vind het onderbreken van "tijdsafhankelijk of -onafhankelijk" met "zijn" niet erg fraai, ik zou "zijn" misschien weglaten, aangezien het ook al in het zinsdeel ervoor staat.
 Tijdsafhankelijke voorwaarden kunnen met of zonder periodeaanduidingen (**van ... tot**) gedefinieerd worden.
 Voor meer informatie, zie de pagina over het [*voorwaardendeel*](Voorwaardendeel.md)
 

@@ -14,6 +14,8 @@ Met de regel in het voorbeeld wordt vastgelegd dat de instanties voor passagier,
 ![Feittype voor creatie van een relatie tussen ov-tegoed en natuurlijk persoon](../img/ALEF201_FeitcreatieFeittype.png)
 
 De Actie [Objectcreatie](Actie_Objectcreatie.md) wordt gebruikt voor modellen met objecten met afgeleide gegevens die via rollen zijn verbonden aan andere instanties die direct gevuld worden met waarden.
+// Guanshengdijun: Je plakt hier vier bijvoeglijke bepalingen, waarvan meerdere met hetzelfde voorzetsel/aanwijzend voornaamwoord, aan elkaar. Dat maakt het lastig leesbaar. Ik zou deze zin opknippen een een paar afzonderlijke.
 In het voorbeeld voor objectcreatie was dat het OV-tegoed, dat aan de vlucht werd gekoppeld.
 De Actie Feitcreatie is vervolgens nodig om de relatie van de met regels gecreeerde instanties met andere objecten te definieren.
+// Guanshengdijun: "gecreëerde, definiëren"
 Pas daarna heeft de instantie van OV-tegoed een directe link met de persoon die passagier was op de vlucht.

@@ -9,6 +9,7 @@ Tijdens creatie kan aan attributen een waarde worden toegekend.
 ![Creatie van een ov-tegoed bij een vlucht](../img/ALEF201_Objectcreatie1.png)
 
 Een nieuwe instantie kan bij ObjectCreatie alleen gecreëerd worden in relatie met een al bestaande instantie. Deze relatie zal moeten zijn gespecificeerd met een [feittype](../gegevens/feittype.md).
+// Guanshengdijun: "in relatie tot"
 Deze regel maakt een nieuw voorkomen van objecttype ov-tegoed en koppelt dit met de rol 'vastgesteld ov-tegoed' aan een voorkomen van de vlucht.
 De actie om een nieuw object te creëren heeft het taalpatroon “**Een \<onderwerpexpressie\> heeft \<rol\>**”.
 

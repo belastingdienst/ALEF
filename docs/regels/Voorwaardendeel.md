@@ -14,11 +14,13 @@ Het woord "**indien**" wordt voor de onderwerpexpressie gezet als de conditie wo
 
 Dit is de meest generieke manier om een voorwaardendeel te construeren.
 Elementaire voorwaarden hebben maar één enkele conditie passen aan het uiteinde van de zin in Regelspraak.
+// Guanshengdijun: Naar mijn weten worden deze in Regelspraak "enkele voorwaarden" genoemd. Het woord "elementair" wordt volgens mij alleen gebruikt voor verwachtingen in tests.
 Bij samengestelde voorwaarden maakt Regelspraak standaard gebruik van een lijstweergave. Zie [samengestelde voorwaarden](Voorwaardendeel_samengesteld.md).
 Predicaten hebben een vragende vorm (bv. gelijk is/zijn aan) en een stellende vorm (bv. is/zijn gelijk aan).
 De vragende vorm staat vóór een predicaat. De stellende vorm wordt ná het werkwoord ingevoegd.
 
 ### Enkelvoudig en meervoudige voorwaarden
+// Guanshengdijun: "Enkelvoudige"
 
 Een enkelvoudige voorwaarde controleert slechts één enkele instantie terwijl een meervoudige voorwaarde meerdere instanties controleert.
 Bij een meervoudige voorwaarde dient ook de onderwerpexpressie meervoudig te zijn, en moet het voorafgegaan worden door een *kwantificatie*.
@@ -36,6 +38,7 @@ Dit zijn de kwantificaties die gebruikt kunnen worden:
 
 De actie [*consistentieregel*](Actie_Consistentieregel.md) heeft een criterium in plaats van een voorwaarde.
 Als de conditie gebruikt wordt als *criterium*, dan wordt het woord "**moet**" tussen de onderwerpexpressie en het predicaat gezet, en wordt de meervoudsvorm (van de vragende vorm) van het predicaat gebruikt.
+// Guanshengdijun: Het is niet de meervoudsvorm van het predicaat, maar de infinitief (hele werkwoord)
 
 ### Rolcheck
 
@@ -58,6 +61,7 @@ Het predicaat dient voorafgegaan te worden door een onderwerpexpressie die verwi
 Vergelijkingspredicaten vergelijken de waarde die uit de onderwerpexpressie komt met de waarde die uit een tweede [expressie](Expressies.md) komt.
 Die tweede expressie moet hierbij hetzelfde datatype hebben als de onderwerpexpressie.
 Indien de waarde gebruik maken van verschillende eenheden uit een [eenheidssysteem](../gegevens/eenheidssysteem.md), dan zal de waarde uit de tweede expressie omgerekend worden naar de eenheid van de eerste expressie voordat de vergelijking plaatsvindt.
+// Guanshengdijun: Het eerste "waarde" moet meervoud zijn.
 
 "**is gelijk aan**" controleert of de waardes precies aan elkaar gelijk zijn.
 "**is ongelijk aan**" heeft als resultaat *waar* als dat niet het geval is.
@@ -82,6 +86,7 @@ Voor het datatype *datum/tijd* zijn er aparte predicaten:
 **Let op!** Er is vastgelegd dat *leeg* gelijk aan *leeg* geen geldige vergelijking is, omdat de uitkomst geen echte betekenis heeft. (Dit geldt voor alle predicaten)
 Daarom geeft RegelSpraak een foutmelding als dit toch voorkomt.
 Voor [Datatypes](../gegevens/datatype.md) *numeriek* en *percentage* werkt dit anders. Om historische redenen wordt een lege waarde in deze datatypes geinterpreteerd als 0.
+//Guanshengdijun: "geïnterpreteerd"
 
 ### Lege waardes
 
@@ -92,6 +97,7 @@ Leeg betekent dat er (nog) geen waarde is toegewezen. Gevuld betekent het tegeno
 
 Een tijdsafhankelijke conditie betreft een conditie waarbij het resultaat van de conditie tijdsafhankelijk is. Dat wil zeggen dat de conditie waar of onwaar kan zijn op verschillende momenten in de tijd.
 Of de conditie tijdsafhankelijk of niet-tijdsafhankelijk is hangt er vanaf of de in de expressie gebruikte gegevens tijdsafhankelijk zijn.
+// Guanshengdijun: Er mist een komma tussen "is" en "hangt" en er vanaf moet hier geschreven worden als "ervan af"
 Als één van de gegevens tijdsafhankelijk is, dan zijn de volledige expressie en conditie tijdsafhankelijk.
 Predicaten kunnen worden uitgebreid met een check of het betreffende predicaat gedurende een hele periode geldt.
 Deze check kan alleen worden uitgevoerd als het onderwerp van het predicaat tijdsafhankelijk is. (Zie [tijdlijnen](../gegevens/tijdlijn.md) en [expressies](Expressies.md) voor [datum](Expressies_Datum.md))
@@ -100,6 +106,7 @@ De toevoeging betekent dat de controle die het predicaat beschrijft alleen *waar
 In een [samengestelde conditie](Voorwaardendeel_samengesteld.md) wordt de uitdrukking "**het is de periode van \<datum\> tot \<datum\>**" gebruikt als zelfstandig predicaat in de lijst van condities.
 In deze expressie kunnen ook "**vanaf \<datum\>**" en "**tot en met \<datum\>**" ook gebruikt worden.
 Tijdsafhankelijke condities kunnen ook worden gebruikt bij twee specifieke tijdsafhankelijke [expressies](Expressies.md). (Dat zijn "**het totaal van**"  en "**het tijdsevenredig deel**".)
+// Guanshengdijun: Ik zou de haakjes in deze zin weglaten.
 
 ### Regel gevuurd & Regel inconsistent
 
@@ -123,6 +130,7 @@ Het predicaat **numeriek zijn met exact ... cijfers** kan alleen gebruikt worden
 Vul in het veld een geheel getal in.
 Het predicaat controleert of de tekst ook gelezen kan worden als een getal, oftewel als een numerieke waarde met het opgegeven aantal cijfers.
 Het resultaat is *waar* als dat zo is en het aantal cijfers in dat getal overeenkomt met de opgegeven waarde.
+// Guanshengdijun: In principe is de laatste toevoeging overbodig, aangezien je in de bovenstaande regel al beschrijft dat de waarde het opgegeven aantal cijfers moet hebben.
 
 ### Dagsoortcontrole
 
@@ -132,9 +140,14 @@ Hiermee kan gecontroleerd worden of een bepaalde datum (dag) tot een bepaalde [d
 ### De elfproef
 
 Er bestaat een speciaal predicaat is controleren of een getal aan de elfproef voldoet: **\<reeks van cijfers\> voldoet aan de elfproef**
+// Guanshengdijun: Hier lopen twee zinconstructies door elkaar. "Er bestaat een speciaal predicaat, namelijk controleren of [...]" of "Een speciaal predicaat is controleren of [...]"
 De hier bedoelde elfproef (er zijn verschillende varianten voor verschillende doeleinden) is een test voor het beoordelen van de geldigheid van een identificatienummer zoals met name het Burgerservicenummer (BSN-nummer).
+// Guanshengdijun: "zoals met name" is ook een beetje dubbelop. Ik zou een van de twee bewoordingen kiezen. Verder beetje perfectionistisch maar "BSN-nummer" klopt strikt genomen niet, omdat "nummer" al in de N van de afkorting zit. Is beetje aan jezelf of je dat wil corrigeren.
 Hierbij wordt ieder cijfer “gewogen” en bij elkaar opgeteld.
 Gewogen betekent dat een cijfer vermenigvuldigd wordt met een afgesproken waarde, afhankelijk van zijn positie in de cijferreeks.
 Het toekennen van een weging begint bij het laatste cijfer in de reeks: het laatste cijfer in de reeks (het controlecijfer) krijgt een gewicht van –1, het een-na-laatste cijfer een gewicht van 2, het twee-na-laatste cijfer een gewicht van 3, etc.
+// Guanshengdijun: Klopt het dat de eerste gewichtswaarde negatief is?
 Als de gebruikte cijferreeks een geldig BSN-nummer is, moet de som hiervan bij delen door 11 (vandaar de naam “elfproef”) een positief geheel getal opleveren en het getal mag niet uitsluitend uit nullen bestaan.
+// Guanshengdijun: Zie boven over "BSN-nummer"
 De genoemde weging van cijfers bij het toepassen van de elfproef impliceert dat slechts enkele datatypen mogelijk zijn: het datatype *Numeriek (geheel getal)* en Tekst zijn toegestaan, met als kanttekening dat bij het datatype Tekst alleen cijfers in de waarde mogen voorkomen (dit kan bijvoorbeeld het geval zijn bij het gebruik van eventuele voor- of achterloopnullen).
+// Guanshengdijun: Moet "Tekst" hier tussen asterisks staan, net als "*Numeriek (geheel getal)*"?

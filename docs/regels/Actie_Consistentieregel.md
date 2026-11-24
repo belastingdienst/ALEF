@@ -11,6 +11,7 @@ Er zijn twee opties voor het opgeven van criteria waarop gecontroleerd moet word
 * rol of expressie moet aan criterium voldoen.
 
 In consistentieregels kan ook de uniciteit van instanties gecontroleerd worden, oftewel of waarden in  identificerende velden maar een keer voorkomen.
+// Guanshengdijun: Dubbele spatie tussen "in" en "identificerende"
 
 ## variant: attribuut moet aan criterium voldoen
 
@@ -45,8 +46,10 @@ Uniciteitschecks zijn alleen nodig als dat niet het geval is. De objecten zijn d
 Om dan te kunnen achterhalen dat twee representaties over hetzelfde werkelijke object gaan is er een identificerend attribuut nodig waarvan de uniciteit per werkelijk object gewaarborgd wordt.
 Daar bestaat meestal een identificerend nummer voor in een veld met Datatype *numeriek* of *tekst*. Daar kan deze controle over worden uitgevoerd.
 Daarvoor is het speciale predicaat is **uniek zijn**.
+// Guanshengdijun: dubbel voorkomen van "is"
 Met dit predicaat kan voor &#233;&#233;n of een combinatie van attributen gecontroleerd worden of deze over de instanties heen dezelfde waarde hebben.
 Dit noemen we *uniciteit*. Dit predicaat is *waar* als Is de waarde van een attribuut of combinatie van attributen uniek over instanties heen.
+// Guanshengdijun: Hier lopen twee zinconstructies door elkaar. "Is" moet op een andere plek in de zin.
 Dit predicaat kan alleen gebruikt worden in [consistentieregels](Actie_Consistentieregel.md), en alleen in een enkel criterium (dus niet in een samengesteld criterium).
 De attributen waarvan de waardes worden vergeleken moeten hierbij gespecificeerd worden.
 
@@ -63,5 +66,6 @@ Let wel: een vereniging is de combinatie van twee attributen met hetzelfde datat
 Het resultaat hiervan is een verzameling die bestaat uit de waarden van naam voor alle instanties van beide objecttypen.
 
 Tenslotte kan de uniciteit gecontroleerd worden voor een combinatie van twee attributen van twee objecttypen. We kunnen dan bijvoorbeeld controleren of er geen figuren zijn met dezelfde combinatie van naam en kleur. We specificeren dan twee concatenaties van deze attributen voor beide objecttypen die we gebruiken voor de vereniging waarvoor vervolgens de uniciteit bepaald moet worden:
+// Guanshengdijun: Ik neem aan dat je hier doelt op "twee verschillende objecttypen"
 
 ![Voorbeeld uniciteit van verenigde concatenaties](img/Uniciteit3.png)

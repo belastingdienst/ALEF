@@ -35,6 +35,7 @@ Recursie houdt in dat een eigenschap van een instantie van een objecttype wordt 
 Het onderscheid tussen een echt cyclische en een recursieve specificatie is echter niet betrouwbaar geautomatiseerd te bepalen. Daarom worden regels die cyclisch zijn of lijken in principe afgekeurd.
 Recursie in Regelspraak moet daarom aan een aantal voorwaarden voldoen.
 De moeten de regels in een regelgroep worden gegroepeerd en die regelgroep moet als recursief worden gekenmerkt.
+// Guanshengdijun: Ik vermoed dat "De" "Dan" had moeten zijn
 In die regelgroep worden de regels opgenomen die worden toegepast op instanties van objecttypes die in de regelgroep worden gecreëerd.
 Deze regels maken gebruik van resultaten van dezelfde regels die zijn toegepast op de voorgaande instantie van het objecttype.
 De regels in de regelgroep worden herhaaldelijk uitgevoerd, maar eindeloze herhaling wordt voorkomen door de voorwaarden die worden gesteld aan de objectcreatieregel.

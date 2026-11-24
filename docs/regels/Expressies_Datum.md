@@ -5,8 +5,10 @@ Bij het gebruik van regelversies met verschillende perioden kiest [GegevensSpraa
 * Datum = datum plus/min tijdsduur
 * Tijdsduur = van datum tot datum
 * Numerieke waarde uit deel van datum-tijd afleiden
+// Guanshengdijun: Deze drie opties zijn niet allemaal op dezelfde wijze beschreven. Sowieso vind ik de "datum/tijdsduur =" beschrijving niet erg duidelijk. Ik zou ze alledrie beschrijven zoals de onderste optie, bijv. "Twee datums en/of tijdsduren optellen of aftrekken" en "De tijdsduur tussen twee datums bepalen". 
 
 ## Datum bepalen
+// Guanshengdijun: Hier zou ik ook wat preciezer beschrijven wat je bedoelt. Iets als "Rekenen met datums" of "datum afleiden"
 
 Een datum kan bepaald worden met een gegeven datum **plus** of **min** een *tijdsduur*.
 De operatoren **plus** en **min** wijzen dan naar respectvelijk de toekomst en het verleden.
@@ -16,6 +18,7 @@ Bij eenheden van tijd met gedefinieerde [*dagsoorten*](../gegevens/dagsoort.md) 
 Als gerekend wordt met een numerieke waarde met de eenheid van een specifieke dagsoort (bijvoorbeeld werkdagen) dan hoeft de datum waarbij een aantal werkdagen wordt opgeteld of afgetrokken zelf geen werkdag te zijn.
 Het resultaat is altijd een datum die een werkdag is.
 Het resultaat van deze expressie is altijd leeg als de expressie voord atum geen waarde heeft.
+// Guanshengdijun: spelling "voor datum"
 Een lege tijdsduur of de waarde 0 geven dezelfde datum als de invoer.
 
 ## Tijdsduur berekenen
@@ -24,13 +27,16 @@ Een tijdsduur kan berekend worden uit het verschil tussen twee datums of twee ti
 De tijdsduur is een numerieke waarde met een [granulariteit](#granulariteit).
 ![Tijdsduur bepalen tussen twee datums](img/Expressies_Tijdsduur1.png)
 Deze expressie heeft drie velden: **De tijdsduur van (datumexpressie1) tot datumexpressie 2 in hele (tijdseenheid)**
+// Guanshengdijun: haakjes om "datumexpressie2" missen. Wees ook consistent met datumexpressie1 over het gebruik van een spatie voor het cijfer
 Voor een eenheid anders dan milliseconde wordt het resultaat altijd naar beneden  afgerond tot geheel getal.
+// Guanshengdijun: Vanuit het oogpunt van consistentie zou ik "granulariteit" in plaats van "eenheid" gebruiken.
 De expressie levert een negatieve waarde als datum/tijdstip 1 later in de tijd is dan datum/tijdstip 2.
 Om altijd een positieve waarde als uitkomst te krijgen bestaat er een variant op de expressie: **de absolute tijdsduur van ... tot ... in ...**
 
 ## Numerieke waarde uit deel van datum-tijd afleiden
 
 Uit een gegeven met waarde in datatype Datum-tijd kan een numerieke waarde worden bepaald. Hiervoor zijn de volgende expressies beschikbaar:
+// Guanshengdijun: "met waarde in datatype Datum-tijd" klinkt vreemd, ik zou "waarde in" weghalen.
 
 * jaar uit
 * maand uit
@@ -41,10 +47,12 @@ Uit een gegeven met waarde in datatype Datum-tijd kan een numerieke waarde worde
 * milliseconde uit  
 
 Het resultaat s altijd een positief geheel getal.
+// Guanshengdijun: spelling "is"
 
 ## Granulariteit
 
 Beschikbare granulariteiten voor datum-tijd zijn dag en milliseconde.
+// Guanshengdijun: Dit is achterhaald, de ondersteunde granulariteiten zijn nu dag, uur, minuut, seconde en tijdstip.
 
 Beschikbare granulariteiten van eenheid Tijd lopen van milliseconde tot en met jaar.
 N.B. De granulariteit van het resultaat van de afleiding moet consistent zijn met het attribuut waarin de tijdsduur wordt vastgelegd.

@@ -76,6 +76,7 @@
       <concept id="5308348422954264413" name="regelspraak.structure.RegelsetRef" flags="ng" index="17AEQp">
         <reference id="5308348422954265446" name="set" index="17AE6y" />
       </concept>
+      <concept id="1690542669507072390" name="regelspraak.structure.PlusExpressie" flags="ng" index="3aUx8v" />
       <concept id="4465242652891798884" name="regelspraak.structure.RegelgroepConditie" flags="ng" index="3cvAvG">
         <child id="7501158223450972263" name="versie" index="SOHve" />
         <child id="7501158223450972272" name="onderwerp" index="SOHvp" />
@@ -180,6 +181,7 @@
       <concept id="4697074533531324619" name="gegevensspraak.structure.BooleanLiteral" flags="ng" index="2Jx4MH">
         <property id="4697074533531324626" name="waarde" index="2Jx4MO" />
       </concept>
+      <concept id="9162738810171800275" name="gegevensspraak.structure.Expressie" flags="ng" index="2MOiMP" />
       <concept id="1788186806698835690" name="gegevensspraak.structure.EenheidMacht" flags="ng" index="Pwxi7">
         <property id="1788186806698835691" name="exponent" index="Pwxi6" />
         <reference id="1788186806698835693" name="basis" index="Pwxi0" />
@@ -792,16 +794,15 @@
           </node>
           <node concept="28IAyu" id="1QoQagBR05J" role="2z5HcU">
             <property role="28IApM" value="5brrC35IcXD/GE" />
-            <node concept="1EQTEq" id="1QoQagBR0ca" role="28IBCi">
-              <property role="3e6Tb2" value="300000" />
-              <node concept="PwxsY" id="1QoQagBR0pI" role="1jdwn1">
-                <node concept="Pwxi7" id="1QoQagBR0pJ" role="Pwxi2">
-                  <property role="Pwxi6" value="1" />
-                  <ref role="Pwxi0" to="9nho:2MDo2IIKAjb" resolve="euro" />
-                </node>
-                <node concept="Pwxi7" id="1QoQagBR0w$" role="PICIJ">
-                  <property role="Pwxi6" value="1" />
-                  <ref role="Pwxi0" to="ykqi:7QIQ0QW9Xxt" resolve="jaar" />
+            <node concept="3aUx8v" id="4ZAfS_xRi31" role="28IBCi">
+              <node concept="2MOiMP" id="4ZAfS_xRi33" role="2C$i6l" />
+              <node concept="1EQTEq" id="4ZAfS_xRhUE" role="2C$i6h">
+                <property role="3e6Tb2" value="2" />
+                <node concept="PwxsY" id="4ZAfS_xRhYI" role="1jdwn1">
+                  <node concept="Pwxi7" id="4ZAfS_xRhYJ" role="Pwxi2">
+                    <property role="Pwxi6" value="1" />
+                    <ref role="Pwxi0" to="9nho:2MDo2IIKAjd" resolve="Australische dollar" />
+                  </node>
                 </node>
               </node>
             </node>
