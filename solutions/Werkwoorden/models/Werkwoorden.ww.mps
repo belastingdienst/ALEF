@@ -89,6 +89,7 @@
         <child id="3777331527337848270" name="lezingen" index="3TGeFc" />
       </concept>
       <concept id="5491658850346352820" name="gegevensspraak.structure.Rol" flags="ng" index="2mG0Ck">
+        <property id="5491658850347289684" name="frase" index="2mCGrO" />
         <property id="6528193855467705353" name="single" index="u$DAK" />
         <reference id="4170820228911721549" name="objectType" index="1fE_qF" />
       </concept>
@@ -336,6 +337,21 @@
       </node>
     </node>
     <node concept="1uxNW$" id="3hFLKbtw5pN" role="2bv6Cn" />
+    <node concept="2mG0Cb" id="2zzkjsHN1x6" role="2bv6Cn">
+      <property role="TrG5h" value="vriendschap" />
+      <node concept="2mG0Ck" id="2zzkjsHN1x7" role="2mG0Ct">
+        <property role="u$DAK" value="true" />
+        <property role="2mCGrO" value="" />
+        <property role="TrG5h" value="bevriende persoon" />
+        <ref role="1fE_qF" node="3hFLKbtw5k3" resolve="persoon" />
+      </node>
+      <node concept="2mG0Ck" id="2zzkjsHN1x8" role="2mG0Ct">
+        <property role="u$DAK" value="false" />
+        <property role="TrG5h" value="vriend" />
+        <ref role="1fE_qF" node="3hFLKbtw5k3" resolve="persoon" />
+      </node>
+    </node>
+    <node concept="1uxNW$" id="2zzkjsHN1xa" role="2bv6Cn" />
   </node>
   <node concept="2bQVlO" id="3hFLKbtBFJx">
     <property role="TrG5h" value="r" />

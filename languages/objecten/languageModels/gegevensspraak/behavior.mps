@@ -15790,14 +15790,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Uku1ln6Q85" role="3cqZAp">
-          <node concept="2OqwBi" id="7Uku1ln6QIF" role="3clFbG">
-            <node concept="13iPFW" id="7Uku1ln6Q83" role="2Oq$k0" />
-            <node concept="2qgKlT" id="7Uku1ln6QVQ" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="13i0hz" id="1ktWTSTRvoY" role="13h7CS">
