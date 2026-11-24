@@ -14,20 +14,15 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="u5to" ref="r:0f988837-f15f-4013-9404-13c879f74c10(regelspraak.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="wvoc" ref="r:7df405ed-fa23-4cae-bc9f-a695297ed28a(gegevensspraak.utils)" />
     <import index="txb8" ref="r:6d537c47-71e0-4074-bdff-6df0d77b3827(servicespraak.behavior)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="8l26" ref="r:788951b7-6ce7-4cdf-b16c-b6ef0e226719(gegevensspraak.behavior)" />
     <import index="ku5w" ref="r:564b4c06-4df3-411c-8d2f-3714256fe7ba(servicespraak.structure)" />
     <import index="hxzo" ref="r:38743cd6-1e57-4d7d-a803-66a5f669005a(besturingspraak.behavior)" />
     <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
     <import index="tpe5" ref="r:00000000-0000-4000-0000-011c895902d1(jetbrains.mps.baseLanguage.unitTest.behavior)" />
-    <import index="r2nh" ref="r:05a8f765-7ff1-45ab-8d9d-4557ba983db4(regelspraak.typesystem)" />
     <import index="18s" ref="r:e113c6ec-a7c6-48cb-826c-aef4f51ed69f(gegevensspraak.translator)" />
     <import index="2vij" ref="09737df8-57b5-428f-9399-89f414a94263/java:nl.belastingdienst.alef_runtime(alef.runtime/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
-    <import index="tpib" ref="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" />
     <import index="x5ko" ref="r:1f952255-fd4b-4c65-9d83-c95dfe2eae15(bronspraak.behavior)" />
     <import index="wxye" ref="r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)" implicit="true" />
     <import index="pb7l" ref="r:2b2539c5-00c8-487d-9567-ecc2b9274c7b(jetbrains.mps.baseLanguage.unitTest.typesystem)" implicit="true" />
@@ -2832,199 +2827,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="18kY7G" id="1xwnFdnY5Li">
-    <property role="TrG5h" value="IH_SPECIFIEK_check_partner_consistency_IH_SPECIFIEK" />
-    <node concept="3clFbS" id="1xwnFdnY5Lj" role="18ibNy">
-      <node concept="3clFbF" id="3h2saFXpxDw" role="3cqZAp">
-        <node concept="2OqwBi" id="3h2saFXpxDy" role="3clFbG">
-          <node concept="2OqwBi" id="3h2saFXpxDz" role="2Oq$k0">
-            <node concept="1YBJjd" id="3h2saFXpxD$" role="2Oq$k0">
-              <ref role="1YBMHb" node="1xwnFdnYogZ" resolve="testSet" />
-            </node>
-            <node concept="3Tsc0h" id="3h2saFXpxD_" role="2OqNvi">
-              <ref role="3TtcxE" to="6ldf:6IMif0F90d2" resolve="testGevallen" />
-            </node>
-          </node>
-          <node concept="2es0OD" id="3h2saFXpxDA" role="2OqNvi">
-            <node concept="1bVj0M" id="3h2saFXpxDB" role="23t8la">
-              <node concept="3clFbS" id="3h2saFXpxDC" role="1bW5cS">
-                <node concept="3cpWs8" id="3h2saFXpxDD" role="3cqZAp">
-                  <node concept="3cpWsn" id="3h2saFXpxDE" role="3cpWs9">
-                    <property role="TrG5h" value="indFiscPartner" />
-                    <node concept="3Tqbb2" id="3h2saFXpxDF" role="1tU5fm">
-                      <ref role="ehGHo" to="6ldf:36NN4BkwM1k" resolve="EigenschapToekenning" />
-                    </node>
-                    <node concept="2OqwBi" id="3h2saFXpxDG" role="33vP2m">
-                      <node concept="2OqwBi" id="3h2saFXpxDH" role="2Oq$k0">
-                        <node concept="2qgKlT" id="3h2saFXpxDI" role="2OqNvi">
-                          <ref role="37wK5l" to="r02f:6ITkr_byRt4" resolve="getToekenningen" />
-                        </node>
-                        <node concept="37vLTw" id="3h2saFXpxDJ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5vSJaT$FKvV" resolve="it" />
-                        </node>
-                      </node>
-                      <node concept="1z4cxt" id="3h2saFXpxDK" role="2OqNvi">
-                        <node concept="1bVj0M" id="3h2saFXpxDL" role="23t8la">
-                          <node concept="3clFbS" id="3h2saFXpxDM" role="1bW5cS">
-                            <node concept="3clFbF" id="3h2saFXo$1E" role="3cqZAp">
-                              <node concept="1Wc70l" id="3h2saFXoBgC" role="3clFbG">
-                                <node concept="2OqwBi" id="3h2saFXo_Yb" role="3uHU7B">
-                                  <node concept="2OqwBi" id="3h2saFXo$kT" role="2Oq$k0">
-                                    <node concept="37vLTw" id="3h2saFXH6Z7" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="5vSJaT$FKvR" resolve="it" />
-                                    </node>
-                                    <node concept="3TrEf2" id="3h2saFXH5wV" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="6ldf:36NN4BkwM1l" resolve="eigenschap" />
-                                    </node>
-                                  </node>
-                                  <node concept="3x8VRR" id="3h2saFXoAAR" role="2OqNvi" />
-                                </node>
-                                <node concept="2OqwBi" id="3h2saFXoBWT" role="3uHU7w">
-                                  <node concept="2OqwBi" id="3h2saFXoBWU" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3h2saFXoBWV" role="2Oq$k0">
-                                      <node concept="37vLTw" id="3h2saFXoBWW" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="5vSJaT$FKvR" resolve="it" />
-                                      </node>
-                                      <node concept="3TrEf2" id="3h2saFXoBWX" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="6ldf:36NN4BkwM1l" resolve="eigenschap" />
-                                      </node>
-                                    </node>
-                                    <node concept="3TrcHB" id="3h2saFXoBWY" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="3h2saFXoBWZ" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                                    <node concept="Xl_RD" id="3h2saFXoBX0" role="37wK5m">
-                                      <property role="Xl_RC" value="indicatie fiscaal partner" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="gl6BB" id="5vSJaT$FKvR" role="1bW2Oz">
-                            <property role="TrG5h" value="it" />
-                            <node concept="2jxLKc" id="5vSJaT$FKvS" role="1tU5fm" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="3h2saFXpxDP" role="3cqZAp">
-                  <node concept="3cpWsn" id="3h2saFXpxDQ" role="3cpWs9">
-                    <property role="TrG5h" value="sofiPartner" />
-                    <node concept="3Tqbb2" id="3h2saFXpxDR" role="1tU5fm">
-                      <ref role="ehGHo" to="6ldf:36NN4BkwM1k" resolve="EigenschapToekenning" />
-                    </node>
-                    <node concept="2OqwBi" id="3h2saFXpxDS" role="33vP2m">
-                      <node concept="2OqwBi" id="3h2saFXpxDT" role="2Oq$k0">
-                        <node concept="2qgKlT" id="3h2saFXpxDU" role="2OqNvi">
-                          <ref role="37wK5l" to="r02f:6ITkr_byRt4" resolve="getToekenningen" />
-                        </node>
-                        <node concept="37vLTw" id="3h2saFXpxDV" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5vSJaT$FKvV" resolve="it" />
-                        </node>
-                      </node>
-                      <node concept="1z4cxt" id="3h2saFXpxDW" role="2OqNvi">
-                        <node concept="1bVj0M" id="3h2saFXpxDX" role="23t8la">
-                          <node concept="3clFbS" id="3h2saFXpxDY" role="1bW5cS">
-                            <node concept="3clFbF" id="3h2saFXpxDZ" role="3cqZAp">
-                              <node concept="1Wc70l" id="3h2saFXoD8y" role="3clFbG">
-                                <node concept="2OqwBi" id="3h2saFXoEXi" role="3uHU7B">
-                                  <node concept="2OqwBi" id="3h2saFXoDRg" role="2Oq$k0">
-                                    <node concept="37vLTw" id="3h2saFXH6rH" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="5vSJaT$FKvT" resolve="it" />
-                                    </node>
-                                    <node concept="3TrEf2" id="3h2saFXH697" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="6ldf:36NN4BkwM1l" resolve="eigenschap" />
-                                    </node>
-                                  </node>
-                                  <node concept="3x8VRR" id="3h2saFXoFGb" role="2OqNvi" />
-                                </node>
-                                <node concept="2OqwBi" id="3h2saFXpxE0" role="3uHU7w">
-                                  <node concept="2OqwBi" id="3h2saFXpxE1" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3h2saFXpxE2" role="2Oq$k0">
-                                      <node concept="37vLTw" id="3h2saFXpxE3" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="5vSJaT$FKvT" resolve="it" />
-                                      </node>
-                                      <node concept="3TrEf2" id="3h2saFXpxE4" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="6ldf:36NN4BkwM1l" resolve="eigenschap" />
-                                      </node>
-                                    </node>
-                                    <node concept="3TrcHB" id="3h2saFXpxE5" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="3h2saFXpxE6" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                                    <node concept="Xl_RD" id="3h2saFXpxE7" role="37wK5m">
-                                      <property role="Xl_RC" value="sofinummer partner" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="gl6BB" id="5vSJaT$FKvT" role="1bW2Oz">
-                            <property role="TrG5h" value="it" />
-                            <node concept="2jxLKc" id="5vSJaT$FKvU" role="1tU5fm" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="3h2saFXpxEa" role="3cqZAp">
-                  <node concept="3clFbS" id="3h2saFXpxEb" role="3clFbx">
-                    <node concept="2MkqsV" id="3h2saFXpxEc" role="3cqZAp">
-                      <node concept="Xl_RD" id="3h2saFXpxEd" role="2MkJ7o">
-                        <property role="Xl_RC" value="'indicatie fiscaal partner' kan niet samen gaan met 'sofinummer partner'" />
-                      </node>
-                      <node concept="37vLTw" id="3h2saFXpxEe" role="1urrMF">
-                        <ref role="3cqZAo" node="3h2saFXpxDE" resolve="indFiscPartner" />
-                      </node>
-                    </node>
-                    <node concept="2MkqsV" id="3h2saFXpxEf" role="3cqZAp">
-                      <node concept="Xl_RD" id="3h2saFXpxEg" role="2MkJ7o">
-                        <property role="Xl_RC" value="'sofinummer partner' kan niet samen gaan met 'indicatie fiscaal partner'" />
-                      </node>
-                      <node concept="37vLTw" id="3h2saFXpxEh" role="1urrMF">
-                        <ref role="3cqZAo" node="3h2saFXpxDQ" resolve="sofiPartner" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1Wc70l" id="3h2saFXpxEi" role="3clFbw">
-                    <node concept="3y3z36" id="3h2saFXpxEj" role="3uHU7w">
-                      <node concept="10Nm6u" id="3h2saFXpxEk" role="3uHU7w" />
-                      <node concept="37vLTw" id="3h2saFXpxEl" role="3uHU7B">
-                        <ref role="3cqZAo" node="3h2saFXpxDQ" resolve="sofiPartner" />
-                      </node>
-                    </node>
-                    <node concept="3y3z36" id="3h2saFXpxEm" role="3uHU7B">
-                      <node concept="37vLTw" id="3h2saFXpxEn" role="3uHU7B">
-                        <ref role="3cqZAo" node="3h2saFXpxDE" resolve="indFiscPartner" />
-                      </node>
-                      <node concept="10Nm6u" id="3h2saFXpxEo" role="3uHU7w" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="gl6BB" id="5vSJaT$FKvV" role="1bW2Oz">
-                <property role="TrG5h" value="it" />
-                <node concept="2jxLKc" id="5vSJaT$FKvW" role="1tU5fm" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1xwnFdnYogZ" role="1YuTPh">
-      <property role="TrG5h" value="testSet" />
-      <ref role="1YaFvo" to="6ldf:7JLzC$w1xa8" resolve="TestSet" />
     </node>
   </node>
   <node concept="18kY7G" id="51CCIw3c2HK">

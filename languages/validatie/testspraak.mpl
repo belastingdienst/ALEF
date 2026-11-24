@@ -59,7 +59,6 @@
     <dependency reexport="false">8540ea77-3009-49fb-92e7-1481dee45b14(migrationUtils)</dependency>
     <dependency reexport="false">55271945-c9a9-4148-8b1b-b255336170d6(immutable)</dependency>
     <dependency reexport="false">3ea0ff8b-be16-4cc9-8f8a-d8cec13f47fc(alef.menus)</dependency>
-    <dependency reexport="false">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:33ffcc1f-fa7d-4e95-a508-70b7986298ef:bl.stringinterpolation" version="0" />
@@ -161,7 +160,6 @@
     <module reference="8af387a4-2ad4-4680-9888-6e523ff2ae0a(interpreter.timed.debug)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
-    <module reference="760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" version="0" />
     <module reference="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" version="0" />
