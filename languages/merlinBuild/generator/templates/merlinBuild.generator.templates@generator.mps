@@ -4475,27 +4475,6 @@
               </node>
             </node>
           </node>
-          <node concept="2pNNFK" id="6YQ42goffvO" role="3o6s8t">
-            <property role="2pNNFO" value="dependency" />
-            <node concept="2pNNFK" id="6YQ42goffvP" role="3o6s8t">
-              <property role="2pNNFO" value="groupId" />
-              <node concept="3o6iSG" id="6YQ42goffvQ" role="3o6s8t">
-                <property role="3o6i5n" value="com.fasterxml.jackson.dataformat" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42goffvR" role="3o6s8t">
-              <property role="2pNNFO" value="artifactId" />
-              <node concept="3o6iSG" id="6YQ42goffvS" role="3o6s8t">
-                <property role="3o6i5n" value="jackson-dataformat-xml" />
-              </node>
-            </node>
-            <node concept="2pNNFK" id="6YQ42goffvT" role="3o6s8t">
-              <property role="2pNNFO" value="version" />
-              <node concept="3o6iSG" id="6YQ42goffvU" role="3o6s8t">
-                <property role="3o6i5n" value="2.17.2" />
-              </node>
-            </node>
-          </node>
           <node concept="3o6iSG" id="6YwrqIbxjkB" role="3o6s8t" />
           <node concept="3o6iSG" id="3r0zJz1O4EX" role="3o6s8t" />
           <node concept="2pNm8U" id="3r0zJz1O4Ms" role="3o6s8t">
