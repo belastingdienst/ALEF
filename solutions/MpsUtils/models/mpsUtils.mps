@@ -6271,6 +6271,42 @@
       </node>
       <node concept="3Tm1VV" id="5YVShqYe$wd" role="1B3o_S" />
     </node>
+    <node concept="2YIFZL" id="5YVShr3QUoi" role="jymVt">
+      <property role="TrG5h" value="toIdeaProject" />
+      <node concept="3clFbS" id="5YVShr3QUoj" role="3clF47">
+        <node concept="3cpWs8" id="5YVShr3QUok" role="3cqZAp">
+          <node concept="3cpWsn" id="5YVShr3QUol" role="3cpWs9">
+            <property role="TrG5h" value="ideaProject" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="5YVShr3QUom" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2YIFZM" id="5YVShr3QUon" role="33vP2m">
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
+              <node concept="37vLTw" id="5YVShr3QUoo" role="37wK5m">
+                <ref role="3cqZAo" node="5YVShr3QUow" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5YVShr3RgfT" role="3cqZAp">
+          <node concept="37vLTw" id="5YVShr3Rkv5" role="3cqZAk">
+            <ref role="3cqZAo" node="5YVShr3QUol" resolve="ideaProject" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5YVShr3QUow" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="5YVShr3QUox" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="5YVShr3QUoy" role="3clF45">
+        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+      </node>
+      <node concept="3Tm1VV" id="5YVShr3QUoz" role="1B3o_S" />
+    </node>
   </node>
   <node concept="312cEu" id="7uVlf5crK4K">
     <property role="TrG5h" value="AbstractVersion" />
