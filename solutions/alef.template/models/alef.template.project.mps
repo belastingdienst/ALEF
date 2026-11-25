@@ -342,6 +342,7 @@
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
+      <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -2908,6 +2909,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="10PD9b" id="4H5FiC9ahdx" role="10PD9s" />
                 <node concept="3b7kt6" id="7iEd7_cRJCy" role="10PD9s" />
                 <node concept="3jkSsB" id="7iEd7_cRJCz" role="10PD9s" />
                 <node concept="398rNT" id="7iEd7_cRJC$" role="1l3spd">
@@ -3260,6 +3262,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="10PD9b" id="4H5FiC9anIK" role="10PD9s" />
                   <node concept="3b7kt6" id="7iEd7_cRJEe" role="10PD9s" />
                   <node concept="398rNT" id="7iEd7_cRJEf" role="1l3spd">
                     <property role="TrG5h" value="alef.home" />

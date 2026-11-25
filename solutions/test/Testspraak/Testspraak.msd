@@ -20,6 +20,7 @@
     <dependency reexport="false">8bc962c0-cb3c-49f0-aa03-23c3bc0304b0(testspraak)</dependency>
     <dependency reexport="false">d65f6f0b-d425-4cdb-985f-4194ffdf3ab2(json)</dependency>
     <dependency reexport="false">d8af31be-1847-4d5b-8686-78e232d4e0f8(servicespraak)</dependency>
+    <dependency reexport="false">71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:7b05b09e-3ac1-4a27-83e2-e4e1a5f17cf3:beslistabelspraak" version="2" />
@@ -35,7 +36,7 @@
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
-    <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
+    <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="1" />
     <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="1" />
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
     <language slang="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" version="8" />
@@ -114,6 +115,7 @@
     <module reference="d65f6f0b-d425-4cdb-985f-4194ffdf3ab2(json)" version="0" />
     <module reference="804014de-e593-4efc-b1b2-c667769358b9(linguistics)" version="0" />
     <module reference="1c5e9ad5-77a4-4ada-868f-9454fba4d4c1(merlin.runtime)" version="0" />
+    <module reference="71b79587-1a9d-4693-bd41-35e93f7549d6(mpsUtils)" version="0" />
     <module reference="b2fc4154-1657-4d74-8828-c55b57a96ecd(rapporten)" version="0" />
     <module reference="7bbaf860-5f96-44b4-9731-6e00ae137ece(regelspraak)" version="6" />
     <module reference="d9eb44be-7dbc-40d2-ae81-5909d4d23337(serviceTest.runtime)" version="0" />

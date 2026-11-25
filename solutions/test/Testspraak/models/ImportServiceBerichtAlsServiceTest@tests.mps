@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak" version="24" />
@@ -25,6 +25,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="ctzw" ref="r:74f223ba-ead2-455d-852d-25e8cdeee4d3(json.structure)" />
+    <import index="n5dx" ref="r:49dfe53e-0a88-4e48-90c5-597090c5e903(mpsUtils)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
   </imports>
   <registry>
@@ -45,6 +46,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
@@ -419,10 +421,10 @@
               <node concept="2WthIp" id="5xj$Q_Buprh" role="2Oq$k0" />
               <node concept="2XshWL" id="5xj$Q_Bupri" role="2OqNvi">
                 <ref role="2WH_rO" node="5xj$Q_BuaFr" resolve="testImport" />
-                <node concept="2YIFZM" id="5xj$Q_Bupr8" role="2XxRq1">
-                  <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
-                  <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-                  <node concept="3xONca" id="5xj$Q_Bupr9" role="37wK5m">
+                <node concept="2YIFZM" id="6spfdw1F$Sa" role="2XxRq1">
+                  <ref role="37wK5l" to="n5dx:6spfdw1EO0F" resolve="generateText" />
+                  <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
+                  <node concept="3xONca" id="6spfdw1F$UZ" role="37wK5m">
                     <ref role="3xOPvv" node="5xj$Q_BuogG" resolve="soapXML" />
                   </node>
                 </node>
@@ -1468,12 +1470,13 @@
           <node concept="3cpWsn" id="5xj$Q_BTY_a" role="3cpWs9">
             <property role="TrG5h" value="xmlString" />
             <node concept="17QB3L" id="5xj$Q_BTY_b" role="1tU5fm" />
-            <node concept="2YIFZM" id="5xj$Q_BTY_c" role="33vP2m">
-              <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
-              <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-              <node concept="37vLTw" id="5xj$Q_CqDjw" role="37wK5m">
+            <node concept="2YIFZM" id="6spfdw1F_oo" role="33vP2m">
+              <ref role="37wK5l" to="n5dx:6spfdw2agD7" resolve="generateText" />
+              <ref role="1Pybhc" to="n5dx:6spfdw1Ddo9" resolve="TextGenUtil" />
+              <node concept="37vLTw" id="6spfdw1F_vn" role="37wK5m">
                 <ref role="3cqZAo" node="5xj$Q_CqCqf" resolve="xmlFile" />
               </node>
+              <node concept="1jxXqW" id="5YVShqVTbul" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1686,6 +1689,11 @@
             </node>
             <node concept="37vLTw" id="5xj$Q_Bucfh" role="37wK5m">
               <ref role="3cqZAo" node="5xj$Q_Bub$$" resolve="xsd" />
+            </node>
+            <node concept="2YIFZM" id="5YVShqYgvZD" role="37wK5m">
+              <ref role="37wK5l" to="n5dx:5YVShqYfMsL" resolve="toMpsProject" />
+              <ref role="1Pybhc" to="n5dx:61IHcBPjP9r" resolve="MPSUtil" />
+              <node concept="1jxXqW" id="5YVShqYgwv5" role="37wK5m" />
             </node>
           </node>
         </node>
