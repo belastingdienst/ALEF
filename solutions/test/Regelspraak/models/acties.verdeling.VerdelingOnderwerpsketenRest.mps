@@ -446,7 +446,7 @@
       <property role="TrG5h" value="persoon met snoeppot" />
       <node concept="2mG0Ck" id="3JbGT7Cwz3U" role="2mG0Ct">
         <property role="u$DAK" value="true" />
-        <property role="TrG5h" value="persoon met snoeppot " />
+        <property role="TrG5h" value="persoon met snoeppot" />
         <property role="2n7kvO" value="true" />
         <ref role="1fE_qF" node="3JbGT7CwyOl" resolve="Persoon" />
       </node>
@@ -461,7 +461,7 @@
       <property role="TrG5h" value="persoon met onverdeelde snoeppot" />
       <node concept="2mG0Ck" id="4lkdCKTQo33" role="2mG0Ct">
         <property role="u$DAK" value="true" />
-        <property role="TrG5h" value="persoon met onverdeelde snoeppot " />
+        <property role="TrG5h" value="persoon met onverdeelde snoeppot" />
         <property role="2n7kvO" value="true" />
         <ref role="1fE_qF" node="3JbGT7CwyOl" resolve="Persoon" />
       </node>

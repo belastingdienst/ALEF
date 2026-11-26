@@ -695,7 +695,7 @@
                 <ref role="Qu8KH" to="89um:34cNJiKWlNB" resolve="totaal" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvyIz" role="pQQuc">
-                <ref role="Qu8KH" to="89um:4lnuGCH6tpe" resolve="order" />
+                <ref role="Qu8KH" to="89um:34cNJiKW3C8" resolve="Order" />
               </node>
             </node>
             <node concept="255MOc" id="3DPnffTvyIF" role="2bokzm">
@@ -706,7 +706,7 @@
                 </node>
                 <node concept="3_mHL5" id="3DPnffTvyIB" role="pQQuc">
                   <node concept="3yS1BT" id="3DPnffTvyIA" role="pQQuc">
-                    <ref role="3yS1Ki" node="3DPnffTvyIz" resolve="order" />
+                    <ref role="3yS1Ki" node="3DPnffTvyIz" resolve="Order" />
                   </node>
                   <node concept="ean_g" id="3DPnffTvyIC" role="eaaoM">
                     <ref role="Qu8KH" to="89um:4lnuGCH6tpk" resolve="regel" />
@@ -1976,7 +1976,7 @@
           <node concept="2boe1X" id="1$hZSWyX_eW" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvyR_" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvyRA" role="eaaoM">
-                <ref role="Qu8KH" to="89um:1$hZSWyX_rO" resolve=" n" />
+                <ref role="Qu8KH" to="89um:1$hZSWyX_rO" resolve="n" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvyR$" role="pQQuc">
                 <ref role="Qu8KH" to="89um:5d4D2k3Y6EJ" resolve="VariabelenHouder" />
@@ -3901,7 +3901,7 @@
           <node concept="2boe1X" id="7S2AUgFA3Yh" role="1wO7i6">
             <node concept="3_mHL5" id="3DPnffTvz6g" role="2bokzF">
               <node concept="c2t0s" id="3DPnffTvz6h" role="eaaoM">
-                <ref role="Qu8KH" to="89um:7S2AUgF_VX9" resolve=" resultaat_datum" />
+                <ref role="Qu8KH" to="89um:7S2AUgF_VX9" resolve="resultaat_datum" />
               </node>
               <node concept="3_kdyS" id="3DPnffTvz6f" role="pQQuc">
                 <ref role="Qu8KH" to="89um:6AOnQ7LeCrQ" resolve="Tempus" />

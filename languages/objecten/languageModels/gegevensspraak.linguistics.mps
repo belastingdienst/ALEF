@@ -711,9 +711,6 @@
             <ref role="23mlFp" node="57tKuzJrAp0" resolve="heeftDag" />
           </node>
         </node>
-        <node concept="23JKde" id="57tKuzJrDJi" role="23JKd8">
-          <node concept="23GdfO" id="57tKuzJrDJj" role="23JKdf" />
-        </node>
       </node>
       <node concept="23JKdb" id="57tKuzJrDHJ" role="23GdfP">
         <node concept="23JKde" id="57tKuzJrDHK" role="23JKd8">
@@ -730,9 +727,6 @@
           <node concept="23mlFo" id="57tKuzJrDJ6" role="23J4uA">
             <ref role="23mlFp" node="57tKuzJrBy3" resolve="heeftMaand" />
           </node>
-        </node>
-        <node concept="23JKde" id="57tKuzJrDJ9" role="23JKd8">
-          <node concept="23GdfO" id="57tKuzJrDJa" role="23JKdf" />
         </node>
       </node>
       <node concept="2xS9Io" id="62H$2lpZ7Xp" role="23GdfP">
@@ -772,9 +766,6 @@
           <node concept="23mlFo" id="57tKuzGFMYh" role="23J4uA">
             <ref role="23mlFp" node="57tKuzGFK2B" resolve="metTijd" />
           </node>
-        </node>
-        <node concept="23JKde" id="57tKuzIdE_D" role="23JKd8">
-          <node concept="23GdfO" id="57tKuzIdE_E" role="23JKdf" />
         </node>
       </node>
     </node>
@@ -1013,9 +1004,6 @@
           <node concept="23mlFo" id="57tKuzJJWaj" role="23J4uA">
             <ref role="23mlFp" node="57tKuzJJVK2" resolve="toonEenheid" />
           </node>
-        </node>
-        <node concept="23JKde" id="57tKuzJJWaw" role="23JKd8">
-          <node concept="23GdfO" id="57tKuzJJWax" role="23JKdf" />
         </node>
       </node>
     </node>

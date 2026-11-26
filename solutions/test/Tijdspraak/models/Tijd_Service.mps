@@ -415,7 +415,7 @@
         </node>
       </node>
       <node concept="2bpyt6" id="5V2gvYZKHJd" role="2bv01j">
-        <property role="TrG5h" value="kenmerk 2 (uitvoer) " />
+        <property role="TrG5h" value="kenmerk 2 (uitvoer)" />
         <property role="2VcyFJ" value="true" />
         <node concept="3ixzmw" id="5V2gvYZKHJe" role="3ix_3D">
           <node concept="1HAryX" id="5V2gvYZKHJf" role="1uZqZG">
@@ -525,7 +525,7 @@
         </node>
       </node>
       <node concept="2bv6ZS" id="7EfRa2_CvrJ" role="2bv01j">
-        <property role="TrG5h" value="numeriek jaar (uitvoer) " />
+        <property role="TrG5h" value="numeriek jaar (uitvoer)" />
         <node concept="1EDDeX" id="7EfRa2_CvrK" role="1EDDcc">
           <property role="3GST$d" value="0" />
           <node concept="3ixzmw" id="7EfRa2_CvrL" role="3ix_3D">
@@ -617,7 +617,7 @@
       </node>
       <node concept="2bv6ZS" id="7rXEx6vEIHf" role="2bv01j">
         <property role="16Ztxt" value="false" />
-        <property role="TrG5h" value="domein (uitvoer) " />
+        <property role="TrG5h" value="domein (uitvoer)" />
         <node concept="1EDDfm" id="7rXEx6vEIHg" role="1EDDcc">
           <ref role="1EDDfl" node="5dBd1KFtEuC" resolve="BedragInHeleEuros" />
           <node concept="3ixzmw" id="7rXEx6vEIHh" role="3ix_3D">
@@ -837,7 +837,7 @@
       <node concept="1wO7pt" id="7ilwa34KgNo" role="kiesI">
         <node concept="2boe1W" id="7ilwa34KgNp" role="1wO7pp">
           <node concept="2zaH5l" id="7ilwa34KgRf" role="1wO7i6">
-            <ref role="2zaJI2" node="5V2gvYZKHJd" resolve="kenmerk 2 (uitvoer) " />
+            <ref role="2zaJI2" node="5V2gvYZKHJd" resolve="kenmerk 2 (uitvoer)" />
             <node concept="3_kdyS" id="7ilwa34KgRh" role="pRcyL">
               <ref role="Qu8KH" node="5dBd1KFtEuA" resolve="doorgeefluik" />
             </node>
@@ -887,7 +887,7 @@
           <node concept="2boe1X" id="7rXEx6vEMhV" role="1wO7i6">
             <node concept="3_mHL5" id="7rXEx6vEMhW" role="2bokzF">
               <node concept="c2t0s" id="7rXEx6vEM$e" role="eaaoM">
-                <ref role="Qu8KH" node="7rXEx6vEIHf" resolve="domein (uitvoer) " />
+                <ref role="Qu8KH" node="7rXEx6vEIHf" resolve="domein (uitvoer)" />
               </node>
               <node concept="3_kdyS" id="7rXEx6vEMhY" role="pQQuc">
                 <ref role="Qu8KH" node="5dBd1KFtEuA" resolve="doorgeefluik" />
@@ -960,7 +960,7 @@
           <node concept="2boe1X" id="7EfRa2_Cw8z" role="1wO7i6">
             <node concept="3_mHL5" id="7EfRa2_Cw8$" role="2bokzF">
               <node concept="c2t0s" id="7EfRa2_Cw9o" role="eaaoM">
-                <ref role="Qu8KH" node="7EfRa2_CvrJ" resolve="numeriek jaar (uitvoer) " />
+                <ref role="Qu8KH" node="7EfRa2_CvrJ" resolve="numeriek jaar (uitvoer)" />
               </node>
               <node concept="3_kdyS" id="7EfRa2_Cw9n" role="pQQuc">
                 <ref role="Qu8KH" node="5dBd1KFtEuA" resolve="doorgeefluik" />
@@ -1210,7 +1210,7 @@
     </node>
     <node concept="1IHXn0" id="5dBd1KFtEzu" role="2785Bw">
       <property role="TrG5h" value="domeinUitvoer" />
-      <ref role="1IJyWM" node="7rXEx6vEIHf" resolve="domein (uitvoer) " />
+      <ref role="1IJyWM" node="7rXEx6vEIHf" resolve="domein (uitvoer)" />
     </node>
     <node concept="1IHXn0" id="128EeGQS9Bz" role="2785Bw">
       <property role="TrG5h" value="enumUitvoer" />
@@ -1222,11 +1222,11 @@
     </node>
     <node concept="3fcF_K" id="3kkTUFZpH04" role="2785Bw">
       <property role="TrG5h" value="kenmerk2Uitvoer" />
-      <ref role="3fi62A" node="5V2gvYZKHJd" resolve="kenmerk 2 (uitvoer) " />
+      <ref role="3fi62A" node="5V2gvYZKHJd" resolve="kenmerk 2 (uitvoer)" />
     </node>
     <node concept="1IHXn0" id="3f7RDaWppqx" role="2785Bw">
       <property role="TrG5h" value="numeriekJaarUitvoer" />
-      <ref role="1IJyWM" node="7EfRa2_CvrJ" resolve="numeriek jaar (uitvoer) " />
+      <ref role="1IJyWM" node="7EfRa2_CvrJ" resolve="numeriek jaar (uitvoer)" />
     </node>
     <node concept="1IHXn0" id="3f7RDaWppuQ" role="2785Bw">
       <property role="TrG5h" value="numeriekJaar2Uitvoer" />

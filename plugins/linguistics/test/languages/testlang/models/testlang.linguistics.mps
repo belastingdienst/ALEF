@@ -633,9 +633,6 @@
               <ref role="23mlFp" node="3rfPnkLqzMj" resolve="isOutrageouslyBig" />
             </node>
           </node>
-          <node concept="23JKde" id="3rfPnkLpiY3" role="23JKd8">
-            <node concept="23GdfO" id="3rfPnkLpiY4" role="23JKdf" />
-          </node>
         </node>
       </node>
     </node>
@@ -885,9 +882,6 @@
             <node concept="23mlFo" id="mAhuv9PmYF" role="23J4uA">
               <ref role="23mlFp" node="mAhuv9PjEW" resolve="hasCover" />
             </node>
-          </node>
-          <node concept="23JKde" id="mAhuv9Po1e" role="23JKd8">
-            <node concept="23GdfO" id="mAhuv9Po1f" role="23JKdf" />
           </node>
         </node>
       </node>

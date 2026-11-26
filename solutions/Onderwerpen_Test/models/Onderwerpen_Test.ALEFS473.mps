@@ -1135,7 +1135,7 @@
       </node>
       <node concept="2bv6ZS" id="4YomgP611Dx" role="2bv01j">
         <property role="16Ztxt" value="true" />
-        <property role="TrG5h" value="aantal passagiers zonder korting en zonder bagage " />
+        <property role="TrG5h" value="aantal passagiers zonder korting en zonder bagage" />
         <node concept="1EDDeX" id="4YomgP611Ge" role="1EDDcc">
           <property role="3GST$d" value="0" />
         </node>
