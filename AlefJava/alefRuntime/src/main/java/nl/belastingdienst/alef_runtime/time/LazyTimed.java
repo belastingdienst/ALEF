@@ -253,7 +253,7 @@ public class LazyTimed<T> implements ICompressed<T> {
             }
             b.append(g.period.begin());
             b.append(" ");
-            b.append(g.value == null ? "?" : ("[" + g.value + "]"));
+            b.append(g.hasValue ? ("[" + g.value + "]") : "?");
             g = g.next;
         }
         b.append(" ");
