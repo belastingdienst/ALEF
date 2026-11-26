@@ -285,9 +285,6 @@
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
         <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
       </concept>
-      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
-        <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
-      </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
@@ -454,9 +451,6 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
-        <child id="1196350785114" name="quotedNode" index="2c44tc" />
-      </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
         <child id="1595412875168045827" name="initValue" index="28nt2d" />
@@ -9077,35 +9071,23 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3K4zz7" id="15wAundzbwJ" role="v9R3O">
-                    <node concept="2c44tf" id="15wAundAmy2" role="3K4E3e">
-                      <node concept="1rXfSq" id="15wAundAmy3" role="2c44tc">
-                        <ref role="37wK5l" to="jyki:~MBase.getUniverse()" resolve="getUniverse" />
-                      </node>
-                    </node>
-                    <node concept="2c44tf" id="15wAundAmy0" role="3K4GZi">
-                      <node concept="37vLTw" id="15wAundAmy1" role="2c44tc">
-                        <ref role="3cqZAo" node="5zi8M1uroYZ" resolve="universe" />
-                      </node>
-                    </node>
-                    <node concept="3clFbC" id="5Eh$aHraKR_" role="3K4Cdx">
-                      <node concept="10Nm6u" id="5Eh$aHraKRA" role="3uHU7w" />
-                      <node concept="2OqwBi" id="5Eh$aHraKRB" role="3uHU7B">
-                        <node concept="2OqwBi" id="5Eh$aHraKRC" role="2Oq$k0">
-                          <node concept="30H73N" id="5Eh$aHraKRD" role="2Oq$k0" />
-                          <node concept="2Xjw5R" id="5Eh$aHraKRE" role="2OqNvi">
-                            <node concept="1xMEDy" id="5Eh$aHraKRF" role="1xVPHs">
-                              <node concept="chp4Y" id="5Eh$aHraKRG" role="ri$Ld">
-                                <ref role="cht4Q" to="m234:5ptxuD1Tw8C" resolve="AbstracteRegel" />
-                              </node>
+                  <node concept="3y3z36" id="3GDUSyZ6Y_W" role="v9R3O">
+                    <node concept="2OqwBi" id="5Eh$aHraKRB" role="3uHU7B">
+                      <node concept="2OqwBi" id="5Eh$aHraKRC" role="2Oq$k0">
+                        <node concept="30H73N" id="5Eh$aHraKRD" role="2Oq$k0" />
+                        <node concept="2Xjw5R" id="5Eh$aHraKRE" role="2OqNvi">
+                          <node concept="1xMEDy" id="5Eh$aHraKRF" role="1xVPHs">
+                            <node concept="chp4Y" id="5Eh$aHraKRG" role="ri$Ld">
+                              <ref role="cht4Q" to="m234:5ptxuD1Tw8C" resolve="AbstracteRegel" />
                             </node>
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="5Eh$aHraKRH" role="2OqNvi">
-                          <ref role="37wK5l" to="u5to:284lcsCPqmy" resolve="alsDagsoort" />
-                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="5Eh$aHraKRH" role="2OqNvi">
+                        <ref role="37wK5l" to="u5to:284lcsCPqmy" resolve="alsDagsoort" />
                       </node>
                     </node>
+                    <node concept="10Nm6u" id="5Eh$aHraKRA" role="3uHU7w" />
                   </node>
                 </node>
                 <node concept="37f9Lt" id="5SmyBZwQKh2" role="lGtFl" />
@@ -22450,11 +22432,7 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2c44tf" id="15wAundxq_S" role="v9R3O">
-                            <node concept="1rXfSq" id="15wAundxqFJ" role="2c44tc">
-                              <ref role="37wK5l" to="jyki:~MBase.getUniverse()" resolve="getUniverse" />
-                            </node>
-                          </node>
+                          <node concept="3clFbT" id="3GDUSyZ6VEc" role="v9R3O" />
                         </node>
                       </node>
                     </node>
@@ -22555,11 +22533,6 @@
                         <ref role="3cqZAo" node="15wAun96B6O" resolve="d" />
                         <node concept="1sPUBX" id="15wAundq$aN" role="lGtFl">
                           <ref role="v9R2y" node="15wAun9642O" resolve="dagsoortPredicate" />
-                          <node concept="2c44tf" id="15wAundxr17" role="v9R3O">
-                            <node concept="1rXfSq" id="15wAundxr18" role="2c44tc">
-                              <ref role="37wK5l" to="jyki:~MBase.getUniverse()" resolve="getUniverse" />
-                            </node>
-                          </node>
                           <node concept="3NFfHV" id="15wAundq$aO" role="1sPUBK">
                             <node concept="3clFbS" id="15wAundq$aP" role="2VODD2">
                               <node concept="3clFbF" id="15wAundq$aQ" role="3cqZAp">
@@ -22572,6 +22545,7 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbT" id="3GDUSyZ6Weg" role="v9R3O" />
                         </node>
                       </node>
                     </node>
@@ -39278,10 +39252,8 @@
     <property role="TrG5h" value="dagsoortPredicate" />
     <property role="1Lz$4U" value="true" />
     <node concept="1N15co" id="15wAundvMFK" role="1s_3oS">
-      <property role="TrG5h" value="universe" />
-      <node concept="3Tqbb2" id="15wAundvN8M" role="1N15GL">
-        <ref role="ehGHo" to="tpee:fz3vP1J" resolve="Expression" />
-      </node>
+      <property role="TrG5h" value="gebruikLokaleUniverse" />
+      <node concept="10P_77" id="3GDUSyZ6UcA" role="1N15GL" />
     </node>
     <node concept="3aamgX" id="15wAun96470" role="3aUrZf">
       <property role="36QftV" value="true" />
@@ -39399,75 +39371,91 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="15wAun96pt3" role="3aUrZf">
+    <node concept="3aamgX" id="3GDUSyZ6Sjr" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="3ic2:4SRT32yWMLH" resolve="Dagsoort" />
-      <node concept="1Koe21" id="15wAun96pt4" role="1lVwrX">
-        <node concept="3clFb_" id="15wAun96Dmd" role="1Koe22">
-          <property role="TrG5h" value="m" />
-          <node concept="37vLTG" id="15wAun96Dmn" role="3clF46">
-            <property role="TrG5h" value="universe" />
-            <node concept="3uibUv" id="15wAun96DQR" role="1tU5fm">
-              <ref role="3uigEE" to="jyki:~MUniverse" resolve="MUniverse" />
-            </node>
+      <node concept="1Koe21" id="3GDUSyZ6SKV" role="1lVwrX">
+        <node concept="312cEu" id="3GDUSyZ6SKZ" role="1Koe22">
+          <property role="TrG5h" value="f" />
+          <node concept="15s5l7" id="3GDUSyZ6UDj" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: There is no default constructor available in super class nl.belastingdienst.merlin.base.MBase&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/8974945326827961340]&quot;;" />
+            <property role="huDt6" value="Error: There is no default constructor available in super class nl.belastingdienst.merlin.base.MBase" />
           </node>
-          <node concept="37vLTG" id="15wAun96LT1" role="3clF46">
-            <property role="TrG5h" value="d" />
-            <node concept="3uibUv" id="15wAun96M1w" role="1tU5fm">
-              <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+          <node concept="3clFb_" id="3GDUSyZ6T9P" role="jymVt">
+            <property role="TrG5h" value="m" />
+            <node concept="37vLTG" id="3GDUSyZ6T9Q" role="3clF46">
+              <property role="TrG5h" value="universe" />
+              <node concept="3uibUv" id="3GDUSyZ6T9R" role="1tU5fm">
+                <ref role="3uigEE" to="jyki:~MUniverse" resolve="MUniverse" />
+              </node>
             </node>
-          </node>
-          <node concept="3clFbS" id="15wAun96Dmg" role="3clF47">
-            <node concept="3cpWs6" id="15wAun96NfM" role="3cqZAp">
-              <node concept="2OqwBi" id="15wAun96NnU" role="3cqZAk">
-                <node concept="37vLTw" id="15wAun96NnV" role="2Oq$k0">
-                  <ref role="3cqZAo" node="15wAun96Dmn" resolve="universe" />
-                  <node concept="29HgVG" id="15wAundvNa3" role="lGtFl">
-                    <node concept="3NFfHV" id="15wAundvNfR" role="3NFExx">
-                      <node concept="3clFbS" id="15wAundvNfS" role="2VODD2">
-                        <node concept="3clFbF" id="15wAundvOzQ" role="3cqZAp">
-                          <node concept="v3LJS" id="15wAundvOzL" role="3clFbG">
-                            <ref role="v3LJV" node="15wAundvMFK" resolve="universe" />
+            <node concept="37vLTG" id="3GDUSyZ6T9S" role="3clF46">
+              <property role="TrG5h" value="d" />
+              <node concept="3uibUv" id="3GDUSyZ6T9T" role="1tU5fm">
+                <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="3GDUSyZ6T9U" role="3clF47">
+              <node concept="3cpWs6" id="3GDUSyZ6T9V" role="3cqZAp">
+                <node concept="2OqwBi" id="3GDUSyZ6T9W" role="3cqZAk">
+                  <node concept="37vLTw" id="3GDUSyZ6T9X" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3GDUSyZ6T9Q" resolve="universe" />
+                    <node concept="1W57fq" id="3GDUSyZ6T9Y" role="lGtFl">
+                      <node concept="3IZrLx" id="3GDUSyZ6T9Z" role="3IZSJc">
+                        <node concept="3clFbS" id="3GDUSyZ6Ta0" role="2VODD2">
+                          <node concept="3clFbF" id="3GDUSyZ6Ur4" role="3cqZAp">
+                            <node concept="v3LJS" id="3GDUSyZ6Ur3" role="3clFbG">
+                              <ref role="v3LJV" node="15wAundvMFK" resolve="gebruikLokaleUniverse" />
+                            </node>
                           </node>
+                        </node>
+                      </node>
+                      <node concept="gft3U" id="3GDUSyZ6TGR" role="UU_$l">
+                        <node concept="1rXfSq" id="3GDUSyZ6TwS" role="gfFT$">
+                          <ref role="37wK5l" to="jyki:~MBase.getUniverse()" resolve="getUniverse" />
                         </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="liA8E" id="15wAun96NnX" role="2OqNvi">
-                  <ref role="37wK5l" to="jyki:~MUniverse.dayKindContains(nl.belastingdienst.merlin.base.IMDayKind,java.time.LocalDateTime)" resolve="dayKindContains" />
-                  <node concept="2YIFZM" id="15wAun96NnY" role="37wK5m">
-                    <ref role="37wK5l" to="suo0:5Eh$aHoIWI0" resolve="instance" />
-                    <ref role="1Pybhc" to="suo0:5Eh$aHoHmVY" resolve="Dagsoort" />
-                    <node concept="1ZhdrF" id="15wAun96NnZ" role="lGtFl">
-                      <property role="2qtEX8" value="classConcept" />
-                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937/1144433194310" />
-                      <node concept="3$xsQk" id="15wAun96No0" role="3$ytzL">
-                        <node concept="3clFbS" id="15wAun96No1" role="2VODD2">
-                          <node concept="3clFbF" id="15wAun96No2" role="3cqZAp">
-                            <node concept="2OqwBi" id="15wAun96No3" role="3clFbG">
-                              <node concept="1iwH7S" id="15wAun96No4" role="2Oq$k0" />
-                              <node concept="1iwH70" id="15wAun96No5" role="2OqNvi">
-                                <ref role="1iwH77" to="suo0:5Eh$aHoHKXj" resolve="m_dagsoort" />
-                                <node concept="30H73N" id="15wAun96No6" role="1iwH7V" />
+                  <node concept="liA8E" id="3GDUSyZ6Ta2" role="2OqNvi">
+                    <ref role="37wK5l" to="jyki:~MUniverse.dayKindContains(nl.belastingdienst.merlin.base.IMDayKind,java.time.LocalDateTime)" resolve="dayKindContains" />
+                    <node concept="2YIFZM" id="3GDUSyZ6Ta3" role="37wK5m">
+                      <ref role="37wK5l" to="suo0:5Eh$aHoIWI0" resolve="instance" />
+                      <ref role="1Pybhc" to="suo0:5Eh$aHoHmVY" resolve="Dagsoort" />
+                      <node concept="1ZhdrF" id="3GDUSyZ6Ta4" role="lGtFl">
+                        <property role="2qtEX8" value="classConcept" />
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937/1144433194310" />
+                        <node concept="3$xsQk" id="3GDUSyZ6Ta5" role="3$ytzL">
+                          <node concept="3clFbS" id="3GDUSyZ6Ta6" role="2VODD2">
+                            <node concept="3clFbF" id="3GDUSyZ6Ta7" role="3cqZAp">
+                              <node concept="2OqwBi" id="3GDUSyZ6Ta8" role="3clFbG">
+                                <node concept="1iwH7S" id="3GDUSyZ6Ta9" role="2Oq$k0" />
+                                <node concept="1iwH70" id="3GDUSyZ6Taa" role="2OqNvi">
+                                  <ref role="1iwH77" to="suo0:5Eh$aHoHKXj" resolve="m_dagsoort" />
+                                  <node concept="30H73N" id="3GDUSyZ6Tab" role="1iwH7V" />
+                                </node>
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
+                    <node concept="37vLTw" id="3GDUSyZ6Tac" role="37wK5m">
+                      <ref role="3cqZAo" node="3GDUSyZ6T9S" resolve="d" />
+                      <node concept="37f9Lt" id="3GDUSyZ6Tad" role="lGtFl" />
+                    </node>
                   </node>
-                  <node concept="37vLTw" id="15wAun96No7" role="37wK5m">
-                    <ref role="3cqZAo" node="15wAun96LT1" resolve="d" />
-                    <node concept="37f9Lt" id="15wAun96Sdb" role="lGtFl" />
-                  </node>
+                  <node concept="raruj" id="3GDUSyZ6Tae" role="lGtFl" />
                 </node>
-                <node concept="raruj" id="15wAun96Nof" role="lGtFl" />
               </node>
             </node>
+            <node concept="10P_77" id="3GDUSyZ6Taf" role="3clF45" />
+            <node concept="3Tm1VV" id="3GDUSyZ6Tag" role="1B3o_S" />
           </node>
-          <node concept="10P_77" id="15wAun96N6m" role="3clF45" />
-          <node concept="3Tm1VV" id="15wAun96Dmi" role="1B3o_S" />
+          <node concept="3Tm1VV" id="3GDUSyZ6SL0" role="1B3o_S" />
+          <node concept="3uibUv" id="3GDUSyZ6T9K" role="1zkMxy">
+            <ref role="3uigEE" to="jyki:~MBase" resolve="MBase" />
+          </node>
         </node>
       </node>
     </node>

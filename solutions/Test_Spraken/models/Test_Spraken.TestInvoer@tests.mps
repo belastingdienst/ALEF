@@ -21,6 +21,7 @@
     <import index="2xvs" ref="r:e3dc4945-e4ff-472e-b31e-8501ea0b6e62(Test_Spraken.service)" />
     <import index="owxc" ref="r:5463a47b-468f-40ba-8bbc-500ed0f64f7f(gegevensspraak.typesystem)" />
     <import index="st2d" ref="r:65f24cdd-fd7d-435b-8500-e884df66d827(testspraak.translator)" />
+    <import index="9nho" ref="r:4172b106-22c7-49a2-9043-c1e488e6f56c(standaard.funcs)" />
     <import index="r02f" ref="r:66cd26ef-420f-4d69-a8c8-a2b83dc3a229(testspraak.behavior)" implicit="true" />
     <import index="m234" ref="r:dab861ec-284c-4992-a98c-1e3b9c9dd555(regelspraak.structure)" implicit="true" />
     <import index="dse8" ref="r:bbb1f8ef-a8a5-48ec-918c-331fca20e41c(interpreter.debug.structure)" implicit="true" />
@@ -234,7 +235,9 @@
       </concept>
     </language>
     <language id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak">
-      <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa" />
+      <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa">
+        <child id="7454607800402011565" name="dagsoorten" index="XDnfx" />
+      </concept>
       <concept id="6527873696160725157" name="testspraak.structure.Resultaat" flags="ng" index="4Oh8J">
         <reference id="6527873696160725158" name="type" index="4Oh8G" />
         <reference id="1509793566137291853" name="instantie" index="3teO_M" />
@@ -249,6 +252,10 @@
       </concept>
       <concept id="6438506741833356942" name="testspraak.structure.UitvoerSubBericht" flags="ng" index="27HnPa">
         <child id="6438506741833356949" name="veldVerwachting" index="27HnPh" />
+      </concept>
+      <concept id="7454607800401937239" name="testspraak.structure.DatumDagsoortVoorspelling" flags="ng" index="XD5kr">
+        <reference id="7454607800402005516" name="dagsoort" index="XDlx0" />
+        <child id="7454607800402002995" name="datum" index="XDl9Z" />
       </concept>
       <concept id="7760345304267117455" name="testspraak.structure.IAbstractTest" flags="ngI" index="10x1HZ">
         <child id="6527873696160724992" name="situatie" index="4Ohaa" />
@@ -663,6 +670,31 @@
           <ref role="4OhPH" to="89um:Mfbs7cYyIO" resolve="AggregratieItem" />
         </node>
         <node concept="7CXmI" id="2obD4JgNbvx" role="lGtFl" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpD$JJ" role="1SKRRt">
+      <node concept="210ffa" id="c_FtTpD$JL" role="1qenE9">
+        <property role="TrG5h" value="alleen dagsoortvoorspellingen" />
+        <node concept="XD5kr" id="c_FtTpD$JM" role="XDnfx">
+          <ref role="XDlx0" to="9nho:284lcsCmKWg" resolve="vrijdag" />
+          <node concept="2ljiaL" id="c_FtTpD$JN" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="2021" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpDHZz" role="1SKRRt">
+      <node concept="210ffa" id="c_FtTpDI45" role="1qenE9">
+        <property role="TrG5h" value="leeg" />
+        <node concept="7CXmI" id="c_FtTpDIfm" role="lGtFl">
+          <node concept="1TM$A" id="c_FtTpDIfn" role="7EUXB">
+            <node concept="2PYRI3" id="c_FtTpDIm8" role="3lydEf">
+              <ref role="39XzEq" to="5nyn:2obD4JgMwCg" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -2498,6 +2530,132 @@
             </node>
           </node>
           <node concept="7CXmI" id="6LExl5LLlx8" role="lGtFl" />
+        </node>
+        <node concept="210ffa" id="c_FtTpEBPk" role="10_$IM">
+          <property role="TrG5h" value="dagsoort eerste" />
+          <node concept="XD5kr" id="c_FtTpEKKk" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKWg" resolve="vrijdag" />
+            <node concept="2ljiaL" id="c_FtTpEKKl" role="XDl9Z">
+              <property role="2ljiaM" value="1" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="7CXmI" id="c_FtTqBidZ" role="lGtFl">
+            <node concept="29bkU" id="c_FtTqBie0" role="7EUXB">
+              <node concept="2PQEqo" id="c_FtTqBlK9" role="3lydCh">
+                <ref role="39XzEq" to="5nyn:6LCfCLvRBO8" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="210ffa" id="c_FtTpF508" role="10_$IM">
+          <property role="TrG5h" value="dagsoort dubbel" />
+          <node concept="XD5kr" id="c_FtTpF509" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKWg" resolve="vrijdag" />
+            <node concept="2ljiaL" id="c_FtTpF50a" role="XDl9Z">
+              <property role="2ljiaM" value="1" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="7CXmI" id="c_FtTqAoqw" role="lGtFl">
+            <node concept="29bkU" id="c_FtTqAoqx" role="7EUXB">
+              <node concept="2PQEqo" id="c_FtTqBpdK" role="3lydCh">
+                <ref role="39XzEq" to="5nyn:UU0162X1oI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="210ffa" id="c_FtTpGyjf" role="10_$IM">
+          <property role="TrG5h" value="dagsoort niet dubbel" />
+          <node concept="XD5kr" id="c_FtTpGyjg" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKWn" resolve="zaterdag" />
+            <node concept="2ljiaL" id="c_FtTpGyjh" role="XDl9Z">
+              <property role="2ljiaM" value="2" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+        </node>
+        <node concept="210ffa" id="c_FtTqAXMc" role="10_$IM">
+          <property role="TrG5h" value="dagsoort volgorde 1" />
+          <node concept="XD5kr" id="c_FtTqAXMd" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
+            <node concept="2ljiaL" id="c_FtTqAXMe" role="XDl9Z">
+              <property role="2ljiaM" value="5" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="XD5kr" id="c_FtTqBwdw" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKW5" resolve="woensdag" />
+            <node concept="2ljiaL" id="c_FtTqBwdx" role="XDl9Z">
+              <property role="2ljiaM" value="6" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="7CXmI" id="c_FtTqCBzx" role="lGtFl">
+            <node concept="29bkU" id="c_FtTqCBzy" role="7EUXB">
+              <node concept="2PQEqo" id="c_FtTqCEYV" role="3lydCh">
+                <ref role="39XzEq" to="5nyn:6LCfCLvRBO8" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="210ffa" id="c_FtTqBIQY" role="10_$IM">
+          <property role="TrG5h" value="dagsoort volgorde 2 dubbel" />
+          <node concept="XD5kr" id="c_FtTqBIR1" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKW5" resolve="woensdag" />
+            <node concept="2ljiaL" id="c_FtTqBIR2" role="XDl9Z">
+              <property role="2ljiaM" value="6" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="XD5kr" id="c_FtTqBIQZ" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
+            <node concept="2ljiaL" id="c_FtTqBIR0" role="XDl9Z">
+              <property role="2ljiaM" value="5" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="7CXmI" id="c_FtTqCIqi" role="lGtFl">
+            <node concept="29bkU" id="c_FtTqCIqj" role="7EUXB">
+              <node concept="2PQEqo" id="c_FtTqCPsj" role="3lydCh">
+                <ref role="39XzEq" to="5nyn:UU0162X1oI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="210ffa" id="c_FtTqDaeS" role="10_$IM">
+          <property role="TrG5h" value="dagsoort volgorde 2 (+ nog andere dagsoort)" />
+          <node concept="XD5kr" id="c_FtTqDaeT" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKW5" resolve="woensdag" />
+            <node concept="2ljiaL" id="c_FtTqDaeU" role="XDl9Z">
+              <property role="2ljiaM" value="6" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="XD5kr" id="c_FtTqDaeV" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKW1" resolve="dinsdag" />
+            <node concept="2ljiaL" id="c_FtTqDaeW" role="XDl9Z">
+              <property role="2ljiaM" value="5" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
+          <node concept="XD5kr" id="c_FtTqDe$C" role="XDnfx">
+            <ref role="XDlx0" to="9nho:284lcsCmKWa" resolve="donderdag" />
+            <node concept="2ljiaL" id="c_FtTqDe$D" role="XDl9Z">
+              <property role="2ljiaM" value="7" />
+              <property role="2ljiaN" value="1" />
+              <property role="2ljiaO" value="2021" />
+            </node>
+          </node>
         </node>
         <node concept="2ljwA5" id="VBz_LhMTkf" role="3Na4y7">
           <node concept="2ljiaL" id="VBz_LhMTkg" role="2ljwA6">

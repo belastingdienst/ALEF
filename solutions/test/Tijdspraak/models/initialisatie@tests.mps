@@ -10,6 +10,7 @@
   <imports>
     <import index="9nho" ref="r:4172b106-22c7-49a2-9043-c1e488e6f56c(standaard.funcs)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
+    <import index="3nsx" ref="r:a7fbcf20-f869-4672-8194-92ed08f0dafe(testspraak.intentions)" />
     <import index="ykqi" ref="r:c71b9efb-c880-476d-a07a-2493b4c1967f(gegevensspraak.base)" implicit="true" />
   </imports>
   <registry>
@@ -41,6 +42,9 @@
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
+      </concept>
+      <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
+        <reference id="1225989811227" name="intention" index="1MFYO6" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -78,8 +82,15 @@
     <language id="09c04f52-88c5-4bd6-a481-cabab9f61ff5" name="contexts">
       <concept id="4485080112264973245" name="contexts.structure.Witruimte" flags="ng" index="1uxNW$" />
     </language>
+    <language id="7bbaf860-5f96-44b4-9731-6e00ae137ece" name="regelspraak">
+      <concept id="7676270149288280326" name="regelspraak.structure.Ontkenbaar" flags="ngI" index="3iLdo1">
+        <property id="7676270149288280327" name="ontkenning" index="3iLdo0" />
+      </concept>
+    </language>
     <language id="8bc962c0-cb3c-49f0-aa03-23c3bc0304b0" name="testspraak">
-      <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa" />
+      <concept id="1132091078824234268" name="testspraak.structure.TestGeval" flags="ng" index="210ffa">
+        <child id="7454607800402011565" name="dagsoorten" index="XDnfx" />
+      </concept>
       <concept id="6527873696160725157" name="testspraak.structure.Resultaat" flags="ng" index="4Oh8J">
         <reference id="6527873696160725158" name="type" index="4Oh8G" />
         <child id="6527873696160725081" name="uitvoer" index="4Ohbj" />
@@ -87,6 +98,9 @@
       <concept id="6527873696160724962" name="testspraak.structure.Instantie" flags="ng" index="4OhPC">
         <reference id="6527873696160724967" name="type" index="4OhPH" />
         <child id="6527873696160724965" name="eigenschappen" index="4OhPJ" />
+      </concept>
+      <concept id="7454607800401937239" name="testspraak.structure.DatumDagsoortVoorspelling" flags="ng" index="XD5kr">
+        <child id="7454607800402002995" name="datum" index="XDl9Z" />
       </concept>
       <concept id="7760345304267117455" name="testspraak.structure.IAbstractTest" flags="ngI" index="10x1HZ">
         <child id="6527873696160724992" name="situatie" index="4Ohaa" />
@@ -1117,6 +1131,256 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="c_FtTpB$QC">
+    <property role="TrG5h" value="VoegDagsoortvoorspellingToeMetIntentie" />
+    <node concept="1qefOq" id="c_FtTpB$QE" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpB$QD" role="1qenE9">
+        <property role="TrG5h" value="001" />
+        <node concept="LIFWc" id="c_FtTpB$RZ" role="lGtFl">
+          <property role="LIFWa" value="8" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="8" />
+          <property role="p6zMs" value="8" />
+          <property role="LIFWd" value="Constant_lb25e5_b1a0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpB$QH" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpB$QJ" role="1qenE9">
+        <property role="TrG5h" value="001" />
+        <node concept="XD5kr" id="c_FtTpB$QK" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpB$QL" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpB_z0" role="LjaKd">
+      <node concept="1MFPAf" id="c_FtTpB_yZ" role="3cqZAp">
+        <ref role="1MFYO6" to="3nsx:6tO5$Lrheg_" resolve="VoegDagsoortVoorspellingToe" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="c_FtTpCWEy">
+    <property role="TrG5h" value="VoegSituatieEnResultaatToeMetIntentie" />
+    <node concept="1qefOq" id="c_FtTpD0oG" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpD0oF" role="1qenE9">
+        <property role="TrG5h" value="001" />
+        <node concept="XD5kr" id="c_FtTpD0oH" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD0oI" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="LIFWc" id="c_FtTpD0oL" role="lGtFl">
+          <property role="LIFWa" value="7" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="7" />
+          <property role="p6zMs" value="7" />
+          <property role="LIFWd" value="Constant_lb25e5_b1a0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpD0oN" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpD0oM" role="1qenE9">
+        <property role="TrG5h" value="001" />
+        <node concept="XD5kr" id="c_FtTpD0oQ" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD0oR" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="4OhPC" id="c_FtTpD0oU" role="4Ohaa" />
+        <node concept="4Oh8J" id="c_FtTpD0oV" role="4Ohb1" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpD0tB" role="LjaKd">
+      <node concept="1MFPAf" id="c_FtTpD0tA" role="3cqZAp">
+        <ref role="1MFYO6" to="3nsx:6tO5$LrhUfa" resolve="VoegSituatieEnResultaatToe" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="c_FtTpD23t">
+    <property role="TrG5h" value="VoegNogEenDagsoortvoorspellingToeMetIntentie" />
+    <node concept="1qefOq" id="c_FtTpD23z" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpD23y" role="1qenE9">
+        <node concept="XD5kr" id="c_FtTpD23$" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD23_" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="LIFWc" id="c_FtTpD23Q" role="lGtFl">
+          <property role="LIFWa" value="7" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="7" />
+          <property role="p6zMs" value="7" />
+          <property role="LIFWd" value="Constant_lb25e5_b1a0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpD23S" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpD23R" role="1qenE9">
+        <node concept="XD5kr" id="c_FtTpD23T" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD23U" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="XD5kr" id="c_FtTpD23X" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD23Y" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpD2aa" role="LjaKd">
+      <node concept="1MFPAf" id="c_FtTpD2a9" role="3cqZAp">
+        <ref role="1MFYO6" to="3nsx:6tO5$Lrheg_" resolve="VoegDagsoortVoorspellingToe" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="c_FtTpD32m">
+    <property role="TrG5h" value="WisselOntkenningNaarWaar" />
+    <node concept="1qefOq" id="c_FtTpD32o" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpD32n" role="1qenE9">
+        <node concept="XD5kr" id="c_FtTpD32p" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD32q" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+          <node concept="LIFWc" id="c_FtTpD32t" role="lGtFl">
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWd" value="property_ontkenning" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpD32v" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpD32u" role="1qenE9">
+        <node concept="XD5kr" id="c_FtTpD32w" role="XDnfx">
+          <property role="3iLdo0" value="true" />
+          <node concept="2ljiaL" id="c_FtTpD32x" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpD348" role="LjaKd">
+      <node concept="2HxZob" id="c_FtTpD346" role="3cqZAp">
+        <node concept="1iFQzN" id="c_FtTpD349" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="c_FtTpD3Pn" role="3cqZAp">
+        <node concept="pLAjd" id="c_FtTpD3Pp" role="yd6KS">
+          <property role="pLAjf" value="VK_DOWN" />
+        </node>
+        <node concept="pLAjd" id="c_FtTpD3Px" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="c_FtTpD63$">
+    <property role="TrG5h" value="WisselOntkenningNaarOnWaar" />
+    <node concept="1qefOq" id="c_FtTpD63_" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpD63A" role="1qenE9">
+        <node concept="XD5kr" id="c_FtTpD63B" role="XDnfx">
+          <property role="3iLdo0" value="true" />
+          <node concept="2ljiaL" id="c_FtTpD63C" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+          <node concept="LIFWc" id="c_FtTpDa8Z" role="lGtFl">
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWd" value="property_ontkenning" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpD63E" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpD63F" role="1qenE9">
+        <node concept="XD5kr" id="c_FtTpD63G" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpD63H" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpD63I" role="LjaKd">
+      <node concept="2HxZob" id="c_FtTpD63J" role="3cqZAp">
+        <node concept="1iFQzN" id="c_FtTpD63K" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="c_FtTpD63L" role="3cqZAp">
+        <node concept="pLAjd" id="c_FtTpD63M" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="c_FtTpDggP">
+    <property role="TrG5h" value="VoegResultaatToeAanSituatieEnDagsoortVoorspelling" />
+    <node concept="1qefOq" id="c_FtTpDgpZ" role="25YQCW">
+      <node concept="210ffa" id="c_FtTpDgpY" role="1qenE9">
+        <node concept="4OhPC" id="c_FtTpDgu$" role="4Ohaa" />
+        <node concept="XD5kr" id="c_FtTpDi36" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpDi37" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="LIFWc" id="c_FtTpDiz7" role="lGtFl">
+          <property role="LIFWa" value="8" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="8" />
+          <property role="p6zMs" value="8" />
+          <property role="LIFWd" value="Constant_lb25e5_b1a0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="c_FtTpDgKP" role="25YQFr">
+      <node concept="210ffa" id="c_FtTpDgN9" role="1qenE9">
+        <node concept="4OhPC" id="c_FtTpDgNa" role="4Ohaa" />
+        <node concept="XD5kr" id="c_FtTpDhIv" role="XDnfx">
+          <node concept="2ljiaL" id="c_FtTpDhIw" role="XDl9Z">
+            <property role="2ljiaM" value="1" />
+            <property role="2ljiaN" value="1" />
+            <property role="2ljiaO" value="20" />
+          </node>
+        </node>
+        <node concept="4Oh8J" id="c_FtTpDhWf" role="4Ohb1" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="c_FtTpDiMp" role="LjaKd">
+      <node concept="1MFPAf" id="c_FtTpDiMo" role="3cqZAp">
+        <ref role="1MFYO6" to="3nsx:6tO5$LrhUfa" resolve="VoegSituatieEnResultaatToe" />
       </node>
     </node>
   </node>

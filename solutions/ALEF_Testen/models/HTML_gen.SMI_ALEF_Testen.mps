@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="tz50" ref="r:91ada6ff-f45e-4b59-8f7e-7fa6c3590a24(ALEF_Testen.RegelsMetdagsoorten)" />
-    <import index="ztyn" ref="r:350bf7da-ab64-40a3-b9ed-f38e959ed398(ALEF_Testen.dagsoortdefinities)" />
     <import index="k633" ref="r:e29bcd0a-0a79-44cd-98ad-21833e17818b(ALEF_Testen.regels)" />
     <import index="h66i" ref="r:36930753-a919-4aa4-9b11-03574376892a(ALEF_Testen.testen)" />
     <import index="272" ref="r:54648bf0-4adc-4c23-a9d1-3db64ffe7b7b(ALEF_Testen.interpreter)" />
