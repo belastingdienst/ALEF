@@ -4,12 +4,12 @@
 
 RegelSpraak hanteert deze volgorde bij het uitvoeren van een numerieke berekening:
 
-1. eerst worteltrekken (expressie “wortel van")
-2. dan vermenigvuldigen (expressie “maal”) en delen (expressies “gedeeld door” en “gedeeld door (ABS)”) met als kanttekening dat bij gelijke prioriteit eerst de linker operatie wordt uitgevoerd,
-3. en tenslotte optellen (expressie “plus”) en aftrekken (expressies “min” en “verminderd met”), wederom met als kanttekening dat bij gelijke prioriteit eerst de linker operatie wordt uitgevoerd
+1. eerst worteltrekken (expressie ï¿½wortel van")
+2. dan vermenigvuldigen (expressie ï¿½maalï¿½) en delen (expressies ï¿½gedeeld doorï¿½ en ï¿½gedeeld door (ABS)ï¿½) met als kanttekening dat bij gelijke prioriteit eerst de linker operatie wordt uitgevoerd,
+3. en tenslotte optellen (expressie ï¿½plusï¿½) en aftrekken (expressies ï¿½minï¿½ en ï¿½verminderd metï¿½), wederom met als kanttekening dat bij gelijke prioriteit eerst de linker operatie wordt uitgevoerd
 // Guanshengdijun: ik zou hier "wederom" weglaten, gezien dat je het hieronder weer gebruikt, dat scheelt in de woordherhaling en houdt het formaat van de opsomming consistent
 
-Tevens kan gebruik worden gemaakt van haakjes “(” en “)” om operaties voor alle andere uit te laten voeren. 
+Tevens kan gebruik worden gemaakt van haakjes ï¿½(ï¿½ en ï¿½)ï¿½ om operaties voor alle andere uit te laten voeren. 
 Wederom worden de meest linkse haakjes opnieuw uitgevoerd.
 
 ## Representatie en precisie
@@ -25,12 +25,12 @@ Voor het bepalen van het aantal decimalen wordt een percentage ook altijd eerst 
 Het aantal decimalen is dus van belang bij (de input van) berekeningen, ook ten aanzien van het toekennen van het resultaat van een berekening. Als dit rekenresultaat bijvoorbeeld toegekend moet worden aan een attribuut, dan kan dat alleen als het aantal decimalen van het rekenresultaat niet groter is dan het aantal decimalen waarmee het betreffende attribuut is gedefinieerd. Als dit wel het geval is, dan zal het resultaat eerst expliciet afgerond moeten worden.
 
 Numerieke waarden in RegelSpraak worden verder verondersteld allemaal dezelfde precisie te hebben. In wetenschappelijke of technische contexten wordt er echter vaak een verschil gemaakt in precisie op basis van het aantal decimalen. Met bijvoorbeeld het getal 0,5 wordt eigenlijk een soort interval aangegeven: een waarde die tussen 0,45 en 0,54 ligt. Hoe meer decimalen, hoe preciezer deze getallen zijn. Het getal 0,50 geeft bijvoorbeeld een interval weer tussen 0,495 en 0,504; dit interval is met meer decimalen en daarmee is het getal preciezer. In RegelSpraak echter is dat niet het geval: 0,5 en 0,50 zijn twee volledig identieke waarden met precies dezelfde precisie. Het is goed om dit onderscheid te kennen en onderkennen.
-// Guanshengdijun: Je geeft hier in twee aparte zinnen twee bijna identieke voorbeelden. Ik zou ze in één zin presenteren zodat die minder lang wordt en ook minder verwarrend oogt.
+// Guanshengdijun: Je geeft hier in twee aparte zinnen twee bijna identieke voorbeelden. Ik zou ze in ï¿½ï¿½n zin presenteren zodat die minder lang wordt en ook minder verwarrend oogt.
 
 ### Verschillen in precisie
 
-Bij het weergeven van getallen zal RegelSpraak dan ook niet altijd het gespecificeerde aantal decimalen laten zien. De achterliggende nullen (zogenaamde achterloopnullen oftewel “trailing zero’s”) zullen niet getoond worden. Deze zijn in RegelSpraak ook niet nodig omdat alle numerieke waarden toch dezelfde precisie hebben.
-Stel dat we bijvoorbeeld een attribuut hebben met datatype numeriek (geheel getal met 2 decimalen). Als we hier het resultaat van de berekening “1 gedeeld door 4” aan toekennen, dan zal dat gerepresenteerd worden met twee decimalen, oftewel als 0,25. Echter, als we hier het resultaat van “1 gedeeld door 2” aan toekennen, dan zal het gerepresenteerd worden met slechts één decimaal, oftewel als 0,5.
+Bij het weergeven van getallen zal RegelSpraak dan ook niet altijd het gespecificeerde aantal decimalen laten zien. De achterliggende nullen (zogenaamde achterloopnullen oftewel ï¿½trailing zeroï¿½sï¿½) zullen niet getoond worden. Deze zijn in RegelSpraak ook niet nodig omdat alle numerieke waarden toch dezelfde precisie hebben.
+Stel dat we bijvoorbeeld een attribuut hebben met datatype numeriek (geheel getal met 2 decimalen). Als we hier het resultaat van de berekening ï¿½1 gedeeld door 4ï¿½ aan toekennen, dan zal dat gerepresenteerd worden met twee decimalen, oftewel als 0,25. Echter, als we hier het resultaat van ï¿½1 gedeeld door 2ï¿½ aan toekennen, dan zal het gerepresenteerd worden met slechts ï¿½ï¿½n decimaal, oftewel als 0,5.
 
 Het aantal decimalen van het resultaat van een berekening wordt hierbij bepaald door het aantal decimalen van de invoerwaarden en de soort berekening.
 Het is hier echter wel van belang of de invoerwaarden afkomstig zijn van een numerieke attribuut of parameter, of van een [literal expressie](Expressies.md):
@@ -40,7 +40,7 @@ Numerieke [*attributen* of *parameters*](../gegevens/objecttype.md) hebben een e
 Het is bij het specificeren van een berekening in die situatie dan ook mogelijk om te garanderen dat het resultaat maximaal het gewenste aantal (gedefinieerde) decimalen bevat.
 Een numerieke *literal* daarentegen heeft geen expliciet gespecificeerd aantal decimalen.
 Als een numerieke literal in een berekening wordt gebruikt, dan kan het aantal decimalen van het resultaat dus niet gegarandeerd worden.
-Stel dat we een literal hebben met waarde 1000 en een numeriek attribuut met één decimaal. Het aantal decimalen van het resultaat zal dan afhangen van de waarde van het attribuut.
+Stel dat we een literal hebben met waarde 1000 en een numeriek attribuut met ï¿½ï¿½n decimaal. Het aantal decimalen van het resultaat zal dan afhangen van de waarde van het attribuut.
 Voorbeeld: 0,1 / 1000 = 0,0001
 Als de waarde van het numeriek attribuut echter 1000 is met *nul* decimalen, dan zal het resultaat **1** zijn, want er worden *geen* decimalen toegekend.
 // Guanshengdijun: Wat is de rol van het hypothetische attribuut in dit voorbeeld? Je noemt een literal en een attribuut en spreekt daarna alleen over het "resultaat". Wat is de impact van het verschuiven van de waarde 1000 van de literal naar het attribuut?
@@ -52,15 +52,46 @@ Bij het gebruik van enkel numerieke attributen of parameters komt dit geforceerd
 
 Er kunnen ook andere redenen zijn om het resultaat van een berekening af te ronden, bijvoorbeeld omdat een bepaalde regel dit voorschrijft.
 Bedragen bijvoorbeeld worden in de praktijk vaak afgerond.
-*Afronden* is het terugbrengen van het aantal decimalen naar een gewenst of noodzakelijk aantal. Er zijn 5 manieren in RegelSpraak om dit te doen.
-De laatste decimaal die moet blijven staan noemen we de *afrondpositie*.
+*Afronden* is het terugbrengen van het aantal decimalen naar een gewenst of noodzakelijk aantal, naar een geheel getal of naar een veelvoud van 10,100, 1000, enzovoort. 
+De laatste decimaal die moet blijven staan noemen we de *afrondpositie*. Bij afronden op een 100-tal is dat de positie van de honderdtallen.
+
+Schrijf in RegelSpraak na de expressie de afrondingsrichting, gevolgd door **op** en waarop moet worden afgerond. Bijvoorbeeld: **het inkomen rekenkundig afgerond op een 100-tal**.
+
+Er zijn 6 manieren in RegelSpraak om dit te doen.
 
 * *naar beneden afronden*: Indien het getal positief is: het cijfer op de afrondpositie blijft hetzelfde. Indien het getal negatief is: het cijfer op de afrondpositie wordt met 1 verhoogd indien een van de cijfers niet 0 is.
 * *naar boven afronden*: Indien het getal positief is: het cijfer op de afrondpositie wordt met 1 verhoogd indien een van de cijfers niet 0 is. Indien het getal negatief is: het cijfer op de afrondpositie blijft hetzelfde
 * *rekenkundig afronden*: Het cijfer na het cijfer op de afrondpositie geeft aan of hoe het cijfer op de afrondpositie wordt afgerond: bij een 0, 1, 2, 3 of 4 blijft die hetzelfde; bij een 5, 6, 7, 8 of 9 is wordt het cijfer op de afrondpositie met 1 verhoogd.
 // Guanshengdijun: "geeft aan of" of "geeft aan hoe". Je verwijst ook terug naar "het cijfer" met "die", waar "het" volgens mij correct is.
+* *rekenkundig afronden met half richting nul*: Gelijk aan rekenkundig afronden, behalve als het getal precies op de helft ligt (een 5 gevolgd door alleen nullen). Dan blijft het cijfer op de afrondpositie hetzelfde.
 * *richting nul afronden*: Het cijfer op de afrondpositie blijft in dit geval altijd hetzelfde, ongeacht of het getal positief dan wel negatief is.
 * *weg van nul afronden*: Het cijfer op de afrondpositie wordt met 1 verhoogd indien een van de cijfers erna ongelijk is aan 0; als alle cijfers erna 0 zijn, dan blijft het cijfer op de afrondpositie hetzelfde.
+
+| Afrondingsrichting | 1250 op een 100-tal | -1250 op een 100-tal |
+|---|---|---|
+| rekenkundig afgerond | 1300 | -1300 |
+| rekenkundig afgerond met half richting nul | 1200 | -1200 |
+| naar boven afgerond | 1300 | -1200 |
+| naar beneden afgerond | 1200 | -1300 |
+| richting nul afgerond | 1200 | -1200 |
+| weg van nul afgerond | 1300 | -1300 |
+
+#### Afronden op decimalen, een geheel getal of een -tal
+
+Na **op** staat een keuzemenu. Kies daarin waarop moet worden afgerond:
+
+| Keuze |  | 1234,567 rekenkundig afgerond |
+|---|---|---|
+| decimalen | **op 2 decimalen** | 1234,57 |
+| decimaal | **op 1 decimaal** | 1234,6 |
+| geheel getal | **op een geheel getal** | 1235 |
+| -tal | **op een 10-tal** | 1230 |
+| | **op een 100-tal** | 1200 |
+| | **op een 1000-tal** | 1000 |
+
+* Bij *decimalen* vul je het aantal decimalen in. Bij 1 decimaal wordt dit automatisch *decimaal*.
+* Bij *-tal* vul je een macht van tien in: 10, 100, 1000, enzovoort. Andere getallen zijn niet toegestaan.
+* Afronden op een geheel getal of een -tal levert altijd een geheel getal op (0 decimalen).
 
 ## Begrenzen van waarden
 
@@ -68,7 +99,7 @@ Het resultaat van rekenkundige expressies met waarden met een Numeriek of Percen
 // Guanshengdijun: "een bepaald bereik"
 Een voorbeeld hiervan is voorkomen dat het resultaat negatief is.
 Of een maximumbedrag voor een boete die in de tijd oploopt.
-// Guanshengdijun: Combineer deze twee voorbeelden in één zin in plaats van beide op een nieuwe regel te plaatsen.
+// Guanshengdijun: Combineer deze twee voorbeelden in ï¿½ï¿½n zin in plaats van beide op een nieuwe regel te plaatsen.
 Schrijf in RegelSpraak na de expressie "**met een minimum van** of "**met een maximum van**", gevolgd door een [literal expressie](Expressies.md) of [numerieke expressie](Expressies.md)
 Een minimum en maximum tegelijk instellen mag ook, met: **met een minimum van (waarde) met een maximum van (waarde)**
 De [afronding](#afrondingen) kan rechts daarvan worden geplaatst.
@@ -82,7 +113,7 @@ De operator plus moet staan tussen twee numerieke expressies en levert als resul
 De gebruikte eenheden moeten overeenkomen, maar RegelSpraak kan wel automatisch het omrekenen uitvoeren. Bijvoorbeeld als beide eenheden van tijd zijn.
 // Guanshengdijun: Ik zou in de eerste zin specificeren dat de types van de eenheden overeen moeten komen. Zoals je daarna beschrijft hoeven ze niet exact dezelfde eenheden te hebben.
 Het aantal decimalen van het resultaat van een optelling is gelijk aan het hoogste aantal decimalen van de gebruikte waarde. Het omrekenen van eenheden kan dit beinvloeden.
-// Guanshengdijun: "gebruikte waarden" in de eerste zin? In de tweede zin mis je de trema op "beïnvloeden"
+// Guanshengdijun: "gebruikte waarden" in de eerste zin? In de tweede zin mis je de trema op "beï¿½nvloeden"
 Lege waarden worden behandeld als zijnde 0.
 // Guanshengdijun: "als zijnde" is een contaminatie. "behandeld als" is voldoende.
 
@@ -91,7 +122,7 @@ Lege waarden worden behandeld als zijnde 0.
 Het aftrekken van twee numerieke waarden in RegelSpraak gebeurt met de operators "**min**" of "**verminderd met**". Zet deze tussen de twee waarden.
 Net als bij plus moeten de eenheden overeenkomen of moet omrekenen mogelijk zijn.
 Eveneens is het aantal decimalen van het resultaat van een aftrekking gelijk aan dat van de waarde met de meeste decimalen. Het omrekenen van eenheden kan dit beinvloeden.
-// Guanshengdijun: "beïnvloeden"
+// Guanshengdijun: "beï¿½nvloeden"
 Als de waarde *links* van de operator leeg is, dan is het resultaat ook leeg!
 
 ### Vermenigvuldigen
@@ -103,7 +134,7 @@ Het resultaat zal altijd een samengestelde eenheid krijgen die bestaat uit het p
 Het is *niet* mogelijk om een *Percentage* (of expressie met dat als resultaat) te gebruiken in een vermenigvuldigen in RegelSpraak.
 // Guanshengdijun: "vermenigvuldiging" of "vermenigvuldigen-expressie"
 Het aantal decimalen van het resultaat van een vermenigvuldiging is maximaal gelijk aan de som van het aantal decimalen van de gebruikte waarden. Het omrekenen van eenheden kan dit beinvloeden.
-// Guanshengdijun: beïnvloeden
+// Guanshengdijun: beï¿½nvloeden
 Een lege waarde in een van de operatoren maakt het resultaat altijd 0.
 
 ### Delen door
