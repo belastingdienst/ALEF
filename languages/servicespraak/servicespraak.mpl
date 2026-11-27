@@ -44,6 +44,7 @@
     <dependency reexport="false">b13b6244-ea51-440e-bbb8-37e1276fefe2(projecthygiene.plugin)</dependency>
     <dependency reexport="false">9624b6ec-18c7-44ba-9a78-e6c1520c2cf7(xmlUtils)</dependency>
     <dependency reexport="false">20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)</dependency>
+    <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:08d6f877-03cc-45d3-b03c-d6f786266853:bronspraak" version="1" />
@@ -130,10 +131,12 @@
     <module reference="9998cc6e-c037-49ca-8952-a06209a23d94(editorUtils)" version="0" />
     <module reference="471364db-8078-4933-b2ef-88232bfa34fc(gegevensspraak)" version="6" />
     <module reference="73790f24-2f5f-4a73-ac29-aed1b764b1a9(generatorUtils)" version="0" />
+    <module reference="75a4f7b0-f943-40c5-be40-0e00015495b9(gridcsv)" version="0" />
     <module reference="a4bbe181-88ec-4b30-b7d3-db0b30b5c709(interpreter.debug)" version="0" />
     <module reference="e8bb4b2f-b77e-4e84-b80e-5162581b560d(interpreter.runtime)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
+    <module reference="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" version="0" />
     <module reference="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" version="0" />
