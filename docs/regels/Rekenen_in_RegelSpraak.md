@@ -57,10 +57,10 @@ De laatste decimaal die moet blijven staan noemen we de *afrondpositie*. Bij afr
 
 Schrijf in RegelSpraak na de expressie de afrondingsrichting, gevolgd door **op** en waarop moet worden afgerond. Bijvoorbeeld: **het inkomen rekenkundig afgerond op een 100-tal**.
 
-Er zijn 6 manieren in RegelSpraak om dit te doen.
+Er zijn 6 manieren in RegelSpraak om dit te doen:
 
 * *naar beneden afronden*: Indien het getal positief is: het cijfer op de afrondpositie blijft hetzelfde. Indien het getal negatief is: het cijfer op de afrondpositie wordt met 1 verhoogd indien een van de cijfers niet 0 is.
-* *naar boven afronden*: Indien het getal positief is: het cijfer op de afrondpositie wordt met 1 verhoogd indien een van de cijfers niet 0 is. Indien het getal negatief is: het cijfer op de afrondpositie blijft hetzelfde
+* *naar boven afronden*: Indien het getal positief is: het cijfer op de afrondpositie wordt met 1 verhoogd indien een van de cijfers niet 0 is. Indien het getal negatief is: het cijfer op de afrondpositie blijft hetzelfde.
 * *rekenkundig afronden*: Het cijfer na het cijfer op de afrondpositie geeft aan of hoe het cijfer op de afrondpositie wordt afgerond: bij een 0, 1, 2, 3 of 4 blijft die hetzelfde; bij een 5, 6, 7, 8 of 9 is wordt het cijfer op de afrondpositie met 1 verhoogd.
 // Guanshengdijun: "geeft aan of" of "geeft aan hoe". Je verwijst ook terug naar "het cijfer" met "die", waar "het" volgens mij correct is.
 * *rekenkundig afronden met half richting nul*: Gelijk aan rekenkundig afronden, behalve als het getal precies op de helft ligt (een 5 gevolgd door alleen nullen). Dan blijft het cijfer op de afrondpositie hetzelfde.
@@ -69,10 +69,10 @@ Er zijn 6 manieren in RegelSpraak om dit te doen.
 
 | Afrondingsrichting | 1250 op een 100-tal | -1250 op een 100-tal |
 |---|---|---|
+| naar beneden afgerond | 1200 | -1300 |
+| naar boven afgerond | 1300 | -1200 |
 | rekenkundig afgerond | 1300 | -1300 |
 | rekenkundig afgerond met half richting nul | 1200 | -1200 |
-| naar boven afgerond | 1300 | -1200 |
-| naar beneden afgerond | 1200 | -1300 |
 | richting nul afgerond | 1200 | -1200 |
 | weg van nul afgerond | 1300 | -1300 |
 
