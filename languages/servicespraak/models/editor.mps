@@ -34,6 +34,7 @@
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
     <import index="jwpy" ref="r:c0a1951e-ae53-4a58-911d-ce823dfaf0a2(besturingspraak.structure)" implicit="true" />
     <import index="u5to" ref="r:0f988837-f15f-4013-9404-13c879f74c10(regelspraak.behavior)" implicit="true" />
+    <import index="rzok" ref="r:a8fb563d-47c7-4600-a897-619c6d2de4c5(contexts.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -7723,6 +7724,51 @@
       <node concept="2iRkQZ" id="5uwF$XlNsV3" role="2iSdaV" />
       <node concept="pVoyu" id="5uwF$XlPoQi" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1$53X1IYlt9">
+    <ref role="1XX52x" to="ku5w:1$53X1IYjvj" resolve="MappingContext" />
+    <node concept="3EZMnI" id="xwHwt_YZi$" role="2wV5jI">
+      <node concept="3F0ifn" id="xwHwt_YZiF" role="3EZMnx">
+        <property role="3F0ifm" value="mapping context" />
+      </node>
+      <node concept="l2Vlx" id="xwHwt_YZiB" role="2iSdaV" />
+      <node concept="3F0A7n" id="xwHwt_YZiL" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F2HdR" id="xwHwt_YZiT" role="3EZMnx">
+        <ref role="1NtTu8" to="rzok:xwHwt_YZi6" resolve="inhoud" />
+        <node concept="2iRkQZ" id="xwHwt_YZjr" role="2czzBx" />
+        <node concept="pVoyu" id="xwHwt_YZj0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="xwHwt_YZj2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2biZxu" id="1oQTu96Xzrj" role="3F10Kt">
+          <node concept="2nvQDS" id="8eKR7NdJpW" role="2biZxv">
+            <node concept="3clFbS" id="8eKR7NdJpX" role="2VODD2">
+              <node concept="3clFbF" id="8eKR7NdJux" role="3cqZAp">
+                <node concept="10M0yZ" id="8eKR7NdJBG" role="3clFbG">
+                  <ref role="3cqZAo" to="zmcs:4us4gqTouql" resolve="NatuurlijkeTaalFontFamily" />
+                  <ref role="1PxDUh" to="zmcs:4tdW4ZDt8A2" resolve="StyleConstants" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="4$FPG" id="3SYd9_wIgJA" role="4_6I_">
+          <node concept="3clFbS" id="3SYd9_wIgJB" role="2VODD2">
+            <node concept="3clFbF" id="3SYd9_wIgL_" role="3cqZAp">
+              <node concept="2pJPEk" id="3SYd9_wIgLz" role="3clFbG">
+                <node concept="2pJPED" id="3SYd9_wIgNN" role="2pJPEn">
+                  <ref role="2pJxaS" to="rzok:3SYd9_wIgIX" resolve="Witruimte" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
