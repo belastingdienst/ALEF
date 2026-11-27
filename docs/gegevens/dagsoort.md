@@ -24,3 +24,6 @@ N.B. Het attribuut "aantal werkdagen op te tellen bij huidige datum" heeft als d
 ## Dagsoortdefinitie
 
 In een [dagsoortdefinitie](../regels/Actie_Dagsoortdefinitie.md) worden voorwaarden opgenomen om concreet te bepalen wanneer een datum van dat dagsoort is.
+
+Of een datum van een bepaalde dagsoort is, kan direct in een testgeval getest worden, zie [Dagsoorten testen](../testen/Testset.md#dagsoorten-testen).
+
