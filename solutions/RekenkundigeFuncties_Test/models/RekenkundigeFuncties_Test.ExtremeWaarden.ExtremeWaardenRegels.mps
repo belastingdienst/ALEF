@@ -18,6 +18,9 @@
         <property id="6747529342323205932" name="functie" index="255MO3" />
         <child id="2497851063083011247" name="lijst" index="3AjMFx" />
       </concept>
+      <concept id="6747529342265147481" name="regelspraak.structure.SamengesteldPredicaat" flags="ng" index="28AkDQ">
+        <child id="6747529342265147484" name="subconditie" index="28AkDN" />
+      </concept>
       <concept id="7850059172684106637" name="regelspraak.structure.Afronden" flags="ng" index="29kKyO">
         <property id="7850059172684106678" name="aantalDecimalen" index="29kKyf" />
         <property id="7850059172684106641" name="hoeAfTeRonden" index="29kKyC" />
@@ -42,6 +45,11 @@
       <concept id="6223277501270327848" name="regelspraak.structure.AbstracteRegel" flags="ng" index="nISv2">
         <child id="6223277501273432772" name="versie" index="kiesI" />
       </concept>
+      <concept id="993564824856101976" name="regelspraak.structure.Predicaat" flags="ng" index="2z5HQD" />
+      <concept id="993564824856099500" name="regelspraak.structure.EnkeleVoorwaarde" flags="ng" index="2z5Mdt">
+        <child id="993564824856119364" name="expr" index="2z5D6P" />
+        <child id="993564824856103627" name="predicaat" index="2z5HcU" />
+      </concept>
       <concept id="2800963173591871465" name="regelspraak.structure.ArithmetischeExpressie" flags="ng" index="2CeYF3">
         <child id="2082621845197542425" name="links" index="2C$i6h" />
         <child id="2082621845197542429" name="rechts" index="2C$i6l" />
@@ -49,6 +57,7 @@
       <concept id="6214925803050321739" name="regelspraak.structure.Haakjes" flags="ng" index="2E1DPt">
         <child id="2082621845197815937" name="waarde" index="2CAJk9" />
       </concept>
+      <concept id="9162738810250035809" name="regelspraak.structure.OnderwerpExpressie" flags="ng" index="2HyLg7" />
       <concept id="7004474094244907415" name="regelspraak.structure.AbstracteRegelVersie" flags="ngI" index="2KO2Q4">
         <child id="5118870146818423030" name="geldig" index="1nvPAL" />
       </concept>
@@ -71,6 +80,9 @@
       <concept id="1480463129960252467" name="regelspraak.structure.Variabele" flags="ng" index="1wOUPG">
         <child id="1480463129960253435" name="waarde" index="1wOUU$" />
       </concept>
+      <concept id="1480463129961380548" name="regelspraak.structure.Subconditie" flags="ng" index="1wSDer">
+        <child id="1480463129961380549" name="conditie" index="1wSDeq" />
+      </concept>
       <concept id="1024280404772184160" name="regelspraak.structure.OnderwerpRef" flags="ng" index="3yS1BT">
         <reference id="1024280404772185483" name="ref" index="3yS1Ki" />
       </concept>
@@ -89,6 +101,10 @@
         <child id="2773276936919436600" name="jaar" index="1ACmmm" />
       </concept>
       <concept id="9154144551704438971" name="regelspraak.structure.Regel" flags="ng" index="1HSql3" />
+      <concept id="1760893194706269227" name="regelspraak.structure.SubSelectie" flags="ng" index="3PGksG">
+        <child id="1760893194706278472" name="predicaat" index="3PGiHf" />
+        <child id="1760893194706275566" name="onderwerp" index="3PGjZD" />
+      </concept>
       <concept id="5199708707605089563" name="regelspraak.structure.AbsoluteWaarde" flags="ng" index="1WpTUu">
         <child id="5199708707605138478" name="waarde" index="1Wp_YF" />
       </concept>
@@ -1134,12 +1150,23 @@
       <node concept="1wO7pt" id="11a5_kKWS6b" role="kiesI">
         <node concept="2boe1W" id="11a5_kKWS6c" role="1wO7pp">
           <node concept="2boe1X" id="11a5_kKWS6d" role="1wO7i6">
-            <node concept="3_mHL5" id="3DPnffTvxAW" role="2bokzF">
-              <node concept="c2t0s" id="3DPnffTvxAX" role="eaaoM">
-                <ref role="Qu8KH" to="q862:2hnr4yaTCDB" resolve="numeriek3" />
-              </node>
-              <node concept="3_kdyS" id="3DPnffTvxAV" role="pQQuc">
-                <ref role="Qu8KH" to="q862:2hnr4yaTCt0" resolve="ExtremeWaarden" />
+            <node concept="3_mHL5" id="4ZAfS_xRiq9" role="2bokzF">
+              <node concept="3PGksG" id="4ZAfS_xRipX" role="pQQuc">
+                <node concept="2HyLg7" id="4ZAfS_xRiq1" role="3PGjZD" />
+                <node concept="28AkDQ" id="4ZAfS_xRitQ" role="3PGiHf">
+                  <node concept="1wSDer" id="4ZAfS_xRitR" role="28AkDN">
+                    <node concept="2z5Mdt" id="4ZAfS_xRitS" role="1wSDeq">
+                      <node concept="3yS1BT" id="4ZAfS_xRitT" role="2z5D6P" />
+                      <node concept="2z5HQD" id="4ZAfS_xRitV" role="2z5HcU" />
+                    </node>
+                  </node>
+                  <node concept="1wSDer" id="4ZAfS_xRiuk" role="28AkDN">
+                    <node concept="2z5Mdt" id="4ZAfS_xRiul" role="1wSDeq">
+                      <node concept="3yS1BT" id="4ZAfS_xRium" role="2z5D6P" />
+                      <node concept="2z5HQD" id="4ZAfS_xRiun" role="2z5HcU" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="29kKyO" id="8epmhUEfai" role="2bokzm">

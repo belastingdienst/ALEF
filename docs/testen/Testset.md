@@ -41,6 +41,39 @@ In het testgeval verschijnt een lijst van parameterwaarden die invoer zijn voor 
 
 ![Forceer parameterwaarde in testgeval](../img/ALEF300_TestGeval_Parameters2.png)
 
+### Dagsoorten testen
+
+Een [dagsoortdefinitie](../regels/Actie_Dagsoortdefinitie.md) bepaalt wanneer een dag van een bepaalde [dagsoort](../gegevens/dagsoort.md) is.
+Zo'n definitie kan direct in een testgeval getest worden, zonder dat er eerst een extra regel geschreven hoeft te worden die de dagsoort gebruikt.
+In het testgeval wordt dan per datum voorspeld of die datum wel of niet van een bepaalde dagsoort is.
+
+Met de intentie **Voeg Dagsoortvoorspelling Toe** verschijnt in het testgeval het onderdeel **voor de dagsoorten geldt:**.
+Daaronder staat per regel een datum, gevolgd door **is een** of **is geen** en de naam van de dagsoort.
+Door op **een** te klikken wordt het **geen**, en andersom. Met dezelfde intentie worden extra regels toegevoegd.
+
+![Dagsoorten testen in een testgeval](../img/Testgeval_Dagsoorten.png)
+
+In het voorbeeld hierboven wordt voorspeld dat 4-1-2021 een *werkdag* is, dat 5-5-2021 een *feestdag* is en dat 2-1-2021 een *zaterdag* is.
+Na het uitvoeren van de test staat achter elke regel of de voorspelling klopt.
+Is één van de regels onjuist, dan faalt het hele testgeval.
+
+Een testgeval kan alleen dagsoortregels bevatten. De onderdelen **de volgende situatie:** en **moet het volgende resultaat hebben:** worden dan niet getoond.
+Ze kunnen weer worden toegevoegd met de intentie **Voeg Situatie en Resultaat Toe**.
+Een testgeval kan ook een situatie en een resultaat combineren met dagsoortregels.
+Zo kan bijvoorbeeld bij een regel die een aantal werkdagen bij een datum optelt, in hetzelfde testgeval gecontroleerd worden welke dagen als werkdag meetellen.
+
+Bij het testen van dagsoorten gelden de volgende aandachtspunten:
+
+* **Scope van de testset:** De dagsoortdefinities die nodig zijn, moeten in de [scope van de testset](#configuratie-testset) staan.
+  Dat geldt ook voor dagsoorten die een definitie zelf gebruikt.
+  Een *werkdag* die gedefinieerd is als "geen zaterdag, geen zondag en geen feestdag" heeft bijvoorbeeld ook de definitie van *feestdag* nodig.
+  Ontbreekt een definitie, dan geeft de test de fout "Ongedefiniëerde dagsoort: …".
+* **Welke versie van de definitie:** Welke versie van een dagsoortdefinitie gebruikt wordt, hangt af van de testdatum van de testset (de rekendatum),
+  niet van de datum in de dagsoortregel.
+  De datum in een dagsoortregel mag daarom ook buiten de geldigheidsperiode van de testset liggen, bijvoorbeeld om een feestdag over meerdere jaren te testen.
+* **Standaard dagsoorten:** De dagen van de week (*maandag* tot en met *zondag*) zijn altijd beschikbaar en hoeven niet in de scope te staan.
+* **Dubbele testgevallen:** Twee testgevallen met precies dezelfde dagsoortregels geven de waarschuwing "Er bestaat al een test met gelijke invoer".
+
 ### Testinitialisatie
 
 Wanneer steeds dezelfde invoer wordt gebruikt in testgevallen, kan een set met attribuutwaarden (per objecttype) worden hergebruikt. 
