@@ -7737,6 +7737,35 @@
       <node concept="3F0A7n" id="xwHwt_YZiL" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="3EZMnI" id="3kQU8h_zE$Y" role="3EZMnx">
+        <node concept="3XFhqQ" id="3kQU8h_zE$Z" role="3EZMnx" />
+        <node concept="3F0ifn" id="3kQU8h_zE_0" role="3EZMnx">
+          <property role="3F0ifm" value="dateTime in de uitvoer" />
+          <ref role="1k5W1q" to="mbb7:7MZNd$UeFXk" resolve="VasteTekst" />
+        </node>
+        <node concept="2aMyGU" id="3kQU8h_zE_1" role="3EZMnx">
+          <property role="2aYyza" value="met timezone offset" />
+          <property role="2aYyvO" value="zonder timezone offset" />
+          <ref role="1NtTu8" to="ku5w:3kQU8h_zE$T" resolve="gebruikTimezoneOffsetInUitvoer" />
+          <ref role="1k5W1q" to="mbb7:5Ja52ut3X8r" resolve="Keuze" />
+        </node>
+        <node concept="2iRfu4" id="3kQU8h_zE_2" role="2iSdaV" />
+        <node concept="pVoyu" id="3kQU8h__YlJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="6$JypA9b4oN" role="pqm2j">
+          <node concept="3clFbS" id="6$JypA9b4oO" role="2VODD2">
+            <node concept="3clFbF" id="6$JypA9b4oP" role="3cqZAp">
+              <node concept="2OqwBi" id="6$JypA9b4oU" role="3clFbG">
+                <node concept="pncrf" id="6$JypA9b4oV" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6$JypA9b4oW" role="2OqNvi">
+                  <ref role="37wK5l" to="txb8:6$JypA9b4nC" resolve="gebruiktDateTime" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F2HdR" id="xwHwt_YZiT" role="3EZMnx">
         <ref role="1NtTu8" to="rzok:xwHwt_YZi6" resolve="inhoud" />
         <node concept="2iRkQZ" id="xwHwt_YZjr" role="2czzBx" />

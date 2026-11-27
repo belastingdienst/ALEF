@@ -327,6 +327,7 @@
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
       </concept>
@@ -10143,6 +10144,91 @@
     <node concept="1YaCAy" id="2_HNuzYdJk9" role="1YuTPh">
       <property role="TrG5h" value="ch" />
       <ref role="1YaFvo" to="ku5w:5Q$0M5Zaft0" resolve="Choice" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="76do_8ke6nr">
+    <property role="TrG5h" value="VerwijderOngebruikteTimezoneOffset" />
+    <node concept="Q5ZZ6" id="76do_8ke6ns" role="Q6x$H">
+      <node concept="3clFbS" id="76do_8ke6nt" role="2VODD2">
+        <node concept="Jncv_" id="76do_8ke6nu" role="3cqZAp">
+          <ref role="JncvD" to="ku5w:1$53X1IYjvj" resolve="MappingContext" />
+          <node concept="Q6c8r" id="76do_8ke6nv" role="JncvB" />
+          <node concept="3clFbS" id="76do_8ke6nw" role="Jncv$">
+            <node concept="3clFbF" id="76do_8ke6oK" role="3cqZAp">
+              <node concept="37vLTI" id="76do_8ke6oB" role="3clFbG">
+                <node concept="3clFbT" id="76do_8ke6oJ" role="37vLTx" />
+                <node concept="2OqwBi" id="76do_8ke6oI" role="37vLTJ">
+                  <node concept="Jnkvi" id="76do_8ke6oG" role="2Oq$k0">
+                    <ref role="1M0zk5" node="76do_8ke6ol" resolve="mc" />
+                  </node>
+                  <node concept="3TrcHB" id="76do_8ke6oH" role="2OqNvi">
+                    <ref role="3TsBF5" to="ku5w:3kQU8h_zE$T" resolve="gebruikTimezoneOffsetInUitvoer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="76do_8ke6ol" role="JncvA">
+            <property role="TrG5h" value="mc" />
+            <node concept="2jxLKc" id="76do_8ke6om" role="1tU5fm" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="76do_8ke6on" role="QzAvj">
+      <node concept="3clFbS" id="76do_8ke6oo" role="2VODD2">
+        <node concept="3clFbF" id="76do_8ke6o_" role="3cqZAp">
+          <node concept="Xl_RD" id="76do_8ke6oA" role="3clFbG">
+            <property role="Xl_RC" value="Verwijder ongebruikte timezone-instelling" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="76do_8ke6oL">
+    <property role="TrG5h" value="check_MappingContext" />
+    <property role="3GE5qa" value="mapping" />
+    <node concept="3clFbS" id="76do_8ke6oM" role="18ibNy">
+      <node concept="3clFbJ" id="76do_8ke6oZ" role="3cqZAp">
+        <node concept="3clFbS" id="76do_8ke6p0" role="3clFbx">
+          <node concept="a7r0C" id="76do_8ke6pS" role="3cqZAp">
+            <node concept="Xl_RD" id="76do_8ke6pT" role="a7wSD">
+              <property role="Xl_RC" value="Timezone-instelling heeft geen effect: deze mapping context bevat geen dateTime" />
+            </node>
+            <node concept="1YBJjd" id="76do_8ke6pU" role="1urrMF">
+              <ref role="1YBMHb" node="76do_8ke6pJ" resolve="mappingContext" />
+            </node>
+            <node concept="3Cnw8n" id="76do_8ke6pV" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="76do_8ke6nr" resolve="VerwijderOngebruikteTimezoneOffset" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="76do_8ke6pO" role="3clFbw">
+          <node concept="2OqwBi" id="76do_8ke6pR" role="3uHU7B">
+            <node concept="1YBJjd" id="76do_8ke6pP" role="2Oq$k0">
+              <ref role="1YBMHb" node="76do_8ke6pJ" resolve="mappingContext" />
+            </node>
+            <node concept="3TrcHB" id="76do_8ke6pQ" role="2OqNvi">
+              <ref role="3TsBF5" to="ku5w:3kQU8h_zE$T" resolve="gebruikTimezoneOffsetInUitvoer" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="76do_8ke6pK" role="3uHU7w">
+            <node concept="2OqwBi" id="76do_8ke6pN" role="3fr31v">
+              <node concept="1YBJjd" id="76do_8ke6pL" role="2Oq$k0">
+                <ref role="1YBMHb" node="76do_8ke6pJ" resolve="mappingContext" />
+              </node>
+              <node concept="2qgKlT" id="76do_8ke6pM" role="2OqNvi">
+                <ref role="37wK5l" to="txb8:6$JypA9b4nC" resolve="gebruiktDateTime" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="76do_8ke6pJ" role="1YuTPh">
+      <property role="TrG5h" value="mappingContext" />
+      <ref role="1YaFvo" to="ku5w:1$53X1IYjvj" resolve="MappingContext" />
     </node>
   </node>
 </model>
