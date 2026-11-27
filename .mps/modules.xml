@@ -143,6 +143,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/RegelCondities_Test/RegelCondities_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/RekenenMetDatumTijd_Test/RekenenMetDatumTijd_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/RekenkundigeFuncties_Test/RekenkundigeFuncties_Test.msd" folder="test.alef" />
+      <modulePath path="$PROJECT_DIR$/solutions/RuntimeBugs_Test/RuntimeBugs_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/Servicespraak_Test/Servicespraak_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/Solver_Test/Solver_Test.msd" folder="test.alef" />
       <modulePath path="$PROJECT_DIR$/solutions/Test_Spraken/Test_Spraken.msd" folder="test.alef" />
